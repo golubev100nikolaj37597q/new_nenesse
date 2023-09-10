@@ -1,0 +1,1133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xml:lang="de" xmlns="http://www.w3.org/2005/Atom" xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:s="http://jadedpixel.com/-/spec/shopify">
+  <id>https://www.neness-shop.de/collections/all.atom</id>
+  <link rel="alternate" type="text/html" href="https://www.neness-shop.de/collections/all"/>
+  <link rel="self" type="application/atom+xml" href="https://www.neness-shop.de/collections/fur-ihn.atom"/>
+  <title>Neness</title>
+  <updated>2023-08-11T21:38:01+02:00</updated>
+  <author>
+    <name>Neness</name>
+  </author>
+  <entry>
+    <id>https://www.neness-shop.de/products/8274873221386</id>
+    <published>2023-08-11T21:38:01+02:00</published>
+    <updated>2023-08-11T21:38:01+02:00</updated>
+    <link rel="alternate" type="text/html" href="https://www.neness-shop.de/products/duftzauber-geschenkbox-3-dufte"/>
+    <title>Duftzauber Geschenkbox für 3 Düfte</title>
+    <s:type></s:type>
+    <s:vendor>Neness</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0615/4479/2259/files/1_b730c2f4-d2b2-420b-90bb-e09a6f582415.jpg?v=1692977102"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Anbieter: </strong>Neness<br>
+        <strong>Art: </strong><br>
+        <strong>Preis: </strong>
+            7.90
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p><meta charset="utf-8"><strong>Entdecken Sie die ultimative Art, Ihre Sinne zu verwöhnen und Ihre Lieblingsdüfte stilvoll zu präsentieren, mit unserer exquisiten Duftzauber Geschenkbox für bis zu 3 Düfte. Diese elegante Box wurde speziell entwickelt, um Ihre Duftkollektion zu organisieren und sicher aufzubewahren, während sie gleichzeitig ein außergewöhnliches Geschenk für besondere Menschen in Ihrem Leben darstellt.</strong></p>
+<p> </p>
+<p><strong>Die Geschenkbox beinhaltet keine Produkte. </strong></p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>https://www.neness-shop.de/products/8274873221386</id>
+      <title>Default Title</title>
+      <s:price currency="EUR">7.90</s:price>
+      <s:sku>BOX W</s:sku>
+      <s:grams>0</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://www.neness-shop.de/products/8253830168842</id>
+    <published>2023-07-28T13:13:43+02:00</published>
+    <updated>2023-07-28T13:13:43+02:00</updated>
+    <link rel="alternate" type="text/html" href="https://www.neness-shop.de/products/grey-025"/>
+    <title>GREY - 025</title>
+    <s:type></s:type>
+    <s:vendor>Neness</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0615/4479/2259/files/N025-nuty.png?v=1690541852"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Anbieter: </strong>Neness<br>
+        <strong>Art: </strong><br>
+        <strong>Preis: </strong>
+            9.90
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><div>
+<meta charset="utf-8">NENESS GREY - Zeitlose Eleganz für den modernen Mann. Selbstbewusst. Unwiderstehlich. Unvergesslich. Entdecke den Duft der Stärke und Klasse. Bestelle jetzt und hinterlasse bleibenden Eindruck.</div>
+<ul>
+<li><span style="font-family: -apple-system, BlinkMacSystemFont, 'San Francisco', 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif; font-size: 0.875rem;">Kopfnoten: Apfel,Pflaume</span></li>
+<li><span style="font-family: -apple-system, BlinkMacSystemFont, 'San Francisco', 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif; font-size: 0.875rem;">Herznoten: Geranie, Zimt, Nelken, Mahagoni, Nelke</span></li>
+<li><span style="font-family: -apple-system, BlinkMacSystemFont, 'San Francisco', 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif; font-size: 0.875rem;">Basisnoten: Sandelholz, Zedernholz, Vanille, </span></li>
+</ul>
+<p><span style="font-family: -apple-system, BlinkMacSystemFont, 'San Francisco', 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif; font-size: 0.875rem;">Der Duft wird in einem 33ml Flakon geliefert, den du immer dabei haben kannst - ob im Auto oder in der Jacke !</span></p>
+<meta charset="utf-8"></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>https://www.neness-shop.de/products/8253830168842</id>
+      <title>Default Title</title>
+      <s:price currency="EUR">9.90</s:price>
+      <s:sku>025</s:sku>
+      <s:grams>50</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://www.neness-shop.de/products/7971511009546</id>
+    <published>2023-07-05T16:25:27+02:00</published>
+    <updated>2023-07-05T16:25:27+02:00</updated>
+    <link rel="alternate" type="text/html" href="https://www.neness-shop.de/products/your-euforia-man"/>
+    <title>EXCITEMENT MAN - 085</title>
+    <s:type></s:type>
+    <s:vendor>Parfumly</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0615/4479/2259/files/N085-nuty.png?v=1688728919"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Anbieter: </strong>Parfumly<br>
+        <strong>Art: </strong><br>
+        <strong>Preis: </strong>
+            9.90
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p><strong>EXCITEMENT MAN </strong>-<span data-mce-fragment="1"> ein exklusives Parfüm für moderne Männer die einen unvergesslichen Duft mit sich bringen.</span></p>
+<ul>
+<li><span data-mce-fragment="1"><strong>Kopfnote:</strong> Ingwer, Pfeffer, Regen</span></li>
+<li><span data-mce-fragment="1"><strong>Herznote:</strong> Basilikum, Salbei, Zedernblätter</span></li>
+<li><span data-mce-fragment="1"><strong>Basisnote:</strong> Ambra, Mahagoni, Wildleder</span></li>
+</ul>
+<p><span data-mce-fragment="1">Durch die 33ml Flakon-Flasche bestehend aus Glas, kannst du deinen Duft immer bei dir haben. </span></p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>https://www.neness-shop.de/products/7971511009546</id>
+      <title>Default Title</title>
+      <s:price currency="EUR">9.90</s:price>
+      <s:sku>085</s:sku>
+      <s:grams>50</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://www.neness-shop.de/products/8225872773386</id>
+    <published>2023-04-21T12:42:06+02:00</published>
+    <updated>2023-04-21T12:42:06+02:00</updated>
+    <link rel="alternate" type="text/html" href="https://www.neness-shop.de/products/neness-kirk"/>
+    <title>NENESS KIRK - 256</title>
+    <s:type></s:type>
+    <s:vendor>Neness</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0615/4479/2259/products/IMG_4562_AO.jpg?v=1682068204"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Anbieter: </strong>Neness<br>
+        <strong>Art: </strong><br>
+        <strong>Preis: </strong>
+            9.90
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p><strong>NENESS KIRK</strong> - <span data-mce-fragment="1"> ist ein luxuriöser Duft, der die Sinne betört und deine Persönlichkeit unterstreicht. Die warmen Noten von Vanille und Sandelholz werden durch die blumigen Akkorde von Jasmin und Orangenblüte perfekt abgerundet.</span></p>
+<p><strong>Kopfnote : </strong>Passionsfrucht (Maracuja), Pfirsich, Himbeere, Schwarze Johannisbeere, Birne, Sand</p>
+<p><strong>Herznote : </strong>Maiglöckchen<strong> </strong></p>
+<p><strong>Basisnote : </strong>Heliotrop, Sandelholz, Vanille, Patchouli, Moschus</p>
+<p>Dein Duft wird in einem 33ml Glasflakon geliefert &amp; durch die Kompakte Verpackung hast du deinen Lieblingsduft immer bei dir.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>https://www.neness-shop.de/products/8225872773386</id>
+      <title>Default Title</title>
+      <s:price currency="EUR">9.90</s:price>
+      <s:sku>256</s:sku>
+      <s:grams>50</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://www.neness-shop.de/products/8227113926922</id>
+    <published>2023-04-21T12:40:16+02:00</published>
+    <updated>2023-04-21T12:40:16+02:00</updated>
+    <link rel="alternate" type="text/html" href="https://www.neness-shop.de/products/neness-e-pura"/>
+    <title>NENESS E. PURA - 255</title>
+    <s:type></s:type>
+    <s:vendor>Neness</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0615/4479/2259/products/IMG_4566_AO_2.jpg?v=1682068585"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Anbieter: </strong>Neness<br>
+        <strong>Art: </strong><br>
+        <strong>Preis: </strong>
+            9.90
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p><meta charset="utf-8"><span><strong>NENESS E PURA</strong> ist ein Duft von Neness, der für seine ungewöhnliche Mischung aus fruchtigen und holzigen Aromen bekannt ist. </span></p>
+<p><strong>Kopfnote : </strong>Orange, Zitrone, Bergamotte, Mandarine, Anis</p>
+<p><strong>Herznote : </strong>Feigen, Jasmin, Pfirsich, Nelke, Zimt, Kardamom</p>
+<p><strong>Basisnote : </strong>Weiße Musk, Zeder, Vanille, Sandelholz, Ambra, Moschus</p>
+<p><meta charset="utf-8"><span>Diese Duftnoten verleihen <strong>Neness E. Pura</strong> ein fruchtiges, aber dennoch warmes und sinnliches Aroma. Es ist eine einzigartige und komplexe Kombination, die E. Pura zu einem sehr beliebten Duft macht.</span></p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>https://www.neness-shop.de/products/8227113926922</id>
+      <title>Default Title</title>
+      <s:price currency="EUR">9.90</s:price>
+      <s:sku>255</s:sku>
+      <s:grams>50</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://www.neness-shop.de/products/8227115008266</id>
+    <published>2023-04-21T12:39:32+02:00</published>
+    <updated>2023-04-21T12:39:32+02:00</updated>
+    <link rel="alternate" type="text/html" href="https://www.neness-shop.de/products/neness-vanilla-cigar"/>
+    <title>NENESS VANILLA CIGAR - 254</title>
+    <s:type></s:type>
+    <s:vendor>Neness</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0615/4479/2259/products/IMG_4557_AO.jpg?v=1682068957"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Anbieter: </strong>Neness<br>
+        <strong>Art: </strong><br>
+        <strong>Preis: </strong>
+            9.90
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p><meta charset="utf-8"><span><strong>NENESS VANILLA CIGAR</strong> ist ein Duft von Neness, der für seine Kombination aus Tabak- und Vanillearomen bekannt ist. Die Duftnoten sind:</span></p>
+<p><strong>Kopfnote : </strong>Tabakblätter, Gewürznoten</p>
+<p><strong>Herznote :</strong> Tonkabohne, Kakao</p>
+<p><strong>Basisnote : </strong>Vanille, Trockenfrüchte, Holznoten, Tabakblüte</p>
+<p><meta charset="utf-8"><span>Diese Duftnoten verleihen den Duft ein warmes, süßes und dennoch markantes Aroma. Es ist eine sehr einzigartige und ansprechende Kombination, die Vanilla Cigar zu einem sehr beliebten und ikonischen Duft macht.</span></p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>https://www.neness-shop.de/products/8227115008266</id>
+      <title>Default Title</title>
+      <s:price currency="EUR">9.90</s:price>
+      <s:sku>254</s:sku>
+      <s:grams>50</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://www.neness-shop.de/products/8209900208394</id>
+    <published>2023-03-24T09:57:20+01:00</published>
+    <updated>2023-03-24T09:57:20+01:00</updated>
+    <link rel="alternate" type="text/html" href="https://www.neness-shop.de/products/moonlight-roll-on-100-parfumol"/>
+    <title>MOONLIGHT - 100% Parfümöl</title>
+    <s:type></s:type>
+    <s:vendor>Neness</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0615/4479/2259/products/montaz_moonlight_AO.jpg?v=1679648244"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Anbieter: </strong>Neness<br>
+        <strong>Art: </strong><br>
+        <strong>Preis: </strong>
+            25.90
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><meta charset="utf-8">
+<p>Unser Parfümöl <strong>MOONLIGHT</strong> ist eine verführerische Kombination aus saftigen Früchten, blumigen Noten und warmen Gewürzen. Hier sind die Duftnoten in Stichpunkten:</p>
+<ul>
+<li>
+<strong>Kopfnoten</strong>: Kirsche, Mandarine und schwarze Johannisbeere</li>
+<li>
+<strong>Herznoten</strong>: Jasmin, Tuberose und Rose</li>
+<li>
+<strong>Basisnoten</strong>: Tonkabohne, Vetiver, Zimt und Amber</li>
+</ul>
+<p>Diese einzigartige Mischung aus süßen und würzigen Noten schafft ein unvergessliches Dufterlebnis, das Sie den ganzen Tag begleiten wird. Unsere Parfümöle sind alle aus hochwertigen, natürlichen Ölen hergestellt und bieten ein lang anhaltendes Dufterlebnis ohne die Austrocknung oder Reizung der Haut, die oft mit Alkohol-basierten Düften verbunden sind. Entdecken Sie unser Parfümöl und tauchen Sie ein in eine Welt voller Sinnlichkeit und Verführung.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>https://www.neness-shop.de/products/8209900208394</id>
+      <title>Default Title</title>
+      <s:price currency="EUR">25.90</s:price>
+      <s:sku>N244</s:sku>
+      <s:grams>10</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://www.neness-shop.de/products/8090678657290</id>
+    <published>2023-01-03T14:56:07+01:00</published>
+    <updated>2023-01-03T14:56:07+01:00</updated>
+    <link rel="alternate" type="text/html" href="https://www.neness-shop.de/products/neness-roc"/>
+    <title>NENESS ROC - 252</title>
+    <s:type></s:type>
+    <s:vendor>Parfumly</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0615/4479/2259/files/N252-nuty.png?v=1692614284"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Anbieter: </strong>Parfumly<br>
+        <strong>Art: </strong><br>
+        <strong>Preis: </strong>
+            9.90
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><meta charset="utf-8">
+<p>Ein Duft voller frische mit einer einfachen aber unbeschreiblichen guten Duftkomposition, nennt man <strong>NENESS ROC</strong>. Den unbeschreibliche Duft gibt es für Männer &amp; Frauen.</p>
+<ul class="AttributeListstyle__Wrapper-sc-12uu3hb-0 pqCTe">
+<li class="AttributeListstyle__Attribute-sc-12uu3hb-1 cUVdlf">
+<strong><span class="AttributeListstyle__Title-sc-12uu3hb-2 hWLeDt">Kopfnoten: </span></strong><span class="AttributeListstyle__Title-sc-12uu3hb-2 hWLeDt">Seekiefer, mineralische Noten</span>
+</li>
+<li class="AttributeListstyle__Attribute-sc-12uu3hb-1 cUVdlf"><span class="AttributeListstyle__Title-sc-12uu3hb-2 hWLeDt"><strong>Herznoten:</strong><span> Jasmin </span></span></li>
+<li class="AttributeListstyle__Attribute-sc-12uu3hb-1 cUVdlf"><span class="AttributeListstyle__Title-sc-12uu3hb-2 hWLeDt"><strong>Basisnoten:</strong><span> Meersalz, Zitrusfrüchte</span></span></li>
+</ul>
+<p><span class="AttributeListstyle__Title-sc-12uu3hb-2 hWLeDt"><span><meta charset="utf-8">Das Parfüm wird in einem kleinen, bequemen 33-ml-Fläschchen geliefert, das in jede Tasche passt.</span></span></p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>https://www.neness-shop.de/products/8090678657290</id>
+      <title>Default Title</title>
+      <s:price currency="EUR">9.90</s:price>
+      <s:sku>252</s:sku>
+      <s:grams>50</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://www.neness-shop.de/products/8089435472138</id>
+    <published>2023-01-02T15:12:47+01:00</published>
+    <updated>2023-01-02T15:12:47+01:00</updated>
+    <link rel="alternate" type="text/html" href="https://www.neness-shop.de/products/rose-d-neness"/>
+    <title>ROSE D&apos; NENESS - 251</title>
+    <s:type></s:type>
+    <s:vendor>Parfumly</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0615/4479/2259/products/251AC.jpg?v=1672668768"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Anbieter: </strong>Parfumly<br>
+        <strong>Art: </strong><br>
+        <strong>Preis: </strong>
+            9.90
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>Ein Rosiger und fruchtiger Duft umhüllt mit Duftnoten wie Mandel, Bergamotte &amp; Indischer Mandarine. Unbeschreiblicher Duft fast wie ein Gedicht ! </p>
+<ul>
+<li>
+<strong>Kopfnote:</strong><span> Bergamotte, rosa Pfeffer, Indische Mandarine</span>
+</li>
+<li>
+<strong>Herznote:</strong><span> Rose</span>
+</li>
+<li>
+<strong>Basisnote:</strong><span> Heliotrop, Mandel</span>
+</li>
+</ul>
+<div class="product-block">
+<div class="rte">
+<p><span>Das Parfüm wird in einem kleinen, bequemen 33-ml-Fläschchen geliefert, das in jede Tasche passt.</span></p>
+</div>
+</div>
+<meta charset="utf-8"></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>https://www.neness-shop.de/products/8089435472138</id>
+      <title>Default Title</title>
+      <s:price currency="EUR">9.90</s:price>
+      <s:sku>251</s:sku>
+      <s:grams>50</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://www.neness-shop.de/products/8084954743050</id>
+    <published>2022-12-28T09:54:37+01:00</published>
+    <updated>2022-12-28T09:54:37+01:00</updated>
+    <link rel="alternate" type="text/html" href="https://www.neness-shop.de/products/neness-melody-sun-250"/>
+    <title>NENESS MELODY SUN - 250</title>
+    <s:type></s:type>
+    <s:vendor>Parfumly</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0615/4479/2259/files/N250-nuty.png?v=1692613332"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Anbieter: </strong>Parfumly<br>
+        <strong>Art: </strong><br>
+        <strong>Preis: </strong>
+            9.90
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><meta charset="utf-8">
+<div>
+<meta charset="utf-8">
+<p><span data-mce-fragment="1">Wir präsentieren den Duft für Männer <strong>&amp;</strong> Frauen <b>NENESS MELODY SUN</b></span><span data-mce-fragment="1"><strong>!</strong> Wenn die Schwärze des Kristalls durch einen Duft ausgedrückt werden könnte, wäre es ein Parfüm bestehend aus:</span></p>
+<ul></ul>
+</div>
+<ul data-mce-fragment="1">
+<li data-mce-fragment="1">
+<strong>Kopfnote:</strong> Zitrone, Grapefruit, Birne, schwarze Johannisbeere, französischer Lavendel, indischer Kardamon</li>
+<li data-mce-fragment="1">
+<strong>Herznote:</strong> grüner Tee, Jasmin, Osmanthus, Zedernholz</li>
+<li data-mce-fragment="1">
+<strong>Basisnote:</strong> Amber, brasilianischer Mate, pudriger Moschus</li>
+</ul>
+<p><meta charset="utf-8"><span>Das Parfüm wird in einem kleinen, bequemen 33-ml-Fläschchen geliefert, das in jede Tasche oder Jacke passt. </span></p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>https://www.neness-shop.de/products/8084954743050</id>
+      <title>Default Title</title>
+      <s:price currency="EUR">9.90</s:price>
+      <s:sku>250</s:sku>
+      <s:grams>50</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://www.neness-shop.de/products/8079483535626</id>
+    <published>2022-12-23T13:26:44+01:00</published>
+    <updated>2022-12-23T13:26:44+01:00</updated>
+    <link rel="alternate" type="text/html" href="https://www.neness-shop.de/products/neness-gillah-249"/>
+    <title>NENESS GILLAH - 249</title>
+    <s:type></s:type>
+    <s:vendor>Parfumly</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0615/4479/2259/files/N249-nuty.png?v=1692612877"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Anbieter: </strong>Parfumly<br>
+        <strong>Art: </strong><br>
+        <strong>Preis: </strong>
+            9.90
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p> </p>
+<p><strong>NENESS GILLAH</strong> - ein Traumduft für Mann &amp; Frau ! Durch diese außergewöhnlichen Duftnoten entsteht eine Komposition die jeden Blick auf dich zieht.</p>
+<ul>
+<li>
+<strong>Kopfnote:</strong><span> <span class="pointer clickable_note_img notefont0" data-mce-fragment="1" onclick="notesPopup('136070','Bergamotte','No');"><span class="nowrap pointer" data-mce-fragment="1">Bergamotte,</span></span> <span class="pointer clickable_note_img notefont0" data-mce-fragment="1" onclick="notesPopup('136070','Ozon','No');"><span class="nowrap pointer" data-mce-fragment="1">Ozon,</span></span> <span class="pointer clickable_note_img notefont0" data-mce-fragment="1" onclick="notesPopup('136070','Apfel','No');"><span class="nowrap pointer" data-mce-fragment="1">Apfel,</span></span> <span class="pointer clickable_note_img notefont0" data-mce-fragment="1" onclick="notesPopup('136070','Ananas','No');"><span class="nowrap pointer" data-mce-fragment="1">Ananas,</span></span> <span class="pointer clickable_note_img notefont0" data-mce-fragment="1" onclick="notesPopup('136070','Ambrette','No');"><span class="nowrap pointer" data-mce-fragment="1">Ambrette,</span></span> <span class="pointer clickable_note_img notefont0" data-mce-fragment="1" onclick="notesPopup('136070','Lavendel','No');"><span class="nowrap pointer" data-mce-fragment="1">Lavendel,</span></span> <span class="pointer clickable_note_img notefont0" data-mce-fragment="1" onclick="notesPopup('136070','Mandarine','No');"><span class="nowrap pointer" data-mce-fragment="1">Mandarine</span></span></span>
+</li>
+<li>
+<strong>Herznote:</strong><span> Maiglöckchen, Jasmin, Karamell, Zimt, Rosengeranie, Pfirsich, Rose, Orangenblüte</span>
+</li>
+<li>
+<strong>Basisnote:</strong><span> Zedernholz Moschus Patchouli Sandelholz Moos Vetiver Ambra Pflaume Vanille</span>
+</li>
+</ul>
+<p><span><meta charset="utf-8">Das Parfüm wird in einem kleinen, bequemen 33-ml-Fläschchen geliefert, das in jede Tasche passt.</span></p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>https://www.neness-shop.de/products/8079483535626</id>
+      <title>Default Title</title>
+      <s:price currency="EUR">9.90</s:price>
+      <s:sku>249</s:sku>
+      <s:grams>50</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://www.neness-shop.de/products/8077594853642</id>
+    <published>2022-12-21T19:07:04+01:00</published>
+    <updated>2022-12-21T19:07:04+01:00</updated>
+    <link rel="alternate" type="text/html" href="https://www.neness-shop.de/products/neness-xr-off"/>
+    <title>NENESS XR off - 247</title>
+    <s:type></s:type>
+    <s:vendor>Parfumly</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0615/4479/2259/files/N247-nuty.png?v=1692614601"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Anbieter: </strong>Parfumly<br>
+        <strong>Art: </strong><br>
+        <strong>Preis: </strong>
+            9.90
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><meta charset="utf-8">
+<div data-mce-fragment="1">
+<div class="classification" data-mce-fragment="1">
+<p data-mce-fragment="1"><span data-mce-fragment="1"><strong data-mce-fragment="1">NENESS XR off</strong> umhüllt Sie mit seinem unverwechselbaren Duft. </span><span data-mce-fragment="1">Ein unbeschreibliches Dufterlebnis für jeden Tag Fühlen Sie sich leicht &amp; frisch.</span></p>
+</div>
+<div class="classification" data-mce-fragment="1">
+<ul>
+<li>
+<span class="classification__item classification__item--bold" data-mce-fragment="1"><strong>Kopfnote:</strong> </span><span class="classification__item" data-mce-fragment="1">Bergamotte, Limonen, Lavendel</span>
+</li>
+<li>
+<strong><span class="classification__item classification__item--bold" data-mce-fragment="1">Herznote: </span></strong><span class="classification__item" data-mce-fragment="1">Jasmin, Zimt, Honig, Cashmeran</span>
+</li>
+<li>
+<span class="classification__item classification__item--bold" data-mce-fragment="1"><strong>Basisnote:</strong> </span><span class="classification__item" data-mce-fragment="1">Tabak, Tonkabohne, Vanille</span>
+</li>
+</ul>
+</div>
+</div>
+<div data-mce-fragment="1">
+<div class="classification" data-mce-fragment="1"><span class="classification__item" data-mce-fragment="1"></span></div>
+<div class="classification" data-mce-fragment="1"><span class="classification__item" data-mce-fragment="1"></span></div>
+<div class="classification" data-mce-fragment="1"><span class="classification__item" data-mce-fragment="1"><meta charset="utf-8"> <span>Das Parfüm wird in einem kleinen, bequemen 33-ml-Fläschchen geliefert, das in jede Tasche oder Jacke passt. </span></span></div>
+</div></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>https://www.neness-shop.de/products/8077594853642</id>
+      <title>Default Title</title>
+      <s:price currency="EUR">9.90</s:price>
+      <s:sku>247</s:sku>
+      <s:grams>50</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://www.neness-shop.de/products/8077587611914</id>
+    <published>2022-12-21T18:53:27+01:00</published>
+    <updated>2022-12-21T18:53:27+01:00</updated>
+    <link rel="alternate" type="text/html" href="https://www.neness-shop.de/products/neness-ombre-248"/>
+    <title>NENESS OMBRE - 248</title>
+    <s:type></s:type>
+    <s:vendor>Parfumly</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0615/4479/2259/files/N248-nuty.png?v=1692614061"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Anbieter: </strong>Parfumly<br>
+        <strong>Art: </strong><br>
+        <strong>Preis: </strong>
+            9.90
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p><meta charset="utf-8"><span data-mce-fragment="1">Wir präsentieren den Duft für Männer <strong>&amp;</strong> Frauen <b>NENESS OMBRE</b></span><span data-mce-fragment="1"><strong>!</strong> Wenn die Schwärze des Kristalls durch einen Duft ausgedrückt werden könnte, wäre es ein Parfüm bestehend aus:</span></p>
+<ul>
+<li>
+<b>Kopfnote: </b>Oud, Benzoe</li>
+<li>
+<b>Herznote: </b>Weihrauch</li>
+<li>
+<b>Basisnote: </b>Himbeere</li>
+</ul>
+<p><meta charset="utf-8"><span>Das Parfüm wird in einem kleinen, bequemen 33-ml-Fläschchen geliefert, das in jede Tasche oder Jacke passt. </span></p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>https://www.neness-shop.de/products/8077587611914</id>
+      <title>Default Title</title>
+      <s:price currency="EUR">9.90</s:price>
+      <s:sku>248</s:sku>
+      <s:grams>50</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://www.neness-shop.de/products/8077576798474</id>
+    <published>2022-12-21T18:37:48+01:00</published>
+    <updated>2022-12-21T18:37:48+01:00</updated>
+    <link rel="alternate" type="text/html" href="https://www.neness-shop.de/products/neness-oud-246"/>
+    <title>NENESS OUD - 246</title>
+    <s:type></s:type>
+    <s:vendor>Parfumly</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0615/4479/2259/files/N246-nuty.png?v=1692614121"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Anbieter: </strong>Parfumly<br>
+        <strong>Art: </strong><br>
+        <strong>Preis: </strong>
+            9.90
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p><meta charset="utf-8"><span data-mce-fragment="1"><strong data-mce-fragment="1">NENESS OUD</strong> umhüllt Sie mit seinem unverwechselbaren Duft.  Ein unbeschreibliches Dufterlebnis für jeden Tag.  </span></p>
+<div>
+<div class="classification">
+<ul>
+<li>
+<span class="classification__item classification__item--bold"><strong>Kopfnote:</strong> </span><span class="classification__item">Rosenholz, Pfeffer, Kardamom</span>
+</li>
+<li>
+<span class="classification__item classification__item--bold"><strong>Herznote:</strong> </span><span class="classification__item">Vetiver, Sandelholz, Agarholz</span>
+</li>
+<li>
+<span class="classification__item classification__item--bold"><strong>Basisnote:</strong> </span><span class="classification__item">Vanille, Amber, Tonkabohne</span>
+</li>
+</ul>
+<p><span class="classification__item"><meta charset="utf-8">
+<span>Das Parfüm wird in einem kleinen, bequemen 33-ml-Fläschchen geliefert, das in jede Tasche passt.</span></span></p>
+</div>
+</div></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>https://www.neness-shop.de/products/8077576798474</id>
+      <title>Default Title</title>
+      <s:price currency="EUR">9.90</s:price>
+      <s:sku>246</s:sku>
+      <s:grams>50</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://www.neness-shop.de/products/8049069064458</id>
+    <published>2022-12-13T12:48:55+01:00</published>
+    <updated>2022-12-13T12:48:55+01:00</updated>
+    <link rel="alternate" type="text/html" href="https://www.neness-shop.de/products/neness-540-245"/>
+    <title>NENESS 540 - 245</title>
+    <s:type></s:type>
+    <s:vendor>Parfumly</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0615/4479/2259/files/N245-nuty.png?v=1692612439"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Anbieter: </strong>Parfumly<br>
+        <strong>Art: </strong><br>
+        <strong>Preis: </strong>
+            9.90
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><meta charset="utf-8">
+<p data-mce-fragment="1"><span data-mce-fragment="1"><strong data-mce-fragment="1">NENESS 540</strong> umhüllt Sie mit seinem unverwechselbaren Duft. </span><span data-mce-fragment="1">Ein unbeschreibliches Dufterlebnis für jeden Tag Fühlen Sie sich leicht &amp; frisch.</span></p>
+<ul class="AttributeListstyle__Wrapper-sc-12uu3hb-0 pqCTe" data-mce-fragment="1">
+<li class="AttributeListstyle__Attribute-sc-12uu3hb-1 cUVdlf" data-mce-fragment="1">
+<strong data-mce-fragment="1"><span class="AttributeListstyle__Title-sc-12uu3hb-2 hWLeDt" data-mce-fragment="1">Kopfnoten: </span></strong><span class="AttributeListstyle__Title-sc-12uu3hb-2 hWLeDt" data-mce-fragment="1">Jasmin, Safran</span>
+</li>
+<li class="AttributeListstyle__Attribute-sc-12uu3hb-1 cUVdlf" data-mce-fragment="1"><span class="AttributeListstyle__Title-sc-12uu3hb-2 hWLeDt" data-mce-fragment="1"><strong data-mce-fragment="1">Herznoten:</strong><span data-mce-fragment="1"> Zedernholz</span></span></li>
+<li class="AttributeListstyle__Attribute-sc-12uu3hb-1 cUVdlf" data-mce-fragment="1"><span class="AttributeListstyle__Title-sc-12uu3hb-2 hWLeDt" data-mce-fragment="1"><strong data-mce-fragment="1">Basisnoten:</strong><span data-mce-fragment="1"> Ambra</span></span></li>
+</ul>
+<p data-mce-fragment="1"><span class="AttributeListstyle__Title-sc-12uu3hb-2 hWLeDt" data-mce-fragment="1"><span data-mce-fragment="1">Das Parfüm wird in einem kleinen, bequemen 33-ml-Fläschchen geliefert, das in jede Tasche passt.</span></span></p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>https://www.neness-shop.de/products/8049069064458</id>
+      <title>Default Title</title>
+      <s:price currency="EUR">9.90</s:price>
+      <s:sku>245</s:sku>
+      <s:grams>50</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://www.neness-shop.de/products/8049063526666</id>
+    <published>2022-12-13T12:41:53+01:00</published>
+    <updated>2022-12-13T12:41:53+01:00</updated>
+    <link rel="alternate" type="text/html" href="https://www.neness-shop.de/products/neness-cherry"/>
+    <title>NENESS CHERRY - 244</title>
+    <s:type></s:type>
+    <s:vendor>Parfumly</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0615/4479/2259/files/N244-nuty.png?v=1691797939"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Anbieter: </strong>Parfumly<br>
+        <strong>Art: </strong><br>
+        <strong>Preis: </strong>
+            9.90
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p><meta charset="utf-8"><span data-mce-fragment="1"><strong>NENESS CHERRY</strong> umhüllt Sie mit seinem unverwechselbaren Duft. </span><span data-mce-fragment="1">Ein unbeschreibliches Dufterlebnis für jeden Tag Fühlen Sie sich leicht &amp; frisch.</span></p>
+<ul class="AttributeListstyle__Wrapper-sc-12uu3hb-0 pqCTe">
+<li class="AttributeListstyle__Attribute-sc-12uu3hb-1 cUVdlf">
+<strong><span class="AttributeListstyle__Title-sc-12uu3hb-2 hWLeDt">Kopfnoten: </span></strong><span class="AttributeListstyle__Title-sc-12uu3hb-2 hWLeDt">Kirsche, Mandel</span>
+</li>
+<li class="AttributeListstyle__Attribute-sc-12uu3hb-1 cUVdlf"><span class="AttributeListstyle__Title-sc-12uu3hb-2 hWLeDt"><strong>Herznoten:</strong><span> Kirsche, Türkische Rose, Jasmin</span></span></li>
+<li class="AttributeListstyle__Attribute-sc-12uu3hb-1 cUVdlf"><span class="AttributeListstyle__Title-sc-12uu3hb-2 hWLeDt"><strong>Basisnoten:</strong><span> Perubalsam, Tonkabohne, Sandelholz, Vetiver, Zedernholz</span></span></li>
+</ul>
+<p><span class="AttributeListstyle__Title-sc-12uu3hb-2 hWLeDt"><span><meta charset="utf-8">Das Parfüm wird in einem kleinen, bequemen 33-ml-Fläschchen geliefert, das in jede Tasche passt.</span></span></p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>https://www.neness-shop.de/products/8049063526666</id>
+      <title>Default Title</title>
+      <s:price currency="EUR">9.90</s:price>
+      <s:sku>244</s:sku>
+      <s:grams>50</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://www.neness-shop.de/products/8032987644170</id>
+    <published>2022-11-30T12:36:38+01:00</published>
+    <updated>2022-11-30T12:36:38+01:00</updated>
+    <link rel="alternate" type="text/html" href="https://www.neness-shop.de/products/365days-herren"/>
+    <title>365DAYS MAN</title>
+    <s:type></s:type>
+    <s:vendor>Parfumly</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0615/4479/2259/products/meski-opakowanie-butelka.png?v=1669808261"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Anbieter: </strong>Parfumly<br>
+        <strong>Art: </strong><br>
+        <strong>Preis: </strong>
+            44.90
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><meta charset="utf-8">
+<p data-mce-fragment="1" class="tw-data-text tw-text-large tw-ta" data-placeholder="Übersetzung" id="tw-target-text" dir="ltr"><span data-mce-fragment="1" class="Y2IQFc" lang="de"><strong>365DAYS MAN</strong> ein Duft, der Ihnen Kraft gibt. Sie mögen frische, energiegeladene Düfte, die Sie zum Handeln anregen und Ihnen Selbstvertrauen geben? Dann ist dieses Parfüm für Sie gemacht! </span></p>
+<p data-mce-fragment="1" class="tw-data-text tw-text-large tw-ta" data-placeholder="Übersetzung" dir="ltr"><span class="Y2IQFc" lang="de">Eleganter, fruchtiger Chypre-Duft</span><span style="font-family: -apple-system, BlinkMacSystemFont, 'San Francisco', 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif; font-size: 1.4em;"> ✓</span><br></p>
+<p class="tw-data-text tw-text-large tw-ta" data-placeholder="Übersetzung" dir="ltr"><span class="Y2IQFc" lang="de"> umfassende und langanhaltende Zusammensetzung</span><span style="font-family: -apple-system, BlinkMacSystemFont, 'San Francisco', 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif; font-size: 1.4em;">✓</span></p>
+<p class="tw-data-text tw-text-large tw-ta" data-placeholder="Übersetzung" id="tw-target-text" dir="ltr"><span class="Y2IQFc" lang="de">Heben Sie sich von der Masse ab</span><span style="font-family: -apple-system, BlinkMacSystemFont, 'San Francisco', 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif; font-size: 1.4em;"> ✓</span></p>
+<ul data-mce-fragment="1"></ul></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>https://www.neness-shop.de/products/8032987644170</id>
+      <title>Default Title</title>
+      <s:price currency="EUR">44.90</s:price>
+      <s:sku>1000</s:sku>
+      <s:grams>50</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://www.neness-shop.de/products/7999604195594</id>
+    <published>2022-09-12T16:12:40+02:00</published>
+    <updated>2022-09-12T16:12:40+02:00</updated>
+    <link rel="alternate" type="text/html" href="https://www.neness-shop.de/products/eros-man"/>
+    <title>CUPID - 192</title>
+    <s:type></s:type>
+    <s:vendor>Parfumly</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0615/4479/2259/files/N192-nuty.png?v=1690198340"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Anbieter: </strong>Parfumly<br>
+        <strong>Art: </strong><br>
+        <strong>Preis: </strong>
+            9.90
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><meta charset="utf-8">
+<p class="tw-data-text tw-text-large tw-ta" data-placeholder="Übersetzung" id="tw-target-text" dir="ltr" data-mce-fragment="1"><span class="Y2IQFc" lang="de" data-mce-fragment="1">CUPID - ist die Quintessenz eines Mannes mit romantischer Natur. Es betont die Charakterstärke, die sich in der Subtilität und Hingabe an den geliebten Menschen widerspiegelt.</span></p>
+<ul>
+<li><span class="Y2IQFc" lang="de" data-mce-fragment="1"><strong>Kopfnote:</strong><span> Minze, Zitrone</span></span></li>
+<li><span class="Y2IQFc" lang="de" data-mce-fragment="1"><strong>Herznote:</strong><span> Ambrox, Grüner Apfel, Storchschnäbel</span></span></li>
+<li><span class="Y2IQFc" lang="de" data-mce-fragment="1"><strong>Basisnote:</strong><span> Eichenmoos, Tonkabohnen, Vanille</span></span></li>
+</ul>
+<p><span class="Y2IQFc" lang="de" data-mce-fragment="1"><span><meta charset="utf-8">Durch die 33ml Flakon-Flasche bestehend aus Glas, kannst du deinen Duft immer bei dir haben. </span></span></p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>https://www.neness-shop.de/products/7999604195594</id>
+      <title>Default Title</title>
+      <s:price currency="EUR">9.90</s:price>
+      <s:sku>192</s:sku>
+      <s:grams>50</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://www.neness-shop.de/products/7999599804682</id>
+    <published>2022-09-12T15:31:28+02:00</published>
+    <updated>2022-09-12T15:31:28+02:00</updated>
+    <link rel="alternate" type="text/html" href="https://www.neness-shop.de/products/my-sceent"/>
+    <title>MY SCEENT - 035</title>
+    <s:type></s:type>
+    <s:vendor>Parfumly</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0615/4479/2259/products/035K.jpg?v=1662989489"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Anbieter: </strong>Parfumly<br>
+        <strong>Art: </strong><br>
+        <strong>Preis: </strong>
+            9.90
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p><strong>MY SCEENT</strong> - eine einzigartige, orientalische Reise. Sie suchen außergewöhnliche, ausdrucksstarke Düfte, die an den Orient erinnern? - Dann ist <strong>MY SCEENT</strong> genau das richtige Parfüm. </p>
+<ul>
+<li>
+<strong>Kopfnote:</strong><span> Ingwer</span>
+</li>
+<li>
+<strong>Herznote:</strong><span> Mandarine</span>
+</li>
+<li>
+<strong>Basisnote:</strong><span> Würzige Noten</span>
+</li>
+</ul>
+<p><b>MY SCEENT</b> ist eine einzigartige, verführerische Komposition. Dank der praktischen Flakon-Flasche des 33-ml-Parfüms hast Du es immer dabei.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>https://www.neness-shop.de/products/7999599804682</id>
+      <title>Default Title</title>
+      <s:price currency="EUR">9.90</s:price>
+      <s:sku>035</s:sku>
+      <s:grams>50</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://www.neness-shop.de/products/7999595151626</id>
+    <published>2022-09-12T15:03:02+02:00</published>
+    <updated>2022-09-12T15:03:02+02:00</updated>
+    <link rel="alternate" type="text/html" href="https://www.neness-shop.de/products/diamond-man"/>
+    <title>DIAMOND MAN - 011</title>
+    <s:type></s:type>
+    <s:vendor>Parfumly</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0615/4479/2259/products/011A.jpg?v=1662987783"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Anbieter: </strong>Parfumly<br>
+        <strong>Art: </strong><br>
+        <strong>Preis: </strong>
+            9.90
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><meta charset="utf-8">
+<p class="tw-data-text tw-text-large tw-ta" data-placeholder="Übersetzung" id="tw-target-text" dir="ltr" data-mce-fragment="1"><span class="Y2IQFc" lang="de" data-mce-fragment="1">DIAMOND MAN - Es ist ein Duft, der jeden starken, selbstbewussten Mann ansprechen wird! Die Duftnoten in dieser Kombination geben einen holzigen Duft von sich. </span></p>
+<ul>
+<li><span class="Y2IQFc" lang="de" data-mce-fragment="1"><strong>Kopfnote:</strong><span> Bergamotte, Guajak</span></span></li>
+<li><span class="Y2IQFc" lang="de" data-mce-fragment="1"><strong>Herznote:</strong><span> Szechuanpfeffer, Vetiver, Zeder</span></span></li>
+<li><span class="Y2IQFc" lang="de" data-mce-fragment="1"><strong>Basisnote:</strong><span> Ambra, Kakao</span></span></li>
+</ul>
+<p><span class="Y2IQFc" lang="de" data-mce-fragment="1"><span><meta charset="utf-8">Das 33 ml Parfüm ist praktisch und somit immer dabei, ob im Auto, in der Tasche oder Zuhause.</span></span></p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>https://www.neness-shop.de/products/7999595151626</id>
+      <title>Default Title</title>
+      <s:price currency="EUR">9.90</s:price>
+      <s:sku>011</s:sku>
+      <s:grams>50</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://www.neness-shop.de/products/7999580668170</id>
+    <published>2022-09-12T14:38:35+02:00</published>
+    <updated>2022-09-12T14:38:35+02:00</updated>
+    <link rel="alternate" type="text/html" href="https://www.neness-shop.de/products/004"/>
+    <title>AQUA PROFUMO - 004</title>
+    <s:type></s:type>
+    <s:vendor>Parfumly</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0615/4479/2259/products/004A.jpg?v=1662986207"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Anbieter: </strong>Parfumly<br>
+        <strong>Art: </strong><br>
+        <strong>Preis: </strong>
+            9.90
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><meta charset="utf-8">
+<p class="tw-data-text tw-text-large tw-ta" data-placeholder="Übersetzung" id="tw-target-text" dir="ltr" data-mce-fragment="1"><span class="Y2IQFc" lang="de" data-mce-fragment="1"><strong>Aqua Profumo</strong> ist ein Eau de Parfum für Männer, das Düfte enthält, die Ihnen helfen, rund um die Uhr frisch zu bleiben. Der Duft ist äußerst anhaltend und erinnert an die Tiefen des Ozeans.</span></p>
+<ul>
+<li><span class="Y2IQFc" lang="de" data-mce-fragment="1"><strong>Kopfnote:</strong><span> Bergamotte</span></span></li>
+<li><span class="Y2IQFc" lang="de" data-mce-fragment="1"><strong>Herznote:</strong><span> Meeresnoten, Salbei</span></span></li>
+<li><span class="Y2IQFc" lang="de" data-mce-fragment="1"><strong>Basisnote:</strong><span> Patschuli</span></span></li>
+</ul>
+<p><span class="Y2IQFc" lang="de" data-mce-fragment="1"><span><meta charset="utf-8">Das 33ml-Parfüm ist während einer Präsentation im Büro, einem eleganten Bankett oder einem Date <strong>unersetzlich</strong>.</span></span></p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>https://www.neness-shop.de/products/7999580668170</id>
+      <title>Default Title</title>
+      <s:price currency="EUR">9.90</s:price>
+      <s:sku>004</s:sku>
+      <s:grams>50</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://www.neness-shop.de/products/7998981570826</id>
+    <published>2022-09-09T14:02:42+02:00</published>
+    <updated>2022-09-09T14:02:42+02:00</updated>
+    <link rel="alternate" type="text/html" href="https://www.neness-shop.de/products/man"/>
+    <title>MAN - 076</title>
+    <s:type></s:type>
+    <s:vendor>Parfumly</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0615/4479/2259/products/076K.jpg?v=1662724963"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Anbieter: </strong>Parfumly<br>
+        <strong>Art: </strong><br>
+        <strong>Preis: </strong>
+            9.90
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><meta charset="utf-8">
+<p class="tw-data-text tw-text-large tw-ta" data-placeholder="Übersetzung" id="tw-target-text" dir="ltr" data-mce-fragment="1"><span class="Y2IQFc" lang="de" data-mce-fragment="1"><strong>MAN</strong> - ein Parfüm, an dem niemand gleichgültig vorbeigeht Ein Duft, der überwältigt, Begierde weckt Attraktivität &amp; Männlichkeit und Selbstbewusstsein stärkt. Sie suchen ein Parfum, das nicht nur Ihren ursprünglichen Charakter unterstreicht, sondern Ihnen auch Charisma verleiht ? Dann ist der Duft die richtige Wahl. </span></p>
+<ul>
+<li>
+<strong>Kopfnote:</strong><span> Bergamotte, Rosmarin</span>
+</li>
+<li>
+<strong>Herznote:</strong><span> Lorbeerblatt, Minze, Muskatnuss</span>
+</li>
+<li>
+<strong>Basisnote:</strong><span> Moschus, Zypresse</span>
+</li>
+</ul>
+<p><span><strong>MAN</strong> - ist eine einzigartige, verführerische Komposition. Dank der praktischen Flakon-Flasche des 33-ml-Parfüms hast Du es immer dabei.</span></p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>https://www.neness-shop.de/products/7998981570826</id>
+      <title>Default Title</title>
+      <s:price currency="EUR">9.90</s:price>
+      <s:sku>076</s:sku>
+      <s:grams>50</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://www.neness-shop.de/products/7973807030538</id>
+    <published>2022-07-04T23:59:00+02:00</published>
+    <updated>2022-07-04T23:59:00+02:00</updated>
+    <link rel="alternate" type="text/html" href="https://www.neness-shop.de/products/la-male"/>
+    <title>LA MALE - 138</title>
+    <s:type></s:type>
+    <s:vendor>Parfumly</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0615/4479/2259/products/138K.jpg?v=1656971941"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Anbieter: </strong>Parfumly<br>
+        <strong>Art: </strong><br>
+        <strong>Preis: </strong>
+            9.90
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p data-mce-fragment="1"><span class="Y2IQFc" lang="de" data-mce-fragment="1">Parfüm<span data-mce-fragment="1"> </span><strong data-mce-fragment="1">LA MALE</strong><span data-mce-fragment="1"> </span>darf unter den vielen ausgezeichneten Produkten von<span data-mce-fragment="1"> </span><strong data-mce-fragment="1">NENESS</strong><span data-mce-fragment="1"> </span>nicht fehlen. </span><span data-mce-fragment="1">Die Frische von Zitrus und Minze wird durch entspannenden Lavendel gebrochen. Wenn es nicht genug ausgefallene Kombinationen wären, verbirgt der schöne Flakon auch noch die Süße von Vanille und sinnlichem Zedernholz.</span></p>
+<p data-mce-fragment="1"><span data-mce-fragment="1"><strong data-mce-fragment="1">Kopfnote:</strong> Bergamotte, Kardamom, Lavendel, Minze, Wermutkraut<br data-mce-fragment="1"><strong data-mce-fragment="1">Herznote:</strong> Kreuzkümmel, Orangenblüte, Zimt<br data-mce-fragment="1"><strong data-mce-fragment="1">Basisnote:</strong> Ambra, Sandelholz, Tonkabohnen, Vanille, Zeder</span></p>
+<p data-mce-fragment="1"><span data-mce-fragment="1"><b data-mce-fragment="1">LA MALE </b>ist eine einzigartige, verführerische Komposition. Dank der praktischen Flakon-Flasche des 33-ml-Parfüms hast Du es immer dabei.</span></p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>https://www.neness-shop.de/products/7973807030538</id>
+      <title>Default Title</title>
+      <s:price currency="EUR">9.90</s:price>
+      <s:sku>138</s:sku>
+      <s:grams>50</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://www.neness-shop.de/products/7962040533258</id>
+    <published>2022-05-20T19:05:25+02:00</published>
+    <updated>2022-05-20T19:05:25+02:00</updated>
+    <link rel="alternate" type="text/html" href="https://www.neness-shop.de/products/sou-vag"/>
+    <title>CRAZY MAN - 114</title>
+    <s:type></s:type>
+    <s:vendor>Parfumly</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0615/4479/2259/files/N114-nuty.png?v=1690111395"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Anbieter: </strong>Parfumly<br>
+        <strong>Art: </strong><br>
+        <strong>Preis: </strong>
+            9.90
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p class="tw-data-text tw-text-large tw-ta" data-placeholder="Übersetzung" id="tw-target-text" dir="ltr" data-mce-fragment="1"><span class="Y2IQFc" lang="de" data-mce-fragment="1">Die Perfektion der Parfumly-Düfte wird durch <strong>CRAZY MAN</strong> perfekt zum Ausdruck gebracht. Das Parfüm für Männer, für die es keine unmöglichen Aufgaben gibt.</span></p>
+<ul>
+<li><span class="Y2IQFc" lang="de" data-mce-fragment="1"><strong>Kopfnote:</strong><span> Bergamotte, Mandarine</span></span></li>
+<li><span class="Y2IQFc" lang="de" data-mce-fragment="1"><strong>Herznote:</strong><span> Sandelholz, Zeder</span></span></li>
+<li><span class="Y2IQFc" lang="de" data-mce-fragment="1"><strong>Basisnote:</strong><span> Tonkabohnen, Vanille</span></span></li>
+</ul>
+<p><span class="Y2IQFc" lang="de" data-mce-fragment="1"><span>Das 33 ml Parfüm ist praktisch und somit immer dabei, ob im Auto, in der Tasche oder Zuhause.</span></span></p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>https://www.neness-shop.de/products/7962040533258</id>
+      <title>Default Title</title>
+      <s:price currency="EUR">9.90</s:price>
+      <s:sku>114</s:sku>
+      <s:grams>50</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://www.neness-shop.de/products/7961485050122</id>
+    <published>2022-05-18T15:56:05+02:00</published>
+    <updated>2022-05-18T15:56:05+02:00</updated>
+    <link rel="alternate" type="text/html" href="https://www.neness-shop.de/products/million-man"/>
+    <title>MILION MAN / MEN&apos;S GOLD CARD - 176</title>
+    <s:type></s:type>
+    <s:vendor>Parfumly</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0615/4479/2259/files/N176-nuty.png?v=1691740312"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Anbieter: </strong>Parfumly<br>
+        <strong>Art: </strong><br>
+        <strong>Preis: </strong>
+            9.90
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p class="tw-data-text tw-text-large tw-ta" data-placeholder="Übersetzung" id="tw-target-text" dir="ltr" data-mce-fragment="1"><span class="Y2IQFc" lang="de" data-mce-fragment="1">Eine <strong>Milion Man</strong> ist definitiv mehr als eine Million Dollar wert! Alles dank der wunderbaren Komposition, die Mandarine, Minze, Rosenblüten und Zimt enthält. Eine solche Mischung ist ein fertiges Rezept, um die Stärke seines Charakters und seinen Mut bei der Verfolgung eines bestimmten Ziels bei einem Mann zu extrahieren.</span></p>
+<ul>
+<li><span class="Y2IQFc" lang="de" data-mce-fragment="1"><strong>Kopfnote:</strong><span> Mandarine, Minze</span></span></li>
+<li><span class="Y2IQFc" lang="de" data-mce-fragment="1"><strong>Herznote:</strong><span> Rose</span></span></li>
+<li><span class="Y2IQFc" lang="de" data-mce-fragment="1"><strong>Basisnote:</strong><span> Zimt</span></span></li>
+</ul>
+<p><span class="Y2IQFc" lang="de" data-mce-fragment="1"><span>Auch das 33 ml Parfüm ist Herren gewidmet, die ihren Lieblingsduft gerne<br>in der Tasche oder Jacke dabei haben.</span></span></p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>https://www.neness-shop.de/products/7961485050122</id>
+      <title>Default Title</title>
+      <s:price currency="EUR">9.90</s:price>
+      <s:sku>176</s:sku>
+      <s:grams>50</s:grams>
+    </s:variant>
+  </entry>
+</feed>

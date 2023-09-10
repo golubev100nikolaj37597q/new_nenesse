@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xml:lang="de" xmlns="http://www.w3.org/2005/Atom" xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:s="http://jadedpixel.com/-/spec/shopify">
+  <id>https://www.neness-shop.de/collections/all.atom</id>
+  <link rel="alternate" type="text/html" href="https://www.neness-shop.de/collections/all"/>
+  <link rel="self" type="application/atom+xml" href="https://www.neness-shop.de/collections/raumdufte.atom"/>
+  <title>Neness</title>
+  <updated>2023-05-05T15:01:12+02:00</updated>
+  <author>
+    <name>Neness</name>
+  </author>
+  <entry>
+    <id>https://www.neness-shop.de/products/8234152919306</id>
+    <published>2023-05-05T15:01:12+02:00</published>
+    <updated>2023-05-05T15:01:12+02:00</updated>
+    <link rel="alternate" type="text/html" href="https://www.neness-shop.de/products/raumduft-milon-men-176"/>
+    <title>Raumduft - MILON MEN 176</title>
+    <s:type></s:type>
+    <s:vendor>Neness</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0615/4479/2259/files/Neness_176_AO.jpg?v=1683291676"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Anbieter: </strong>Neness<br>
+        <strong>Art: </strong><br>
+        <strong>Preis: </strong>
+            29.90
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>MILION MAN ist ein Raumduft, der von dem beliebten Herrenduft MILION MEN von NENESS inspiriert wurde. Der Duft verbindet maskuline und verführerische Noten zu einem unvergesslichen Dufterlebnis. Die Duftkomposition besteht aus Noten von Pfefferminz, Zimt, Leder und Bernstein und verströmt einen luxuriösen und sinnlichen Duft. Der Raumduft wird in einem Schwarz/Goldenen Flakon geliefert, die den Duft im Raum verteilen und für eine langanhaltende Wirkung sorgen. Der Raumduft eignet sich perfekt für Schlafzimmer, Wohnzimmer oder jeden Raum, in dem Sie eine exklusive Atmosphäre schaffen möchten. Probieren Sie es aus und lassen Sie sich von dem verführerischen Duft verzaubern!</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>https://www.neness-shop.de/products/8234152919306</id>
+      <title>Default Title</title>
+      <s:price currency="EUR">29.90</s:price>
+      <s:sku>D176</s:sku>
+      <s:grams>110</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://www.neness-shop.de/products/8234151182602</id>
+    <published>2023-05-05T14:48:33+02:00</published>
+    <updated>2023-05-05T14:48:33+02:00</updated>
+    <link rel="alternate" type="text/html" href="https://www.neness-shop.de/products/raumduft-lavendel"/>
+    <title>Raumduft - LAVENDEL</title>
+    <s:type></s:type>
+    <s:vendor>Neness</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0615/4479/2259/files/Neness_lavender_AO.jpg?v=1683290916"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Anbieter: </strong>Neness<br>
+        <strong>Art: </strong><br>
+        <strong>Preis: </strong>
+            29.90
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>NENESS LAVENDEL ist ein Raumduft, der eine entspannende und beruhigende Atmosphäre in Ihr Zuhause bringt. Der Duft von Lavendel hat eine lange Tradition als beruhigendes und schlafförderndes Mittel und kann Ihnen helfen, Stress abzubauen und besser zu schlafen. Der Raumduft wird in einem eleganten Glasflakon geliefert, die den Duft im Raum verteilen und für eine langanhaltende Wirkung sorgen. Das ätherische Lavendelöl, das in diesem Raumduft enthalten ist, ist von höchster Qualität. NENESS LAVENDEL eignet sich perfekt für Schlafzimmer, Wohnzimmer oder jeden Raum, in dem Sie eine entspannte Atmosphäre schaffen möchten. Probieren Sie es aus und lassen Sie sich von dem beruhigenden Duft verzaubern!</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>https://www.neness-shop.de/products/8234151182602</id>
+      <title>Default Title</title>
+      <s:price currency="EUR">29.90</s:price>
+      <s:sku>LLL</s:sku>
+      <s:grams>110</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://www.neness-shop.de/products/8234149609738</id>
+    <published>2023-05-05T14:42:20+02:00</published>
+    <updated>2023-05-05T14:42:20+02:00</updated>
+    <link rel="alternate" type="text/html" href="https://www.neness-shop.de/products/raumduft-neness-vanille"/>
+    <title>Raumduft - NENESS VANILLE</title>
+    <s:type></s:type>
+    <s:vendor>Neness</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0615/4479/2259/files/Neness_vanilla_AO.jpg?v=1683290544"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Anbieter: </strong>Neness<br>
+        <strong>Art: </strong><br>
+        <strong>Preis: </strong>
+            29.90
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>Der perfekte Raumduft für alle, die sich in ihrem Zuhause eine gemütliche und warme Atmosphäre wünschen. Der Duft nach Vanille ist süß, beruhigend und erinnert an gemütliche Abende. Der Raumduft wird in einem eleganten Glasflakon geliefert, die den Duft im Raum verteilen und für eine langanhaltende Wirkung sorgen. Der Raumduft von NENESS eignet sich perfekt für Wohnzimmer, Schlafzimmer oder jeden Raum, in dem Sie eine entspannte und angenehme Atmosphäre schaffen möchten. Probieren Sie es aus und lassen Sie sich von dem sinnlichen Duft verzaubern!</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>https://www.neness-shop.de/products/8234149609738</id>
+      <title>Default Title</title>
+      <s:price currency="EUR">29.90</s:price>
+      <s:sku>VVV</s:sku>
+      <s:grams>110</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://www.neness-shop.de/products/8234142990602</id>
+    <published>2023-05-05T14:26:30+02:00</published>
+    <updated>2023-05-05T14:26:30+02:00</updated>
+    <link rel="alternate" type="text/html" href="https://www.neness-shop.de/products/raumduft-neness-la-bella"/>
+    <title>Raumduft - NENESS LA BELLA 161</title>
+    <s:type></s:type>
+    <s:vendor>Neness</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0615/4479/2259/files/Neness_161_AO.jpg?v=1683289595"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Anbieter: </strong>Neness<br>
+        <strong>Art: </strong><br>
+        <strong>Preis: </strong>
+            29.90
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>Verleihen Sie Ihrem Zuhause eine luxuriöse Atmosphäre mit dem Raumduft "La Bella“. Dieser Duft ist inspiriert von dem gleichnamigen Duft von NENESS LA BELLA und kombiniert warme, süße und blumige Noten zu einem unvergesslichen Dufterlebnis. Die Duftkomposition besteht aus Noten von Orangenblüten, Jasmin, Iris und Patschuli und verströmt einen verführerischen und sinnlichen Duft. Der Raumduft kommt in einem eleganten Glasflakon, die den Duft im Raum verteilen und für eine langanhaltende Wirkung sorgen. Der La Bella Raumduft eignet sich perfekt für Schlafzimmer, Wohnzimmer oder jeden Raum, in dem Sie eine exklusive Atmosphäre schaffen möchten. Probieren Sie es aus und lassen Sie sich von diesem wunderbaren Duft verzaubern!</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>https://www.neness-shop.de/products/8234142990602</id>
+      <title>Default Title</title>
+      <s:price currency="EUR">29.90</s:price>
+      <s:sku>D161</s:sku>
+      <s:grams>110</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://www.neness-shop.de/products/8234141942026</id>
+    <published>2023-05-05T14:23:19+02:00</published>
+    <updated>2023-05-05T14:23:19+02:00</updated>
+    <link rel="alternate" type="text/html" href="https://www.neness-shop.de/products/raumduft-neness-flower-fruits"/>
+    <title>Raumduft - NENESS FLOWER &amp; FRUITS</title>
+    <s:type></s:type>
+    <s:vendor>Neness</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0615/4479/2259/files/Neness_084_AO.jpg?v=1683289402"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Anbieter: </strong>Neness<br>
+        <strong>Art: </strong><br>
+        <strong>Preis: </strong>
+            29.90
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>Der Raumduft, ist ein exotischer und sinnlicher Duft, der eine faszinierende Kombination aus fruchtigen und blumigen Noten bietet. Er kombiniert die fruchtigen Noten von Granatapfel und Kumquat mit der blumigen Note von Lotusblüte und Orchidee. Eine subtile Mischung aus Amber und Mahagoni sorgt für eine angenehme Wärme und schenkt dem Duft eine einzigartige Tiefe.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>https://www.neness-shop.de/products/8234141942026</id>
+      <title>Default Title</title>
+      <s:price currency="EUR">29.90</s:price>
+      <s:sku>D084</s:sku>
+      <s:grams>110</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://www.neness-shop.de/products/8234141286666</id>
+    <published>2023-05-05T14:21:34+02:00</published>
+    <updated>2023-05-05T14:21:34+02:00</updated>
+    <link rel="alternate" type="text/html" href="https://www.neness-shop.de/products/raumduft-madam-neness-067"/>
+    <title>Raumduft - MADAM NENESS 067</title>
+    <s:type></s:type>
+    <s:vendor>Neness</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0615/4479/2259/files/Neness_067_AO.jpg?v=1683289297"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Anbieter: </strong>Neness<br>
+        <strong>Art: </strong><br>
+        <strong>Preis: </strong>
+            29.90
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>Der Raumduft, der nach MADAM NENESS riecht, ist ein eleganter und sinnlicher Duft, der eine faszinierende Kombination aus blumigen und holzigen Noten bietet. Er kombiniert die frischen Noten von Orangenblüte und Grapefruit mit der blumigen Note von Jasmin und Rose. Eine subtile Mischung aus Vanille und Patschuli sorgt für eine angenehme Süße und schenkt dem Duft eine einzigartige Tiefe. Dieser Raumduft schafft eine feminine und verführerische Atmosphäre, die Ihren Raum mit dem unverwechselbaren Charme von MADAM NENESS erfüllt.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>https://www.neness-shop.de/products/8234141286666</id>
+      <title>Default Title</title>
+      <s:price currency="EUR">29.90</s:price>
+      <s:sku>D067</s:sku>
+      <s:grams>110</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://www.neness-shop.de/products/8234140795146</id>
+    <published>2023-05-05T14:20:04+02:00</published>
+    <updated>2023-05-05T14:20:04+02:00</updated>
+    <link rel="alternate" type="text/html" href="https://www.neness-shop.de/products/raumduft-neness-invict-man-175"/>
+    <title>Raumduft - NENESS INVICT MAN 175</title>
+    <s:type></s:type>
+    <s:vendor>Neness</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0615/4479/2259/files/Neness_175_AO.jpg?v=1683289209"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Anbieter: </strong>Neness<br>
+        <strong>Art: </strong><br>
+        <strong>Preis: </strong>
+            29.90
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>Der Raumduft, der nach NENESS INVICT MAN riecht, ist ein sportlicher und maskuliner Duft, der eine erfrischende Kombination aus Meeresnoten und Gewürzen bietet. Er kombiniert die erfrischenden Noten von Grapefruit und Meerwasser mit der würzigen Note von Lorbeerblättern und Guajakholz. Eine subtile Mischung aus Ambra und Patschuli sorgt für eine angenehme Tiefe und rundet den Duft perfekt ab. Dieser Raumduft schafft eine dynamische und energiegeladene Atmosphäre, die Ihren Raum mit dem kraftvollen Charme von INVICT MAN erfüllt.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>https://www.neness-shop.de/products/8234140795146</id>
+      <title>Default Title</title>
+      <s:price currency="EUR">29.90</s:price>
+      <s:sku>D175</s:sku>
+      <s:grams>110</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://www.neness-shop.de/products/8234140238090</id>
+    <published>2023-05-05T14:18:20+02:00</published>
+    <updated>2023-05-05T14:18:20+02:00</updated>
+    <link rel="alternate" type="text/html" href="https://www.neness-shop.de/products/raumduft-nenesssi"/>
+    <title>Raumduft - NENESSSi 016</title>
+    <s:type></s:type>
+    <s:vendor>Neness</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0615/4479/2259/files/Neness_016_AO.jpg?v=1683289105"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Anbieter: </strong>Neness<br>
+        <strong>Art: </strong><br>
+        <strong>Preis: </strong>
+            29.90
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>Der Raumduft, der nach NENESSSi riecht, ist ein eleganter und femininer Duft, der eine sinnliche Kombination aus blumigen und fruchtigen Noten bietet. Er kombiniert die fruchtigen Noten von Cassis und Mandarine mit der blumigen Note von Freesie und Rose. Eine subtile Mischung aus Vanille und Patchouli sorgt für eine angenehme Süße und schenkt dem Duft eine einzigartige Tiefe. Dieser Raumduft schafft eine warme und einladende Atmosphäre, die Ihren Raum mit dem unverwechselbaren Charme von NENESSSi erfüllt.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>https://www.neness-shop.de/products/8234140238090</id>
+      <title>Default Title</title>
+      <s:price currency="EUR">29.90</s:price>
+      <s:sku>D016</s:sku>
+      <s:grams>110</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://www.neness-shop.de/products/8234139549962</id>
+    <published>2023-05-05T14:16:39+02:00</published>
+    <updated>2023-05-05T14:16:39+02:00</updated>
+    <link rel="alternate" type="text/html" href="https://www.neness-shop.de/products/raumduft-neness-bleu"/>
+    <title>Raumduft - NENESS BLEU 059</title>
+    <s:type></s:type>
+    <s:vendor>Neness</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0615/4479/2259/files/Neness_059_AO.jpg?v=1683289003"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Anbieter: </strong>Neness<br>
+        <strong>Art: </strong><br>
+        <strong>Preis: </strong>
+            29.90
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>Der Raumduft, der nach NENESS BLEU riecht, ist ein maskuliner und holziger Duft, der eine erfrischende Kombination aus Zitrusfrüchten und würzigen Noten bietet. Er kombiniert die erfrischenden Noten von Bergamotte und Zitrone mit der würzigen Note von Ingwer und rosa Pfeffer. Eine subtile Mischung aus Zedernholz und Vetiver sorgt für eine angenehme Tiefe und rundet den Duft perfekt ab. Dieser Raumduft schafft eine elegante und maskuline Atmosphäre, die Ihren Raum mit dem zeitlosen Charme von NENESS BLEU erfüllt.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>https://www.neness-shop.de/products/8234139549962</id>
+      <title>Default Title</title>
+      <s:price currency="EUR">29.90</s:price>
+      <s:sku>D059</s:sku>
+      <s:grams>110</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://www.neness-shop.de/products/8234138894602</id>
+    <published>2023-05-05T14:15:08+02:00</published>
+    <updated>2023-05-05T14:15:08+02:00</updated>
+    <link rel="alternate" type="text/html" href="https://www.neness-shop.de/products/raumduft-neness-girl-051"/>
+    <title>Raumduft - NENESS GIRL 051</title>
+    <s:type></s:type>
+    <s:vendor>Neness</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0615/4479/2259/files/Neness_051_AO.jpg?v=1683288912"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Anbieter: </strong>Neness<br>
+        <strong>Art: </strong><br>
+        <strong>Preis: </strong>
+            29.90
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2">Der Raumduft, der nach NENESS GIRL riecht, ist ein selbstbewusster und sinnlicher Duft, der eine faszinierende Kombination aus floralen und würzigen Noten bietet. Er kombiniert die blumigen Noten von Jasmin und Tuberose mit der würzigen Note von Tonkabohne und Kakao. Eine subtile Mischung aus Sandelholz und Zimt sorgt für eine angenehme Wärme und schenkt dem Duft eine einzigartige Tiefe. Dieser Raumduft schafft eine elegante und verführerische Atmosphäre, die Ihren Raum mit dem unwiderstehlichen Charme von NENESS GIRL erfüllt</td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>https://www.neness-shop.de/products/8234138894602</id>
+      <title>Default Title</title>
+      <s:price currency="EUR">29.90</s:price>
+      <s:sku>D051</s:sku>
+      <s:grams>110</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://www.neness-shop.de/products/8234134929674</id>
+    <published>2023-05-05T14:06:01+02:00</published>
+    <updated>2023-05-05T14:06:01+02:00</updated>
+    <link rel="alternate" type="text/html" href="https://www.neness-shop.de/products/raumduft-allien-world-182"/>
+    <title>Raumduft - ALLIEN WORLD 182</title>
+    <s:type></s:type>
+    <s:vendor>Neness</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0615/4479/2259/files/Neness_182_AO.jpg?v=1683288365"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Anbieter: </strong>Neness<br>
+        <strong>Art: </strong><br>
+        <strong>Preis: </strong>
+            29.90
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>Der Raumduft, der nach ALLIEN WORLD riecht, ist ein faszinierender und intensiver Duft, der eine unvergessliche olfaktorische Erfahrung bietet. Er kombiniert die warmen und holzigen Noten von Amber und Cashmeran mit der blumigen und exotischen Note von Jasmin und Heliotrop. Eine subtile Mischung aus Vanille und weißem Bernstein sorgt für eine angenehme Süße und schenkt dem Duft eine einzigartige Tiefe. Dieser Raumduft schafft eine mystische und geheimnisvolle Atmosphäre, die Ihren Raum mit dem verführerischen Charme von ALLIEN WORLD erfüllt.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>https://www.neness-shop.de/products/8234134929674</id>
+      <title>Default Title</title>
+      <s:price currency="EUR">29.90</s:price>
+      <s:sku>D182</s:sku>
+      <s:grams>110</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://www.neness-shop.de/products/8234127229194</id>
+    <published>2023-05-05T13:53:59+02:00</published>
+    <updated>2023-05-05T13:53:59+02:00</updated>
+    <link rel="alternate" type="text/html" href="https://www.neness-shop.de/products/raumduft-neness-day-214"/>
+    <title>Raumduft - NENESS DAY 214</title>
+    <s:type></s:type>
+    <s:vendor>Neness</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0615/4479/2259/files/Neness_214_AO.jpg?v=1683287643"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Anbieter: </strong>Neness<br>
+        <strong>Art: </strong><br>
+        <strong>Preis: </strong>
+            29.90
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>Der Raumduft, der nach dem Parfüm NENESS DAY riecht, ist ein luxuriöser und eleganter Duft, der eine sinnliche und feminine Note hat. Er kombiniert die erfrischenden Aromen von Bergamotte und Orangenblüte mit der süßen Wärme von Vanille und Tonkabohne. Eine subtile Mischung aus Zedernholz und weißem Moschus sorgt für eine angenehme Tiefe und rundet den Duft perfekt ab. Dieser Raumduft schafft eine warme und einladende Atmosphäre, die Ihren Raum mit dem zeitlosen Charme von NENESS DAY erfüllt.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>https://www.neness-shop.de/products/8234127229194</id>
+      <title>Default Title</title>
+      <s:price currency="EUR">29.90</s:price>
+      <s:sku>D214</s:sku>
+      <s:grams>110</s:grams>
+    </s:variant>
+  </entry>
+</feed>

@@ -1,0 +1,541 @@
+function TPI_main() {
+    console.log('%c------ TikTok Pixel Installer by Effective Apps is Initializing ------', 'color: cyan');
+    console.log('%c------ Contact us at support@effectify.co for help and questions about the app ------', 'color: cyan');
+    window.EFFECTIVE_APPS_TPI_PIXEL_CODE = ``;
+    window.EFFECTIVE_APPS_TPI_PIXELS = {"tiktok_pixels": [{"id": "4936ea16c70f11ed8fe1964ae8df3c71", "pixel_status": true, "pixel_id": "C9QFE8RC77UE268ERANG", "pixel_code": "<script> !function (w, d, t) { w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=[\"page\",\"track\",\"identify\",\"instances\",\"debug\",\"on\",\"off\",\"once\",\"ready\",\"alias\",\"group\",\"enableCookie\",\"disableCookie\"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var i=\"https://analytics.tiktok.com/i18n/pixel/events.js\";ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=i,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};var o=document.createElement(\"script\");o.type=\"text/javascript\",o.async=!0,o.src=i+\"?sdkid=\"+e+\"&lib=\"+t;var a=document.getElementsByTagName(\"script\")[0];a.parentNode.insertBefore(o,a)}; ttq.load(\"C9QFE8RC77UE268ERANG\"); ttq.page(); }(window, document, \"ttq\"); </script>", "pixel_name": "Parfumly", "pixel_pv_event": true, "pixel_pv_event_homepage": false, "pixel_atc_event": true, "pixel_pao_event": true, "pixel_cp_event": true, "pixel_cp_event_details": true, "pixel_sp": ""}]};
+    window.TPI_THEME_NAME = TPI_getShopifyThemeName();
+    window.isLS = TPI_isLSAvailable();
+    if (window.TPI_SCRIPT_INJECTED === undefined) {
+        window.TPI_SCRIPT_INJECTED = true;
+        if (document.getElementById('eaManualTPI') === null) {
+            let shouldCheckForTpiSp = false;
+            jQuery('head').prepend(window.EFFECTIVE_APPS_TPI_PIXEL_CODE);
+            for (let pixel of window.EFFECTIVE_APPS_TPI_PIXELS['tiktok_pixels']) {
+                if (pixel.pixel_sp.length > 0 && location.href.indexOf('tpiOnboarding=true') === -1) {
+                    shouldCheckForTpiSp = true;
+                    if (location.pathname.indexOf('/products/') > -1 && pixel.pixel_sp.indexOf(ShopifyAnalytics.meta.product.id) > -1) {
+                        jQuery('head').prepend(pixel.pixel_code);
+                        pixel.sp_loaded_in_page = true;
+                    }
+                }
+                else {
+                    jQuery('head').prepend(pixel.pixel_code);
+                }
+            }
+
+            if (shouldCheckForTpiSp) {
+                checkForTpiSp();
+            }
+        }
+
+        if ('True' === 'True' || 'True' === 'True') {
+            if (location.pathname.indexOf('/products/') > -1 || ('True' === 'False' && ShopifyAnalytics.meta.page.pageType === "home") || ('True' === 'False' && ShopifyAnalytics.meta.page.pageType === "home")) {
+                triggerProductDetailsPageViewReport();
+            }
+        }
+
+        if ('True' === 'True' || 'True' === 'True') {
+            if (location.pathname.indexOf('/thank_you') > -1 || location.pathname.indexOf('/post_purchase') > -1) {
+                triggerCompletePaymentReport();
+            }
+        }
+
+        if ('True' === 'True' || 'True' === 'True') {
+            if (location.pathname.indexOf('/cart') > -1) {
+                var checkoutButton = TPI_detectCheckoutButton();
+                if (checkoutButton !== null) {
+                    checkoutButton.addEventListener('click', triggerCheckoutInitiationReport);
+                }
+            }
+            else {
+                window.EFFECTIVE_APPS_TPI_CART_LISTENER = setInterval(TPI_waitForCartDrawer, 500);
+            }
+        }
+
+        if ('True' === 'True' || 'True' === 'True') {
+            var atcButton = TPI_detectAddToCartButton();
+            if (atcButton !== null) {
+                atcButton.addEventListener('click', triggerAddToCartReport);
+            }
+        }
+    }
+
+    if (location.href.indexOf('tpiOnboarding=true') > -1) {
+        let urlParams = new URLSearchParams(location.search);
+        let pixelId = urlParams.get("pixelId");
+        window.ttq.identify({email: "test@gmail.com"});
+        setTimeout(function() {
+            window.ttq.track('ViewContent');
+        }, 750);
+        setTimeout(function() {
+            window.ttq.track('AddToCart', {
+                content_id: '12345678910',
+                content_type: "product",
+                quantity: 1,
+                currency: 'USD',
+                value: 0.01
+            });
+        }, 1500);
+        setTimeout(function() {
+            window.ttq.track('InitiateCheckout', {
+                content_id: '12345678910',
+                content_type: "product",
+                quantity: 1,
+                currency: 'USD',
+                value: 0.01
+            });
+        }, 2250);
+        setTimeout(function() {
+            window.ttq.track('CompletePayment', {
+                content_id: '12345678910',
+                content_type: "product",
+                quantity: 1,
+                currency: 'USD',
+                value: 0.01
+            });
+        }, 3000);
+        jQuery("head").prepend('<style>.swal-confirm-btn {font-size:22px !important; }</style>');
+        TPI_loadScript('https://cdn.jsdelivr.net/npm/sweetalert2@9', function() {
+            if (pixelId.length > 10) {
+                Swal.fire({
+                    title: '<strong style="font-family: \'Arial\'; font-size: 26px;">Success</strong>',
+                    icon: 'success',
+                    customClass: {
+                        confirmButton: 'swal-confirm-btn',
+                    },
+                    html: '<p style="font-size: 22px">The TikTok Pixel with ID <b><font style="color:green;">' + pixelId + '</font></b> is up and running!<br /> You may close this window now.</p>',
+                    showCloseButton: false,
+                    showCancelButton: false,
+                    showConfirmButton: true,
+                    confirmButtonText: 'Close',
+                    width: 600,
+                    focusConfirm: true,
+                    allowOutsideClick: false
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        window.close();
+                    }
+                });
+            }
+            else {
+                Swal.fire({
+                    title: '<strong style="font-family: \'Arial\'; font-size: 26px;">TikTok Pixel Not Detected</strong>',
+                    icon: 'error',
+                    customClass: {
+                        confirmButton: 'swal-confirm-btn',
+                    },
+                    html: '<p style="font-size: 22px">A TikTok Pixel. Please copy and paste the exact code from TikTok and try again or contact our support team.</p>',
+                    showCloseButton: false,
+                    showCancelButton: false,
+                    showConfirmButton: true,
+                    confirmButtonText: 'Close',
+                    width: 600,
+                    focusConfirm: true,
+                    allowOutsideClick: false
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        window.close();
+                    }
+                });
+            }
+        });
+    }
+}
+
+function TPI_getShopifyThemeName() {
+    try {
+        if (window.BOOMR !== undefined && window.BOOMR.themeName !== undefined && window.BOOMR.themeName.length > 0) {
+            return window.BOOMR.themeName.toLowerCase();
+        }
+        else {
+            return Shopify.theme.name.toLowerCase();
+        }
+    }
+    catch (err) {
+        return "";
+    }
+}
+
+function TPI_isLSAvailable() {
+    var test = 'test';
+    try {
+        localStorage.setItem(test, test);
+        localStorage.removeItem(test);
+        return true;
+    } catch(e) {
+        return false;
+    }
+}
+
+function TPI_loadScript(url, success){
+    var script = document.createElement('script');
+    script.src = url;
+    var head = document.getElementsByTagName('head')[0],
+    done = false;
+    head.appendChild(script);
+    script.onload = script.onreadystatechange = function() {
+        if (!done && (!this.readyState || this.readyState == 'loaded' || this.readyState == 'complete')) {
+            done = true;
+            success();
+            script.onload = script.onreadystatechange = null;
+            head.removeChild(script);
+        }
+    };
+}
+
+function checkForTpiSp() {
+    jQuery.getJSON('/cart.js').done(function(data) {
+        for (let item of data['items']) {
+            for (let pixel of window.EFFECTIVE_APPS_TPI_PIXELS['tiktok_pixels']) {
+                if (pixel.pixel_sp.length > 0 && pixel.pixel_sp.indexOf(item["product_id"].toString()) > -1 && pixel.sp_loaded_in_page === undefined) {
+                    jQuery('head').prepend(pixel.pixel_code);
+                    pixel.sp_loaded_in_page = true;
+                }
+            }
+        }
+    });
+}
+
+function triggerCheckoutInitiationReport() {
+    if ('True' === 'True' && window.EFFECTIVE_APPS_TPI_PIXEL_CODE.length !== 0) {
+        window.ttq.track('InitiateCheckout');
+    }
+
+    for (let pixel of window.EFFECTIVE_APPS_TPI_PIXELS['tiktok_pixels']) {
+        if (pixel.pixel_pao_event === true) {
+            if (pixel.pixel_sp.length > 0) {
+                if (pixel.sp_loaded_in_page === true) {
+                    window.ttq.instance(pixel.pixel_id).track('InitiateCheckout');
+                }
+            }
+            else {
+                window.ttq.instance(pixel.pixel_id).track('InitiateCheckout');
+            }
+        }
+    }
+}
+
+function triggerAddToCartReport() {
+    if ('True' === 'True' && window.EFFECTIVE_APPS_TPI_PIXEL_CODE.length !== 0) {
+        window.ttq.track('AddToCart');
+    }
+
+    for (let pixel of window.EFFECTIVE_APPS_TPI_PIXELS['tiktok_pixels']) {
+        if (pixel.pixel_atc_event === true) {
+            if (pixel.pixel_sp.length > 0) {
+                if (location.pathname.indexOf('/products/') > -1 && pixel.pixel_sp.indexOf(ShopifyAnalytics.meta.product.id) > -1) {
+                    window.ttq.instance(pixel.pixel_id).track('AddToCart');
+                }
+            }
+            else {
+                window.ttq.instance(pixel.pixel_id).track('AddToCart');
+            }
+        }
+    }
+}
+
+function triggerProductDetailsPageViewReport() {
+    if ('True' === 'True' && window.EFFECTIVE_APPS_TPI_PIXEL_CODE.length !== 0 && (location.pathname.indexOf('/products/') > -1 || ('True' === 'False' && ShopifyAnalytics.meta.page.pageType === "home"))) {
+        window.ttq.track('ViewContent');
+    }
+
+    for (let pixel of window.EFFECTIVE_APPS_TPI_PIXELS['tiktok_pixels']) {
+        if (pixel.pixel_pv_event === true && location.pathname.indexOf('/products/') > -1) {
+            if (pixel.pixel_sp.length > 0) {
+                if (pixel.sp_loaded_in_page === true) {
+                    window.ttq.instance(pixel.pixel_id).track('ViewContent');
+                }
+            }
+            else {
+                window.ttq.instance(pixel.pixel_id).track('ViewContent');
+            }
+        }
+
+        if (pixel.pixel_pv_event_homepage === true && ShopifyAnalytics.meta.page.pageType === "home") {
+            window.ttq.instance(pixel.pixel_id).track('ViewContent');
+        }
+    }
+}
+
+function triggerCompletePaymentReport() {
+    let registerLsOrder = false;
+    if ('True' === 'True' && window.EFFECTIVE_APPS_TPI_PIXEL_CODE.length !== 0) {
+        if (window.isLS && localStorage.getItem('already_reported_' + Shopify.checkout.order_id) !== null) {
+            return;
+        }
+
+        if ('True' === 'True') {
+            let lineItems = [];
+            for (let lineItem of Shopify.checkout.line_items) {
+               lineItems.push({
+                   content_id: lineItem.product_id.toString(),
+                   content_type: "product",
+                   quantity: parseInt(lineItem.quantity),
+                   price: parseFloat(lineItem.price)
+               });
+            }
+
+            if (lineItems.length === 1) {
+                window.ttq.track('CompletePayment', {
+                    content_id: lineItems[0]['content_id'].toString(),
+                    content_type: "product",
+                    quantity: parseInt(lineItems[0]['quantity']),
+                    currency: Shopify.checkout.currency,
+                    value: parseFloat(Shopify.checkout.total_price)
+                });
+            }
+            else {
+                window.ttq.track('CompletePayment', {
+                    content_type: "product_group",
+                    currency: Shopify.checkout.currency,
+                    value: parseFloat(Shopify.checkout.total_price),
+                    contents: lineItems
+                });
+            }
+        }
+        else {
+            window.ttq.track('CompletePayment');
+        }
+
+        registerLsOrder = true;
+    }
+
+    for (let pixel of window.EFFECTIVE_APPS_TPI_PIXELS['tiktok_pixels']) {
+        if (pixel.pixel_cp_event === true) {
+            if (window.isLS && localStorage.getItem('already_reported_' + Shopify.checkout.order_id) !== null) {
+                return;
+            }
+
+            if (pixel.pixel_cp_event_details === true) {
+                let lineItems = [];
+                for (let lineItem of Shopify.checkout.line_items) {
+                    if (pixel.pixel_sp.length > 0) {
+                        if (pixel.pixel_sp.indexOf(lineItem.product_id.toString()) === -1) {
+                            continue;
+                        }
+                        else {
+                            pixel.sp_loaded_in_page = true;
+                            jQuery('head').prepend(pixel.pixel_code);
+                        }
+                    }
+
+                    lineItems.push({
+                        content_id: lineItem.product_id.toString(),
+                        content_type: "product",
+                        quantity: parseInt(lineItem.quantity),
+                        price: parseFloat(lineItem.price)
+                    });
+                }
+
+                if (pixel.pixel_sp.length > 0 && lineItems.length === 0) {
+                    continue;
+                }
+
+                if (lineItems.length === 1) {
+                    window.ttq.instance(pixel.pixel_id).track('CompletePayment', {
+                        content_id: lineItems[0]['content_id'].toString(),
+                        content_type: "product",
+                        quantity: parseInt(lineItems[0]['quantity']),
+                        currency: Shopify.checkout.currency,
+                        value: parseFloat(Shopify.checkout.total_price)
+                    });
+                }
+                else {
+                    window.ttq.instance(pixel.pixel_id).track('CompletePayment', {
+                        content_type: "product_group",
+                        currency: Shopify.checkout.currency,
+                        value: parseFloat(Shopify.checkout.total_price),
+                        contents: lineItems
+                    });
+                }
+            }
+            else {
+                if (pixel.pixel_sp.length > 0) {
+                    for (let lineItem of Shopify.checkout.line_items) {
+                        if (pixel.pixel_sp.indexOf(lineItem.product_id.toString()) > -1) {
+                            jQuery('head').prepend(pixel.pixel_code);
+                            setTimeout(function() {
+                                window.ttq.instance(pixel.pixel_id).track('CompletePayment');
+                            }, 500);
+                        }
+                    }
+                }
+                else {
+                    window.ttq.instance(pixel.pixel_id).track('CompletePayment');
+                }
+            }
+
+            registerLsOrder = true;
+        }
+    }
+
+    if (window.isLS && registerLsOrder) {
+        localStorage.setItem('already_reported_' + Shopify.checkout.order_id, 'true');
+    }
+}
+
+function TPI_waitForCartDrawer() {
+	var checkoutButtonElement = TPI_detectCheckoutButton();
+	if (checkoutButtonElement === null) {
+		return;
+	}
+
+    if (checkoutButtonElement.getAttribute('tpi-pao-registered') === null) {
+        checkoutButtonElement.addEventListener('click', triggerCheckoutInitiationReport);
+        checkoutButtonElement.setAttribute('tpi-pao-registered', 'true');
+    }
+}
+
+function TPI_detectAddToCartButton() {
+    var resultElement = null;
+    var adcButtonSelectors = [
+        '*[tpi-override="true"]:not([disabled])',
+        '*[id="teeAtcButton"]:not([disabled])',
+        'button[name="ajax_add"]:not([disabled])',
+        'input[name="add"]:not([disabled])',
+        'button[name="add"]:not([disabled])',
+        'button[id="add"]:not([disabled])',
+        'input[id="add"]:not([disabled])',
+        ".shopify-app-block .ButtonBlockButton",
+        'button[id="addToCart"]:not([disabled])',
+        'input[id="addToCart"]:not([disabled])',
+        'input[name="AddToCart"]:not([disabled])',
+        'button[name="AddToCart"]:not([disabled])',
+        '*[data-add-to-cart]:not([disabled])',
+        'input[id="AddToCart"]:not([disabled])',
+        'button[id="AddToCart"]:not([disabled])',
+        '*[id="add-to-cart"]:not([disabled])',
+        '*[id="adbtn"]:not([disabled])',
+        '*[class*="product-form--atc-button"]:not([disabled])',
+        '*[class*="product__add-to-cart"]:not([disabled])',
+        '*[id="shopify_add_to_cart"]:not([disabled])',
+        '*[class*="product-form--add-to-cart"]:not([disabled])',
+        '*[class*="ProductForm__AddToCart"]:not([disabled])',
+        '*[class*="add-to-cart"]:not([disabled])',
+        '*[class*="addtocart"]:not([disabled])',
+        '*[class*="AddToCart"]:not([disabled])',
+        '*[class*="addToCart"]:not([disabled])',
+        '*[data-action="add-to-cart"]:not([disabled])',
+        '*[data-add-to-cart-text]:not([disabled])',
+        '*[name="add"]:not([disabled])',
+        '*[data-add-button]:not([disabled])',
+        '*[data-buy-button]:not([disabled])',
+        '*[data-lhi="trans_buynow"]:not([disabled])',
+        '*[class*="add_to_cart_button"]:not([disabled])',
+        '*[data-pf-type="ProductATC"]:not([disabled])',
+        '*[data-add-cart]:not([disabled])',
+        '*[class*="product-buy-buttons--cta"]:not([disabled])',
+        '*[data-aid="product-form-submit-button"]:not([disabled])',
+        '*[class*="lh-add_to_cart"]:not([disabled])',
+        '*[data-text-add-to-cart]:not([disabled])',
+        '*[class*="single_add_to_cart_button"]:not([disabled])',
+        '*[data-text*="Add To Cart"]:not([disabled])',
+        '*[data-add-to-cart-text]',
+        '*[class*="btn-cart"]:not([disabled])',
+        '*[class*="ButtonBlock__Container"]:not([disabled])',
+        'buy-buttons>[is="custom-button"]:not([disabled])',
+        '*[data-pf-type="ProductATC2"]:not([disabled])',
+    ];
+    var cartFormSelectors = [
+        'input[type="submit"]:not([disabled])',
+        'input[type="button"]:not([disabled])'
+    ];
+
+    for (var selector of adcButtonSelectors) {
+        var element = document.querySelector(selector);
+        if (element !== null) {
+            return element;
+        }
+    }
+
+    var cartFormElement = document.querySelector('form[action="/cart/add"]');
+    for (var selector of cartFormSelectors) {
+        if (cartFormElement !== null) {
+            var element = cartFormElement.querySelector(selector);
+        }
+        if (element !== null) {
+            return element;
+        }
+    }
+
+    return null;
+}
+
+function TPI_detectCheckoutButton() {
+	var resultElement = null;
+	var checkoutButtonSelectors = [
+	    '[tpi-co-override="true"]',
+        '*[name="tpi-checkout"]:not([disabled])',
+        '*[class*="rebuy-cart__checkout-button"]:not([disabled])',
+	    '*[class*="ymq-fake-checkout-btn"]:not([disabled])',
+		'*[name="checkout"]:not([disabled])',
+		'*[name="goto_pp"]:not([disabled])',
+		'*[name="goto_gc"]:not([disabled])',
+		'*[value*="Checkout"]',
+		'*[value*="Check out"]',
+        '*[href*="/checkout"]:not([href*="front_end/login"]):not([href*="/manage/subscription/"])',
+		'*[href*="/checkout"]',
+		'*[onclick*="/checkout"]',
+		'*[name="checkout-exemptify"]:not([disabled])',
+        '*[id="checkout"]:not([disabled])',
+        '*[data-cart-checkout-button]',
+        '*[class*="cart-button-checkout"]',
+        '*[class*="Cart__Checkout"]',
+        '*[class*="checkout__fbtn"]',
+        '*[name="ddcheckout"]:not([disabled])',
+        '*[class*="btnCheckout"]:not([disabled])',
+        '*[id="mu-checkout-button"]:not([disabled])',
+        '*[class*=satcb-cs-checkout-btn]',
+        '*[name="qbk-checkout"]',
+        '*[class*="evm_upsell_checkout"]',
+	];
+	var cartFormSelectors = [
+		'input[type="submit"]:not([disabled])',
+		'input[type="button"]:not([disabled])'
+	];
+
+	for (var selector of checkoutButtonSelectors) {
+		var elementSearchResult = document.querySelectorAll(selector);
+		if (elementSearchResult.length > 1 && (window.TPI_THEME_NAME.indexOf('dawn') === -1 && window.TPI_THEME_NAME.indexOf('moodring') === -1 && window.TPI_THEME_NAME.indexOf('empire') === -1 && window.TPI_THEME_NAME.indexOf('showtime') === -1 && selector !== '*[class*="ymq-fake-checkout-btn"]:not([disabled])')) {
+		    if (elementSearchResult[1].getAttribute('tpi-ignore') === "true") {
+		        continue;
+		    }
+		    if (elementSearchResult[1].hasOwnProperty('href')) {
+		        if (elementSearchResult[1].getAttribute('href').indexOf("/front_end/login") > -1) {
+		            continue;
+		        }
+		    }
+
+			return elementSearchResult[1];
+		} else if (elementSearchResult.length > 0) {
+		    if (elementSearchResult[0].getAttribute('tpi-ignore') === "true") {
+		        continue;
+		    }
+		    if (elementSearchResult[0].hasOwnProperty('href')) {
+		        if (elementSearchResult[0].getAttribute('href').indexOf("/front_end/login") > -1) {
+		            continue;
+		        }
+		    }
+
+			return elementSearchResult[0];
+		}
+	}
+
+	var cartFormElement = document.querySelector('form[action="/cart"]');
+	if (cartFormElement !== null) {
+		for (var selector of cartFormSelectors) {
+			var element = cartFormElement.querySelector(selector);
+			if (element !== null) {
+				return element;
+			}
+		}
+	}
+
+	return null;
+}
+
+if (typeof jQuery === 'undefined'){
+    TPI_loadScript('https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js', TPI_main);
+} else {
+    TPI_main();
+}

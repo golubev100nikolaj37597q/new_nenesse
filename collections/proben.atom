@@ -1,0 +1,911 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xml:lang="de" xmlns="http://www.w3.org/2005/Atom" xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:s="http://jadedpixel.com/-/spec/shopify">
+  <id>https://www.neness-shop.de/collections/all.atom</id>
+  <link rel="alternate" type="text/html" href="https://www.neness-shop.de/collections/all"/>
+  <link rel="self" type="application/atom+xml" href="https://www.neness-shop.de/collections/proben.atom"/>
+  <title>Neness</title>
+  <updated>2023-07-15T19:10:14+02:00</updated>
+  <author>
+    <name>Neness</name>
+  </author>
+  <entry>
+    <id>https://www.neness-shop.de/products/8265179693322</id>
+    <published>2023-07-15T19:10:14+02:00</published>
+    <updated>2023-07-15T19:10:14+02:00</updated>
+    <link rel="alternate" type="text/html" href="https://www.neness-shop.de/products/probe-253-neness-pdoxe"/>
+    <title>PROBE 253 - NENESS P&apos;DOXE</title>
+    <s:type></s:type>
+    <s:vendor>Neness</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0615/4479/2259/files/2S4A8614_253_AO.jpg?v=1689079291"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Anbieter: </strong>Neness<br>
+        <strong>Art: </strong><br>
+        <strong>Preis: </strong>
+            2.90
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><strong>PROBE 253 NENESS P'DOXE</strong> ist der perfekte Weg, um pures Parfüm-Glück zu erleben! Schnapp dir diese günstige Probe und beschere dir den unwiderstehlichen Duft, den dein Herz begehrt! Probieren macht hier mehr als nur Spaß - es macht auch Sinn!</td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>https://www.neness-shop.de/products/8265179693322</id>
+      <title>Default Title</title>
+      <s:price currency="EUR">2.90</s:price>
+      <s:sku>P253</s:sku>
+      <s:grams>10</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://www.neness-shop.de/products/8265174122762</id>
+    <published>2023-07-15T19:10:13+02:00</published>
+    <updated>2023-07-15T19:10:13+02:00</updated>
+    <link rel="alternate" type="text/html" href="https://www.neness-shop.de/products/probe-252-neness-roc"/>
+    <title>PROBE 252 - NENESS ROC</title>
+    <s:type></s:type>
+    <s:vendor>Neness</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0615/4479/2259/files/2S4A8614_252_AO.jpg?v=1689078491"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Anbieter: </strong>Neness<br>
+        <strong>Art: </strong><br>
+        <strong>Preis: </strong>
+            2.90
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><strong>PROBE 252 NENESS ROC</strong> ist der perfekte Weg, um pures Parfüm-Glück zu erleben! Schnapp dir diese günstige Probe und beschere dir den unwiderstehlichen Duft, den dein Herz begehrt! Probieren macht hier mehr als nur Spaß - es macht auch Sinn!</td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>https://www.neness-shop.de/products/8265174122762</id>
+      <title>Default Title</title>
+      <s:price currency="EUR">2.90</s:price>
+      <s:sku>P252</s:sku>
+      <s:grams>10</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://www.neness-shop.de/products/8265171632394</id>
+    <published>2023-07-15T19:10:13+02:00</published>
+    <updated>2023-07-15T19:10:13+02:00</updated>
+    <link rel="alternate" type="text/html" href="https://www.neness-shop.de/products/probe-251-rose-dneness"/>
+    <title>PROBE 251 - ROSE D&apos;NENESS</title>
+    <s:type></s:type>
+    <s:vendor>Neness</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0615/4479/2259/files/2S4A8614_251_AO.jpg?v=1689078043"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Anbieter: </strong>Neness<br>
+        <strong>Art: </strong><br>
+        <strong>Preis: </strong>
+            2.90
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><strong>PROBE 251 ROSE D'NENESS</strong> ist der perfekte Weg, um pures Parfüm-Glück zu erleben! Schnapp dir diese günstige Probe und beschere dir den unwiderstehlichen Duft, den dein Herz begehrt! Probieren macht hier mehr als nur Spaß - es macht auch Sinn!</td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>https://www.neness-shop.de/products/8265171632394</id>
+      <title>Default Title</title>
+      <s:price currency="EUR">2.90</s:price>
+      <s:sku>P251</s:sku>
+      <s:grams>10</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://www.neness-shop.de/products/8265170714890</id>
+    <published>2023-07-15T19:10:13+02:00</published>
+    <updated>2023-07-15T19:10:13+02:00</updated>
+    <link rel="alternate" type="text/html" href="https://www.neness-shop.de/products/probe-250-neness-melody-sun"/>
+    <title>PROBE 250 - NENESS MELODY SUN</title>
+    <s:type></s:type>
+    <s:vendor>Neness</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0615/4479/2259/files/2S4A8614_250_AO.jpg?v=1689077866"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Anbieter: </strong>Neness<br>
+        <strong>Art: </strong><br>
+        <strong>Preis: </strong>
+            2.90
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2">PROBE 250 NENESS MELODY SUN ist der perfekte Weg, um pures Parfüm-Glück zu erleben! Schnapp dir diese günstige Probe und beschere dir den unwiderstehlichen Duft, den dein Herz begehrt! Probieren macht hier mehr als nur Spaß - es macht auch Sinn!</td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>https://www.neness-shop.de/products/8265170714890</id>
+      <title>Default Title</title>
+      <s:price currency="EUR">2.90</s:price>
+      <s:sku>P250</s:sku>
+      <s:grams>10</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://www.neness-shop.de/products/8265169043722</id>
+    <published>2023-07-15T19:10:12+02:00</published>
+    <updated>2023-07-15T19:10:12+02:00</updated>
+    <link rel="alternate" type="text/html" href="https://www.neness-shop.de/products/probe-neness-gillah"/>
+    <title>PROBE 249 - NENESS GILLAH</title>
+    <s:type></s:type>
+    <s:vendor>Neness</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0615/4479/2259/files/2S4A8614_249_AO.jpg?v=1689077520"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Anbieter: </strong>Neness<br>
+        <strong>Art: </strong><br>
+        <strong>Preis: </strong>
+            2.90
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><strong>PROBE 249 NENESS GILLAH</strong> ist der perfekte Weg, um pures Parfüm-Glück zu erleben! Schnapp dir diese günstige Probe und beschere dir den unwiderstehlichen Duft, den dein Herz begehrt! Probieren macht hier mehr als nur Spaß - es macht auch Sinn!</td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>https://www.neness-shop.de/products/8265169043722</id>
+      <title>Default Title</title>
+      <s:price currency="EUR">2.90</s:price>
+      <s:sku>P249</s:sku>
+      <s:grams>10</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://www.neness-shop.de/products/8265167700234</id>
+    <published>2023-07-15T19:10:12+02:00</published>
+    <updated>2023-07-15T19:10:12+02:00</updated>
+    <link rel="alternate" type="text/html" href="https://www.neness-shop.de/products/probe-248-neness-ombre"/>
+    <title>PROBE 248 - NENESS OMBRE</title>
+    <s:type></s:type>
+    <s:vendor>Neness</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0615/4479/2259/files/2S4A8614_248_AO.jpg?v=1689077315"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Anbieter: </strong>Neness<br>
+        <strong>Art: </strong><br>
+        <strong>Preis: </strong>
+            2.90
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2">PROBE 248 NENESS OMBRE ist der perfekte Weg, um pures Parfüm-Glück zu erleben! Schnapp dir diese günstige Probe und beschere dir den unwiderstehlichen Duft, den dein Herz begehrt! Probieren macht hier mehr als nur Spaß - es macht auch Sinn!</td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>https://www.neness-shop.de/products/8265167700234</id>
+      <title>Default Title</title>
+      <s:price currency="EUR">2.90</s:price>
+      <s:sku>P248</s:sku>
+      <s:grams>10</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://www.neness-shop.de/products/8265164161290</id>
+    <published>2023-07-15T19:10:11+02:00</published>
+    <updated>2023-07-15T19:10:11+02:00</updated>
+    <link rel="alternate" type="text/html" href="https://www.neness-shop.de/products/probe-246-neness-oud"/>
+    <title>PROBE 246 - NENESS OUD</title>
+    <s:type></s:type>
+    <s:vendor>Neness</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0615/4479/2259/files/2S4A8614_246_AO.jpg?v=1689076727"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Anbieter: </strong>Neness<br>
+        <strong>Art: </strong><br>
+        <strong>Preis: </strong>
+            2.90
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><strong>PROBE 246 NENESS OUD </strong>ist der perfekte Weg, um pures Parfüm-Glück zu erleben! Schnapp dir diese günstige Probe und beschere dir den unwiderstehlichen Duft, den dein Herz begehrt! Probieren macht hier mehr als nur Spaß - es macht auch Sinn!</td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>https://www.neness-shop.de/products/8265164161290</id>
+      <title>Default Title</title>
+      <s:price currency="EUR">2.90</s:price>
+      <s:sku>P246</s:sku>
+      <s:grams>10</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://www.neness-shop.de/products/8265162653962</id>
+    <published>2023-07-15T19:10:11+02:00</published>
+    <updated>2023-07-15T19:10:11+02:00</updated>
+    <link rel="alternate" type="text/html" href="https://www.neness-shop.de/products/probe-245-neness-540"/>
+    <title>PROBE 245 - NENESS 540</title>
+    <s:type></s:type>
+    <s:vendor>Neness</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0615/4479/2259/files/2S4A8614_245_AO.jpg?v=1689076523"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Anbieter: </strong>Neness<br>
+        <strong>Art: </strong><br>
+        <strong>Preis: </strong>
+            2.90
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2">PROBE 245 NENESS 540 ist der perfekte Weg, um pures Parfüm-Glück zu erleben! Schnapp dir diese günstige Probe und beschere dir den unwiderstehlichen Duft, den dein Herz begehrt! Probieren macht hier mehr als nur Spaß - es macht auch Sinn!</td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>https://www.neness-shop.de/products/8265162653962</id>
+      <title>Default Title</title>
+      <s:price currency="EUR">2.90</s:price>
+      <s:sku>P245</s:sku>
+      <s:grams>10</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://www.neness-shop.de/products/8265160589578</id>
+    <published>2023-07-15T19:10:11+02:00</published>
+    <updated>2023-07-15T19:10:11+02:00</updated>
+    <link rel="alternate" type="text/html" href="https://www.neness-shop.de/products/probe-244-neness-cherry"/>
+    <title>PROBE 244 - NENESS CHERRY</title>
+    <s:type></s:type>
+    <s:vendor>Neness</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0615/4479/2259/files/2S4A8614_244_AO.jpg?v=1689076256"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Anbieter: </strong>Neness<br>
+        <strong>Art: </strong><br>
+        <strong>Preis: </strong>
+            2.90
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><strong>PROBE 244 NENESS CHERRY</strong> ist der perfekte Weg, um pures Parfüm-Glück zu erleben! Schnapp dir diese günstige Probe und beschere dir den unwiderstehlichen Duft, den dein Herz begehrt! Probieren macht hier mehr als nur Spaß - es macht auch Sinn!</td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>https://www.neness-shop.de/products/8265160589578</id>
+      <title>Default Title</title>
+      <s:price currency="EUR">2.90</s:price>
+      <s:sku>P244</s:sku>
+      <s:grams>10</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://www.neness-shop.de/products/8265159311626</id>
+    <published>2023-07-15T19:10:10+02:00</published>
+    <updated>2023-07-15T19:10:10+02:00</updated>
+    <link rel="alternate" type="text/html" href="https://www.neness-shop.de/products/probe-214-neness-day"/>
+    <title>PROBE 214 - NENESS DAY</title>
+    <s:type></s:type>
+    <s:vendor>Neness</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0615/4479/2259/files/2S4A8614_214_AO.jpg?v=1689076081"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Anbieter: </strong>Neness<br>
+        <strong>Art: </strong><br>
+        <strong>Preis: </strong>
+            2.90
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><strong>PROBE 214 NENESS DAY</strong> ist der perfekte Weg, um pures Parfüm-Glück zu erleben! Schnapp dir diese günstige Probe und beschere dir den unwiderstehlichen Duft, den dein Herz begehrt! Probieren macht hier mehr als nur Spaß - es macht auch Sinn!</td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>https://www.neness-shop.de/products/8265159311626</id>
+      <title>Default Title</title>
+      <s:price currency="EUR">2.90</s:price>
+      <s:sku>P214</s:sku>
+      <s:grams>10</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://www.neness-shop.de/products/8265155019018</id>
+    <published>2023-07-15T19:10:10+02:00</published>
+    <updated>2023-07-15T19:10:10+02:00</updated>
+    <link rel="alternate" type="text/html" href="https://www.neness-shop.de/products/probe-201-nenessi-red"/>
+    <title>PROBE 201 - NenesSi RED</title>
+    <s:type></s:type>
+    <s:vendor>Neness</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0615/4479/2259/files/2S4A8614_201_AO.jpg?v=1689075366"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Anbieter: </strong>Neness<br>
+        <strong>Art: </strong><br>
+        <strong>Preis: </strong>
+            2.90
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><strong>PROBE 201 NenesSi Red</strong> ist der perfekte Weg, um pures Parfüm-Glück zu erleben! Schnapp dir diese günstige Probe und beschere dir den unwiderstehlichen Duft, den dein Herz begehrt! Probieren macht hier mehr als nur Spaß - es macht auch Sinn!</td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>https://www.neness-shop.de/products/8265155019018</id>
+      <title>Default Title</title>
+      <s:price currency="EUR">2.90</s:price>
+      <s:sku>P201</s:sku>
+      <s:grams>10</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://www.neness-shop.de/products/8265154363658</id>
+    <published>2023-07-15T19:10:09+02:00</published>
+    <updated>2023-07-15T19:10:09+02:00</updated>
+    <link rel="alternate" type="text/html" href="https://www.neness-shop.de/products/probe-199-black-stone"/>
+    <title>PROBE 199 - BLACK STONE</title>
+    <s:type></s:type>
+    <s:vendor>Neness</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0615/4479/2259/files/2S4A8614_199_AO.jpg?v=1689075244"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Anbieter: </strong>Neness<br>
+        <strong>Art: </strong><br>
+        <strong>Preis: </strong>
+            2.90
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><strong>PROBE 199 BLACK STONE</strong> ist der perfekte Weg, um pures Parfüm-Glück zu erleben! Schnapp dir diese günstige Probe und beschere dir den unwiderstehlichen Duft, den dein Herz begehrt! Probieren macht hier mehr als nur Spaß - es macht auch Sinn!</td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>https://www.neness-shop.de/products/8265154363658</id>
+      <title>Default Title</title>
+      <s:price currency="EUR">2.90</s:price>
+      <s:sku>P199</s:sku>
+      <s:grams>10</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://www.neness-shop.de/products/8265152037130</id>
+    <published>2023-07-15T19:10:09+02:00</published>
+    <updated>2023-07-15T19:10:09+02:00</updated>
+    <link rel="alternate" type="text/html" href="https://www.neness-shop.de/products/probe-195-librese"/>
+    <title>PROBE 195 - LIBRESE</title>
+    <s:type></s:type>
+    <s:vendor>Neness</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0615/4479/2259/files/2S4A8614_195_AO.jpg?v=1689074849"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Anbieter: </strong>Neness<br>
+        <strong>Art: </strong><br>
+        <strong>Preis: </strong>
+            2.90
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><strong>PROBE 195 LIBRESE</strong> ist der perfekte Weg, um pures Parfüm-Glück zu erleben! Schnapp dir diese günstige Probe und beschere dir den unwiderstehlichen Duft, den dein Herz begehrt! Probieren macht hier mehr als nur Spaß - es macht auch Sinn!</td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>https://www.neness-shop.de/products/8265152037130</id>
+      <title>Default Title</title>
+      <s:price currency="EUR">2.90</s:price>
+      <s:sku>P195</s:sku>
+      <s:grams>10</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://www.neness-shop.de/products/8265150234890</id>
+    <published>2023-07-15T19:10:09+02:00</published>
+    <updated>2023-07-15T19:10:09+02:00</updated>
+    <link rel="alternate" type="text/html" href="https://www.neness-shop.de/products/probe-190-shining-jewel"/>
+    <title>PROBE 190 - SHINING JEWEL</title>
+    <s:type></s:type>
+    <s:vendor>Neness</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0615/4479/2259/files/2S4A8614_190_AO.jpg?v=1689074546"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Anbieter: </strong>Neness<br>
+        <strong>Art: </strong><br>
+        <strong>Preis: </strong>
+            2.90
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2">PROBE 190 SHINING JEWEL ist der perfekte Weg, um pures Parfüm-Glück zu erleben! Schnapp dir diese günstige Probe und beschere dir den unwiderstehlichen Duft, den dein Herz begehrt! Probieren macht hier mehr als nur Spaß - es macht auch Sinn!</td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>https://www.neness-shop.de/products/8265150234890</id>
+      <title>Default Title</title>
+      <s:price currency="EUR">2.90</s:price>
+      <s:sku>P190</s:sku>
+      <s:grams>10</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://www.neness-shop.de/products/8265148268810</id>
+    <published>2023-07-15T19:10:08+02:00</published>
+    <updated>2023-07-15T19:10:08+02:00</updated>
+    <link rel="alternate" type="text/html" href="https://www.neness-shop.de/products/probe-182-unworldy"/>
+    <title>PROBE 182 - ALLIEN WORLD</title>
+    <s:type></s:type>
+    <s:vendor>Neness</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0615/4479/2259/files/2S4A8614_182_AO.jpg?v=1689074219"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Anbieter: </strong>Neness<br>
+        <strong>Art: </strong><br>
+        <strong>Preis: </strong>
+            2.90
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><strong>PROBE 182 UNWORLDY </strong>ist der perfekte Weg, um pures Parfüm-Glück zu erleben! Schnapp dir diese günstige Probe und beschere dir den unwiderstehlichen Duft, den dein Herz begehrt! Probieren macht hier mehr als nur Spaß - es macht auch Sinn!</td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>https://www.neness-shop.de/products/8265148268810</id>
+      <title>Default Title</title>
+      <s:price currency="EUR">2.90</s:price>
+      <s:sku>P182</s:sku>
+      <s:grams>10</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://www.neness-shop.de/products/8265146007818</id>
+    <published>2023-07-15T19:10:08+02:00</published>
+    <updated>2023-07-15T19:10:08+02:00</updated>
+    <link rel="alternate" type="text/html" href="https://www.neness-shop.de/products/probe-177-womans-gold-card"/>
+    <title>PROBE 177 - WOMAN&apos;S GOLD CARD</title>
+    <s:type></s:type>
+    <s:vendor>Neness</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0615/4479/2259/files/2S4A8614_177_AO.jpg?v=1689073740"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Anbieter: </strong>Neness<br>
+        <strong>Art: </strong><br>
+        <strong>Preis: </strong>
+            2.90
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><strong>PROBE 177 WOMAN'S GOLD CARD</strong> ist der perfekte Weg, um pures Parfüm-Glück zu erleben! Schnapp dir diese günstige Probe und beschere dir den unwiderstehlichen Duft, den dein Herz begehrt! Probieren macht hier mehr als nur Spaß - es macht auch Sinn!</td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>https://www.neness-shop.de/products/8265146007818</id>
+      <title>Default Title</title>
+      <s:price currency="EUR">2.90</s:price>
+      <s:sku>P177</s:sku>
+      <s:grams>10</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://www.neness-shop.de/products/8265144434954</id>
+    <published>2023-07-15T19:10:07+02:00</published>
+    <updated>2023-07-15T19:10:07+02:00</updated>
+    <link rel="alternate" type="text/html" href="https://www.neness-shop.de/products/probe-176-mens-gold-card"/>
+    <title>PROBE 176 - MEN&apos;S GOLD CARD</title>
+    <s:type></s:type>
+    <s:vendor>Neness</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0615/4479/2259/files/2S4A8614_176_AO.jpg?v=1689073403"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Anbieter: </strong>Neness<br>
+        <strong>Art: </strong><br>
+        <strong>Preis: </strong>
+            2.90
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><strong>PROBE 176 MEN'S GOLD CARD</strong> ist der perfekte Weg, um pures Parfüm-Glück zu erleben! Schnapp dir diese günstige Probe und beschere dir den unwiderstehlichen Duft, den dein Herz begehrt! Probieren macht hier mehr als nur Spaß - es macht auch Sinn!</td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>https://www.neness-shop.de/products/8265144434954</id>
+      <title>Default Title</title>
+      <s:price currency="EUR">2.90</s:price>
+      <s:sku>P176</s:sku>
+      <s:grams>10</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://www.neness-shop.de/products/8265140666634</id>
+    <published>2023-07-15T19:10:07+02:00</published>
+    <updated>2023-07-15T19:10:07+02:00</updated>
+    <link rel="alternate" type="text/html" href="https://www.neness-shop.de/products/probe-175-classic-winner"/>
+    <title>PROBE 175 - CLASSIC WINNER</title>
+    <s:type></s:type>
+    <s:vendor>Neness</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0615/4479/2259/files/2S4A8614_175_AO.jpg?v=1689072547"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Anbieter: </strong>Neness<br>
+        <strong>Art: </strong><br>
+        <strong>Preis: </strong>
+            2.90
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2">PROBE 175 CLASSIC WINNER ist der perfekte Weg, um pures Parfüm-Glück zu erleben! Schnapp dir diese günstige Probe und beschere dir den unwiderstehlichen Duft, den dein Herz begehrt! Probieren macht hier mehr als nur Spaß - es macht auch Sinn!</td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>https://www.neness-shop.de/products/8265140666634</id>
+      <title>Default Title</title>
+      <s:price currency="EUR">2.90</s:price>
+      <s:sku>P175</s:sku>
+      <s:grams>10</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://www.neness-shop.de/products/8265140338954</id>
+    <published>2023-07-15T19:10:07+02:00</published>
+    <updated>2023-07-15T19:10:07+02:00</updated>
+    <link rel="alternate" type="text/html" href="https://www.neness-shop.de/products/probe-172-greek-goddness"/>
+    <title>PROBE 172 - GREEK GODDNESS</title>
+    <s:type></s:type>
+    <s:vendor>Neness</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0615/4479/2259/files/2S4A8614_172_AO.jpg?v=1689072424"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Anbieter: </strong>Neness<br>
+        <strong>Art: </strong><br>
+        <strong>Preis: </strong>
+            2.90
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2">PROBE 172 - GREEK GODDNESS ist der perfekte Weg, um pures Parfüm-Glück zu erleben! Schnapp dir diese günstige Probe und beschere dir den unwiderstehlichen Duft, den dein Herz begehrt! Probieren macht hier mehr als nur Spaß - es macht auch Sinn!</td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>https://www.neness-shop.de/products/8265140338954</id>
+      <title>Default Title</title>
+      <s:price currency="EUR">2.90</s:price>
+      <s:sku>P172</s:sku>
+      <s:grams>10</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://www.neness-shop.de/products/8265139159306</id>
+    <published>2023-07-15T19:10:06+02:00</published>
+    <updated>2023-07-15T19:10:06+02:00</updated>
+    <link rel="alternate" type="text/html" href="https://www.neness-shop.de/products/probe-164-neness-nexora"/>
+    <title>PROBE 164 - NENESS NEXORA</title>
+    <s:type></s:type>
+    <s:vendor>Neness</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0615/4479/2259/files/2S4A8614_164_AO.jpg?v=1689072180"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Anbieter: </strong>Neness<br>
+        <strong>Art: </strong><br>
+        <strong>Preis: </strong>
+            2.90
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2">PROBE 164 NENESS NEXORA ist der perfekte Weg, um pures Parfüm-Glück zu erleben! Schnapp dir diese günstige Probe und beschere dir den unwiderstehlichen Duft, den dein Herz begehrt! Probieren macht hier mehr als nur Spaß - es macht auch Sinn!</td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>https://www.neness-shop.de/products/8265139159306</id>
+      <title>Default Title</title>
+      <s:price currency="EUR">2.90</s:price>
+      <s:sku>P164</s:sku>
+      <s:grams>10</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://www.neness-shop.de/products/8265138340106</id>
+    <published>2023-07-15T19:10:06+02:00</published>
+    <updated>2023-07-15T19:10:06+02:00</updated>
+    <link rel="alternate" type="text/html" href="https://www.neness-shop.de/products/probe-161-way-of-life"/>
+    <title>PROBE 161 - WAY OF LIFE</title>
+    <s:type></s:type>
+    <s:vendor>Neness</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0615/4479/2259/files/2S4A8614_161_AO.jpg?v=1689072001"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Anbieter: </strong>Neness<br>
+        <strong>Art: </strong><br>
+        <strong>Preis: </strong>
+            2.90
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><strong>PROBE 161 WAY OF LIFE </strong>ist der perfekte Weg, um pures Parfüm-Glück zu erleben! Schnapp dir diese günstige Probe und beschere dir den unwiderstehlichen Duft, den dein Herz begehrt! Probieren macht hier mehr als nur Spaß - es macht auch Sinn!</td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>https://www.neness-shop.de/products/8265138340106</id>
+      <title>Default Title</title>
+      <s:price currency="EUR">2.90</s:price>
+      <s:sku>P161</s:sku>
+      <s:grams>10</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://www.neness-shop.de/products/8265136242954</id>
+    <published>2023-07-15T19:10:05+02:00</published>
+    <updated>2023-07-15T19:10:05+02:00</updated>
+    <link rel="alternate" type="text/html" href="https://www.neness-shop.de/products/probe-136-sensation"/>
+    <title>PROBE 136 - SENSATION</title>
+    <s:type></s:type>
+    <s:vendor>Neness</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0615/4479/2259/files/2S4A8614_136_AO.jpg?v=1689071556"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Anbieter: </strong>Neness<br>
+        <strong>Art: </strong><br>
+        <strong>Preis: </strong>
+            2.90
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><strong>PROBE 136 SENSATION</strong> ist der perfekte Weg, um pures Parfüm-Glück zu erleben! Schnapp dir diese günstige Probe und beschere dir den unwiderstehlichen Duft, den dein Herz begehrt! Probieren macht hier mehr als nur Spaß - es macht auch Sinn!</td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>https://www.neness-shop.de/products/8265136242954</id>
+      <title>Default Title</title>
+      <s:price currency="EUR">2.90</s:price>
+      <s:sku>P136</s:sku>
+      <s:grams>10</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://www.neness-shop.de/products/8265134899466</id>
+    <published>2023-07-15T19:10:05+02:00</published>
+    <updated>2023-07-15T19:10:05+02:00</updated>
+    <link rel="alternate" type="text/html" href="https://www.neness-shop.de/products/probe-114-crazy-man"/>
+    <title>PROBE 114 - CRAZY MAN</title>
+    <s:type></s:type>
+    <s:vendor>Neness</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0615/4479/2259/files/2S4A8614_114_AO.jpg?v=1689071201"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Anbieter: </strong>Neness<br>
+        <strong>Art: </strong><br>
+        <strong>Preis: </strong>
+            2.90
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><strong>PROBE 114 CRAZY MAN </strong>ist der perfekte Weg, um pures Parfüm-Glück zu erleben! Schnapp dir diese günstige Probe und beschere dir den unwiderstehlichen Duft, den dein Herz begehrt! Probieren macht hier mehr als nur Spaß - es macht auch Sinn!</td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>https://www.neness-shop.de/products/8265134899466</id>
+      <title>Default Title</title>
+      <s:price currency="EUR">2.90</s:price>
+      <s:sku>P114</s:sku>
+      <s:grams>10</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://www.neness-shop.de/products/8265133883658</id>
+    <published>2023-07-15T19:10:05+02:00</published>
+    <updated>2023-07-15T19:10:05+02:00</updated>
+    <link rel="alternate" type="text/html" href="https://www.neness-shop.de/products/probe-113-red-temptation"/>
+    <title>PROBE 113 - RED TEMPTATION</title>
+    <s:type></s:type>
+    <s:vendor>Neness</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0615/4479/2259/files/2S4A8614_113_AO.jpg?v=1689070998"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Anbieter: </strong>Neness<br>
+        <strong>Art: </strong><br>
+        <strong>Preis: </strong>
+            2.90
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><strong>PROBE 113 RED TEMPTATION </strong>ist der perfekte Weg, um pures Parfüm-Glück zu erleben! Schnapp dir diese günstige Probe und beschere dir den unwiderstehlichen Duft, den dein Herz begehrt! Probieren macht hier mehr als nur Spaß - es macht auch Sinn!</td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>https://www.neness-shop.de/products/8265133883658</id>
+      <title>Default Title</title>
+      <s:price currency="EUR">2.90</s:price>
+      <s:sku>P113</s:sku>
+      <s:grams>10</s:grams>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>https://www.neness-shop.de/products/8265131458826</id>
+    <published>2023-07-15T19:10:04+02:00</published>
+    <updated>2023-07-15T19:10:04+02:00</updated>
+    <link rel="alternate" type="text/html" href="https://www.neness-shop.de/products/probe-089-romantic-woman"/>
+    <title>PROBE 089 - ROMANTIC WOMAN</title>
+    <s:type></s:type>
+    <s:vendor>Neness</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0615/4479/2259/files/2S4A8614_089.jpg?v=1689070507"></td>
+    <td valign="bottom">
+      <p>
+
+        <strong>Anbieter: </strong>Neness<br>
+        <strong>Art: </strong><br>
+        <strong>Preis: </strong>
+            2.90
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><strong>PROBE 089 ROMANTIC WOMAN</strong> ist der perfekte Weg, um pures Parfüm-Glück zu erleben! Schnapp dir diese günstige Probe und beschere dir den unwiderstehlichen Duft, den dein Herz begehrt! Probieren macht hier mehr als nur Spaß - es macht auch Sinn!</td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>https://www.neness-shop.de/products/8265131458826</id>
+      <title>Default Title</title>
+      <s:price currency="EUR">2.90</s:price>
+      <s:sku>P089</s:sku>
+      <s:grams>10</s:grams>
+    </s:variant>
+  </entry>
+</feed>

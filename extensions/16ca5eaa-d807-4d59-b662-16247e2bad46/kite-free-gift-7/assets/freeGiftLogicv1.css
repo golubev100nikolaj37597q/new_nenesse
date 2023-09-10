@@ -1,0 +1,321 @@
+.gfgFreeGiftMsgContainer{
+    display: grid;
+    grid-template-columns: 0.2fr 1fr;
+    grid-template-rows: 1fr;
+    font-size: 14px;
+    box-shadow: 0 2px 4px 0px rgba(0, 0, 0, 0.2), 0 2px 10px 0 rgba(0, 0, 0, 0.19);
+    grid-gap: 10px;
+    padding: 10px 8px;
+    border-radius: 4px;
+    line-height: normal !important;
+}
+
+.gfgFreeGiftMsgIcon{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-gap: 10px;
+    width: 50px;
+    height: 50px;
+
+}
+
+
+.gfgProductPageWrapperV2{
+    margin-bottom: 5px;
+    line-height: normal;
+}
+.cart__ctas{
+    display: grid;
+}
+
+.gfgVolDiscountContainer{
+    display: grid;
+}
+
+.gfgTitleDiv{
+    font-weight: bolder;
+    text-align: center;
+}
+
+.gfgGridBox{
+    padding: 20px 10px;
+    margin: 5px 0px;
+}
+
+.gfgQty{
+    display: inline-flex;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+}
+.gfgRadioButton{
+    margin: 0px 10px;
+    background-color: rgb(0, 173, 181);
+    transform: scale(1.5);
+}
+.gfgCostLabel{
+    font-weight: bolder;
+    margin: 0px 5px;
+}
+.gfgPricesDiv{
+    display: inline-flex;
+}
+
+.gfgFreeGiftMsgRow{
+    /* border: 0.5px solid black; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gfgClaimButton{
+    width: fit-content;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.gfgFreeGiftMsgContainerForAccordion{
+    color: black;
+    z-index: 5;
+    display: grid;
+    position: relative;
+}
+
+.gfgFreeGiftSelectDiv{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 8fr 1fr;
+    border: 1px solid black;
+    border-radius: 5px;
+    align-items: center;
+    padding: 10px;
+    line-height: 20px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+}
+
+.gfgFreeGiftClaimButton{
+    color: white;
+    background-color: black;
+    border: none;
+    height: fit-content;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 15.2px;
+    line-height: 22.00px;
+    padding: 3px 12px;
+    text-align: center;
+}
+
+.gfgFreeGiftOptionsContainerDiv{
+    display: none;
+}
+
+.gfgFreeGiftOptionsContainerDivExpanded{
+    display: grid;
+    grid-row: auto;
+    position: absolute;
+    z-index: 5;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: white;
+    border-radius: 5px;
+    border: black solid 1px !important;
+    border-bottom: none !important;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    overflow: auto;
+    max-height: 500px;
+
+}
+
+.gfgFreeGiftMsgIconImageElement{
+    /* .css("width", "40px").css("height", "40px") */
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
+
+.gfgFreeGiftMsgIconImageElementOfItem{
+    /* .css("width", "40px").css("height", "40px") */
+    border-radius: 5px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+    object-fit: cover;
+    width: 50px;
+    height: 50px;
+}
+
+.gfgFreeGiftDropDownButton{
+    /* background-color: rgba(0, 0, 0, 0); */
+    border: none;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.gfgFreeGiftDropDownButtonImageEle{
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-size:contain;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.gfgFreeGiftDropDownButtonRotationClass{
+    transform: rotate(180deg);
+}
+.gfgFreeGiftMsgOptionRow{
+    display: grid;
+    padding: 10px;
+    grid-template-columns: auto 8fr 1fr;
+    border-top: 1px solid rgba(169, 169, 169, 0.2);
+    text-align: left;
+    align-items: center;
+    grid-gap: 10PX;
+}
+
+.gfgFreeGiftMsgTitle{
+    font-weight: 700;
+    font-size: 16px;
+    text-align: left;
+    line-height: 16px;
+}
+
+.gfgFreeGiftMsgSubTitle{
+    font-weight: 600;
+    font-size: 12px;
+    text-align: left;
+}
+
+.gfgFreeGiftMsgParentContainerForDropDown{
+    cursor: pointer;
+}
+
+.gfgFreeGiftVariantSelect{
+    max-width: fit-content ;
+}
+.gfgFreeGiftMsgTextContainer{
+    display: grid;
+    grid-gap: 5px
+}
+
+.gfgFreeGiftSelectDivExpanded{
+    border-top: none;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.gfgFreeGiftPill-container {
+    display: grid;
+    text-align: center;
+    width: fit-content;
+    justify-content: center;
+  }
+  
+.gfgFreeGiftPill-segment {
+    border-radius: 5px;
+    padding: 1px 5px;
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  .gfgFreeGiftSingleOfferSelectDiv{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 8fr 1fr;
+    border-radius: 5px;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+  }
+
+  .gfgSingleOffergiftContainerDiv{
+    border: black solid 1px;
+    border-radius: 5px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+  }
+
+.gfgFreeGiftToast{
+    grid-column: 1 / span 3;
+    font-size: 12px;
+    color: red;
+}
+
+.gfgFreeGiftMsgSubTitleNoteTextColor{
+    color: #ec8816;
+}
+
+.gfgFreeGiftInvalidProductClaimButton{
+    background-color: #e5e5e5;
+    color: white;
+    pointer-events: none;
+}
+
+.gfgFreeGiftValidProductInactiveClaimButton{
+    background-color: #e5e5e5;
+    color: white;
+}
+
+.gfgFreeGiftReadyToClaimButton{
+    background-color: black;
+    cursor: pointer;
+}
+
+.gfgFreeGiftActiveFreeGiftClaimButton{
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+    cursor: pointer;
+}
+
+.gfgCartPageWrapperV2{
+    margin-bottom: 10px;
+}
+
+.gfgFreeGiftScrollbar-visible{
+    grid-column: 2 / 2;
+    text-align: center;
+    max-width: fit-content;
+}
+
+.gfgCartPageWrapperV2 .gfgSingleOffergiftContainerDiv{
+    width: auto;
+    max-width:  400px;
+}
+
+.gftFreeGiftWrapper{
+    display: grid;
+    justify-items: end;
+}
+
+.gfgBulkDiscountWidgetHTML{
+    display: grid;
+    grid-gap: 10px;
+}
+.gfgBulkDiscountSingleWidgetHTML {
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 10px;
+    margin: 5px 0px;
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+}
+.gfgBulkDiscountSingleWidgetWrapper{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 5px;
+}
+@media only screen and (max-width: 600px) {
+    .gfgFreeGiftClaimButton {
+        grid-column: 2 / 2;
+        text-align: center;
+      }
+    .gfgSingleOffergiftContainerDiv{
+        width: 100%;
+      }
+  }
