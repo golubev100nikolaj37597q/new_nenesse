@@ -31,7 +31,7 @@ File Name: C:\Downloaded Web Sites\www.neness-shop.de\onsite\js\klaviyo.js
 Content Type: application/javascript
 
 Uri: https://tpi-app.herokuapp.com/get_script/?shop_url=parfumly1.myshopify.com
-File Name: C:\Downloaded Web Sites\www.neness-shop.de\get_script\index.htm
+File Name: C:\Downloaded Web Sites\www.neness-shop.de\get_script\index.php
 Content Type: text/javascript
 
 Uri: https://widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js
@@ -39,7 +39,7 @@ File Name: C:\Downloaded Web Sites\www.neness-shop.de\bootstrap\v5\tp.widget.boo
 Content Type: application/x-javascript
 
 Uri: https://www.neness-shop.de/
-File Name: C:\Downloaded Web Sites\www.neness-shop.de\index.htm
+File Name: C:\Downloaded Web Sites\www.neness-shop.de\index.php
 Content Type: text/html
 
 Uri: https://www.neness-shop.de/?id=GDPR_769769dd5c4da8efb4d18bf16ca2c677
@@ -59,7 +59,7 @@ File Name: C:\Downloaded Web Sites\www.neness-shop.de\account\register.html
 Content Type: text/html
 
 Uri: https://www.neness-shop.de/cart
-File Name: C:\Downloaded Web Sites\www.neness-shop.de\cart.html
+File Name: C:\Downloaded Web Sites\www.neness-shop.de\cart.php
 Content Type: text/html
 
 Uri: https://www.neness-shop.de/cdn/shop/files/007L_1800x1800.png?v=1692612575
@@ -6447,7 +6447,7 @@ File Name: C:\Downloaded Web Sites\www.neness-shop.de\cdn\shopifycloud\shopify\a
 Content Type: text/javascript
 
 Uri: https://www.neness-shop.de/collections/100-parfume-oil
-File Name: C:\Downloaded Web Sites\www.neness-shop.de\collections\100-parfume-oil.html
+File Name: C:\Downloaded Web Sites\www.neness-shop.de\collections\100-parfume-oil
 Content Type: text/html
 
 Uri: https://www.neness-shop.de/collections/100-parfume-oil.atom
@@ -6515,7 +6515,7 @@ File Name: C:\Downloaded Web Sites\www.neness-shop.de\collections\365days-dufte\
 Content Type: text/html
 
 Uri: https://www.neness-shop.de/collections/alles-in-einem
-File Name: C:\Downloaded Web Sites\www.neness-shop.de\collections\alles-in-einem.html
+File Name: C:\Downloaded Web Sites\www.neness-shop.de\collections\alles-in-einem
 Content Type: text/html
 
 Uri: https://www.neness-shop.de/collections/alles-in-einem.atom
@@ -6743,7 +6743,7 @@ File Name: C:\Downloaded Web Sites\www.neness-shop.de\collections\alles-in-einem
 Content Type: text/html
 
 Uri: https://www.neness-shop.de/collections/fur-ihn
-File Name: C:\Downloaded Web Sites\www.neness-shop.de\collections\fur-ihn.html
+File Name: C:\Downloaded Web Sites\www.neness-shop.de\collections\fur-ihn
 Content Type: text/html
 
 Uri: https://www.neness-shop.de/collections/fur-ihn.atom
@@ -6951,7 +6951,7 @@ File Name: C:\Downloaded Web Sites\www.neness-shop.de\collections\fur-ihn-1.html
 Content Type: text/html
 
 Uri: https://www.neness-shop.de/collections/fur-sie
-File Name: C:\Downloaded Web Sites\www.neness-shop.de\collections\fur-sie.html
+File Name: C:\Downloaded Web Sites\www.neness-shop.de\collections\fur-sie
 Content Type: text/html
 
 Uri: https://www.neness-shop.de/collections/fur-sie.atom
@@ -7315,7 +7315,7 @@ File Name: C:\Downloaded Web Sites\www.neness-shop.de\collections\fur-sie-2.html
 Content Type: text/html
 
 Uri: https://www.neness-shop.de/collections/proben
-File Name: C:\Downloaded Web Sites\www.neness-shop.de\collections\proben.html
+File Name: C:\Downloaded Web Sites\www.neness-shop.de\collections\proben
 Content Type: text/html
 
 Uri: https://www.neness-shop.de/collections/proben.atom
@@ -7511,7 +7511,7 @@ File Name: C:\Downloaded Web Sites\www.neness-shop.de\collections\raumdufte\prod
 Content Type: text/html
 
 Uri: https://www.neness-shop.de/collections/unisex
-File Name: C:\Downloaded Web Sites\www.neness-shop.de\collections\unisex.html
+File Name: C:\Downloaded Web Sites\www.neness-shop.de\collections\unisex
 Content Type: text/html
 
 Uri: https://www.neness-shop.de/collections/unisex.atom

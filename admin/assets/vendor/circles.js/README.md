@@ -153,7 +153,7 @@ You can override these classes by sending properties `wrpClass` and/or `textClas
 
 ### Tests
 
-Tests can be run with [karma](http://karma-runner.github.io/0.12/index.html):
+Tests can be run with [karma](http://karma-runner.github.io/0.12/index.phpl):
 
 ```shell
 karma start
@@ -167,7 +167,7 @@ grunt jasmine
 
 ### Examples
 
-* [index.html](https://github.com/lugolabs/circles/blob/master/spec/index.html) - Overall functionality
+* [index.phpl](https://github.com/lugolabs/circles/blob/master/spec/index.phpl) - Overall functionality
 * [responsive.html](https://github.com/lugolabs/circles/blob/master/spec/responsive.html) - Making circles responsive
 * [viewport.html](https://github.com/lugolabs/circles/blob/master/spec/viewport.html) - Animate the circles when in viewport
 

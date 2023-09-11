@@ -75,7 +75,7 @@ npm run build
 
 # Start up the live web server (will be available on port 10001)
 npm run dev
--> http://localhost:10001/index.html
+-> http://localhost:10001/index.phpl
 
 # Access and test in samples dir
 -> http://localhost:10001/samples/YourSampleName.html

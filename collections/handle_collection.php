@@ -138,7 +138,7 @@ $counts = get_availability_counts_by_collection($collections);
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="theme-color" content="#000000">
-  <link rel="canonical" href="365days-dufte.html">
+  <link rel="canonical" href="365days-dufte">
   <link rel="preload" as="script" href="../cdn/shop/t/27/assets/theme.js?v=122605177298914724411688539544">
   <link rel="preconnect" href="https://cdn.shopify.com">
   <link rel="preconnect" href="https://fonts.shopifycdn.com">
@@ -458,7 +458,7 @@ $counts = get_availability_counts_by_collection($collections);
 
 
   <!-- END app app block --><!-- BEGIN app block: shopify://apps/tixel-multiple-tiktok-pixels/blocks/app-embed/b273c4b8-95ba-409d-a87c-c46907e02629 -->
-  <script async="" src="../get_script/index.htm?shop_url=parfumly1.myshopify.com"></script>
+  <script async="" src="../get_script/index.php?shop_url=parfumly1.myshopify.com"></script>
 
 
   <!-- END app app block -->
@@ -1001,7 +1001,7 @@ $counts = get_availability_counts_by_collection($collections);
                     </style>
                     <div class="h1 site-header__logo"><span class="visually-hidden">Neness</span>
 
-                      <a href="../index.htm" class="site-header__logo-link">
+                      <a href="../index.php" class="site-header__logo-link">
                         <img class="small--hide"
                           src="../cdn/shop/files/Bildschirmfoto_2023-02-22_um_12.38.41_200x.png?v=1677066018"
                           srcset="../cdn/shop/files/Bildschirmfoto_2023-02-22_um_12.38.41_200x.png 1x?v=1677066018 1x, ../cdn/shop/files/Bildschirmfoto_2023-02-22_um_12.38.41_200x%402x.png 2xg?v=1677066018 2x"
@@ -1017,49 +1017,49 @@ $counts = get_availability_counts_by_collection($collections);
                     <ul class="site-nav site-navigation site-navigation--beside small--hide" role="navigation">
                       <li class="site-nav__item site-nav__expanded-item">
 
-                        <a href="../index.htm" class="site-nav__link site-nav__link--underline">
+                        <a href="../index.php" class="site-nav__link site-nav__link--underline">
                           Startseite
                         </a>
                       </li>
                       <li class="site-nav__item site-nav__expanded-item">
 
-                        <a href="alles-in-einem.html" class="site-nav__link site-nav__link--underline">
+                        <a href="alles-in-einem" class="site-nav__link site-nav__link--underline">
                           Bestseller
                         </a>
                       </li>
                       <li class="site-nav__item site-nav__expanded-item">
 
-                        <a href="fur-sie.html" class="site-nav__link site-nav__link--underline">
+                        <a href="fur-sie" class="site-nav__link site-nav__link--underline">
                           Damendüfte
                         </a>
                       </li>
                       <li class="site-nav__item site-nav__expanded-item">
 
-                        <a href="unisex.html" class="site-nav__link site-nav__link--underline">
+                        <a href="unisex" class="site-nav__link site-nav__link--underline">
                           Unisex
                         </a>
                       </li>
                       <li class="site-nav__item site-nav__expanded-item">
 
-                        <a href="fur-ihn.html" class="site-nav__link site-nav__link--underline">
+                        <a href="fur-ihn" class="site-nav__link site-nav__link--underline">
                           Herrendüfte
                         </a>
                       </li>
                       <li class="site-nav__item site-nav__expanded-item">
 
-                        <a href="proben.html" class="site-nav__link site-nav__link--underline">
+                        <a href="proben" class="site-nav__link site-nav__link--underline">
                           Proben
                         </a>
                       </li>
                       <li class="site-nav__item site-nav__expanded-item">
 
-                        <a href="100-parfume-oil.html" class="site-nav__link site-nav__link--underline">
+                        <a href="100-parfume-oil" class="site-nav__link site-nav__link--underline">
                           Parfümöl
                         </a>
                       </li>
                       <li class="site-nav__item site-nav__expanded-item">
 
-                        <a href="365days-dufte.html" class="site-nav__link site-nav__link--underline">
+                        <a href="365days-dufte" class="site-nav__link site-nav__link--underline">
                           365DAYS DÜFTE
                         </a>
                       </li>
@@ -1107,7 +1107,7 @@ $counts = get_availability_counts_by_collection($collections);
                           <span class="site-nav__icon-label small--hide icon__fallback-text">
                             Account
                           </span>
-                        </a><a href="../cart.html" id="HeaderCartTrigger" aria-controls="HeaderCart"
+                        </a><a href="../cart.php" id="HeaderCartTrigger" aria-controls="HeaderCart"
                           class="site-nav__link site-nav__link--icon js-no-transition" data-icon="bag-minimal">
                           <span class="cart-link"><svg aria-hidden="true" focusable="false" role="presentation"
                               class="icon icon-bag-minimal" viewbox="0 0 64 64">
@@ -1415,7 +1415,7 @@ $counts = get_availability_counts_by_collection($collections);
                   <div class="site-header__drawer-animate">
                     <div class="slide-nav__wrapper" data-level="1">
                       <ul class="slide-nav">
-                        <li class="slide-nav__item"><a href="../index.htm"
+                        <li class="slide-nav__item"><a href="../index.php"
                             class="slide-nav__link"><span>Startseite</span>
                             <svg aria-hidden="true" focusable="false" role="presentation"
                               class="icon icon-chevron-right" viewbox="0 0 284.49 498.98">
@@ -1424,7 +1424,7 @@ $counts = get_availability_counts_by_collection($collections);
                               </path>
                             </svg>
                           </a></li>
-                        <li class="slide-nav__item"><a href="alles-in-einem.html" class="slide-nav__link">
+                        <li class="slide-nav__item"><a href="alles-in-einem" class="slide-nav__link">
                             <div class="slide-nav__image">
                               <img
                                 src="../cdn/shop/files/182AC_21574842-1388-475e-9366-ca6775eec26d_400x.jpg?v=1691797892"
@@ -1438,7 +1438,7 @@ $counts = get_availability_counts_by_collection($collections);
                               </path>
                             </svg>
                           </a></li>
-                        <li class="slide-nav__item"><a href="fur-sie.html" class="slide-nav__link">
+                        <li class="slide-nav__item"><a href="fur-sie" class="slide-nav__link">
                             <div class="slide-nav__image">
                               <img
                                 src="../cdn/shop/files/182AC_21574842-1388-475e-9366-ca6775eec26d_400x.jpg?v=1691797892"
@@ -1452,7 +1452,7 @@ $counts = get_availability_counts_by_collection($collections);
                               </path>
                             </svg>
                           </a></li>
-                        <li class="slide-nav__item"><a href="unisex.html" class="slide-nav__link">
+                        <li class="slide-nav__item"><a href="unisex" class="slide-nav__link">
                             <div class="slide-nav__image">
                               <img src="../cdn/shop/files/N244-nuty_400x.png?v=1691797939" alt="Unisex">
                             </div>
@@ -1464,7 +1464,7 @@ $counts = get_availability_counts_by_collection($collections);
                               </path>
                             </svg>
                           </a></li>
-                        <li class="slide-nav__item"><a href="fur-ihn.html" class="slide-nav__link">
+                        <li class="slide-nav__item"><a href="fur-ihn" class="slide-nav__link">
                             <div class="slide-nav__image">
                               <img src="../cdn/shop/files/N114-nuty_400x.png?v=1690111395" alt="Für Ihn">
                             </div>
@@ -1476,7 +1476,7 @@ $counts = get_availability_counts_by_collection($collections);
                               </path>
                             </svg>
                           </a></li>
-                        <li class="slide-nav__item"><a href="proben.html" class="slide-nav__link">
+                        <li class="slide-nav__item"><a href="proben" class="slide-nav__link">
                             <div class="slide-nav__image">
                               <img src="../cdn/shop/files/2S4A8601_AO_k_400x.jpg?v=1687636330" alt="Proben">
                             </div>
@@ -1488,7 +1488,7 @@ $counts = get_availability_counts_by_collection($collections);
                               </path>
                             </svg>
                           </a></li>
-                        <li class="slide-nav__item"><a href="100-parfume-oil.html" class="slide-nav__link">
+                        <li class="slide-nav__item"><a href="100-parfume-oil" class="slide-nav__link">
                             <div class="slide-nav__image">
                               <img src="../cdn/shop/products/montaz_moonlight_AO_400x.jpg?v=1679648244" alt="Parfümöl">
                             </div>
@@ -1500,7 +1500,7 @@ $counts = get_availability_counts_by_collection($collections);
                               </path>
                             </svg>
                           </a></li>
-                        <li class="slide-nav__item"><a href="365days-dufte.html" class="slide-nav__link">
+                        <li class="slide-nav__item"><a href="365days-dufte" class="slide-nav__link">
                             <div class="slide-nav__image">
                               <img src="../cdn/shop/products/damski-opakowanie-butelka2_400x.png?v=1669808350"
                                 alt="365DAYS Düfte">
@@ -1999,8 +1999,7 @@ $counts = get_availability_counts_by_collection($collections);
                                                             foreach ($data as $item) {
                                                               if (isset($item['file_path'])) {
                                                                 $filePath = $item['file_path'];
-                                                                ?>
-                                                                  <?php if ($bool) {
+                                                                 if ($bool) {
                                                                     echo 'data-src="' . $filePath . '"';
                                                                     $bool = false;
                                                                     continue;
@@ -2043,8 +2042,7 @@ $counts = get_availability_counts_by_collection($collections);
                                                                 <?php if ($product['price']) ?>                                       
                                                                 </span>
                                                               </span>
-                                                              <div class="product__unit-price">€89,80/100
-                                                                ml
+                                                              <div class="product__unit-price">€ <?php echo $product['container']?> ml
 
                                                               </div>
                                                             </div>

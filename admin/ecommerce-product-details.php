@@ -61,7 +61,7 @@ if ($_SESSION['user_role'] !== 'admin') {
       "deleteLine:build": "hs-builder:build-delete",
       "deleteLine:dist": "hs-builder:dist-delete",
       "previewMode": false,
-      "startPath": "/index.html",
+      "startPath": "/index.phpl",
       "vars": {
         "themeFont": "https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap",
         "version": "?v=1.0"

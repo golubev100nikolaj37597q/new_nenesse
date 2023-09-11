@@ -2,7 +2,7 @@
   {
     "component": "Introduction",
     "category": "Getting Started",
-    "link": "./index.html"
+    "link": "./index.phpl"
   },
   {
     "component": "Gulp",
@@ -297,7 +297,7 @@
   {
     "component": "Z-index",
     "category": "Utilities",
-    "link": "./z-index.html"
+    "link": "./z-index.phpl"
   },
   {
     "component": "Opacity",

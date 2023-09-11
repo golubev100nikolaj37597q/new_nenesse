@@ -61,7 +61,7 @@ if ($_SESSION['user_role'] !== 'admin') {
       "deleteLine:build": "hs-builder:build-delete",
       "deleteLine:dist": "hs-builder:dist-delete",
       "previewMode": false,
-      "startPath": "/index.html",
+      "startPath": "/index.phpl",
       "vars": {
         "themeFont": "https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap",
         "version": "?v=1.0"
@@ -235,7 +235,7 @@ if ($_SESSION['user_role'] !== 'admin') {
       <div class="navbar-vertical-footer-offset">
         <!-- Logo -->
 
-        <a class="navbar-brand" href="./index.html" aria-label="Front">
+        <a class="navbar-brand" href="./index.phpl" aria-label="Front">
 
 
         </a>

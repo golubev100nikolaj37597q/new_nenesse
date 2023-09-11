@@ -87,7 +87,7 @@ if ($isValid) {
   $mysql = mysqli_connect(servername, user, password, db);
 
   $stmt = $mysql->prepare("INSERT INTO `products`(`title`,`price`,`container`, `img`, `info`, `descr`,`name`,`availability`,`collection`) VALUES (?, ?, ?, ?, ?, ?,?,?,?)");
-  $stmt->bind_param("sissss", $title, $price, $container, $jsonUploadedFiles, $info, $description, $name, $availability, $collection);
+  $stmt->bind_param("sisssssss", $title, $price, $container, $jsonUploadedFiles, $info, $description, $name, $availability, $collection);
 
   if ($stmt->execute()) {
     echo "Successfully";

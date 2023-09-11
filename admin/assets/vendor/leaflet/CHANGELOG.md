@@ -142,7 +142,7 @@ Leaflet Changelog
 * Enforce forbid-only rule in the continuous integration ([#7448](https://github.com/Leaflet/Leaflet/pull/7448) by [@johnd0e](https://github.com/johnd0e))
 * Increase `captureTimeout` and `browserSocketTimeout` ([#7856](https://github.com/Leaflet/Leaflet/pull/7856) by [@Falke-Design](https://github.com/Falke-Design))
 * Added / update tests ([#7790](https://github.com/Leaflet/Leaflet/pull/7790), [#7147](https://github.com/Leaflet/Leaflet/pull/7147), [#7721](https://github.com/Leaflet/Leaflet/pull/7721), [#7461](https://github.com/Leaflet/Leaflet/pull/7461), [#7126](https://github.com/Leaflet/Leaflet/pull/7126), [#7451](https://github.com/Leaflet/Leaflet/pull/7451), [#7450](https://github.com/Leaflet/Leaflet/pull/7450), [#7447](https://github.com/Leaflet/Leaflet/pull/7447), [#7438](https://github.com/Leaflet/Leaflet/pull/7438) by [@Falke-Design](https://github.com/Falke-Design), [@johnd0e](https://github.com/johnd0e), [@phloose](https://github.com/phloose))
-* Added missing Test-Spec-Files to index.html ([#7845](https://github.com/Leaflet/Leaflet/pull/7845) by [@Falke-Design](https://github.com/Falke-Design))
+* Added missing Test-Spec-Files to index.phpl ([#7845](https://github.com/Leaflet/Leaflet/pull/7845) by [@Falke-Design](https://github.com/Falke-Design))
 * Cover `DomEvent` with unit tests (by [@stephenspol](https://github.com/stephenspol) in https://github.com/Leaflet/Leaflet/pull/8088)
 * Cover `DomUtil` with unit tests ([#7547](https://github.com/Leaflet/Leaflet/pull/7547), by [@LGNorris](https://github.com/LGNorris))
 
