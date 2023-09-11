@@ -234,3 +234,7 @@ function getShuffledTopViewsProducts($collection = null)
 
   return $products;
 }
+function addToCart($productName) {
+  $_SESSION['cart'][] = ['name' => $productName];
+}
+?>

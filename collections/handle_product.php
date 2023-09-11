@@ -6,7 +6,16 @@ $name = $matches[2];
 add_views($name);
 $products = get_info_product_by_name($name);
 $img = get_src_photo($name);
+session_start();
 
+if (isset($_POST['name'])) {
+
+    // Инициализируем корзину, если она еще не создана
+    if (!isset($_SESSION['cart'])) {
+        $_SESSION['cart'] = [];
+    }
+    addToCart($_POST['name']);
+}
 ?>
 <!doctype html>
 <html class="no-js" lang="de" dir="ltr">
@@ -3159,639 +3168,644 @@ $img = get_src_photo($name);
 
         </div>
         <?php if ($products) { ?>
-            <main class="main-content" id="MainContent">
-                <div id="shopify-section-template--17917053370634__main" class="shopify-section">
+                        <main class="main-content" id="MainContent">
+                            <div id="shopify-section-template--17917053370634__main" class="shopify-section">
 
-                    <div id="ProductSection-template--17917053370634__main-8209898701066" class="product-section" data-section-id="template--17917053370634__main" data-section-type="product" data-product-id="8209898701066" data-product-handle="mars-roll-on-100-parfumol" data-product-title="MARS - 100% Parfümöl" data-history="true" data-modal="false">
-                        <div class="page-content page-content--product">
-                            <div class="page-width">
+                                <div id="ProductSection-template--17917053370634__main-8209898701066" class="product-section" data-section-id="template--17917053370634__main" data-section-type="product" data-product-id="8209898701066" data-product-handle="mars-roll-on-100-parfumol" data-product-title="MARS - 100% Parfümöl" data-history="true" data-modal="false">
+                                    <div class="page-content page-content--product">
+                                        <div class="page-width">
 
-                                <div class="product-single__header--mobile medium-up--hide">
-                                    <h1 class="h2 product-single__title">
-                                        < </h1>
-                                </div>
-
-                                <div class="product-grid__container grid grid--product-images--partial">
-                                    <div class="grid__item medium-up--one-half product-single__sticky">
-                                        <div data-product-images="" data-zoom="true" data-has-slideshow="true">
-                                            <div class="product__photos product__photos-template--17917053370634__main product__photos--beside">
-
-                                                <div class="product__main-photos" data-product-single-media-group="">
-                                                    <div data-product-photos="" class="product-slideshow flickity-enabled is-draggable" id="ProductPhotos-template--17917053370634__main" tabindex="0">
-                                                        <div class="flickity-viewport" style="height: 602px; touch-action: pan-y;">
-                                                            <div class="flickity-slider" style="left: 0px; transform: translateX(-400%);">
-                                                                <div class="product-main-slide starting-slide" data-index="0" style="position: absolute; left: 0px; transform: translateX(0%);" aria-hidden="true" tabindex="-1">
-
-                                                                    <div data-product-image-main="" class="product-image-main" data-size="square">
-                                                                        <div class="image-wrap" style="height: 0; padding-bottom: 100.0%;">
-                                                                            <img class="photoswipe__image lazyautosizes lazyloaded" srcset="<?php echo $img[0] ?> 1080w">
-
-                                                                            <noscript>
-                                                                                <img class="lazyloaded" src="//www.neness-shop.de/cdn/shop/files/182AC_21574842-1388-475e-9366-ca6775eec26d_800x.jpg?v=1691797892" alt="ALLIEN WORLD - 182">
-                                                                            </noscript><button type="button" class="btn btn--secondary btn--circle js-photoswipe__zoom product__photo-zoom" aria-label="Zoom">
-                                                                                <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-search" viewBox="0 0 64 64">
-                                                                                    <defs>
-                                                                                        <style>
-                                                                                            .cls-1 {
-                                                                                                fill: none;
-                                                                                                stroke: #000;
-                                                                                                stroke-miterlimit: 10;
-                                                                                                stroke-width: 2px
-                                                                                            }
-                                                                                        </style>
-                                                                                    </defs>
-                                                                                    <path class="cls-1" d="M47.16 28.58A18.58 18.58 0 1 1 28.58 10a18.58 18.58 0 0 1 18.58 18.58zM54 54L41.94 42"></path>
-                                                                                </svg>
-                                                                            </button>
-                                                                        </div>
-                                                                    </div>
-
-                                                                </div>
-                                                                <div class="product-main-slide secondary-slide" data-index="1" aria-hidden="true" style="position: absolute; left: 0px; transform: translateX(100%);">
-
-                                                                    <div data-product-image-main="" class="product-image-main" data-size="square">
-                                                                        <div class="image-wrap" style="height: 0; padding-bottom: 100.0%;"><img class="photoswipe__image lazyautosizes lazyloaded" sizes="602px" srcset="<?php echo $img[0] ?> 1080w">
-
-                                                                            <noscript>
-                                                                                <img class="lazyloaded" src="//www.neness-shop.de/cdn/shop/files/N182-nuty_800x.png?v=1691797892" alt="ALLIEN WORLD - 182">
-                                                                            </noscript><button type="button" class="btn btn--secondary btn--circle js-photoswipe__zoom product__photo-zoom" aria-label="Zoom">
-                                                                                <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-search" viewBox="0 0 64 64">
-                                                                                    <defs>
-                                                                                        <style>
-                                                                                            .cls-1 {
-                                                                                                fill: none;
-                                                                                                stroke: #000;
-                                                                                                stroke-miterlimit: 10;
-                                                                                                stroke-width: 2px
-                                                                                            }
-                                                                                        </style>
-                                                                                    </defs>
-                                                                                    <path class="cls-1" d="M47.16 28.58A18.58 18.58 0 1 1 28.58 10a18.58 18.58 0 0 1 18.58 18.58zM54 54L41.94 42"></path>
-                                                                                </svg>
-                                                                            </button>
-                                                                        </div>
-                                                                    </div>
-
-                                                                </div>
-                                                                <div class="product-main-slide secondary-slide" data-index="2" aria-hidden="true" style="position: absolute; left: 0px; transform: translateX(200%);">
-
-                                                                    <div data-product-image-main="" class="product-image-main" data-size="square">
-                                                                        <div class="image-wrap" style="height: 0; padding-bottom: 100.0%;"><img class="photoswipe__image lazyautosizes lazyloaded" data-aspectratio="1.0" data-sizes="auto" sizes="602px" srcset="<?php echo $img[0] ?> 1080w">
-
-                                                                            <noscript>
-                                                                                <img class="lazyloaded" src="//www.neness-shop.de/cdn/shop/files/N182_800x.png?v=1692607129" alt="ALLIEN WORLD - 182">
-                                                                            </noscript><button type="button" class="btn btn--secondary btn--circle js-photoswipe__zoom product__photo-zoom" aria-label="Zoom">
-                                                                                <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-search" viewBox="0 0 64 64">
-                                                                                    <defs>
-                                                                                        <style>
-                                                                                            .cls-1 {
-                                                                                                fill: none;
-                                                                                                stroke: #000;
-                                                                                                stroke-miterlimit: 10;
-                                                                                                stroke-width: 2px
-                                                                                            }
-                                                                                        </style>
-                                                                                    </defs>
-                                                                                    <path class="cls-1" d="M47.16 28.58A18.58 18.58 0 1 1 28.58 10a18.58 18.58 0 0 1 18.58 18.58zM54 54L41.94 42"></path>
-                                                                                </svg>
-                                                                            </button>
-                                                                        </div>
-                                                                    </div>
-
-                                                                </div>
-                                                                <div class="product-main-slide secondary-slide" data-index="3" style="position: absolute; left: 0px; transform: translateX(300%);" tabindex="-1" aria-hidden="true">
-
-                                                                    <div data-product-image-main="" class="product-image-main" data-size="square">
-                                                                        <div class="image-wrap" style="height: 0; padding-bottom: 85.33333333333333%;"><img class="photoswipe__image lazyautosizes lazyloaded" sizes="602px" srcset="<?php echo $img[0] ?> 1080w">
-
-                                                                            <noscript>
-                                                                                <img class="lazyloaded" src="<?php echo $img[0] ?>" alt="ALLIEN WORLD - 182">
-                                                                            </noscript><button type="button" class="btn btn--secondary btn--circle js-photoswipe__zoom product__photo-zoom" aria-label="Zoom">
-                                                                                <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-search" viewBox="0 0 64 64">
-                                                                                    <defs>
-                                                                                        <style>
-                                                                                            .cls-1 {
-                                                                                                fill: none;
-                                                                                                stroke: #000;
-                                                                                                stroke-miterlimit: 10;
-                                                                                                stroke-width: 2px
-                                                                                            }
-                                                                                        </style>
-                                                                                    </defs>
-                                                                                    <path class="cls-1" d="M47.16 28.58A18.58 18.58 0 1 1 28.58 10a18.58 18.58 0 0 1 18.58 18.58zM54 54L41.94 42"></path>
-                                                                                </svg>
-                                                                            </button>
-                                                                        </div>
-                                                                    </div>
-
-                                                                </div>
-                                                                <div class="product-main-slide secondary-slide is-selected" data-index="4" style="position: absolute; left: 0px; transform: translateX(400%);" tabindex="0">
-
-                                                                    <div data-product-image-main="" class="product-image-main" data-size="square">
-                                                                        <div class="image-wrap" style="height: 0; padding-bottom: 85.33333333333333%;">
-                                                                            <img class="photoswipe__image lazyautosizes lazyloaded" data-sizes="auto" srcset="<?php echo $img[0] ?> 1080w">
-
-                                                                            <noscript>
-                                                                                <img class="lazyloaded" src="//www.neness-shop.de/cdn/shop/files/WhatsAppImage2023-06-06at19.38.54_9d6e72d7-7330-47f6-b362-493ecc1c2b2f_800x.jpg?v=1692607129" alt="ALLIEN WORLD - 182">
-                                                                            </noscript><button type="button" class="btn btn--secondary btn--circle js-photoswipe__zoom product__photo-zoom" aria-label="Zoom">
-                                                                                <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-search" viewBox="0 0 64 64">
-                                                                                    <defs>
-                                                                                        <style>
-                                                                                            .cls-1 {
-                                                                                                fill: none;
-                                                                                                stroke: #000;
-                                                                                                stroke-miterlimit: 10;
-                                                                                                stroke-width: 2px
-                                                                                            }
-                                                                                        </style>
-                                                                                    </defs>
-                                                                                    <path class="cls-1" d="M47.16 28.58A18.58 18.58 0 1 1 28.58 10a18.58 18.58 0 0 1 18.58 18.58zM54 54L41.94 42"></path>
-                                                                                </svg>
-                                                                            </button>
-                                                                        </div>
-                                                                    </div>
-
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <ol class="flickity-page-dots">
-                                                            <li class="dot" aria-label="Page dot 1"></li>
-                                                            <li class="dot" aria-label="Page dot 2"></li>
-                                                            <li class="dot" aria-label="Page dot 3"></li>
-                                                            <li class="dot" aria-label="Page dot 4"></li>
-                                                            <li class="dot is-selected" aria-label="Page dot 5" aria-current="step"></li>
-                                                        </ol>
-                                                    </div>
-                                                </div>
-
-                                                <div data-product-thumbs="" class="product__thumbs product__thumbs--beside product__thumbs-placement--left small--hide" data-position="beside" data-arrows="false">
-                                                    <div class="product__thumbs--scroller">
-                                                        <div class="product__thumb-item" data-index="0">
-                                                            <a href="<?php echo $img[0] ?>" data-product-thumb="" class="product__thumb js-no-transition" data-index="0" data-id="37182818681098">
-                                                                <div class="image-wrap" style="height: 0; padding-bottom: 100.0%;"><img class="lazyautosizes lazyloaded" data-aspectratio="1.0" data-sizes="auto" srcset="<?php echo $img[0] ?> 1080w">
-                                                                    <noscript>
-                                                                        <img class="lazyloaded" src="<?php echo $img[0] ?>" alt="ALLIEN WORLD - 182">
-                                                                    </noscript>
-                                                                </div>
-                                                            </a>
-                                                        </div>
-
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <script type="application/json" id="ModelJson-template--17917053370634__main">
-                                            []
-                                        </script>
-                                    </div>
-                                    <div class="product-grid__content product-single__sticky grid__item medium-up--one-half">
-
-                                        <div class="product-single__meta">
-                                            <div class="product-block product-block--header product-single__header small--hide">
+                                            <div class="product-single__header--mobile medium-up--hide">
                                                 <h1 class="h2 product-single__title">
-                                                    <?php echo $products['title'] ?>
-                                                </h1>
+                                                    < </h1>
                                             </div>
 
-                                            <div data-product-blocks="">
-                                                <div id="shopify-block-loox-rating" class="shopify-block shopify-app-block">
-                                                    <a href="#looxReviews">
-                                                        <div class="loox-rating" data-content-size="16" data-loox-block-id="loox-rating" data-color-text="" data-color-star="" data-id="8209898701066" data-rating="5.0" data-raters="4"></div>
-                                                    </a>
+                                            <div class="product-grid__container grid grid--product-images--partial">
+                                                <div class="grid__item medium-up--one-half product-single__sticky">
+                                                    <div data-product-images="" data-zoom="true" data-has-slideshow="true">
+                                                        <div class="product__photos product__photos-template--17917053370634__main product__photos--beside">
 
+                                                            <div class="product__main-photos" data-product-single-media-group="">
+                                                                <div data-product-photos="" class="product-slideshow flickity-enabled is-draggable" id="ProductPhotos-template--17917053370634__main" tabindex="0">
+                                                                    <div class="flickity-viewport" style="height: 602px; touch-action: pan-y;">
+                                                                        <div class="flickity-slider" style="left: 0px; transform: translateX(-400%);">
+                                                                            <div class="product-main-slide starting-slide" data-index="0" style="position: absolute; left: 0px; transform: translateX(0%);" aria-hidden="true" tabindex="-1">
 
-                                                </div>
-                                                <div class="product-block"></div>
-                                                <div class="product-block product-block--price">
-                                                    <label class="variant__label" for="ProductPrice-template--17917053370634__main">
-                                                        Preis
-                                                    </label><span id="PriceA11y-template--17917053370634__main" class="visually-hidden">Normaler Preis</span><span data-product-price="" class="product__price"><span aria-hidden="true">€25<sup>90</sup></span>
-                                                        <span class="visually-hidden">€25,90</span>
-                                                    </span><span data-save-price="" class="product__price-savings hide"></span>
-                                                    <div data-unit-price-wrapper="" class="product__unit-price"><span data-unit-price=""><span aria-hidden="true">€259<sup>00</sup></span>
-                                                            <span class="visually-hidden">€259,00</span>
-                                                        </span>/<span data-unit-base="">100
-                                                            ml
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                                <div class="product-block product-block--sales-point">
-                                                    <ul class="sales-points">
-                                                        <li class="sales-point">
-                                                            <span class="icon-and-text">
-                                                                <span class="icon icon--inventory"></span>
-                                                                <span data-product-inventory="" data-threshold="10">Auf
-                                                                    Lager - 2-3 Tagen bei dir
-                                                                </span>
-                                                            </span>
-                                                        </li>
-                                                        <li data-incoming-inventory="" class="sales-point hide">
-                                                            <span class="icon-and-text">
-                                                                <span class="icon icon--inventory"></span>
-                                                                <span class="js-incoming-text">Inventar auf dem Weg
-                                                                </span>
-                                                            </span>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                                <script>
-                                                    // Store inventory quantities in JS because they're no longer
-                                                    // available directly in JS when a variant changes.
-                                                    // Have an object that holds all potential products so it works
-                                                    // with quick view or with multiple featured products.
-                                                    window.inventories = window.inventories || {};
-                                                    window.inventories['8209898701066'] = {};
+                                                                                <div data-product-image-main="" class="product-image-main" data-size="square">
+                                                                                    <div class="image-wrap" style="height: 0; padding-bottom: 100.0%;">
+                                                                                        <img class="photoswipe__image lazyautosizes lazyloaded" srcset="<?php echo $img[0] ?> 1080w">
 
-                                                    window.inventories['8209898701066'][44458038427914] = {
-                                                        'quantity': 105,
-                                                        'policy': 'deny',
-                                                        'incoming': 'false',
-                                                        'next_incoming_date': null
-                                                    };
-                                                </script>
+                                                                                        <noscript>
+                                                                                            <img class="lazyloaded" src="//www.neness-shop.de/cdn/shop/files/182AC_21574842-1388-475e-9366-ca6775eec26d_800x.jpg?v=1691797892" alt="ALLIEN WORLD - 182">
+                                                                                        </noscript><button type="button" class="btn btn--secondary btn--circle js-photoswipe__zoom product__photo-zoom" aria-label="Zoom">
+                                                                                            <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-search" viewBox="0 0 64 64">
+                                                                                                <defs>
+                                                                                                    <style>
+                                                                                                        .cls-1 {
+                                                                                                            fill: none;
+                                                                                                            stroke: #000;
+                                                                                                            stroke-miterlimit: 10;
+                                                                                                            stroke-width: 2px
+                                                                                                        }
+                                                                                                    </style>
+                                                                                                </defs>
+                                                                                                <path class="cls-1" d="M47.16 28.58A18.58 18.58 0 1 1 28.58 10a18.58 18.58 0 0 1 18.58 18.58zM54 54L41.94 42"></path>
+                                                                                            </svg>
+                                                                                        </button>
+                                                                                    </div>
+                                                                                </div>
 
+                                                                            </div>
+                                                                            <div class="product-main-slide secondary-slide" data-index="1" aria-hidden="true" style="position: absolute; left: 0px; transform: translateX(100%);">
 
-                                                <div data-product-id="8209898701066" class="hide js-product-inventory-data" aria-hidden="true">
-                                                    <div class="js-variant-inventory-data" data-id="44458038427914" data-quantity="105" data-policy="deny" data-incoming="false" data-date="">
-                                                    </div>
-                                                </div>
-                                                <div class="product-block product-block--sales-point">
-                                                    <ul class="sales-points">
-                                                        <li class="sales-point">
-                                                            <span class="icon-and-text">
-                                                                <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-ribbon" viewbox="0 0 64 64">
-                                                                    <defs>
-                                                                        <style>
-                                                                            .a {
-                                                                                fill: none;
-                                                                                stroke: #000;
-                                                                                stroke-width: 2px
-                                                                            }
-                                                                        </style>
-                                                                    </defs>
-                                                                    <path class="a" d="M28.57 42.31l-8.36 13.07-2.6-7.17-7.61.65 8.35-13.07a17.05 17.05 0 0 0 8.12 5.94 17.3 17.3 0 0 0 1.74.5zM54 48.86l-7.61-.65-2.61 7.17-8.36-13.07.37-.08a16.4 16.4 0 0 0 1.73-.5 17 17 0 0 0 8.12-5.93z">
-                                                                    </path>
-                                                                    <path class="a" d="M49 25.64a16.79 16.79 0 0 1-3.14 9.85 3.55 3.55 0 0 1-.23.31 17 17 0 0 1-8.12 5.93 16.4 16.4 0 0 1-1.73.5l-.37.08a16.74 16.74 0 0 1-3.42.35 16.91 16.91 0 0 1-3.43-.35l-.36-.08a17.3 17.3 0 0 1-1.74-.5 17.05 17.05 0 0 1-8.12-5.94c-.07-.09-.15-.19-.22-.3A16.86 16.86 0 0 1 15 25.64a17 17 0 0 1 34 0z">
-                                                                    </path>
-                                                                    <path class="a" d="M36.09 27.78l.96 5.63L32 30.75l-5.05 2.66.96-5.63-4.09-3.98 5.65-.82L32 17.86l2.53 5.12 5.64.82-4.08 3.98z">
-                                                                    </path>
-                                                                </svg>
+                                                                                <div data-product-image-main="" class="product-image-main" data-size="square">
+                                                                                    <div class="image-wrap" style="height: 0; padding-bottom: 100.0%;"><img class="photoswipe__image lazyautosizes lazyloaded" sizes="602px" srcset="<?php echo $img[0] ?> 1080w">
 
-                                                                <span>Langanhaltende Düfte</span>
-                                                            </span>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                                <div class="product-block product-block--sales-point">
-                                                    <ul class="sales-points">
-                                                        <li class="sales-point">
-                                                            <span class="icon-and-text">
-                                                                <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-leaf" viewbox="0 0 64 64">
-                                                                    <defs>
-                                                                        <style>
-                                                                            .a {
-                                                                                fill: none;
-                                                                                stroke: #000;
-                                                                                stroke-miterlimit: 10;
-                                                                                stroke-width: 2px
-                                                                            }
-                                                                        </style>
-                                                                    </defs>
-                                                                    <path class="a" d="M52 11L13 50M35 13v15h16"></path>
-                                                                    <path class="a" d="M52 11c6 24-16.72 47.29-33 32C7 22 29 10 52 11z">
-                                                                    </path>
-                                                                </svg>
+                                                                                        <noscript>
+                                                                                            <img class="lazyloaded" src="//www.neness-shop.de/cdn/shop/files/N182-nuty_800x.png?v=1691797892" alt="ALLIEN WORLD - 182">
+                                                                                        </noscript><button type="button" class="btn btn--secondary btn--circle js-photoswipe__zoom product__photo-zoom" aria-label="Zoom">
+                                                                                            <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-search" viewBox="0 0 64 64">
+                                                                                                <defs>
+                                                                                                    <style>
+                                                                                                        .cls-1 {
+                                                                                                            fill: none;
+                                                                                                            stroke: #000;
+                                                                                                            stroke-miterlimit: 10;
+                                                                                                            stroke-width: 2px
+                                                                                                        }
+                                                                                                    </style>
+                                                                                                </defs>
+                                                                                                <path class="cls-1" d="M47.16 28.58A18.58 18.58 0 1 1 28.58 10a18.58 18.58 0 0 1 18.58 18.58zM54 54L41.94 42"></path>
+                                                                                            </svg>
+                                                                                        </button>
+                                                                                    </div>
+                                                                                </div>
 
-                                                                <span>100% Vegan</span>
-                                                            </span>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                                <div class="product-block product-block--sales-point">
-                                                    <ul class="sales-points">
-                                                        <li class="sales-point">
-                                                            <span class="icon-and-text">
-                                                                <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-heart" viewbox="0 0 64 64">
-                                                                    <defs>
-                                                                        <style>
-                                                                            .a {
-                                                                                fill: none;
-                                                                                stroke: #000;
-                                                                                stroke-width: 2px
-                                                                            }
-                                                                        </style>
-                                                                    </defs>
-                                                                    <path class="a" d="M51.27 15.05a13 13 0 0 0-18.44 0l-.83.83-.83-.83a13 13 0 0 0-18.44 18.44l.83.83L32 52.77l18.44-18.45.83-.83a13 13 0 0 0 0-18.44z">
-                                                                    </path>
-                                                                </svg>
+                                                                            </div>
+                                                                            <div class="product-main-slide secondary-slide" data-index="2" aria-hidden="true" style="position: absolute; left: 0px; transform: translateX(200%);">
 
-                                                                <span>Tierversuchsfrei</span>
-                                                            </span>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                                <div class="product-block product-block--sales-point">
-                                                    <ul class="sales-points">
-                                                        <li class="sales-point">
-                                                            <span class="icon-and-text">
-                                                                <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-circle-checkmark" viewbox="0 0 64 64">
-                                                                    <defs>
-                                                                        <style>
-                                                                            .a {
-                                                                                fill: none;
-                                                                                stroke: #000;
-                                                                                stroke-width: 2px
-                                                                            }
-                                                                        </style>
-                                                                    </defs>
-                                                                    <path class="a" d="M52.68 24.48A22 22 0 1 1 47 15.93M21 32l8.5 8.5L57 13">
-                                                                    </path>
-                                                                </svg>
+                                                                                <div data-product-image-main="" class="product-image-main" data-size="square">
+                                                                                    <div class="image-wrap" style="height: 0; padding-bottom: 100.0%;"><img class="photoswipe__image lazyautosizes lazyloaded" data-aspectratio="1.0" data-sizes="auto" sizes="602px" srcset="<?php echo $img[0] ?> 1080w">
 
-                                                                <span>Kauf auf Rechnung</span>
-                                                            </span>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                                <div class="product-block">
-                                                    <div class="product-block">
-                                                        <form method="post" action="/cart/add" id="AddToCartForm-template--17917053370634__main-8209898701066" accept-charset="UTF-8" class="product-single__form" enctype="multipart/form-data"><input type="hidden" name="form_type" value="product"><input type="hidden" name="utf8" value="✓">
-                                                            <div class="product__policies rte">inkl. MwSt.
-                                                                zzgl. <a href='../../../policies/shipping-policy.html'>Versandkosten</a>
+                                                                                        <noscript>
+                                                                                            <img class="lazyloaded" src="//www.neness-shop.de/cdn/shop/files/N182_800x.png?v=1692607129" alt="ALLIEN WORLD - 182">
+                                                                                        </noscript><button type="button" class="btn btn--secondary btn--circle js-photoswipe__zoom product__photo-zoom" aria-label="Zoom">
+                                                                                            <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-search" viewBox="0 0 64 64">
+                                                                                                <defs>
+                                                                                                    <style>
+                                                                                                        .cls-1 {
+                                                                                                            fill: none;
+                                                                                                            stroke: #000;
+                                                                                                            stroke-miterlimit: 10;
+                                                                                                            stroke-width: 2px
+                                                                                                        }
+                                                                                                    </style>
+                                                                                                </defs>
+                                                                                                <path class="cls-1" d="M47.16 28.58A18.58 18.58 0 1 1 28.58 10a18.58 18.58 0 0 1 18.58 18.58zM54 54L41.94 42"></path>
+                                                                                            </svg>
+                                                                                        </button>
+                                                                                    </div>
+                                                                                </div>
+
+                                                                            </div>
+                                                                            <div class="product-main-slide secondary-slide" data-index="3" style="position: absolute; left: 0px; transform: translateX(300%);" tabindex="-1" aria-hidden="true">
+
+                                                                                <div data-product-image-main="" class="product-image-main" data-size="square">
+                                                                                    <div class="image-wrap" style="height: 0; padding-bottom: 85.33333333333333%;"><img class="photoswipe__image lazyautosizes lazyloaded" sizes="602px" srcset="<?php echo $img[0] ?> 1080w">
+
+                                                                                        <noscript>
+                                                                                            <img class="lazyloaded" src="<?php echo $img[0] ?>" alt="ALLIEN WORLD - 182">
+                                                                                        </noscript><button type="button" class="btn btn--secondary btn--circle js-photoswipe__zoom product__photo-zoom" aria-label="Zoom">
+                                                                                            <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-search" viewBox="0 0 64 64">
+                                                                                                <defs>
+                                                                                                    <style>
+                                                                                                        .cls-1 {
+                                                                                                            fill: none;
+                                                                                                            stroke: #000;
+                                                                                                            stroke-miterlimit: 10;
+                                                                                                            stroke-width: 2px
+                                                                                                        }
+                                                                                                    </style>
+                                                                                                </defs>
+                                                                                                <path class="cls-1" d="M47.16 28.58A18.58 18.58 0 1 1 28.58 10a18.58 18.58 0 0 1 18.58 18.58zM54 54L41.94 42"></path>
+                                                                                            </svg>
+                                                                                        </button>
+                                                                                    </div>
+                                                                                </div>
+
+                                                                            </div>
+                                                                            <div class="product-main-slide secondary-slide is-selected" data-index="4" style="position: absolute; left: 0px; transform: translateX(400%);" tabindex="0">
+
+                                                                                <div data-product-image-main="" class="product-image-main" data-size="square">
+                                                                                    <div class="image-wrap" style="height: 0; padding-bottom: 85.33333333333333%;">
+                                                                                        <img class="photoswipe__image lazyautosizes lazyloaded" data-sizes="auto" srcset="<?php echo $img[0] ?> 1080w">
+
+                                                                                        <noscript>
+                                                                                            <img class="lazyloaded" src="//www.neness-shop.de/cdn/shop/files/WhatsAppImage2023-06-06at19.38.54_9d6e72d7-7330-47f6-b362-493ecc1c2b2f_800x.jpg?v=1692607129" alt="ALLIEN WORLD - 182">
+                                                                                        </noscript><button type="button" class="btn btn--secondary btn--circle js-photoswipe__zoom product__photo-zoom" aria-label="Zoom">
+                                                                                            <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-search" viewBox="0 0 64 64">
+                                                                                                <defs>
+                                                                                                    <style>
+                                                                                                        .cls-1 {
+                                                                                                            fill: none;
+                                                                                                            stroke: #000;
+                                                                                                            stroke-miterlimit: 10;
+                                                                                                            stroke-width: 2px
+                                                                                                        }
+                                                                                                    </style>
+                                                                                                </defs>
+                                                                                                <path class="cls-1" d="M47.16 28.58A18.58 18.58 0 1 1 28.58 10a18.58 18.58 0 0 1 18.58 18.58zM54 54L41.94 42"></path>
+                                                                                            </svg>
+                                                                                        </button>
+                                                                                    </div>
+                                                                                </div>
+
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <ol class="flickity-page-dots">
+                                                                        <li class="dot" aria-label="Page dot 1"></li>
+                                                                        <li class="dot" aria-label="Page dot 2"></li>
+                                                                        <li class="dot" aria-label="Page dot 3"></li>
+                                                                        <li class="dot" aria-label="Page dot 4"></li>
+                                                                        <li class="dot is-selected" aria-label="Page dot 5" aria-current="step"></li>
+                                                                    </ol>
+                                                                </div>
                                                             </div>
-                                                            <button type="submit" name="<?php echo $name ?>" data-add-to-cart="" id="add" class="btn btn--full add-to-cart">
 
-                                                                <span data-add-to-cart-text="" data-default-text="In den Warenkorb">
-                                                                    In den Warenkorb
-                                                                </span>
-                                                            </button>
-                                                            <script>
-                                                                const button = document.getElementById('add');
+                                                            <div data-product-thumbs="" class="product__thumbs product__thumbs--beside product__thumbs-placement--left small--hide" data-position="beside" data-arrows="false">
+                                                                <div class="product__thumbs--scroller">
+                                                                    <div class="product__thumb-item" data-index="0">
+                                                                        <a href="<?php echo $img[0] ?>" data-product-thumb="" class="product__thumb js-no-transition" data-index="0" data-id="37182818681098">
+                                                                            <div class="image-wrap" style="height: 0; padding-bottom: 100.0%;"><img class="lazyautosizes lazyloaded" data-aspectratio="1.0" data-sizes="auto" srcset="<?php echo $img[0] ?> 1080w">
+                                                                                <noscript>
+                                                                                    <img class="lazyloaded" src="<?php echo $img[0] ?>" alt="ALLIEN WORLD - 182">
+                                                                                </noscript>
+                                                                            </div>
+                                                                        </a>
+                                                                    </div>
 
-                                                                button.addEventListener('click', () => {
-                                                                    // Получить текущее состояние корзины из localStorage
-                                                                    const cart = JSON.parse(localStorage.getItem('cart')) || [];
-
-                                                                    // Добавить новый элемент (имя) в корзину
-                                                                    const itemName = '<?php echo $products['name'] ?>'; // Замените на нужное имя товара
-                                                                    cart.push(itemName);
-
-                                                                    // Сохранить обновленную корзину в localStorage
-                                                                    localStorage.setItem('cart', JSON.stringify(cart));
-                                                                    console.log(localStorage.getItem('cart'))
-                                                                });
-                                                            </script>
-                                                            <div class="shopify-payment-terms product__policies"></div>
-
-                                                            <select name="id" data-product-select="" class="product-single__variants no-js">
-                                                                <option selected="selected" value="44458038427914">
-                                                                    Default Title - €25,90 EUR
-                                                                </option>
-                                                            </select>
-
-                                                            <textarea data-variant-json="" class="hide" aria-hidden="true" aria-label="Product JSON">
-        [{"id":44458038427914,"title":"Default Title","option1":"Default Title","option2":null,"option3":null,"sku":"N246","requires_shipping":true,"taxable":true,"featured_image":null,"available":true,"name":"MARS - 100% Parfümöl","public_title":null,"options":["Default Title"],"price":2590,"weight":10,"compare_at_price":null,"inventory_management":"shopify","barcode":"","unit_price":25900,"unit_price_measurement":{"measured_type":"volume","quantity_value":"10.0","quantity_unit":"ml","reference_value":100,"reference_unit":"ml"},"requires_selling_plan":false,"selling_plan_allocations":[]}]
-      </textarea>
-                                                        </form>
+                                                                </div>
+                                                            </div>
+                                                        </div>
                                                     </div>
-                                                    <div data-store-availability-holder="" data-product-name="MARS - 100% Parfümöl" data-base-url="https://www.neness-shop.de/"></div>
+
+                                                    <script type="application/json" id="ModelJson-template--17917053370634__main">
+                                                        []
+                                                    </script>
                                                 </div>
-                                                <div class="product-block">
-                                                    <div class="rte">
+                                                <div class="product-grid__content product-single__sticky grid__item medium-up--one-half">
 
-                                                        <meta charset="utf-8">
-                                                        <p>Unser Parfümöl <strong>MARS</strong> ist eine exquisite
-                                                            Kombination aus erdigen, holzigen und würzigen Noten, die ein
-                                                            luxuriöses und unvergessliches Dufterlebnis bieten. Hier sind
-                                                            die Duftnoten in Stichpunkten:</p>
-                                                        <ul>
-                                                            <li>
-                                                                <strong>Kopfnoten:</strong> Zistrose, Rosmarin, Kardamom und
-                                                                brasilianisches Rosenholz
-                                                            </li>
-                                                            <li>
-                                                                <strong>Herznoten:</strong> Oud, Patschuli und Vetiver
-                                                            </li>
-                                                            <li>
-                                                                <strong>Basisnoten:</strong> Tonkabohne, Ambra und
-                                                                Sandelholz
-                                                            </li>
-                                                        </ul>
-                                                        <p>Die Mischung aus diesen reichen und intensiven Noten schafft ein
-                                                            einzigartiges und unwiderstehliches Parfüm, das Ihre Sinne
-                                                            fesseln wird. Unsere Parfümöle sind alle aus hochwertigen,
-                                                            natürlichen Ölen hergestellt und bieten ein lang anhaltendes
-                                                            Dufterlebnis ohne die Austrocknung oder Reizung der Haut, die
-                                                            oft mit Alkohol-basierten Düften verbunden sind. Entdecken Sie
-                                                            unser Parfümöl und tauchen Sie ein in eine Welt voller
-                                                            Raffinesse und Eleganz.</p>
+                                                    <div class="product-single__meta">
+                                                        <div class="product-block product-block--header product-single__header small--hide">
+                                                            <h1 class="h2 product-single__title">
+                                                                <?php echo $products['title'] ?>
+                                                            </h1>
+                                                        </div>
 
+                                                        <div data-product-blocks="">
+                                                            <div id="shopify-block-loox-rating" class="shopify-block shopify-app-block">
+                                                                <a href="#looxReviews">
+                                                                    <div class="loox-rating" data-content-size="16" data-loox-block-id="loox-rating" data-color-text="" data-color-star="" data-id="8209898701066" data-rating="5.0" data-raters="4"></div>
+                                                                </a>
+
+
+                                                            </div>
+                                                            <div class="product-block"></div>
+                                                            <div class="product-block product-block--price">
+                                                                <label class="variant__label" for="ProductPrice-template--17917053370634__main">
+                                                                    Preis
+                                                                </label><span id="PriceA11y-template--17917053370634__main" class="visually-hidden">Normaler Preis</span><span data-product-price="" class="product__price"><span aria-hidden="true">€25<sup>90</sup></span>
+                                                                    <span class="visually-hidden">€25,90</span>
+                                                                </span><span data-save-price="" class="product__price-savings hide"></span>
+                                                                <div data-unit-price-wrapper="" class="product__unit-price"><span data-unit-price=""><span aria-hidden="true">€259<sup>00</sup></span>
+                                                                        <span class="visually-hidden">€259,00</span>
+                                                                    </span>/<span data-unit-base="">100
+                                                                        ml
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="product-block product-block--sales-point">
+                                                                <ul class="sales-points">
+                                                                    <li class="sales-point">
+                                                                        <span class="icon-and-text">
+                                                                            <span class="icon icon--inventory"></span>
+                                                                            <span data-product-inventory="" data-threshold="10">Auf
+                                                                                Lager - 2-3 Tagen bei dir
+                                                                            </span>
+                                                                        </span>
+                                                                    </li>
+                                                                    <li data-incoming-inventory="" class="sales-point hide">
+                                                                        <span class="icon-and-text">
+                                                                            <span class="icon icon--inventory"></span>
+                                                                            <span class="js-incoming-text">Inventar auf dem Weg
+                                                                            </span>
+                                                                        </span>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <script>
+                                                                // Store inventory quantities in JS because they're no longer
+                                                                // available directly in JS when a variant changes.
+                                                                // Have an object that holds all potential products so it works
+                                                                // with quick view or with multiple featured products.
+                                                                window.inventories = window.inventories || {};
+                                                                window.inventories['8209898701066'] = {};
+
+                                                                window.inventories['8209898701066'][44458038427914] = {
+                                                                    'quantity': 105,
+                                                                    'policy': 'deny',
+                                                                    'incoming': 'false',
+                                                                    'next_incoming_date': null
+                                                                };
+                                                            </script>
+
+
+                                                            <div data-product-id="8209898701066" class="hide js-product-inventory-data" aria-hidden="true">
+                                                                <div class="js-variant-inventory-data" data-id="44458038427914" data-quantity="105" data-policy="deny" data-incoming="false" data-date="">
+                                                                </div>
+                                                            </div>
+                                                            <div class="product-block product-block--sales-point">
+                                                                <ul class="sales-points">
+                                                                    <li class="sales-point">
+                                                                        <span class="icon-and-text">
+                                                                            <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-ribbon" viewbox="0 0 64 64">
+                                                                                <defs>
+                                                                                    <style>
+                                                                                        .a {
+                                                                                            fill: none;
+                                                                                            stroke: #000;
+                                                                                            stroke-width: 2px
+                                                                                        }
+                                                                                    </style>
+                                                                                </defs>
+                                                                                <path class="a" d="M28.57 42.31l-8.36 13.07-2.6-7.17-7.61.65 8.35-13.07a17.05 17.05 0 0 0 8.12 5.94 17.3 17.3 0 0 0 1.74.5zM54 48.86l-7.61-.65-2.61 7.17-8.36-13.07.37-.08a16.4 16.4 0 0 0 1.73-.5 17 17 0 0 0 8.12-5.93z">
+                                                                                </path>
+                                                                                <path class="a" d="M49 25.64a16.79 16.79 0 0 1-3.14 9.85 3.55 3.55 0 0 1-.23.31 17 17 0 0 1-8.12 5.93 16.4 16.4 0 0 1-1.73.5l-.37.08a16.74 16.74 0 0 1-3.42.35 16.91 16.91 0 0 1-3.43-.35l-.36-.08a17.3 17.3 0 0 1-1.74-.5 17.05 17.05 0 0 1-8.12-5.94c-.07-.09-.15-.19-.22-.3A16.86 16.86 0 0 1 15 25.64a17 17 0 0 1 34 0z">
+                                                                                </path>
+                                                                                <path class="a" d="M36.09 27.78l.96 5.63L32 30.75l-5.05 2.66.96-5.63-4.09-3.98 5.65-.82L32 17.86l2.53 5.12 5.64.82-4.08 3.98z">
+                                                                                </path>
+                                                                            </svg>
+
+                                                                            <span>Langanhaltende Düfte</span>
+                                                                        </span>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="product-block product-block--sales-point">
+                                                                <ul class="sales-points">
+                                                                    <li class="sales-point">
+                                                                        <span class="icon-and-text">
+                                                                            <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-leaf" viewbox="0 0 64 64">
+                                                                                <defs>
+                                                                                    <style>
+                                                                                        .a {
+                                                                                            fill: none;
+                                                                                            stroke: #000;
+                                                                                            stroke-miterlimit: 10;
+                                                                                            stroke-width: 2px
+                                                                                        }
+                                                                                    </style>
+                                                                                </defs>
+                                                                                <path class="a" d="M52 11L13 50M35 13v15h16"></path>
+                                                                                <path class="a" d="M52 11c6 24-16.72 47.29-33 32C7 22 29 10 52 11z">
+                                                                                </path>
+                                                                            </svg>
+
+                                                                            <span>100% Vegan</span>
+                                                                        </span>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="product-block product-block--sales-point">
+                                                                <ul class="sales-points">
+                                                                    <li class="sales-point">
+                                                                        <span class="icon-and-text">
+                                                                            <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-heart" viewbox="0 0 64 64">
+                                                                                <defs>
+                                                                                    <style>
+                                                                                        .a {
+                                                                                            fill: none;
+                                                                                            stroke: #000;
+                                                                                            stroke-width: 2px
+                                                                                        }
+                                                                                    </style>
+                                                                                </defs>
+                                                                                <path class="a" d="M51.27 15.05a13 13 0 0 0-18.44 0l-.83.83-.83-.83a13 13 0 0 0-18.44 18.44l.83.83L32 52.77l18.44-18.45.83-.83a13 13 0 0 0 0-18.44z">
+                                                                                </path>
+                                                                            </svg>
+
+                                                                            <span>Tierversuchsfrei</span>
+                                                                        </span>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="product-block product-block--sales-point">
+                                                                <ul class="sales-points">
+                                                                    <li class="sales-point">
+                                                                        <span class="icon-and-text">
+                                                                            <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-circle-checkmark" viewbox="0 0 64 64">
+                                                                                <defs>
+                                                                                    <style>
+                                                                                        .a {
+                                                                                            fill: none;
+                                                                                            stroke: #000;
+                                                                                            stroke-width: 2px
+                                                                                        }
+                                                                                    </style>
+                                                                                </defs>
+                                                                                <path class="a" d="M52.68 24.48A22 22 0 1 1 47 15.93M21 32l8.5 8.5L57 13">
+                                                                                </path>
+                                                                            </svg>
+
+                                                                            <span>Kauf auf Rechnung</span>
+                                                                        </span>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="product-block">
+                                                                <div class="product-block">
+                                                                    <form method="post" action="/cart/add" id="AddToCartForm-template--17917053370634__main-8209898701066" accept-charset="UTF-8" class="product-single__form" enctype="multipart/form-data"><input type="hidden" name="form_type" value="product"><input type="hidden" name="utf8" value="✓">
+                                                                        <div class="product__policies rte">inkl. MwSt.
+                                                                            zzgl. <a href='../../../policies/shipping-policy.html'>Versandkosten</a>
+                                                                        </div>
+                                                                        <button type="submit" name="<?php echo $name ?>" data-add-to-cart="" id="add" class="btn btn--full add-to-cart">
+
+                                                                            <span data-add-to-cart-text="" data-default-text="In den Warenkorb">
+                                                                                In den Warenkorb
+                                                                            </span>
+                                                                        </button>
+                                                                        <script>
+                                                                            const button = document.getElementById('add');
+
+                                                                            button.addEventListener('click', () => {
+
+                                                                                $.ajax({
+                    url: 'php/#',
+                    type: 'POST',
+                    data: {
+                      'name': <?php echo $products['name'] ?>, 
+                    },
+                        success: function(response) {
+                      console.log('Успешный ответ от сервера:', response);
+                    },
+                    error: function(xhr, status, error) {
+                      console.log('Ошибка запроса:', error);
+                      // Здесь можно обработать ошибку запроса
+                    }
+                  });
+                                                                            });
+                                                                        </script>
+                                                                        <div class="shopify-payment-terms product__policies"></div>
+
+                                                                        <select name="id" data-product-select="" class="product-single__variants no-js">
+                                                                            <option selected="selected" value="44458038427914">
+                                                                                Default Title - €25,90 EUR
+                                                                            </option>
+                                                                        </select>
+
+                                                                        <textarea data-variant-json="" class="hide" aria-hidden="true" aria-label="Product JSON">
+                    [{"id":44458038427914,"title":"Default Title","option1":"Default Title","option2":null,"option3":null,"sku":"N246","requires_shipping":true,"taxable":true,"featured_image":null,"available":true,"name":"MARS - 100% Parfümöl","public_title":null,"options":["Default Title"],"price":2590,"weight":10,"compare_at_price":null,"inventory_management":"shopify","barcode":"","unit_price":25900,"unit_price_measurement":{"measured_type":"volume","quantity_value":"10.0","quantity_unit":"ml","reference_value":100,"reference_unit":"ml"},"requires_selling_plan":false,"selling_plan_allocations":[]}]
+                  </textarea>
+                                                                    </form>
+                                                                </div>
+                                                                <div data-store-availability-holder="" data-product-name="MARS - 100% Parfümöl" data-base-url="https://www.neness-shop.de/"></div>
+                                                            </div>
+                                                            <div class="product-block">
+                                                                <div class="rte">
+
+                                                                    <meta charset="utf-8">
+                                                                    <p>Unser Parfümöl <strong>MARS</strong> ist eine exquisite
+                                                                        Kombination aus erdigen, holzigen und würzigen Noten, die ein
+                                                                        luxuriöses und unvergessliches Dufterlebnis bieten. Hier sind
+                                                                        die Duftnoten in Stichpunkten:</p>
+                                                                    <ul>
+                                                                        <li>
+                                                                            <strong>Kopfnoten:</strong> Zistrose, Rosmarin, Kardamom und
+                                                                            brasilianisches Rosenholz
+                                                                        </li>
+                                                                        <li>
+                                                                            <strong>Herznoten:</strong> Oud, Patschuli und Vetiver
+                                                                        </li>
+                                                                        <li>
+                                                                            <strong>Basisnoten:</strong> Tonkabohne, Ambra und
+                                                                            Sandelholz
+                                                                        </li>
+                                                                    </ul>
+                                                                    <p>Die Mischung aus diesen reichen und intensiven Noten schafft ein
+                                                                        einzigartiges und unwiderstehliches Parfüm, das Ihre Sinne
+                                                                        fesseln wird. Unsere Parfümöle sind alle aus hochwertigen,
+                                                                        natürlichen Ölen hergestellt und bieten ein lang anhaltendes
+                                                                        Dufterlebnis ohne die Austrocknung oder Reizung der Haut, die
+                                                                        oft mit Alkohol-basierten Düften verbunden sind. Entdecken Sie
+                                                                        unser Parfümöl und tauchen Sie ein in eine Welt voller
+                                                                        Raffinesse und Eleganz.</p>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
 
-                    <style>
-                        #shopify-section-template--17917053370634__main button {
-                            background-color: black;
-                        }
-                    </style>
-                </div>
-                <div id="shopify-section-template--17917053370634__7b8cb3e7-42f1-4d22-925d-669b0128e77c" class="shopify-section index-section">
-                    <div class="text-with-icons" data-section-id="template--17917053370634__7b8cb3e7-42f1-4d22-925d-669b0128e77c" data-section-type="text-with-icons">
-                        <div class="page-width">
-                            <div class="
+                                <style>
+                                    #shopify-section-template--17917053370634__main button {
+                                        background-color: black;
+                                    }
+                                </style>
+                            </div>
+                            <div id="shopify-section-template--17917053370634__7b8cb3e7-42f1-4d22-925d-669b0128e77c" class="shopify-section index-section">
+                                <div class="text-with-icons" data-section-id="template--17917053370634__7b8cb3e7-42f1-4d22-925d-669b0128e77c" data-section-type="text-with-icons">
+                                    <div class="page-width">
+                                        <div class="
           text-with-icons__title
           section-header">
-                                <h2 class="text-center">DAS MACHT NENESS BESONDERS</h2>
-                            </div>
-                            <div class="
+                                            <h2 class="text-center">DAS MACHT NENESS BESONDERS</h2>
+                                        </div>
+                                        <div class="
         text-with-icons__blocks
         has-3-per-row" data-block-count="3">
 
-                                <div class="text-with-icons__block text-center">
-                                    <div class="text-with-icons__block-icon">
+                                            <div class="text-with-icons__block text-center">
+                                                <div class="text-with-icons__block-icon">
 
-                                        <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-tcwi-charity" viewbox="0 0 100 100">
-                                            <defs>
-                                                <style>
-                                                    .a {
-                                                        fill: none;
-                                                        stroke: #000;
-                                                        stroke-width: 2px
-                                                    }
-                                                </style>
-                                            </defs>
-                                            <path class="a" d="M63.41 68l21-10.58a4.16 4.16 0 0 1 5.67 2 4.17 4.17 0 0 1-1.93 5.39L54 82a3.35 3.35 0 0 1-2.16.25L39 75.82l-7.31 3.06M22.76 86.67L9.6 55.92l10.24-4.64 13.17 30.75-10.25 4.64z">
-                                            </path>
-                                            <path class="a" d="M23.17 58.17l8.79-4a9.51 9.51 0 0 1 6.88-.37l22.25 7.31A4.52 4.52 0 0 1 63.41 68a4.51 4.51 0 0 1-5 1.77L43.8 65.32M79.37 16.94a12.34 12.34 0 0 0-17.44 0l-.79.79-.78-.79a12.34 12.34 0 1 0-17.44 17.45l.78.78 17.44 17.45 17.45-17.45.78-.78a12.34 12.34 0 0 0 0-17.45z">
-                                            </path>
-                                        </svg>
+                                                    <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-tcwi-charity" viewbox="0 0 100 100">
+                                                        <defs>
+                                                            <style>
+                                                                .a {
+                                                                    fill: none;
+                                                                    stroke: #000;
+                                                                    stroke-width: 2px
+                                                                }
+                                                            </style>
+                                                        </defs>
+                                                        <path class="a" d="M63.41 68l21-10.58a4.16 4.16 0 0 1 5.67 2 4.17 4.17 0 0 1-1.93 5.39L54 82a3.35 3.35 0 0 1-2.16.25L39 75.82l-7.31 3.06M22.76 86.67L9.6 55.92l10.24-4.64 13.17 30.75-10.25 4.64z">
+                                                        </path>
+                                                        <path class="a" d="M23.17 58.17l8.79-4a9.51 9.51 0 0 1 6.88-.37l22.25 7.31A4.52 4.52 0 0 1 63.41 68a4.51 4.51 0 0 1-5 1.77L43.8 65.32M79.37 16.94a12.34 12.34 0 0 0-17.44 0l-.79.79-.78-.79a12.34 12.34 0 1 0-17.44 17.45l.78.78 17.44 17.45 17.45-17.45.78-.78a12.34 12.34 0 0 0 0-17.45z">
+                                                        </path>
+                                                    </svg>
 
-                                    </div>
-                                    <div class="text-with-icons__block-title">
-                                        <h3>Langanhaltend</h3>
-                                    </div>
-                                    <div class="text-with-icons__block-text">
+                                                </div>
+                                                <div class="text-with-icons__block-title">
+                                                    <h3>Langanhaltend</h3>
+                                                </div>
+                                                <div class="text-with-icons__block-text">
 
+                                                </div>
+                                            </div>
+
+                                            <div class="text-with-icons__block text-center">
+                                                <div class="text-with-icons__block-icon">
+
+                                                    <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-tcwi-plant" viewbox="0 0 100 100">
+                                                        <defs>
+                                                            <style>
+                                                                .a {
+                                                                    fill: none;
+                                                                    stroke: #000;
+                                                                    stroke-width: 2px
+                                                                }
+                                                            </style>
+                                                        </defs>
+                                                        <path class="a" d="M15.33 86.58h69.34s-30.67-40.37-69.34 0zM43.15 46.69s9 8.83 9.27 22M82.06 13.43s-27.38-1.32-25.37 25.16c0 0 23 5.54 25.37-25.16zM82.06 13.43L56.69 38.59M63.19 32.17l13.16-.45M70.05 25.35l9.7-.34M63.19 32.17l.45-13.07M70.05 25.35l.34-9.91M50.64 59.11a32.68 32.68 0 0 1 6-20.52M18 21.31S16.67 48.7 43.15 46.69c0 0 5.54-23-25.15-25.38zM17.99 21.31l25.16 25.38M36.73 40.19l-.45-13.16M29.91 33.33l-.34-9.7M36.73 40.19l-13.08-.45M29.91 33.33L20 32.99">
+                                                        </path>
+                                                    </svg>
+
+                                                </div>
+                                                <div class="text-with-icons__block-title">
+                                                    <h3>Vegan</h3>
+                                                </div>
+                                                <div class="text-with-icons__block-text">
+
+                                                </div>
+                                            </div>
+
+                                            <div class="text-with-icons__block text-center">
+                                                <div class="text-with-icons__block-icon">
+
+                                                    <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-tcwi-thumbs-up" viewbox="0 0 100 100">
+                                                        <defs>
+                                                            <style>
+                                                                .a {
+                                                                    fill: none;
+                                                                    stroke: #000;
+                                                                    stroke-width: 2px
+                                                                }
+                                                            </style>
+                                                        </defs>
+                                                        <path class="a" d="M16.01 54.13h20.02v35.22H16.01z"></path>
+                                                        <path class="a" d="M36 82.72l3.84 2.63a11.53 11.53 0 0 0 6.54 2h13.91M36 58.78l2.07-1.93A10.23 10.23 0 0 0 40.26 54l7.66-15a7.4 7.4 0 0 0 .81-3.36v-8.3a2.93 2.93 0 0 1 2.92-2.94c2.41 0 5.78 1 7.92 6.18a18.63 18.63 0 0 1 1 10.5l-1.29 6.94h19A4.91 4.91 0 0 1 83.16 53a4.91 4.91 0 0 1-4.91 4.92H59.6M62.68 67.72H76a4.91 4.91 0 0 1 4.91 4.92A4.91 4.91 0 0 1 76 77.55H65.65">
+                                                        </path>
+                                                        <path class="a" d="M65.65 77.55h6.12a4.92 4.92 0 0 1 4.92 4.92 4.93 4.93 0 0 1-4.92 4.92h-12.5M59.6 57.89h19.47A4.92 4.92 0 0 1 84 62.81a4.91 4.91 0 0 1-4.92 4.91h-16.4M53.19 20.06v-9.41M47.33 22.12l-6.05-7.22M44.15 27.46l-9.27-1.64M62.04 27.68l9.27-1.64M59 22.26l6.05-7.21">
+                                                        </path>
+                                                    </svg>
+
+                                                </div>
+                                                <div class="text-with-icons__block-title">
+                                                    <h3>Parfüm To Go</h3>
+                                                </div>
+                                                <div class="text-with-icons__block-text">
+
+                                                </div>
+                                            </div>
+
+                                        </div>
                                     </div>
                                 </div>
+                                <style data-shopify="">
+                                    #shopify-section-template--17917053370634__7b8cb3e7-42f1-4d22-925d-669b0128e77c .icon {
+                                        color: #000000;
+                                    }
 
-                                <div class="text-with-icons__block text-center">
-                                    <div class="text-with-icons__block-icon">
+                                    #shopify-section-template--17917053370634__7b8cb3e7-42f1-4d22-925d-669b0128e77c .icon path,
+                                    #shopify-section-template--17917053370634__7b8cb3e7-42f1-4d22-925d-669b0128e77c .icon polygon,
+                                    #shopify-section-template--17917053370634__7b8cb3e7-42f1-4d22-925d-669b0128e77c .icon rect,
+                                    #shopify-section-template--17917053370634__7b8cb3e7-42f1-4d22-925d-669b0128e77c .icon circle,
+                                    #shopify-section-template--17917053370634__7b8cb3e7-42f1-4d22-925d-669b0128e77c .icon ellipse,
+                                    #shopify-section-template--17917053370634__7b8cb3e7-42f1-4d22-925d-669b0128e77c .icon line,
+                                    #shopify-section-template--17917053370634__7b8cb3e7-42f1-4d22-925d-669b0128e77c .icon polyline,
+                                    #shopify-section-template--17917053370634__7b8cb3e7-42f1-4d22-925d-669b0128e77c .icon g {
+                                        stroke-width: 1px;
+                                    }
+                                </style>
 
-                                        <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-tcwi-plant" viewbox="0 0 100 100">
-                                            <defs>
-                                                <style>
-                                                    .a {
-                                                        fill: none;
-                                                        stroke: #000;
-                                                        stroke-width: 2px
-                                                    }
-                                                </style>
-                                            </defs>
-                                            <path class="a" d="M15.33 86.58h69.34s-30.67-40.37-69.34 0zM43.15 46.69s9 8.83 9.27 22M82.06 13.43s-27.38-1.32-25.37 25.16c0 0 23 5.54 25.37-25.16zM82.06 13.43L56.69 38.59M63.19 32.17l13.16-.45M70.05 25.35l9.7-.34M63.19 32.17l.45-13.07M70.05 25.35l.34-9.91M50.64 59.11a32.68 32.68 0 0 1 6-20.52M18 21.31S16.67 48.7 43.15 46.69c0 0 5.54-23-25.15-25.38zM17.99 21.31l25.16 25.38M36.73 40.19l-.45-13.16M29.91 33.33l-.34-9.7M36.73 40.19l-13.08-.45M29.91 33.33L20 32.99">
-                                            </path>
-                                        </svg>
 
-                                    </div>
-                                    <div class="text-with-icons__block-title">
-                                        <h3>Vegan</h3>
-                                    </div>
-                                    <div class="text-with-icons__block-text">
-
-                                    </div>
-                                </div>
-
-                                <div class="text-with-icons__block text-center">
-                                    <div class="text-with-icons__block-icon">
-
-                                        <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-tcwi-thumbs-up" viewbox="0 0 100 100">
-                                            <defs>
-                                                <style>
-                                                    .a {
-                                                        fill: none;
-                                                        stroke: #000;
-                                                        stroke-width: 2px
-                                                    }
-                                                </style>
-                                            </defs>
-                                            <path class="a" d="M16.01 54.13h20.02v35.22H16.01z"></path>
-                                            <path class="a" d="M36 82.72l3.84 2.63a11.53 11.53 0 0 0 6.54 2h13.91M36 58.78l2.07-1.93A10.23 10.23 0 0 0 40.26 54l7.66-15a7.4 7.4 0 0 0 .81-3.36v-8.3a2.93 2.93 0 0 1 2.92-2.94c2.41 0 5.78 1 7.92 6.18a18.63 18.63 0 0 1 1 10.5l-1.29 6.94h19A4.91 4.91 0 0 1 83.16 53a4.91 4.91 0 0 1-4.91 4.92H59.6M62.68 67.72H76a4.91 4.91 0 0 1 4.91 4.92A4.91 4.91 0 0 1 76 77.55H65.65">
-                                            </path>
-                                            <path class="a" d="M65.65 77.55h6.12a4.92 4.92 0 0 1 4.92 4.92 4.93 4.93 0 0 1-4.92 4.92h-12.5M59.6 57.89h19.47A4.92 4.92 0 0 1 84 62.81a4.91 4.91 0 0 1-4.92 4.91h-16.4M53.19 20.06v-9.41M47.33 22.12l-6.05-7.22M44.15 27.46l-9.27-1.64M62.04 27.68l9.27-1.64M59 22.26l6.05-7.21">
-                                            </path>
-                                        </svg>
-
-                                    </div>
-                                    <div class="text-with-icons__block-title">
-                                        <h3>Parfüm To Go</h3>
-                                    </div>
-                                    <div class="text-with-icons__block-text">
-
-                                    </div>
-                                </div>
 
                             </div>
-                        </div>
-                    </div>
-                    <style data-shopify="">
-                        #shopify-section-template--17917053370634__7b8cb3e7-42f1-4d22-925d-669b0128e77c .icon {
-                            color: #000000;
-                        }
+                            <div id="shopify-section-template--17917053370634__recommendations" class="shopify-section">
+                                <div id="Recommendations-8209898701066" data-section-id="8209898701066" data-section-type="product-recommendations" data-enable="true" data-product-id="8209898701066" data-url="/recommendations/products" data-limit="6">
 
-                        #shopify-section-template--17917053370634__7b8cb3e7-42f1-4d22-925d-669b0128e77c .icon path,
-                        #shopify-section-template--17917053370634__7b8cb3e7-42f1-4d22-925d-669b0128e77c .icon polygon,
-                        #shopify-section-template--17917053370634__7b8cb3e7-42f1-4d22-925d-669b0128e77c .icon rect,
-                        #shopify-section-template--17917053370634__7b8cb3e7-42f1-4d22-925d-669b0128e77c .icon circle,
-                        #shopify-section-template--17917053370634__7b8cb3e7-42f1-4d22-925d-669b0128e77c .icon ellipse,
-                        #shopify-section-template--17917053370634__7b8cb3e7-42f1-4d22-925d-669b0128e77c .icon line,
-                        #shopify-section-template--17917053370634__7b8cb3e7-42f1-4d22-925d-669b0128e77c .icon polyline,
-                        #shopify-section-template--17917053370634__7b8cb3e7-42f1-4d22-925d-669b0128e77c .icon g {
-                            stroke-width: 1px;
-                        }
-                    </style>
+                                    <div data-section-id="8209898701066" data-subsection="" data-section-type="collection-template" class="index-section index-section--sub-product">
+                                        <div class="page-width">
+                                            <header class="section-header">
+                                                <div class="h3 section-header__title">
+                                                    Kunden interessieren sich auch für
+                                                </div>
+                                            </header>
+                                        </div>
 
+                                        <div class="page-width page-width--flush-small">
+                                            <div class="product-recommendations-placeholder">
 
-
-                </div>
-                <div id="shopify-section-template--17917053370634__recommendations" class="shopify-section">
-                    <div id="Recommendations-8209898701066" data-section-id="8209898701066" data-section-type="product-recommendations" data-enable="true" data-product-id="8209898701066" data-url="/recommendations/products" data-limit="6">
-
-                        <div data-section-id="8209898701066" data-subsection="" data-section-type="collection-template" class="index-section index-section--sub-product">
-                            <div class="page-width">
-                                <header class="section-header">
-                                    <div class="h3 section-header__title">
-                                        Kunden interessieren sich auch für
-                                    </div>
-                                </header>
-                            </div>
-
-                            <div class="page-width page-width--flush-small">
-                                <div class="product-recommendations-placeholder">
-
-                                    <div class="new-grid product-grid scrollable-grid--small visually-invisible" aria-hidden="true" data-view="scrollable">
-                                        <div class="grid-item grid-product " data-product-handle="mars-roll-on-100-parfumol" data-product-id="8209898701066">
-                                            <div class="grid-item__content"><a href="mars-roll-on-100-parfumol.html" class="grid-item__link">
-                                                    <div class="grid-product__image-wrap">
-                                                        <div class="grid-product__tags"></div>
-                                                        <div class="grid__image-ratio grid__image-ratio--square">
-                                                            <img class="lazyload grid__image-contain" data-src="//www.neness-shop.de/cdn/shop/products/montaz_mars_AO_{width}x.jpg?v=1679647960" data-widths="[160, 200, 280, 360, 540, 720, 900]" data-aspectratio="1.0" data-sizes="auto" alt="">
-                                                            <noscript>
-                                                                <img class="grid-product__image lazyloaded" src="../../../cdn/shop/products/montaz_mars_AO_400x.jpg?v=1679647960" alt="">
-                                                            </noscript>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="grid-item__meta">
-                                                        <div class="grid-item__meta-main">
-                                                            <div class="grid-product__title">MARS - 100% Parfümöl</div>
-                                                        </div>
-                                                        <div class="loox-rating" data-id="8209898701066" data-rating="5.0" data-raters="4"></div>
-                                                        <div class="grid-item__meta-secondary">
-                                                            <div class="grid-product__price"><span class="grid-product__price--current"><span aria-hidden="true">€25<sup>90</sup></span>
-                                                                    <span class="visually-hidden">€25,90</span>
-                                                                </span>
-                                                                <div class="product__unit-price">€259,00/100
-                                                                    ml
-
+                                                <div class="new-grid product-grid scrollable-grid--small visually-invisible" aria-hidden="true" data-view="scrollable">
+                                                    <div class="grid-item grid-product " data-product-handle="mars-roll-on-100-parfumol" data-product-id="8209898701066">
+                                                        <div class="grid-item__content"><a href="mars-roll-on-100-parfumol.html" class="grid-item__link">
+                                                                <div class="grid-product__image-wrap">
+                                                                    <div class="grid-product__tags"></div>
+                                                                    <div class="grid__image-ratio grid__image-ratio--square">
+                                                                        <img class="lazyload grid__image-contain" data-src="//www.neness-shop.de/cdn/shop/products/montaz_mars_AO_{width}x.jpg?v=1679647960" data-widths="[160, 200, 280, 360, 540, 720, 900]" data-aspectratio="1.0" data-sizes="auto" alt="">
+                                                                        <noscript>
+                                                                            <img class="grid-product__image lazyloaded" src="../../../cdn/shop/products/montaz_mars_AO_400x.jpg?v=1679647960" alt="">
+                                                                        </noscript>
+                                                                    </div>
                                                                 </div>
-                                                            </div>
+
+                                                                <div class="grid-item__meta">
+                                                                    <div class="grid-item__meta-main">
+                                                                        <div class="grid-product__title">MARS - 100% Parfümöl</div>
+                                                                    </div>
+                                                                    <div class="loox-rating" data-id="8209898701066" data-rating="5.0" data-raters="4"></div>
+                                                                    <div class="grid-item__meta-secondary">
+                                                                        <div class="grid-product__price"><span class="grid-product__price--current"><span aria-hidden="true">€25<sup>90</sup></span>
+                                                                                <span class="visually-hidden">€25,90</span>
+                                                                            </span>
+                                                                            <div class="product__unit-price">€259,00/100
+                                                                                ml
+
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </a>
                                                         </div>
                                                     </div>
-                                                </a>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
 
-
-                </div>
-                <section id="shopify-section-template--17917053370634__loox-product-reviews-app-section" class="shopify-section">
-                    <div class="index-section">
-                        <div class="page-width">
-                            <div id="shopify-block-loox-product-reviews" class="shopify-block shopify-app-block">
-                                <div id="looxReviews" data-limit="20" data-product-id="8209898701066" style="margin:0 auto;max-width:1080px;"></div>
 
                             </div>
-                        </div>
-                    </div>
-                </section>
-            </main>
+                            <section id="shopify-section-template--17917053370634__loox-product-reviews-app-section" class="shopify-section">
+                                <div class="index-section">
+                                    <div class="page-width">
+                                        <div id="shopify-block-loox-product-reviews" class="shopify-block shopify-app-block">
+                                            <div id="looxReviews" data-limit="20" data-product-id="8209898701066" style="margin:0 auto;max-width:1080px;"></div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </main>
         <?php } else { ?>
 
-            <main style="text-align:center;padding:30px 0px;">
-                <h1>Es gibt keine solche Seite!</h1>
-            </main>
+                        <main style="text-align:center;padding:30px 0px;">
+                            <h1>Es gibt keine solche Seite!</h1>
+                        </main>
         <?php } ?>
         <div id="shopify-section-footer-promotions" class="shopify-section index-section--footer">
         </div>
@@ -5726,49 +5740,7 @@ $img = get_src_photo($name);
 
         <script src="../../../extensions/ed1aa012-9f54-4c9a-80b6-a4c9115bf674/2.66.0/assets/storefront.min.js" defer=""></script>
 
-        <script>
-            document.addEventListener("DOMContentLoaded", function() {
-                let cartItems = JSON.parse(localStorage.getItem("cart")) || [];
-
-                // Функция для добавления товара в корзину
-                function addToCart(name, price) {
-                    const existingItem = cartItems.find(item => item.name === name);
-
-                    if (existingItem) {
-                        existingItem.quantity++;
-                    } else {
-                        cartItems.push({
-                            name,
-                            price,
-                            quantity: 1
-                        });
-                    }
-
-                    localStorage.setItem("cart", JSON.stringify(cartItems));
-                    updateCart();
-                }
-
-                // Обработчик для кнопок "Добавить в корзину"
-                const addToCartButtons = document.getElementById("add");
-                addToCartButtons.forEach(button => {
-                    button.addEventListener("click", function() {
-                        const name = this.getAttribute("data-name");
-                        const price = parseFloat(this.getAttribute("data-price"));
-                        addToCart(name, price);
-                    });
-                });
-
-                // Обработчик для кнопки "Очистить корзину"
-                clearCartButton.addEventListener("click", function() {
-                    localStorage.removeItem("cart");
-                    cartItems = [];
-                    updateCart();
-                });
-
-                // Инициализация корзины
-                updateCart();
-            });
-        </script>
+        
     </div>
 </body>
 
