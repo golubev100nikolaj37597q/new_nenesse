@@ -1,58 +1,71 @@
 <?php
-require($_SERVER['DOCUMENT_ROOT'].'/php/config.php');
-function isPositiveInteger($value) : bool {
+require($_SERVER['DOCUMENT_ROOT'] . '/php/config.php');
+function isPositiveInteger($value): bool
+{
   return is_numeric($value) && intval($value) > 0;
 }
-function isNotEmpty($value) : bool {
+function isNotEmpty($value): bool
+{
   return isset($value) && trim($value) !== '';
 }
 $isValid = true;
-$productName = null;
+$title = null;
 $description = null;
+$price = null;
+$container = null;
 $jsonUploadedFiles = null;
-
+$info = null;
+$collection = null;
+$availability = null;
+$name = null;
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-  $description = $_POST['description'] ?? '';
-  $short_desc = $_POST['short_desc'] ?? '';
+  $name = $_POST['name'] ?? '';
+  $description = $_POST['descr'] ?? '';
+  $info = $_POST['info'] ?? '';
+  $container = $_POST['container'] ?? '';
+  $price = $_POST['price'] ?? '';
+  $title = $_POST['title'] ?? '';
+  $id = $_POST['id'] ?? '';
+  $collection = $_POST['collection'] ?? '';
+  $availability = $_POST['availability'] ?? '';
 
-  $jsonClosedDates = json_encode($formattedDates);
-  if (!isNotEmpty($productName)) {
+  if (!isNotEmpty($title)) {
     $isValid = false;
   }
   if (!isNotEmpty($description)) {
     $isValid = false;
   }
-  
+
   $uploadedFiles = $_FILES['productImage'] ?? null;
   $jsonUploadedFiles = [];
 
   if ($uploadedFiles && is_array($uploadedFiles['name'])) {
     $fileCount = count($uploadedFiles['name']);
     for ($i = 0; $i < $fileCount; $i++) {
-        if ($uploadedFiles['error'][$i] === UPLOAD_ERR_OK) {
-        
+      if ($uploadedFiles['error'][$i] === UPLOAD_ERR_OK) {
+
         $fileTmpPath = $uploadedFiles['tmp_name'][$i];
         $fileName = $uploadedFiles['name'][$i];
         $fileNameCmps = explode(".", $fileName);
         $fileExtension = strtolower(end($fileNameCmps));
 
-        
+
         $newFileName = uniqid() . '.' . $fileExtension;
 
-        
-        $uploadDirectory = $_SERVER['DOCUMENT_ROOT']. '/assets/product-img/';
 
-        
+        $uploadDirectory = $_SERVER['DOCUMENT_ROOT'] . '/assets/product-img/';
+
+
         if (!file_exists($uploadDirectory)) {
           mkdir($uploadDirectory, 0777, true);
         }
 
-        
+
         $uploadPath = $uploadDirectory . $newFileName;
         if (move_uploaded_file($fileTmpPath, $uploadPath)) {
-          
+
           $uploadedFileInfo = array(
-            'file_path' => str_replace($_SERVER['DOCUMENT_ROOT'],"",$uploadPath)
+            'file_path' => str_replace($_SERVER['DOCUMENT_ROOT'], "", $uploadPath)
           );
           $jsonUploadedFiles[] = $uploadedFileInfo;
         } else {
@@ -61,34 +74,26 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       } else {
         $isValid = false; // Произошла ошибка при загрузке файла
       }
-      
+
     }
   }
 
-  
+
   $jsonUploadedFiles = json_encode($jsonUploadedFiles);
 }
 
 if ($isValid) {
-  
+
   $mysql = mysqli_connect(servername, user, password, db);
 
+  $stmt = $mysql->prepare("INSERT INTO `products`(`title`,`price`,`container`, `img`, `info`, `descr`,`name`,`availability`,`collection`) VALUES (?, ?, ?, ?, ?, ?,?,?,?)");
+  $stmt->bind_param("sissss", $title, $price, $container, $jsonUploadedFiles, $info, $description, $name, $availability, $collection);
 
-  $arr = [
-      "bookingid" => $bookingid,
-      "description" => $description,
-      "kvm" => $kvm,
-      "short_desc" => $short_desc
-];
-$arr = json_encode($arr);
-$stmt = $mysql->prepare("INSERT INTO `flats`(`title`, `img`, `info`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)");
-$stmt->bind_param("ssdssssss", $productName, $jsonUploadedFiles, $arr);
-
-if ($stmt->execute()) {
+  if ($stmt->execute()) {
     echo "Successfully";
-} else {
+  } else {
     echo "Error: " . $stmt->error;
-}
+  }
 
-$stmt->close();
+  $stmt->close();
 }

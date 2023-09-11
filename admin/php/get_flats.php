@@ -33,8 +33,16 @@ function get_products_td()
                   </a>
                 </td>
                 <td>{$info['price']}</td>
+                <td>{$info['name']}</td>
+
                 <td>{$info['descr']}</td>
                 <td>{$info['info']}</td>
+                <td>{$info['container']}</td>
+                <td>{$info['collection']}</td>
+
+                <td>{$info['availability']}</td>
+
+                <td>{$info['views']}</td>
                 <td>
                   <div class='btn-group' role='group'>
                     <a class='btn btn-white btn-sm' href='./ecommerce-product-details.php?id={$info['id']}'>

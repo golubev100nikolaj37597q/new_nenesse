@@ -2,51 +2,37 @@
 require($_SERVER['DOCUMENT_ROOT'] . '/php/config.php');
 $mysql = mysqli_connect(servername, user, password, db);
 
-$productName = null;
-$bookingid = null;
-$iframeGoogleMaps = null;
+$title = null;
 $description = null;
-$short_desc = null;
-$address = null;
-$maxHuman = null;
-$kvm = null;
+
 $jsonUploadedFiles = null;
 $id = null;
-$discount = null;
-$isValid = true; // Добавляем переменную для проверки валидности
+
+$isValid = true;
+$title = null;
+$description = null;
+$price = null;
+$container = null;
+$jsonUploadedFiles = null;
+$info = null;
+$collection = null;
+$availability = null;
+$name = null;
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $productName = $_POST['productName'] ?? '';
-    $bookingid = $_POST['bookingid'] ?? '';
-    $iframeGoogleMaps = $_POST['iframe-google-maps'] ?? '';
-    $description = $_POST['description'] ?? '';
-    $short_desc = $_POST['short_desc'] ?? '';
-    $address = $_POST['adress'] ?? '';
-    $maxHuman = $_POST['max-human'] ?? '';
-    $kvm = $_POST['kvm'] ?? '';
+    $name = $_POST['name'] ?? '';
+    $description =  $_POST['descr'] ?? '';
+    $info = $_POST['info'] ?? '';
+    $container = $_POST['container'] ?? '';
+    $price = $_POST['price'] ?? '';
+    $title = $_POST['title'] ?? '';
     $id = $_POST['id'] ?? '';
-    $discount = $_POST['discount'] ?? '';
-    $data_json = $_POST['data_json'] ?? '';
-    $closed_dates_str = $_POST['date_closed'] ?? '';
-    $closed_dates = explode(',', $closed_dates_str);
+    $collection = $_POST['collection'] ?? '';
+    $availability = $_POST['availability'] ?? '';
 
-    // Удаление лишних пробелов вокруг дат
-    $closed_dates = array_map('trim', $closed_dates);
-
-    // Удаление пустых элементов
-    $closed_dates = array_filter($closed_dates);
-
-    // Преобразование дат в нужный формат
-    $formattedDates = array_map(function ($item) {
-        return date('Y-m-d', strtotime($item));
-    }, $closed_dates);
-
-    // Преобразование в JSON
-    $jsonClosedDates = json_encode($formattedDates);
 }
-if(isset($_FILES['productImage']) && !empty($_FILES['productImage']['name'][0])) {
+if (isset($_FILES['productImage']) && !empty($_FILES['productImage']['name'][0])) {
     $uploadedFiles = $_FILES['productImage'];
-}
-else{
+} else {
     $uploadedFiles = null;
 }
 
@@ -94,33 +80,16 @@ if ($uploadedFiles != null) {
 
 try {
 
-    $arr = [
-        "bookingid" => $bookingid,
-        "description" => $description,
-        "kvm" => $kvm,
-        "short_desc" => $short_desc
-    ];
-    $arr = json_encode($arr, JSON_UNESCAPED_UNICODE);
-    $sql1 = $mysql->query("SELECT `img` FROM `flats` WHERE `id` = '$id'")->fetch_array();
-    $imgarray = json_decode($sql1['img']);
-    $imgarray1 = json_encode($imgarray);
-    $imgJsonString = '';
-    $sql = $mysql->query("SELECT `img` FROM `flats` WHERE `id` = '49'");
-    if ($sql->num_rows > 0) {
-        while ($row = $sql->fetch_assoc()) {
-            $imgJsonString = $row["img"];
-        }
-    }
     if ($id != '') {
         if ($uploadedFiles != null) {
-            $mysql->query("UPDATE `flats` SET `title`='$productName',`adress`='$address',`max_adults`='$maxHuman',`GoogleMap`='$iframeGoogleMaps',`img`='$jsonUploadedFiles',`info`='$arr', `discount`='$discount',`price_dates`='$data_json', `close_dates` = '$jsonClosedDates'  WHERE `id` = '$id'");
+            $mysql->query("UPDATE `products` SET `title`='$title',`collection` = '$collection',`img`='$jsonUploadedFiles',`info`='$info',`descr` = '$description', `price` = '$price', `container` = '$container'  WHERE `id` = '$id'");
             if ($mysql->affected_rows > 0) {
                 echo 'Successfully';
             } else {
                 echo 'Error';
             }
         } else {
-            $mysql->query("UPDATE `flats` SET `title`='$productName',`adress`='$address',`max_adults`='$maxHuman',`GoogleMap`='$iframeGoogleMaps',`img`='$imgJsonString',`info`='$arr', `discount`='$discount',`price_dates`='$data_json', `close_dates` = '$jsonClosedDates'  WHERE `id` = '$id'");
+            $mysql->query("UPDATE `products` SET `title`='$title',`name`='$name',`availability`='$availability',`info`='$info',`collection` = '$collection',`descr` = '$description', `price` = '$price', `container` = '$container'  WHERE `id` = '$id'");
             echo 'Successfully';
         }
     }

@@ -478,9 +478,16 @@ if ($_SESSION['user_role'] !== 'admin') {
                   <th class="table-column-ps-0">Id</th>
                   <th>Title</th>
                   <th>Price</th>
+                  <th>Name</th>
+
                   <th>Description</th>
                   <th>Info</th>
+                  <th>Container</th>
+                  <th>Collection</th>
+                  <th>Availability</th>
+                  <th>Views</th>
 
+                  <th></th>
                 </tr>
               </thead>
 

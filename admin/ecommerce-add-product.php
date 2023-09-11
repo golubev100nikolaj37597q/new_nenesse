@@ -27,7 +27,7 @@ if ($_SESSION['user_role'] !== 'admin') {
   <link rel="shortcut icon" href="./favicon.ico">
   <link rel="stylesheet" href="/assets/css/flatpickr.min.css">
   <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
-	<script src="https://npmcdn.com/flatpickr/dist/l10n/ru.js"></script>
+  <script src="https://npmcdn.com/flatpickr/dist/l10n/ru.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 
   <!-- CSS Implementing Plugins -->
@@ -229,7 +229,8 @@ if ($_SESSION['user_role'] !== 'admin') {
   <!-- ========== MAIN CONTENT ========== -->
   <!-- Navbar Vertical -->
 
-  <aside class="js-navbar-vertical-aside navbar navbar-vertical-aside navbar-vertical navbar-vertical-fixed navbar-expand-xl navbar-bordered bg-white  ">
+  <aside
+    class="js-navbar-vertical-aside navbar navbar-vertical-aside navbar-vertical navbar-vertical-fixed navbar-expand-xl navbar-bordered bg-white  ">
     <div class="navbar-vertical-container">
       <div class="navbar-vertical-footer-offset">
         <!-- Logo -->
@@ -243,8 +244,12 @@ if ($_SESSION['user_role'] !== 'admin') {
 
         <!-- Navbar Vertical Toggle -->
         <button type="button" class="js-navbar-vertical-aside-toggle-invoker navbar-aside-toggler">
-          <i class="bi-arrow-bar-left navbar-toggler-short-align" data-bs-template='<div class="tooltip d-none d-md-block" role="tooltip"><div class="arrow"></div><div class="tooltip-inner"></div></div>' data-bs-toggle="tooltip" data-bs-placement="right" title="Collapse"></i>
-          <i class="bi-arrow-bar-right navbar-toggler-full-align" data-bs-template='<div class="tooltip d-none d-md-block" role="tooltip"><div class="arrow"></div><div class="tooltip-inner"></div></div>' data-bs-toggle="tooltip" data-bs-placement="right" title="Expand"></i>
+          <i class="bi-arrow-bar-left navbar-toggler-short-align"
+            data-bs-template='<div class="tooltip d-none d-md-block" role="tooltip"><div class="arrow"></div><div class="tooltip-inner"></div></div>'
+            data-bs-toggle="tooltip" data-bs-placement="right" title="Collapse"></i>
+          <i class="bi-arrow-bar-right navbar-toggler-full-align"
+            data-bs-template='<div class="tooltip d-none d-md-block" role="tooltip"><div class="arrow"></div><div class="tooltip-inner"></div></div>'
+            data-bs-toggle="tooltip" data-bs-placement="right" title="Expand"></i>
         </button>
 
         <!-- End Navbar Vertical Toggle -->
@@ -271,12 +276,12 @@ if ($_SESSION['user_role'] !== 'admin') {
           <div class="col-sm mb-2 mb-sm-0">
             <nav aria-label="breadcrumb">
               <ol class="breadcrumb breadcrumb-no-gutter">
-                <li class="breadcrumb-item"><a class="breadcrumb-link" href="./ecommerce-products.php">Квартиры</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Добавить квартиру</li>
+                <li class="breadcrumb-item"><a class="breadcrumb-link" href="./ecommerce-products.php">product</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Add product</li>
               </ol>
             </nav>
 
-            <h1 class="page-header-title">Добавить квартиру</h1>
+            <h1 class="page-header-title">Add product</h1>
 
 
           </div>
@@ -292,98 +297,44 @@ if ($_SESSION['user_role'] !== 'admin') {
             <div class="card mb-3 mb-lg-5">
               <!-- Header -->
               <div class="card-header">
-                <h4 class="card-header-title">Информация о квартире</h4>
+                <h4 class="card-header-title">Main Information</h4>
               </div>
               <!-- End Header -->
 
               <!-- Body -->
+
+
               <div class="card-body">
                 <!-- Form -->
-                <div class="mb-4">
-                  <label for="productNameLabel" class="form-label">Название <i class="bi-question-circle text-body ms-1" data-bs-toggle="tooltip" data-bs-placement="top" title="Введите название"></i></label>
 
-                  <input type="text" class="form-control" name="productName" id="productNameLabel" placeholder="Введите название" aria-label="Shirt, t-shirts, etc.">
+                <div class="mb-4">
+                  <label for="productNameLabel" class="form-label">Title <i class="bi-question-circle text-body ms-1"
+                      data-bs-toggle="tooltip" data-bs-placement="top" title="Name"></i></label>
+
+
+                  <input type="text" class="form-control" name="title" id="productNameLabel" placeholder=""
+                    value="" aria-label="Shirt, t-shirts, etc.">
                 </div>
                 <div class="mb-4">
-                  <label for="productNameLabel" class="form-label">Краткое описание <i class="bi-question-circle text-body ms-1" data-bs-toggle="tooltip" data-bs-placement="top" title="Под кратким описанием имеется ввиду, короктое описание квартиры которое описывается под пунктом 'Основная информация' "></i></label>
+                  <label for="productNameLabel" class="form-label">Main <i class="bi-question-circle text-body ms-1"
+                      data-bs-toggle="tooltip" data-bs-placement="top" title="Name"></i></label>
 
-                  <input type="text" class="form-control" name="short_desc" id="productNameLabel" placeholder="Введите название" aria-label="Shirt, t-shirts, etc.">
+
+                  <input type="text" class="form-control" name="name" id="productNameLabel" placeholder=""
+                    value="" aria-label="Shirt, t-shirts, etc.">
+                </div>
+                <div class="mb-4">
+                  <label for="productNameLabel1" class="form-label">Short description <i
+                      class="bi-question-circle text-body ms-1" data-bs-toggle="tooltip" data-bs-placement="top"
+                      title="Под кратким описанием имеется ввиду, короктое описание квартиры которое описывается под пунктом 'Основная информация' "></i></label>
+
+                  <input type="text" class="form-control" name="descr" id="productNameLabel1"
+                    value="" placeholder="" aria-label="Shirt, t-shirts, etc.">
                 </div>
                 <!-- End Form -->
 
-                <div class="row">
-                  <div class="col-sm-6">
-                    <!-- Form -->
-                    <div class="mb-4">
-                      <label for="SKULabel" class="form-label">ID квартиры на букинг</label>
 
-                      <input type="text" class="form-control" name="bookingid" id="SKULabel" placeholder="Введите id квартиры">
-                    </div>
-                    <!-- End Form -->
-                  </div>
-                  <!-- End Col -->
-
-                  <div class="col-sm-6">
-                    <!-- Form -->
-                    <div class="mb-4">
-                      <label for="weightLabel" class="form-label">Интеграция Google Map iframe</label>
-
-                      <div class="input-group">
-                        <input type="text" class="form-control" name="iframe-google-maps" id="weightLabel" placeholder="Введите iframe гугл карты">
-
-
-                      </div>
-
-                      <small class="form-text">Найдите в GoogleMaps адрес, нажмите поделиться и выберите встраивание карт, затем нажмите копировать HTML, и вставьте его в поле выше.</small>
-                    </div>
-                    <!-- End Form -->
-                  </div>
-                  <!-- End Col -->
-                </div>
-                <!-- End Row -->
-                <div class="row">
-                  <div class="col-sm-6">
-                    <!-- Form -->
-                    <div class="mb-4" style="display:flex;align-items:center;">
-                      <input type="checkbox" class="custom-radio" id="radio-custom"><label for="radio-custom" class="form-label" style="margin:0;margin-left:10px">Скидка от 2 недель проживания</label>
-
-                      <style>
-                        .custom-radio {
-                          height: 15px;
-                          width: 15px;
-                        }
-                      </style>
-                    </div>
-                    <!-- End Form -->
-                  </div>
-                  <!-- End Col -->
-
-                  <div class="col-sm-6">
-                    <!-- Form -->
-                    <div class="mb-4">
-                      <label for="discountInput" class="form-label">Скидка</label>
-
-                      <div class="input-group">
-                        <input type="text" class="form-control" name="discount" id="discountInput" placeholder="Введите скидку на квартиру" disabled>
-
-
-                      </div>
-                      <script>
-                        const checkbox = document.getElementById('radio-custom');
-                        const inputField = document.getElementById('discountInput');
-
-                        checkbox.addEventListener('change', function() {
-                          inputField.disabled = !this.checked;
-
-                        });
-                      </script>
-
-                    </div>
-                    <!-- End Form -->
-                  </div>
-                  <!-- End Col -->
-                </div>
-                <label class="form-label">Удобства <span class="form-label-secondary"></span></label>
+                <label class="form-label">Information <span class="form-label-secondary"></span></label>
 
                 <!-- Quill -->
                 <div class="quill-custom">
@@ -409,17 +360,19 @@ if ($_SESSION['user_role'] !== 'admin') {
             <div class="card mb-3 mb-lg-5">
               <!-- Header -->
               <div class="card-header card-header-content-between">
-                <h4 class="card-header-title">Изображения</h4>
+                <h4 class="card-header-title">Images</h4>
 
                 <!-- Dropdown -->
                 <div class="dropdown">
 
 
                   <div class="dropdown-menu dropdown-menu-end mt-1">
-                    <a class="dropdown-item" href="javascript:;" data-bs-toggle="modal" data-bs-target="#addImageFromURLModal">
+                    <a class="dropdown-item" href="javascript:;" data-bs-toggle="modal"
+                      data-bs-target="#addImageFromURLModal">
                       <i class="bi-link dropdown-item-icon"></i> Add image from URL
                     </a>
-                    <a class="dropdown-item" href="javascript:;" data-bs-toggle="modal" data-bs-target="#embedVideoModal">
+                    <a class="dropdown-item" href="javascript:;" data-bs-toggle="modal"
+                      data-bs-target="#embedVideoModal">
                       <i class="bi-youtube dropdown-item-icon"></i> Embed video
                     </a>
                   </div>
@@ -434,9 +387,8 @@ if ($_SESSION['user_role'] !== 'admin') {
                 <div class="dz-dropzone dz-dropzone-card">
 
                   <div class="dz-message">
-                    <input type="file" class="btn btn-white btn-sm" accept=".jpg, .jpeg, .png, .gif" id="productImageInput" name="productImage[]" multiple>
-
-
+                    <input type="file" class="btn btn-white btn-sm" accept=".jpg, .jpeg, .png, .gif"
+                      id="productImageInput" name="productImage[]" multiple>
                   </div>
 
                 </div>
@@ -451,207 +403,207 @@ if ($_SESSION['user_role'] !== 'admin') {
           <!-- End Col -->
 
           <div class="col-lg-4">
-            <!--          
-          <div class="card mb-3 mb-lg-5">
-            
-            <div class="card-header">
-              <h4 class="card-header-title">Стоимость </h4>
-            </div>
-            
+            <!--
+                  <div class="card mb-3 mb-lg-5">
 
-            
-            <div class="card-body">
-              
-              <div class="mb-4">
-                <label for="priceNameLabel" class="form-label">Price</label>
-
-                <div class="input-group">
-                  <input type="text" class="form-control" name="priceName" id="priceNameLabel" placeholder="0.00" aria-label="0.00">
-
-                  <div class="input-group-append">
-                   
-                    <div class="tom-select-custom">
-                      <select class="js-select form-select" data-hs-tom-select-options='{
-                                "searchInDropdown": false,
-                                "hideSearch": true,
-                                "dropdownWidth": "7rem",
-                                "dropdownWrapperClass": "tom-select-custom tom-select-custom-end"
-                              }'>
-                        <option value="USD" selected>USD</option>
-                        <option value="AED">AED</option>
-                        <option value="AFN">AFN</option>
-                        <option value="ALL">ALL</option>
-                        <option value="AMD">AMD</option>
-                        <option value="ANG">ANG</option>
-                        <option value="AOA">AOA</option>
-                        <option value="ARS">ARS</option>
-                        <option value="AUD">AUD</option>
-                        <option value="AWG">AWG</option>
-                        <option value="AZN">AZN</option>
-                        <option value="BAM">BAM</option>
-                        <option value="BBD">BBD</option>
-                        <option value="BDT">BDT</option>
-                        <option value="BGN">BGN</option>
-                        <option value="BIF">BIF</option>
-                        <option value="BMD">BMD</option>
-                        <option value="BND">BND</option>
-                        <option value="BOB">BOB</option>
-                        <option value="BRL">BRL</option>
-                        <option value="BSD">BSD</option>
-                        <option value="BWP">BWP</option>
-                        <option value="BZD">BZD</option>
-                        <option value="CAD">CAD</option>
-                        <option value="CDF">CDF</option>
-                        <option value="CHF">CHF</option>
-                        <option value="CLP">CLP</option>
-                        <option value="CNY">CNY</option>
-                        <option value="COP">COP</option>
-                        <option value="CRC">CRC</option>
-                        <option value="CVE">CVE</option>
-                        <option value="CZK">CZK</option>
-                        <option value="DJF">DJF</option>
-                        <option value="DKK">DKK</option>
-                        <option value="DOP">DOP</option>
-                        <option value="DZD">DZD</option>
-                        <option value="EGP">EGP</option>
-                        <option value="ETB">ETB</option>
-                        <option value="EUR">EUR</option>
-                        <option value="FJD">FJD</option>
-                        <option value="FKP">FKP</option>
-                        <option value="GBP">GBP</option>
-                        <option value="GEL">GEL</option>
-                        <option value="GIP">GIP</option>
-                        <option value="GMD">GMD</option>
-                        <option value="GNF">GNF</option>
-                        <option value="GTQ">GTQ</option>
-                        <option value="GYD">GYD</option>
-                        <option value="HKD">HKD</option>
-                        <option value="HNL">HNL</option>
-                        <option value="HRK">HRK</option>
-                        <option value="HTG">HTG</option>
-                        <option value="HUF">HUF</option>
-                        <option value="IDR">IDR</option>
-                        <option value="ILS">ILS</option>
-                        <option value="INR">INR</option>
-                        <option value="ISK">ISK</option>
-                        <option value="JMD">JMD</option>
-                        <option value="JPY">JPY</option>
-                        <option value="KES">KES</option>
-                        <option value="KGS">KGS</option>
-                        <option value="KHR">KHR</option>
-                        <option value="KMF">KMF</option>
-                        <option value="KRW">KRW</option>
-                        <option value="KYD">KYD</option>
-                        <option value="KZT">KZT</option>
-                        <option value="LAK">LAK</option>
-                        <option value="LBP">LBP</option>
-                        <option value="LKR">LKR</option>
-                        <option value="LRD">LRD</option>
-                        <option value="LSL">LSL</option>
-                        <option value="MAD">MAD</option>
-                        <option value="MDL">MDL</option>
-                        <option value="MGA">MGA</option>
-                        <option value="MKD">MKD</option>
-                        <option value="MMK">MMK</option>
-                        <option value="MNT">MNT</option>
-                        <option value="MOP">MOP</option>
-                        <option value="MRO">MRO</option>
-                        <option value="MUR">MUR</option>
-                        <option value="MVR">MVR</option>
-                        <option value="MWK">MWK</option>
-                        <option value="MXN">MXN</option>
-                        <option value="MYR">MYR</option>
-                        <option value="MZN">MZN</option>
-                        <option value="NAD">NAD</option>
-                        <option value="NGN">NGN</option>
-                        <option value="NIO">NIO</option>
-                        <option value="NOK">NOK</option>
-                        <option value="NPR">NPR</option>
-                        <option value="NZD">NZD</option>
-                        <option value="PAB">PAB</option>
-                        <option value="PEN">PEN</option>
-                        <option value="PGK">PGK</option>
-                        <option value="PHP">PHP</option>
-                        <option value="PKR">PKR</option>
-                        <option value="PLN">PLN</option>
-                        <option value="PYG">PYG</option>
-                        <option value="QAR">QAR</option>
-                        <option value="RON">RON</option>
-                        <option value="RSD">RSD</option>
-                        <option value="RUB">RUB</option>
-                        <option value="RWF">RWF</option>
-                        <option value="SAR">SAR</option>
-                        <option value="SBD">SBD</option>
-                        <option value="SCR">SCR</option>
-                        <option value="SEK">SEK</option>
-                        <option value="SGD">SGD</option>
-                        <option value="SHP">SHP</option>
-                        <option value="SLL">SLL</option>
-                        <option value="SOS">SOS</option>
-                        <option value="SRD">SRD</option>
-                        <option value="STD">STD</option>
-                        <option value="SZL">SZL</option>
-                        <option value="THB">THB</option>
-                        <option value="TJS">TJS</option>
-                        <option value="TOP">TOP</option>
-                        <option value="TRY">TRY</option>
-                        <option value="TTD">TTD</option>
-                        <option value="TWD">TWD</option>
-                        <option value="TZS">TZS</option>
-                        <option value="UAH">UAH</option>
-                        <option value="UGX">UGX</option>
-                        <option value="UYU">UYU</option>
-                        <option value="UZS">UZS</option>
-                        <option value="VND">VND</option>
-                        <option value="VUV">VUV</option>
-                        <option value="WST">WST</option>
-                        <option value="XAF">XAF</option>
-                        <option value="XCD">XCD</option>
-                        <option value="XOF">XOF</option>
-                        <option value="XPF">XPF</option>
-                        <option value="YER">YER</option>
-                        <option value="ZAR">ZAR</option>
-                        <option value="ZMW">ZMW</option>
-                      </select>
+                    <div class="card-header">
+                      <h4 class="card-header-title">Стоимость </h4>
                     </div>
-                    
+
+
+
+                    <div class="card-body">
+
+                      <div class="mb-4">
+                        <label for="priceNameLabel" class="form-label">Price</label>
+
+                        <div class="input-group">
+                          <input type="text" class="form-control" name="priceName" id="priceNameLabel" placeholder="0.00" aria-label="0.00">
+
+                          <div class="input-group-append">
+
+                            <div class="tom-select-custom">
+                              <select class="js-select form-select" data-hs-tom-select-options='{
+                                        "searchInDropdown": false,
+                                        "hideSearch": true,
+                                        "dropdownWidth": "7rem",
+                                        "dropdownWrapperClass": "tom-select-custom tom-select-custom-end"
+                                      }'>
+                                <option value="USD" selected>USD</option>
+                                <option value="AED">AED</option>
+                                <option value="AFN">AFN</option>
+                                <option value="ALL">ALL</option>
+                                <option value="AMD">AMD</option>
+                                <option value="ANG">ANG</option>
+                                <option value="AOA">AOA</option>
+                                <option value="ARS">ARS</option>
+                                <option value="AUD">AUD</option>
+                                <option value="AWG">AWG</option>
+                                <option value="AZN">AZN</option>
+                                <option value="BAM">BAM</option>
+                                <option value="BBD">BBD</option>
+                                <option value="BDT">BDT</option>
+                                <option value="BGN">BGN</option>
+                                <option value="BIF">BIF</option>
+                                <option value="BMD">BMD</option>
+                                <option value="BND">BND</option>
+                                <option value="BOB">BOB</option>
+                                <option value="BRL">BRL</option>
+                                <option value="BSD">BSD</option>
+                                <option value="BWP">BWP</option>
+                                <option value="BZD">BZD</option>
+                                <option value="CAD">CAD</option>
+                                <option value="CDF">CDF</option>
+                                <option value="CHF">CHF</option>
+                                <option value="CLP">CLP</option>
+                                <option value="CNY">CNY</option>
+                                <option value="COP">COP</option>
+                                <option value="CRC">CRC</option>
+                                <option value="CVE">CVE</option>
+                                <option value="CZK">CZK</option>
+                                <option value="DJF">DJF</option>
+                                <option value="DKK">DKK</option>
+                                <option value="DOP">DOP</option>
+                                <option value="DZD">DZD</option>
+                                <option value="EGP">EGP</option>
+                                <option value="ETB">ETB</option>
+                                <option value="EUR">EUR</option>
+                                <option value="FJD">FJD</option>
+                                <option value="FKP">FKP</option>
+                                <option value="GBP">GBP</option>
+                                <option value="GEL">GEL</option>
+                                <option value="GIP">GIP</option>
+                                <option value="GMD">GMD</option>
+                                <option value="GNF">GNF</option>
+                                <option value="GTQ">GTQ</option>
+                                <option value="GYD">GYD</option>
+                                <option value="HKD">HKD</option>
+                                <option value="HNL">HNL</option>
+                                <option value="HRK">HRK</option>
+                                <option value="HTG">HTG</option>
+                                <option value="HUF">HUF</option>
+                                <option value="IDR">IDR</option>
+                                <option value="ILS">ILS</option>
+                                <option value="INR">INR</option>
+                                <option value="ISK">ISK</option>
+                                <option value="JMD">JMD</option>
+                                <option value="JPY">JPY</option>
+                                <option value="KES">KES</option>
+                                <option value="KGS">KGS</option>
+                                <option value="KHR">KHR</option>
+                                <option value="KMF">KMF</option>
+                                <option value="KRW">KRW</option>
+                                <option value="KYD">KYD</option>
+                                <option value="KZT">KZT</option>
+                                <option value="LAK">LAK</option>
+                                <option value="LBP">LBP</option>
+                                <option value="LKR">LKR</option>
+                                <option value="LRD">LRD</option>
+                                <option value="LSL">LSL</option>
+                                <option value="MAD">MAD</option>
+                                <option value="MDL">MDL</option>
+                                <option value="MGA">MGA</option>
+                                <option value="MKD">MKD</option>
+                                <option value="MMK">MMK</option>
+                                <option value="MNT">MNT</option>
+                                <option value="MOP">MOP</option>
+                                <option value="MRO">MRO</option>
+                                <option value="MUR">MUR</option>
+                                <option value="MVR">MVR</option>
+                                <option value="MWK">MWK</option>
+                                <option value="MXN">MXN</option>
+                                <option value="MYR">MYR</option>
+                                <option value="MZN">MZN</option>
+                                <option value="NAD">NAD</option>
+                                <option value="NGN">NGN</option>
+                                <option value="NIO">NIO</option>
+                                <option value="NOK">NOK</option>
+                                <option value="NPR">NPR</option>
+                                <option value="NZD">NZD</option>
+                                <option value="PAB">PAB</option>
+                                <option value="PEN">PEN</option>
+                                <option value="PGK">PGK</option>
+                                <option value="PHP">PHP</option>
+                                <option value="PKR">PKR</option>
+                                <option value="PLN">PLN</option>
+                                <option value="PYG">PYG</option>
+                                <option value="QAR">QAR</option>
+                                <option value="RON">RON</option>
+                                <option value="RSD">RSD</option>
+                                <option value="RUB">RUB</option>
+                                <option value="RWF">RWF</option>
+                                <option value="SAR">SAR</option>
+                                <option value="SBD">SBD</option>
+                                <option value="SCR">SCR</option>
+                                <option value="SEK">SEK</option>
+                                <option value="SGD">SGD</option>
+                                <option value="SHP">SHP</option>
+                                <option value="SLL">SLL</option>
+                                <option value="SOS">SOS</option>
+                                <option value="SRD">SRD</option>
+                                <option value="STD">STD</option>
+                                <option value="SZL">SZL</option>
+                                <option value="THB">THB</option>
+                                <option value="TJS">TJS</option>
+                                <option value="TOP">TOP</option>
+                                <option value="TRY">TRY</option>
+                                <option value="TTD">TTD</option>
+                                <option value="TWD">TWD</option>
+                                <option value="TZS">TZS</option>
+                                <option value="UAH">UAH</option>
+                                <option value="UGX">UGX</option>
+                                <option value="UYU">UYU</option>
+                                <option value="UZS">UZS</option>
+                                <option value="VND">VND</option>
+                                <option value="VUV">VUV</option>
+                                <option value="WST">WST</option>
+                                <option value="XAF">XAF</option>
+                                <option value="XCD">XCD</option>
+                                <option value="XOF">XOF</option>
+                                <option value="XPF">XPF</option>
+                                <option value="YER">YER</option>
+                                <option value="ZAR">ZAR</option>
+                                <option value="ZMW">ZMW</option>
+                              </select>
+                            </div>
+
+                          </div>
+                        </div>
+                      </div>
+
+
+                      <div class="mb-2">
+                        <a class="d-inline-block" href="javascript:;" data-bs-toggle="modal" data-bs-target="#productsAdvancedFeaturesModal">
+                          <i class="bi-star-fill fs-4 text-warning me-1"></i> Set "Compare to" price
+                        </a>
+                      </div>
+
+                      <a class="d-inline-block" href="javascript:;" data-bs-toggle="modal" data-bs-target="#productsAdvancedFeaturesModal">
+                        <i class="bi-star-fill fs-4 text-warning me-1"></i> Bulk discount pricing
+                      </a>
+
+                      <hr class="my-4">
+
+
+                      <label class="row form-check form-switch" for="availabilitySwitch1">
+                        <span class="col-8 col-sm-9 ms-0">
+                          <span class="text-dark">Availability <i class="bi-question-circle text-body ms-1" data-bs-toggle="tooltip" data-bs-placement="top" title="Product availability switch toggler."></i></span>
+                        </span>
+                        <span class="col-4 col-sm-3 text-end">
+                          <input type="checkbox" class="form-check-input" id="availabilitySwitch1">
+                        </span>
+                      </label>
+
+                    </div>
+
                   </div>
-                </div>
-              </div>
-             
-
-              <div class="mb-2">
-                <a class="d-inline-block" href="javascript:;" data-bs-toggle="modal" data-bs-target="#productsAdvancedFeaturesModal">
-                  <i class="bi-star-fill fs-4 text-warning me-1"></i> Set "Compare to" price
-                </a>
-              </div>
-
-              <a class="d-inline-block" href="javascript:;" data-bs-toggle="modal" data-bs-target="#productsAdvancedFeaturesModal">
-                <i class="bi-star-fill fs-4 text-warning me-1"></i> Bulk discount pricing
-              </a>
-
-              <hr class="my-4">
-
-              
-              <label class="row form-check form-switch" for="availabilitySwitch1">
-                <span class="col-8 col-sm-9 ms-0">
-                  <span class="text-dark">Availability <i class="bi-question-circle text-body ms-1" data-bs-toggle="tooltip" data-bs-placement="top" title="Product availability switch toggler."></i></span>
-                </span>
-                <span class="col-4 col-sm-3 text-end">
-                  <input type="checkbox" class="form-check-input" id="availabilitySwitch1">
-                </span>
-              </label>
-              
-            </div>
-           
-          </div>
-          -->
+                  -->
 
 
-            <div class="card">
+            <div class="card mb-3">
               <!-- Header -->
               <div class="card-header">
-                <h4 class="card-header-title">Прочие данные</h4>
+                <h4 class="card-header-title">Other info</h4>
               </div>
               <!-- End Header -->
 
@@ -659,76 +611,83 @@ if ($_SESSION['user_role'] !== 'admin') {
               <div class="card-body">
                 <!-- Form -->
                 <div class="mb-4">
-                  <label for="vendorLabel" class="form-label">Адрес</label>
+                  <label for="vendorLabel" class="form-label">Price</label>
 
-                  <input type="text" class="form-control" name="adress" id="vendorLabel" placeholder="Введите адрес">
+                  <input type="text" class="form-control" name="price" value="" id="vendorLabel"
+                    placeholder="">
                 </div>
                 <!-- End Form -->
 
                 <div class="mb-4">
-                  <label for="tagsLabel" class="form-label">Максимальное кол-во людей</label>
+                  <label for="tagsLabel" class="form-label">Container</label>
 
 
-                  <input type="text" class="form-control" name="max-human" id="tagsLabel" placeholder="Введите кол-во людей" aria-label="Enter tags here">
+                  <input type="text" class="form-control" name="container" value=""
+                    id="tagsLabel" placeholder="" aria-label="Enter tags here">
                 </div>
                 <div class="mb-4">
-                  <label for="kvm" class="form-label">Квадратные метры</label>
+                  <label for="tagsLabel" class="form-label">Collection</label>
+                  <select name="collection" id="" class="form-control">
+                    <?php
+                    $collections = array(
+                      'alles-in-einem',
+                      'fur-sie',
+                      'unisex',
+                      'fur-ihn',
+                      'proben',
+                      '100-parfume-oil',
+                      '365days-dufte'
+                    );
+
+                    foreach ($collections as $optionValue) {
+                      echo "<option value='$optionValue'>$optionValue</option>";
+                    }
+                    ?>
+                  </select>
+
+                </div>
+                <div class="mb-4">
+                  <label for="tagsLabel" class="form-label">Availability</label>
+
+                  <select name="availability" id="" class="form-control">
+                    <option value="1">Yes</option>
+                    <option value="0">No</option>
+                  </select>
 
 
-                  <input type="text" name="kvm" class="form-control" id="kvm" placeholder="Введите кв.м">
                 </div>
               </div>
               <!-- Body -->
             </div>
-            <br>
             <div class="card">
               <!-- Header -->
               <div class="card-header">
-                <h4 class="card-header-title">Закрытые даты на квартиру</h4>
+                <h4 class="card-header-title">Views</h4>
               </div>
               <!-- End Header -->
 
               <!-- Body -->
               <div class="card-body">
-
+                <!-- Form -->
                 <div class="mb-4">
-                  <label for="vendorLabel" class="form-label">Введите даты</label>
 
-                  <input type="text" id="date_closed" class="form-control" name="date_closed" placeholder="Введите даты">
+
+                  <input type="text" class="form-control" name="views" value="" id="vendorLabel" placeholder=""
+                    disabled>
                 </div>
                 <!-- End Form -->
+
 
 
               </div>
               <!-- Body -->
             </div>
             <br>
-            <div class="card">
-              <!-- Header -->
-              <div class="card-header">
-                <h4 class="card-header-title">Цены на квартиру</h4>
-              </div>
-              <!-- End Header -->
 
-              <!-- Body -->
-              <div class="card-body">
-                <input type="hidden" name="data_json" id="data-json">
-                <div class="mb-4">
-                  <label for="vendorLabel" class="form-label">Введите даты</label>
 
-                  <input type="text" id="data-picker" class="form-control" name="date_selected" placeholder="Введите даты">
-                </div>
-                <!-- End Form -->
-                <div id="price-block"></div>
-
-              </div>
-              <!-- Body -->
-            </div>
-            <!-- End Card -->
           </div>
 
         </div>
-
 
         <div class="position-fixed start-50 bottom-0 translate-middle-x w-100 zi-99 mb-3" style="max-width: 40rem;">
           <!-- Card -->
@@ -786,7 +745,9 @@ if ($_SESSION['user_role'] !== 'admin') {
 
               <li class="list-inline-item">
                 <!-- Keyboard Shortcuts Toggle -->
-                <button class="btn btn-ghost-secondary btn btn-icon btn-ghost-secondary rounded-circle" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasKeyboardShortcuts" aria-controls="offcanvasKeyboardShortcuts">
+                <button class="btn btn-ghost-secondary btn btn-icon btn-ghost-secondary rounded-circle" type="button"
+                  data-bs-toggle="offcanvas" data-bs-target="#offcanvasKeyboardShortcuts"
+                  aria-controls="offcanvasKeyboardShortcuts">
                   <i class="bi-command"></i>
                 </button>
                 <!-- End Keyboard Shortcuts Toggle -->
@@ -806,7 +767,8 @@ if ($_SESSION['user_role'] !== 'admin') {
 
   <!-- ========== SECONDARY CONTENTS ========== -->
   <!-- Keyboard Shortcuts -->
-  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasKeyboardShortcuts" aria-labelledby="offcanvasKeyboardShortcutsLabel">
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasKeyboardShortcuts"
+    aria-labelledby="offcanvasKeyboardShortcutsLabel">
     <div class="offcanvas-header">
       <h4 id="offcanvasKeyboardShortcutsLabel" class="mb-0">Keyboard shortcuts</h4>
       <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -824,7 +786,8 @@ if ($_SESSION['user_role'] !== 'admin') {
             <!-- End Col -->
 
             <div class="col-7 text-end">
-              <kbd class="d-inline-block mb-1">Ctrl</kbd> <span class="text-muted small">+</span> <kbd class="d-inline-block mb-1">b</kbd>
+              <kbd class="d-inline-block mb-1">Ctrl</kbd> <span class="text-muted small">+</span> <kbd
+                class="d-inline-block mb-1">b</kbd>
             </div>
           </div>
           <!-- End Row -->
@@ -838,7 +801,8 @@ if ($_SESSION['user_role'] !== 'admin') {
             <!-- End Col -->
 
             <div class="col-7 text-end">
-              <kbd class="d-inline-block mb-1">Ctrl</kbd> <span class="text-muted small">+</span> <kbd class="d-inline-block mb-1">i</kbd>
+              <kbd class="d-inline-block mb-1">Ctrl</kbd> <span class="text-muted small">+</span> <kbd
+                class="d-inline-block mb-1">i</kbd>
             </div>
             <!-- End Col -->
           </div>
@@ -853,7 +817,8 @@ if ($_SESSION['user_role'] !== 'admin') {
             <!-- End Col -->
 
             <div class="col-7 text-end">
-              <kbd class="d-inline-block mb-1">Ctrl</kbd> <span class="text-muted small">+</span> <kbd class="d-inline-block mb-1">u</kbd>
+              <kbd class="d-inline-block mb-1">Ctrl</kbd> <span class="text-muted small">+</span> <kbd
+                class="d-inline-block mb-1">u</kbd>
             </div>
             <!-- End Col -->
           </div>
@@ -868,7 +833,9 @@ if ($_SESSION['user_role'] !== 'admin') {
             <!-- End Col -->
 
             <div class="col-7 text-end">
-              <kbd class="d-inline-block mb-1">Ctrl</kbd> <span class="text-muted small">+</span> <kbd class="d-inline-block mb-1">Alt</kbd> <span class="text-muted small">+</span> <kbd class="d-inline-block mb-1">s</kbd>
+              <kbd class="d-inline-block mb-1">Ctrl</kbd> <span class="text-muted small">+</span> <kbd
+                class="d-inline-block mb-1">Alt</kbd> <span class="text-muted small">+</span> <kbd
+                class="d-inline-block mb-1">s</kbd>
               <!-- End Col -->
             </div>
           </div>
@@ -883,7 +850,8 @@ if ($_SESSION['user_role'] !== 'admin') {
             <!-- End Col -->
 
             <div class="col-7 text-end">
-              <kbd class="d-inline-block mb-1">Ctrl</kbd> <span class="text-muted small">+</span> <kbd class="d-inline-block mb-1">s</kbd>
+              <kbd class="d-inline-block mb-1">Ctrl</kbd> <span class="text-muted small">+</span> <kbd
+                class="d-inline-block mb-1">s</kbd>
             </div>
             <!-- End Col -->
           </div>
@@ -898,7 +866,8 @@ if ($_SESSION['user_role'] !== 'admin') {
             <!-- End Col -->
 
             <div class="col-7 text-end">
-              <kbd class="d-inline-block mb-1">Ctrl</kbd> <span class="text-muted small">+</span> <kbd class="d-inline-block mb-1">e</kbd>
+              <kbd class="d-inline-block mb-1">Ctrl</kbd> <span class="text-muted small">+</span> <kbd
+                class="d-inline-block mb-1">e</kbd>
             </div>
             <!-- End Col -->
           </div>
@@ -1024,7 +993,8 @@ if ($_SESSION['user_role'] !== 'admin') {
             <!-- End Col -->
 
             <div class="col-7 text-end">
-              <kbd class="d-inline-block mb-1">Ctrl</kbd> <span class="text-muted small">+</span> <kbd class="d-inline-block mb-1">r</kbd>
+              <kbd class="d-inline-block mb-1">Ctrl</kbd> <span class="text-muted small">+</span> <kbd
+                class="d-inline-block mb-1">r</kbd>
             </div>
             <!-- End Col -->
           </div>
@@ -1039,7 +1009,8 @@ if ($_SESSION['user_role'] !== 'admin') {
             <!-- End Col -->
 
             <div class="col-7 text-end">
-              <kbd class="d-inline-block mb-1">Ctrl</kbd> <span class="text-muted small">+</span> <kbd class="d-inline-block mb-1">n</kbd>
+              <kbd class="d-inline-block mb-1">Ctrl</kbd> <span class="text-muted small">+</span> <kbd
+                class="d-inline-block mb-1">n</kbd>
             </div>
             <!-- End Col -->
           </div>
@@ -1054,7 +1025,8 @@ if ($_SESSION['user_role'] !== 'admin') {
             <!-- End Col -->
 
             <div class="col-7 text-end">
-              <kbd class="d-inline-block mb-1">Ctrl</kbd> <span class="text-muted small">+</span> <kbd class="d-inline-block mb-1">p</kbd>
+              <kbd class="d-inline-block mb-1">Ctrl</kbd> <span class="text-muted small">+</span> <kbd
+                class="d-inline-block mb-1">p</kbd>
             </div>
             <!-- End Col -->
           </div>
@@ -1084,7 +1056,8 @@ if ($_SESSION['user_role'] !== 'admin') {
             <!-- End Col -->
 
             <div class="col-7 text-end">
-              <kbd class="d-inline-block mb-1">Shift</kbd> <span class="text-muted small">+</span> <kbd class="d-inline-block mb-1">Tab</kbd>
+              <kbd class="d-inline-block mb-1">Shift</kbd> <span class="text-muted small">+</span> <kbd
+                class="d-inline-block mb-1">Tab</kbd>
             </div>
             <!-- End Col -->
           </div>
@@ -1099,7 +1072,9 @@ if ($_SESSION['user_role'] !== 'admin') {
             <!-- End Col -->
 
             <div class="col-7 text-end">
-              <kbd class="d-inline-block mb-1">Ctrl</kbd> <span class="text-muted small">+</span> <kbd class="d-inline-block mb-1">Shift</kbd> <span class="text-muted small">+</span> <kbd class="d-inline-block mb-1"><i class="bi-arrow-up-short"></i></kbd>
+              <kbd class="d-inline-block mb-1">Ctrl</kbd> <span class="text-muted small">+</span> <kbd
+                class="d-inline-block mb-1">Shift</kbd> <span class="text-muted small">+</span> <kbd
+                class="d-inline-block mb-1"><i class="bi-arrow-up-short"></i></kbd>
             </div>
             <!-- End Col -->
           </div>
@@ -1114,7 +1089,9 @@ if ($_SESSION['user_role'] !== 'admin') {
             <!-- End Col -->
 
             <div class="col-7 text-end">
-              <kbd class="d-inline-block mb-1">Ctrl</kbd> <span class="text-muted small">+</span> <kbd class="d-inline-block mb-1">Shift</kbd> <span class="text-muted small">+</span> <kbd class="d-inline-block mb-1"><i class="bi-arrow-down-short fs-5"></i></kbd>
+              <kbd class="d-inline-block mb-1">Ctrl</kbd> <span class="text-muted small">+</span> <kbd
+                class="d-inline-block mb-1">Shift</kbd> <span class="text-muted small">+</span> <kbd
+                class="d-inline-block mb-1"><i class="bi-arrow-down-short fs-5"></i></kbd>
             </div>
             <!-- End Col -->
           </div>
@@ -1129,7 +1106,9 @@ if ($_SESSION['user_role'] !== 'admin') {
             <!-- End Col -->
 
             <div class="col-7 text-end">
-              <kbd class="d-inline-block mb-1">Ctrl</kbd> <span class="text-muted small">+</span> <kbd class="d-inline-block mb-1">Alt</kbd> <span class="text-muted small">+</span> <kbd class="d-inline-block mb-1">m</kbd>
+              <kbd class="d-inline-block mb-1">Ctrl</kbd> <span class="text-muted small">+</span> <kbd
+                class="d-inline-block mb-1">Alt</kbd> <span class="text-muted small">+</span> <kbd
+                class="d-inline-block mb-1">m</kbd>
             </div>
             <!-- End Col -->
           </div>
@@ -1144,7 +1123,8 @@ if ($_SESSION['user_role'] !== 'admin') {
             <!-- End Col -->
 
             <div class="col-7 text-end">
-              <kbd class="d-inline-block mb-1">Ctrl</kbd> <span class="text-muted small">+</span> <kbd class="d-inline-block mb-1">z</kbd>
+              <kbd class="d-inline-block mb-1">Ctrl</kbd> <span class="text-muted small">+</span> <kbd
+                class="d-inline-block mb-1">z</kbd>
             </div>
             <!-- End Col -->
           </div>
@@ -1159,7 +1139,8 @@ if ($_SESSION['user_role'] !== 'admin') {
             <!-- End Col -->
 
             <div class="col-7 text-end">
-              <kbd class="d-inline-block mb-1">Ctrl</kbd> <span class="text-muted small">+</span> <kbd class="d-inline-block mb-1">y</kbd>
+              <kbd class="d-inline-block mb-1">Ctrl</kbd> <span class="text-muted small">+</span> <kbd
+                class="d-inline-block mb-1">y</kbd>
             </div>
             <!-- End Col -->
           </div>
@@ -1180,7 +1161,9 @@ if ($_SESSION['user_role'] !== 'admin') {
             <!-- End Col -->
 
             <div class="col-7 text-end">
-              <kbd class="d-inline-block mb-1">Ctrl</kbd> <span class="text-muted small">+</span> <kbd class="d-inline-block mb-1">Alt</kbd> <span class="text-muted small">+</span> <kbd class="d-inline-block mb-1">n</kbd>
+              <kbd class="d-inline-block mb-1">Ctrl</kbd> <span class="text-muted small">+</span> <kbd
+                class="d-inline-block mb-1">Alt</kbd> <span class="text-muted small">+</span> <kbd
+                class="d-inline-block mb-1">n</kbd>
             </div>
             <!-- End Col -->
           </div>
@@ -1195,7 +1178,9 @@ if ($_SESSION['user_role'] !== 'admin') {
             <!-- End Col -->
 
             <div class="col-7 text-end">
-              <kbd class="d-inline-block mb-1">Ctrl</kbd> <span class="text-muted small">+</span> <kbd class="d-inline-block mb-1">Shift</kbd> <span class="text-muted small">+</span> <kbd class="d-inline-block mb-1">p</kbd>
+              <kbd class="d-inline-block mb-1">Ctrl</kbd> <span class="text-muted small">+</span> <kbd
+                class="d-inline-block mb-1">Shift</kbd> <span class="text-muted small">+</span> <kbd
+                class="d-inline-block mb-1">p</kbd>
             </div>
             <!-- End Col -->
           </div>
@@ -1210,7 +1195,9 @@ if ($_SESSION['user_role'] !== 'admin') {
             <!-- End Col -->
 
             <div class="col-7 text-end">
-              <kbd class="d-inline-block mb-1">Ctrl</kbd> <span class="text-muted small">+</span> <kbd class="d-inline-block mb-1">Shift</kbd> <span class="text-muted small">+</span> <kbd class="d-inline-block mb-1">s</kbd>
+              <kbd class="d-inline-block mb-1">Ctrl</kbd> <span class="text-muted small">+</span> <kbd
+                class="d-inline-block mb-1">Shift</kbd> <span class="text-muted small">+</span> <kbd
+                class="d-inline-block mb-1">s</kbd>
             </div>
             <!-- End Col -->
           </div>
@@ -1225,7 +1212,9 @@ if ($_SESSION['user_role'] !== 'admin') {
             <!-- End Col -->
 
             <div class="col-7 text-end">
-              <kbd class="d-inline-block mb-1">Ctrl</kbd> <span class="text-muted small">+</span> <kbd class="d-inline-block mb-1">Shift</kbd> <span class="text-muted small">+</span> <kbd class="d-inline-block mb-1">o</kbd>
+              <kbd class="d-inline-block mb-1">Ctrl</kbd> <span class="text-muted small">+</span> <kbd
+                class="d-inline-block mb-1">Shift</kbd> <span class="text-muted small">+</span> <kbd
+                class="d-inline-block mb-1">o</kbd>
             </div>
             <!-- End Col -->
           </div>
@@ -1240,7 +1229,9 @@ if ($_SESSION['user_role'] !== 'admin') {
             <!-- End Col -->
 
             <div class="col-7 text-end">
-              <kbd class="d-inline-block mb-1">Ctrl</kbd> <span class="text-muted small">+</span> <kbd class="d-inline-block mb-1">Shift</kbd> <span class="text-muted small">+</span> <kbd class="d-inline-block mb-1">/</kbd>
+              <kbd class="d-inline-block mb-1">Ctrl</kbd> <span class="text-muted small">+</span> <kbd
+                class="d-inline-block mb-1">Shift</kbd> <span class="text-muted small">+</span> <kbd
+                class="d-inline-block mb-1">/</kbd>
             </div>
             <!-- End Col -->
           </div>
@@ -1253,7 +1244,8 @@ if ($_SESSION['user_role'] !== 'admin') {
   <!-- End Keyboard Shortcuts -->
 
   <!-- Activity -->
-  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasActivityStream" aria-labelledby="offcanvasActivityStreamLabel">
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasActivityStream"
+    aria-labelledby="offcanvasActivityStreamLabel">
     <div class="offcanvas-header">
       <h4 id="offcanvasActivityStreamLabel" class="mb-0">Activity stream</h4>
       <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -1271,7 +1263,8 @@ if ($_SESSION['user_role'] !== 'admin') {
             <div class="step-content">
               <h5 class="mb-1">Iana Robinson</h5>
 
-              <p class="fs-5 mb-1">Added 2 files to task <a class="text-uppercase" href="#"><i class="bi-journal-bookmark-fill"></i> Fd-7</a></p>
+              <p class="fs-5 mb-1">Added 2 files to task <a class="text-uppercase" href="#"><i
+                    class="bi-journal-bookmark-fill"></i> Fd-7</a></p>
 
               <ul class="list-group list-group-sm">
                 <!-- List Item -->
@@ -1281,10 +1274,12 @@ if ($_SESSION['user_role'] !== 'admin') {
                       <!-- Media -->
                       <div class="d-flex">
                         <div class="flex-shrink-0">
-                          <img alt="img" class="avatar avatar-xs" src="./assets/svg/brands/excel-icon.svg" alt="Image Description">
+                          <img alt="img" class="avatar avatar-xs" src="./assets/svg/brands/excel-icon.svg"
+                            alt="Image Description">
                         </div>
                         <div class="flex-grow-1 text-truncate ms-2">
-                          <span class="d-block fs-6 text-dark text-truncate" title="weekly-reports.xls">weekly-reports.xls</span>
+                          <span class="d-block fs-6 text-dark text-truncate"
+                            title="weekly-reports.xls">weekly-reports.xls</span>
                           <span class="d-block small text-muted">12kb</span>
                         </div>
                       </div>
@@ -1296,10 +1291,12 @@ if ($_SESSION['user_role'] !== 'admin') {
                       <!-- Media -->
                       <div class="d-flex">
                         <div class="flex-shrink-0">
-                          <img alt="img" class="avatar avatar-xs" src="./assets/svg/brands/word-icon.svg" alt="Image Description">
+                          <img alt="img" class="avatar avatar-xs" src="./assets/svg/brands/word-icon.svg"
+                            alt="Image Description">
                         </div>
                         <div class="flex-grow-1 text-truncate ms-2">
-                          <span class="d-block fs-6 text-dark text-truncate" title="weekly-reports.xls">weekly-reports.xls</span>
+                          <span class="d-block fs-6 text-dark text-truncate"
+                            title="weekly-reports.xls">weekly-reports.xls</span>
                           <span class="d-block small text-muted">4kb</span>
                         </div>
                       </div>
@@ -1326,7 +1323,9 @@ if ($_SESSION['user_role'] !== 'admin') {
             <div class="step-content">
               <h5 class="mb-1">Bob Dean</h5>
 
-              <p class="fs-5 mb-1">Marked <a class="text-uppercase" href="#"><i class="bi-journal-bookmark-fill"></i> Fr-6</a> as <span class="badge bg-soft-success text-success rounded-pill"><span class="legend-indicator bg-success"></span>"Completed"</span></p>
+              <p class="fs-5 mb-1">Marked <a class="text-uppercase" href="#"><i class="bi-journal-bookmark-fill"></i>
+                  Fr-6</a> as <span class="badge bg-soft-success text-success rounded-pill"><span
+                    class="legend-indicator bg-success"></span>"Completed"</span></p>
 
               <span class="small text-muted text-uppercase">Today</span>
             </div>
@@ -1350,13 +1349,16 @@ if ($_SESSION['user_role'] !== 'admin') {
                 <li class="list-group-item list-group-item-light">
                   <div class="row gx-1">
                     <div class="col">
-                      <img alt="img" class="img-fluid rounded" src="./assets/svg/components/card-1.svg" alt="Image Description">
+                      <img alt="img" class="img-fluid rounded" src="./assets/svg/components/card-1.svg"
+                        alt="Image Description">
                     </div>
                     <div class="col">
-                      <img alt="img" class="img-fluid rounded" src="./assets/svg/components/card-2.svg" alt="Image Description">
+                      <img alt="img" class="img-fluid rounded" src="./assets/svg/components/card-2.svg"
+                        alt="Image Description">
                     </div>
                     <div class="col">
-                      <img alt="img" class="img-fluid rounded" src="./assets/svg/components/card-3.svg" alt="Image Description">
+                      <img alt="img" class="img-fluid rounded" src="./assets/svg/components/card-3.svg"
+                        alt="Image Description">
                     </div>
                     <div class="col-auto align-self-center">
                       <div class="text-center">
@@ -1399,7 +1401,9 @@ if ($_SESSION['user_role'] !== 'admin') {
             <div class="step-content">
               <h5 class="mb-1">Rachel King</h5>
 
-              <p class="fs-5 mb-1">Marked <a class="text-uppercase" href="#"><i class="bi-journal-bookmark-fill"></i> Fr-3</a> as <span class="badge bg-soft-success text-success rounded-pill"><span class="legend-indicator bg-success"></span>"Completed"</span></p>
+              <p class="fs-5 mb-1">Marked <a class="text-uppercase" href="#"><i class="bi-journal-bookmark-fill"></i>
+                  Fr-3</a> as <span class="badge bg-soft-success text-success rounded-pill"><span
+                    class="legend-indicator bg-success"></span>"Completed"</span></p>
 
               <span class="small text-muted text-uppercase">Apr 29</span>
             </div>
@@ -1435,7 +1439,9 @@ if ($_SESSION['user_role'] !== 'admin') {
             <div class="step-content">
               <h5 class="mb-1">Project status updated</h5>
 
-              <p class="fs-5 mb-1">Marked <a class="text-uppercase" href="#"><i class="bi-journal-bookmark-fill"></i> Fr-3</a> as <span class="badge bg-soft-primary text-primary rounded-pill"><span class="legend-indicator bg-primary"></span>"In progress"</span></p>
+              <p class="fs-5 mb-1">Marked <a class="text-uppercase" href="#"><i class="bi-journal-bookmark-fill"></i>
+                  Fr-3</a> as <span class="badge bg-soft-primary text-primary rounded-pill"><span
+                    class="legend-indicator bg-primary"></span>"In progress"</span></p>
 
               <span class="small text-muted text-uppercase">Feb 10</span>
             </div>
@@ -1458,7 +1464,8 @@ if ($_SESSION['user_role'] !== 'admin') {
       <div class="modal-content">
         <!-- Header -->
         <div class="modal-close">
-          <button type="button" class="btn btn-ghost-secondary btn-icon btn-sm" data-bs-dismiss="modal" aria-label="Close">
+          <button type="button" class="btn btn-ghost-secondary btn-icon btn-sm" data-bs-dismiss="modal"
+            aria-label="Close">
             <i class="bi-x-lg"></i>
           </button>
         </div>
@@ -1468,8 +1475,10 @@ if ($_SESSION['user_role'] !== 'admin') {
         <div class="modal-body p-sm-5">
           <div class="text-center">
             <div class="w-75 w-sm-50 mx-auto mb-4">
-              <img alt="img" class="img-fluid" src="./assets/svg/illustrations/oc-collaboration.svg" alt="Image Description" data-hs-theme-appearance="default">
-              <img alt="img" class="img-fluid" src="./assets/svg/illustrations-light/oc-collaboration.svg" alt="Image Description" data-hs-theme-appearance="dark">
+              <img alt="img" class="img-fluid" src="./assets/svg/illustrations/oc-collaboration.svg"
+                alt="Image Description" data-hs-theme-appearance="default">
+              <img alt="img" class="img-fluid" src="./assets/svg/illustrations-light/oc-collaboration.svg"
+                alt="Image Description" data-hs-theme-appearance="dark">
             </div>
 
             <h4 class="h1">Welcome to Front</h4>
@@ -1508,7 +1517,8 @@ if ($_SESSION['user_role'] !== 'admin') {
   <!-- End Welcome Message Modal -->
 
   <!-- Add Image from URL Modal -->
-  <div class="modal fade" id="addImageFromURLModal" tabindex="-1" aria-labelledby="addImageFromURLModalLabel" aria-hidden="true">
+  <div class="modal fade" id="addImageFromURLModal" tabindex="-1" aria-labelledby="addImageFromURLModalLabel"
+    aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <!-- Header -->
@@ -1521,7 +1531,8 @@ if ($_SESSION['user_role'] !== 'admin') {
         <!-- Body -->
         <div class="modal-body">
           <label for="pasteImageURLNameLabel" class="form-label">Paste image URL</label>
-          <input type="text" class="form-control" name="projectName" id="pasteImageURLNameLabel" placeholder="https://" aria-label="https://">
+          <input type="text" class="form-control" name="projectName" id="pasteImageURLNameLabel" placeholder="https://"
+            aria-label="https://">
         </div>
         <!-- End Body -->
 
@@ -1550,7 +1561,8 @@ if ($_SESSION['user_role'] !== 'admin') {
         <!-- Body -->
         <div class="modal-body">
           <label for="pasteVideoURLNameLabel" class="form-label">Paste image URL</label>
-          <input type="text" class="form-control" name="projectName" id="pasteVideoURLNameLabel" placeholder="https://" aria-label="https://">
+          <input type="text" class="form-control" name="projectName" id="pasteVideoURLNameLabel" placeholder="https://"
+            aria-label="https://">
         </div>
         <!-- End Body -->
 
@@ -1571,7 +1583,8 @@ if ($_SESSION['user_role'] !== 'admin') {
       <div class="modal-content">
         <!-- Header -->
         <div class="modal-close">
-          <button type="button" class="btn btn-ghost-secondary btn-icon btn-sm" data-bs-dismiss="modal" aria-label="Close">
+          <button type="button" class="btn btn-ghost-secondary btn-icon btn-sm" data-bs-dismiss="modal"
+            aria-label="Close">
             <i class="bi-x-lg"></i>
           </button>
         </div>
@@ -1591,13 +1604,17 @@ if ($_SESSION['user_role'] !== 'admin') {
           <!-- Media -->
           <div class="d-flex">
             <div class="flex-shrink-0 mb-3 mb-sm-0">
-              <img alt="img" class="avatar avatar-lg avatar-4x3" src="./assets/svg/illustrations/oc-money-profits.svg" alt="Image Description" data-hs-theme-appearance="default">
-              <img alt="img" class="avatar avatar-lg avatar-4x3" src="./assets/svg/illustrations-light/oc-money-profits.svg" alt="Image Description" data-hs-theme-appearance="dark">
+              <img alt="img" class="avatar avatar-lg avatar-4x3" src="./assets/svg/illustrations/oc-money-profits.svg"
+                alt="Image Description" data-hs-theme-appearance="default">
+              <img alt="img" class="avatar avatar-lg avatar-4x3"
+                src="./assets/svg/illustrations-light/oc-money-profits.svg" alt="Image Description"
+                data-hs-theme-appearance="dark">
             </div>
 
             <div class="flex-grow-1 ms-4">
               <h4>"Compare to" price</h4>
-              <p>Use this feature when you want to put a product on sale or show savings off suggested retail pricing.</p>
+              <p>Use this feature when you want to put a product on sale or show savings off suggested retail pricing.
+              </p>
             </div>
           </div>
           <!-- End Media -->
@@ -1607,8 +1624,10 @@ if ($_SESSION['user_role'] !== 'admin') {
           <!-- Media -->
           <div class="d-flex">
             <div class="flex-shrink-0 mb-3 mb-sm-0">
-              <img alt="img" class="avatar avatar-lg avatar-4x3" src="./assets/svg/illustrations/oc-discount.svg" alt="Image Description" data-hs-theme-appearance="default">
-              <img alt="img" class="avatar avatar-lg avatar-4x3" src="./assets/svg/illustrations-light/oc-discount.svg" alt="Image Description" data-hs-theme-appearance="dark">
+              <img alt="img" class="avatar avatar-lg avatar-4x3" src="./assets/svg/illustrations/oc-discount.svg"
+                alt="Image Description" data-hs-theme-appearance="default">
+              <img alt="img" class="avatar avatar-lg avatar-4x3" src="./assets/svg/illustrations-light/oc-discount.svg"
+                alt="Image Description" data-hs-theme-appearance="dark">
             </div>
 
             <div class="flex-grow-1 ms-4">
@@ -1623,13 +1642,17 @@ if ($_SESSION['user_role'] !== 'admin') {
           <!-- Media -->
           <div class="d-flex">
             <div class="flex-shrink-0 mb-3 mb-sm-0">
-              <img alt="img" class="avatar avatar-lg avatar-4x3" src="./assets/svg/illustrations/oc-collection.svg" alt="Image Description" data-hs-theme-appearance="default">
-              <img alt="img" class="avatar avatar-lg avatar-4x3" src="./assets/svg/illustrations-light/oc-collection.svg" alt="Image Description" data-hs-theme-appearance="dark">
+              <img alt="img" class="avatar avatar-lg avatar-4x3" src="./assets/svg/illustrations/oc-collection.svg"
+                alt="Image Description" data-hs-theme-appearance="default">
+              <img alt="img" class="avatar avatar-lg avatar-4x3"
+                src="./assets/svg/illustrations-light/oc-collection.svg" alt="Image Description"
+                data-hs-theme-appearance="dark">
             </div>
 
             <div class="flex-grow-1 ms-4">
               <h4>Inventory tracking</h4>
-              <p>Automatically keep track of product availability and receive notifications when inventory levels get low.</p>
+              <p>Automatically keep track of product availability and receive notifications when inventory levels get
+                low.</p>
             </div>
           </div>
           <!-- End Media -->
@@ -1671,7 +1694,7 @@ if ($_SESSION['user_role'] !== 'admin') {
 
   <!-- JS Plugins Init. -->
   <script>
-    $(document).on('ready', function() {
+    $(document).on('ready', function () {
       // INITIALIZATION OF DATATABLES
       // =======================================================
       HSCore.components.HSDatatables.init($('#datatable'), {
@@ -1687,66 +1710,11 @@ if ($_SESSION['user_role'] !== 'admin') {
       });
     });
   </script>
-  <script>
-    const dateInput = document.getElementById('date-picker');
-    const dateFormatOptions = {
-      year: 'numeric',
-      month: 'long',
-      day: 'numeric'
-    };
-    const dataForm = document.getElementById('data-form');
-    const dataJsonInput = document.getElementById('data-json');
 
-    function updatePriceInputs(selectedDates) {
-      priceBlock.innerHTML = ''; // Очищаем блок перед добавлением новых инпутов
-
-      selectedDates.forEach(date => {
-        const input = createPriceInput(date);
-        priceBlock.appendChild(input);
-
-      });
-    }
-
-    function createPriceInput(date) {
-      const input = document.createElement('input');
-      input.type = 'text';
-      input.classList.add('form-control');
-      input.classList.add('mt-2')
-      input.placeholder = `Дата: ${date.toLocaleDateString()}`;
-      input.name = 'price_' + date.getTime(); // Добавьте уникальное имя для инпута
-      return input;
-    }
-
-    const priceBlock = document.getElementById('price-block');
-    let priceInput;
-    const myDatepicker = flatpickr(`#data-picker`, {
-      dateFormat: 'F j, Y',
-      minDate: "today",
-      
-      
-      mode: "multiple",
-
-
-      onChange: function(selectedDates, dateStr, instance) {
-        updatePriceInputs(selectedDates);
-      }
-    });
-
-    const myDatepicker1 = flatpickr(`#date_closed`, {
-      dateFormat: "Y-m-d",
-      minDate: "today",
-      
-      
-      mode: "multiple",
-
-
-
-    });
-  </script>
   <!-- JS Plugins Init. -->
   <script>
-    (function() {
-      window.onload = function() {
+    (function () {
+      window.onload = function () {
 
 
         // INITIALIZATION OF NAVBAR VERTICAL ASIDE
@@ -1798,18 +1766,9 @@ if ($_SESSION['user_role'] !== 'admin') {
 
 
 
-    document.getElementById('form-main').addEventListener('submit', function(event) {
+    document.getElementById('form-main').addEventListener('submit', function (event) {
       event.preventDefault();
       const data = {};
-
-      Array.from(priceBlock.querySelectorAll('input')).forEach(input => {
-        const timestamp = input.name.split('_')[1];
-        const date = new Date(parseInt(timestamp));
-        const formattedDate = date.toLocaleDateString('en-US', dateFormatOptions);
-        data[formattedDate] = input.value;
-      });
-
-      dataJsonInput.value = JSON.stringify(data);
 
       const reloader = document.getElementById('reloader');
       const button_send = document.getElementById('button-send');
@@ -1820,7 +1779,7 @@ if ($_SESSION['user_role'] !== 'admin') {
 
       const quillEditors = document.querySelectorAll('.js-quill');
       quillEditors.forEach((editor) => {
-        const quillFieldName = 'description';
+        const quillFieldName = 'info';
         const quillValue = editor.querySelector('.ql-editor').innerHTML;
         formData.append(quillFieldName, quillValue);
       });
@@ -1835,8 +1794,8 @@ if ($_SESSION['user_role'] !== 'admin') {
         data: formData,
         processData: false,
         contentType: false,
-        success: function(data) {
-          setTimeout(function() {
+        success: function (data) {
+          setTimeout(function () {
             reloader.classList.add('d-none');
 
             if (data.trim() == "Successfully") {
@@ -1854,9 +1813,9 @@ if ($_SESSION['user_role'] !== 'admin') {
           console.log(data.trim());
 
         },
-        error: function(error) {
+        error: function (error) {
 
-          setTimeout(function() {
+          setTimeout(function () {
             reloader.classList.add('d-none');
             button_send.innerHTML = `Ошибка, проверьте правильно данных!<div class="spinner-border spinner-border-sm d-none" id="reloader" role="status"><span class="visually-hidden">Loading...</span></div>`
             button_send.classList.remove('btn-primary')
@@ -1872,14 +1831,14 @@ if ($_SESSION['user_role'] !== 'admin') {
   <!-- Style Switcher JS -->
 
   <script>
-    (function() {
+    (function () {
       // STYLE SWITCHER
       // =======================================================
       const $dropdownBtn = document.getElementById('selectThemeDropdown') // Dropdowon trigger
       const $variants = document.querySelectorAll(`[aria-labelledby="selectThemeDropdown"] [data-icon]`) // All items of the dropdown
 
       // Function to set active style in the dorpdown menu and set icon for dropdown trigger
-      const setActiveStyle = function() {
+      const setActiveStyle = function () {
         $variants.forEach($item => {
           if ($item.getAttribute('data-value') === HSThemeAppearance.getOriginalAppearance()) {
             $dropdownBtn.innerHTML = `<i class="${$item.getAttribute('data-icon')}" />`
@@ -1891,8 +1850,8 @@ if ($_SESSION['user_role'] !== 'admin') {
       }
 
       // Add a click event to all items of the dropdown to set the style
-      $variants.forEach(function($item) {
-        $item.addEventListener('click', function() {
+      $variants.forEach(function ($item) {
+        $item.addEventListener('click', function () {
           HSThemeAppearance.setAppearance($item.getAttribute('data-value'))
         })
       })
@@ -1901,7 +1860,7 @@ if ($_SESSION['user_role'] !== 'admin') {
       setActiveStyle()
 
       // Add event listener on change style to call the setActiveStyle function
-      window.addEventListener('on-hs-appearance-change', function() {
+      window.addEventListener('on-hs-appearance-change', function () {
         setActiveStyle()
       })
     })()

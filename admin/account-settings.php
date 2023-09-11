@@ -319,13 +319,13 @@ if ($_SESSION['user_role'] !== 'admin') {
                    }'>
                 <li class="nav-item">
                   <a class="nav-link active" href="#content">
-                    <i class="bi-person nav-icon"></i> Основное
+                    <i class="bi-person nav-icon"></i> Menu
                   </a>
                 </li>
 
                 <li class="nav-item">
                   <a class="nav-link" href="#passwordSection">
-                    <i class="bi-key nav-icon"></i> Пароль
+                    <i class="bi-key nav-icon"></i> Password
                   </a>
                 </li>
 
@@ -349,7 +349,7 @@ if ($_SESSION['user_role'] !== 'admin') {
             <!-- Card -->
             <div class="card">
               <div class="card-header">
-                <h2 class="card-title h4">Основное</h2>
+                <h2 class="card-title h4">Menu</h2>
               </div>
 
               <!-- Body -->
