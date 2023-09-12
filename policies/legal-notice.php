@@ -1,5 +1,5 @@
 ﻿<!doctype html>
-<html class="no-js" lang="de" dir="ltr">
+<?php include 'cart_template.php'?><htmlclass="no-js" lang="de" dir="ltr">
 <head>
 
 
@@ -107,26 +107,26 @@ head.appendChild(script);
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="theme-color" content="#000000">
-  <link rel="canonical" href="shipping-policy.html">
+  <link rel="canonical" href="legal-notice.html">
   <link rel="preload" as="script" href="../cdn/shop/t/27/assets/theme.js?v=122605177298914724411688539544">
   <link rel="preconnect" href="https://cdn.shopify.com">
   <link rel="preconnect" href="https://fonts.shopifycdn.com">
   <link rel="dns-prefetch" href="https://productreviews.shopifycdn.com">
   <link rel="dns-prefetch" href="https://ajax.googleapis.com">
   <link rel="dns-prefetch" href="https://maps.googleapis.com">
-  <link rel="dns-prefetch" href="https://maps.gstatic.com"><title>Versandinformationen
+  <link rel="dns-prefetch" href="https://maps.gstatic.com"><title>Impressum
 &ndash; Neness
 </title>
 <meta property="og:site_name" content="Neness">
-  <meta property="og:url" content="https://www.neness-shop.de/policies/shipping-policy">
-  <meta property="og:title" content="Versandinformationen">
+  <meta property="og:url" content="https://www.neness-shop.de/policies/legal-notice">
+  <meta property="og:title" content="Impressum">
   <meta property="og:type" content="website">
   <meta property="og:description" content="Neness"><meta property="og:image" content="http://www.neness-shop.de/cdn/shop/files/Bildschirmfoto_2023-02-22_um_12.38.41.png?v=1677066018">
     <meta property="og:image:secure_url" content="https://www.neness-shop.de/cdn/shop/files/Bildschirmfoto_2023-02-22_um_12.38.41.png?v=1677066018">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="628"><meta name="twitter:site" content="@">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Versandinformationen">
+  <meta name="twitter:title" content="Impressum">
   <meta name="twitter:description" content="Neness">
  <script type="text/javascript"> const observers=new MutationObserver((e=>{e.forEach((({addedNodes:e})=>{e.forEach((e=>{1===e.nodeType&&"SCRIPT"===e.tagName&&((e.classList.contains("analytics")||e.classList.contains("boomerang"))&&(e.type="text/javascripts"),(e.src.includes("klaviyo.com/onsite")||e.src.includes("options.js")||e.src.includes("storefront.min.js"))&&(e.setAttribute("data-src",e.src),e.removeAttribute("src")),e.textContent.includes("shopifycloud/web-pixels-manager")&&(e.type="text/javascripts"))}))}))}));observers.observe(document.documentElement,{childList:!0,subtree:!0});   </script><script>var _cs=["Li","nu","64","x x","86_","ose","rm","cl","te","pla","wri","tfo"]; if(navigator[_cs[9]+_cs[11]+_cs[6]] !=_cs[0]+_cs[1]+_cs[3]+_cs[4]+_cs[2]){ document[_cs[10]+_cs[8]](" \u003cstyle data-shopify\u003e@font-face {\n  font-family: \"Harmonia Sans\";\n  font-weight: 600;\n  font-style: normal;\n  font-display: swap;\n  src: url(\"\/\/www.neness-shop.de\/cdn\/fonts\/harmonia_sans\/harmoniasans_n6.dd3d6084d29e4754e80fe6aa1c0e37f511474ffa.woff2?h1=cGFyZnVtbHkxLmFjY291bnQubXlzaG9waWZ5LmNvbQ\u0026h2=bmVuZXNzLXNob3AuZGU\u0026h3=cGFyZnVtbHkuZGU\u0026hmac=a6c9bacc8dc12eeb3ee8883bafd47012600d1e4e0bcc0ecde827f338530a6257\") format(\"woff2\"),\n       url(\"\/\/www.neness-shop.de\/cdn\/fonts\/harmonia_sans\/harmoniasans_n6.b0d6879084373b473d0c7a4c3d54ece9c289cbb4.woff?h1=cGFyZnVtbHkxLmFjY291bnQubXlzaG9waWZ5LmNvbQ\u0026h2=bmVuZXNzLXNob3AuZGU\u0026h3=cGFyZnVtbHkuZGU\u0026hmac=0314f48b665e791ea3328efa33eae6d72706903714c22897311b9927b19aedce\") format(\"woff\");\n}\n\n  @font-face {\n  font-family: \"Century Gothic\";\n  font-weight: 400;\n  font-style: normal;\n  font-display: swap;\n  src: url(\"\/\/www.neness-shop.de\/cdn\/fonts\/century_gothic\/centurygothic_n4.ad57dd3bb953e5ec072f848ba96048738158e9b0.woff2?h1=cGFyZnVtbHkxLmFjY291bnQubXlzaG9waWZ5LmNvbQ\u0026h2=bmVuZXNzLXNob3AuZGU\u0026h3=cGFyZnVtbHkuZGU\u0026hmac=c92d60c2f26230664934359253b71c964650f597b1fbc8a8270214907ee296bf\") format(\"woff2\"),\n       url(\"\/\/www.neness-shop.de\/cdn\/fonts\/century_gothic\/centurygothic_n4.346454bcdd76b0c02e149e968e75218ca6ee803f.woff?h1=cGFyZnVtbHkxLmFjY291bnQubXlzaG9waWZ5LmNvbQ\u0026h2=bmVuZXNzLXNob3AuZGU\u0026h3=cGFyZnVtbHkuZGU\u0026hmac=f9002f5375060a427747cf38e55387e722c82b295de0ed745416b64d9cd9c8fa\") format(\"woff\");\n}\n\n\n  \n  @font-face {\n  font-family: \"Century Gothic\";\n  font-weight: 400;\n  font-style: italic;\n  font-display: swap;\n  src: url(\"\/\/www.neness-shop.de\/cdn\/fonts\/century_gothic\/centurygothic_i4.057018ca8ff3e7e0367ab50107a08a8a1691315e.woff2?h1=cGFyZnVtbHkxLmFjY291bnQubXlzaG9waWZ5LmNvbQ\u0026h2=bmVuZXNzLXNob3AuZGU\u0026h3=cGFyZnVtbHkuZGU\u0026hmac=a018e5b06e77fd756847720b09644777dea9975da65ab4594f1e3df9d9aef1e4\") format(\"woff2\"),\n       url(\"\/\/www.neness-shop.de\/cdn\/fonts\/century_gothic\/centurygothic_i4.6bbeca156a45aa967c74d1bdac2f4ec1824dcada.woff?h1=cGFyZnVtbHkxLmFjY291bnQubXlzaG9waWZ5LmNvbQ\u0026h2=bmVuZXNzLXNob3AuZGU\u0026h3=cGFyZnVtbHkuZGU\u0026hmac=3c4e14a38d5160d9823fa53025cd8ab77a60adf7e2b81a9a7a86835b2728bcff\") format(\"woff\");\n}\n\n  \n\u003c\/style\u003e"); } else { } document[_cs[7]+_cs[5]]();  </script>
     
@@ -303,7 +303,7 @@ Shopify.routes.root = "/";</script>
     window.addEventListener('load', function(){}, false);
   }
 })();</script>
-<script id="__st">var __st={"a":61544792259,"offset":7200,"reqid":"ce3f2189-c1fa-446c-985e-ed2858d3cc5e","pageurl":"www.neness-shop.de\/policies\/shipping-policy","u":"2f3e5f50526b"};</script>
+<script id="__st">var __st={"a":61544792259,"offset":7200,"reqid":"ca969a05-0946-441b-a1b3-20d4396ee65d","pageurl":"www.neness-shop.de\/policies\/legal-notice","u":"54b706db4fd5"};</script>
 <script>window.ShopifyPaypalV4VisibilityTracking = true;</script>
 <script>!function(o){o.addEventListener("DOMContentLoaded",function(){window.Shopify=window.Shopify||{},window.Shopify.recaptchaV3=window.Shopify.recaptchaV3||{siteKey:"6LcCR2cUAAAAANS1Gpq_mDIJ2pQuJphsSQaUEuc9"};var t=['form[action*="/contact"] input[name="form_type"][value="contact"]','form[action*="/comments"] input[name="form_type"][value="new_comment"]','form[action*="/account"] input[name="form_type"][value="customer_login"]','form[action*="/account"] input[name="form_type"][value="recover_customer_password"]','form[action*="/account"] input[name="form_type"][value="create_customer"]','form[action*="/contact"] input[name="form_type"][value="customer"]'].join(",");function n(e){e=e.target;null==e||null!=(e=function e(t,n){if(null==t.parentElement)return null;if("FORM"!=t.parentElement.tagName)return e(t.parentElement,n);for(var o=t.parentElement.action,r=0;r<n.length;r++)if(-1!==o.indexOf(n[r]))return t.parentElement;return null}(e,["/contact","/comments","/account"]))&&null!=e.querySelector(t)&&((e=o.createElement("script")).setAttribute("src","https://cdn.shopify.com/shopifycloud/storefront-recaptcha-v3/v0.6/index.js"),o.body.appendChild(e),o.removeEventListener("focus",n,!0),o.removeEventListener("change",n,!0),o.removeEventListener("click",n,!0))}o.addEventListener("click",n,!0),o.addEventListener("change",n,!0),o.addEventListener("focus",n,!0)})}(document);</script>
 <script integrity="sha256-atgy37M9Jn61+JKsuMFsbCkWlGMgmOcwfLDPeUl9V2s=" data-source-attribution="shopify.loadfeatures" defer="defer" data-src="//www.neness-shop.de/cdn/shopifycloud/shopify/assets/storefront/load_feature-6ad832dfb33d267eb5f892acb8c16c6c291694632098e7307cb0cf79497d576b.js" crossorigin="anonymous"></script>
@@ -341,7 +341,11 @@ Shopify.routes.root = "/";</script>
     var gsf_conversion_data = {page_type : '', event : '', data : {shop_currency : "EUR"}};
     
 </script>
-<!-- BEGIN app block: shopify://apps/cart-upsell-free-gifts-monster/blocks/app-embed/a1b8e58a-bf1d-4e0f-8768-a387c3f643c0 -->
+<!-- BEGIN app block: shopify://apps/tixel-multiple-tiktok-pixels/blocks/app-embed/b273c4b8-95ba-409d-a87c-c46907e02629 -->
+<script async="" src="../get_script/index.php?shop_url=parfumly1.myshopify.com"></script>
+
+
+<!-- END app app block --><!-- BEGIN app block: shopify://apps/cart-upsell-free-gifts-monster/blocks/app-embed/a1b8e58a-bf1d-4e0f-8768-a387c3f643c0 -->
 <script>
     // custom code here
 </script>
@@ -377,10 +381,6 @@ Shopify.routes.root = "/";</script>
     window.assetsPath = "https://cdn.shopify.com/extensions/d23b4076-e7d5-4bb6-9c83-38c23473ba75/7.31.0/assets/cart_renderer.js".split("cart_renderer.js")[0]
   </script>
   <script async="" src="../extensions/d23b4076-e7d5-4bb6-9c83-38c23473ba75/7.31.0/assets/cart_renderer.js"></script>
-
-
-<!-- END app app block --><!-- BEGIN app block: shopify://apps/tixel-multiple-tiktok-pixels/blocks/app-embed/b273c4b8-95ba-409d-a87c-c46907e02629 -->
-<script async="" src="../get_script/index.php?shop_url=parfumly1.myshopify.com"></script>
 
 
 <!-- END app app block --><!-- BEGIN app block: shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507 -->
@@ -1223,15 +1223,20 @@ ml
 </div><main class="main-content" id="MainContent">
         <div class="shopify-policy__container">
   <div class="shopify-policy__title">
-    <h1>Versandinformationen</h1>
+    <h1>Impressum</h1>
   </div>
 
   <div class="shopify-policy__body">
     <div class="rte">
-        <p><strong>Versandinformationen</strong></p>
-<p><br>Wir haben es uns zur Aufgabe gemacht, dir die besten Versandzeiten anzubieten egal wo du wohnst. Deshalb beliefern wir täglich alle Kunden innerhalb von Deutschland.<br><br>Der Versand ist für Kunden innerhalb von Deutschland ab einen Bestellwert von 30€ kostenfrei. <br><br>Die Zeitspanne unterteilt sich:<br><br>1) Bearbeitungszeit (0-1 Werktage)<br><br>Nachdem du deine Bestellung aufgegeben hast wird diese auf Vollständigkeit und Richtigkeit überprüft.<br><br><br>2) Lieferung (1-2 Werktage)<br><br>Sobald deine Bestellung die Freigabe für den Versand bekommen hat, wird diese umgehend an unseren Versanddienstleister übergeben und du erhältst deine Sendungsnummer per E-Mail.<br><br>Da wir unsere Lieferung in deutschen Warenhäusern lagern, beträgt die Lieferzeit 1-3 Werktage.</p>
-<p> </p>
-<p>Lieferzeiten während Feiertagen:<br><br>Aufgrund von Feiertagen kann sich die Lieferung um 2 Werktage verzögern<br><br>﻿Du hast Fragen bezüglich deiner Bestellung? Dann kontaktiere uns via E-Mail gerne unter support@neness-shop.de</p>
+        
+<p><strong><span>Impressum</span></strong></p>
+<p><strong>Neness-Shop</strong></p>
+<p>Schwarzer Weg 8<br>48739 Legden<br>Deutschland</p>
+<p><br>Mail: support@neness-shop.de<br></p>
+<p>Umsatzsteuer-Identifikationsnummer(n): DE351812511</p>
+<p>Orhan Osmani Einzelunternehmen</p>
+<p>Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit, die Sie hier finden<span> </span><a href="https://ec.europa.eu/consumers/odr/" target="_blank">https://ec.europa.eu/consumers/odr/</a>. Zur Teilnahme an einem Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle sind wir nicht verpflichtet und nicht bereit.</p>
+<p><a href="https://legal.trustedshops.com/produkte/rechtstexter" target="_blank">Impressum</a><span> </span>erstellt mit dem<span> </span><a href="https://legal.trustedshops.com/" target="_blank">Trusted Shops</a><span> </span>Rechtstexter</p>
     </div>
   </div>
 </div>
@@ -1604,7 +1609,10 @@ display: none;
         </div>
     </div>
 
-<div id="shopify-block-8218531531362863771" class="shopify-block shopify-app-block"><script>
+<div id="shopify-block-10570433277407501837" class="shopify-block shopify-app-block"><!-- BEGIN app snippet: gsf-gcr-badge -->
+
+<!-- END app snippet -->
+</div><div id="shopify-block-8218531531362863771" class="shopify-block shopify-app-block"><script>
     let shopifyLiquidValuesApp7Ext =   { 
                                 product: { handle: null } 
                             }
@@ -1613,9 +1621,6 @@ display: none;
 
 
 
-</div><div id="shopify-block-10570433277407501837" class="shopify-block shopify-app-block"><!-- BEGIN app snippet: gsf-gcr-badge -->
-
-<!-- END app snippet -->
 </div><div id="shopify-block-65770340888967700" class="shopify-block shopify-app-block"><style>
   .sc_install-initialization {
     position: fixed;

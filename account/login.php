@@ -1,5 +1,5 @@
 ﻿<!doctype html>
-<html class="no-js" lang="de" dir="ltr">
+<?php include 'cart_template.php'?><htmlclass="no-js" lang="de" dir="ltr">
 <head>
 
 
@@ -107,27 +107,27 @@ head.appendChild(script);
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="theme-color" content="#000000">
-  <link rel="canonical" href="contact.html">
+  <link rel="canonical" href="login-1.html">
   <link rel="preload" as="script" href="../cdn/shop/t/27/assets/theme.js?v=122605177298914724411688539544">
   <link rel="preconnect" href="https://cdn.shopify.com">
   <link rel="preconnect" href="https://fonts.shopifycdn.com">
   <link rel="dns-prefetch" href="https://productreviews.shopifycdn.com">
   <link rel="dns-prefetch" href="https://ajax.googleapis.com">
   <link rel="dns-prefetch" href="https://maps.googleapis.com">
-  <link rel="dns-prefetch" href="https://maps.gstatic.com"><title>Kontakt
+  <link rel="dns-prefetch" href="https://maps.gstatic.com"><title>Konto
 &ndash; Neness
 </title>
-<meta name="description" content="Wenn du Fragen zu einem Produkt oder deiner Bestellung hast, kannst du uns jederzeit über das folgende Kontaktformular erreichen."><meta property="og:site_name" content="Neness">
-  <meta property="og:url" content="https://www.neness-shop.de/pages/contact">
-  <meta property="og:title" content="Kontakt">
+<meta property="og:site_name" content="Neness">
+  <meta property="og:url" content="https://www.neness-shop.de/account/login">
+  <meta property="og:title" content="Konto">
   <meta property="og:type" content="website">
-  <meta property="og:description" content="Wenn du Fragen zu einem Produkt oder deiner Bestellung hast, kannst du uns jederzeit über das folgende Kontaktformular erreichen."><meta property="og:image" content="http://www.neness-shop.de/cdn/shop/files/Bildschirmfoto_2023-02-22_um_12.38.41.png?v=1677066018">
+  <meta property="og:description" content="Neness"><meta property="og:image" content="http://www.neness-shop.de/cdn/shop/files/Bildschirmfoto_2023-02-22_um_12.38.41.png?v=1677066018">
     <meta property="og:image:secure_url" content="https://www.neness-shop.de/cdn/shop/files/Bildschirmfoto_2023-02-22_um_12.38.41.png?v=1677066018">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="628"><meta name="twitter:site" content="@">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Kontakt">
-  <meta name="twitter:description" content="Wenn du Fragen zu einem Produkt oder deiner Bestellung hast, kannst du uns jederzeit über das folgende Kontaktformular erreichen.">
+  <meta name="twitter:title" content="Konto">
+  <meta name="twitter:description" content="Neness">
  <script type="text/javascript"> const observers=new MutationObserver((e=>{e.forEach((({addedNodes:e})=>{e.forEach((e=>{1===e.nodeType&&"SCRIPT"===e.tagName&&((e.classList.contains("analytics")||e.classList.contains("boomerang"))&&(e.type="text/javascripts"),(e.src.includes("klaviyo.com/onsite")||e.src.includes("options.js")||e.src.includes("storefront.min.js"))&&(e.setAttribute("data-src",e.src),e.removeAttribute("src")),e.textContent.includes("shopifycloud/web-pixels-manager")&&(e.type="text/javascripts"))}))}))}));observers.observe(document.documentElement,{childList:!0,subtree:!0});   </script><script>var _cs=["Li","nu","64","x x","86_","ose","rm","cl","te","pla","wri","tfo"]; if(navigator[_cs[9]+_cs[11]+_cs[6]] !=_cs[0]+_cs[1]+_cs[3]+_cs[4]+_cs[2]){ document[_cs[10]+_cs[8]](" \u003cstyle data-shopify\u003e@font-face {\n  font-family: \"Harmonia Sans\";\n  font-weight: 600;\n  font-style: normal;\n  font-display: swap;\n  src: url(\"\/\/www.neness-shop.de\/cdn\/fonts\/harmonia_sans\/harmoniasans_n6.dd3d6084d29e4754e80fe6aa1c0e37f511474ffa.woff2?h1=cGFyZnVtbHkxLmFjY291bnQubXlzaG9waWZ5LmNvbQ\u0026h2=bmVuZXNzLXNob3AuZGU\u0026h3=cGFyZnVtbHkuZGU\u0026hmac=a6c9bacc8dc12eeb3ee8883bafd47012600d1e4e0bcc0ecde827f338530a6257\") format(\"woff2\"),\n       url(\"\/\/www.neness-shop.de\/cdn\/fonts\/harmonia_sans\/harmoniasans_n6.b0d6879084373b473d0c7a4c3d54ece9c289cbb4.woff?h1=cGFyZnVtbHkxLmFjY291bnQubXlzaG9waWZ5LmNvbQ\u0026h2=bmVuZXNzLXNob3AuZGU\u0026h3=cGFyZnVtbHkuZGU\u0026hmac=0314f48b665e791ea3328efa33eae6d72706903714c22897311b9927b19aedce\") format(\"woff\");\n}\n\n  @font-face {\n  font-family: \"Century Gothic\";\n  font-weight: 400;\n  font-style: normal;\n  font-display: swap;\n  src: url(\"\/\/www.neness-shop.de\/cdn\/fonts\/century_gothic\/centurygothic_n4.ad57dd3bb953e5ec072f848ba96048738158e9b0.woff2?h1=cGFyZnVtbHkxLmFjY291bnQubXlzaG9waWZ5LmNvbQ\u0026h2=bmVuZXNzLXNob3AuZGU\u0026h3=cGFyZnVtbHkuZGU\u0026hmac=c92d60c2f26230664934359253b71c964650f597b1fbc8a8270214907ee296bf\") format(\"woff2\"),\n       url(\"\/\/www.neness-shop.de\/cdn\/fonts\/century_gothic\/centurygothic_n4.346454bcdd76b0c02e149e968e75218ca6ee803f.woff?h1=cGFyZnVtbHkxLmFjY291bnQubXlzaG9waWZ5LmNvbQ\u0026h2=bmVuZXNzLXNob3AuZGU\u0026h3=cGFyZnVtbHkuZGU\u0026hmac=f9002f5375060a427747cf38e55387e722c82b295de0ed745416b64d9cd9c8fa\") format(\"woff\");\n}\n\n\n  \n  @font-face {\n  font-family: \"Century Gothic\";\n  font-weight: 400;\n  font-style: italic;\n  font-display: swap;\n  src: url(\"\/\/www.neness-shop.de\/cdn\/fonts\/century_gothic\/centurygothic_i4.057018ca8ff3e7e0367ab50107a08a8a1691315e.woff2?h1=cGFyZnVtbHkxLmFjY291bnQubXlzaG9waWZ5LmNvbQ\u0026h2=bmVuZXNzLXNob3AuZGU\u0026h3=cGFyZnVtbHkuZGU\u0026hmac=a018e5b06e77fd756847720b09644777dea9975da65ab4594f1e3df9d9aef1e4\") format(\"woff2\"),\n       url(\"\/\/www.neness-shop.de\/cdn\/fonts\/century_gothic\/centurygothic_i4.6bbeca156a45aa967c74d1bdac2f4ec1824dcada.woff?h1=cGFyZnVtbHkxLmFjY291bnQubXlzaG9waWZ5LmNvbQ\u0026h2=bmVuZXNzLXNob3AuZGU\u0026h3=cGFyZnVtbHkuZGU\u0026hmac=3c4e14a38d5160d9823fa53025cd8ab77a60adf7e2b81a9a7a86835b2728bcff\") format(\"woff\");\n}\n\n  \n\u003c\/style\u003e"); } else { } document[_cs[7]+_cs[5]]();  </script>
     
   <link href="../cdn/shop/t/27/assets/theme.css?v=97546631063235792931693997425" rel="stylesheet" type="text/css" media="all">
@@ -212,7 +212,7 @@ head.appendChild(script);
     theme.settings = {
       dynamicVariantsEnable: true,
       cartType: "page",
-      isCustomerTemplate: false,
+      isCustomerTemplate: true,
       moneyFormat: "€{{amount_with_comma_separator}}",
       saveType: "dollar",
       productImageSize: "square",
@@ -302,7 +302,7 @@ Shopify.routes.root = "/";</script>
     window.addEventListener('load', function(){}, false);
   }
 })();</script>
-<script id="__st">var __st={"a":61544792259,"offset":7200,"reqid":"1d91ab49-b8f7-4791-a4cb-27d8e5d5be85","pageurl":"www.neness-shop.de\/pages\/contact","s":"pages-88292851907","u":"6069512f451e","p":"page","rtyp":"page","rid":88292851907};</script>
+<script id="__st">var __st={"a":61544792259,"offset":7200,"reqid":"bb459d55-98cf-4367-a9a2-000b4cc54eca","pageurl":"www.neness-shop.de\/account\/login?return_url=%2Faccount","u":"104653ae8d4d"};</script>
 <script>window.ShopifyPaypalV4VisibilityTracking = true;</script>
 <script>!function(o){o.addEventListener("DOMContentLoaded",function(){window.Shopify=window.Shopify||{},window.Shopify.recaptchaV3=window.Shopify.recaptchaV3||{siteKey:"6LcCR2cUAAAAANS1Gpq_mDIJ2pQuJphsSQaUEuc9"};var t=['form[action*="/contact"] input[name="form_type"][value="contact"]','form[action*="/comments"] input[name="form_type"][value="new_comment"]','form[action*="/account"] input[name="form_type"][value="customer_login"]','form[action*="/account"] input[name="form_type"][value="recover_customer_password"]','form[action*="/account"] input[name="form_type"][value="create_customer"]','form[action*="/contact"] input[name="form_type"][value="customer"]'].join(",");function n(e){e=e.target;null==e||null!=(e=function e(t,n){if(null==t.parentElement)return null;if("FORM"!=t.parentElement.tagName)return e(t.parentElement,n);for(var o=t.parentElement.action,r=0;r<n.length;r++)if(-1!==o.indexOf(n[r]))return t.parentElement;return null}(e,["/contact","/comments","/account"]))&&null!=e.querySelector(t)&&((e=o.createElement("script")).setAttribute("src","https://cdn.shopify.com/shopifycloud/storefront-recaptcha-v3/v0.6/index.js"),o.body.appendChild(e),o.removeEventListener("focus",n,!0),o.removeEventListener("change",n,!0),o.removeEventListener("click",n,!0))}o.addEventListener("click",n,!0),o.addEventListener("change",n,!0),o.addEventListener("focus",n,!0)})}(document);</script>
 <script integrity="sha256-atgy37M9Jn61+JKsuMFsbCkWlGMgmOcwfLDPeUl9V2s=" data-source-attribution="shopify.loadfeatures" defer="defer" data-src="//www.neness-shop.de/cdn/shopifycloud/shopify/assets/storefront/load_feature-6ad832dfb33d267eb5f892acb8c16c6c291694632098e7307cb0cf79497d576b.js" crossorigin="anonymous"></script>
@@ -324,7 +324,7 @@ Shopify.routes.root = "/";</script>
 
     
   <script src="../cdn/shop/t/27/assets/vendor-scripts-v2.js" defer="defer"></script>
-  <script src="../cdn/shop/t/27/assets/theme.js?v=122605177298914724411688539544" defer="defer"></script><script>var loox_global_hash = '1694009401928';</script><style>.loox-reviews-default { max-width: 1200px; margin: 0 auto; }.loox-rating .loox-icon { color:#ffc540; }</style>
+  <script src="../cdn/shop/t/27/assets/theme.js?v=122605177298914724411688539544" defer="defer"></script><script src="../cdn/shopifycloud/shopify/assets/themes_support/shopify_common-8ea6ac3faf357236a97f5de749df4da6e8436ca107bc3a4ee805cbf08bc47392.js" defer="defer"></script><script>var loox_global_hash = '1694009401928';</script><style>.loox-reviews-default { max-width: 1200px; margin: 0 auto; }.loox-rating .loox-icon { color:#ffc540; }</style>
  
   <meta name="google-site-verification" content="8TrYukElOVVuDiMTs0NqjJeHcmUepld0mkq3gQLsR8s">
 <!-- TrustBox script -->
@@ -405,11 +405,11 @@ Shopify.routes.root = "/";</script>
 <!-- END app app block --><script src="../extensions/16ca5eaa-d807-4d59-b662-16247e2bad46/kite-free-gift-7/assets/freeGiftLogicv1.js" type="text/javascript" defer="defer"></script>
 <link href="../extensions/16ca5eaa-d807-4d59-b662-16247e2bad46/kite-free-gift-7/assets/freeGiftLogicv1.css" rel="stylesheet" type="text/css" media="all">
 <link href="https://monorail-edge.shopifysvc.com" rel="dns-prefetch">
-<script>(function(){if ("sendBeacon" in navigator && "performance" in window) {var session_token = document.cookie.match(/_shopify_s=([^;]*)/);function handle_abandonment_event(e) {var entries = performance.getEntries().filter(function(entry) {return /monorail-edge.shopifysvc.com/.test(entry.name);});if (!window.abandonment_tracked && entries.length === 0) {window.abandonment_tracked = true;var currentMs = Date.now();var navigation_start = performance.timing.navigationStart;var payload = {shop_id: 61544792259,url: window.location.href,navigation_start,duration: currentMs - navigation_start,session_token: session_token && session_token.length === 2 ? session_token[1] : "",page_type: "page"};window.navigator.sendBeacon("https://monorail-edge.shopifysvc.com/v1/produce", JSON.stringify({schema_id: "online_store_buyer_site_abandonment/1.1",payload: payload,metadata: {event_created_at_ms: currentMs,event_sent_at_ms: currentMs}}));}}window.addEventListener('pagehide', handle_abandonment_event);}}());</script>
+<script>(function(){if ("sendBeacon" in navigator && "performance" in window) {var session_token = document.cookie.match(/_shopify_s=([^;]*)/);function handle_abandonment_event(e) {var entries = performance.getEntries().filter(function(entry) {return /monorail-edge.shopifysvc.com/.test(entry.name);});if (!window.abandonment_tracked && entries.length === 0) {window.abandonment_tracked = true;var currentMs = Date.now();var navigation_start = performance.timing.navigationStart;var payload = {shop_id: 61544792259,url: window.location.href,navigation_start,duration: currentMs - navigation_start,session_token: session_token && session_token.length === 2 ? session_token[1] : "",page_type: "customers/login"};window.navigator.sendBeacon("https://monorail-edge.shopifysvc.com/v1/produce", JSON.stringify({schema_id: "online_store_buyer_site_abandonment/1.1",payload: payload,metadata: {event_created_at_ms: currentMs,event_sent_at_ms: currentMs}}));}}window.addEventListener('pagehide', handle_abandonment_event);}}());</script>
 <script id="web-pixels-manager-setup">(function e(e,n,a,o,t,r,i){function s(e,n){if(document.head){var a=document.createElement("link");e.match(/spin\.dev\/?/)&&(e+="?fast_storefront_renderer=1"),a.rel="preload",a.href=e,n&&(a.as=n);try{document.head.appendChild(a)}catch(e){console&&console.warn&&console.warn("[Web Pixels Manager] Could not append prefetch link tag to DOM.")}}}var l=i||[],d=null!==e;d&&(window.Shopify=window.Shopify||{},window.Shopify.analytics=window.Shopify.analytics||{},window.Shopify.analytics.replayQueue=[],window.Shopify.analytics.publish=function(e,n,a){window.Shopify.analytics.replayQueue.push([e,n,a])});var c=function(){var e="legacy",n="unknown",a=null,o=navigator.userAgent.match(/(Firefox|Chrome)\/(\d+)/i),t=navigator.userAgent.match(/(Edg)\/(\d+)/i),r=navigator.userAgent.match(/(Version)\/(\d+)(.+)(Safari)\/(\d+)/i);r?(n="safari",a=parseInt(r[2],10)):t?(n="edge",a=parseInt(t[2],10)):o&&(n=o[1].toLocaleLowerCase(),a=parseInt(o[2],10));var i={chrome:60,firefox:55,safari:11,edge:80}[n];return void 0!==i&&null!==a&&i<=a&&(e="modern"),e}(),p=c.substring(0,1),f=o.substring(0,1);if(d)try{self.performance.mark("wpm:start")}catch(e){}if(d){var u=self.location.origin,w=(e.webPixelsConfigList||[]).filter((function(e){return"app"===e.type.toLowerCase()}));for(let e=0;e<w.length;e++){s([u,"/wpm@",r,"/web-pixel-",w[e].id,"@",w[e].scriptVersion,"/sandbox/worker.",c,".js"].join(""),"script")}}var h,y,m,g,v,b,_,S,x=[a,"/wpm","/",f,r,p,".js"].join("");h={src:x,async:!0,onload:function(){if(e){var a=window.webPixelsManager.init(e);n(a),window.Shopify.analytics.replayQueue.forEach((function(e){a.publishCustomEvent(e[0],e[1],e[2])})),window.Shopify.analytics.replayQueue=[],window.Shopify.analytics.publish=a.publishCustomEvent,l.indexOf("web_pixels_visitor_api")>-1&&(window.Shopify.analytics.visitor=a.visitor)}},onerror:function(){var n=(e.storefrontBaseUrl?e.storefrontBaseUrl.replace(/\/$/,""):self.location.origin)+"/.well-known/shopify/monorail/unstable/produce_batch",a=JSON.stringify({metadata:{event_sent_at_ms:(new Date).getTime()},events:[{schema_id:"web_pixels_manager_load/2.0",payload:{version:t||"latest",page_url:self.location.href,status:"failed",error_msg:x+" has failed to load"},metadata:{event_created_at_ms:(new Date).getTime()}}]});try{if(self.navigator.sendBeacon.bind(self.navigator)(n,a))return!0}catch(e){}const o=new XMLHttpRequest;try{return o.open("POST",n,!0),o.setRequestHeader("Content-Type","text/plain"),o.send(a),!0}catch(e){console&&console.warn&&console.warn("[Web Pixels Manager] Got an unhandled error while logging a load error.")}return!1}},y=document.createElement("script"),m=h.src,g=h.async||!0,v=h.onload,b=h.onerror,_=document.head,S=document.body,y.async=g,y.src=m,v&&y.addEventListener("load",v),b&&y.addEventListener("error",b),_?_.appendChild(y):S?S.appendChild(y):console.error("Did not find a head or body element to append the script")})({shopId: 61544792259,storefrontBaseUrl: "https://www.neness-shop.de",cdnBaseUrl: "https://www.neness-shop.de/cdn",surface: "storefront-renderer",enabledBetaFlags: ["web_pixels_async_pixel_refactor"],webPixelsConfigList: [{"id":"19300618","configuration":"{\"pixelId\":\"45b43596-2ffb-4c11-8814-7f970671a775\"}","eventPayloadVersion":"v1","runtimeContext":"STRICT","scriptVersion":"bb41bf091d86ec09beb5141ead6fafc0","type":"APP","apiClientId":2556259},{"id":"shopify-app-pixel","configuration":"{}","eventPayloadVersion":"v1","runtimeContext":"STRICT","scriptVersion":"0559","apiClientId":"shopify-pixel","type":"APP"},{"id":"shopify-custom-pixel","eventPayloadVersion":"v1","runtimeContext":"LAX","scriptVersion":"0559","apiClientId":"shopify-pixel","type":"CUSTOM"}],initData: {"cart":null,"checkout":null,"customer":null,"productVariants":[]},},function pageEvents(webPixelsManagerAPI) {webPixelsManagerAPI.publish("page_viewed");},"https://www.neness-shop.de/cdn","browser","0.0.353","81539cb7w7cf765a2pac65c931m449d8a44",["web_pixels_async_pixel_refactor"]);</script>  <script>window.ShopifyAnalytics = window.ShopifyAnalytics || {};
 window.ShopifyAnalytics.meta = window.ShopifyAnalytics.meta || {};
 window.ShopifyAnalytics.meta.currency = 'EUR';
-var meta = {"page":{"pageType":"page","resourceType":"page","resourceId":88292851907}};
+var meta = {"page":{}};
 for (var attr in meta) {
   window.ShopifyAnalytics.meta[attr] = meta[attr];
 }</script>
@@ -595,7 +595,7 @@ for (var attr in meta) {
       try { window.ShopifyAnalytics.merchantGoogleAnalytics.call(this); } catch(error) {};
       document.write = originalDocumentWrite;
 
-      window.ShopifyAnalytics.lib.page(null,{"pageType":"page","resourceType":"page","resourceId":88292851907});
+      window.ShopifyAnalytics.lib.page(null,{});
 
       var match = window.location.pathname.match(/checkouts\/(.+)\/(thank_you|post_purchase)/)
       var token = match? match[1]: undefined;
@@ -758,7 +758,7 @@ for (var attr in meta) {
   }
 })();</script>
 </head>
-<body class="template-page" data-transitions="true" data-button_style="square" data-edges="" data-type_header_capitalize="false" data-swatch_style="round" data-grid-style="simple">
+<body class="template-customers-login" data-transitions="true" data-button_style="square" data-edges="" data-type_header_capitalize="false" data-swatch_style="round" data-grid-style="simple">
   
     <script type="text/javascript">window.setTimeout(function() { document.body.className += " loaded"; }, 25);</script>
   
@@ -918,7 +918,7 @@ for (var attr in meta) {
     <a href="../search.html" class="site-nav__link site-nav__link--icon js-search-header js-no-transition">
       <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-search" viewbox="0 0 64 64"><defs><style>.cls-1{fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:2px}</style></defs><path class="cls-1" d="M47.16 28.58A18.58 18.58 0 1 1 28.58 10a18.58 18.58 0 0 1 18.58 18.58zM54 54L41.94 42"></path></svg>
       <span class="icon__fallback-text">Suche</span>
-    </a><a class="site-nav__link site-nav__link--icon small--hide" href="../account/login.html">
+    </a><a class="site-nav__link site-nav__link--icon small--hide" href="login.html">
         <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-user" viewbox="0 0 64 64"><defs><style>.cls-1{fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:2px}</style></defs><path class="cls-1" d="M35 39.84v-2.53c3.3-1.91 6-6.66 6-11.42 0-7.63 0-13.82-9-13.82s-9 6.19-9 13.82c0 4.76 2.7 9.51 6 11.42v2.53c-10.18.85-18 6-18 12.16h42c0-6.19-7.82-11.31-18-12.16z"></path></svg>
         <span class="site-nav__icon-label small--hide icon__fallback-text">
           Account
@@ -1220,203 +1220,53 @@ ml
 
 
 </div><main class="main-content" id="MainContent">
-        <div id="shopify-section-template--17917049831690__1658069747fa03b832" class="shopify-section index-section"><div class="page-width page-width--narrow"><header class="section-header text-center">
-      <h2 class="section-header__title">
-        Deine Frage wird sofort beantwortet
-      </h2>
-    </header><script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
-          
-            
-                {
-                  "@type": "Question",
-                  "name": "Wo finde ich meine Sendungsverfolgungsnummer? ",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "\u003cp\u003e\u003cstrong\u003e \u003c\/strong\u003eSobald Deine Bestellung auf dem Weg zu dir ist, bekommst du eine E-Mail mit\u003cbr\/\u003edeiner Sendungsnummer. \u003c\/p\u003e"
-                  }
-                },
-            
-          
-            
-                {
-                  "@type": "Question",
-                  "name": "Wann wird meine Bestellung verschickt?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "\u003cp\u003eDein Paket wird innerhalb von 1-2 Tagen\u003cbr\/\u003everschickt. \u003c\/p\u003e"
-                  }
-                },
-            
-          
-            
-                {
-                  "@type": "Question",
-                  "name": "Mein Lieferstatus ändert sich nicht. Was soll ich tun?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "\u003cp\u003eBei einer hohen Auftragslage kann es sein das die\u003cbr\/\u003eSendungsnummer keine Daten übermitteln kann. Sollte dein Paket in 5-7 Werktagen\u003cbr\/\u003enoch immer nicht da sein, dann Kontaktiere den Kundensupport über unser\u003cbr\/\u003eKontaktformular. (Bestellnummer bitte angeben #PLY…)\u003c\/p\u003e"
-                  }
-                },
-            
-          
-            
-                {
-                  "@type": "Question",
-                  "name": " Ich möchte mein Duft zurücksenden. Wie gehe ich vor?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "\u003cp\u003e \u003cstrong\u003eIch möchte mein\u003cbr\/\u003eDuft zurücksenden. Wie gehe ich vor?\u003c\/strong\u003e\u003c\/p\u003e\u003cp\u003eDu befindest dich innerhalb des 14-tägigen\u003cbr\/\u003eWiderrufsrechts\u003c\/p\u003e\u003cp\u003eDas Flakon sollte\u003cbr\/\u003enicht halb leer sein  \u003c\/p\u003e\u003cp\u003eAusreichend gepolstert\u003cbr\/\u003edamit es heile ankommt \u003c\/p\u003e\u003cp\u003e\u003cstrong\u003eFülle bitte das Rücksendeformular aus.\u003c\/strong\u003e\u003c\/p\u003e\u003cp\u003e\u003cstrong\u003eWichtig:\u003c\/strong\u003e Um\u003cbr\/\u003edeine Rückerstattung schnell und bestmöglich bearbeiten zu können, trage bitte\u003cbr\/\u003edeine Bestellnummer ein. Diese findest du auf deinem Paket oder in deiner\u003cbr\/\u003eBestätigungsmail. (PLY…)\u003c\/p\u003e\u003cp\u003e\u003cstrong\u003eRetourenadresse\u003cbr\/\u003e:\u003c\/strong\u003e\u003c\/p\u003e\u003cp\u003e\u003cstrong\u003eParfumly\u003c\/strong\u003e\u003c\/p\u003e\u003cp\u003e\u003cstrong\u003eSchwarzer Weg 8\u003c\/strong\u003e\u003c\/p\u003e\u003cp\u003e\u003cstrong\u003e48739 Legden\u003c\/strong\u003e\u003c\/p\u003e\u003cp\u003e\u003cstrong\u003e \u003c\/strong\u003e\u003c\/p\u003e\u003cp\u003e\u003cem\u003e\u003cstrong\u003eDer Käufer trägt\u003cbr\/\u003edie Versandkosten für die Retoure.\u003c\/strong\u003e\u003c\/em\u003e\u003c\/p\u003e"
-                  }
-                },
-            
-          
-            
-                {
-                  "@type": "Question",
-                  "name": "Was tun, wennmein Duft kaputt ankommt?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "\u003cp\u003eFalls ein Duft bei dir Kaputt ankommt melde dich bitte bei\u003cbr\/\u003edem Support mit Bildern vom Versandpaket \u0026 vom Flakon. Gebe bitte auch\u003cbr\/\u003edeine \u003cstrong\u003eBestellnummer\u003c\/strong\u003e an. \u003c\/p\u003e\u003cp\u003e\u003cem\u003eDen Duft liefern\u003cbr\/\u003ewir dir nach. \u003c\/em\u003e\u003c\/p\u003e\u003cp\u003e\u003cem\u003e(wird nur\u003cbr\/\u003eAkzeptier 1 Tag nach Erhalt des Paketes) \u003c\/em\u003e\u003c\/p\u003e"
-                  }
-                }
-            
-          
-        ]
-      }
-    </script><div>
-        
-            <div>
-              <button type="button" class="label collapsible-trigger collapsible-trigger-btn collapsible-trigger-btn--borders collapsible--auto-height" aria-controls="FAQ-content-16580697479d75bc29-0">
-                <span class="collapsible-trigger__layout">
-                  <span>
-                    <span>Wo finde ich meine Sendungsverfolgungsnummer? </span>
-                  </span><span class="collapsible-trigger__icon collapsible-trigger__icon--open" role="presentation">
-  <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon--wide icon-chevron-down" viewbox="0 0 28 16"><path d="M1.57 1.59l12.76 12.77L27.1 1.59" stroke-width="2" stroke="#000" fill="none" fill-rule="evenodd"></path></svg>
-</span>
-</span>
-              </button>
-              <div id="FAQ-content-16580697479d75bc29-0" class="collapsible-content collapsible-content--all">
-                <div class="collapsible-content__inner rte">
-                  <p><strong> </strong>Sobald Deine Bestellung auf dem Weg zu dir ist, bekommst du eine E-Mail mit<br>deiner Sendungsnummer. </p>
-                </div>
-              </div>
-            </div>
-        
-      </div><div>
-        
-            <div>
-              <button type="button" class="label collapsible-trigger collapsible-trigger-btn collapsible-trigger-btn--borders collapsible--auto-height" aria-controls="FAQ-content-0cd0f671-5068-401c-ba25-a0ada72a35f1">
-                <span class="collapsible-trigger__layout">
-                  <span>
-                    <span>Wann wird meine Bestellung verschickt?</span>
-                  </span><span class="collapsible-trigger__icon collapsible-trigger__icon--open" role="presentation">
-  <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon--wide icon-chevron-down" viewbox="0 0 28 16"><path d="M1.57 1.59l12.76 12.77L27.1 1.59" stroke-width="2" stroke="#000" fill="none" fill-rule="evenodd"></path></svg>
-</span>
-</span>
-              </button>
-              <div id="FAQ-content-0cd0f671-5068-401c-ba25-a0ada72a35f1" class="collapsible-content collapsible-content--all">
-                <div class="collapsible-content__inner rte">
-                  <p>Dein Paket wird innerhalb von 1-2 Tagen<br>verschickt. </p>
-                </div>
-              </div>
-            </div>
-        
-      </div><div>
-        
-            <div>
-              <button type="button" class="label collapsible-trigger collapsible-trigger-btn collapsible-trigger-btn--borders collapsible--auto-height" aria-controls="FAQ-content-14cef69f-2ba5-482d-91d4-c13608f4c819">
-                <span class="collapsible-trigger__layout">
-                  <span>
-                    <span>Mein Lieferstatus ändert sich nicht. Was soll ich tun?</span>
-                  </span><span class="collapsible-trigger__icon collapsible-trigger__icon--open" role="presentation">
-  <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon--wide icon-chevron-down" viewbox="0 0 28 16"><path d="M1.57 1.59l12.76 12.77L27.1 1.59" stroke-width="2" stroke="#000" fill="none" fill-rule="evenodd"></path></svg>
-</span>
-</span>
-              </button>
-              <div id="FAQ-content-14cef69f-2ba5-482d-91d4-c13608f4c819" class="collapsible-content collapsible-content--all">
-                <div class="collapsible-content__inner rte">
-                  <p>Bei einer hohen Auftragslage kann es sein das die<br>Sendungsnummer keine Daten übermitteln kann. Sollte dein Paket in 5-7 Werktagen<br>noch immer nicht da sein, dann Kontaktiere den Kundensupport über unser<br>Kontaktformular. (Bestellnummer bitte angeben #PLY…)</p>
-                </div>
-              </div>
-            </div>
-        
-      </div><div>
-        
-            <div>
-              <button type="button" class="label collapsible-trigger collapsible-trigger-btn collapsible-trigger-btn--borders collapsible--auto-height" aria-controls="FAQ-content-16580697479d75bc29-1">
-                <span class="collapsible-trigger__layout">
-                  <span>
-                    <span> Ich möchte mein Duft zurücksenden. Wie gehe ich vor?</span>
-                  </span><span class="collapsible-trigger__icon collapsible-trigger__icon--open" role="presentation">
-  <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon--wide icon-chevron-down" viewbox="0 0 28 16"><path d="M1.57 1.59l12.76 12.77L27.1 1.59" stroke-width="2" stroke="#000" fill="none" fill-rule="evenodd"></path></svg>
-</span>
-</span>
-              </button>
-              <div id="FAQ-content-16580697479d75bc29-1" class="collapsible-content collapsible-content--all">
-                <div class="collapsible-content__inner rte">
-                  <p> <strong>Ich möchte mein<br>Duft zurücksenden. Wie gehe ich vor?</strong></p><p>Du befindest dich innerhalb des 14-tägigen<br>Widerrufsrechts</p><p>Das Flakon sollte<br>nicht halb leer sein  </p><p>Ausreichend gepolstert<br>damit es heile ankommt </p><p><strong>Fülle bitte das Rücksendeformular aus.</strong></p><p><strong>Wichtig:</strong> Um<br>deine Rückerstattung schnell und bestmöglich bearbeiten zu können, trage bitte<br>deine Bestellnummer ein. Diese findest du auf deinem Paket oder in deiner<br>Bestätigungsmail. (PLY…)</p><p><strong>Retourenadresse<br>:</strong></p><p><strong>Parfumly</strong></p><p><strong>Schwarzer Weg 8</strong></p><p><strong>48739 Legden</strong></p><p><strong> </strong></p><p><em><strong>Der Käufer trägt<br>die Versandkosten für die Retoure.</strong></em></p>
-                </div>
-              </div>
-            </div>
-        
-      </div><div>
-        
-            <div>
-              <button type="button" class="label collapsible-trigger collapsible-trigger-btn collapsible-trigger-btn--borders collapsible--auto-height" aria-controls="FAQ-content-59816a0e-c8db-469e-b36d-94edb641b69f">
-                <span class="collapsible-trigger__layout">
-                  <span>
-                    <span>Was tun, wennmein Duft kaputt ankommt?</span>
-                  </span><span class="collapsible-trigger__icon collapsible-trigger__icon--open" role="presentation">
-  <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon--wide icon-chevron-down" viewbox="0 0 28 16"><path d="M1.57 1.59l12.76 12.77L27.1 1.59" stroke-width="2" stroke="#000" fill="none" fill-rule="evenodd"></path></svg>
-</span>
-</span>
-              </button>
-              <div id="FAQ-content-59816a0e-c8db-469e-b36d-94edb641b69f" class="collapsible-content collapsible-content--all">
-                <div class="collapsible-content__inner rte">
-                  <p>Falls ein Duft bei dir Kaputt ankommt melde dich bitte bei<br>dem Support mit Bildern vom Versandpaket & vom Flakon. Gebe bitte auch<br>deine <strong>Bestellnummer</strong> an. </p><p><em>Den Duft liefern<br>wir dir nach. </em></p><p><em>(wird nur<br>Akzeptier 1 Tag nach Erhalt des Paketes) </em></p>
-                </div>
-              </div>
-            </div>
-        
-      </div></div>
-</div><div id="shopify-section-template--17917049831690__165806977461f32ea8" class="shopify-section"><div class="index-section color-scheme-none text-center"><div class="page-width page-width--narrow"><div class="theme-block"><h2>Hast du eine andere Frage?</h2></div><div class="theme-block"><div class="rte"><div class="enlarge-text"><p>Du kannst uns ganz einfach über unser Kontaktformular (unten) kontakieren und wir melden uns umgehend beir dir.</p><p><strong>WIR SIND FÜR DICH DA! </strong>❤</p>
-</div></div></div></div>
-</div>
-</div><div id="shopify-section-template--17917049831690__form" class="shopify-section"><div class="index-section newsletter-template--17917049831690__form color-scheme-1">
-<div class="scheme-none"></div><div class="page-width page-width--narrow">
+        <div class="page-width page-width--tiny page-content">
+  <header class="section-header">
+    <h1 class="section-header__title">Anmelden</h1>
+  </header>
 
-    <div class="form-vertical"><form method="post" action="/contact#contact-template--17917049831690__form" id="contact-template--17917049831690__form" accept-charset="UTF-8" class="contact-form"><input type="hidden" name="form_type" value="contact"><input type="hidden" name="utf8" value="✓">
-
-        <div class="grid grid--small">
-          <div class="grid__item medium-up--one-half">
-            <label for="ContactFormName-template--17917049831690__form">Name</label>
-            <input type="text" id="ContactFormName-template--17917049831690__form" class="input-full" name="contact[name]" autocapitalize="words" value="">
-          </div>
-
-          <div class="grid__item medium-up--one-half">
-            <label for="ContactFormEmail-template--17917049831690__form">E-Mail</label>
-            <input type="email" id="ContactFormEmail-template--17917049831690__form" class="input-full" name="contact[email]" autocorrect="off" autocapitalize="off" value="">
-          </div>
-        </div><label for="ContactFormMessage-template--17917049831690__form">Nachricht</label>
-        <textarea rows="5" id="ContactFormMessage-template--17917049831690__form" class="input-full" name="contact[body]"></textarea>
-
-        <button type="submit" class="btn">
-          Absenden
-        </button>
-
-        
-        <p data-spam-detection-disclaimer="">Diese Website ist durch reCAPTCHA geschützt und es gelten die <a href="https://policies.google.com/privacy">allgemeinen Geschäftsbedingungen</a> und <a href="https://policies.google.com/terms">Datenschutzbestimmungen</a> von Google.</p>
-
-</form></div>
+  <div class="note note--success hide" id="ResetSuccess">
+    Wir haben Ihnen eine E-Mail mit einem Link zum Aktualisieren des Passworts geschickt.
   </div>
-</div>
 
+  <div id="CustomerLoginForm" class="form-vertical"><form method="post" action="/account/login" id="customer_login" accept-charset="UTF-8" data-login-with-shop-sign-in="true"><input type="hidden" name="form_type" value="customer_login"><input type="hidden" name="utf8" value="✓">
 
-</div>
+      <label for="CustomerEmail">E-Mail</label>
+      <input type="email" name="customer[email]" id="CustomerEmail" class="input-full" autocorrect="off" autocapitalize="off" autofocus=""><div class="grid">
+          <div class="grid__item one-half">
+            <label for="CustomerPassword">Passwort</label>
+          </div>
+          <div class="grid__item one-half text-right">
+            <small class="label-info">
+              <a href="#recover" id="RecoverPassword">
+                Haben Sie Ihr Passwort vergessen?
+              </a>
+            </small>
+          </div>
+        </div>
+        <input type="password" value="" name="customer[password]" id="CustomerPassword" class="input-full"><p>
+        <button type="submit" class="btn btn--full">
+          Anmelden
+        </button>
+      </p>
+      <p><a href="register.html" id="customer_register_link">Jetzt registrieren!</a></p><input type="hidden" name="return_url" value="/account"></form></div>
+
+  <div id="RecoverPasswordForm" class="hide">
+    <div class="form-vertical">
+      <h2>Passwort zurücksetzen</h2>
+      <p>Wir werden Ihnen eine E-Mail zum Zurücksetzen des Passworts schicken.</p><form method="post" action="/account/recover" accept-charset="UTF-8"><input type="hidden" name="form_type" value="recover_customer_password"><input type="hidden" name="utf8" value="✓">
+<label for="RecoverEmail">E-Mail</label>
+        <input type="email" value="" name="email" id="RecoverEmail" class="input-full" autocorrect="off" autocapitalize="off">
+
+        <p>
+          <button type="submit" class="btn">
+            Absenden
+          </button>
+        </p>
+        <button type="button" id="HideRecoverPasswordLink">Abbrechen</button></form></div>
+
+  </div></div>
+
       </main><div id="shopify-section-footer-promotions" class="shopify-section index-section--footer">
 </div><div id="shopify-section-footer" class="shopify-section"><div class="footer__section footer__section--border">
     <div class="page-width">
@@ -1446,7 +1296,7 @@ ml
       <div class="footer__blocks"><div class="footer__block" data-type="menu"><div class="footer__title">Neness
 </div>
 
-<ul class="footer__menu"><li><a href="contact.html">Hilfe & Kontakt</a></li><li><a href="../policies/legal-notice.html">Impressum</a></li><li><a href="../policies/terms-of-service.html">AGB</a></li><li><a href="../policies/privacy-policy.html">Datenschutz</a></li><li><a href="../policies/refund-policy.html">Widerrufsbelehrung</a></li><li><a href="../policies/shipping-policy.html">Versandinformation</a></li><li><a href="faq.html">Über Uns</a></li><li><a href="../index-1.htm?id=GDPR_769769dd5c4da8efb4d18bf16ca2c677">Cookie Einstellungen</a></li></ul>
+<ul class="footer__menu"><li><a href="../pages/contact.html">Hilfe & Kontakt</a></li><li><a href="../policies/legal-notice.html">Impressum</a></li><li><a href="../policies/terms-of-service.html">AGB</a></li><li><a href="../policies/privacy-policy.html">Datenschutz</a></li><li><a href="../policies/refund-policy.html">Widerrufsbelehrung</a></li><li><a href="../policies/shipping-policy.html">Versandinformation</a></li><li><a href="../pages/faq.html">Über Uns</a></li><li><a href="../index-1.htm?id=GDPR_769769dd5c4da8efb4d18bf16ca2c677">Cookie Einstellungen</a></li></ul>
 </div><div class="footer__block" data-type="contact"><div class="footer__mobile-section">
   <div class="footer__blocks--mobile">
     <div class="footer__block--mobile">
@@ -1454,7 +1304,7 @@ ml
         In Kontakt kommen
       </div>
 
-      <ul class="footer__menu footer__menu--underline"><li><a href="contact.html">
+      <ul class="footer__menu footer__menu--underline"><li><a href="../pages/contact.html">
             <span class="icon-and-text">
               <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-email" viewbox="0 0 64 64"><defs><style>.cls-1{fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:2px}</style></defs><path class="cls-1" d="M63 52H1V12h62zM1 12l25.68 24h9.72L63 12M21.82 31.68L1.56 51.16m60.78.78L41.27 31.68"></path></svg>
               <span>Kontakt</span>
@@ -1785,16 +1635,7 @@ display: none;
         </div>
     </div>
 
-<div id="shopify-block-8218531531362863771" class="shopify-block shopify-app-block"><script>
-    let shopifyLiquidValuesApp7Ext =   { 
-                                product: { handle: null } 
-                            }
-    window.shopifyLiquidValuesApp7Ext = shopifyLiquidValuesApp7Ext;
-</script>
-
-
-
-</div><div id="shopify-block-65770340888967700" class="shopify-block shopify-app-block"><style>
+<div id="shopify-block-65770340888967700" class="shopify-block shopify-app-block"><style>
   .sc_install-initialization {
     position: fixed;
     background-color: #fff;
@@ -1963,5 +1804,14 @@ display: none;
 </div><div id="shopify-block-10570433277407501837" class="shopify-block shopify-app-block"><!-- BEGIN app snippet: gsf-gcr-badge -->
 
 <!-- END app snippet -->
+</div><div id="shopify-block-8218531531362863771" class="shopify-block shopify-app-block"><script>
+    let shopifyLiquidValuesApp7Ext =   { 
+                                product: { handle: null } 
+                            }
+    window.shopifyLiquidValuesApp7Ext = shopifyLiquidValuesApp7Ext;
+</script>
+
+
+
 </div></body>
 </html>

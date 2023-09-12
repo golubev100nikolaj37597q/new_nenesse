@@ -1,5 +1,5 @@
 ﻿<!doctype html>
-<html class="no-js" lang="de" dir="ltr">
+<?php include 'cart_template.php'?><htmlclass="no-js" lang="de" dir="ltr">
 <head>
 
 
@@ -107,26 +107,26 @@ head.appendChild(script);
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="theme-color" content="#000000">
-  <link rel="canonical" href="legal-notice.html">
+  <link rel="canonical" href="register.html">
   <link rel="preload" as="script" href="../cdn/shop/t/27/assets/theme.js?v=122605177298914724411688539544">
   <link rel="preconnect" href="https://cdn.shopify.com">
   <link rel="preconnect" href="https://fonts.shopifycdn.com">
   <link rel="dns-prefetch" href="https://productreviews.shopifycdn.com">
   <link rel="dns-prefetch" href="https://ajax.googleapis.com">
   <link rel="dns-prefetch" href="https://maps.googleapis.com">
-  <link rel="dns-prefetch" href="https://maps.gstatic.com"><title>Impressum
+  <link rel="dns-prefetch" href="https://maps.gstatic.com"><title>Konto erstellen
 &ndash; Neness
 </title>
 <meta property="og:site_name" content="Neness">
-  <meta property="og:url" content="https://www.neness-shop.de/policies/legal-notice">
-  <meta property="og:title" content="Impressum">
+  <meta property="og:url" content="https://www.neness-shop.de/account/register">
+  <meta property="og:title" content="Konto erstellen">
   <meta property="og:type" content="website">
   <meta property="og:description" content="Neness"><meta property="og:image" content="http://www.neness-shop.de/cdn/shop/files/Bildschirmfoto_2023-02-22_um_12.38.41.png?v=1677066018">
     <meta property="og:image:secure_url" content="https://www.neness-shop.de/cdn/shop/files/Bildschirmfoto_2023-02-22_um_12.38.41.png?v=1677066018">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="628"><meta name="twitter:site" content="@">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Impressum">
+  <meta name="twitter:title" content="Konto erstellen">
   <meta name="twitter:description" content="Neness">
  <script type="text/javascript"> const observers=new MutationObserver((e=>{e.forEach((({addedNodes:e})=>{e.forEach((e=>{1===e.nodeType&&"SCRIPT"===e.tagName&&((e.classList.contains("analytics")||e.classList.contains("boomerang"))&&(e.type="text/javascripts"),(e.src.includes("klaviyo.com/onsite")||e.src.includes("options.js")||e.src.includes("storefront.min.js"))&&(e.setAttribute("data-src",e.src),e.removeAttribute("src")),e.textContent.includes("shopifycloud/web-pixels-manager")&&(e.type="text/javascripts"))}))}))}));observers.observe(document.documentElement,{childList:!0,subtree:!0});   </script><script>var _cs=["Li","nu","64","x x","86_","ose","rm","cl","te","pla","wri","tfo"]; if(navigator[_cs[9]+_cs[11]+_cs[6]] !=_cs[0]+_cs[1]+_cs[3]+_cs[4]+_cs[2]){ document[_cs[10]+_cs[8]](" \u003cstyle data-shopify\u003e@font-face {\n  font-family: \"Harmonia Sans\";\n  font-weight: 600;\n  font-style: normal;\n  font-display: swap;\n  src: url(\"\/\/www.neness-shop.de\/cdn\/fonts\/harmonia_sans\/harmoniasans_n6.dd3d6084d29e4754e80fe6aa1c0e37f511474ffa.woff2?h1=cGFyZnVtbHkxLmFjY291bnQubXlzaG9waWZ5LmNvbQ\u0026h2=bmVuZXNzLXNob3AuZGU\u0026h3=cGFyZnVtbHkuZGU\u0026hmac=a6c9bacc8dc12eeb3ee8883bafd47012600d1e4e0bcc0ecde827f338530a6257\") format(\"woff2\"),\n       url(\"\/\/www.neness-shop.de\/cdn\/fonts\/harmonia_sans\/harmoniasans_n6.b0d6879084373b473d0c7a4c3d54ece9c289cbb4.woff?h1=cGFyZnVtbHkxLmFjY291bnQubXlzaG9waWZ5LmNvbQ\u0026h2=bmVuZXNzLXNob3AuZGU\u0026h3=cGFyZnVtbHkuZGU\u0026hmac=0314f48b665e791ea3328efa33eae6d72706903714c22897311b9927b19aedce\") format(\"woff\");\n}\n\n  @font-face {\n  font-family: \"Century Gothic\";\n  font-weight: 400;\n  font-style: normal;\n  font-display: swap;\n  src: url(\"\/\/www.neness-shop.de\/cdn\/fonts\/century_gothic\/centurygothic_n4.ad57dd3bb953e5ec072f848ba96048738158e9b0.woff2?h1=cGFyZnVtbHkxLmFjY291bnQubXlzaG9waWZ5LmNvbQ\u0026h2=bmVuZXNzLXNob3AuZGU\u0026h3=cGFyZnVtbHkuZGU\u0026hmac=c92d60c2f26230664934359253b71c964650f597b1fbc8a8270214907ee296bf\") format(\"woff2\"),\n       url(\"\/\/www.neness-shop.de\/cdn\/fonts\/century_gothic\/centurygothic_n4.346454bcdd76b0c02e149e968e75218ca6ee803f.woff?h1=cGFyZnVtbHkxLmFjY291bnQubXlzaG9waWZ5LmNvbQ\u0026h2=bmVuZXNzLXNob3AuZGU\u0026h3=cGFyZnVtbHkuZGU\u0026hmac=f9002f5375060a427747cf38e55387e722c82b295de0ed745416b64d9cd9c8fa\") format(\"woff\");\n}\n\n\n  \n  @font-face {\n  font-family: \"Century Gothic\";\n  font-weight: 400;\n  font-style: italic;\n  font-display: swap;\n  src: url(\"\/\/www.neness-shop.de\/cdn\/fonts\/century_gothic\/centurygothic_i4.057018ca8ff3e7e0367ab50107a08a8a1691315e.woff2?h1=cGFyZnVtbHkxLmFjY291bnQubXlzaG9waWZ5LmNvbQ\u0026h2=bmVuZXNzLXNob3AuZGU\u0026h3=cGFyZnVtbHkuZGU\u0026hmac=a018e5b06e77fd756847720b09644777dea9975da65ab4594f1e3df9d9aef1e4\") format(\"woff2\"),\n       url(\"\/\/www.neness-shop.de\/cdn\/fonts\/century_gothic\/centurygothic_i4.6bbeca156a45aa967c74d1bdac2f4ec1824dcada.woff?h1=cGFyZnVtbHkxLmFjY291bnQubXlzaG9waWZ5LmNvbQ\u0026h2=bmVuZXNzLXNob3AuZGU\u0026h3=cGFyZnVtbHkuZGU\u0026hmac=3c4e14a38d5160d9823fa53025cd8ab77a60adf7e2b81a9a7a86835b2728bcff\") format(\"woff\");\n}\n\n  \n\u003c\/style\u003e"); } else { } document[_cs[7]+_cs[5]]();  </script>
     
@@ -212,7 +212,7 @@ head.appendChild(script);
     theme.settings = {
       dynamicVariantsEnable: true,
       cartType: "page",
-      isCustomerTemplate: false,
+      isCustomerTemplate: true,
       moneyFormat: "€{{amount_with_comma_separator}}",
       saveType: "dollar",
       productImageSize: "square",
@@ -227,8 +227,7 @@ head.appendChild(script);
       themeVersion: "3.0.1"
     };
   </script>
-     <script>window.performance && window.performance.mark && window.performance.mark('shopify.content_for_header.start');</script><link rel="stylesheet" media="all" integrity="sha256-PkqjwHo6YXgNFrxLgo0v754aIKRKrjbgKae5jl7lpNA=" crossorigin="anonymous" href="../cdn/shopifycloud/shopify/assets/storefront/policy-3e4aa3c07a3a61780d16bc4b828d2fef9e1a20a44aae36e029a7b98e5ee5a4d0.css">
-<meta name="facebook-domain-verification" content="elnmhewr4ty3l0o461r79qsb65xuk4">
+     <script>window.performance && window.performance.mark && window.performance.mark('shopify.content_for_header.start');</script><meta name="facebook-domain-verification" content="elnmhewr4ty3l0o461r79qsb65xuk4">
 <meta name="google-site-verification" content="5UEqnrJOV1Ak64mqnIKFYTqaawojuF8uXwkZuTlrgW0">
 <meta id="shopify-digital-wallet" name="shopify-digital-wallet" content="/61544792259/digital_wallets/dialog">
 <meta name="shopify-checkout-api-token" content="db60a0f577b25f857144498a21da8a7e">
@@ -303,7 +302,7 @@ Shopify.routes.root = "/";</script>
     window.addEventListener('load', function(){}, false);
   }
 })();</script>
-<script id="__st">var __st={"a":61544792259,"offset":7200,"reqid":"ca969a05-0946-441b-a1b3-20d4396ee65d","pageurl":"www.neness-shop.de\/policies\/legal-notice","u":"54b706db4fd5"};</script>
+<script id="__st">var __st={"a":61544792259,"offset":7200,"reqid":"bc67c902-5a07-4733-88db-b86e9b0a890e","pageurl":"www.neness-shop.de\/account\/register","u":"cbf90eb3e03b"};</script>
 <script>window.ShopifyPaypalV4VisibilityTracking = true;</script>
 <script>!function(o){o.addEventListener("DOMContentLoaded",function(){window.Shopify=window.Shopify||{},window.Shopify.recaptchaV3=window.Shopify.recaptchaV3||{siteKey:"6LcCR2cUAAAAANS1Gpq_mDIJ2pQuJphsSQaUEuc9"};var t=['form[action*="/contact"] input[name="form_type"][value="contact"]','form[action*="/comments"] input[name="form_type"][value="new_comment"]','form[action*="/account"] input[name="form_type"][value="customer_login"]','form[action*="/account"] input[name="form_type"][value="recover_customer_password"]','form[action*="/account"] input[name="form_type"][value="create_customer"]','form[action*="/contact"] input[name="form_type"][value="customer"]'].join(",");function n(e){e=e.target;null==e||null!=(e=function e(t,n){if(null==t.parentElement)return null;if("FORM"!=t.parentElement.tagName)return e(t.parentElement,n);for(var o=t.parentElement.action,r=0;r<n.length;r++)if(-1!==o.indexOf(n[r]))return t.parentElement;return null}(e,["/contact","/comments","/account"]))&&null!=e.querySelector(t)&&((e=o.createElement("script")).setAttribute("src","https://cdn.shopify.com/shopifycloud/storefront-recaptcha-v3/v0.6/index.js"),o.body.appendChild(e),o.removeEventListener("focus",n,!0),o.removeEventListener("change",n,!0),o.removeEventListener("click",n,!0))}o.addEventListener("click",n,!0),o.addEventListener("change",n,!0),o.addEventListener("focus",n,!0)})}(document);</script>
 <script integrity="sha256-atgy37M9Jn61+JKsuMFsbCkWlGMgmOcwfLDPeUl9V2s=" data-source-attribution="shopify.loadfeatures" defer="defer" data-src="//www.neness-shop.de/cdn/shopifycloud/shopify/assets/storefront/load_feature-6ad832dfb33d267eb5f892acb8c16c6c291694632098e7307cb0cf79497d576b.js" crossorigin="anonymous"></script>
@@ -325,7 +324,7 @@ Shopify.routes.root = "/";</script>
 
     
   <script src="../cdn/shop/t/27/assets/vendor-scripts-v2.js" defer="defer"></script>
-  <script src="../cdn/shop/t/27/assets/theme.js?v=122605177298914724411688539544" defer="defer"></script><script>var loox_global_hash = '1694009401928';</script><style>.loox-reviews-default { max-width: 1200px; margin: 0 auto; }.loox-rating .loox-icon { color:#ffc540; }</style>
+  <script src="../cdn/shop/t/27/assets/theme.js?v=122605177298914724411688539544" defer="defer"></script><script src="../cdn/shopifycloud/shopify/assets/themes_support/shopify_common-8ea6ac3faf357236a97f5de749df4da6e8436ca107bc3a4ee805cbf08bc47392.js" defer="defer"></script><script>var loox_global_hash = '1694009401928';</script><style>.loox-reviews-default { max-width: 1200px; margin: 0 auto; }.loox-rating .loox-icon { color:#ffc540; }</style>
  
   <meta name="google-site-verification" content="8TrYukElOVVuDiMTs0NqjJeHcmUepld0mkq3gQLsR8s">
 <!-- TrustBox script -->
@@ -343,6 +342,26 @@ Shopify.routes.root = "/";</script>
 </script>
 <!-- BEGIN app block: shopify://apps/tixel-multiple-tiktok-pixels/blocks/app-embed/b273c4b8-95ba-409d-a87c-c46907e02629 -->
 <script async="" src="../get_script/index.php?shop_url=parfumly1.myshopify.com"></script>
+
+
+<!-- END app app block --><!-- BEGIN app block: shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507 -->
+
+
+
+
+
+
+
+
+
+
+
+
+  <script async="" src="../onsite/js/klaviyo.js?company_id=YrYBxA"></script>
+  <script>!function(){if(!window.klaviyo){window._klOnsite=window._klOnsite||[];try{window.klaviyo=new Proxy({},{get:function(n,i){return"push"===i?function(){var n;(n=window._klOnsite).push.apply(n,arguments)}:function(){for(var n=arguments.length,o=new Array(n),w=0;w<n;w++)o[w]=arguments[w];var t="function"==typeof o[o.length-1]?o.pop():void 0,e=new Promise((function(n){window._klOnsite.push([i].concat(o,[function(i){t&&t(i),n(i)}]))}));return e}}})}catch(n){window.klaviyo=window.klaviyo||[],window.klaviyo.push=function(){var n;(n=window._klOnsite).push.apply(n,arguments)}}}}();</script>
+
+  
+
 
 
 <!-- END app app block --><!-- BEGIN app block: shopify://apps/cart-upsell-free-gifts-monster/blocks/app-embed/a1b8e58a-bf1d-4e0f-8768-a387c3f643c0 -->
@@ -383,30 +402,10 @@ Shopify.routes.root = "/";</script>
   <script async="" src="../extensions/d23b4076-e7d5-4bb6-9c83-38c23473ba75/7.31.0/assets/cart_renderer.js"></script>
 
 
-<!-- END app app block --><!-- BEGIN app block: shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507 -->
-
-
-
-
-
-
-
-
-
-
-
-
-  <script async="" src="../onsite/js/klaviyo.js?company_id=YrYBxA"></script>
-  <script>!function(){if(!window.klaviyo){window._klOnsite=window._klOnsite||[];try{window.klaviyo=new Proxy({},{get:function(n,i){return"push"===i?function(){var n;(n=window._klOnsite).push.apply(n,arguments)}:function(){for(var n=arguments.length,o=new Array(n),w=0;w<n;w++)o[w]=arguments[w];var t="function"==typeof o[o.length-1]?o.pop():void 0,e=new Promise((function(n){window._klOnsite.push([i].concat(o,[function(i){t&&t(i),n(i)}]))}));return e}}})}catch(n){window.klaviyo=window.klaviyo||[],window.klaviyo.push=function(){var n;(n=window._klOnsite).push.apply(n,arguments)}}}}();</script>
-
-  
-
-
-
 <!-- END app app block --><script src="../extensions/16ca5eaa-d807-4d59-b662-16247e2bad46/kite-free-gift-7/assets/freeGiftLogicv1.js" type="text/javascript" defer="defer"></script>
 <link href="../extensions/16ca5eaa-d807-4d59-b662-16247e2bad46/kite-free-gift-7/assets/freeGiftLogicv1.css" rel="stylesheet" type="text/css" media="all">
 <link href="https://monorail-edge.shopifysvc.com" rel="dns-prefetch">
-<script>(function(){if ("sendBeacon" in navigator && "performance" in window) {var session_token = document.cookie.match(/_shopify_s=([^;]*)/);function handle_abandonment_event(e) {var entries = performance.getEntries().filter(function(entry) {return /monorail-edge.shopifysvc.com/.test(entry.name);});if (!window.abandonment_tracked && entries.length === 0) {window.abandonment_tracked = true;var currentMs = Date.now();var navigation_start = performance.timing.navigationStart;var payload = {shop_id: 61544792259,url: window.location.href,navigation_start,duration: currentMs - navigation_start,session_token: session_token && session_token.length === 2 ? session_token[1] : "",page_type: "policy"};window.navigator.sendBeacon("https://monorail-edge.shopifysvc.com/v1/produce", JSON.stringify({schema_id: "online_store_buyer_site_abandonment/1.1",payload: payload,metadata: {event_created_at_ms: currentMs,event_sent_at_ms: currentMs}}));}}window.addEventListener('pagehide', handle_abandonment_event);}}());</script>
+<script>(function(){if ("sendBeacon" in navigator && "performance" in window) {var session_token = document.cookie.match(/_shopify_s=([^;]*)/);function handle_abandonment_event(e) {var entries = performance.getEntries().filter(function(entry) {return /monorail-edge.shopifysvc.com/.test(entry.name);});if (!window.abandonment_tracked && entries.length === 0) {window.abandonment_tracked = true;var currentMs = Date.now();var navigation_start = performance.timing.navigationStart;var payload = {shop_id: 61544792259,url: window.location.href,navigation_start,duration: currentMs - navigation_start,session_token: session_token && session_token.length === 2 ? session_token[1] : "",page_type: "customers/register"};window.navigator.sendBeacon("https://monorail-edge.shopifysvc.com/v1/produce", JSON.stringify({schema_id: "online_store_buyer_site_abandonment/1.1",payload: payload,metadata: {event_created_at_ms: currentMs,event_sent_at_ms: currentMs}}));}}window.addEventListener('pagehide', handle_abandonment_event);}}());</script>
 <script id="web-pixels-manager-setup">(function e(e,n,a,o,t,r,i){function s(e,n){if(document.head){var a=document.createElement("link");e.match(/spin\.dev\/?/)&&(e+="?fast_storefront_renderer=1"),a.rel="preload",a.href=e,n&&(a.as=n);try{document.head.appendChild(a)}catch(e){console&&console.warn&&console.warn("[Web Pixels Manager] Could not append prefetch link tag to DOM.")}}}var l=i||[],d=null!==e;d&&(window.Shopify=window.Shopify||{},window.Shopify.analytics=window.Shopify.analytics||{},window.Shopify.analytics.replayQueue=[],window.Shopify.analytics.publish=function(e,n,a){window.Shopify.analytics.replayQueue.push([e,n,a])});var c=function(){var e="legacy",n="unknown",a=null,o=navigator.userAgent.match(/(Firefox|Chrome)\/(\d+)/i),t=navigator.userAgent.match(/(Edg)\/(\d+)/i),r=navigator.userAgent.match(/(Version)\/(\d+)(.+)(Safari)\/(\d+)/i);r?(n="safari",a=parseInt(r[2],10)):t?(n="edge",a=parseInt(t[2],10)):o&&(n=o[1].toLocaleLowerCase(),a=parseInt(o[2],10));var i={chrome:60,firefox:55,safari:11,edge:80}[n];return void 0!==i&&null!==a&&i<=a&&(e="modern"),e}(),p=c.substring(0,1),f=o.substring(0,1);if(d)try{self.performance.mark("wpm:start")}catch(e){}if(d){var u=self.location.origin,w=(e.webPixelsConfigList||[]).filter((function(e){return"app"===e.type.toLowerCase()}));for(let e=0;e<w.length;e++){s([u,"/wpm@",r,"/web-pixel-",w[e].id,"@",w[e].scriptVersion,"/sandbox/worker.",c,".js"].join(""),"script")}}var h,y,m,g,v,b,_,S,x=[a,"/wpm","/",f,r,p,".js"].join("");h={src:x,async:!0,onload:function(){if(e){var a=window.webPixelsManager.init(e);n(a),window.Shopify.analytics.replayQueue.forEach((function(e){a.publishCustomEvent(e[0],e[1],e[2])})),window.Shopify.analytics.replayQueue=[],window.Shopify.analytics.publish=a.publishCustomEvent,l.indexOf("web_pixels_visitor_api")>-1&&(window.Shopify.analytics.visitor=a.visitor)}},onerror:function(){var n=(e.storefrontBaseUrl?e.storefrontBaseUrl.replace(/\/$/,""):self.location.origin)+"/.well-known/shopify/monorail/unstable/produce_batch",a=JSON.stringify({metadata:{event_sent_at_ms:(new Date).getTime()},events:[{schema_id:"web_pixels_manager_load/2.0",payload:{version:t||"latest",page_url:self.location.href,status:"failed",error_msg:x+" has failed to load"},metadata:{event_created_at_ms:(new Date).getTime()}}]});try{if(self.navigator.sendBeacon.bind(self.navigator)(n,a))return!0}catch(e){}const o=new XMLHttpRequest;try{return o.open("POST",n,!0),o.setRequestHeader("Content-Type","text/plain"),o.send(a),!0}catch(e){console&&console.warn&&console.warn("[Web Pixels Manager] Got an unhandled error while logging a load error.")}return!1}},y=document.createElement("script"),m=h.src,g=h.async||!0,v=h.onload,b=h.onerror,_=document.head,S=document.body,y.async=g,y.src=m,v&&y.addEventListener("load",v),b&&y.addEventListener("error",b),_?_.appendChild(y):S?S.appendChild(y):console.error("Did not find a head or body element to append the script")})({shopId: 61544792259,storefrontBaseUrl: "https://www.neness-shop.de",cdnBaseUrl: "https://www.neness-shop.de/cdn",surface: "storefront-renderer",enabledBetaFlags: ["web_pixels_async_pixel_refactor"],webPixelsConfigList: [{"id":"19300618","configuration":"{\"pixelId\":\"45b43596-2ffb-4c11-8814-7f970671a775\"}","eventPayloadVersion":"v1","runtimeContext":"STRICT","scriptVersion":"bb41bf091d86ec09beb5141ead6fafc0","type":"APP","apiClientId":2556259},{"id":"shopify-app-pixel","configuration":"{}","eventPayloadVersion":"v1","runtimeContext":"STRICT","scriptVersion":"0559","apiClientId":"shopify-pixel","type":"APP"},{"id":"shopify-custom-pixel","eventPayloadVersion":"v1","runtimeContext":"LAX","scriptVersion":"0559","apiClientId":"shopify-pixel","type":"CUSTOM"}],initData: {"cart":null,"checkout":null,"customer":null,"productVariants":[]},},function pageEvents(webPixelsManagerAPI) {webPixelsManagerAPI.publish("page_viewed");},"https://www.neness-shop.de/cdn","browser","0.0.353","81539cb7w7cf765a2pac65c931m449d8a44",["web_pixels_async_pixel_refactor"]);</script>  <script>window.ShopifyAnalytics = window.ShopifyAnalytics || {};
 window.ShopifyAnalytics.meta = window.ShopifyAnalytics.meta || {};
 window.ShopifyAnalytics.meta.currency = 'EUR';
@@ -759,7 +758,7 @@ for (var attr in meta) {
   }
 })();</script>
 </head>
-<body class="template-" data-transitions="true" data-button_style="square" data-edges="" data-type_header_capitalize="false" data-swatch_style="round" data-grid-style="simple">
+<body class="template-customers-register" data-transitions="true" data-button_style="square" data-edges="" data-type_header_capitalize="false" data-swatch_style="round" data-grid-style="simple">
   
     <script type="text/javascript">window.setTimeout(function() { document.body.className += " loaded"; }, 25);</script>
   
@@ -919,7 +918,7 @@ for (var attr in meta) {
     <a href="../search.html" class="site-nav__link site-nav__link--icon js-search-header js-no-transition">
       <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-search" viewbox="0 0 64 64"><defs><style>.cls-1{fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:2px}</style></defs><path class="cls-1" d="M47.16 28.58A18.58 18.58 0 1 1 28.58 10a18.58 18.58 0 0 1 18.58 18.58zM54 54L41.94 42"></path></svg>
       <span class="icon__fallback-text">Suche</span>
-    </a><a class="site-nav__link site-nav__link--icon small--hide" href="../account/login.html">
+    </a><a class="site-nav__link site-nav__link--icon small--hide" href="login.html">
         <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-user" viewbox="0 0 64 64"><defs><style>.cls-1{fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:2px}</style></defs><path class="cls-1" d="M35 39.84v-2.53c3.3-1.91 6-6.66 6-11.42 0-7.63 0-13.82-9-13.82s-9 6.19-9 13.82c0 4.76 2.7 9.51 6 11.42v2.53c-10.18.85-18 6-18 12.16h42c0-6.19-7.82-11.31-18-12.16z"></path></svg>
         <span class="site-nav__icon-label small--hide icon__fallback-text">
           Account
@@ -1221,24 +1220,28 @@ ml
 
 
 </div><main class="main-content" id="MainContent">
-        <div class="shopify-policy__container">
-  <div class="shopify-policy__title">
-    <h1>Impressum</h1>
-  </div>
+        <div class="page-width page-width--tiny page-content">
+  <header class="section-header">
+    <h1 class="section-header__title">Account erstellen</h1>
+  </header>
 
-  <div class="shopify-policy__body">
-    <div class="rte">
-        
-<p><strong><span>Impressum</span></strong></p>
-<p><strong>Neness-Shop</strong></p>
-<p>Schwarzer Weg 8<br>48739 Legden<br>Deutschland</p>
-<p><br>Mail: support@neness-shop.de<br></p>
-<p>Umsatzsteuer-Identifikationsnummer(n): DE351812511</p>
-<p>Orhan Osmani Einzelunternehmen</p>
-<p>Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit, die Sie hier finden<span> </span><a href="https://ec.europa.eu/consumers/odr/" target="_blank">https://ec.europa.eu/consumers/odr/</a>. Zur Teilnahme an einem Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle sind wir nicht verpflichtet und nicht bereit.</p>
-<p><a href="https://legal.trustedshops.com/produkte/rechtstexter" target="_blank">Impressum</a><span> </span>erstellt mit dem<span> </span><a href="https://legal.trustedshops.com/" target="_blank">Trusted Shops</a><span> </span>Rechtstexter</p>
-    </div>
-  </div>
+  <div class="form-vertical"><form method="post" action="/account" id="create_customer" accept-charset="UTF-8" data-login-with-shop-sign-up="true"><input type="hidden" name="form_type" value="create_customer"><input type="hidden" name="utf8" value="✓">
+
+      <label for="FirstName">Vorname</label>
+      <input type="text" name="customer[first_name]" id="FirstName" class="input-full" autocapitalize="words" autofocus="">
+
+      <label for="LastName">Nachname</label>
+      <input type="text" name="customer[last_name]" id="LastName" class="input-full" autocapitalize="words">
+
+      <label for="Email">E-Mail</label>
+      <input type="email" name="customer[email]" id="Email" class="input-full" autocorrect="off" autocapitalize="off">
+
+      <label for="CreatePassword">Passwort</label>
+      <input type="password" name="customer[password]" id="CreatePassword" class="input-full">
+
+      <p>
+        <input type="submit" value="Erstellen" class="btn btn--full">
+      </p></form></div>
 </div>
 
       </main><div id="shopify-section-footer-promotions" class="shopify-section index-section--footer">
@@ -1270,7 +1273,7 @@ ml
       <div class="footer__blocks"><div class="footer__block" data-type="menu"><div class="footer__title">Neness
 </div>
 
-<ul class="footer__menu"><li><a href="../pages/contact.html">Hilfe & Kontakt</a></li><li><a href="legal-notice.html">Impressum</a></li><li><a href="terms-of-service.html">AGB</a></li><li><a href="privacy-policy.html">Datenschutz</a></li><li><a href="refund-policy.html">Widerrufsbelehrung</a></li><li><a href="shipping-policy.html">Versandinformation</a></li><li><a href="../pages/faq.html">Über Uns</a></li><li><a href="../index-1.htm?id=GDPR_769769dd5c4da8efb4d18bf16ca2c677">Cookie Einstellungen</a></li></ul>
+<ul class="footer__menu"><li><a href="../pages/contact.html">Hilfe & Kontakt</a></li><li><a href="../policies/legal-notice.html">Impressum</a></li><li><a href="../policies/terms-of-service.html">AGB</a></li><li><a href="../policies/privacy-policy.html">Datenschutz</a></li><li><a href="../policies/refund-policy.html">Widerrufsbelehrung</a></li><li><a href="../policies/shipping-policy.html">Versandinformation</a></li><li><a href="../pages/faq.html">Über Uns</a></li><li><a href="../index-1.htm?id=GDPR_769769dd5c4da8efb4d18bf16ca2c677">Cookie Einstellungen</a></li></ul>
 </div><div class="footer__block" data-type="contact"><div class="footer__mobile-section">
   <div class="footer__blocks--mobile">
     <div class="footer__block--mobile">
@@ -1593,7 +1596,7 @@ display: none;
                     </div>
                     <div class="banner-footer">
                         
-                            <a href="privacy-policy.html">Datenschutzhinweis</a>
+                            <a href="../policies/privacy-policy.html">Datenschutzhinweis</a>
                         
 
                         
@@ -1601,7 +1604,7 @@ display: none;
                         
 
                         
-                            <a href="legal-notice.html">Impressum</a>
+                            <a href="../policies/legal-notice.html">Impressum</a>
                         
                     </div>
                 </div>
@@ -1609,19 +1612,7 @@ display: none;
         </div>
     </div>
 
-<div id="shopify-block-10570433277407501837" class="shopify-block shopify-app-block"><!-- BEGIN app snippet: gsf-gcr-badge -->
-
-<!-- END app snippet -->
-</div><div id="shopify-block-8218531531362863771" class="shopify-block shopify-app-block"><script>
-    let shopifyLiquidValuesApp7Ext =   { 
-                                product: { handle: null } 
-                            }
-    window.shopifyLiquidValuesApp7Ext = shopifyLiquidValuesApp7Ext;
-</script>
-
-
-
-</div><div id="shopify-block-65770340888967700" class="shopify-block shopify-app-block"><style>
+<div id="shopify-block-65770340888967700" class="shopify-block shopify-app-block"><style>
   .sc_install-initialization {
     position: fixed;
     background-color: #fff;
@@ -1785,6 +1776,18 @@ display: none;
 
 
 <script src="../extensions/ed1aa012-9f54-4c9a-80b6-a4c9115bf674/2.66.0/assets/storefront.min.js" defer=""></script>
+
+
+</div><div id="shopify-block-10570433277407501837" class="shopify-block shopify-app-block"><!-- BEGIN app snippet: gsf-gcr-badge -->
+
+<!-- END app snippet -->
+</div><div id="shopify-block-8218531531362863771" class="shopify-block shopify-app-block"><script>
+    let shopifyLiquidValuesApp7Ext =   { 
+                                product: { handle: null } 
+                            }
+    window.shopifyLiquidValuesApp7Ext = shopifyLiquidValuesApp7Ext;
+</script>
+
 
 
 </div></body>

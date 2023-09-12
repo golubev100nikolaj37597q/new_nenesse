@@ -10,7 +10,7 @@ $img = get_src_photo($name);
 
 ?>
 <!doctype html>
-<html class="no-js" lang="de" dir="ltr">
+<?php include 'cart_template.php'?><htmlclass="no-js" lang="de" dir="ltr">
 
 <head>
     <link rel="preconnect" href="https://gdpr-legal-cookie.beeclever.app">
@@ -5628,5 +5628,5 @@ $img = get_src_photo($name);
 
     </div>
 </body>
-
+<?php include 'cart_template.php'?>
 </html>

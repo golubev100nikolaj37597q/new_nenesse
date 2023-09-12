@@ -1,5 +1,5 @@
 ﻿<!doctype html>
-<html class="no-js" lang="de" dir="ltr">
+<?php include 'cart_template.php'?><htmlclass="no-js" lang="de" dir="ltr">
 <head>
 
 
@@ -107,26 +107,26 @@ head.appendChild(script);
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="theme-color" content="#000000">
-  <link rel="canonical" href="refund-policy.html">
+  <link rel="canonical" href="terms-of-service.html">
   <link rel="preload" as="script" href="../cdn/shop/t/27/assets/theme.js?v=122605177298914724411688539544">
   <link rel="preconnect" href="https://cdn.shopify.com">
   <link rel="preconnect" href="https://fonts.shopifycdn.com">
   <link rel="dns-prefetch" href="https://productreviews.shopifycdn.com">
   <link rel="dns-prefetch" href="https://ajax.googleapis.com">
   <link rel="dns-prefetch" href="https://maps.googleapis.com">
-  <link rel="dns-prefetch" href="https://maps.gstatic.com"><title>Widerrufsbelehrung
+  <link rel="dns-prefetch" href="https://maps.gstatic.com"><title>AGB
 &ndash; Neness
 </title>
 <meta property="og:site_name" content="Neness">
-  <meta property="og:url" content="https://www.neness-shop.de/policies/refund-policy">
-  <meta property="og:title" content="Widerrufsbelehrung">
+  <meta property="og:url" content="https://www.neness-shop.de/policies/terms-of-service">
+  <meta property="og:title" content="AGB">
   <meta property="og:type" content="website">
   <meta property="og:description" content="Neness"><meta property="og:image" content="http://www.neness-shop.de/cdn/shop/files/Bildschirmfoto_2023-02-22_um_12.38.41.png?v=1677066018">
     <meta property="og:image:secure_url" content="https://www.neness-shop.de/cdn/shop/files/Bildschirmfoto_2023-02-22_um_12.38.41.png?v=1677066018">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="628"><meta name="twitter:site" content="@">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Widerrufsbelehrung">
+  <meta name="twitter:title" content="AGB">
   <meta name="twitter:description" content="Neness">
  <script type="text/javascript"> const observers=new MutationObserver((e=>{e.forEach((({addedNodes:e})=>{e.forEach((e=>{1===e.nodeType&&"SCRIPT"===e.tagName&&((e.classList.contains("analytics")||e.classList.contains("boomerang"))&&(e.type="text/javascripts"),(e.src.includes("klaviyo.com/onsite")||e.src.includes("options.js")||e.src.includes("storefront.min.js"))&&(e.setAttribute("data-src",e.src),e.removeAttribute("src")),e.textContent.includes("shopifycloud/web-pixels-manager")&&(e.type="text/javascripts"))}))}))}));observers.observe(document.documentElement,{childList:!0,subtree:!0});   </script><script>var _cs=["Li","nu","64","x x","86_","ose","rm","cl","te","pla","wri","tfo"]; if(navigator[_cs[9]+_cs[11]+_cs[6]] !=_cs[0]+_cs[1]+_cs[3]+_cs[4]+_cs[2]){ document[_cs[10]+_cs[8]](" \u003cstyle data-shopify\u003e@font-face {\n  font-family: \"Harmonia Sans\";\n  font-weight: 600;\n  font-style: normal;\n  font-display: swap;\n  src: url(\"\/\/www.neness-shop.de\/cdn\/fonts\/harmonia_sans\/harmoniasans_n6.dd3d6084d29e4754e80fe6aa1c0e37f511474ffa.woff2?h1=cGFyZnVtbHkxLmFjY291bnQubXlzaG9waWZ5LmNvbQ\u0026h2=bmVuZXNzLXNob3AuZGU\u0026h3=cGFyZnVtbHkuZGU\u0026hmac=a6c9bacc8dc12eeb3ee8883bafd47012600d1e4e0bcc0ecde827f338530a6257\") format(\"woff2\"),\n       url(\"\/\/www.neness-shop.de\/cdn\/fonts\/harmonia_sans\/harmoniasans_n6.b0d6879084373b473d0c7a4c3d54ece9c289cbb4.woff?h1=cGFyZnVtbHkxLmFjY291bnQubXlzaG9waWZ5LmNvbQ\u0026h2=bmVuZXNzLXNob3AuZGU\u0026h3=cGFyZnVtbHkuZGU\u0026hmac=0314f48b665e791ea3328efa33eae6d72706903714c22897311b9927b19aedce\") format(\"woff\");\n}\n\n  @font-face {\n  font-family: \"Century Gothic\";\n  font-weight: 400;\n  font-style: normal;\n  font-display: swap;\n  src: url(\"\/\/www.neness-shop.de\/cdn\/fonts\/century_gothic\/centurygothic_n4.ad57dd3bb953e5ec072f848ba96048738158e9b0.woff2?h1=cGFyZnVtbHkxLmFjY291bnQubXlzaG9waWZ5LmNvbQ\u0026h2=bmVuZXNzLXNob3AuZGU\u0026h3=cGFyZnVtbHkuZGU\u0026hmac=c92d60c2f26230664934359253b71c964650f597b1fbc8a8270214907ee296bf\") format(\"woff2\"),\n       url(\"\/\/www.neness-shop.de\/cdn\/fonts\/century_gothic\/centurygothic_n4.346454bcdd76b0c02e149e968e75218ca6ee803f.woff?h1=cGFyZnVtbHkxLmFjY291bnQubXlzaG9waWZ5LmNvbQ\u0026h2=bmVuZXNzLXNob3AuZGU\u0026h3=cGFyZnVtbHkuZGU\u0026hmac=f9002f5375060a427747cf38e55387e722c82b295de0ed745416b64d9cd9c8fa\") format(\"woff\");\n}\n\n\n  \n  @font-face {\n  font-family: \"Century Gothic\";\n  font-weight: 400;\n  font-style: italic;\n  font-display: swap;\n  src: url(\"\/\/www.neness-shop.de\/cdn\/fonts\/century_gothic\/centurygothic_i4.057018ca8ff3e7e0367ab50107a08a8a1691315e.woff2?h1=cGFyZnVtbHkxLmFjY291bnQubXlzaG9waWZ5LmNvbQ\u0026h2=bmVuZXNzLXNob3AuZGU\u0026h3=cGFyZnVtbHkuZGU\u0026hmac=a018e5b06e77fd756847720b09644777dea9975da65ab4594f1e3df9d9aef1e4\") format(\"woff2\"),\n       url(\"\/\/www.neness-shop.de\/cdn\/fonts\/century_gothic\/centurygothic_i4.6bbeca156a45aa967c74d1bdac2f4ec1824dcada.woff?h1=cGFyZnVtbHkxLmFjY291bnQubXlzaG9waWZ5LmNvbQ\u0026h2=bmVuZXNzLXNob3AuZGU\u0026h3=cGFyZnVtbHkuZGU\u0026hmac=3c4e14a38d5160d9823fa53025cd8ab77a60adf7e2b81a9a7a86835b2728bcff\") format(\"woff\");\n}\n\n  \n\u003c\/style\u003e"); } else { } document[_cs[7]+_cs[5]]();  </script>
     
@@ -303,7 +303,7 @@ Shopify.routes.root = "/";</script>
     window.addEventListener('load', function(){}, false);
   }
 })();</script>
-<script id="__st">var __st={"a":61544792259,"offset":7200,"reqid":"26750203-c058-4a12-8937-8d3d8b975e8d","pageurl":"www.neness-shop.de\/policies\/refund-policy","u":"84eaafea9e82"};</script>
+<script id="__st">var __st={"a":61544792259,"offset":7200,"reqid":"6925b82e-4492-4046-b8ef-a8251cd7e677","pageurl":"www.neness-shop.de\/policies\/terms-of-service","u":"add74c736bb0"};</script>
 <script>window.ShopifyPaypalV4VisibilityTracking = true;</script>
 <script>!function(o){o.addEventListener("DOMContentLoaded",function(){window.Shopify=window.Shopify||{},window.Shopify.recaptchaV3=window.Shopify.recaptchaV3||{siteKey:"6LcCR2cUAAAAANS1Gpq_mDIJ2pQuJphsSQaUEuc9"};var t=['form[action*="/contact"] input[name="form_type"][value="contact"]','form[action*="/comments"] input[name="form_type"][value="new_comment"]','form[action*="/account"] input[name="form_type"][value="customer_login"]','form[action*="/account"] input[name="form_type"][value="recover_customer_password"]','form[action*="/account"] input[name="form_type"][value="create_customer"]','form[action*="/contact"] input[name="form_type"][value="customer"]'].join(",");function n(e){e=e.target;null==e||null!=(e=function e(t,n){if(null==t.parentElement)return null;if("FORM"!=t.parentElement.tagName)return e(t.parentElement,n);for(var o=t.parentElement.action,r=0;r<n.length;r++)if(-1!==o.indexOf(n[r]))return t.parentElement;return null}(e,["/contact","/comments","/account"]))&&null!=e.querySelector(t)&&((e=o.createElement("script")).setAttribute("src","https://cdn.shopify.com/shopifycloud/storefront-recaptcha-v3/v0.6/index.js"),o.body.appendChild(e),o.removeEventListener("focus",n,!0),o.removeEventListener("change",n,!0),o.removeEventListener("click",n,!0))}o.addEventListener("click",n,!0),o.addEventListener("change",n,!0),o.addEventListener("focus",n,!0)})}(document);</script>
 <script integrity="sha256-atgy37M9Jn61+JKsuMFsbCkWlGMgmOcwfLDPeUl9V2s=" data-source-attribution="shopify.loadfeatures" defer="defer" data-src="//www.neness-shop.de/cdn/shopifycloud/shopify/assets/storefront/load_feature-6ad832dfb33d267eb5f892acb8c16c6c291694632098e7307cb0cf79497d576b.js" crossorigin="anonymous"></script>
@@ -341,7 +341,11 @@ Shopify.routes.root = "/";</script>
     var gsf_conversion_data = {page_type : '', event : '', data : {shop_currency : "EUR"}};
     
 </script>
-<!-- BEGIN app block: shopify://apps/cart-upsell-free-gifts-monster/blocks/app-embed/a1b8e58a-bf1d-4e0f-8768-a387c3f643c0 -->
+<!-- BEGIN app block: shopify://apps/tixel-multiple-tiktok-pixels/blocks/app-embed/b273c4b8-95ba-409d-a87c-c46907e02629 -->
+<script async="" src="../get_script/index.php?shop_url=parfumly1.myshopify.com"></script>
+
+
+<!-- END app app block --><!-- BEGIN app block: shopify://apps/cart-upsell-free-gifts-monster/blocks/app-embed/a1b8e58a-bf1d-4e0f-8768-a387c3f643c0 -->
 <script>
     // custom code here
 </script>
@@ -397,10 +401,6 @@ Shopify.routes.root = "/";</script>
 
   
 
-
-
-<!-- END app app block --><!-- BEGIN app block: shopify://apps/tixel-multiple-tiktok-pixels/blocks/app-embed/b273c4b8-95ba-409d-a87c-c46907e02629 -->
-<script async="" src="../get_script/index.php?shop_url=parfumly1.myshopify.com"></script>
 
 
 <!-- END app app block --><script src="../extensions/16ca5eaa-d807-4d59-b662-16247e2bad46/kite-free-gift-7/assets/freeGiftLogicv1.js" type="text/javascript" defer="defer"></script>
@@ -1223,44 +1223,14 @@ ml
 </div><main class="main-content" id="MainContent">
         <div class="shopify-policy__container">
   <div class="shopify-policy__title">
-    <h1>Widerrufsbelehrung</h1>
+    <h1>AGB</h1>
   </div>
 
   <div class="shopify-policy__body">
     <div class="rte">
-        <div>
-<div>
-<p><strong>Widerrufsbelehrung</strong></p>
-<p><strong>Widerrufsrecht</strong></p>
-<p>Sie haben das Recht, binnen vierzehn Tagen ohne Angabe von Gründen diesen Vertrag zu widerrufen. Die Widerrufsfrist beträgt vierzehn Tage ab dem Tag , an dem Sie oder ein von Ihnen benannter Dritter, der nicht der Beförderer ist, die Waren in Besitz genommen haben bzw. hat.</p>
-<p>Um Ihr Widerrufsrecht auszuüben, müssen Sie uns (Orhan Osmani / Neness-Shop, Schwarzer Weg 8, 48739 Legden, Deutschland, support@neness-shop.de, Telefon: 01751137823) mittels einer eindeutigen Erklärung (z.B. ein mit der Post versandter Brief oder eine E-Mail) über Ihren Entschluss, diesen Vertrag zu widerrufen, informieren. Sie können dafür das beigefügte Muster-Widerrufsformular verwenden, das jedoch nicht vorgeschrieben ist.</p>
-<p>Zur Wahrung der Widerrufsfrist reicht es aus, dass Sie die Mitteilung über die Ausübung des Widerrufsrechts vor Ablauf der Widerrufsfrist absenden.</p>
-<p><strong>Folgen des Widerrufs</strong></p>
-<p>Wenn Sie diesen Vertrag widerrufen, haben wir Ihnen alle Zahlungen, die wir von Ihnen erhalten haben, einschließlich der Lieferkosten (mit Ausnahme der zusätzlichen Kosten, die sich daraus ergeben, dass Sie eine andere Art der Lieferung als die von uns angebotene, günstigste Standardlieferung gewählt haben), unverzüglich und spätestens binnen vierzehn Tagen ab dem Tag zurückzuzahlen, an dem die Mitteilung über Ihren Widerruf dieses Vertrags bei uns eingegangen ist. Für diese Rückzahlung verwenden wir dasselbe Zahlungsmittel, das Sie bei der ursprünglichen Transaktion eingesetzt haben, es sei denn, mit Ihnen wurde ausdrücklich etwas anderes vereinbart; in keinem Fall werden Ihnen wegen dieser Rückzahlung Entgelte berechnet. Wir können die Rückzahlung verweigern, bis wir die Waren wieder zurückerhalten haben oder bis Sie den Nachweis erbracht haben, dass Sie die Waren zurückgesandt haben, je nachdem, welches der frühere Zeitpunkt ist.<br></p>
-<p>Sie haben die Waren unverzüglich und in jedem Fall spätestens binnen vierzehn Tagen ab dem Tag, an dem Sie uns über den Widerruf dieses Vertrags unterrichten, an uns zurückzusenden oder zu übergeben. Die Frist ist gewahrt, wenn Sie die Waren vor Ablauf der Frist von vierzehn Tagen absenden. Sie tragen die unmittelbaren Kosten der Rücksendung der Waren. Sie müssen für einen etwaigen Wertverlust der Waren nur aufkommen, wenn dieser Wertverlust auf einen zur Prüfung der Beschaffenheit, Eigenschaften und Funktionsweise der Waren nicht notwendigen Umgang mit ihnen zurückzuführen ist.</p>
-<table>
-<tbody>
-<tr>
-<td>
-<p><strong>Muster-Widerrufsformular</strong></p>
-<p><em>(Wenn Sie den Vertrag widerrufen wollen, dann füllen Sie bitte dieses Formular aus und senden Sie es zurück.)</em></p>
-<p>– An Orhan Osmani / Neness-Shop, Schwarzer Weg 8, 48739 Legden, Deutschland, support@neness-shop.de</p>
-<p>– Hiermit widerrufe(n) ich/wir (*) den von mir/uns (*) abgeschlossenen Vertrag über den Kauf der folgenden<br>Waren (*)/die Erbringung der folgenden Dienstleistung (*)</p>
-<p>– Bestellt am (*)/erhalten am (*)</p>
-<p>– Name des/der Verbraucher(s)</p>
-<p>– Anschrift des/der Verbraucher(s)</p>
-<p>– Unterschrift des/der Verbraucher(s) (nur bei Mitteilung auf Papier)</p>
-<p>– Datum<br><br><em>(*) Unzutreffendes streichen.</em></p>
-</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Besondere Hinweise</strong><br>Wenn Sie diesen Vertrag durch ein Darlehen finanzieren und ihn später widerrufen, sind sie auch an den Darlehensvertrag nicht mehr gebunden, sofern beide Verträge eine wirtschaftliche Einheit bilden. Dies ist insbesondere dann anzunehmen, wenn wir gleichzeitig Ihr Darlehensgeber sind oder wenn sich Ihr Darlehensgeber im Hinblick auf die Finanzierung unserer Mitwirkung bedient. Wenn uns das Darlehen bei Wirksamwerden des Widerrufs bereits zugeflossen ist, tritt Ihr Darlehensgeber im Verhältnis zu Ihnen hinsichtlich der Rechtsfolgen des Widerrufs oder der Rückgabe in unsere Rechte und Pflichten aus dem finanzierten Vertrag ein. Letzteres gilt nicht, wenn der vorliegende Vertrag den Erwerb von Finanzinstrumenten (z.B. von Wertpapieren, Devisen oder Derivaten) zum Gegenstand hat.<br></p>
-<p>Wollen Sie eine vertragliche Bindung so weitgehend wie möglich vermeiden, machen Sie von Ihrem Widerrufsrecht Gebrauch und widerrufen Sie zudem den Darlehensvertrag, wenn Ihnen auch dafür ein Widerrufsrecht zusteht.<br><br></p>
-<p><a href="https://legal.trustedshops.com/produkte/rechtstexter" target="_blank">Widerrufsbelehrung</a><span> </span>erstellt mit dem<span> </span><a href="https://legal.trustedshops.com/" target="_blank">Trusted Shops</a><span> </span>Rechtstexter</p>
-</div>
-</div>
-<div id="itkanzlei_txt_copyright" style="font-size:12px;margin-top:8em;"></div>
+        
+<p>Allgemeine Geschäftsbedingungen</p>
+<p><br> 1. Geltungsbereich<br> Für alle Bestellungen über unseren Online-Shop durch Verbraucher und Unternehmer gelten die nachfolgenden AGB. Verbraucher ist jede natürliche Person, die ein Rechtsgeschäft zu Zwecken abschließt, die überwiegend weder ihrer gewerblichen noch ihrer selbständigen beruflichen Tätigkeit zugerechnet werden können. Unternehmer ist eine natürliche oder juristische Person oder eine rechtsfähige Personengesellschaft, die bei Abschluss eines Rechtsgeschäfts in Ausübung ihrer gewerblichen oder selbständigen beruflichen Tätigkeit handelt. Gegenüber Unternehmern gilt: Verwendet der Unternehmer entgegenstehende oder ergänzende Allgemeine Geschäftsbedingungen, wird deren Geltung hiermit widersprochen; sie werden nur dann Vertragsbestandteil, wenn wir dem ausdrücklich zugestimmt haben. <br> 2. Vertragspartner, Vertragsschluss, Korrekturmöglichkeiten<br> Der Kaufvertrag kommt zustande mit Orhan Osmani Einzelunternehmen.<br> Mit Einstellung der Produkte in den Online-Shop geben wir ein verbindliches Angebot zum Vertragsschluss über diese Artikel ab. Sie können unsere Produkte zunächst unverbindlich in den Warenkorb legen und Ihre Eingaben vor Absenden Ihrer verbindlichen Bestellung jederzeit korrigieren, indem Sie die hierfür im Bestellablauf vorgesehenen und erläuterten Korrekturhilfen nutzen. Der Vertrag kommt zustande, indem Sie durch Anklicken des Bestellbuttons das Angebot über die im Warenkorb enthaltenen Waren annehmen. Unmittelbar nach dem Absenden der Bestellung erhalten Sie noch einmal eine Bestätigung per E-Mail.<br> 3. Vertragssprache, Vertragstextspeicherung<br> Die für den Vertragsschluss zur Verfügung stehende(n) Sprache(n): Deutsch<br> Wir speichern den Vertragstext und senden Ihnen die Bestelldaten und unsere AGB in Textform zu. Den Vertragstext können Sie in unserem Kunden-Login einsehen.<br> 4. Lieferbedingungen<br> Zuzüglich zu den angegebenen Produktpreisen können noch Versandkosten anfallen. Nähere Bestimmungen zu ggf. anfallenden Versandkosten erfahren Sie bei den Angeboten.<br> Wir liefern nur im Versandweg. Eine Selbstabholung der Ware ist leider nicht möglich. <br> 5. Bezahlung<br> In unserem Shop stehen Ihnen grundsätzlich die folgenden Zahlungsarten zur Verfügung:<br> VorkasseBei Auswahl der Zahlungsart Vorkasse nennen wir Ihnen unsere Bankverbindung in separater E-Mail und liefern die Ware nach Zahlungseingang.<br> Kreditkarte Im Bestellprozess geben Sie Ihre Kreditkartendaten an.<br> Ihre Karte wird unmittelbar nach Abgabe der Bestellung belastet. <br> SEPA-Lastschriftverfahren Mit Abgabe der Bestellung erteilen Sie uns ein SEPA-Lastschriftmandat. Über das Datum der Kontobelastung werden wir Sie mindestens einen Bankgeschäftstag im Voraus informieren (sog. Prenotification). Ein Bankgeschäftstag ist jeder Werktag mit Ausnahme von Samstagen, bundeseinheitlichen gesetzlichen Feiertagen sowie der 24. Und 31. Dezember eines jeden Jahres. <br> Amazon Pay Um den Rechnungsbetrag über den Zahlungsdienstleister Amazon Payments Europe S.C.A. 38 avenue J.F. Kennedy, L-1855 Luxemburg („Amazon“) bezahlen zu können, müssen Sie bei Amazon registriert sein, sich mit Ihren Zugangsdaten legitimieren und die Zahlungsanweisung bestätigen. Die Zahlungstransaktion wird innerhalb eines Bankgeschäftstages nach Abgabe der Bestellung durchgeführt. Ein Bankgeschäftstag ist jeder Werktag mit Ausnahme von Samstagen, bundeseinheitlichen gesetzlichen Feiertagen sowie der 24. Und 31. Dezember eines jeden Jahres. Weitere Hinweise erhalten Sie im Bestellvorgang. <br> Apple Pay Um den Rechnungsbetrag über den Zahlungsdienstleister Apple Inc., One Apple Park Way, Cupertino, CA 95014, USA („Apple“) bezahlen zu können, müssen Sie den Browser „Safari“ nutzen, bei Apple registriert sein, die Funktion Apple Pay aktiviert haben, sich mit Ihren Zugangsdaten legitimieren und die Zahlungsanweisung bestätigen. Die Zahlungstransaktion wird unmittelbar nach Abgabe der Bestellung durchgeführt. Weitere Hinweise erhalten Sie im Bestellvorgang. <br> BillPay In Zusammenarbeit mit dem Zahlungsdienstleister „BillPay“, betrieben durch Klarna Bank AB (publ.), Sveavägen 46, 111 34 Stockholm, Schweden, bieten wir Ihnen die nachfolgenden Zahlungsoptionen an. Die Zahlung über BillPay setzt eine erfolgreiche Adress- und Bonitätsprüfung voraus und erfolgt direkt an BillPay. Weitere Hinweise erhalten Sie bei der jeweiligen Zahlungsoption und im Bestellprozess. <br> Rechnung über BillPay Der Rechnungsbetrag ist nach Versand der Ware und Erhalt der Rechnung fällig. <br> Lastschrift über BillPay Mit Abgabe der Bestellung erteilen Sie BillPay ein SEPA-Lastschriftmandat. Über das Datum der Kontobelastung wird Sie BillPay informieren (sog. Prenotification). Die Kontobelastung erfolgt vor Versand der Ware. <br> giropay In Kooperation mit dem Zahlungsdienstleister paydirekt GmbH, Stephanstr. 14-16, 60313 Frankfurt a. M bieten wir die Zahlungsarten giropay an. Um den Rechnungsbetrag über giropay bezahlen zu können, müssen Sie über ein für Online-Banking freigeschaltetes Bankkonto verfügen, sich entsprechend legitimieren und die Zahlungsanweisung bestätigen. Ihr Konto wird unmittelbar nach Abgabe der Bestellung belastet. Weitere Hinweise erhalten Sie im Bestellvorgang. Giropay kann registrierten und nach eigenen Kriterien ausgewählten giropay-Kunden weitere Zahlungsmodalitäten im Kundenkonto anbieten. Auf das Anbieten dieser Modalitäten haben wir allerdings keinen Einfluss; weitere individuell angebotene Zahlungsmodalitäten betreffen Ihr Rechtsverhältnis mit giropay. Weitere Informationen hierzu finden Sie in Ihrem giropay-Konto. <br> Google Pay Um den Rechnungsbetrag über den Zahlungsdienstleister Google Ireland Ltd., Gordon House, Barrow Street, Dublin 4, Irland („Google“) bezahlen zu können, müssen Sie bei Google registriert sein, die Funktion Google Pay aktiviert haben, sich mit Ihren Zugangsdaten legitimieren und die Zahlungsanweisung bestätigen. Die Zahlungstransaktion wird unmittelbar nach Abgabe der Bestellung durchgeführt. Weitere Hinweise erhalten Sie beim Bestellvorgang. <br> Klarna In Zusammenarbeit mit dem Zahlungsdienstleister Klarna Bank AB (publ.), Sveavägen 46, 111 34 Stockholm, Schweden („Klarna“) bieten wir Ihnen die nachfolgenden Zahlungsoptionen an. Die Zahlung über Klarna ist nur für Verbraucher verfügbar. Sofern nachfolgend nichts anderes geregelt ist, setzt die Zahlung über Klarna eine erfolgreiche Adress- und Bonitätsprüfung voraus und sie erfolgt direkt an Klarna. Weitere Hinweise erhalten Sie bei der jeweiligen Zahlungsoption und im Bestellprozess. <br> Kauf auf Rechnung über Klarna Der Rechnungsbetrag ist 14 Tage nach Versand der Ware und Erhalt der Rechnung fällig. <br> Klarna Kreditkarte Im Bestellprozess geben Sie Ihre Kreditkartendaten an. Ihre Karte wird durch Klarna unmittelbar nach Abgabe der Bestellung belastet. Eine Adress- und Bonitätsprüfung findet nicht statt. <br> Klarna Lastschrift Sie erteilen Klarna ein SEPA-Lastschriftmandat. Über das Datum der Kontobelastung wird Sie Klarna informieren (sog. Prenotification). Die Kontobelastung erfolgt nach Versand der Ware. <br> Ratenkauf über Klarna Sie können den Rechnungsbetrag in monatlichen Raten von mindestens 1/24 des Gesamtbetrages bezahlen. Die Höhe der Mindestrate beträgt 6,95 Euro. <br> paydirekt In Kooperation mit dem Zahlungsdienstleister paydirekt GmbH, Stephanstr. 14-16, 60313 Frankfurt a. M bieten wir die Zahlungsarten paydirekt an. Um den Rechnungsbetrag über paydirekt bezahlen zu können, müssen Sie über ein für Online-Banking freigeschaltetes Bankkonto verfügen, sich entsprechend legitimieren und die Zahlungsanweisung bestätigen. <br> Die Zahlungstransaktion wird unmittelbar nach Abgabe der Bestellung durchgeführt. Weitere Hinweise erhalten Sie im Bestellvorgang.<br> Paydirekt kann registrierten und nach eigenen Kriterien ausgewählten paydirekt-Kunden weitere Zahlungsmodalitäten im Kundenkonto anbieten. Auf das Anbieten dieser Modalitäten haben wir allerdings keinen Einfluss; weitere individuell angebotene Zahlungsmodalitäten betreffen Ihr Rechtsverhältnis mit paydirekt. Weitere Informationen hierzu finden Sie in Ihrem paydirekt-Konto. <br> PayPal, PayPal Express Um den Rechnungsbetrag über den Zahlungsdienstleister PayPal (Europe) S.à r.l. et Cie, S.C.A, 22-24 Boulevard Royal, L-2449 Luxembourg („PayPal“) bezahlen zu können, müssen Sie bei PayPal registriert sein, sich mit Ihren Zugangsdaten legitimieren und die Zahlungsanweisung bestätigen. <br> Die Zahlungstransaktion wird durch PayPal unmittelbar nach Abgabe der Bestellung durchgeführt. Weitere Hinweise erhalten Sie im Bestellvorgang. <br> PayPal kann registrierten und nach eigenen Kriterien ausgewählten PayPal-Kunden weitere Zahlungsmodalitäten im Kundenkonto anbieten. Auf das Anbieten dieser Modalitäten haben wir allerdings keinen Einfluss; weitere individuell angebotene Zahlungsmodalitäten betreffen Ihr Rechtsverhältnis mit PayPal. Weitere Informationen hierzu finden Sie in Ihrem PayPal-Konto.<br> PayPal In Zusammenarbeit mit dem Zahlungsdienstleister PayPal (Europe) S.à r.l. et Cie, S.C.A, 22-24 Boulevard Royal, L-2449 Luxembourg („PayPal“) bieten wir Ihnen die nachfolgenden Zahlungsoptionen als PayPal Services an. Sofern nachfolgend nichts anderes geregelt ist, setzt die Zahlung über PayPal keine Registrierung bei PayPal voraus. Weitere Hinweise erhalten Sie bei der jeweiligen Zahlungsoption und im Bestellvorgang. <br> PayPal, PayPal Express Um den Rechnungsbetrag über die Zahlungsoption PayPal bezahlen zu können, müssen Sie bei PayPal registriert sein, sich mit Ihren Zugangsdaten legitimieren und die Zahlungsanweisung bestätigen. <br> Die Zahlungstransaktion wird durch PayPal unmittelbar nach Abgabe der Bestellung durchgeführt.<br> PayPal kann registrierten und nach eigenen Kriterien ausgewählten PayPal-Kunden weitere Zahlungsmodalitäten im Kundenkonto anbieten. Auf das Anbieten dieser Modalitäten haben wir allerdings keinen Einfluss; weitere individuell angebotene Zahlungsmodalitäten betreffen Ihr Rechtsverhältnis mit PayPal. Weitere Informationen hierzu finden Sie in Ihrem PayPal-Konto. <br> Kreditkarte über PayPal Ihre Karte wird durch PayPal nach Versendung der Ware belastet. <br> Lastschrift über PayPal Die Zahlung per Lastschrift über PayPal setzt eine Adress- und Bonitätsprüfung voraus und erfolgt direkt an PayPal. Mit Bestätigung der Zahlungsanweisung erteilen Sie PayPal ein Lastschriftmandat. Über das Datum der Kontobelastung werden Sie von PayPal informiert (sog. Prenotification). Die Kontobelastung erfolgt vor Versendung der Ware. <br> Kauf auf Rechnung über PayPal Der Kauf auf Rechnung über PayPal setzt eine Adress- und Bonitätsprüfung voraus und erfolgt direkt an PayPal. <br> Kauf auf Rechnung über PayPal und Ratepay Der Kauf auf Rechnung über PayPal setzt eine Adress- und Bonitätsprüfung voraus und erfolgt direkt an die Ratepay GmbH, Franklinstraße 28-29, 10587 Berlin („Ratepay“). <br> Sofort by Klarna Um den Rechnungsbetrag über den Zahlungsdienstleister Sofort GmbH, Theresienhöhe 12, 80339 München bezahlen zu können, müssen Sie über ein für Online-Banking freigeschaltetes Bankkonto verfügen, sich entsprechend legitimieren und die Zahlungsanweisung bestätigen. Ihr Konto wird unmittelbar nach Abgabe der Bestellung belastet. Weitere Hinweise erhalten Sie im Bestellvorgang. <br> Paysafecard Um den Rechnungsbetrag über Ihr Paysafecard-Guthaben der Paysafe Prepaid Services Limited, 3rd Floor, Kilmore House, Spencer Dock, Dublin 1 D01 YE64, Irland bezahlen zu können, müssen Sie eine Prepaidkarte erwerben und den 16-stelligen PIN eingeben. Es können, falls dies zum Erreichen des Zahlbetrags erforderlich sein sollte, auch mehrere Karten eingesetzt werden. Wird das Kartenbudget nicht ausgeschöpft, bleibt der Restbetrag im Prepaid-Guthaben bestehen und kann für künftige Bestellungen verwendet werden. Die Zahlungstransaktion wird unmittelbar nach Abgabe der Bestellung durchgeführt. Weitere Hinweise erhalten Sie im Bestellvorgang. <br> 6. Widerrufsrecht<br> Verbrauchern steht das gesetzliche Widerrufsrecht, wie in der Widerrufsbelehrung beschrieben, zu. Unternehmern wird kein freiwilliges Widerrufsrecht eingeräumt.<br> 7. Transportschäden​​​​​​​<br> Für Verbraucher gilt: Werden Waren mit offensichtlichen Transportschäden angeliefert, so reklamieren Sie solche Fehler bitte möglichst sofort beim Zusteller und nehmen Sie bitte unverzüglich Kontakt zu uns auf. Die Versäumung einer Reklamation oder Kontaktaufnahme hat für Ihre gesetzlichen Ansprüche und deren Durchsetzung, insbesondere Ihre Gewährleistungsrechte, keinerlei Konsequenzen. Sie helfen uns aber, unsere eigenen Ansprüche gegenüber dem Frachtführer bzw. der Transportversicherung geltend machen zu können. <br> 8. Gewährleistung und Garantien​​​​​​​<br> 8.1 Mängelhaftungsrecht <br> Es gilt das gesetzliche Mängelhaftungsrecht. <br> 8.2 Garantien und Kundendienst <br> Informationen zu gegebenenfalls geltenden zusätzlichen Garantien und deren genaue Bedingungen finden Sie jeweils beim Produkt und auf besonderen Informationsseiten im Online-Shop. <br> 9. Verhaltenskodex​​​​​​​<br> Folgenden Verhaltenskodizes haben wir uns unterworfen: <br> Trusted Shops (https://www.trustedshops.com/tsdocument/TS_QUALITY_CRITERIA_de.pdf) <br> 10. Streitbeilegung​​​​​​​<br> Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit, die Sie hier finden.<br> Zur Teilnahme an einem Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle sind wir nicht verpflichtet und nicht bereit. <br><br><br> AGB erstellt mit dem Trusted Shops Rechtstexter</p>
     </div>
   </div>
 </div>
@@ -1633,7 +1603,19 @@ display: none;
         </div>
     </div>
 
-<div id="shopify-block-65770340888967700" class="shopify-block shopify-app-block"><style>
+<div id="shopify-block-10570433277407501837" class="shopify-block shopify-app-block"><!-- BEGIN app snippet: gsf-gcr-badge -->
+
+<!-- END app snippet -->
+</div><div id="shopify-block-8218531531362863771" class="shopify-block shopify-app-block"><script>
+    let shopifyLiquidValuesApp7Ext =   { 
+                                product: { handle: null } 
+                            }
+    window.shopifyLiquidValuesApp7Ext = shopifyLiquidValuesApp7Ext;
+</script>
+
+
+
+</div><div id="shopify-block-65770340888967700" class="shopify-block shopify-app-block"><style>
   .sc_install-initialization {
     position: fixed;
     background-color: #fff;
@@ -1799,17 +1781,5 @@ display: none;
 <script src="../extensions/ed1aa012-9f54-4c9a-80b6-a4c9115bf674/2.66.0/assets/storefront.min.js" defer=""></script>
 
 
-</div><div id="shopify-block-8218531531362863771" class="shopify-block shopify-app-block"><script>
-    let shopifyLiquidValuesApp7Ext =   { 
-                                product: { handle: null } 
-                            }
-    window.shopifyLiquidValuesApp7Ext = shopifyLiquidValuesApp7Ext;
-</script>
-
-
-
-</div><div id="shopify-block-10570433277407501837" class="shopify-block shopify-app-block"><!-- BEGIN app snippet: gsf-gcr-badge -->
-
-<!-- END app snippet -->
 </div></body>
 </html>

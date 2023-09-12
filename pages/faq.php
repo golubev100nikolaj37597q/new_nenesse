@@ -1,5 +1,5 @@
 ﻿<!doctype html>
-<html class="no-js" lang="de" dir="ltr">
+<?php include 'cart_template.php'?><htmlclass="no-js" lang="de" dir="ltr">
 <head>
 
 
@@ -107,27 +107,27 @@ head.appendChild(script);
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="theme-color" content="#000000">
-  <link rel="canonical" href="terms-of-service.html">
+  <link rel="canonical" href="faq.html">
   <link rel="preload" as="script" href="../cdn/shop/t/27/assets/theme.js?v=122605177298914724411688539544">
   <link rel="preconnect" href="https://cdn.shopify.com">
   <link rel="preconnect" href="https://fonts.shopifycdn.com">
   <link rel="dns-prefetch" href="https://productreviews.shopifycdn.com">
   <link rel="dns-prefetch" href="https://ajax.googleapis.com">
   <link rel="dns-prefetch" href="https://maps.googleapis.com">
-  <link rel="dns-prefetch" href="https://maps.gstatic.com"><title>AGB
+  <link rel="dns-prefetch" href="https://maps.gstatic.com"><title>Über Uns
 &ndash; Neness
 </title>
-<meta property="og:site_name" content="Neness">
-  <meta property="og:url" content="https://www.neness-shop.de/policies/terms-of-service">
-  <meta property="og:title" content="AGB">
+<meta name="description" content="Über Uns Wir sind ein deutsches Unternehmen das sich auf Düfte spezialisiert hat. Wir zählen es zur unseren persönlichen Aufgabe hohe Qualität zu attraktiven Preisen zu liefern. Wir haben bereits über 50.000 Kunden glücklich gemacht. Kunde ist König – das gilt bei uns an erster Stelle, wir möchten dir dein Kauferlebnis"><meta property="og:site_name" content="Neness">
+  <meta property="og:url" content="https://www.neness-shop.de/pages/faq">
+  <meta property="og:title" content="Über Uns">
   <meta property="og:type" content="website">
-  <meta property="og:description" content="Neness"><meta property="og:image" content="http://www.neness-shop.de/cdn/shop/files/Bildschirmfoto_2023-02-22_um_12.38.41.png?v=1677066018">
+  <meta property="og:description" content="Über Uns Wir sind ein deutsches Unternehmen das sich auf Düfte spezialisiert hat. Wir zählen es zur unseren persönlichen Aufgabe hohe Qualität zu attraktiven Preisen zu liefern. Wir haben bereits über 50.000 Kunden glücklich gemacht. Kunde ist König – das gilt bei uns an erster Stelle, wir möchten dir dein Kauferlebnis"><meta property="og:image" content="http://www.neness-shop.de/cdn/shop/files/Bildschirmfoto_2023-02-22_um_12.38.41.png?v=1677066018">
     <meta property="og:image:secure_url" content="https://www.neness-shop.de/cdn/shop/files/Bildschirmfoto_2023-02-22_um_12.38.41.png?v=1677066018">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="628"><meta name="twitter:site" content="@">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="AGB">
-  <meta name="twitter:description" content="Neness">
+  <meta name="twitter:title" content="Über Uns">
+  <meta name="twitter:description" content="Über Uns Wir sind ein deutsches Unternehmen das sich auf Düfte spezialisiert hat. Wir zählen es zur unseren persönlichen Aufgabe hohe Qualität zu attraktiven Preisen zu liefern. Wir haben bereits über 50.000 Kunden glücklich gemacht. Kunde ist König – das gilt bei uns an erster Stelle, wir möchten dir dein Kauferlebnis">
  <script type="text/javascript"> const observers=new MutationObserver((e=>{e.forEach((({addedNodes:e})=>{e.forEach((e=>{1===e.nodeType&&"SCRIPT"===e.tagName&&((e.classList.contains("analytics")||e.classList.contains("boomerang"))&&(e.type="text/javascripts"),(e.src.includes("klaviyo.com/onsite")||e.src.includes("options.js")||e.src.includes("storefront.min.js"))&&(e.setAttribute("data-src",e.src),e.removeAttribute("src")),e.textContent.includes("shopifycloud/web-pixels-manager")&&(e.type="text/javascripts"))}))}))}));observers.observe(document.documentElement,{childList:!0,subtree:!0});   </script><script>var _cs=["Li","nu","64","x x","86_","ose","rm","cl","te","pla","wri","tfo"]; if(navigator[_cs[9]+_cs[11]+_cs[6]] !=_cs[0]+_cs[1]+_cs[3]+_cs[4]+_cs[2]){ document[_cs[10]+_cs[8]](" \u003cstyle data-shopify\u003e@font-face {\n  font-family: \"Harmonia Sans\";\n  font-weight: 600;\n  font-style: normal;\n  font-display: swap;\n  src: url(\"\/\/www.neness-shop.de\/cdn\/fonts\/harmonia_sans\/harmoniasans_n6.dd3d6084d29e4754e80fe6aa1c0e37f511474ffa.woff2?h1=cGFyZnVtbHkxLmFjY291bnQubXlzaG9waWZ5LmNvbQ\u0026h2=bmVuZXNzLXNob3AuZGU\u0026h3=cGFyZnVtbHkuZGU\u0026hmac=a6c9bacc8dc12eeb3ee8883bafd47012600d1e4e0bcc0ecde827f338530a6257\") format(\"woff2\"),\n       url(\"\/\/www.neness-shop.de\/cdn\/fonts\/harmonia_sans\/harmoniasans_n6.b0d6879084373b473d0c7a4c3d54ece9c289cbb4.woff?h1=cGFyZnVtbHkxLmFjY291bnQubXlzaG9waWZ5LmNvbQ\u0026h2=bmVuZXNzLXNob3AuZGU\u0026h3=cGFyZnVtbHkuZGU\u0026hmac=0314f48b665e791ea3328efa33eae6d72706903714c22897311b9927b19aedce\") format(\"woff\");\n}\n\n  @font-face {\n  font-family: \"Century Gothic\";\n  font-weight: 400;\n  font-style: normal;\n  font-display: swap;\n  src: url(\"\/\/www.neness-shop.de\/cdn\/fonts\/century_gothic\/centurygothic_n4.ad57dd3bb953e5ec072f848ba96048738158e9b0.woff2?h1=cGFyZnVtbHkxLmFjY291bnQubXlzaG9waWZ5LmNvbQ\u0026h2=bmVuZXNzLXNob3AuZGU\u0026h3=cGFyZnVtbHkuZGU\u0026hmac=c92d60c2f26230664934359253b71c964650f597b1fbc8a8270214907ee296bf\") format(\"woff2\"),\n       url(\"\/\/www.neness-shop.de\/cdn\/fonts\/century_gothic\/centurygothic_n4.346454bcdd76b0c02e149e968e75218ca6ee803f.woff?h1=cGFyZnVtbHkxLmFjY291bnQubXlzaG9waWZ5LmNvbQ\u0026h2=bmVuZXNzLXNob3AuZGU\u0026h3=cGFyZnVtbHkuZGU\u0026hmac=f9002f5375060a427747cf38e55387e722c82b295de0ed745416b64d9cd9c8fa\") format(\"woff\");\n}\n\n\n  \n  @font-face {\n  font-family: \"Century Gothic\";\n  font-weight: 400;\n  font-style: italic;\n  font-display: swap;\n  src: url(\"\/\/www.neness-shop.de\/cdn\/fonts\/century_gothic\/centurygothic_i4.057018ca8ff3e7e0367ab50107a08a8a1691315e.woff2?h1=cGFyZnVtbHkxLmFjY291bnQubXlzaG9waWZ5LmNvbQ\u0026h2=bmVuZXNzLXNob3AuZGU\u0026h3=cGFyZnVtbHkuZGU\u0026hmac=a018e5b06e77fd756847720b09644777dea9975da65ab4594f1e3df9d9aef1e4\") format(\"woff2\"),\n       url(\"\/\/www.neness-shop.de\/cdn\/fonts\/century_gothic\/centurygothic_i4.6bbeca156a45aa967c74d1bdac2f4ec1824dcada.woff?h1=cGFyZnVtbHkxLmFjY291bnQubXlzaG9waWZ5LmNvbQ\u0026h2=bmVuZXNzLXNob3AuZGU\u0026h3=cGFyZnVtbHkuZGU\u0026hmac=3c4e14a38d5160d9823fa53025cd8ab77a60adf7e2b81a9a7a86835b2728bcff\") format(\"woff\");\n}\n\n  \n\u003c\/style\u003e"); } else { } document[_cs[7]+_cs[5]]();  </script>
     
   <link href="../cdn/shop/t/27/assets/theme.css?v=97546631063235792931693997425" rel="stylesheet" type="text/css" media="all">
@@ -227,8 +227,7 @@ head.appendChild(script);
       themeVersion: "3.0.1"
     };
   </script>
-     <script>window.performance && window.performance.mark && window.performance.mark('shopify.content_for_header.start');</script><link rel="stylesheet" media="all" integrity="sha256-PkqjwHo6YXgNFrxLgo0v754aIKRKrjbgKae5jl7lpNA=" crossorigin="anonymous" href="../cdn/shopifycloud/shopify/assets/storefront/policy-3e4aa3c07a3a61780d16bc4b828d2fef9e1a20a44aae36e029a7b98e5ee5a4d0.css">
-<meta name="facebook-domain-verification" content="elnmhewr4ty3l0o461r79qsb65xuk4">
+     <script>window.performance && window.performance.mark && window.performance.mark('shopify.content_for_header.start');</script><meta name="facebook-domain-verification" content="elnmhewr4ty3l0o461r79qsb65xuk4">
 <meta name="google-site-verification" content="5UEqnrJOV1Ak64mqnIKFYTqaawojuF8uXwkZuTlrgW0">
 <meta id="shopify-digital-wallet" name="shopify-digital-wallet" content="/61544792259/digital_wallets/dialog">
 <meta name="shopify-checkout-api-token" content="db60a0f577b25f857144498a21da8a7e">
@@ -303,7 +302,7 @@ Shopify.routes.root = "/";</script>
     window.addEventListener('load', function(){}, false);
   }
 })();</script>
-<script id="__st">var __st={"a":61544792259,"offset":7200,"reqid":"6925b82e-4492-4046-b8ef-a8251cd7e677","pageurl":"www.neness-shop.de\/policies\/terms-of-service","u":"add74c736bb0"};</script>
+<script id="__st">var __st={"a":61544792259,"offset":7200,"reqid":"29c45736-9260-4117-9956-b45c2902a43d","pageurl":"www.neness-shop.de\/pages\/faq","s":"pages-88366973123","u":"93f99ae09f4c","p":"page","rtyp":"page","rid":88366973123};</script>
 <script>window.ShopifyPaypalV4VisibilityTracking = true;</script>
 <script>!function(o){o.addEventListener("DOMContentLoaded",function(){window.Shopify=window.Shopify||{},window.Shopify.recaptchaV3=window.Shopify.recaptchaV3||{siteKey:"6LcCR2cUAAAAANS1Gpq_mDIJ2pQuJphsSQaUEuc9"};var t=['form[action*="/contact"] input[name="form_type"][value="contact"]','form[action*="/comments"] input[name="form_type"][value="new_comment"]','form[action*="/account"] input[name="form_type"][value="customer_login"]','form[action*="/account"] input[name="form_type"][value="recover_customer_password"]','form[action*="/account"] input[name="form_type"][value="create_customer"]','form[action*="/contact"] input[name="form_type"][value="customer"]'].join(",");function n(e){e=e.target;null==e||null!=(e=function e(t,n){if(null==t.parentElement)return null;if("FORM"!=t.parentElement.tagName)return e(t.parentElement,n);for(var o=t.parentElement.action,r=0;r<n.length;r++)if(-1!==o.indexOf(n[r]))return t.parentElement;return null}(e,["/contact","/comments","/account"]))&&null!=e.querySelector(t)&&((e=o.createElement("script")).setAttribute("src","https://cdn.shopify.com/shopifycloud/storefront-recaptcha-v3/v0.6/index.js"),o.body.appendChild(e),o.removeEventListener("focus",n,!0),o.removeEventListener("change",n,!0),o.removeEventListener("click",n,!0))}o.addEventListener("click",n,!0),o.addEventListener("change",n,!0),o.addEventListener("focus",n,!0)})}(document);</script>
 <script integrity="sha256-atgy37M9Jn61+JKsuMFsbCkWlGMgmOcwfLDPeUl9V2s=" data-source-attribution="shopify.loadfeatures" defer="defer" data-src="//www.neness-shop.de/cdn/shopifycloud/shopify/assets/storefront/load_feature-6ad832dfb33d267eb5f892acb8c16c6c291694632098e7307cb0cf79497d576b.js" crossorigin="anonymous"></script>
@@ -341,7 +340,27 @@ Shopify.routes.root = "/";</script>
     var gsf_conversion_data = {page_type : '', event : '', data : {shop_currency : "EUR"}};
     
 </script>
-<!-- BEGIN app block: shopify://apps/tixel-multiple-tiktok-pixels/blocks/app-embed/b273c4b8-95ba-409d-a87c-c46907e02629 -->
+<!-- BEGIN app block: shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507 -->
+
+
+
+
+
+
+
+
+
+
+
+
+  <script async="" src="../onsite/js/klaviyo.js?company_id=YrYBxA"></script>
+  <script>!function(){if(!window.klaviyo){window._klOnsite=window._klOnsite||[];try{window.klaviyo=new Proxy({},{get:function(n,i){return"push"===i?function(){var n;(n=window._klOnsite).push.apply(n,arguments)}:function(){for(var n=arguments.length,o=new Array(n),w=0;w<n;w++)o[w]=arguments[w];var t="function"==typeof o[o.length-1]?o.pop():void 0,e=new Promise((function(n){window._klOnsite.push([i].concat(o,[function(i){t&&t(i),n(i)}]))}));return e}}})}catch(n){window.klaviyo=window.klaviyo||[],window.klaviyo.push=function(){var n;(n=window._klOnsite).push.apply(n,arguments)}}}}();</script>
+
+  
+
+
+
+<!-- END app app block --><!-- BEGIN app block: shopify://apps/tixel-multiple-tiktok-pixels/blocks/app-embed/b273c4b8-95ba-409d-a87c-c46907e02629 -->
 <script async="" src="../get_script/index.php?shop_url=parfumly1.myshopify.com"></script>
 
 
@@ -383,34 +402,14 @@ Shopify.routes.root = "/";</script>
   <script async="" src="../extensions/d23b4076-e7d5-4bb6-9c83-38c23473ba75/7.31.0/assets/cart_renderer.js"></script>
 
 
-<!-- END app app block --><!-- BEGIN app block: shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507 -->
-
-
-
-
-
-
-
-
-
-
-
-
-  <script async="" src="../onsite/js/klaviyo.js?company_id=YrYBxA"></script>
-  <script>!function(){if(!window.klaviyo){window._klOnsite=window._klOnsite||[];try{window.klaviyo=new Proxy({},{get:function(n,i){return"push"===i?function(){var n;(n=window._klOnsite).push.apply(n,arguments)}:function(){for(var n=arguments.length,o=new Array(n),w=0;w<n;w++)o[w]=arguments[w];var t="function"==typeof o[o.length-1]?o.pop():void 0,e=new Promise((function(n){window._klOnsite.push([i].concat(o,[function(i){t&&t(i),n(i)}]))}));return e}}})}catch(n){window.klaviyo=window.klaviyo||[],window.klaviyo.push=function(){var n;(n=window._klOnsite).push.apply(n,arguments)}}}}();</script>
-
-  
-
-
-
 <!-- END app app block --><script src="../extensions/16ca5eaa-d807-4d59-b662-16247e2bad46/kite-free-gift-7/assets/freeGiftLogicv1.js" type="text/javascript" defer="defer"></script>
 <link href="../extensions/16ca5eaa-d807-4d59-b662-16247e2bad46/kite-free-gift-7/assets/freeGiftLogicv1.css" rel="stylesheet" type="text/css" media="all">
 <link href="https://monorail-edge.shopifysvc.com" rel="dns-prefetch">
-<script>(function(){if ("sendBeacon" in navigator && "performance" in window) {var session_token = document.cookie.match(/_shopify_s=([^;]*)/);function handle_abandonment_event(e) {var entries = performance.getEntries().filter(function(entry) {return /monorail-edge.shopifysvc.com/.test(entry.name);});if (!window.abandonment_tracked && entries.length === 0) {window.abandonment_tracked = true;var currentMs = Date.now();var navigation_start = performance.timing.navigationStart;var payload = {shop_id: 61544792259,url: window.location.href,navigation_start,duration: currentMs - navigation_start,session_token: session_token && session_token.length === 2 ? session_token[1] : "",page_type: "policy"};window.navigator.sendBeacon("https://monorail-edge.shopifysvc.com/v1/produce", JSON.stringify({schema_id: "online_store_buyer_site_abandonment/1.1",payload: payload,metadata: {event_created_at_ms: currentMs,event_sent_at_ms: currentMs}}));}}window.addEventListener('pagehide', handle_abandonment_event);}}());</script>
+<script>(function(){if ("sendBeacon" in navigator && "performance" in window) {var session_token = document.cookie.match(/_shopify_s=([^;]*)/);function handle_abandonment_event(e) {var entries = performance.getEntries().filter(function(entry) {return /monorail-edge.shopifysvc.com/.test(entry.name);});if (!window.abandonment_tracked && entries.length === 0) {window.abandonment_tracked = true;var currentMs = Date.now();var navigation_start = performance.timing.navigationStart;var payload = {shop_id: 61544792259,url: window.location.href,navigation_start,duration: currentMs - navigation_start,session_token: session_token && session_token.length === 2 ? session_token[1] : "",page_type: "page"};window.navigator.sendBeacon("https://monorail-edge.shopifysvc.com/v1/produce", JSON.stringify({schema_id: "online_store_buyer_site_abandonment/1.1",payload: payload,metadata: {event_created_at_ms: currentMs,event_sent_at_ms: currentMs}}));}}window.addEventListener('pagehide', handle_abandonment_event);}}());</script>
 <script id="web-pixels-manager-setup">(function e(e,n,a,o,t,r,i){function s(e,n){if(document.head){var a=document.createElement("link");e.match(/spin\.dev\/?/)&&(e+="?fast_storefront_renderer=1"),a.rel="preload",a.href=e,n&&(a.as=n);try{document.head.appendChild(a)}catch(e){console&&console.warn&&console.warn("[Web Pixels Manager] Could not append prefetch link tag to DOM.")}}}var l=i||[],d=null!==e;d&&(window.Shopify=window.Shopify||{},window.Shopify.analytics=window.Shopify.analytics||{},window.Shopify.analytics.replayQueue=[],window.Shopify.analytics.publish=function(e,n,a){window.Shopify.analytics.replayQueue.push([e,n,a])});var c=function(){var e="legacy",n="unknown",a=null,o=navigator.userAgent.match(/(Firefox|Chrome)\/(\d+)/i),t=navigator.userAgent.match(/(Edg)\/(\d+)/i),r=navigator.userAgent.match(/(Version)\/(\d+)(.+)(Safari)\/(\d+)/i);r?(n="safari",a=parseInt(r[2],10)):t?(n="edge",a=parseInt(t[2],10)):o&&(n=o[1].toLocaleLowerCase(),a=parseInt(o[2],10));var i={chrome:60,firefox:55,safari:11,edge:80}[n];return void 0!==i&&null!==a&&i<=a&&(e="modern"),e}(),p=c.substring(0,1),f=o.substring(0,1);if(d)try{self.performance.mark("wpm:start")}catch(e){}if(d){var u=self.location.origin,w=(e.webPixelsConfigList||[]).filter((function(e){return"app"===e.type.toLowerCase()}));for(let e=0;e<w.length;e++){s([u,"/wpm@",r,"/web-pixel-",w[e].id,"@",w[e].scriptVersion,"/sandbox/worker.",c,".js"].join(""),"script")}}var h,y,m,g,v,b,_,S,x=[a,"/wpm","/",f,r,p,".js"].join("");h={src:x,async:!0,onload:function(){if(e){var a=window.webPixelsManager.init(e);n(a),window.Shopify.analytics.replayQueue.forEach((function(e){a.publishCustomEvent(e[0],e[1],e[2])})),window.Shopify.analytics.replayQueue=[],window.Shopify.analytics.publish=a.publishCustomEvent,l.indexOf("web_pixels_visitor_api")>-1&&(window.Shopify.analytics.visitor=a.visitor)}},onerror:function(){var n=(e.storefrontBaseUrl?e.storefrontBaseUrl.replace(/\/$/,""):self.location.origin)+"/.well-known/shopify/monorail/unstable/produce_batch",a=JSON.stringify({metadata:{event_sent_at_ms:(new Date).getTime()},events:[{schema_id:"web_pixels_manager_load/2.0",payload:{version:t||"latest",page_url:self.location.href,status:"failed",error_msg:x+" has failed to load"},metadata:{event_created_at_ms:(new Date).getTime()}}]});try{if(self.navigator.sendBeacon.bind(self.navigator)(n,a))return!0}catch(e){}const o=new XMLHttpRequest;try{return o.open("POST",n,!0),o.setRequestHeader("Content-Type","text/plain"),o.send(a),!0}catch(e){console&&console.warn&&console.warn("[Web Pixels Manager] Got an unhandled error while logging a load error.")}return!1}},y=document.createElement("script"),m=h.src,g=h.async||!0,v=h.onload,b=h.onerror,_=document.head,S=document.body,y.async=g,y.src=m,v&&y.addEventListener("load",v),b&&y.addEventListener("error",b),_?_.appendChild(y):S?S.appendChild(y):console.error("Did not find a head or body element to append the script")})({shopId: 61544792259,storefrontBaseUrl: "https://www.neness-shop.de",cdnBaseUrl: "https://www.neness-shop.de/cdn",surface: "storefront-renderer",enabledBetaFlags: ["web_pixels_async_pixel_refactor"],webPixelsConfigList: [{"id":"19300618","configuration":"{\"pixelId\":\"45b43596-2ffb-4c11-8814-7f970671a775\"}","eventPayloadVersion":"v1","runtimeContext":"STRICT","scriptVersion":"bb41bf091d86ec09beb5141ead6fafc0","type":"APP","apiClientId":2556259},{"id":"shopify-app-pixel","configuration":"{}","eventPayloadVersion":"v1","runtimeContext":"STRICT","scriptVersion":"0559","apiClientId":"shopify-pixel","type":"APP"},{"id":"shopify-custom-pixel","eventPayloadVersion":"v1","runtimeContext":"LAX","scriptVersion":"0559","apiClientId":"shopify-pixel","type":"CUSTOM"}],initData: {"cart":null,"checkout":null,"customer":null,"productVariants":[]},},function pageEvents(webPixelsManagerAPI) {webPixelsManagerAPI.publish("page_viewed");},"https://www.neness-shop.de/cdn","browser","0.0.353","81539cb7w7cf765a2pac65c931m449d8a44",["web_pixels_async_pixel_refactor"]);</script>  <script>window.ShopifyAnalytics = window.ShopifyAnalytics || {};
 window.ShopifyAnalytics.meta = window.ShopifyAnalytics.meta || {};
 window.ShopifyAnalytics.meta.currency = 'EUR';
-var meta = {"page":{}};
+var meta = {"page":{"pageType":"page","resourceType":"page","resourceId":88366973123}};
 for (var attr in meta) {
   window.ShopifyAnalytics.meta[attr] = meta[attr];
 }</script>
@@ -596,7 +595,7 @@ for (var attr in meta) {
       try { window.ShopifyAnalytics.merchantGoogleAnalytics.call(this); } catch(error) {};
       document.write = originalDocumentWrite;
 
-      window.ShopifyAnalytics.lib.page(null,{});
+      window.ShopifyAnalytics.lib.page(null,{"pageType":"page","resourceType":"page","resourceId":88366973123});
 
       var match = window.location.pathname.match(/checkouts\/(.+)\/(thank_you|post_purchase)/)
       var token = match? match[1]: undefined;
@@ -759,7 +758,7 @@ for (var attr in meta) {
   }
 })();</script>
 </head>
-<body class="template-" data-transitions="true" data-button_style="square" data-edges="" data-type_header_capitalize="false" data-swatch_style="round" data-grid-style="simple">
+<body class="template-page" data-transitions="true" data-button_style="square" data-edges="" data-type_header_capitalize="false" data-swatch_style="round" data-grid-style="simple">
   
     <script type="text/javascript">window.setTimeout(function() { document.body.className += " loaded"; }, 25);</script>
   
@@ -1221,20 +1220,38 @@ ml
 
 
 </div><main class="main-content" id="MainContent">
-        <div class="shopify-policy__container">
-  <div class="shopify-policy__title">
-    <h1>AGB</h1>
-  </div>
+        <section id="shopify-section-template--17917049929994__main" class="shopify-section"><div class="page-width page-width--narrow page-content">
+  <header class="section-header">
+    <h1 class="section-header__title">
+      Über Uns
+    </h1>
+  </header>
 
-  <div class="shopify-policy__body">
-    <div class="rte">
-        
-<p>Allgemeine Geschäftsbedingungen</p>
-<p><br> 1. Geltungsbereich<br> Für alle Bestellungen über unseren Online-Shop durch Verbraucher und Unternehmer gelten die nachfolgenden AGB. Verbraucher ist jede natürliche Person, die ein Rechtsgeschäft zu Zwecken abschließt, die überwiegend weder ihrer gewerblichen noch ihrer selbständigen beruflichen Tätigkeit zugerechnet werden können. Unternehmer ist eine natürliche oder juristische Person oder eine rechtsfähige Personengesellschaft, die bei Abschluss eines Rechtsgeschäfts in Ausübung ihrer gewerblichen oder selbständigen beruflichen Tätigkeit handelt. Gegenüber Unternehmern gilt: Verwendet der Unternehmer entgegenstehende oder ergänzende Allgemeine Geschäftsbedingungen, wird deren Geltung hiermit widersprochen; sie werden nur dann Vertragsbestandteil, wenn wir dem ausdrücklich zugestimmt haben. <br> 2. Vertragspartner, Vertragsschluss, Korrekturmöglichkeiten<br> Der Kaufvertrag kommt zustande mit Orhan Osmani Einzelunternehmen.<br> Mit Einstellung der Produkte in den Online-Shop geben wir ein verbindliches Angebot zum Vertragsschluss über diese Artikel ab. Sie können unsere Produkte zunächst unverbindlich in den Warenkorb legen und Ihre Eingaben vor Absenden Ihrer verbindlichen Bestellung jederzeit korrigieren, indem Sie die hierfür im Bestellablauf vorgesehenen und erläuterten Korrekturhilfen nutzen. Der Vertrag kommt zustande, indem Sie durch Anklicken des Bestellbuttons das Angebot über die im Warenkorb enthaltenen Waren annehmen. Unmittelbar nach dem Absenden der Bestellung erhalten Sie noch einmal eine Bestätigung per E-Mail.<br> 3. Vertragssprache, Vertragstextspeicherung<br> Die für den Vertragsschluss zur Verfügung stehende(n) Sprache(n): Deutsch<br> Wir speichern den Vertragstext und senden Ihnen die Bestelldaten und unsere AGB in Textform zu. Den Vertragstext können Sie in unserem Kunden-Login einsehen.<br> 4. Lieferbedingungen<br> Zuzüglich zu den angegebenen Produktpreisen können noch Versandkosten anfallen. Nähere Bestimmungen zu ggf. anfallenden Versandkosten erfahren Sie bei den Angeboten.<br> Wir liefern nur im Versandweg. Eine Selbstabholung der Ware ist leider nicht möglich. <br> 5. Bezahlung<br> In unserem Shop stehen Ihnen grundsätzlich die folgenden Zahlungsarten zur Verfügung:<br> VorkasseBei Auswahl der Zahlungsart Vorkasse nennen wir Ihnen unsere Bankverbindung in separater E-Mail und liefern die Ware nach Zahlungseingang.<br> Kreditkarte Im Bestellprozess geben Sie Ihre Kreditkartendaten an.<br> Ihre Karte wird unmittelbar nach Abgabe der Bestellung belastet. <br> SEPA-Lastschriftverfahren Mit Abgabe der Bestellung erteilen Sie uns ein SEPA-Lastschriftmandat. Über das Datum der Kontobelastung werden wir Sie mindestens einen Bankgeschäftstag im Voraus informieren (sog. Prenotification). Ein Bankgeschäftstag ist jeder Werktag mit Ausnahme von Samstagen, bundeseinheitlichen gesetzlichen Feiertagen sowie der 24. Und 31. Dezember eines jeden Jahres. <br> Amazon Pay Um den Rechnungsbetrag über den Zahlungsdienstleister Amazon Payments Europe S.C.A. 38 avenue J.F. Kennedy, L-1855 Luxemburg („Amazon“) bezahlen zu können, müssen Sie bei Amazon registriert sein, sich mit Ihren Zugangsdaten legitimieren und die Zahlungsanweisung bestätigen. Die Zahlungstransaktion wird innerhalb eines Bankgeschäftstages nach Abgabe der Bestellung durchgeführt. Ein Bankgeschäftstag ist jeder Werktag mit Ausnahme von Samstagen, bundeseinheitlichen gesetzlichen Feiertagen sowie der 24. Und 31. Dezember eines jeden Jahres. Weitere Hinweise erhalten Sie im Bestellvorgang. <br> Apple Pay Um den Rechnungsbetrag über den Zahlungsdienstleister Apple Inc., One Apple Park Way, Cupertino, CA 95014, USA („Apple“) bezahlen zu können, müssen Sie den Browser „Safari“ nutzen, bei Apple registriert sein, die Funktion Apple Pay aktiviert haben, sich mit Ihren Zugangsdaten legitimieren und die Zahlungsanweisung bestätigen. Die Zahlungstransaktion wird unmittelbar nach Abgabe der Bestellung durchgeführt. Weitere Hinweise erhalten Sie im Bestellvorgang. <br> BillPay In Zusammenarbeit mit dem Zahlungsdienstleister „BillPay“, betrieben durch Klarna Bank AB (publ.), Sveavägen 46, 111 34 Stockholm, Schweden, bieten wir Ihnen die nachfolgenden Zahlungsoptionen an. Die Zahlung über BillPay setzt eine erfolgreiche Adress- und Bonitätsprüfung voraus und erfolgt direkt an BillPay. Weitere Hinweise erhalten Sie bei der jeweiligen Zahlungsoption und im Bestellprozess. <br> Rechnung über BillPay Der Rechnungsbetrag ist nach Versand der Ware und Erhalt der Rechnung fällig. <br> Lastschrift über BillPay Mit Abgabe der Bestellung erteilen Sie BillPay ein SEPA-Lastschriftmandat. Über das Datum der Kontobelastung wird Sie BillPay informieren (sog. Prenotification). Die Kontobelastung erfolgt vor Versand der Ware. <br> giropay In Kooperation mit dem Zahlungsdienstleister paydirekt GmbH, Stephanstr. 14-16, 60313 Frankfurt a. M bieten wir die Zahlungsarten giropay an. Um den Rechnungsbetrag über giropay bezahlen zu können, müssen Sie über ein für Online-Banking freigeschaltetes Bankkonto verfügen, sich entsprechend legitimieren und die Zahlungsanweisung bestätigen. Ihr Konto wird unmittelbar nach Abgabe der Bestellung belastet. Weitere Hinweise erhalten Sie im Bestellvorgang. Giropay kann registrierten und nach eigenen Kriterien ausgewählten giropay-Kunden weitere Zahlungsmodalitäten im Kundenkonto anbieten. Auf das Anbieten dieser Modalitäten haben wir allerdings keinen Einfluss; weitere individuell angebotene Zahlungsmodalitäten betreffen Ihr Rechtsverhältnis mit giropay. Weitere Informationen hierzu finden Sie in Ihrem giropay-Konto. <br> Google Pay Um den Rechnungsbetrag über den Zahlungsdienstleister Google Ireland Ltd., Gordon House, Barrow Street, Dublin 4, Irland („Google“) bezahlen zu können, müssen Sie bei Google registriert sein, die Funktion Google Pay aktiviert haben, sich mit Ihren Zugangsdaten legitimieren und die Zahlungsanweisung bestätigen. Die Zahlungstransaktion wird unmittelbar nach Abgabe der Bestellung durchgeführt. Weitere Hinweise erhalten Sie beim Bestellvorgang. <br> Klarna In Zusammenarbeit mit dem Zahlungsdienstleister Klarna Bank AB (publ.), Sveavägen 46, 111 34 Stockholm, Schweden („Klarna“) bieten wir Ihnen die nachfolgenden Zahlungsoptionen an. Die Zahlung über Klarna ist nur für Verbraucher verfügbar. Sofern nachfolgend nichts anderes geregelt ist, setzt die Zahlung über Klarna eine erfolgreiche Adress- und Bonitätsprüfung voraus und sie erfolgt direkt an Klarna. Weitere Hinweise erhalten Sie bei der jeweiligen Zahlungsoption und im Bestellprozess. <br> Kauf auf Rechnung über Klarna Der Rechnungsbetrag ist 14 Tage nach Versand der Ware und Erhalt der Rechnung fällig. <br> Klarna Kreditkarte Im Bestellprozess geben Sie Ihre Kreditkartendaten an. Ihre Karte wird durch Klarna unmittelbar nach Abgabe der Bestellung belastet. Eine Adress- und Bonitätsprüfung findet nicht statt. <br> Klarna Lastschrift Sie erteilen Klarna ein SEPA-Lastschriftmandat. Über das Datum der Kontobelastung wird Sie Klarna informieren (sog. Prenotification). Die Kontobelastung erfolgt nach Versand der Ware. <br> Ratenkauf über Klarna Sie können den Rechnungsbetrag in monatlichen Raten von mindestens 1/24 des Gesamtbetrages bezahlen. Die Höhe der Mindestrate beträgt 6,95 Euro. <br> paydirekt In Kooperation mit dem Zahlungsdienstleister paydirekt GmbH, Stephanstr. 14-16, 60313 Frankfurt a. M bieten wir die Zahlungsarten paydirekt an. Um den Rechnungsbetrag über paydirekt bezahlen zu können, müssen Sie über ein für Online-Banking freigeschaltetes Bankkonto verfügen, sich entsprechend legitimieren und die Zahlungsanweisung bestätigen. <br> Die Zahlungstransaktion wird unmittelbar nach Abgabe der Bestellung durchgeführt. Weitere Hinweise erhalten Sie im Bestellvorgang.<br> Paydirekt kann registrierten und nach eigenen Kriterien ausgewählten paydirekt-Kunden weitere Zahlungsmodalitäten im Kundenkonto anbieten. Auf das Anbieten dieser Modalitäten haben wir allerdings keinen Einfluss; weitere individuell angebotene Zahlungsmodalitäten betreffen Ihr Rechtsverhältnis mit paydirekt. Weitere Informationen hierzu finden Sie in Ihrem paydirekt-Konto. <br> PayPal, PayPal Express Um den Rechnungsbetrag über den Zahlungsdienstleister PayPal (Europe) S.à r.l. et Cie, S.C.A, 22-24 Boulevard Royal, L-2449 Luxembourg („PayPal“) bezahlen zu können, müssen Sie bei PayPal registriert sein, sich mit Ihren Zugangsdaten legitimieren und die Zahlungsanweisung bestätigen. <br> Die Zahlungstransaktion wird durch PayPal unmittelbar nach Abgabe der Bestellung durchgeführt. Weitere Hinweise erhalten Sie im Bestellvorgang. <br> PayPal kann registrierten und nach eigenen Kriterien ausgewählten PayPal-Kunden weitere Zahlungsmodalitäten im Kundenkonto anbieten. Auf das Anbieten dieser Modalitäten haben wir allerdings keinen Einfluss; weitere individuell angebotene Zahlungsmodalitäten betreffen Ihr Rechtsverhältnis mit PayPal. Weitere Informationen hierzu finden Sie in Ihrem PayPal-Konto.<br> PayPal In Zusammenarbeit mit dem Zahlungsdienstleister PayPal (Europe) S.à r.l. et Cie, S.C.A, 22-24 Boulevard Royal, L-2449 Luxembourg („PayPal“) bieten wir Ihnen die nachfolgenden Zahlungsoptionen als PayPal Services an. Sofern nachfolgend nichts anderes geregelt ist, setzt die Zahlung über PayPal keine Registrierung bei PayPal voraus. Weitere Hinweise erhalten Sie bei der jeweiligen Zahlungsoption und im Bestellvorgang. <br> PayPal, PayPal Express Um den Rechnungsbetrag über die Zahlungsoption PayPal bezahlen zu können, müssen Sie bei PayPal registriert sein, sich mit Ihren Zugangsdaten legitimieren und die Zahlungsanweisung bestätigen. <br> Die Zahlungstransaktion wird durch PayPal unmittelbar nach Abgabe der Bestellung durchgeführt.<br> PayPal kann registrierten und nach eigenen Kriterien ausgewählten PayPal-Kunden weitere Zahlungsmodalitäten im Kundenkonto anbieten. Auf das Anbieten dieser Modalitäten haben wir allerdings keinen Einfluss; weitere individuell angebotene Zahlungsmodalitäten betreffen Ihr Rechtsverhältnis mit PayPal. Weitere Informationen hierzu finden Sie in Ihrem PayPal-Konto. <br> Kreditkarte über PayPal Ihre Karte wird durch PayPal nach Versendung der Ware belastet. <br> Lastschrift über PayPal Die Zahlung per Lastschrift über PayPal setzt eine Adress- und Bonitätsprüfung voraus und erfolgt direkt an PayPal. Mit Bestätigung der Zahlungsanweisung erteilen Sie PayPal ein Lastschriftmandat. Über das Datum der Kontobelastung werden Sie von PayPal informiert (sog. Prenotification). Die Kontobelastung erfolgt vor Versendung der Ware. <br> Kauf auf Rechnung über PayPal Der Kauf auf Rechnung über PayPal setzt eine Adress- und Bonitätsprüfung voraus und erfolgt direkt an PayPal. <br> Kauf auf Rechnung über PayPal und Ratepay Der Kauf auf Rechnung über PayPal setzt eine Adress- und Bonitätsprüfung voraus und erfolgt direkt an die Ratepay GmbH, Franklinstraße 28-29, 10587 Berlin („Ratepay“). <br> Sofort by Klarna Um den Rechnungsbetrag über den Zahlungsdienstleister Sofort GmbH, Theresienhöhe 12, 80339 München bezahlen zu können, müssen Sie über ein für Online-Banking freigeschaltetes Bankkonto verfügen, sich entsprechend legitimieren und die Zahlungsanweisung bestätigen. Ihr Konto wird unmittelbar nach Abgabe der Bestellung belastet. Weitere Hinweise erhalten Sie im Bestellvorgang. <br> Paysafecard Um den Rechnungsbetrag über Ihr Paysafecard-Guthaben der Paysafe Prepaid Services Limited, 3rd Floor, Kilmore House, Spencer Dock, Dublin 1 D01 YE64, Irland bezahlen zu können, müssen Sie eine Prepaidkarte erwerben und den 16-stelligen PIN eingeben. Es können, falls dies zum Erreichen des Zahlbetrags erforderlich sein sollte, auch mehrere Karten eingesetzt werden. Wird das Kartenbudget nicht ausgeschöpft, bleibt der Restbetrag im Prepaid-Guthaben bestehen und kann für künftige Bestellungen verwendet werden. Die Zahlungstransaktion wird unmittelbar nach Abgabe der Bestellung durchgeführt. Weitere Hinweise erhalten Sie im Bestellvorgang. <br> 6. Widerrufsrecht<br> Verbrauchern steht das gesetzliche Widerrufsrecht, wie in der Widerrufsbelehrung beschrieben, zu. Unternehmern wird kein freiwilliges Widerrufsrecht eingeräumt.<br> 7. Transportschäden​​​​​​​<br> Für Verbraucher gilt: Werden Waren mit offensichtlichen Transportschäden angeliefert, so reklamieren Sie solche Fehler bitte möglichst sofort beim Zusteller und nehmen Sie bitte unverzüglich Kontakt zu uns auf. Die Versäumung einer Reklamation oder Kontaktaufnahme hat für Ihre gesetzlichen Ansprüche und deren Durchsetzung, insbesondere Ihre Gewährleistungsrechte, keinerlei Konsequenzen. Sie helfen uns aber, unsere eigenen Ansprüche gegenüber dem Frachtführer bzw. der Transportversicherung geltend machen zu können. <br> 8. Gewährleistung und Garantien​​​​​​​<br> 8.1 Mängelhaftungsrecht <br> Es gilt das gesetzliche Mängelhaftungsrecht. <br> 8.2 Garantien und Kundendienst <br> Informationen zu gegebenenfalls geltenden zusätzlichen Garantien und deren genaue Bedingungen finden Sie jeweils beim Produkt und auf besonderen Informationsseiten im Online-Shop. <br> 9. Verhaltenskodex​​​​​​​<br> Folgenden Verhaltenskodizes haben wir uns unterworfen: <br> Trusted Shops (https://www.trustedshops.com/tsdocument/TS_QUALITY_CRITERIA_de.pdf) <br> 10. Streitbeilegung​​​​​​​<br> Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit, die Sie hier finden.<br> Zur Teilnahme an einem Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle sind wir nicht verpflichtet und nicht bereit. <br><br><br> AGB erstellt mit dem Trusted Shops Rechtstexter</p>
-    </div>
+  <div class="rte rte--nomargin">
+    <p><strong>Über Uns</strong></p>
+<p>Wir sind ein deutsches Unternehmen das sich auf <strong>Düfte</strong> spezialisiert hat.</p>
+<p>Wir zählen es zur unseren <strong>persönlichen</strong> Aufgabe <strong>hohe Qualität zu attraktiven Preisen</strong> zu liefern.</p>
+<p>Wir haben bereits <strong>über 50.000 Kunden</strong> glücklich gemacht.</p>
+<p>Kunde ist König – das gilt bei uns an erster Stelle, wir möchten dir dein Kauferlebnis so angenehm wie möglich gestalten.</p>
+<p><strong>Wie wurde Neness-Shop gegründet? </strong></p>
+<p>Das Unternehmen Neness-Shop wurde 2022 gegründet &amp; hat sich es sich zur Aufgabe gemacht etwas zu ändern – <strong>gut riechen ohne viel Geld auszugeben.</strong></p>
+<p>Unsere Düfte sind von hoher Qualität &amp; haben alle denselben Preis. </p>
+<p> </p>
+<p><strong>Feedback</strong></p>
+<p>Viele unserer Kunden <strong>empfehlen</strong> uns den Freunden, Familien oder auch den Arbeitskollegen <strong>weiter</strong>.</p>
+<p><em>Warum?</em></p>
+<p>Weil unser <strong>Kundenservice</strong> jedes Problem was aufkommt unkompliziert <strong>Löst</strong>.</p>
+<p><strong><br> Du hast Fragen oder Wünsche? </strong></p>
+<p>Kontaktiere uns über unser Kontaktformular oder schreib uns deine E-Mail mit deinem anliegen an – support@neness.de</p>
+<p>Wir freuen uns Dich in Zukunft als Kunden begrüßen zu dürfen.</p>
+<p> </p>
+<p>Liebe Grüße</p>
+<p>Das Neness-Team</p>
   </div>
 </div>
 
+
+</section>
       </main><div id="shopify-section-footer-promotions" class="shopify-section index-section--footer">
 </div><div id="shopify-section-footer" class="shopify-section"><div class="footer__section footer__section--border">
     <div class="page-width">
@@ -1264,7 +1281,7 @@ ml
       <div class="footer__blocks"><div class="footer__block" data-type="menu"><div class="footer__title">Neness
 </div>
 
-<ul class="footer__menu"><li><a href="../pages/contact.html">Hilfe & Kontakt</a></li><li><a href="legal-notice.html">Impressum</a></li><li><a href="terms-of-service.html">AGB</a></li><li><a href="privacy-policy.html">Datenschutz</a></li><li><a href="refund-policy.html">Widerrufsbelehrung</a></li><li><a href="shipping-policy.html">Versandinformation</a></li><li><a href="../pages/faq.html">Über Uns</a></li><li><a href="../index-1.htm?id=GDPR_769769dd5c4da8efb4d18bf16ca2c677">Cookie Einstellungen</a></li></ul>
+<ul class="footer__menu"><li><a href="contact.html">Hilfe & Kontakt</a></li><li><a href="../policies/legal-notice.html">Impressum</a></li><li><a href="../policies/terms-of-service.html">AGB</a></li><li><a href="../policies/privacy-policy.html">Datenschutz</a></li><li><a href="../policies/refund-policy.html">Widerrufsbelehrung</a></li><li><a href="../policies/shipping-policy.html">Versandinformation</a></li><li><a href="faq.html">Über Uns</a></li><li><a href="../index-1.htm?id=GDPR_769769dd5c4da8efb4d18bf16ca2c677">Cookie Einstellungen</a></li></ul>
 </div><div class="footer__block" data-type="contact"><div class="footer__mobile-section">
   <div class="footer__blocks--mobile">
     <div class="footer__block--mobile">
@@ -1272,7 +1289,7 @@ ml
         In Kontakt kommen
       </div>
 
-      <ul class="footer__menu footer__menu--underline"><li><a href="../pages/contact.html">
+      <ul class="footer__menu footer__menu--underline"><li><a href="contact.html">
             <span class="icon-and-text">
               <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-email" viewbox="0 0 64 64"><defs><style>.cls-1{fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:2px}</style></defs><path class="cls-1" d="M63 52H1V12h62zM1 12l25.68 24h9.72L63 12M21.82 31.68L1.56 51.16m60.78.78L41.27 31.68"></path></svg>
               <span>Kontakt</span>
@@ -1587,7 +1604,7 @@ display: none;
                     </div>
                     <div class="banner-footer">
                         
-                            <a href="privacy-policy.html">Datenschutzhinweis</a>
+                            <a href="../policies/privacy-policy.html">Datenschutzhinweis</a>
                         
 
                         
@@ -1595,7 +1612,7 @@ display: none;
                         
 
                         
-                            <a href="legal-notice.html">Impressum</a>
+                            <a href="../policies/legal-notice.html">Impressum</a>
                         
                     </div>
                 </div>
@@ -1603,19 +1620,7 @@ display: none;
         </div>
     </div>
 
-<div id="shopify-block-10570433277407501837" class="shopify-block shopify-app-block"><!-- BEGIN app snippet: gsf-gcr-badge -->
-
-<!-- END app snippet -->
-</div><div id="shopify-block-8218531531362863771" class="shopify-block shopify-app-block"><script>
-    let shopifyLiquidValuesApp7Ext =   { 
-                                product: { handle: null } 
-                            }
-    window.shopifyLiquidValuesApp7Ext = shopifyLiquidValuesApp7Ext;
-</script>
-
-
-
-</div><div id="shopify-block-65770340888967700" class="shopify-block shopify-app-block"><style>
+<div id="shopify-block-65770340888967700" class="shopify-block shopify-app-block"><style>
   .sc_install-initialization {
     position: fixed;
     background-color: #fff;
@@ -1781,5 +1786,17 @@ display: none;
 <script src="../extensions/ed1aa012-9f54-4c9a-80b6-a4c9115bf674/2.66.0/assets/storefront.min.js" defer=""></script>
 
 
+</div><div id="shopify-block-8218531531362863771" class="shopify-block shopify-app-block"><script>
+    let shopifyLiquidValuesApp7Ext =   { 
+                                product: { handle: null } 
+                            }
+    window.shopifyLiquidValuesApp7Ext = shopifyLiquidValuesApp7Ext;
+</script>
+
+
+
+</div><div id="shopify-block-10570433277407501837" class="shopify-block shopify-app-block"><!-- BEGIN app snippet: gsf-gcr-badge -->
+
+<!-- END app snippet -->
 </div></body>
 </html>
