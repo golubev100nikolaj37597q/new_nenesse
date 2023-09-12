@@ -1197,6 +1197,15 @@
                                                                     </div>
                                                                 </div>
                                                             </div>
+                                                            <?php if (isset($_SESSION['cart']) && $_SESSION['cart'] != null) { 
+                                                                 $carts = array_unique($_SESSION['cart']);
+
+                                                                 // Получаем количество каждого элемента в $_SESSION['cart']
+                                                                 $counts = array_count_values($_SESSION['cart']);
+                                                                 $sum = 0;
+                                                                 foreach ($carts as $cart_el) {
+                                                                   $product = get_info_product_by_name($cart_el);
+                                               ?>
                                                             <div role="row"
                                                                 class="_6zbcq524 _1fragemf8 _1fragem1w _6zbcq52b">
                                                                 <div role="cell"
@@ -1241,31 +1250,7 @@
                                                                                             €26,97/100 ml</span></li>
                                                                                 </ul>
                                                                             </div>
-                                                                            <div>
-                                                                                <div class="_1frageme0 _1fragemfc _1mrl40q3 _1fragemfr _1fragemg8 _1frageme8 _1fragemec _16s97g7c _16s97g7k _16s97g718 _16s97g71g"
-                                                                                    style="--_16s97g78: 1fr; --_16s97g7g: minmax(0, 1fr); --_16s97g714: minmax(auto, max-content) minmax(0, 1fr); --_16s97g71c: minmax(0, 1fr);">
-                                                                                    <span
-                                                                                        class="_1fragemh5 _1fragem1w _1fragemd8 _1fragemd4 a8x1wu3 a8x1wue _1fragemfa a8x1wuh a8x1wum"><svg
-                                                                                            xmlns="http://www.w3.org/2000/svg"
-                                                                                            viewBox="0 0 14 14"
-                                                                                            focusable="false"
-                                                                                            aria-hidden="true"
-                                                                                            class="a8x1wuo _1fragemf6 _1fragemh5 _1fragemd8 _1fragemd4">
-                                                                                            <path stroke-linecap="round"
-                                                                                                d="M7.284 1.402h4.964a.35.35 0 0 1 .35.35v4.964a.7.7 0 0 1-.205.495L7.49 12.115a.7.7 0 0 1-.99 0L1.885 7.5a.7.7 0 0 1 0-.99L6.79 1.607a.7.7 0 0 1 .495-.205Z">
-                                                                                            </path>
-                                                                                            <circle cx="9.1" cy="4.9"
-                                                                                                r="0.7"></circle>
-                                                                                            <path stroke-linecap="round"
-                                                                                                stroke-linejoin="round"
-                                                                                                d="M9.102 4.897h-.005v.005h.005v-.005Z">
-                                                                                            </path>
-                                                                                        </svg></span><span
-                                                                                        class="vGZhc"><span
-                                                                                            class="_19gi7yt0 _19gi7yth _1fragemfk _19gi7ytb">KAUFE
-                                                                                            6 ZAHLE 4 </span></span>
-                                                                                </div>
-                                                                            </div>
+                                                                            
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -1289,102 +1274,8 @@
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                            <div role="row"
-                                                                class="_6zbcq524 _1fragemf8 _1fragem1w _6zbcq52b">
-                                                                <div role="cell"
-                                                                    class="_6zbcq53s _1fragemf8 _1fragemfe _1fragemh9">
-                                                                    <div class="_1fragemf6 _1fragemhp _1fragemhu _1fragemi4 _1fragemhz _1frageme0 _16s97g730 _16s97g738 _16s97g73g TOZIs"
-                                                                        style="--_16s97g72w: 6.4rem; --_16s97g734: 6.4rem; --_16s97g73c: 6.4rem;">
-                                                                        <div class="_1h3po421 _1h3po423 _1frageme0"
-                                                                            style="--_1h3po420: 1;">
-                                                                            <picture>
-                                                                                <source media="(min-width: 0px)"
-                                                                                    srcset="https://cdn.shopify.com/s/files/1/0615/4479/2259/products/006ACk2_64x64.jpg?v=1692612480 1x, https://cdn.shopify.com/s/files/1/0615/4479/2259/products/006ACk2_128x128.jpg?v=1692612480 2x, https://cdn.shopify.com/s/files/1/0615/4479/2259/products/006ACk2_256x256.jpg?v=1692612480 4x">
-                                                                                <img src="https://cdn.shopify.com/s/files/1/0615/4479/2259/products/006ACk2_64x64.jpg?v=1692612480"
-                                                                                    alt="NENESS CODE - 006"
-                                                                                    class="_1h3po424 _1fragemf6 _1fragemd8 _1fragemhp _1fragemhu _1fragemi4 _1fragemhz _1fragem2s _1fragem2g _1fragem34 _1fragem24 _1fragem4g _1fragem3w _1fragem50 _1fragem3c _1fragemdo">
-                                                                            </picture>
-                                                                        </div>
-                                                                        <div aria-hidden="true"
-                                                                            class="_1fragemf8 _1fragemfe _1fragemhq _1fragemhv _1fragemi5 _1fragemi0 _1fragemec _1fragemh7 _1fragem98 _1fragem9k _1fragem7c _1fragembg _1fragemds _16s97g738 _16s97g73g _16s97g73o _16s97g71w _16s97g724 _16s97g72c _16s97g72k Wbn2T"
-                                                                            style="--_16s97g734: 2.1rem; --_16s97g73c: 2.1rem; --_16s97g73k: translateX(calc(25% * var(--x-global-transform-direction-modifier))) translateY(-50%); --_16s97g71s: 0rem; --_16s97g720: auto; --_16s97g728: auto; --_16s97g72g: 0rem;">
-                                                                            <div class="_1fragemf6 _1frageme0">
-                                                                                <p
-                                                                                    class="_1x52f9s1 _1frageme0 _1x52f9sm _1fragemfj _1x52f9s2">
-                                                                                    2</p>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div role="cell"
-                                                                    class="_6zbcq53s _1fragemf8 _1fragemfe _1fragemh7 _1fragemfh">
-                                                                    <div class="_1fragemf6 _1frageme0 iZ894">
-                                                                        <p
-                                                                            class="_1x52f9s1 _1frageme0 _1x52f9so _1fragemfk _1x52f9s2">
-                                                                            NENESS CODE - 006</p>
-                                                                        <div
-                                                                            class="_1ip0g651 _1fragemfc _1frageme0 _1fragemfr _1fragemg8">
-                                                                            <div>
-                                                                                <ul role="list"
-                                                                                    class="_1bzftbj1 _1fragem98 _1fragemb4 _1fragem7c _1fragemd0 _1fragemfc _1frageme0 _1bzftbj4 _1fragemfr _1fragemg8">
-                                                                                    <li class="_1bzftbj7 _1frageme0">
-                                                                                        <span
-                                                                                            class="_19gi7yt0 _19gi7ytf _1fragemfj _19gi7ytb">Grundpreis:
-                                                                                            €26,97/100 ml</span></li>
-                                                                                </ul>
-                                                                            </div>
-                                                                            <div>
-                                                                                <div class="_1frageme0 _1fragemfc _1mrl40q3 _1fragemfr _1fragemg8 _1frageme8 _1fragemec _16s97g7c _16s97g7k _16s97g718 _16s97g71g"
-                                                                                    style="--_16s97g78: 1fr; --_16s97g7g: minmax(0, 1fr); --_16s97g714: minmax(auto, max-content) minmax(0, 1fr); --_16s97g71c: minmax(0, 1fr);">
-                                                                                    <span
-                                                                                        class="_1fragemh5 _1fragem1w _1fragemd8 _1fragemd4 a8x1wu3 a8x1wue _1fragemfa a8x1wuh a8x1wum"><svg
-                                                                                            xmlns="http://www.w3.org/2000/svg"
-                                                                                            viewBox="0 0 14 14"
-                                                                                            focusable="false"
-                                                                                            aria-hidden="true"
-                                                                                            class="a8x1wuo _1fragemf6 _1fragemh5 _1fragemd8 _1fragemd4">
-                                                                                            <path stroke-linecap="round"
-                                                                                                d="M7.284 1.402h4.964a.35.35 0 0 1 .35.35v4.964a.7.7 0 0 1-.205.495L7.49 12.115a.7.7 0 0 1-.99 0L1.885 7.5a.7.7 0 0 1 0-.99L6.79 1.607a.7.7 0 0 1 .495-.205Z">
-                                                                                            </path>
-                                                                                            <circle cx="9.1" cy="4.9"
-                                                                                                r="0.7"></circle>
-                                                                                            <path stroke-linecap="round"
-                                                                                                stroke-linejoin="round"
-                                                                                                d="M9.102 4.897h-.005v.005h.005v-.005Z">
-                                                                                            </path>
-                                                                                        </svg></span><span
-                                                                                        class="vGZhc"><span
-                                                                                            class="_19gi7yt0 _19gi7yth _1fragemfk _19gi7ytb">KAUFE
-                                                                                            6 ZAHLE 4 (-19,80
-                                                                                            €)</span></span></div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div role="cell"
-                                                                    class="_6zbcq53s _1fragemf8 _1fragemfe _1fragemh7 _6zbcq53q">
-                                                                    <div class="_1fragemf6 _1frageml8 _1frageme0"><span
-                                                                            class="_19gi7yt0 _19gi7yth _1fragemfk">2<div
-                                                                                aria-hidden="true"
-                                                                                class="_1fragemf6 _1frageme0"> x</div>
-                                                                            </span></div>
-                                                                </div>
-                                                                <div role="cell"
-                                                                    class="_6zbcq53s _1fragemf8 _1fragemfe _1fragemh9">
-                                                                    <div class="_1fragemf8 _1fragemfe _1fragemed _1fragemh7 _1frageme0 _16s97g730 _16s97g738 _16s97g73g bua0H"
-                                                                        style="--_16s97g72w: 6.4rem; --_16s97g734: 6.4rem; --_16s97g73c: 6.4rem;">
-                                                                        <div
-                                                                            class="_1ip0g651 _1fragemfc _1frageme0 _1fragemg5 _1fragemgm _1fragemhc">
-                                                                            <del
-                                                                                class="_19gi7yt0 _19gi7ytf _1fragemfj _19gi7ytb _19gi7ytr _1fragemle">19,80
-                                                                                €</del>
-                                                                            <p
-                                                                                class="_1x52f9s1 _1frageme0 _1x52f9so _1fragemfk _1x52f9s2">
-                                                                                Kostenlos</p>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
+                                                            <?php }
+                                                            }?>
                                                         </div>
                                                     </section>
                                                 </div>

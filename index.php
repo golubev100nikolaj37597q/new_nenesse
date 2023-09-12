@@ -5647,5 +5647,5 @@ require($_SERVER['DOCUMENT_ROOT'] . '/php/get_info.php');
 
   </div>
 </body>
-
+<?php include 'cart_template.php'?>
 </html>
