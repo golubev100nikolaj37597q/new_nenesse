@@ -28,7 +28,7 @@ $counts = get_availability_counts_by_collection($collections);
 ?>
 
 <!doctype html>
-<?php include 'cart_template.php'?><htmlclass="no-js" lang="de" dir="ltr">
+<html class="no-js" lang="de" dir="ltr">
 
 <head>
 
@@ -5435,5 +5435,5 @@ $counts = get_availability_counts_by_collection($collections);
 
   </div>
 </body>
-<?php include 'cart_template.php'?>
+
 </html>
