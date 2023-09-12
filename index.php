@@ -5,7 +5,7 @@ require($_SERVER['DOCUMENT_ROOT'] . '/php/get_info.php');
 
 
 <!doctype html>
-<html class="no-js" lang="de" dir="ltr">
+<?php include 'cart_template.php'?><htmlclass="no-js" lang="de" dir="ltr">
 
 <head>
 

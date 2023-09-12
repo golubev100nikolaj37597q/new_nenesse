@@ -13,7 +13,7 @@ if ($_SESSION['user_role'] !== 'admin') {
 }
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<?php include 'cart_template.php'?><htmllang="en">
 
 <head>
   <!-- Required Meta Tags Always Come First -->
@@ -229,7 +229,8 @@ if ($_SESSION['user_role'] !== 'admin') {
   <!-- ========== MAIN CONTENT ========== -->
   <!-- Navbar Vertical -->
 
-  <aside class="js-navbar-vertical-aside navbar navbar-vertical-aside navbar-vertical navbar-vertical-fixed navbar-expand-xl navbar-bordered bg-white  ">
+  <aside
+    class="js-navbar-vertical-aside navbar navbar-vertical-aside navbar-vertical navbar-vertical-fixed navbar-expand-xl navbar-bordered bg-white  ">
     <div class="navbar-vertical-container">
       <div class="navbar-vertical-footer-offset">
         <!-- Logo -->
@@ -243,8 +244,12 @@ if ($_SESSION['user_role'] !== 'admin') {
 
         <!-- Navbar Vertical Toggle -->
         <button type="button" class="js-navbar-vertical-aside-toggle-invoker navbar-aside-toggler">
-          <i class="bi-arrow-bar-left navbar-toggler-short-align" data-bs-template='<div class="tooltip d-none d-md-block" role="tooltip"><div class="arrow"></div><div class="tooltip-inner"></div></div>' data-bs-toggle="tooltip" data-bs-placement="right" title="Collapse"></i>
-          <i class="bi-arrow-bar-right navbar-toggler-full-align" data-bs-template='<div class="tooltip d-none d-md-block" role="tooltip"><div class="arrow"></div><div class="tooltip-inner"></div></div>' data-bs-toggle="tooltip" data-bs-placement="right" title="Expand"></i>
+          <i class="bi-arrow-bar-left navbar-toggler-short-align"
+            data-bs-template='<div class="tooltip d-none d-md-block" role="tooltip"><div class="arrow"></div><div class="tooltip-inner"></div></div>'
+            data-bs-toggle="tooltip" data-bs-placement="right" title="Collapse"></i>
+          <i class="bi-arrow-bar-right navbar-toggler-full-align"
+            data-bs-template='<div class="tooltip d-none d-md-block" role="tooltip"><div class="arrow"></div><div class="tooltip-inner"></div></div>'
+            data-bs-toggle="tooltip" data-bs-placement="right" title="Expand"></i>
         </button>
 
         <!-- End Navbar Vertical Toggle -->
@@ -303,21 +308,28 @@ if ($_SESSION['user_role'] !== 'admin') {
                 <!-- Form -->
 
                 <div class="mb-4">
-                  <label for="productNameLabel" class="form-label">Title <i class="bi-question-circle text-body ms-1" data-bs-toggle="tooltip" data-bs-placement="top" title="Name"></i></label>
+                  <label for="productNameLabel" class="form-label">Title <i class="bi-question-circle text-body ms-1"
+                      data-bs-toggle="tooltip" data-bs-placement="top" title="Name"></i></label>
 
 
-                  <input type="text" class="form-control" name="title" id="productNameLabel" placeholder="" value="" aria-label="Shirt, t-shirts, etc.">
+                  <input type="text" class="form-control" name="title" id="productNameLabel" placeholder=""
+                    value="" aria-label="Shirt, t-shirts, etc.">
                 </div>
                 <div class="mb-4">
-                  <label for="productNameLabel" class="form-label">Main <i class="bi-question-circle text-body ms-1" data-bs-toggle="tooltip" data-bs-placement="top" title="Name"></i></label>
+                  <label for="productNameLabel" class="form-label">Main <i class="bi-question-circle text-body ms-1"
+                      data-bs-toggle="tooltip" data-bs-placement="top" title="Name"></i></label>
 
 
-                  <input type="text" class="form-control" name="name" id="productNameLabel" placeholder="" value="" aria-label="Shirt, t-shirts, etc.">
+                  <input type="text" class="form-control" name="name" id="productNameLabel" placeholder=""
+                    value="" aria-label="Shirt, t-shirts, etc.">
                 </div>
                 <div class="mb-4">
-                  <label for="productNameLabel1" class="form-label">Short description <i class="bi-question-circle text-body ms-1" data-bs-toggle="tooltip" data-bs-placement="top" title="Под кратким описанием имеется ввиду, короктое описание квартиры которое описывается под пунктом 'Основная информация' "></i></label>
+                  <label for="productNameLabel1" class="form-label">Short description <i
+                      class="bi-question-circle text-body ms-1" data-bs-toggle="tooltip" data-bs-placement="top"
+                      title="Под кратким описанием имеется ввиду, короктое описание квартиры которое описывается под пунктом 'Основная информация' "></i></label>
 
-                  <input type="text" class="form-control" name="descr" id="productNameLabel1" value="" placeholder="" aria-label="Shirt, t-shirts, etc.">
+                  <input type="text" class="form-control" name="descr" id="productNameLabel1"
+                    value="" placeholder="" aria-label="Shirt, t-shirts, etc.">
                 </div>
                 <!-- End Form -->
 
@@ -339,30 +351,10 @@ if ($_SESSION['user_role'] !== 'admin') {
                 <!-- End Quill -->
 
 
-
-                <!-- Body -->
               </div>
+              <!-- Body -->
             </div>
             <!-- End Card -->
-            <div class="card">
-              <div class="card-header d-flex " style="justify-content: space-between;">
-                <h2 class="card-title h4">Отзывы</h2>
-                <div class="justify-content-end">
-                  <button type="button" id="button_send1" class="btn btn-primary" style="padding: 0px 5px; vertical-align: unset;" onclick="createReviewBlock()" control-id="ControlID-7">+</button>
-                </div>
-              </div>
-
-              <!-- Body -->
-              <div class="card-body">
-                <!-- Form -->
-                <div id="save_settings">
-
-
-                </div>
-                <!-- End Form -->
-              </div>
-            </div>
-            <!-- End Body -->
 
             <!-- Card -->
             <div class="card mb-3 mb-lg-5">
@@ -375,10 +367,12 @@ if ($_SESSION['user_role'] !== 'admin') {
 
 
                   <div class="dropdown-menu dropdown-menu-end mt-1">
-                    <a class="dropdown-item" href="javascript:;" data-bs-toggle="modal" data-bs-target="#addImageFromURLModal">
+                    <a class="dropdown-item" href="javascript:;" data-bs-toggle="modal"
+                      data-bs-target="#addImageFromURLModal">
                       <i class="bi-link dropdown-item-icon"></i> Add image from URL
                     </a>
-                    <a class="dropdown-item" href="javascript:;" data-bs-toggle="modal" data-bs-target="#embedVideoModal">
+                    <a class="dropdown-item" href="javascript:;" data-bs-toggle="modal"
+                      data-bs-target="#embedVideoModal">
                       <i class="bi-youtube dropdown-item-icon"></i> Embed video
                     </a>
                   </div>
@@ -393,7 +387,8 @@ if ($_SESSION['user_role'] !== 'admin') {
                 <div class="dz-dropzone dz-dropzone-card">
 
                   <div class="dz-message">
-                    <input type="file" class="btn btn-white btn-sm" accept=".jpg, .jpeg, .png, .gif" id="productImageInput" name="productImage[]" multiple>
+                    <input type="file" class="btn btn-white btn-sm" accept=".jpg, .jpeg, .png, .gif"
+                      id="productImageInput" name="productImage[]" multiple>
                   </div>
 
                 </div>
@@ -618,7 +613,8 @@ if ($_SESSION['user_role'] !== 'admin') {
                 <div class="mb-4">
                   <label for="vendorLabel" class="form-label">Price</label>
 
-                  <input type="text" class="form-control" name="price" value="" id="vendorLabel" placeholder="">
+                  <input type="text" class="form-control" name="price" value="" id="vendorLabel"
+                    placeholder="">
                 </div>
                 <!-- End Form -->
 
@@ -626,7 +622,8 @@ if ($_SESSION['user_role'] !== 'admin') {
                   <label for="tagsLabel" class="form-label">Container</label>
 
 
-                  <input type="text" class="form-control" name="container" value="" id="tagsLabel" placeholder="" aria-label="Enter tags here">
+                  <input type="text" class="form-control" name="container" value=""
+                    id="tagsLabel" placeholder="" aria-label="Enter tags here">
                 </div>
                 <div class="mb-4">
                   <label for="tagsLabel" class="form-label">Collection</label>
@@ -675,7 +672,8 @@ if ($_SESSION['user_role'] !== 'admin') {
                 <div class="mb-4">
 
 
-                  <input type="text" class="form-control" name="views" value="" id="vendorLabel" placeholder="" disabled>
+                  <input type="text" class="form-control" name="views" value="" id="vendorLabel" placeholder=""
+                    disabled>
                 </div>
                 <!-- End Form -->
 
@@ -747,7 +745,9 @@ if ($_SESSION['user_role'] !== 'admin') {
 
               <li class="list-inline-item">
                 <!-- Keyboard Shortcuts Toggle -->
-                <button class="btn btn-ghost-secondary btn btn-icon btn-ghost-secondary rounded-circle" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasKeyboardShortcuts" aria-controls="offcanvasKeyboardShortcuts">
+                <button class="btn btn-ghost-secondary btn btn-icon btn-ghost-secondary rounded-circle" type="button"
+                  data-bs-toggle="offcanvas" data-bs-target="#offcanvasKeyboardShortcuts"
+                  aria-controls="offcanvasKeyboardShortcuts">
                   <i class="bi-command"></i>
                 </button>
                 <!-- End Keyboard Shortcuts Toggle -->
@@ -767,7 +767,8 @@ if ($_SESSION['user_role'] !== 'admin') {
 
   <!-- ========== SECONDARY CONTENTS ========== -->
   <!-- Keyboard Shortcuts -->
-  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasKeyboardShortcuts" aria-labelledby="offcanvasKeyboardShortcutsLabel">
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasKeyboardShortcuts"
+    aria-labelledby="offcanvasKeyboardShortcutsLabel">
     <div class="offcanvas-header">
       <h4 id="offcanvasKeyboardShortcutsLabel" class="mb-0">Keyboard shortcuts</h4>
       <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -785,7 +786,8 @@ if ($_SESSION['user_role'] !== 'admin') {
             <!-- End Col -->
 
             <div class="col-7 text-end">
-              <kbd class="d-inline-block mb-1">Ctrl</kbd> <span class="text-muted small">+</span> <kbd class="d-inline-block mb-1">b</kbd>
+              <kbd class="d-inline-block mb-1">Ctrl</kbd> <span class="text-muted small">+</span> <kbd
+                class="d-inline-block mb-1">b</kbd>
             </div>
           </div>
           <!-- End Row -->
@@ -799,7 +801,8 @@ if ($_SESSION['user_role'] !== 'admin') {
             <!-- End Col -->
 
             <div class="col-7 text-end">
-              <kbd class="d-inline-block mb-1">Ctrl</kbd> <span class="text-muted small">+</span> <kbd class="d-inline-block mb-1">i</kbd>
+              <kbd class="d-inline-block mb-1">Ctrl</kbd> <span class="text-muted small">+</span> <kbd
+                class="d-inline-block mb-1">i</kbd>
             </div>
             <!-- End Col -->
           </div>
@@ -814,7 +817,8 @@ if ($_SESSION['user_role'] !== 'admin') {
             <!-- End Col -->
 
             <div class="col-7 text-end">
-              <kbd class="d-inline-block mb-1">Ctrl</kbd> <span class="text-muted small">+</span> <kbd class="d-inline-block mb-1">u</kbd>
+              <kbd class="d-inline-block mb-1">Ctrl</kbd> <span class="text-muted small">+</span> <kbd
+                class="d-inline-block mb-1">u</kbd>
             </div>
             <!-- End Col -->
           </div>
@@ -829,7 +833,9 @@ if ($_SESSION['user_role'] !== 'admin') {
             <!-- End Col -->
 
             <div class="col-7 text-end">
-              <kbd class="d-inline-block mb-1">Ctrl</kbd> <span class="text-muted small">+</span> <kbd class="d-inline-block mb-1">Alt</kbd> <span class="text-muted small">+</span> <kbd class="d-inline-block mb-1">s</kbd>
+              <kbd class="d-inline-block mb-1">Ctrl</kbd> <span class="text-muted small">+</span> <kbd
+                class="d-inline-block mb-1">Alt</kbd> <span class="text-muted small">+</span> <kbd
+                class="d-inline-block mb-1">s</kbd>
               <!-- End Col -->
             </div>
           </div>
@@ -844,7 +850,8 @@ if ($_SESSION['user_role'] !== 'admin') {
             <!-- End Col -->
 
             <div class="col-7 text-end">
-              <kbd class="d-inline-block mb-1">Ctrl</kbd> <span class="text-muted small">+</span> <kbd class="d-inline-block mb-1">s</kbd>
+              <kbd class="d-inline-block mb-1">Ctrl</kbd> <span class="text-muted small">+</span> <kbd
+                class="d-inline-block mb-1">s</kbd>
             </div>
             <!-- End Col -->
           </div>
@@ -859,7 +866,8 @@ if ($_SESSION['user_role'] !== 'admin') {
             <!-- End Col -->
 
             <div class="col-7 text-end">
-              <kbd class="d-inline-block mb-1">Ctrl</kbd> <span class="text-muted small">+</span> <kbd class="d-inline-block mb-1">e</kbd>
+              <kbd class="d-inline-block mb-1">Ctrl</kbd> <span class="text-muted small">+</span> <kbd
+                class="d-inline-block mb-1">e</kbd>
             </div>
             <!-- End Col -->
           </div>
@@ -985,7 +993,8 @@ if ($_SESSION['user_role'] !== 'admin') {
             <!-- End Col -->
 
             <div class="col-7 text-end">
-              <kbd class="d-inline-block mb-1">Ctrl</kbd> <span class="text-muted small">+</span> <kbd class="d-inline-block mb-1">r</kbd>
+              <kbd class="d-inline-block mb-1">Ctrl</kbd> <span class="text-muted small">+</span> <kbd
+                class="d-inline-block mb-1">r</kbd>
             </div>
             <!-- End Col -->
           </div>
@@ -1000,7 +1009,8 @@ if ($_SESSION['user_role'] !== 'admin') {
             <!-- End Col -->
 
             <div class="col-7 text-end">
-              <kbd class="d-inline-block mb-1">Ctrl</kbd> <span class="text-muted small">+</span> <kbd class="d-inline-block mb-1">n</kbd>
+              <kbd class="d-inline-block mb-1">Ctrl</kbd> <span class="text-muted small">+</span> <kbd
+                class="d-inline-block mb-1">n</kbd>
             </div>
             <!-- End Col -->
           </div>
@@ -1015,7 +1025,8 @@ if ($_SESSION['user_role'] !== 'admin') {
             <!-- End Col -->
 
             <div class="col-7 text-end">
-              <kbd class="d-inline-block mb-1">Ctrl</kbd> <span class="text-muted small">+</span> <kbd class="d-inline-block mb-1">p</kbd>
+              <kbd class="d-inline-block mb-1">Ctrl</kbd> <span class="text-muted small">+</span> <kbd
+                class="d-inline-block mb-1">p</kbd>
             </div>
             <!-- End Col -->
           </div>
@@ -1045,7 +1056,8 @@ if ($_SESSION['user_role'] !== 'admin') {
             <!-- End Col -->
 
             <div class="col-7 text-end">
-              <kbd class="d-inline-block mb-1">Shift</kbd> <span class="text-muted small">+</span> <kbd class="d-inline-block mb-1">Tab</kbd>
+              <kbd class="d-inline-block mb-1">Shift</kbd> <span class="text-muted small">+</span> <kbd
+                class="d-inline-block mb-1">Tab</kbd>
             </div>
             <!-- End Col -->
           </div>
@@ -1060,7 +1072,9 @@ if ($_SESSION['user_role'] !== 'admin') {
             <!-- End Col -->
 
             <div class="col-7 text-end">
-              <kbd class="d-inline-block mb-1">Ctrl</kbd> <span class="text-muted small">+</span> <kbd class="d-inline-block mb-1">Shift</kbd> <span class="text-muted small">+</span> <kbd class="d-inline-block mb-1"><i class="bi-arrow-up-short"></i></kbd>
+              <kbd class="d-inline-block mb-1">Ctrl</kbd> <span class="text-muted small">+</span> <kbd
+                class="d-inline-block mb-1">Shift</kbd> <span class="text-muted small">+</span> <kbd
+                class="d-inline-block mb-1"><i class="bi-arrow-up-short"></i></kbd>
             </div>
             <!-- End Col -->
           </div>
@@ -1075,7 +1089,9 @@ if ($_SESSION['user_role'] !== 'admin') {
             <!-- End Col -->
 
             <div class="col-7 text-end">
-              <kbd class="d-inline-block mb-1">Ctrl</kbd> <span class="text-muted small">+</span> <kbd class="d-inline-block mb-1">Shift</kbd> <span class="text-muted small">+</span> <kbd class="d-inline-block mb-1"><i class="bi-arrow-down-short fs-5"></i></kbd>
+              <kbd class="d-inline-block mb-1">Ctrl</kbd> <span class="text-muted small">+</span> <kbd
+                class="d-inline-block mb-1">Shift</kbd> <span class="text-muted small">+</span> <kbd
+                class="d-inline-block mb-1"><i class="bi-arrow-down-short fs-5"></i></kbd>
             </div>
             <!-- End Col -->
           </div>
@@ -1090,7 +1106,9 @@ if ($_SESSION['user_role'] !== 'admin') {
             <!-- End Col -->
 
             <div class="col-7 text-end">
-              <kbd class="d-inline-block mb-1">Ctrl</kbd> <span class="text-muted small">+</span> <kbd class="d-inline-block mb-1">Alt</kbd> <span class="text-muted small">+</span> <kbd class="d-inline-block mb-1">m</kbd>
+              <kbd class="d-inline-block mb-1">Ctrl</kbd> <span class="text-muted small">+</span> <kbd
+                class="d-inline-block mb-1">Alt</kbd> <span class="text-muted small">+</span> <kbd
+                class="d-inline-block mb-1">m</kbd>
             </div>
             <!-- End Col -->
           </div>
@@ -1105,7 +1123,8 @@ if ($_SESSION['user_role'] !== 'admin') {
             <!-- End Col -->
 
             <div class="col-7 text-end">
-              <kbd class="d-inline-block mb-1">Ctrl</kbd> <span class="text-muted small">+</span> <kbd class="d-inline-block mb-1">z</kbd>
+              <kbd class="d-inline-block mb-1">Ctrl</kbd> <span class="text-muted small">+</span> <kbd
+                class="d-inline-block mb-1">z</kbd>
             </div>
             <!-- End Col -->
           </div>
@@ -1120,7 +1139,8 @@ if ($_SESSION['user_role'] !== 'admin') {
             <!-- End Col -->
 
             <div class="col-7 text-end">
-              <kbd class="d-inline-block mb-1">Ctrl</kbd> <span class="text-muted small">+</span> <kbd class="d-inline-block mb-1">y</kbd>
+              <kbd class="d-inline-block mb-1">Ctrl</kbd> <span class="text-muted small">+</span> <kbd
+                class="d-inline-block mb-1">y</kbd>
             </div>
             <!-- End Col -->
           </div>
@@ -1141,7 +1161,9 @@ if ($_SESSION['user_role'] !== 'admin') {
             <!-- End Col -->
 
             <div class="col-7 text-end">
-              <kbd class="d-inline-block mb-1">Ctrl</kbd> <span class="text-muted small">+</span> <kbd class="d-inline-block mb-1">Alt</kbd> <span class="text-muted small">+</span> <kbd class="d-inline-block mb-1">n</kbd>
+              <kbd class="d-inline-block mb-1">Ctrl</kbd> <span class="text-muted small">+</span> <kbd
+                class="d-inline-block mb-1">Alt</kbd> <span class="text-muted small">+</span> <kbd
+                class="d-inline-block mb-1">n</kbd>
             </div>
             <!-- End Col -->
           </div>
@@ -1156,7 +1178,9 @@ if ($_SESSION['user_role'] !== 'admin') {
             <!-- End Col -->
 
             <div class="col-7 text-end">
-              <kbd class="d-inline-block mb-1">Ctrl</kbd> <span class="text-muted small">+</span> <kbd class="d-inline-block mb-1">Shift</kbd> <span class="text-muted small">+</span> <kbd class="d-inline-block mb-1">p</kbd>
+              <kbd class="d-inline-block mb-1">Ctrl</kbd> <span class="text-muted small">+</span> <kbd
+                class="d-inline-block mb-1">Shift</kbd> <span class="text-muted small">+</span> <kbd
+                class="d-inline-block mb-1">p</kbd>
             </div>
             <!-- End Col -->
           </div>
@@ -1171,7 +1195,9 @@ if ($_SESSION['user_role'] !== 'admin') {
             <!-- End Col -->
 
             <div class="col-7 text-end">
-              <kbd class="d-inline-block mb-1">Ctrl</kbd> <span class="text-muted small">+</span> <kbd class="d-inline-block mb-1">Shift</kbd> <span class="text-muted small">+</span> <kbd class="d-inline-block mb-1">s</kbd>
+              <kbd class="d-inline-block mb-1">Ctrl</kbd> <span class="text-muted small">+</span> <kbd
+                class="d-inline-block mb-1">Shift</kbd> <span class="text-muted small">+</span> <kbd
+                class="d-inline-block mb-1">s</kbd>
             </div>
             <!-- End Col -->
           </div>
@@ -1186,7 +1212,9 @@ if ($_SESSION['user_role'] !== 'admin') {
             <!-- End Col -->
 
             <div class="col-7 text-end">
-              <kbd class="d-inline-block mb-1">Ctrl</kbd> <span class="text-muted small">+</span> <kbd class="d-inline-block mb-1">Shift</kbd> <span class="text-muted small">+</span> <kbd class="d-inline-block mb-1">o</kbd>
+              <kbd class="d-inline-block mb-1">Ctrl</kbd> <span class="text-muted small">+</span> <kbd
+                class="d-inline-block mb-1">Shift</kbd> <span class="text-muted small">+</span> <kbd
+                class="d-inline-block mb-1">o</kbd>
             </div>
             <!-- End Col -->
           </div>
@@ -1201,7 +1229,9 @@ if ($_SESSION['user_role'] !== 'admin') {
             <!-- End Col -->
 
             <div class="col-7 text-end">
-              <kbd class="d-inline-block mb-1">Ctrl</kbd> <span class="text-muted small">+</span> <kbd class="d-inline-block mb-1">Shift</kbd> <span class="text-muted small">+</span> <kbd class="d-inline-block mb-1">/</kbd>
+              <kbd class="d-inline-block mb-1">Ctrl</kbd> <span class="text-muted small">+</span> <kbd
+                class="d-inline-block mb-1">Shift</kbd> <span class="text-muted small">+</span> <kbd
+                class="d-inline-block mb-1">/</kbd>
             </div>
             <!-- End Col -->
           </div>
@@ -1214,7 +1244,8 @@ if ($_SESSION['user_role'] !== 'admin') {
   <!-- End Keyboard Shortcuts -->
 
   <!-- Activity -->
-  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasActivityStream" aria-labelledby="offcanvasActivityStreamLabel">
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasActivityStream"
+    aria-labelledby="offcanvasActivityStreamLabel">
     <div class="offcanvas-header">
       <h4 id="offcanvasActivityStreamLabel" class="mb-0">Activity stream</h4>
       <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -1232,7 +1263,8 @@ if ($_SESSION['user_role'] !== 'admin') {
             <div class="step-content">
               <h5 class="mb-1">Iana Robinson</h5>
 
-              <p class="fs-5 mb-1">Added 2 files to task <a class="text-uppercase" href="#"><i class="bi-journal-bookmark-fill"></i> Fd-7</a></p>
+              <p class="fs-5 mb-1">Added 2 files to task <a class="text-uppercase" href="#"><i
+                    class="bi-journal-bookmark-fill"></i> Fd-7</a></p>
 
               <ul class="list-group list-group-sm">
                 <!-- List Item -->
@@ -1242,10 +1274,12 @@ if ($_SESSION['user_role'] !== 'admin') {
                       <!-- Media -->
                       <div class="d-flex">
                         <div class="flex-shrink-0">
-                          <img alt="img" class="avatar avatar-xs" src="./assets/svg/brands/excel-icon.svg" alt="Image Description">
+                          <img alt="img" class="avatar avatar-xs" src="./assets/svg/brands/excel-icon.svg"
+                            alt="Image Description">
                         </div>
                         <div class="flex-grow-1 text-truncate ms-2">
-                          <span class="d-block fs-6 text-dark text-truncate" title="weekly-reports.xls">weekly-reports.xls</span>
+                          <span class="d-block fs-6 text-dark text-truncate"
+                            title="weekly-reports.xls">weekly-reports.xls</span>
                           <span class="d-block small text-muted">12kb</span>
                         </div>
                       </div>
@@ -1257,10 +1291,12 @@ if ($_SESSION['user_role'] !== 'admin') {
                       <!-- Media -->
                       <div class="d-flex">
                         <div class="flex-shrink-0">
-                          <img alt="img" class="avatar avatar-xs" src="./assets/svg/brands/word-icon.svg" alt="Image Description">
+                          <img alt="img" class="avatar avatar-xs" src="./assets/svg/brands/word-icon.svg"
+                            alt="Image Description">
                         </div>
                         <div class="flex-grow-1 text-truncate ms-2">
-                          <span class="d-block fs-6 text-dark text-truncate" title="weekly-reports.xls">weekly-reports.xls</span>
+                          <span class="d-block fs-6 text-dark text-truncate"
+                            title="weekly-reports.xls">weekly-reports.xls</span>
                           <span class="d-block small text-muted">4kb</span>
                         </div>
                       </div>
@@ -1288,7 +1324,8 @@ if ($_SESSION['user_role'] !== 'admin') {
               <h5 class="mb-1">Bob Dean</h5>
 
               <p class="fs-5 mb-1">Marked <a class="text-uppercase" href="#"><i class="bi-journal-bookmark-fill"></i>
-                  Fr-6</a> as <span class="badge bg-soft-success text-success rounded-pill"><span class="legend-indicator bg-success"></span>"Completed"</span></p>
+                  Fr-6</a> as <span class="badge bg-soft-success text-success rounded-pill"><span
+                    class="legend-indicator bg-success"></span>"Completed"</span></p>
 
               <span class="small text-muted text-uppercase">Today</span>
             </div>
@@ -1312,13 +1349,16 @@ if ($_SESSION['user_role'] !== 'admin') {
                 <li class="list-group-item list-group-item-light">
                   <div class="row gx-1">
                     <div class="col">
-                      <img alt="img" class="img-fluid rounded" src="./assets/svg/components/card-1.svg" alt="Image Description">
+                      <img alt="img" class="img-fluid rounded" src="./assets/svg/components/card-1.svg"
+                        alt="Image Description">
                     </div>
                     <div class="col">
-                      <img alt="img" class="img-fluid rounded" src="./assets/svg/components/card-2.svg" alt="Image Description">
+                      <img alt="img" class="img-fluid rounded" src="./assets/svg/components/card-2.svg"
+                        alt="Image Description">
                     </div>
                     <div class="col">
-                      <img alt="img" class="img-fluid rounded" src="./assets/svg/components/card-3.svg" alt="Image Description">
+                      <img alt="img" class="img-fluid rounded" src="./assets/svg/components/card-3.svg"
+                        alt="Image Description">
                     </div>
                     <div class="col-auto align-self-center">
                       <div class="text-center">
@@ -1362,7 +1402,8 @@ if ($_SESSION['user_role'] !== 'admin') {
               <h5 class="mb-1">Rachel King</h5>
 
               <p class="fs-5 mb-1">Marked <a class="text-uppercase" href="#"><i class="bi-journal-bookmark-fill"></i>
-                  Fr-3</a> as <span class="badge bg-soft-success text-success rounded-pill"><span class="legend-indicator bg-success"></span>"Completed"</span></p>
+                  Fr-3</a> as <span class="badge bg-soft-success text-success rounded-pill"><span
+                    class="legend-indicator bg-success"></span>"Completed"</span></p>
 
               <span class="small text-muted text-uppercase">Apr 29</span>
             </div>
@@ -1399,7 +1440,8 @@ if ($_SESSION['user_role'] !== 'admin') {
               <h5 class="mb-1">Project status updated</h5>
 
               <p class="fs-5 mb-1">Marked <a class="text-uppercase" href="#"><i class="bi-journal-bookmark-fill"></i>
-                  Fr-3</a> as <span class="badge bg-soft-primary text-primary rounded-pill"><span class="legend-indicator bg-primary"></span>"In progress"</span></p>
+                  Fr-3</a> as <span class="badge bg-soft-primary text-primary rounded-pill"><span
+                    class="legend-indicator bg-primary"></span>"In progress"</span></p>
 
               <span class="small text-muted text-uppercase">Feb 10</span>
             </div>
@@ -1422,7 +1464,8 @@ if ($_SESSION['user_role'] !== 'admin') {
       <div class="modal-content">
         <!-- Header -->
         <div class="modal-close">
-          <button type="button" class="btn btn-ghost-secondary btn-icon btn-sm" data-bs-dismiss="modal" aria-label="Close">
+          <button type="button" class="btn btn-ghost-secondary btn-icon btn-sm" data-bs-dismiss="modal"
+            aria-label="Close">
             <i class="bi-x-lg"></i>
           </button>
         </div>
@@ -1432,8 +1475,10 @@ if ($_SESSION['user_role'] !== 'admin') {
         <div class="modal-body p-sm-5">
           <div class="text-center">
             <div class="w-75 w-sm-50 mx-auto mb-4">
-              <img alt="img" class="img-fluid" src="./assets/svg/illustrations/oc-collaboration.svg" alt="Image Description" data-hs-theme-appearance="default">
-              <img alt="img" class="img-fluid" src="./assets/svg/illustrations-light/oc-collaboration.svg" alt="Image Description" data-hs-theme-appearance="dark">
+              <img alt="img" class="img-fluid" src="./assets/svg/illustrations/oc-collaboration.svg"
+                alt="Image Description" data-hs-theme-appearance="default">
+              <img alt="img" class="img-fluid" src="./assets/svg/illustrations-light/oc-collaboration.svg"
+                alt="Image Description" data-hs-theme-appearance="dark">
             </div>
 
             <h4 class="h1">Welcome to Front</h4>
@@ -1472,7 +1517,8 @@ if ($_SESSION['user_role'] !== 'admin') {
   <!-- End Welcome Message Modal -->
 
   <!-- Add Image from URL Modal -->
-  <div class="modal fade" id="addImageFromURLModal" tabindex="-1" aria-labelledby="addImageFromURLModalLabel" aria-hidden="true">
+  <div class="modal fade" id="addImageFromURLModal" tabindex="-1" aria-labelledby="addImageFromURLModalLabel"
+    aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <!-- Header -->
@@ -1485,7 +1531,8 @@ if ($_SESSION['user_role'] !== 'admin') {
         <!-- Body -->
         <div class="modal-body">
           <label for="pasteImageURLNameLabel" class="form-label">Paste image URL</label>
-          <input type="text" class="form-control" name="projectName" id="pasteImageURLNameLabel" placeholder="https://" aria-label="https://">
+          <input type="text" class="form-control" name="projectName" id="pasteImageURLNameLabel" placeholder="https://"
+            aria-label="https://">
         </div>
         <!-- End Body -->
 
@@ -1514,7 +1561,8 @@ if ($_SESSION['user_role'] !== 'admin') {
         <!-- Body -->
         <div class="modal-body">
           <label for="pasteVideoURLNameLabel" class="form-label">Paste image URL</label>
-          <input type="text" class="form-control" name="projectName" id="pasteVideoURLNameLabel" placeholder="https://" aria-label="https://">
+          <input type="text" class="form-control" name="projectName" id="pasteVideoURLNameLabel" placeholder="https://"
+            aria-label="https://">
         </div>
         <!-- End Body -->
 
@@ -1535,7 +1583,8 @@ if ($_SESSION['user_role'] !== 'admin') {
       <div class="modal-content">
         <!-- Header -->
         <div class="modal-close">
-          <button type="button" class="btn btn-ghost-secondary btn-icon btn-sm" data-bs-dismiss="modal" aria-label="Close">
+          <button type="button" class="btn btn-ghost-secondary btn-icon btn-sm" data-bs-dismiss="modal"
+            aria-label="Close">
             <i class="bi-x-lg"></i>
           </button>
         </div>
@@ -1555,8 +1604,11 @@ if ($_SESSION['user_role'] !== 'admin') {
           <!-- Media -->
           <div class="d-flex">
             <div class="flex-shrink-0 mb-3 mb-sm-0">
-              <img alt="img" class="avatar avatar-lg avatar-4x3" src="./assets/svg/illustrations/oc-money-profits.svg" alt="Image Description" data-hs-theme-appearance="default">
-              <img alt="img" class="avatar avatar-lg avatar-4x3" src="./assets/svg/illustrations-light/oc-money-profits.svg" alt="Image Description" data-hs-theme-appearance="dark">
+              <img alt="img" class="avatar avatar-lg avatar-4x3" src="./assets/svg/illustrations/oc-money-profits.svg"
+                alt="Image Description" data-hs-theme-appearance="default">
+              <img alt="img" class="avatar avatar-lg avatar-4x3"
+                src="./assets/svg/illustrations-light/oc-money-profits.svg" alt="Image Description"
+                data-hs-theme-appearance="dark">
             </div>
 
             <div class="flex-grow-1 ms-4">
@@ -1572,8 +1624,10 @@ if ($_SESSION['user_role'] !== 'admin') {
           <!-- Media -->
           <div class="d-flex">
             <div class="flex-shrink-0 mb-3 mb-sm-0">
-              <img alt="img" class="avatar avatar-lg avatar-4x3" src="./assets/svg/illustrations/oc-discount.svg" alt="Image Description" data-hs-theme-appearance="default">
-              <img alt="img" class="avatar avatar-lg avatar-4x3" src="./assets/svg/illustrations-light/oc-discount.svg" alt="Image Description" data-hs-theme-appearance="dark">
+              <img alt="img" class="avatar avatar-lg avatar-4x3" src="./assets/svg/illustrations/oc-discount.svg"
+                alt="Image Description" data-hs-theme-appearance="default">
+              <img alt="img" class="avatar avatar-lg avatar-4x3" src="./assets/svg/illustrations-light/oc-discount.svg"
+                alt="Image Description" data-hs-theme-appearance="dark">
             </div>
 
             <div class="flex-grow-1 ms-4">
@@ -1588,8 +1642,11 @@ if ($_SESSION['user_role'] !== 'admin') {
           <!-- Media -->
           <div class="d-flex">
             <div class="flex-shrink-0 mb-3 mb-sm-0">
-              <img alt="img" class="avatar avatar-lg avatar-4x3" src="./assets/svg/illustrations/oc-collection.svg" alt="Image Description" data-hs-theme-appearance="default">
-              <img alt="img" class="avatar avatar-lg avatar-4x3" src="./assets/svg/illustrations-light/oc-collection.svg" alt="Image Description" data-hs-theme-appearance="dark">
+              <img alt="img" class="avatar avatar-lg avatar-4x3" src="./assets/svg/illustrations/oc-collection.svg"
+                alt="Image Description" data-hs-theme-appearance="default">
+              <img alt="img" class="avatar avatar-lg avatar-4x3"
+                src="./assets/svg/illustrations-light/oc-collection.svg" alt="Image Description"
+                data-hs-theme-appearance="dark">
             </div>
 
             <div class="flex-grow-1 ms-4">
@@ -1637,7 +1694,7 @@ if ($_SESSION['user_role'] !== 'admin') {
 
   <!-- JS Plugins Init. -->
   <script>
-    $(document).on('ready', function() {
+    $(document).on('ready', function () {
       // INITIALIZATION OF DATATABLES
       // =======================================================
       HSCore.components.HSDatatables.init($('#datatable'), {
@@ -1656,8 +1713,8 @@ if ($_SESSION['user_role'] !== 'admin') {
 
   <!-- JS Plugins Init. -->
   <script>
-    (function() {
-      window.onload = function() {
+    (function () {
+      window.onload = function () {
 
 
         // INITIALIZATION OF NAVBAR VERTICAL ASIDE
@@ -1709,7 +1766,7 @@ if ($_SESSION['user_role'] !== 'admin') {
 
 
 
-    document.getElementById('form-main').addEventListener('submit', function(event) {
+    document.getElementById('form-main').addEventListener('submit', function (event) {
       event.preventDefault();
       const data = {};
 
@@ -1719,8 +1776,7 @@ if ($_SESSION['user_role'] !== 'admin') {
       button_send.classList.add("btn", "btn-primary");
       reloader.classList.remove('d-none')
       const formData = new FormData(this);
-      const reviews_data = collectDataAndCreateJSON();
-      formData.append('reviews_data', reviews_data);
+
       const quillEditors = document.querySelectorAll('.js-quill');
       quillEditors.forEach((editor) => {
         const quillFieldName = 'info';
@@ -1738,8 +1794,8 @@ if ($_SESSION['user_role'] !== 'admin') {
         data: formData,
         processData: false,
         contentType: false,
-        success: function(data) {
-          setTimeout(function() {
+        success: function (data) {
+          setTimeout(function () {
             reloader.classList.add('d-none');
 
             if (data.trim() == "Successfully") {
@@ -1757,9 +1813,9 @@ if ($_SESSION['user_role'] !== 'admin') {
           console.log(data.trim());
 
         },
-        error: function(error) {
+        error: function (error) {
 
-          setTimeout(function() {
+          setTimeout(function () {
             reloader.classList.add('d-none');
             button_send.innerHTML = `Ошибка, проверьте правильно данных!<div class="spinner-border spinner-border-sm d-none" id="reloader" role="status"><span class="visually-hidden">Loading...</span></div>`
             button_send.classList.remove('btn-primary')
@@ -1771,143 +1827,18 @@ if ($_SESSION['user_role'] !== 'admin') {
       });
     });
   </script>
-  <script>
-    function createReviewBlock() {
 
-      var div = document.createElement("div");
-      div.style.borderBottom = "var(--bs-card-border-width) solid var(--bs-card-border-color)";
-      div.style.marginTop = "15px";
-      var row1 = document.createElement("div");
-      row1.className = "row mb-4";
-      div.appendChild(row1);
-
-      var label1 = document.createElement("label");
-      label1.setAttribute("for", "fio");
-      label1.className = "col-sm-3 col-form-label form-label";
-      label1.textContent = "Имя пользователя и оценка";
-      row1.appendChild(label1);
-
-      var col1 = document.createElement("div");
-      col1.className = "col-sm-9";
-      row1.appendChild(col1);
-
-      var input1 = document.createElement("input");
-      input1.type = "text";
-      input1.className = "form-control";
-      input1.name = "fio";
-      input1.id = "fio";
-      input1.placeholder = "Введите имя";
-      input1.setAttribute("aria-label", "Your first name");
-      input1.setAttribute("control-id", "ControlID-15");
-      col1.appendChild(input1);
-
-      var input2 = document.createElement("input");
-      input2.type = "text";
-      input2.className = "form-control";
-      input2.name = "evaluation";
-      input2.id = "evaluation";
-      input2.placeholder = "Введите оценку(0-5)";
-      input2.setAttribute("aria-label", "Your last name");
-      input2.setAttribute("control-id", "ControlID-16");
-      col1.appendChild(input2);
-
-      var row2 = document.createElement("div");
-      row2.className = "row mb-4";
-      div.appendChild(row2);
-
-      var label2 = document.createElement("label");
-      label2.setAttribute("for", "review_text");
-      label2.className = "col-sm-3 col-form-label form-label";
-      label2.textContent = "Отзыв";
-      row2.appendChild(label2);
-
-      var col2 = document.createElement("div");
-      col2.className = "col-sm-9";
-      row2.appendChild(col2);
-
-      var input3 = document.createElement("input");
-      input3.type = "text";
-      input3.className = "form-control";
-      input3.name = "review_text";
-      input3.id = "review_text";
-      input3.placeholder = "Введите отзыв";
-      input3.setAttribute("aria-label", "Email");
-      input3.setAttribute("control-id", "ControlID-17");
-      col2.appendChild(input3);
-
-      var row3 = document.createElement("div");
-      row3.className = "row mb-4";
-      div.appendChild(row3);
-
-      var label3 = document.createElement("label");
-      label3.setAttribute("for", "review_image");
-      label3.className = "col-sm-3 col-form-label form-label";
-      label3.textContent = "Изображение";
-      row3.appendChild(label3);
-
-      var col3 = document.createElement("div");
-      col3.className = "col-sm-9";
-      row3.appendChild(col3);
-
-      var input4 = document.createElement("input");
-      input4.type = "text";
-      input4.className = "form-control";
-      input4.name = "review_image";
-      input4.id = "review_image";
-      input4.placeholder = "Введите ссылку на изображения в отзыве";
-      input4.setAttribute("aria-label", "Email");
-      input4.setAttribute("control-id", "ControlID-18");
-      col3.appendChild(input4);
-
-
-
-      const main_views = document.getElementById('save_settings');
-      main_views.appendChild(div);
-      return div;
-    }
-
-    function collectDataAndCreateJSON() {
-      // Создаем объект для хранения данных
-      var data = {};
-
-      // Массив имен, которые вас интересуют
-      var targetNames = ["fio", "evaluation", "review_text", "review_image"];
-
-      // Проходим по каждому имени в массиве и собираем данные
-      targetNames.forEach(function(name) {
-        var inputElements = document.querySelectorAll('input[name="' + name + '"]');
-
-        // Создаем массив для хранения значений с одинаковыми именами
-        var values = [];
-
-        // Проходим по всем input элементам с заданным именем и собираем значения
-        inputElements.forEach(function(input) {
-          values.push(input.value);
-        });
-
-        // Если есть значения для данного имени, добавляем их в объект data
-        if (values.length > 0) {
-          data[name] = values;
-        }
-      });
-
-      // Создаем JSON строку из данных
-      var jsonData = JSON.stringify(data);
-
-      return jsonData;
-    }
-  </script>
   <!-- Style Switcher JS -->
 
   <script>
-    (function() {
+    (function () {
       // STYLE SWITCHER
       // =======================================================
       const $dropdownBtn = document.getElementById('selectThemeDropdown') // Dropdowon trigger
       const $variants = document.querySelectorAll(`[aria-labelledby="selectThemeDropdown"] [data-icon]`) // All items of the dropdown
 
       // Function to set active style in the dorpdown menu and set icon for dropdown trigger
-      const setActiveStyle = function() {
+      const setActiveStyle = function () {
         $variants.forEach($item => {
           if ($item.getAttribute('data-value') === HSThemeAppearance.getOriginalAppearance()) {
             $dropdownBtn.innerHTML = `<i class="${$item.getAttribute('data-icon')}" />`
@@ -1919,8 +1850,8 @@ if ($_SESSION['user_role'] !== 'admin') {
       }
 
       // Add a click event to all items of the dropdown to set the style
-      $variants.forEach(function($item) {
-        $item.addEventListener('click', function() {
+      $variants.forEach(function ($item) {
+        $item.addEventListener('click', function () {
           HSThemeAppearance.setAppearance($item.getAttribute('data-value'))
         })
       })
@@ -1929,7 +1860,7 @@ if ($_SESSION['user_role'] !== 'admin') {
       setActiveStyle()
 
       // Add event listener on change style to call the setActiveStyle function
-      window.addEventListener('on-hs-appearance-change', function() {
+      window.addEventListener('on-hs-appearance-change', function () {
         setActiveStyle()
       })
     })()

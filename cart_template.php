@@ -1,3 +1,5 @@
+<? session_start(); ?>
+
 <div id="monster-upsell-cart" data-rtl="false" style="display:none">
   <div class="monster_upsell_overlay___3sEH4" style="display: initial;visibility: visible;"></div>
   <div class="monster_upsell_cart___25Ft7 monster_upsell_rtl mu_openned" id="monster-cart-wrapper" style="right: 0px;">

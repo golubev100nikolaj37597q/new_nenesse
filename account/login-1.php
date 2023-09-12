@@ -1,5 +1,7 @@
-﻿<!doctype html>
-<html class="no-js" lang="de" dir="ltr">
+﻿
+
+<!doctype html>
+<?php include 'cart_template.php'?><htmlclass="no-js" lang="de" dir="ltr">
 <head>
 
 
