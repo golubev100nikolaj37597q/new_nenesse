@@ -1,18 +1,6 @@
 ﻿<?php
 require($_SERVER['DOCUMENT_ROOT'] . '/php/get_info.php');
-$products = get_info_product_by_name($_SESSION['cart']);
-echo $_SESSION['cart'];
-$cart = null;
-
-if (isset($_POST['cart'])) {
-
-  // Инициализируем корзину, если она еще не создана
-  if (!isset($_SESSION['cart'])) {
-    $_SESSION['cart'] = [];
-  }
-  addToCart($_POST['cart']);
-  echo "Success";
-}
+session_start();
 ?>
 
 
@@ -2381,7 +2369,7 @@ if (isset($_POST['cart'])) {
 
 
     </div>
-    <?php if ($cart != null) { ?>
+    <?php if ($_SESSION['cart'] != null) { ?>
           <main class="main-content" id="MainContent">
             <div id="shopify-section-template--17917049241866__main" class="shopify-section">
               <div class="page-width page-width--cart page-content">
@@ -2393,20 +2381,23 @@ if (isset($_POST['cart'])) {
                   <div class="cart__page">
                     <div class="cart__page-col">
                       <div data-products="">
-
+                      <?php  foreach($_SESSION['cart'] as $cart_el) { 
+                              $product = get_info_product_by_name($cart_el);
+                              
+                        ?>
                         <div class="cart__item" data-key="44458065821962:35ad46600b6b2098efd20ceb16b8486d">
                           <div class="cart__image">
                             <a href="/products/stardust-roll-on-100-parfumol?variant=44458065821962" class="image-wrap">
-                              <img class="lazyautosizes lazyloaded" data-widths="[180, 360, 540]" data-aspectratio="" data-sizes="auto" alt="STARDUST - 100% Parfümöl" data-srcset="//www.neness-shop.de/cdn/shop/products/montaz_star_AO_180x.jpg?v=1679649839 180w, //www.neness-shop.de/cdn/shop/products/montaz_star_AO_360x.jpg?v=1679649839 360w, //www.neness-shop.de/cdn/shop/products/montaz_star_AO_540x.jpg?v=1679649839 540w" sizes="150px" srcset="//www.neness-shop.de/cdn/shop/products/montaz_star_AO_180x.jpg?v=1679649839 180w, //www.neness-shop.de/cdn/shop/products/montaz_star_AO_360x.jpg?v=1679649839 360w, //www.neness-shop.de/cdn/shop/products/montaz_star_AO_540x.jpg?v=1679649839 540w">
+                              <img class="lazyautosizes lazyloaded" data-widths="[180, 360, 540]" data-aspectratio="" data-sizes="auto" alt="STARDUST - 100% Parfümöl" data-srcset="//www.neness-shop.de/cdn/shop/products/montaz_star_AO_180x.jpg?v=1679649839 180w, //www.neness-shop.de/cdn/shop/products/montaz_star_AO_360x.jpg?v=1679649839 360w, //www.neness-shop.de/cdn/shop/products/montaz_star_AO_540x.jpg?v=1679649839 540w" sizes="150px" srcset="<?php echo get_src_photo($product['name'])[0] ?>">
                               <noscript>
-                                <img class="lazyloaded" src="//www.neness-shop.de/cdn/shop/products/montaz_star_AO_400x.jpg?v=1679649839" alt="STARDUST - 100% Parfümöl">
+                                <img class="lazyloaded" src="" alt="STARDUST - 100% Parfümöl">
                               </noscript>
                             </a>
                           </div>
                           <div class="cart__item-details">
                             <div class="cart__item-title">
                               <a href="/products/stardust-roll-on-100-parfumol?variant=44458065821962" class="cart__item-name">
-                                STARDUST - 100% Parfümöl
+                                <?php echo $product['title']?>
                               </a>
                               <div class="loox-rating" data-id="44458065821962" data-rating="" data-raters=""></div>
 
@@ -2434,10 +2425,14 @@ if (isset($_POST['cart'])) {
                                 </div>
 
                                 <div class="cart__remove">
-                                  <a href="/cart/change?id=44458065821962:35ad46600b6b2098efd20ceb16b8486d&amp;quantity=0" class="text-link">
+                                  <a href="" class="text-link">
                                     Entfernen
                                   </a>
+                                  
                                 </div>
+                                <script>
+                                  
+                                </script>
                               </div>
 
                               <div class="cart__item-price-col text-right">
@@ -2453,184 +2448,8 @@ if (isset($_POST['cart'])) {
                             </div>
                           </div>
                         </div>
-                        <div class="cart__item" data-key="44458065821962:35ad46600b6b2098efd20ceb16b8486d">
-                          <div class="cart__image">
-                            <a href="/products/stardust-roll-on-100-parfumol?variant=44458065821962" class="image-wrap">
-                              <img class="lazyautosizes lazyloaded" data-widths="[180, 360, 540]" data-aspectratio="" data-sizes="auto" alt="STARDUST - 100% Parfümöl" data-srcset="//www.neness-shop.de/cdn/shop/products/montaz_star_AO_180x.jpg?v=1679649839 180w, //www.neness-shop.de/cdn/shop/products/montaz_star_AO_360x.jpg?v=1679649839 360w, //www.neness-shop.de/cdn/shop/products/montaz_star_AO_540x.jpg?v=1679649839 540w" sizes="150px" srcset="//www.neness-shop.de/cdn/shop/products/montaz_star_AO_180x.jpg?v=1679649839 180w, //www.neness-shop.de/cdn/shop/products/montaz_star_AO_360x.jpg?v=1679649839 360w, //www.neness-shop.de/cdn/shop/products/montaz_star_AO_540x.jpg?v=1679649839 540w">
-                              <noscript>
-                                <img class="lazyloaded" src="//www.neness-shop.de/cdn/shop/products/montaz_star_AO_400x.jpg?v=1679649839" alt="STARDUST - 100% Parfümöl">
-                              </noscript>
-                            </a>
-                          </div>
-                          <div class="cart__item-details">
-                            <div class="cart__item-title">
-                              <a href="/products/stardust-roll-on-100-parfumol?variant=44458065821962" class="cart__item-name">
-                                STARDUST - 100% Parfümöl
-                              </a>
-                              <div class="loox-rating" data-id="44458065821962" data-rating="" data-raters=""></div>
-
-
-
-
-                            </div>
-                            <div class="cart__item-sub">
-                              <div>
-                                <div class="js-qty__wrapper">
-                                  <label for="cart_updates_44458065821962:35ad46600b6b2098efd20ceb16b8486d" class="hidden-label">Menge</label>
-                                  <input type="text" id="cart_updates_44458065821962:35ad46600b6b2098efd20ceb16b8486d" name="updates[]" class="js-qty__num" value="1" min="0" pattern="[0-9]*" data-id="44458065821962:35ad46600b6b2098efd20ceb16b8486d">
-                                  <button type="button" class="js-qty__adjust js-qty__adjust--minus" aria-label="Artikelmenge um eins reduzieren">
-                                    <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-minus" viewBox="0 0 64 64">
-                                      <path class="cls-1" d="M55 32H9"></path>
-                                    </svg>
-                                    <span class="icon__fallback-text" aria-hidden="true">−</span>
-                                  </button>
-                                  <button type="button" class="js-qty__adjust js-qty__adjust--plus" aria-label="Artikelmenge um eins erhöhen">
-                                    <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-plus" viewBox="0 0 64 64">
-                                      <path class="cls-1" d="M32 9v46m23-23H9"></path>
-                                    </svg>
-                                    <span class="icon__fallback-text" aria-hidden="true">+</span>
-                                  </button>
-                                </div>
-
-                                <div class="cart__remove">
-                                  <a href="/cart/change?id=44458065821962:35ad46600b6b2098efd20ceb16b8486d&amp;quantity=0" class="text-link">
-                                    Entfernen
-                                  </a>
-                                </div>
-                              </div>
-
-                              <div class="cart__item-price-col text-right">
-
-                                <span class="cart__price"><span aria-hidden="true">€25<sup>90</sup></span>
-                                  <span class="visually-hidden">€25,90</span>
-                                </span>
-
-                                <span class="product__unit-price">€259,00/<span class="product__unit-base--">100
-                                    ml
-                                  </span></span>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="cart__item" data-key="44458065821962:35ad46600b6b2098efd20ceb16b8486d">
-                          <div class="cart__image">
-                            <a href="/products/stardust-roll-on-100-parfumol?variant=44458065821962" class="image-wrap">
-                              <img class="lazyautosizes lazyloaded" data-widths="[180, 360, 540]" data-aspectratio="" data-sizes="auto" alt="STARDUST - 100% Parfümöl" data-srcset="//www.neness-shop.de/cdn/shop/products/montaz_star_AO_180x.jpg?v=1679649839 180w, //www.neness-shop.de/cdn/shop/products/montaz_star_AO_360x.jpg?v=1679649839 360w, //www.neness-shop.de/cdn/shop/products/montaz_star_AO_540x.jpg?v=1679649839 540w" sizes="150px" srcset="//www.neness-shop.de/cdn/shop/products/montaz_star_AO_180x.jpg?v=1679649839 180w, //www.neness-shop.de/cdn/shop/products/montaz_star_AO_360x.jpg?v=1679649839 360w, //www.neness-shop.de/cdn/shop/products/montaz_star_AO_540x.jpg?v=1679649839 540w">
-                              <noscript>
-                                <img class="lazyloaded" src="//www.neness-shop.de/cdn/shop/products/montaz_star_AO_400x.jpg?v=1679649839" alt="STARDUST - 100% Parfümöl">
-                              </noscript>
-                            </a>
-                          </div>
-                          <div class="cart__item-details">
-                            <div class="cart__item-title">
-                              <a href="/products/stardust-roll-on-100-parfumol?variant=44458065821962" class="cart__item-name">
-                                STARDUST - 100% Parfümöl
-                              </a>
-                              <div class="loox-rating" data-id="44458065821962" data-rating="" data-raters=""></div>
-
-
-
-
-                            </div>
-                            <div class="cart__item-sub">
-                              <div>
-                                <div class="js-qty__wrapper">
-                                  <label for="cart_updates_44458065821962:35ad46600b6b2098efd20ceb16b8486d" class="hidden-label">Menge</label>
-                                  <input type="text" id="cart_updates_44458065821962:35ad46600b6b2098efd20ceb16b8486d" name="updates[]" class="js-qty__num" value="1" min="0" pattern="[0-9]*" data-id="44458065821962:35ad46600b6b2098efd20ceb16b8486d">
-                                  <button type="button" class="js-qty__adjust js-qty__adjust--minus" aria-label="Artikelmenge um eins reduzieren">
-                                    <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-minus" viewBox="0 0 64 64">
-                                      <path class="cls-1" d="M55 32H9"></path>
-                                    </svg>
-                                    <span class="icon__fallback-text" aria-hidden="true">−</span>
-                                  </button>
-                                  <button type="button" class="js-qty__adjust js-qty__adjust--plus" aria-label="Artikelmenge um eins erhöhen">
-                                    <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-plus" viewBox="0 0 64 64">
-                                      <path class="cls-1" d="M32 9v46m23-23H9"></path>
-                                    </svg>
-                                    <span class="icon__fallback-text" aria-hidden="true">+</span>
-                                  </button>
-                                </div>
-
-                                <div class="cart__remove">
-                                  <a href="/cart/change?id=44458065821962:35ad46600b6b2098efd20ceb16b8486d&amp;quantity=0" class="text-link">
-                                    Entfernen
-                                  </a>
-                                </div>
-                              </div>
-
-                              <div class="cart__item-price-col text-right">
-
-                                <span class="cart__price"><span aria-hidden="true">€25<sup>90</sup></span>
-                                  <span class="visually-hidden">€25,90</span>
-                                </span>
-
-                                <span class="product__unit-price">€259,00/<span class="product__unit-base--">100
-                                    ml
-                                  </span></span>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="cart__item" data-key="44458065821962:35ad46600b6b2098efd20ceb16b8486d">
-                          <div class="cart__image">
-                            <a href="/products/stardust-roll-on-100-parfumol?variant=44458065821962" class="image-wrap">
-                              <img class="lazyautosizes lazyloaded" data-widths="[180, 360, 540]" data-aspectratio="" data-sizes="auto" alt="STARDUST - 100% Parfümöl" data-srcset="//www.neness-shop.de/cdn/shop/products/montaz_star_AO_180x.jpg?v=1679649839 180w, //www.neness-shop.de/cdn/shop/products/montaz_star_AO_360x.jpg?v=1679649839 360w, //www.neness-shop.de/cdn/shop/products/montaz_star_AO_540x.jpg?v=1679649839 540w" sizes="150px" srcset="//www.neness-shop.de/cdn/shop/products/montaz_star_AO_180x.jpg?v=1679649839 180w, //www.neness-shop.de/cdn/shop/products/montaz_star_AO_360x.jpg?v=1679649839 360w, //www.neness-shop.de/cdn/shop/products/montaz_star_AO_540x.jpg?v=1679649839 540w">
-                              <noscript>
-                                <img class="lazyloaded" src="//www.neness-shop.de/cdn/shop/products/montaz_star_AO_400x.jpg?v=1679649839" alt="STARDUST - 100% Parfümöl">
-                              </noscript>
-                            </a>
-                          </div>
-                          <div class="cart__item-details">
-                            <div class="cart__item-title">
-                              <a href="/products/stardust-roll-on-100-parfumol?variant=44458065821962" class="cart__item-name">
-                                STARDUST - 100% Parfümöl
-                              </a>
-                              <div class="loox-rating" data-id="44458065821962" data-rating="" data-raters=""></div>
-
-
-
-
-                            </div>
-                            <div class="cart__item-sub">
-                              <div>
-                                <div class="js-qty__wrapper">
-                                  <label for="cart_updates_44458065821962:35ad46600b6b2098efd20ceb16b8486d" class="hidden-label">Menge</label>
-                                  <input type="text" id="cart_updates_44458065821962:35ad46600b6b2098efd20ceb16b8486d" name="updates[]" class="js-qty__num" value="1" min="0" pattern="[0-9]*" data-id="44458065821962:35ad46600b6b2098efd20ceb16b8486d">
-                                  <button type="button" class="js-qty__adjust js-qty__adjust--minus" aria-label="Artikelmenge um eins reduzieren">
-                                    <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-minus" viewBox="0 0 64 64">
-                                      <path class="cls-1" d="M55 32H9"></path>
-                                    </svg>
-                                    <span class="icon__fallback-text" aria-hidden="true">−</span>
-                                  </button>
-                                  <button type="button" class="js-qty__adjust js-qty__adjust--plus" aria-label="Artikelmenge um eins erhöhen">
-                                    <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-plus" viewBox="0 0 64 64">
-                                      <path class="cls-1" d="M32 9v46m23-23H9"></path>
-                                    </svg>
-                                    <span class="icon__fallback-text" aria-hidden="true">+</span>
-                                  </button>
-                                </div>
-
-                                <div class="cart__remove">
-                                  <a href="/cart/change?id=44458065821962:35ad46600b6b2098efd20ceb16b8486d&amp;quantity=0" class="text-link">
-                                    Entfernen
-                                  </a>
-                                </div>
-                              </div>
-
-                              <div class="cart__item-price-col text-right">
-
-                                <span class="cart__price"><span aria-hidden="true">€25<sup>90</sup></span>
-                                  <span class="visually-hidden">€25,90</span>
-                                </span>
-
-                                <span class="product__unit-price">€259,00/<span class="product__unit-base--">100
-                                    ml
-                                  </span></span>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-
+                        
+                        <?php }?>
                       </div>
                       <div class="cart__item-row cart-recommendations" data-location="page">
                         <div class="h3 h3--mobile cart__recommended-title">Mehr parfumlys, mehr sparen:</div>

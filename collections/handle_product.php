@@ -3856,7 +3856,7 @@ $products = get_info_product_by_name($name);
                                                                                 type: 'POST',
                                  
                                                                                 data: {
-                                                                                    cart: 2
+                                                                                    cart: '<?php echo $products['name']?>'
                                                                                 },
 
                                                                                 success: function (data) {
