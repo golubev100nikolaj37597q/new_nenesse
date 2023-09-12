@@ -169,23 +169,24 @@ function get_src_photo($name)
   $row = $result->fetch_assoc();
   $img = null;
   if ($row && isset($row['img'])) {
-    $img =  $row['img'];
-  }
+    $img = $row['img'];
+    // Распарсить JSON-строку в массив
+    $data = json_decode($row['img'], true);
 
-  // Распарсить JSON-строку в массив
-  $data = json_decode($img, true);
+    if ($data) {
+      $photoPaths = array(); // Создать массив для хранения путей к фотографиям
 
-  if ($data) {
-    $photoPaths = array(); // Создать массив для хранения путей к фотографиям
-
-    foreach ($data as $item) {
-      if (isset($item['file_path'])) {
-        $photoPaths[] = $item['file_path']; // Добавить путь к фотографии в массив
+      foreach ($data as $item) {
+        if (isset($item['file_path'])) {
+          $photoPaths[] = $item['file_path']; // Добавить путь к фотографии в массив
+        }
       }
+
+      // Вывести массив с путями к фотографиям
+      return $photoPaths;
     }
 
-    // Вывести массив с путями к фотографиям
-    return $photoPaths;
+
   } else {
     echo "Ошибка при распарсивании JSON-строки.";
   }
@@ -234,7 +235,8 @@ function getShuffledTopViewsProducts($collection = null)
 
   return $products;
 }
-function addToCart($productName) {
+function addToCart($productName)
+{
   $_SESSION['cart'][] = ['name' => $productName];
 }
 ?>

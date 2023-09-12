@@ -1,7 +1,7 @@
 ﻿<?php
 require($_SERVER['DOCUMENT_ROOT'] . '/php/get_info.php');
-$products = get_products_by_name($_SESSION['cart']);
-
+$products = get_info_product_by_name($_SESSION['cart']);
+echo $_SESSION['cart'];
 $cart = null;
 
 if (isset($_POST['cart'])) {
@@ -14,28 +14,7 @@ if (isset($_POST['cart'])) {
   echo "Success";
 }
 ?>
-<script>
-  $.ajax({
-    url: '#',
-    type: 'POST',
-    data: {
-      'cart': <?php ?>
-    },
-    success: function(response) {
-      if(response == "Success"){
-        console.log("Success");
-        window.location.reload();
-      }
-      else{
-        console.log("Error");
-      }
-    },
-    error: function(xhr, status, error) {
-      console.log('Ошибка запроса:', error);
 
-    }
-  });
-</script>
 
 <!doctype html>
 <html class="no-js" lang="de" dir="ltr">
@@ -239,519 +218,6 @@ if (isset($_POST['cart'])) {
           }())
         }
       })();
-      window.BC_JSON_ObjectBypass = {
-        "_ab": {
-          "description": "Used in connection with access to admin.",
-          "path": "\/",
-          "domain": "",
-          "provider": "Shopify",
-          "type": "type_0",
-          "expires": "86400",
-          "recommendation": "0",
-          "editable": "false",
-          "deletable": "false",
-          "set": "0",
-          "name": "_ab"
-        },
-        "_secure_session_id": {
-          "description": "Used in connection with navigation through a storefront.",
-          "path": "\/",
-          "domain": "",
-          "provider": "Shopify",
-          "type": "type_0",
-          "expires": "2592000",
-          "recommendation": "0",
-          "editable": "false",
-          "deletable": "false",
-          "set": "0",
-          "name": "_secure_session_id"
-        },
-        "__cfduid": {
-          "description": "The _cfduid cookie helps Cloudflare detect malicious visitors to our Customers’ websites and minimizes blocking legitimate users.",
-          "path": "\/",
-          "domain": "",
-          "provider": "Cloudflare",
-          "type": "type_0",
-          "expires": "2592000",
-          "recommendation": "0",
-          "editable": "false",
-          "deletable": "false",
-          "set": "0",
-          "name": "__cfduid"
-        },
-        "Cart": {
-          "description": "Used in connection with shopping cart.",
-          "path": "\/",
-          "domain": "",
-          "provider": "Shopify",
-          "type": "type_0",
-          "expires": "1209600",
-          "recommendation": "0",
-          "editable": "false",
-          "deletable": "false",
-          "set": "0",
-          "name": "Cart"
-        },
-        "cart": {
-          "description": "Used in connection with shopping cart.",
-          "path": "\/",
-          "domain": "",
-          "provider": "Shopify",
-          "type": "type_0",
-          "expires": "1209600",
-          "recommendation": "0",
-          "editable": "false",
-          "deletable": "false",
-          "set": "0",
-          "name": "cart"
-        },
-        "cart_sig": {
-          "description": "Used in connection with checkout.",
-          "path": "\/",
-          "domain": "",
-          "provider": "Shopify",
-          "type": "type_0",
-          "expires": "1209600",
-          "recommendation": "0",
-          "editable": "false",
-          "deletable": "false",
-          "set": "0",
-          "name": "cart_sig"
-        },
-        "cart_ts": {
-          "description": "Used in connection with checkout.",
-          "path": "\/",
-          "domain": "",
-          "provider": "Shopify",
-          "type": "type_0",
-          "expires": "1209600",
-          "recommendation": "0",
-          "editable": "false",
-          "deletable": "false",
-          "set": "0",
-          "name": "cart_ts"
-        },
-        "cart_ver": {
-          "description": "Used in connection with shopping cart.",
-          "path": "\/",
-          "domain": "",
-          "provider": "Shopify",
-          "type": "type_0",
-          "expires": "1209600",
-          "recommendation": "0",
-          "editable": "false",
-          "deletable": "false",
-          "set": "0",
-          "name": "cart_ver"
-        },
-        "checkout_token": {
-          "description": "Used in connection with checkout.",
-          "path": "\/",
-          "domain": "",
-          "provider": "Shopify",
-          "type": "type_0",
-          "expires": "31536000",
-          "recommendation": "0",
-          "editable": "false",
-          "deletable": "false",
-          "set": "0",
-          "name": "checkout_token"
-        },
-        "Secret": {
-          "description": "Used in connection with checkout.",
-          "path": "\/",
-          "domain": "",
-          "provider": "Shopify",
-          "type": "type_0",
-          "expires": "31536000",
-          "recommendation": "0",
-          "editable": "false",
-          "deletable": "false",
-          "set": "0",
-          "name": "Secret"
-        },
-        "secure_customer_sig": {
-          "description": "Used in connection with customer login.",
-          "path": "\/",
-          "domain": "",
-          "provider": "Shopify",
-          "type": "type_0",
-          "expires": "31536000",
-          "recommendation": "0",
-          "editable": "false",
-          "deletable": "false",
-          "set": "0",
-          "name": "secure_customer_sig"
-        },
-        "storefront_digest": {
-          "description": "Used in connection with customer login.",
-          "path": "\/",
-          "domain": "",
-          "provider": "Shopify",
-          "type": "type_0",
-          "expires": "31536000",
-          "recommendation": "0",
-          "editable": "false",
-          "deletable": "false",
-          "set": "0",
-          "name": "storefront_digest"
-        },
-        "_shopify_u": {
-          "description": "Used to facilitate updating customer account information.",
-          "path": "\/",
-          "domain": "",
-          "provider": "Shopify",
-          "type": "type_0",
-          "expires": "31536000",
-          "recommendation": "0",
-          "editable": "false",
-          "deletable": "false",
-          "set": "0",
-          "name": "_shopify_u"
-        },
-        "XSRF-TOKEN": {
-          "description": "Used in connection with GDPR legal Cookie.",
-          "path": "\/",
-          "domain": "",
-          "provider": "GDPR Legal Cookie",
-          "type": "type_0",
-          "expires": "31536000",
-          "recommendation": "0",
-          "editable": "false",
-          "deletable": "false",
-          "set": "0",
-          "name": "XSRF-TOKEN"
-        },
-        "gdpr_legal_cookie_session": {
-          "description": "Used in connection with GDPR legal Cookie.",
-          "path": "\/",
-          "domain": "",
-          "provider": "GDPR Legal Cookie",
-          "type": "type_0",
-          "expires": "0",
-          "recommendation": "0",
-          "editable": "false",
-          "deletable": "false",
-          "set": "0",
-          "name": "gdpr_legal_cookie_session"
-        },
-        "_bc_c_set": {
-          "description": "Used in connection with GDPR legal Cookie.",
-          "path": "\/",
-          "domain": "",
-          "provider": "GDPR Legal Cookie",
-          "type": "type_0",
-          "expires": "2592000",
-          "recommendation": "0",
-          "editable": "false",
-          "deletable": "false",
-          "set": "0",
-          "optIn": true,
-          "live": "1",
-          "name": "_bc_c_set",
-          "ShopifyMinConsent": false
-        },
-        "_tracking_consent": {
-          "description": "For Shopify User Consent Tracking.",
-          "path": "\/",
-          "domain": "",
-          "provider": "Shopify",
-          "type": "type_0",
-          "expires": "31536000",
-          "recommendation": "0",
-          "editable": "false",
-          "deletable": "false",
-          "set": "0",
-          "name": "_tracking_consent"
-        },
-        "_shopify_m": {
-          "description": "Used for managing customer privacy settings.",
-          "path": "\/",
-          "domain": "",
-          "provider": "Shopify",
-          "type": "type_0",
-          "expires": "31536000",
-          "recommendation": "0",
-          "editable": "false",
-          "deletable": "false",
-          "set": "0",
-          "name": "_shopify_m"
-        },
-        "_shopify_tm": {
-          "description": "Used for managing customer privacy settings.",
-          "path": "\/",
-          "domain": "",
-          "provider": "Shopify",
-          "type": "type_0",
-          "expires": "31536000",
-          "recommendation": "0",
-          "editable": "false",
-          "deletable": "false",
-          "set": "0",
-          "name": "_shopify_tm"
-        },
-        "_shopify_tw": {
-          "description": "Used for managing customer privacy settings.",
-          "path": "\/",
-          "domain": "",
-          "provider": "Shopify",
-          "type": "type_0",
-          "expires": "31536000",
-          "recommendation": "0",
-          "editable": "false",
-          "deletable": "false",
-          "set": "0",
-          "name": "_shopify_tw"
-        },
-        "_storefront_u": {
-          "description": "Used to facilitate updating customer account information.",
-          "path": "\/",
-          "domain": "",
-          "provider": "Shopify",
-          "type": "type_0",
-          "expires": "31536000",
-          "recommendation": "0",
-          "editable": "false",
-          "deletable": "false",
-          "set": "0",
-          "name": "_storefront_u"
-        },
-        "cart_currency": {
-          "description": "Used in connection with cart and checkout.",
-          "path": "\/",
-          "domain": "",
-          "provider": "Shopify",
-          "type": "type_0",
-          "expires": "31536000",
-          "recommendation": "0",
-          "editable": "false",
-          "deletable": "false",
-          "set": "0",
-          "name": "cart_currency"
-        },
-        "_orig_referrer": {
-          "description": "Used in connection with shopping cart.",
-          "path": "\/",
-          "domain": "",
-          "provider": "Shopify",
-          "type": "type_1",
-          "expires": "1209600",
-          "recommendation": "1",
-          "editable": "true",
-          "deletable": "false",
-          "set": "1",
-          "name": "_orig_referrer"
-        },
-        "_landing_page": {
-          "description": "Track landing pages.",
-          "path": "\/",
-          "domain": "",
-          "provider": "Shopify",
-          "type": "type_1",
-          "expires": "1209600",
-          "recommendation": "1",
-          "editable": "true",
-          "deletable": "false",
-          "set": "1",
-          "name": "_landing_page"
-        },
-        "_s": {
-          "description": "Shopify analytics.",
-          "path": "\/",
-          "domain": "",
-          "provider": "Shopify",
-          "type": "type_1",
-          "expires": "1800",
-          "recommendation": "1",
-          "editable": "true",
-          "deletable": "false",
-          "set": "1",
-          "name": "_s"
-        },
-        "_shopify_d": {
-          "description": "Shopify analytics.",
-          "path": "\/",
-          "domain": "",
-          "provider": "Shopify",
-          "type": "type_1",
-          "expires": "1209600",
-          "recommendation": "1",
-          "editable": "true",
-          "deletable": "false",
-          "set": "1",
-          "name": "_shopify_d"
-        },
-        "_shopify_fs": {
-          "description": "Shopify analytics.",
-          "path": "\/",
-          "domain": "",
-          "provider": "Shopify",
-          "type": "type_1",
-          "expires": "1209600",
-          "recommendation": "1",
-          "editable": "true",
-          "deletable": "false",
-          "set": "1",
-          "name": "_shopify_fs"
-        },
-        "_shopify_s": {
-          "description": "Shopify analytics.",
-          "path": "\/",
-          "domain": "",
-          "provider": "Shopify",
-          "type": "type_1",
-          "expires": "1800",
-          "recommendation": "1",
-          "editable": "true",
-          "deletable": "false",
-          "set": "1",
-          "name": "_shopify_s"
-        },
-        "_shopify_y": {
-          "description": "Shopify analytics.",
-          "path": "\/",
-          "domain": "",
-          "provider": "Shopify",
-          "type": "type_1",
-          "expires": "31536000",
-          "recommendation": "1",
-          "editable": "true",
-          "deletable": "false",
-          "set": "1",
-          "name": "_shopify_y"
-        },
-        "_y": {
-          "description": "Shopify analytics.",
-          "path": "\/",
-          "domain": "",
-          "provider": "Shopify",
-          "type": "type_1",
-          "expires": "31536000",
-          "recommendation": "1",
-          "editable": "true",
-          "deletable": "false",
-          "set": "1",
-          "name": "_y"
-        },
-        "_shopify_sa_p": {
-          "description": "Shopify analytics relating to marketing \u0026 referrals.",
-          "path": "\/",
-          "domain": "",
-          "provider": "Shopify",
-          "type": "type_1",
-          "expires": "1800",
-          "recommendation": "1",
-          "editable": "true",
-          "deletable": "false",
-          "set": "1",
-          "name": "_shopify_sa_p"
-        },
-        "_shopify_sa_t": {
-          "description": "Shopify analytics relating to marketing \u0026 referrals.",
-          "path": "\/",
-          "domain": "",
-          "provider": "Shopify",
-          "type": "type_1",
-          "expires": "1800",
-          "recommendation": "1",
-          "editable": "true",
-          "deletable": "false",
-          "set": "1",
-          "name": "_shopify_sa_t"
-        },
-        "_shopify_uniq": {
-          "description": "Shopify analytics.",
-          "path": "\/",
-          "domain": "",
-          "provider": "Shopify",
-          "type": "type_1",
-          "expires": "1800",
-          "recommendation": "1",
-          "editable": "true",
-          "deletable": "false",
-          "set": "1",
-          "name": "_shopify_uniq"
-        },
-        "_shopify_visit": {
-          "description": "Shopify analytics.",
-          "path": "\/",
-          "domain": "",
-          "provider": "Shopify",
-          "type": "type_1",
-          "expires": "1800",
-          "recommendation": "1",
-          "editable": "true",
-          "deletable": "false",
-          "set": "1",
-          "name": "_shopify_visit"
-        },
-        "tracked_start_checkout": {
-          "description": "Shopify analytics relating to checkout.",
-          "path": "\/",
-          "domain": "",
-          "provider": "Shopify",
-          "type": "type_1",
-          "expires": "1800",
-          "recommendation": "1",
-          "editable": "true",
-          "deletable": "false",
-          "set": "1",
-          "name": "tracked_start_checkout"
-        },
-        "ki_r": {
-          "description": "Shopify analytics.",
-          "path": "\/",
-          "domain": "",
-          "provider": "Shopify",
-          "type": "type_1",
-          "expires": "1800",
-          "recommendation": "1",
-          "editable": "true",
-          "deletable": "false",
-          "set": "1",
-          "name": "ki_r"
-        },
-        "ki_t": {
-          "description": "Shopify analytics.",
-          "path": "\/",
-          "domain": "",
-          "provider": "Shopify",
-          "type": "type_1",
-          "expires": "1800",
-          "recommendation": "1",
-          "editable": "true",
-          "deletable": "false",
-          "set": "1",
-          "name": "ki_t"
-        },
-        "ab_test_*": {
-          "description": "Shopify analytics.",
-          "path": "\/",
-          "domain": "",
-          "provider": "Shopify",
-          "type": "type_1",
-          "expires": "1800",
-          "recommendation": "1",
-          "editable": "true",
-          "deletable": "false",
-          "set": "1",
-          "name": "ab_test_*"
-        }
-      };
-      var shopifyCookies = {
-        '_s': !1,
-        '_shopify_fs': !1,
-        '_shopify_s': !1,
-        '_shopify_y': !1,
-        '_y': !1,
-        '_shopify_sa_p': !1,
-        '_shopify_sa_t': !1,
-        '_shopify_uniq': !1,
-        '_shopify_visit': !1,
-        'tracked_start_checkout': !1,
-        'bc_trekkie_fbp_custom': !1
-      };
-
       function GDPR_LC_Token() {
         var getToken = {
           "tokenLength": 8,
@@ -2916,407 +2382,407 @@ if (isset($_POST['cart'])) {
 
     </div>
     <?php if ($cart != null) { ?>
-        <main class="main-content" id="MainContent">
-          <div id="shopify-section-template--17917049241866__main" class="shopify-section">
-            <div class="page-width page-width--cart page-content">
-              <header class="section-header text-center">
-                <h1 class="section-header__title">Einkaufswagen</h1>
-                <div class="rte text-spacing"></div>
-              </header>
-              <form action="/cart" method="post" novalidate="" data-location="page" id="CartPageForm">
-                <div class="cart__page">
-                  <div class="cart__page-col">
-                    <div data-products="">
+          <main class="main-content" id="MainContent">
+            <div id="shopify-section-template--17917049241866__main" class="shopify-section">
+              <div class="page-width page-width--cart page-content">
+                <header class="section-header text-center">
+                  <h1 class="section-header__title">Einkaufswagen</h1>
+                  <div class="rte text-spacing"></div>
+                </header>
+                <form action="/cart" method="post" novalidate="" data-location="page" id="CartPageForm">
+                  <div class="cart__page">
+                    <div class="cart__page-col">
+                      <div data-products="">
 
-                      <div class="cart__item" data-key="44458065821962:35ad46600b6b2098efd20ceb16b8486d">
-                        <div class="cart__image">
-                          <a href="/products/stardust-roll-on-100-parfumol?variant=44458065821962" class="image-wrap">
-                            <img class="lazyautosizes lazyloaded" data-widths="[180, 360, 540]" data-aspectratio="" data-sizes="auto" alt="STARDUST - 100% Parfümöl" data-srcset="//www.neness-shop.de/cdn/shop/products/montaz_star_AO_180x.jpg?v=1679649839 180w, //www.neness-shop.de/cdn/shop/products/montaz_star_AO_360x.jpg?v=1679649839 360w, //www.neness-shop.de/cdn/shop/products/montaz_star_AO_540x.jpg?v=1679649839 540w" sizes="150px" srcset="//www.neness-shop.de/cdn/shop/products/montaz_star_AO_180x.jpg?v=1679649839 180w, //www.neness-shop.de/cdn/shop/products/montaz_star_AO_360x.jpg?v=1679649839 360w, //www.neness-shop.de/cdn/shop/products/montaz_star_AO_540x.jpg?v=1679649839 540w">
-                            <noscript>
-                              <img class="lazyloaded" src="//www.neness-shop.de/cdn/shop/products/montaz_star_AO_400x.jpg?v=1679649839" alt="STARDUST - 100% Parfümöl">
-                            </noscript>
-                          </a>
-                        </div>
-                        <div class="cart__item-details">
-                          <div class="cart__item-title">
-                            <a href="/products/stardust-roll-on-100-parfumol?variant=44458065821962" class="cart__item-name">
-                              STARDUST - 100% Parfümöl
+                        <div class="cart__item" data-key="44458065821962:35ad46600b6b2098efd20ceb16b8486d">
+                          <div class="cart__image">
+                            <a href="/products/stardust-roll-on-100-parfumol?variant=44458065821962" class="image-wrap">
+                              <img class="lazyautosizes lazyloaded" data-widths="[180, 360, 540]" data-aspectratio="" data-sizes="auto" alt="STARDUST - 100% Parfümöl" data-srcset="//www.neness-shop.de/cdn/shop/products/montaz_star_AO_180x.jpg?v=1679649839 180w, //www.neness-shop.de/cdn/shop/products/montaz_star_AO_360x.jpg?v=1679649839 360w, //www.neness-shop.de/cdn/shop/products/montaz_star_AO_540x.jpg?v=1679649839 540w" sizes="150px" srcset="//www.neness-shop.de/cdn/shop/products/montaz_star_AO_180x.jpg?v=1679649839 180w, //www.neness-shop.de/cdn/shop/products/montaz_star_AO_360x.jpg?v=1679649839 360w, //www.neness-shop.de/cdn/shop/products/montaz_star_AO_540x.jpg?v=1679649839 540w">
+                              <noscript>
+                                <img class="lazyloaded" src="//www.neness-shop.de/cdn/shop/products/montaz_star_AO_400x.jpg?v=1679649839" alt="STARDUST - 100% Parfümöl">
+                              </noscript>
                             </a>
-                            <div class="loox-rating" data-id="44458065821962" data-rating="" data-raters=""></div>
-
-
-
-
                           </div>
-                          <div class="cart__item-sub">
-                            <div>
-                              <div class="js-qty__wrapper">
-                                <label for="cart_updates_44458065821962:35ad46600b6b2098efd20ceb16b8486d" class="hidden-label">Menge</label>
-                                <input type="text" id="cart_updates_44458065821962:35ad46600b6b2098efd20ceb16b8486d" name="updates[]" class="js-qty__num" value="1" min="0" pattern="[0-9]*" data-id="44458065821962:35ad46600b6b2098efd20ceb16b8486d">
-                                <button type="button" class="js-qty__adjust js-qty__adjust--minus" aria-label="Artikelmenge um eins reduzieren">
-                                  <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-minus" viewBox="0 0 64 64">
-                                    <path class="cls-1" d="M55 32H9"></path>
-                                  </svg>
-                                  <span class="icon__fallback-text" aria-hidden="true">−</span>
-                                </button>
-                                <button type="button" class="js-qty__adjust js-qty__adjust--plus" aria-label="Artikelmenge um eins erhöhen">
-                                  <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-plus" viewBox="0 0 64 64">
-                                    <path class="cls-1" d="M32 9v46m23-23H9"></path>
-                                  </svg>
-                                  <span class="icon__fallback-text" aria-hidden="true">+</span>
-                                </button>
-                              </div>
+                          <div class="cart__item-details">
+                            <div class="cart__item-title">
+                              <a href="/products/stardust-roll-on-100-parfumol?variant=44458065821962" class="cart__item-name">
+                                STARDUST - 100% Parfümöl
+                              </a>
+                              <div class="loox-rating" data-id="44458065821962" data-rating="" data-raters=""></div>
 
-                              <div class="cart__remove">
-                                <a href="/cart/change?id=44458065821962:35ad46600b6b2098efd20ceb16b8486d&amp;quantity=0" class="text-link">
-                                  Entfernen
-                                </a>
-                              </div>
+
+
+
                             </div>
+                            <div class="cart__item-sub">
+                              <div>
+                                <div class="js-qty__wrapper">
+                                  <label for="cart_updates_44458065821962:35ad46600b6b2098efd20ceb16b8486d" class="hidden-label">Menge</label>
+                                  <input type="text" id="cart_updates_44458065821962:35ad46600b6b2098efd20ceb16b8486d" name="updates[]" class="js-qty__num" value="1" min="0" pattern="[0-9]*" data-id="44458065821962:35ad46600b6b2098efd20ceb16b8486d">
+                                  <button type="button" class="js-qty__adjust js-qty__adjust--minus" aria-label="Artikelmenge um eins reduzieren">
+                                    <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-minus" viewBox="0 0 64 64">
+                                      <path class="cls-1" d="M55 32H9"></path>
+                                    </svg>
+                                    <span class="icon__fallback-text" aria-hidden="true">−</span>
+                                  </button>
+                                  <button type="button" class="js-qty__adjust js-qty__adjust--plus" aria-label="Artikelmenge um eins erhöhen">
+                                    <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-plus" viewBox="0 0 64 64">
+                                      <path class="cls-1" d="M32 9v46m23-23H9"></path>
+                                    </svg>
+                                    <span class="icon__fallback-text" aria-hidden="true">+</span>
+                                  </button>
+                                </div>
 
-                            <div class="cart__item-price-col text-right">
+                                <div class="cart__remove">
+                                  <a href="/cart/change?id=44458065821962:35ad46600b6b2098efd20ceb16b8486d&amp;quantity=0" class="text-link">
+                                    Entfernen
+                                  </a>
+                                </div>
+                              </div>
 
-                              <span class="cart__price"><span aria-hidden="true">€25<sup>90</sup></span>
-                                <span class="visually-hidden">€25,90</span>
-                              </span>
+                              <div class="cart__item-price-col text-right">
 
-                              <span class="product__unit-price">€259,00/<span class="product__unit-base--">100
-                                  ml
-                                </span></span>
+                                <span class="cart__price"><span aria-hidden="true">€25<sup>90</sup></span>
+                                  <span class="visually-hidden">€25,90</span>
+                                </span>
+
+                                <span class="product__unit-price">€259,00/<span class="product__unit-base--">100
+                                    ml
+                                  </span></span>
+                              </div>
                             </div>
                           </div>
                         </div>
-                      </div>
-                      <div class="cart__item" data-key="44458065821962:35ad46600b6b2098efd20ceb16b8486d">
-                        <div class="cart__image">
-                          <a href="/products/stardust-roll-on-100-parfumol?variant=44458065821962" class="image-wrap">
-                            <img class="lazyautosizes lazyloaded" data-widths="[180, 360, 540]" data-aspectratio="" data-sizes="auto" alt="STARDUST - 100% Parfümöl" data-srcset="//www.neness-shop.de/cdn/shop/products/montaz_star_AO_180x.jpg?v=1679649839 180w, //www.neness-shop.de/cdn/shop/products/montaz_star_AO_360x.jpg?v=1679649839 360w, //www.neness-shop.de/cdn/shop/products/montaz_star_AO_540x.jpg?v=1679649839 540w" sizes="150px" srcset="//www.neness-shop.de/cdn/shop/products/montaz_star_AO_180x.jpg?v=1679649839 180w, //www.neness-shop.de/cdn/shop/products/montaz_star_AO_360x.jpg?v=1679649839 360w, //www.neness-shop.de/cdn/shop/products/montaz_star_AO_540x.jpg?v=1679649839 540w">
-                            <noscript>
-                              <img class="lazyloaded" src="//www.neness-shop.de/cdn/shop/products/montaz_star_AO_400x.jpg?v=1679649839" alt="STARDUST - 100% Parfümöl">
-                            </noscript>
-                          </a>
-                        </div>
-                        <div class="cart__item-details">
-                          <div class="cart__item-title">
-                            <a href="/products/stardust-roll-on-100-parfumol?variant=44458065821962" class="cart__item-name">
-                              STARDUST - 100% Parfümöl
+                        <div class="cart__item" data-key="44458065821962:35ad46600b6b2098efd20ceb16b8486d">
+                          <div class="cart__image">
+                            <a href="/products/stardust-roll-on-100-parfumol?variant=44458065821962" class="image-wrap">
+                              <img class="lazyautosizes lazyloaded" data-widths="[180, 360, 540]" data-aspectratio="" data-sizes="auto" alt="STARDUST - 100% Parfümöl" data-srcset="//www.neness-shop.de/cdn/shop/products/montaz_star_AO_180x.jpg?v=1679649839 180w, //www.neness-shop.de/cdn/shop/products/montaz_star_AO_360x.jpg?v=1679649839 360w, //www.neness-shop.de/cdn/shop/products/montaz_star_AO_540x.jpg?v=1679649839 540w" sizes="150px" srcset="//www.neness-shop.de/cdn/shop/products/montaz_star_AO_180x.jpg?v=1679649839 180w, //www.neness-shop.de/cdn/shop/products/montaz_star_AO_360x.jpg?v=1679649839 360w, //www.neness-shop.de/cdn/shop/products/montaz_star_AO_540x.jpg?v=1679649839 540w">
+                              <noscript>
+                                <img class="lazyloaded" src="//www.neness-shop.de/cdn/shop/products/montaz_star_AO_400x.jpg?v=1679649839" alt="STARDUST - 100% Parfümöl">
+                              </noscript>
                             </a>
-                            <div class="loox-rating" data-id="44458065821962" data-rating="" data-raters=""></div>
-
-
-
-
                           </div>
-                          <div class="cart__item-sub">
-                            <div>
-                              <div class="js-qty__wrapper">
-                                <label for="cart_updates_44458065821962:35ad46600b6b2098efd20ceb16b8486d" class="hidden-label">Menge</label>
-                                <input type="text" id="cart_updates_44458065821962:35ad46600b6b2098efd20ceb16b8486d" name="updates[]" class="js-qty__num" value="1" min="0" pattern="[0-9]*" data-id="44458065821962:35ad46600b6b2098efd20ceb16b8486d">
-                                <button type="button" class="js-qty__adjust js-qty__adjust--minus" aria-label="Artikelmenge um eins reduzieren">
-                                  <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-minus" viewBox="0 0 64 64">
-                                    <path class="cls-1" d="M55 32H9"></path>
-                                  </svg>
-                                  <span class="icon__fallback-text" aria-hidden="true">−</span>
-                                </button>
-                                <button type="button" class="js-qty__adjust js-qty__adjust--plus" aria-label="Artikelmenge um eins erhöhen">
-                                  <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-plus" viewBox="0 0 64 64">
-                                    <path class="cls-1" d="M32 9v46m23-23H9"></path>
-                                  </svg>
-                                  <span class="icon__fallback-text" aria-hidden="true">+</span>
-                                </button>
-                              </div>
+                          <div class="cart__item-details">
+                            <div class="cart__item-title">
+                              <a href="/products/stardust-roll-on-100-parfumol?variant=44458065821962" class="cart__item-name">
+                                STARDUST - 100% Parfümöl
+                              </a>
+                              <div class="loox-rating" data-id="44458065821962" data-rating="" data-raters=""></div>
 
-                              <div class="cart__remove">
-                                <a href="/cart/change?id=44458065821962:35ad46600b6b2098efd20ceb16b8486d&amp;quantity=0" class="text-link">
-                                  Entfernen
-                                </a>
-                              </div>
+
+
+
                             </div>
+                            <div class="cart__item-sub">
+                              <div>
+                                <div class="js-qty__wrapper">
+                                  <label for="cart_updates_44458065821962:35ad46600b6b2098efd20ceb16b8486d" class="hidden-label">Menge</label>
+                                  <input type="text" id="cart_updates_44458065821962:35ad46600b6b2098efd20ceb16b8486d" name="updates[]" class="js-qty__num" value="1" min="0" pattern="[0-9]*" data-id="44458065821962:35ad46600b6b2098efd20ceb16b8486d">
+                                  <button type="button" class="js-qty__adjust js-qty__adjust--minus" aria-label="Artikelmenge um eins reduzieren">
+                                    <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-minus" viewBox="0 0 64 64">
+                                      <path class="cls-1" d="M55 32H9"></path>
+                                    </svg>
+                                    <span class="icon__fallback-text" aria-hidden="true">−</span>
+                                  </button>
+                                  <button type="button" class="js-qty__adjust js-qty__adjust--plus" aria-label="Artikelmenge um eins erhöhen">
+                                    <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-plus" viewBox="0 0 64 64">
+                                      <path class="cls-1" d="M32 9v46m23-23H9"></path>
+                                    </svg>
+                                    <span class="icon__fallback-text" aria-hidden="true">+</span>
+                                  </button>
+                                </div>
 
-                            <div class="cart__item-price-col text-right">
+                                <div class="cart__remove">
+                                  <a href="/cart/change?id=44458065821962:35ad46600b6b2098efd20ceb16b8486d&amp;quantity=0" class="text-link">
+                                    Entfernen
+                                  </a>
+                                </div>
+                              </div>
 
-                              <span class="cart__price"><span aria-hidden="true">€25<sup>90</sup></span>
-                                <span class="visually-hidden">€25,90</span>
-                              </span>
+                              <div class="cart__item-price-col text-right">
 
-                              <span class="product__unit-price">€259,00/<span class="product__unit-base--">100
-                                  ml
-                                </span></span>
+                                <span class="cart__price"><span aria-hidden="true">€25<sup>90</sup></span>
+                                  <span class="visually-hidden">€25,90</span>
+                                </span>
+
+                                <span class="product__unit-price">€259,00/<span class="product__unit-base--">100
+                                    ml
+                                  </span></span>
+                              </div>
                             </div>
                           </div>
                         </div>
-                      </div>
-                      <div class="cart__item" data-key="44458065821962:35ad46600b6b2098efd20ceb16b8486d">
-                        <div class="cart__image">
-                          <a href="/products/stardust-roll-on-100-parfumol?variant=44458065821962" class="image-wrap">
-                            <img class="lazyautosizes lazyloaded" data-widths="[180, 360, 540]" data-aspectratio="" data-sizes="auto" alt="STARDUST - 100% Parfümöl" data-srcset="//www.neness-shop.de/cdn/shop/products/montaz_star_AO_180x.jpg?v=1679649839 180w, //www.neness-shop.de/cdn/shop/products/montaz_star_AO_360x.jpg?v=1679649839 360w, //www.neness-shop.de/cdn/shop/products/montaz_star_AO_540x.jpg?v=1679649839 540w" sizes="150px" srcset="//www.neness-shop.de/cdn/shop/products/montaz_star_AO_180x.jpg?v=1679649839 180w, //www.neness-shop.de/cdn/shop/products/montaz_star_AO_360x.jpg?v=1679649839 360w, //www.neness-shop.de/cdn/shop/products/montaz_star_AO_540x.jpg?v=1679649839 540w">
-                            <noscript>
-                              <img class="lazyloaded" src="//www.neness-shop.de/cdn/shop/products/montaz_star_AO_400x.jpg?v=1679649839" alt="STARDUST - 100% Parfümöl">
-                            </noscript>
-                          </a>
-                        </div>
-                        <div class="cart__item-details">
-                          <div class="cart__item-title">
-                            <a href="/products/stardust-roll-on-100-parfumol?variant=44458065821962" class="cart__item-name">
-                              STARDUST - 100% Parfümöl
+                        <div class="cart__item" data-key="44458065821962:35ad46600b6b2098efd20ceb16b8486d">
+                          <div class="cart__image">
+                            <a href="/products/stardust-roll-on-100-parfumol?variant=44458065821962" class="image-wrap">
+                              <img class="lazyautosizes lazyloaded" data-widths="[180, 360, 540]" data-aspectratio="" data-sizes="auto" alt="STARDUST - 100% Parfümöl" data-srcset="//www.neness-shop.de/cdn/shop/products/montaz_star_AO_180x.jpg?v=1679649839 180w, //www.neness-shop.de/cdn/shop/products/montaz_star_AO_360x.jpg?v=1679649839 360w, //www.neness-shop.de/cdn/shop/products/montaz_star_AO_540x.jpg?v=1679649839 540w" sizes="150px" srcset="//www.neness-shop.de/cdn/shop/products/montaz_star_AO_180x.jpg?v=1679649839 180w, //www.neness-shop.de/cdn/shop/products/montaz_star_AO_360x.jpg?v=1679649839 360w, //www.neness-shop.de/cdn/shop/products/montaz_star_AO_540x.jpg?v=1679649839 540w">
+                              <noscript>
+                                <img class="lazyloaded" src="//www.neness-shop.de/cdn/shop/products/montaz_star_AO_400x.jpg?v=1679649839" alt="STARDUST - 100% Parfümöl">
+                              </noscript>
                             </a>
-                            <div class="loox-rating" data-id="44458065821962" data-rating="" data-raters=""></div>
-
-
-
-
                           </div>
-                          <div class="cart__item-sub">
-                            <div>
-                              <div class="js-qty__wrapper">
-                                <label for="cart_updates_44458065821962:35ad46600b6b2098efd20ceb16b8486d" class="hidden-label">Menge</label>
-                                <input type="text" id="cart_updates_44458065821962:35ad46600b6b2098efd20ceb16b8486d" name="updates[]" class="js-qty__num" value="1" min="0" pattern="[0-9]*" data-id="44458065821962:35ad46600b6b2098efd20ceb16b8486d">
-                                <button type="button" class="js-qty__adjust js-qty__adjust--minus" aria-label="Artikelmenge um eins reduzieren">
-                                  <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-minus" viewBox="0 0 64 64">
-                                    <path class="cls-1" d="M55 32H9"></path>
-                                  </svg>
-                                  <span class="icon__fallback-text" aria-hidden="true">−</span>
-                                </button>
-                                <button type="button" class="js-qty__adjust js-qty__adjust--plus" aria-label="Artikelmenge um eins erhöhen">
-                                  <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-plus" viewBox="0 0 64 64">
-                                    <path class="cls-1" d="M32 9v46m23-23H9"></path>
-                                  </svg>
-                                  <span class="icon__fallback-text" aria-hidden="true">+</span>
-                                </button>
-                              </div>
+                          <div class="cart__item-details">
+                            <div class="cart__item-title">
+                              <a href="/products/stardust-roll-on-100-parfumol?variant=44458065821962" class="cart__item-name">
+                                STARDUST - 100% Parfümöl
+                              </a>
+                              <div class="loox-rating" data-id="44458065821962" data-rating="" data-raters=""></div>
 
-                              <div class="cart__remove">
-                                <a href="/cart/change?id=44458065821962:35ad46600b6b2098efd20ceb16b8486d&amp;quantity=0" class="text-link">
-                                  Entfernen
-                                </a>
-                              </div>
+
+
+
                             </div>
+                            <div class="cart__item-sub">
+                              <div>
+                                <div class="js-qty__wrapper">
+                                  <label for="cart_updates_44458065821962:35ad46600b6b2098efd20ceb16b8486d" class="hidden-label">Menge</label>
+                                  <input type="text" id="cart_updates_44458065821962:35ad46600b6b2098efd20ceb16b8486d" name="updates[]" class="js-qty__num" value="1" min="0" pattern="[0-9]*" data-id="44458065821962:35ad46600b6b2098efd20ceb16b8486d">
+                                  <button type="button" class="js-qty__adjust js-qty__adjust--minus" aria-label="Artikelmenge um eins reduzieren">
+                                    <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-minus" viewBox="0 0 64 64">
+                                      <path class="cls-1" d="M55 32H9"></path>
+                                    </svg>
+                                    <span class="icon__fallback-text" aria-hidden="true">−</span>
+                                  </button>
+                                  <button type="button" class="js-qty__adjust js-qty__adjust--plus" aria-label="Artikelmenge um eins erhöhen">
+                                    <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-plus" viewBox="0 0 64 64">
+                                      <path class="cls-1" d="M32 9v46m23-23H9"></path>
+                                    </svg>
+                                    <span class="icon__fallback-text" aria-hidden="true">+</span>
+                                  </button>
+                                </div>
 
-                            <div class="cart__item-price-col text-right">
+                                <div class="cart__remove">
+                                  <a href="/cart/change?id=44458065821962:35ad46600b6b2098efd20ceb16b8486d&amp;quantity=0" class="text-link">
+                                    Entfernen
+                                  </a>
+                                </div>
+                              </div>
 
-                              <span class="cart__price"><span aria-hidden="true">€25<sup>90</sup></span>
-                                <span class="visually-hidden">€25,90</span>
-                              </span>
+                              <div class="cart__item-price-col text-right">
 
-                              <span class="product__unit-price">€259,00/<span class="product__unit-base--">100
-                                  ml
-                                </span></span>
+                                <span class="cart__price"><span aria-hidden="true">€25<sup>90</sup></span>
+                                  <span class="visually-hidden">€25,90</span>
+                                </span>
+
+                                <span class="product__unit-price">€259,00/<span class="product__unit-base--">100
+                                    ml
+                                  </span></span>
+                              </div>
                             </div>
                           </div>
                         </div>
-                      </div>
-                      <div class="cart__item" data-key="44458065821962:35ad46600b6b2098efd20ceb16b8486d">
-                        <div class="cart__image">
-                          <a href="/products/stardust-roll-on-100-parfumol?variant=44458065821962" class="image-wrap">
-                            <img class="lazyautosizes lazyloaded" data-widths="[180, 360, 540]" data-aspectratio="" data-sizes="auto" alt="STARDUST - 100% Parfümöl" data-srcset="//www.neness-shop.de/cdn/shop/products/montaz_star_AO_180x.jpg?v=1679649839 180w, //www.neness-shop.de/cdn/shop/products/montaz_star_AO_360x.jpg?v=1679649839 360w, //www.neness-shop.de/cdn/shop/products/montaz_star_AO_540x.jpg?v=1679649839 540w" sizes="150px" srcset="//www.neness-shop.de/cdn/shop/products/montaz_star_AO_180x.jpg?v=1679649839 180w, //www.neness-shop.de/cdn/shop/products/montaz_star_AO_360x.jpg?v=1679649839 360w, //www.neness-shop.de/cdn/shop/products/montaz_star_AO_540x.jpg?v=1679649839 540w">
-                            <noscript>
-                              <img class="lazyloaded" src="//www.neness-shop.de/cdn/shop/products/montaz_star_AO_400x.jpg?v=1679649839" alt="STARDUST - 100% Parfümöl">
-                            </noscript>
-                          </a>
-                        </div>
-                        <div class="cart__item-details">
-                          <div class="cart__item-title">
-                            <a href="/products/stardust-roll-on-100-parfumol?variant=44458065821962" class="cart__item-name">
-                              STARDUST - 100% Parfümöl
+                        <div class="cart__item" data-key="44458065821962:35ad46600b6b2098efd20ceb16b8486d">
+                          <div class="cart__image">
+                            <a href="/products/stardust-roll-on-100-parfumol?variant=44458065821962" class="image-wrap">
+                              <img class="lazyautosizes lazyloaded" data-widths="[180, 360, 540]" data-aspectratio="" data-sizes="auto" alt="STARDUST - 100% Parfümöl" data-srcset="//www.neness-shop.de/cdn/shop/products/montaz_star_AO_180x.jpg?v=1679649839 180w, //www.neness-shop.de/cdn/shop/products/montaz_star_AO_360x.jpg?v=1679649839 360w, //www.neness-shop.de/cdn/shop/products/montaz_star_AO_540x.jpg?v=1679649839 540w" sizes="150px" srcset="//www.neness-shop.de/cdn/shop/products/montaz_star_AO_180x.jpg?v=1679649839 180w, //www.neness-shop.de/cdn/shop/products/montaz_star_AO_360x.jpg?v=1679649839 360w, //www.neness-shop.de/cdn/shop/products/montaz_star_AO_540x.jpg?v=1679649839 540w">
+                              <noscript>
+                                <img class="lazyloaded" src="//www.neness-shop.de/cdn/shop/products/montaz_star_AO_400x.jpg?v=1679649839" alt="STARDUST - 100% Parfümöl">
+                              </noscript>
                             </a>
-                            <div class="loox-rating" data-id="44458065821962" data-rating="" data-raters=""></div>
-
-
-
-
                           </div>
-                          <div class="cart__item-sub">
-                            <div>
-                              <div class="js-qty__wrapper">
-                                <label for="cart_updates_44458065821962:35ad46600b6b2098efd20ceb16b8486d" class="hidden-label">Menge</label>
-                                <input type="text" id="cart_updates_44458065821962:35ad46600b6b2098efd20ceb16b8486d" name="updates[]" class="js-qty__num" value="1" min="0" pattern="[0-9]*" data-id="44458065821962:35ad46600b6b2098efd20ceb16b8486d">
-                                <button type="button" class="js-qty__adjust js-qty__adjust--minus" aria-label="Artikelmenge um eins reduzieren">
-                                  <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-minus" viewBox="0 0 64 64">
-                                    <path class="cls-1" d="M55 32H9"></path>
-                                  </svg>
-                                  <span class="icon__fallback-text" aria-hidden="true">−</span>
-                                </button>
-                                <button type="button" class="js-qty__adjust js-qty__adjust--plus" aria-label="Artikelmenge um eins erhöhen">
-                                  <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-plus" viewBox="0 0 64 64">
-                                    <path class="cls-1" d="M32 9v46m23-23H9"></path>
-                                  </svg>
-                                  <span class="icon__fallback-text" aria-hidden="true">+</span>
-                                </button>
-                              </div>
+                          <div class="cart__item-details">
+                            <div class="cart__item-title">
+                              <a href="/products/stardust-roll-on-100-parfumol?variant=44458065821962" class="cart__item-name">
+                                STARDUST - 100% Parfümöl
+                              </a>
+                              <div class="loox-rating" data-id="44458065821962" data-rating="" data-raters=""></div>
 
-                              <div class="cart__remove">
-                                <a href="/cart/change?id=44458065821962:35ad46600b6b2098efd20ceb16b8486d&amp;quantity=0" class="text-link">
-                                  Entfernen
-                                </a>
-                              </div>
+
+
+
                             </div>
+                            <div class="cart__item-sub">
+                              <div>
+                                <div class="js-qty__wrapper">
+                                  <label for="cart_updates_44458065821962:35ad46600b6b2098efd20ceb16b8486d" class="hidden-label">Menge</label>
+                                  <input type="text" id="cart_updates_44458065821962:35ad46600b6b2098efd20ceb16b8486d" name="updates[]" class="js-qty__num" value="1" min="0" pattern="[0-9]*" data-id="44458065821962:35ad46600b6b2098efd20ceb16b8486d">
+                                  <button type="button" class="js-qty__adjust js-qty__adjust--minus" aria-label="Artikelmenge um eins reduzieren">
+                                    <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-minus" viewBox="0 0 64 64">
+                                      <path class="cls-1" d="M55 32H9"></path>
+                                    </svg>
+                                    <span class="icon__fallback-text" aria-hidden="true">−</span>
+                                  </button>
+                                  <button type="button" class="js-qty__adjust js-qty__adjust--plus" aria-label="Artikelmenge um eins erhöhen">
+                                    <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-plus" viewBox="0 0 64 64">
+                                      <path class="cls-1" d="M32 9v46m23-23H9"></path>
+                                    </svg>
+                                    <span class="icon__fallback-text" aria-hidden="true">+</span>
+                                  </button>
+                                </div>
 
-                            <div class="cart__item-price-col text-right">
+                                <div class="cart__remove">
+                                  <a href="/cart/change?id=44458065821962:35ad46600b6b2098efd20ceb16b8486d&amp;quantity=0" class="text-link">
+                                    Entfernen
+                                  </a>
+                                </div>
+                              </div>
 
-                              <span class="cart__price"><span aria-hidden="true">€25<sup>90</sup></span>
-                                <span class="visually-hidden">€25,90</span>
-                              </span>
+                              <div class="cart__item-price-col text-right">
 
-                              <span class="product__unit-price">€259,00/<span class="product__unit-base--">100
-                                  ml
-                                </span></span>
+                                <span class="cart__price"><span aria-hidden="true">€25<sup>90</sup></span>
+                                  <span class="visually-hidden">€25,90</span>
+                                </span>
+
+                                <span class="product__unit-price">€259,00/<span class="product__unit-base--">100
+                                    ml
+                                  </span></span>
+                              </div>
                             </div>
                           </div>
                         </div>
+
                       </div>
-
-                    </div>
-                    <div class="cart__item-row cart-recommendations" data-location="page">
-                      <div class="h3 h3--mobile cart__recommended-title">Mehr parfumlys, mehr sparen:</div>
-                      <div class="new-grid product-grid scrollable-grid--small" data-view="small">
-                        <?php
-                        $products = getShuffledTopViewsProducts('proben');
-                        foreach ($products as $product) {
-                          ?>
-                            <div class="grid-item grid-product " data-product-handle="allien-world" data-product-id="7233940455619">
-                              <div class="grid-item__content"><a href="collections/<?php echo $product['collection'] ?>/products/<?php echo $product['name'] ?>" class="grid-item__link">
-                                  <div class="grid-product__image-wrap">
-                                    <div class="grid-product__tags"></div>
-                                    <div class="grid__image-ratio grid__image-ratio--square">
-                                      <img class="lazyload grid__image-contain" <?php
-                                      $bool = true;
-                                      $data = json_decode($product['img'], true);
-                                      foreach ($data as $item) {
-                                        if (isset($item['file_path'])) {
-                                          $filePath = $item['file_path'];
-                                          if ($bool) {
-                                            echo 'data-src="' . $filePath . '"';
-                                            $bool = false;
-                                            continue;
-                                          } ?> data-widths="[160, 200, 280, 360, 540, 720, 900]" data-aspectratio="1.0" data-sizes="auto" alt="">
-                                          <noscript>
-                                            <img class="grid-product__image lazyloaded" src="cdn/shop/files/182AC_21574842-1388-475e-9366-ca6775eec26d_400x.jpg?v=1691797892" alt="">
-                                          </noscript>
-                                        </div>
-                                        <div class="grid-product__secondary-image small--hide">
-                                          <img class="lazyload" data-src="<?php echo $filePath;
-                                          break;
-                                        }
-                                      } ?>" data-widths="[360, 540, 720, 1000]" data-aspectratio="1.0" data-sizes="auto" alt="">
-                                    </div>
-                                  </div>
-
-                                  <div class="grid-item__meta">
-                                    <div class="grid-item__meta-main">
-                                      <div class="grid-product__title"><?php echo $product['title'] ?></div>
-                                    </div>
-                                    <div class="loox-rating" data-id="7233940455619" data-rating="4.8" data-raters="341"></div>
-                                    <div class="grid-item__meta-secondary">
-                                      <div class="grid-product__price"><span class="grid-product__price--current"><span aria-hidden="true">
-                                            <?php $string = $product['price'];
-                                            if (strpos($string, '.') !== false) {
-                                              list($part1, $part2) = explode(".", $string);
-                                            } else {
-                                              $part1 = $string;
-                                              $part2 = "";
+                      <div class="cart__item-row cart-recommendations" data-location="page">
+                        <div class="h3 h3--mobile cart__recommended-title">Mehr parfumlys, mehr sparen:</div>
+                        <div class="new-grid product-grid scrollable-grid--small" data-view="small">
+                          <?php
+                          $products = getShuffledTopViewsProducts('proben');
+                          foreach ($products as $product) {
+                            ?>
+                                <div class="grid-item grid-product " data-product-handle="allien-world" data-product-id="7233940455619">
+                                  <div class="grid-item__content"><a href="collections/<?php echo $product['collection'] ?>/products/<?php echo $product['name'] ?>" class="grid-item__link">
+                                      <div class="grid-product__image-wrap">
+                                        <div class="grid-product__tags"></div>
+                                        <div class="grid__image-ratio grid__image-ratio--square">
+                                          <img class="lazyload grid__image-contain" <?php
+                                          $bool = true;
+                                          $data = json_decode($product['img'], true);
+                                          foreach ($data as $item) {
+                                            if (isset($item['file_path'])) {
+                                              $filePath = $item['file_path'];
+                                              if ($bool) {
+                                                echo 'data-src="' . $filePath . '"';
+                                                $bool = false;
+                                                continue;
+                                              } ?> data-widths="[160, 200, 280, 360, 540, 720, 900]" data-aspectratio="1.0" data-sizes="auto" alt="">
+                                                  <noscript>
+                                                    <img class="grid-product__image lazyloaded" src="cdn/shop/files/182AC_21574842-1388-475e-9366-ca6775eec26d_400x.jpg?v=1691797892" alt="">
+                                                  </noscript>
+                                                </div>
+                                                <div class="grid-product__secondary-image small--hide">
+                                                  <img class="lazyload" data-src="<?php echo $filePath;
+                                                  break;
                                             }
-                                            ?>
-                                            € <?php echo $part1 ?><sup><?php echo $part2 ?></sup></span>
-                                          <span class="visually-hidden">€
-                                            <?php if ($product['price']) ?>
-                                          </span>
-                                        </span>
-                                        <div class="product__unit-price">€ <?php echo $product['container'] ?> ml
-
+                                          } ?>" data-widths="[360, 540, 720, 1000]" data-aspectratio="1.0" data-sizes="auto" alt="">
                                         </div>
                                       </div>
-                                    </div>
-                                  </div>
-                                </a>
-                              </div>
-                            </div>
-                        <?php } ?>
 
-                      </div>
-                    </div>
-                  </div>
-                  <div class="cart__page-col">
+                                      <div class="grid-item__meta">
+                                        <div class="grid-item__meta-main">
+                                          <div class="grid-product__title"><?php echo $product['title'] ?></div>
+                                        </div>
+                                        <div class="loox-rating" data-id="7233940455619" data-rating="4.8" data-raters="341"></div>
+                                        <div class="grid-item__meta-secondary">
+                                          <div class="grid-product__price"><span class="grid-product__price--current"><span aria-hidden="true">
+                                                <?php $string = $product['price'];
+                                                if (strpos($string, '.') !== false) {
+                                                  list($part1, $part2) = explode(".", $string);
+                                                } else {
+                                                  $part1 = $string;
+                                                  $part2 = "";
+                                                }
+                                                ?>
+                                                € <?php echo $part1 ?><sup><?php echo $part2 ?></sup></span>
+                                              <span class="visually-hidden">€
+                                                <?php if ($product['price']) ?>
+                                              </span>
+                                            </span>
+                                            <div class="product__unit-price">€ <?php echo $product['container'] ?> ml
 
-
-                    <div class="cart__item-sub cart__item-row cart__item--subtotal">
-                      <div>Zwischensumme</div>
-                      <div data-subtotal=""><span aria-hidden="true">€25<sup>90</sup></span>
-                        <span class="visually-hidden">€25,90</span>
-                      </div>
-                    </div>
-
-                    <div data-discounts="">
-
-                    </div>
-
-
-
-                    <div class="cart__item-row cart__checkout-wrapper">
-                      <div class="scDiscount__container">
-                        <div id="scDiscountApp" class="scDiscount scright ">
-                          <div style="width: 550px;">
-                            <div>
-                              <form>
-                                <div class="sc_simple-container sc_simple-container--initial"><input type="text" id="code" name="code" class="sc-cube-text sc-cube-code" placeholder="Rabattcode eingeben" autocomplete="off" style="border-color: rgb(0, 0, 0); color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);">
-                                  <div class="sc_code-btn sc_state-initial"><input type="button" id="submit" value="Einlösen" style="color: rgb(255, 255, 255); background-color: rgb(0, 0, 0); border: 1px solid rgb(0, 0, 0);">
-                                    <div class="sc_code-loading" style="background: rgb(0, 0, 0);"><svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid" class="lds-rolling">
-                                        <circle cx="50" cy="50" fill="none" stroke-width="7" r="25" stroke-dasharray="117.80972450961724 41.269908169872416" transform="rotate(47.1629 50 50)" style="stroke: rgb(255, 255, 255);">
-                                          <animateTransform attributeName="transform" type="rotate" calcMode="linear" values="0 50 50;360 50 50" keyTimes="0;1" dur="1s" begin="0s" repeatCount="indefinite"></animateTransform>
-                                        </circle>
-                                      </svg></div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </a>
                                   </div>
                                 </div>
-                              </form>
+                          <?php } ?>
+
+                        </div>
+                      </div>
+                    </div>
+                    <div class="cart__page-col">
+
+
+                      <div class="cart__item-sub cart__item-row cart__item--subtotal">
+                        <div>Zwischensumme</div>
+                        <div data-subtotal=""><span aria-hidden="true">€25<sup>90</sup></span>
+                          <span class="visually-hidden">€25,90</span>
+                        </div>
+                      </div>
+
+                      <div data-discounts="">
+
+                      </div>
+
+
+
+                      <div class="cart__item-row cart__checkout-wrapper">
+                        <div class="scDiscount__container">
+                          <div id="scDiscountApp" class="scDiscount scright ">
+                            <div style="width: 550px;">
+                              <div>
+                                <form>
+                                  <div class="sc_simple-container sc_simple-container--initial"><input type="text" id="code" name="code" class="sc-cube-text sc-cube-code" placeholder="Rabattcode eingeben" autocomplete="off" style="border-color: rgb(0, 0, 0); color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);">
+                                    <div class="sc_code-btn sc_state-initial"><input type="button" id="submit" value="Einlösen" style="color: rgb(255, 255, 255); background-color: rgb(0, 0, 0); border: 1px solid rgb(0, 0, 0);">
+                                      <div class="sc_code-loading" style="background: rgb(0, 0, 0);"><svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid" class="lds-rolling">
+                                          <circle cx="50" cy="50" fill="none" stroke-width="7" r="25" stroke-dasharray="117.80972450961724 41.269908169872416" transform="rotate(47.1629 50 50)" style="stroke: rgb(255, 255, 255);">
+                                            <animateTransform attributeName="transform" type="rotate" calcMode="linear" values="0 50 50;360 50 50" keyTimes="0;1" dur="1s" begin="0s" repeatCount="indefinite"></animateTransform>
+                                          </circle>
+                                        </svg></div>
+                                    </div>
+                                  </div>
+                                </form>
+                              </div>
                             </div>
                           </div>
                         </div>
+                        <div class="gfgPageWrapper gfgCartPageWrapperV2">
+                          <div class="gftFreeGiftWrapper"></div>
+                          <div class="gfgVolDiscountWrapper"></div>
+                        </div><button type="submit" name="checkout" data-terms-required="false" class="btn cart__checkout">
+                          Jetzt sicher zur Kasse
+                        </button>
+
+
+
+                        <a href="/collections/all" class="btn btn--secondary cart__continue">
+                          Einkaufen Sie weiter
+                        </a>
                       </div>
-                      <div class="gfgPageWrapper gfgCartPageWrapperV2">
-                        <div class="gftFreeGiftWrapper"></div>
-                        <div class="gfgVolDiscountWrapper"></div>
-                      </div><button type="submit" name="checkout" data-terms-required="false" class="btn cart__checkout">
-                        Jetzt sicher zur Kasse
-                      </button>
 
-
-
-                      <a href="/collections/all" class="btn btn--secondary cart__continue">
-                        Einkaufen Sie weiter
-                      </a>
-                    </div>
-
-                    <div class="cart__item-row text-center">
-                      <small>inkl. MwSt. &amp; zzgl. Versandkosten</small>
+                      <div class="cart__item-row text-center">
+                        <small>inkl. MwSt. &amp; zzgl. Versandkosten</small>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <input type="hidden" name="discount" value="">
-              </form>
+                  <input type="hidden" name="discount" value="">
+                </form>
+              </div>
+
+
             </div>
-
-
-          </div>
-        </main>
+          </main>
 
     <?php } else { ?>
-        <main class="main-content" id="MainContent">
-          <div id="shopify-section-template--17917049241866__main" class="shopify-section">
-            <div class="page-width page-width--cart page-content">
-              <header class="section-header text-center section-header--404">
-                <h1 class="section-header__title">Einkaufswagen</h1>
-                <div class="rte text-spacing">
-                  <p>Ihr Einkaufswagen ist im Moment leer.</p>
-                  <hr class="hr--clear hr--small">
-                  <p>
-                    <a href="/" class="btn">Einkaufen Sie weiter</a>
-                  </p>
-                </div>
-              </header>
+          <main class="main-content" id="MainContent">
+            <div id="shopify-section-template--17917049241866__main" class="shopify-section">
+              <div class="page-width page-width--cart page-content">
+                <header class="section-header text-center section-header--404">
+                  <h1 class="section-header__title">Einkaufswagen</h1>
+                  <div class="rte text-spacing">
+                    <p>Ihr Einkaufswagen ist im Moment leer.</p>
+                    <hr class="hr--clear hr--small">
+                    <p>
+                      <a href="/" class="btn">Einkaufen Sie weiter</a>
+                    </p>
+                  </div>
+                </header>
+              </div>
+
+
             </div>
-
-
-          </div>
-        </main>
+          </main>
     <?php } ?>
     <div id="shopify-section-footer-promotions" class="shopify-section index-section--footer">
     </div>
