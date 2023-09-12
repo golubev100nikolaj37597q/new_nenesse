@@ -14,7 +14,7 @@ if ($_SESSION['user_role'] !== 'admin') {
 ?>
 
 <!DOCTYPE html>
-<?php include 'cart_template.php'?><htmllang="en">
+<html lang="en">
 
 <head>
   <!-- Required Meta Tags Always Come First -->

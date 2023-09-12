@@ -22,6 +22,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $name = $_POST['name'] ?? '';
   $description = $_POST['descr'] ?? '';
   $info = $_POST['info'] ?? '';
+  $reviews_data = $_POST['reviews_data'];
   $container = $_POST['container'] ?? '';
   $price = $_POST['price'] ?? '';
   $title = $_POST['title'] ?? '';
@@ -74,7 +75,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       } else {
         $isValid = false; // Произошла ошибка при загрузке файла
       }
-
     }
   }
 
@@ -86,8 +86,8 @@ if ($isValid) {
 
   $mysql = mysqli_connect(servername, user, password, db);
 
-  $stmt = $mysql->prepare("INSERT INTO `products`(`title`,`price`,`container`, `img`, `info`, `descr`,`name`,`availability`,`collection`) VALUES (?, ?, ?, ?, ?, ?,?,?,?)");
-  $stmt->bind_param("sisssssss", $title, $price, $container, $jsonUploadedFiles, $info, $description, $name, $availability, $collection);
+  $stmt = $mysql->prepare("INSERT INTO `products`(`title`,`price`,`container`, `img`, `info`, `descr`,`name`,`availability`,`reviews`,`collection`) VALUES (?, ?, ?, ?, ?, ?,?,?,?,?)");
+  $stmt->bind_param("sissssssss", $title, $price, $container, $jsonUploadedFiles, $info, $description, $name, $availability, $reviews_data, $collection);
 
   if ($stmt->execute()) {
     echo "Successfully";

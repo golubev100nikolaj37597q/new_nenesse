@@ -185,8 +185,6 @@ function get_src_photo($name)
       // Вывести массив с путями к фотографиям
       return $photoPaths;
     }
-
-
   } else {
     echo "Ошибка при распарсивании JSON-строки.";
   }
@@ -195,9 +193,8 @@ function add_views($name)
 {
   global $mysql;
 
-  $name = $mysql->real_escape_string($name); // Защита от SQL-инъекций
+  $name = $mysql->real_escape_string($name);
 
-  // SQL-запрос для увеличения значения views
   $query = "UPDATE `products` SET `views` = `views` + 1 WHERE `name` = '$name'";
 
   $result = $mysql->query($query);
@@ -239,6 +236,57 @@ function addToCart($productName)
 {
   $_SESSION['cart'][] = ['name' => $productName];
 }
+<<<<<<< HEAD
+function show_reviews($name)
+{
+  global $mysql;
+  $sql = $mysql->query("SELECT * FROM `products` WHERE `name` = '$name'")->fetch_array();
+  if($sql['reviews'] != ""){
+
+  
+  $reviews = json_decode($sql['reviews'], true);
+
+  $result = "";
+  
+  foreach ($reviews['fio'] as $key => $fio) {
+    $fio = $reviews['fio'][$key];
+    $evaluation = $reviews['evaluation'][$key];
+    $review_text = $reviews['review_text'][$key];
+    $review_image = $reviews['review_image'][$key];
+    $evaluation_res = "";
+    for ($i = 0; $i < $evaluation; $i++) {
+      $evaluation_res .= "            
+      <li><svg viewBox='0 0 24 24' data-lx-fill='full' aria-label='rating icon full' role='img' class='loox-icon star' style='display: block; width: 1em; height: 1em;'>
+      <use href='#looxicons-rating-icon'></use>
+      </svg></li";
+    }
+    
+    $result .= "
+    <div class='grid-item-wrap has-img' >
+    <div data-id='OlVWmfizj' tabindex='0' role='button' class='grid-item clearfix'>
+        <div class='item-img box'><img src='$review_image' alt='$fio review of ALLIEN WORLD - 182' data-img-ratio='1.33' style='background: rgb(192, 189, 184); height: auto;' onerror='this.parentElement.removeChild(this)' onload='this.loaded = true;' class='action'></div>
+        <div class='main'>
+            <div class='box action'>
+                <div data-verified-notification='data-verified-notification' class='block title'>$fio<i aria-label='Verifizierter Kauf' role='img' style='margin:0px 8px;' class='fa fa-check-circle'></i></div>
+                <div class='clearfix'></div>
+                <div aria-label='5 / 5 star review' class='block stars'>
+                    <ul style='display: inline-flex; margin: unset; padding: unset; text-indent: unset; list-style-type: none; gap: 2px;'>
+                      $evaluation_res
+                    </ul>
+                </div>
+                <div class='block'>
+                    <div class='pre-wrap main-text'>$review_text</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>";
+  }
+}
+  return $result;
+}
+
+=======
 
 
 
@@ -282,3 +330,4 @@ shuffle($products);
 return $products;
 
 }
+>>>>>>> 576f6ccf25df5fc8eec150d01622e4923f3ca4f4
