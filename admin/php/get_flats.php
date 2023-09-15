@@ -46,7 +46,7 @@ function get_products_td()
                 <td>
                   <div class='btn-group' role='group'>
                     <a class='btn btn-white btn-sm' href='./ecommerce-product-details.php?id={$info['id']}'>
-                      <i class='bi-pencil-fill me-1'></i> Изменить
+                      <i class='bi-pencil-fill me-1'></i> Change
                     </a>
 
                     
@@ -55,7 +55,7 @@ function get_products_td()
 
                       <div class='dropdown-menu dropdown-menu-end mt-1' aria-labelledby='productsEditDropdown1'>
                         <button onclick='del_product(this.getAttribute(\"value\"))' value='{$info['id']}' class='dropdown-item' href='#'>
-        <i class='bi-trash dropdown-item-icon'></i> Удалить
+        <i class='bi-trash dropdown-item-icon'></i> Delete
                         </button>
    
     

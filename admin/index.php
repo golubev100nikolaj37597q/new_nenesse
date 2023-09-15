@@ -1,30 +1,29 @@
 <?php
 require('php/rendering.php');
-require('../php/config.php');
-
-$mysql = mysqli_connect(servername, user, password, db);
+require('php/get_flats.php');
 session_start();
-
+$products = get_products_td();
 if (!isset($_SESSION['user_id'])) {
-    header('Location: login.php');
-    exit;
+  header('Location: login.php');
+  exit;
 }
 
 if ($_SESSION['user_role'] !== 'admin') {
-    echo "У вас нет доступа к админке.";
-    exit;
+  echo "У вас нет доступа к админке.";
+  exit;
 }
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <!-- Required Meta Tags Always Come First -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Title -->
-  <title>Dashboard | Front - Admin &amp; Dashboard Template</title>
-
+  <title>Products | Front - Admin &amp; Dashboard Template</title>
+  
   <!-- Favicon -->
   <link rel="shortcut icon" href="./favicon.ico">
 
@@ -34,109 +33,181 @@ if ($_SESSION['user_role'] !== 'admin') {
   <!-- CSS Implementing Plugins -->
   <link rel="stylesheet" href="./assets/vendor/bootstrap-icons/font/bootstrap-icons.css">
 
-  <link rel="stylesheet" href="./assets/vendor/daterangepicker/daterangepicker.css">
   <link rel="stylesheet" href="./assets/vendor/tom-select/dist/css/tom-select.bootstrap5.css">
 
   <!-- CSS Front Template -->
 
-  <link rel="preload" href="./assets/css/theme.min.css" data-hs-appearance="default" asА="style">
+  <link rel="preload" href="./assets/css/theme.min.css" data-hs-appearance="default" as="style">
   <link rel="preload" href="./assets/css/theme-dark.min.css" data-hs-appearance="dark" as="style">
 
   <style data-hs-appearance-onload-styles>
-    *
-    {
+    * {
       transition: unset !important;
     }
 
-    body
-    {
+    body {
       opacity: 0;
     }
   </style>
 
   <script>
-            window.hs_config = {"autopath":"@@autopath","deleteLine":"hs-builder:delete","deleteLine:build":"hs-builder:build-delete","deleteLine:dist":"hs-builder:dist-delete","previewMode":false,"startPath":"/index.phpl","vars":{"themeFont":"https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap","version":"?v=1.0"},"layoutBuilder":{"extend":{"switcherSupport":true},"header":{"layoutMode":"default","containerMode":"container-fluid"},"sidebarLayout":"default"},"themeAppearance":{"layoutSkin":"default","sidebarSkin":"default","styles":{"colors":{"primary":"#377dff","transparent":"transparent","white":"#fff","dark":"132144","gray":{"100":"#f9fafc","900":"#1e2022"}},"font":"Inter"}},"languageDirection":{"lang":"en"},"skipFilesFromBundle":{"dist":["assets/js/hs.theme-appearance.js","assets/js/hs.theme-appearance-charts.js","assets/js/demo.js"],"build":["assets/css/theme.css","assets/vendor/hs-navbar-vertical-aside/dist/hs-navbar-vertical-aside-mini-cache.js","assets/js/demo.js","assets/css/theme-dark.css","assets/css/docs.css","assets/vendor/icon-set/style.css","assets/js/hs.theme-appearance.js","assets/js/hs.theme-appearance-charts.js","node_modules/chartjs-plugin-datalabels/dist/chartjs-plugin-datalabels.min.js","assets/js/demo.js"]},"minifyCSSFiles":["assets/css/theme.css","assets/css/theme-dark.css"],"copyDependencies":{"dist":{"*assets/js/theme-custom.js":""},"build":{"*assets/js/theme-custom.js":"","node_modules/bootstrap-icons/font/*fonts/**":"assets/css"}},"buildFolder":"","replacePathsToCDN":{},"directoryNames":{"src":"./src","dist":"./dist","build":"./build"},"fileNames":{"dist":{"js":"theme.min.js","css":"theme.min.css"},"build":{"css":"theme.min.css","js":"theme.min.js","vendorCSS":"vendor.min.css","vendorJS":"vendor.min.js"}},"fileTypes":"jpg|png|svg|mp4|webm|ogv|json"}
-            window.hs_config.gulpRGBA = (p1) => {
-  const options = p1.split(',')
-  const hex = options[0].toString()
-  const transparent = options[1].toString()
-
-  var c;
-  if(/^#([A-Fa-f0-9]{3}){1,2}$/.test(hex)){
-    c= hex.substring(1).split('');
-    if(c.length== 3){
-      c= [c[0], c[0], c[1], c[1], c[2], c[2]];
+    window.hs_config = {
+      "autopath": "@@autopath",
+      "deleteLine": "hs-builder:delete",
+      "deleteLine:build": "hs-builder:build-delete",
+      "deleteLine:dist": "hs-builder:dist-delete",
+      "previewMode": false,
+      "startPath": "/index.phpl",
+      "vars": {
+        "themeFont": "https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap",
+        "version": "?v=1.0"
+      },
+      "layoutBuilder": {
+        "extend": {
+          "switcherSupport": true
+        },
+        "header": {
+          "layoutMode": "default",
+          "containerMode": "container-fluid"
+        },
+        "sidebarLayout": "default"
+      },
+      "themeAppearance": {
+        "layoutSkin": "default",
+        "sidebarSkin": "default",
+        "styles": {
+          "colors": {
+            "primary": "#377dff",
+            "transparent": "transparent",
+            "white": "#fff",
+            "dark": "132144",
+            "gray": {
+              "100": "#f9fafc",
+              "900": "#1e2022"
+            }
+          },
+          "font": "Inter"
+        }
+      },
+      "languageDirection": {
+        "lang": "en"
+      },
+      "skipFilesFromBundle": {
+        "dist": ["assets/js/hs.theme-appearance.js", "assets/js/hs.theme-appearance-charts.js", "assets/js/demo.js"],
+        "build": ["assets/css/theme.css", "assets/vendor/hs-navbar-vertical-aside/dist/hs-navbar-vertical-aside-mini-cache.js", "assets/js/demo.js", "assets/css/theme-dark.css", "assets/css/docs.css", "assets/vendor/icon-set/style.css", "assets/js/hs.theme-appearance.js", "assets/js/hs.theme-appearance-charts.js", "node_modules/chartjs-plugin-datalabels/dist/chartjs-plugin-datalabels.min.js", "assets/js/demo.js"]
+      },
+      "minifyCSSFiles": ["assets/css/theme.css", "assets/css/theme-dark.css"],
+      "copyDependencies": {
+        "dist": {
+          "*assets/js/theme-custom.js": ""
+        },
+        "build": {
+          "*assets/js/theme-custom.js": "",
+          "node_modules/bootstrap-icons/font/*fonts/**": "assets/css"
+        }
+      },
+      "buildFolder": "",
+      "replacePathsToCDN": {},
+      "directoryNames": {
+        "src": "./src",
+        "dist": "./dist",
+        "build": "./build"
+      },
+      "fileNames": {
+        "dist": {
+          "js": "theme.min.js",
+          "css": "theme.min.css"
+        },
+        "build": {
+          "css": "theme.min.css",
+          "js": "theme.min.js",
+          "vendorCSS": "vendor.min.css",
+          "vendorJS": "vendor.min.js"
+        }
+      },
+      "fileTypes": "jpg|png|svg|mp4|webm|ogv|json"
     }
-    c= '0x'+c.join('');
-    return 'rgba('+[(c>>16)&255, (c>>8)&255, c&255].join(',')+',' + transparent + ')';
-  }
-  throw new Error('Bad Hex');
-}
-            window.hs_config.gulpDarken = (p1) => {
-  const options = p1.split(',')
+    window.hs_config.gulpRGBA = (p1) => {
+      const options = p1.split(',')
+      const hex = options[0].toString()
+      const transparent = options[1].toString()
 
-  let col = options[0].toString()
-  let amt = -parseInt(options[1])
-  var usePound = false
+      var c;
+      if (/^#([A-Fa-f0-9]{3}){1,2}$/.test(hex)) {
+        c = hex.substring(1).split('');
+        if (c.length == 3) {
+          c = [c[0], c[0], c[1], c[1], c[2], c[2]];
+        }
+        c = '0x' + c.join('');
+        return 'rgba(' + [(c >> 16) & 255, (c >> 8) & 255, c & 255].join(',') + ',' + transparent + ')';
+      }
+      throw new Error('Bad Hex');
+    }
+    window.hs_config.gulpDarken = (p1) => {
+      const options = p1.split(',')
 
-  if (col[0] == "#") {
-    col = col.slice(1)
-    usePound = true
-  }
-  var num = parseInt(col, 16)
-  var r = (num >> 16) + amt
-  if (r > 255) {
-    r = 255
-  } else if (r < 0) {
-    r = 0
-  }
-  var b = ((num >> 8) & 0x00FF) + amt
-  if (b > 255) {
-    b = 255
-  } else if (b < 0) {
-    b = 0
-  }
-  var g = (num & 0x0000FF) + amt
-  if (g > 255) {
-    g = 255
-  } else if (g < 0) {
-    g = 0
-  }
-  return (usePound ? "#" : "") + (g | (b << 8) | (r << 16)).toString(16)
-}
-            window.hs_config.gulpLighten = (p1) => {
-  const options = p1.split(',')
+      let col = options[0].toString()
+      let amt = -parseInt(options[1])
+      var usePound = false
 
-  let col = options[0].toString()
-  let amt = parseInt(options[1])
-  var usePound = false
+      if (col[0] == "#") {
+        col = col.slice(1)
+        usePound = true
+      }
+      var num = parseInt(col, 16)
+      var r = (num >> 16) + amt
+      if (r > 255) {
+        r = 255
+      } else if (r < 0) {
+        r = 0
+      }
+      var b = ((num >> 8) & 0x00FF) + amt
+      if (b > 255) {
+        b = 255
+      } else if (b < 0) {
+        b = 0
+      }
+      var g = (num & 0x0000FF) + amt
+      if (g > 255) {
+        g = 255
+      } else if (g < 0) {
+        g = 0
+      }
+      return (usePound ? "#" : "") + (g | (b << 8) | (r << 16)).toString(16)
+    }
+    window.hs_config.gulpLighten = (p1) => {
+      const options = p1.split(',')
 
-  if (col[0] == "#") {
-    col = col.slice(1)
-    usePound = true
-  }
-  var num = parseInt(col, 16)
-  var r = (num >> 16) + amt
-  if (r > 255) {
-    r = 255
-  } else if (r < 0) {
-    r = 0
-  }
-  var b = ((num >> 8) & 0x00FF) + amt
-  if (b > 255) {
-    b = 255
-  } else if (b < 0) {
-    b = 0
-  }
-  var g = (num & 0x0000FF) + amt
-  if (g > 255) {
-    g = 255
-  } else if (g < 0) {
-    g = 0
-  }
-  return (usePound ? "#" : "") + (g | (b << 8) | (r << 16)).toString(16)
-}
-            </script>
+      let col = options[0].toString()
+      let amt = parseInt(options[1])
+      var usePound = false
+
+      if (col[0] == "#") {
+        col = col.slice(1)
+        usePound = true
+      }
+      var num = parseInt(col, 16)
+      var r = (num >> 16) + amt
+      if (r > 255) {
+        r = 255
+      } else if (r < 0) {
+        r = 0
+      }
+      var b = ((num >> 8) & 0x00FF) + amt
+      if (b > 255) {
+        b = 255
+      } else if (b < 0) {
+        b = 0
+      }
+      var g = (num & 0x0000FF) + amt
+      if (g > 255) {
+        g = 255
+      } else if (g < 0) {
+        g = 0
+      }
+      return (usePound ? "#" : "") + (g | (b << 8) | (r << 16)).toString(16)
+    }
+  </script>
 </head>
 
 <body class="has-navbar-vertical-aside navbar-vertical-aside-show-xl   footer-offset">
@@ -160,7 +231,7 @@ if ($_SESSION['user_role'] !== 'admin') {
         <!-- Logo -->
 
         <a class="navbar-brand" href="./index.phpl" aria-label="Front">
-          
+
 
         </a>
 
@@ -176,7 +247,7 @@ if ($_SESSION['user_role'] !== 'admin') {
 
         <!-- Content -->
         <div class="navbar-vertical-content">
-              <?=create_aside()?>
+          <?= create_aside() ?>
         </div>
         <!-- End Content -->
 
@@ -187,312 +258,335 @@ if ($_SESSION['user_role'] !== 'admin') {
     </div>
   </aside>
 
-  <!-- End Navbar Vertical -->
-
   <main id="content" role="main" class="main">
     <!-- Content -->
     <div class="content container-fluid">
       <!-- Page Header -->
       <div class="page-header">
-        <div class="row align-items-center">
-          <div class="col">
-            <h1 class="page-header-title">Главная страница - формы</h1>
-          </div>
-          <div class="col">
-            <a href="logout.php" style="color:red">Выйти</a>
-          </div>
-          <!-- End Col -->
-          <!-- End Col -->
-        </div>
-        <!-- End Row -->
-      </div>
-      <!-- End Page Header -->
+        <div class="row align-items-center mb-3">
+          <div class="col-sm mb-2 mb-sm-0">
+            <h1 class="page-header-title">Products <span class="badge bg-soft-dark text-dark ms-2">1</span></h1>
 
-      <!-- Stats -->
-     
-      <!-- End Stats -->
 
-      <!-- End Row -->
-
-      <!-- Card -->
-      <div class="card mb-3 mb-lg-5">
-        <!-- Header -->
-        <div class="card-header">
-          <div class="row justify-content-between align-items-center flex-grow-1">
-            <div class="col-md">
-              <div class="d-flex justify-content-between align-items-center">
-                <h4 class="card-header-title">Заявки</h4>
-
-                <!-- Datatable Info -->
-                <div id="datatableCounterInfo" style="display: none;">
-                  <div class="d-flex align-items-center">
-                    <span class="fs-6 me-3">
-                      <span id="datatableCounter">0</span>
-                      Selected
-                    </span>
-                   
-                  </div>
-                </div>
-                <!-- End Datatable Info -->
-              </div>
-            </div>
             <!-- End Col -->
 
-            <div class="col-auto">
-              <!-- Filter -->
-              <div class="row align-items-sm-center">
-                <div class="col-sm-auto">
-                  <div class="row align-items-center gx-0">
-                    <div class="col">
-                      <span class="text-secondary me-2">Status:</span>
-                    </div>
-                    <!-- End Col -->
-
-                    <div class="col-auto">
-                      <!-- Select -->
-                      <div class="tom-select-custom tom-select-custom-end">
-                        <select class="js-select js-datatable-filter form-select form-select-sm form-select-borderless" data-target-column-index="2" data-target-table="datatable" autocomplete="off" data-hs-tom-select-options='{
-                                  "searchInDropdown": false,
-                                  "hideSearch": true,
-                                  "dropdownWidth": "10rem"
-                                }'>
-                          <option value="null" selected>All</option>
-                          <option value="successful">Successful</option>
-                          <option value="overdue">Overdue</option>
-                          <option value="pending">Pending</option>
-                        </select>
-                      </div>
-                      <!-- End Select -->
-                    </div>
-                    <!-- End Col -->
-                  </div>
-                  <!-- End Row -->
-                </div>
-                <!-- End Col -->
-
-                <div class="col-sm-auto">
-                  <div class="row align-items-center gx-0">
-                    <div class="col">
-                      <span class="text-secondary me-2">Signed up:</span>
-                    </div>
-                    <!-- End Col -->
-
-                    <div class="col-auto">
-                      <!-- Select -->
-                      <div class="tom-select-custom tom-select-custom-end">
-                        <select class="js-select js-datatable-filter form-select form-select-sm form-select-borderless" data-target-column-index="5" data-target-table="datatable" autocomplete="off" data-hs-tom-select-options='{
-                                  "searchInDropdown": false,
-                                  "hideSearch": true,
-                                  "dropdownWidth": "10rem"
-                                }'>
-                          <option value="null" selected>All</option>
-                          <option value="1 year ago">1 year ago</option>
-                          <option value="6 months ago">6 months ago</option>
-                        </select>
-                      </div>
-                      <!-- End Select -->
-                    </div>
-                    <!-- End Col -->
-                  </div>
-                  <!-- End Row -->
-                </div>
-                <!-- End Col -->
-
-                <div class="col-md">
-                  <form>
-                    <!-- Search -->
-                    <div class="input-group input-group-merge input-group-flush">
-                      <div class="input-group-prepend input-group-text">
-                        <i class="bi-search"></i>
-                      </div>
-                      <input id="datatableSearch" type="search" class="form-control" placeholder="Search users" aria-label="Search users">
-                    </div>
-                    <!-- End Search -->
-                  </form>
-                </div>
-                <!-- End Col -->
-              </div>
-              <!-- End Filter -->
+            <div class="col-sm-auto">
+              <a class="btn btn-primary" href="./ecommerce-add-product.php">Add product</a>
             </div>
             <!-- End Col -->
           </div>
           <!-- End Row -->
-        </div>
-        <!-- End Header -->
 
-        <!-- Table -->
-        <div class="table-responsive datatable-custom">
-          <table id="datatable" class="table table-borderless table-thead-bordered table-nowrap table-align-middle card-table" data-hs-datatables-options='{
+          <!-- Nav Scroller -->
+          <div class="js-nav-scroller hs-nav-scroller-horizontal">
+            <span class="hs-nav-scroller-arrow-prev" style="display: none;">
+              <a class="hs-nav-scroller-arrow-link" href="javascript:;">
+                <i class="bi-chevron-left"></i>
+              </a>
+            </span>
+
+            <span class="hs-nav-scroller-arrow-next" style="display: none;">
+              <a class="hs-nav-scroller-arrow-link" href="javascript:;">
+                <i class="bi-chevron-right"></i>
+              </a>
+            </span>
+
+            <!-- Nav -->
+
+            <!-- End Nav -->
+          </div>
+          <!-- End Nav Scroller -->
+        </div>
+        <!-- End Page Header -->
+
+        <div class="row justify-content-end mb-3">
+          <div class="col-lg">
+            <!-- Datatable Info -->
+            <div id="datatableCounterInfo" style="display: none;">
+              <div class="d-sm-flex justify-content-lg-end align-items-sm-center">
+                <span class="d-block d-sm-inline-block fs-5 me-3 mb-2 mb-sm-0">
+                  <span id="datatableCounter">0</span>
+                  Selected
+                </span>
+                <a class="btn btn-outline-danger btn-sm mb-2 mb-sm-0 me-2" href="javascript:;">
+                  <i class="bi-trash"></i> Delete
+                </a>
+                <a class="btn btn-white btn-sm mb-2 mb-sm-0 me-2" href="javascript:;">
+                  <i class="bi-archive"></i> Archive
+                </a>
+                <a class="btn btn-white btn-sm mb-2 mb-sm-0 me-2" href="javascript:;">
+                  <i class="bi-upload"></i> Publish
+                </a>
+                <a class="btn btn-white btn-sm mb-2 mb-sm-0" href="javascript:;">
+                  <i class="bi-x-lg"></i> Unpublish
+                </a>
+              </div>
+            </div>
+            <!-- End Datatable Info -->
+          </div>
+        </div>
+        <!-- End Row -->
+
+        <!-- Card -->
+        <div class="card">
+          <!-- Header -->
+          <div class="card-header card-header-content-md-between">
+            <div class="mb-2 mb-md-0">
+              <form>
+                <!-- Search -->
+                <div class="input-group input-group-merge input-group-flush">
+                  <div class="input-group-prepend input-group-text">
+                    <i class="bi-search"></i>
+                  </div>
+                  <input id="datatableSearch" type="search" class="form-control" placeholder="Find product" aria-label="Search users">
+                </div>
+                <!-- End Search -->
+              </form>
+            </div>
+
+            <div class="d-grid d-sm-flex gap-2">
+
+
+              <!-- Dropdown -->
+              <div class="dropdown">
+                <button type="button" class="btn btn-white w-100" id="showHideDropdown" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                  <i class="bi-table me-1"></i> Table view <span class="badge bg-soft-dark text-dark rounded-circle ms-1">6</span>
+                </button>
+
+                <div class="dropdown-menu dropdown-menu-end dropdown-card" aria-labelledby="showHideDropdown" style="width: 15rem;">
+                  <div class="card card-sm">
+                    <div class="card-body">
+                      <div class="d-grid gap-3">
+                        <!-- Form Switch -->
+                        <label class="row form-check form-switch" for="toggleColumn_product">
+                          <span class="col-8 col-sm-9 ms-0">
+                            <span class="me-2">Name</span>
+                          </span>
+                          <span class="col-4 col-sm-3 text-end">
+                            <input type="checkbox" class="form-check-input" id="toggleColumn_product" checked>
+                          </span>
+                        </label>
+                        <!-- End Form Switch -->
+
+                        <!-- Form Switch -->
+                        <label class="row form-check form-switch" for="toggleColumn_type">
+                          <span class="col-8 col-sm-9 ms-0">
+                            <span class="me-2">Type</span>
+                          </span>
+                          <span class="col-4 col-sm-3 text-end">
+                            <input type="checkbox" class="form-check-input" id="toggleColumn_type" checked>
+                          </span>
+                        </label>
+                        <!-- End Form Switch -->
+
+                        <!-- Form Switch -->
+                        <label class="row form-check form-switch" for="toggleColumn_vendor">
+                          <span class="col-8 col-sm-9 ms-0">
+                            <span class="me-2">Vendor</span>
+                          </span>
+                          <span class="col-4 col-sm-3 text-end">
+                            <input type="checkbox" class="form-check-input" id="toggleColumn_vendor" checked>
+                          </span>
+                        </label>
+                        <!-- End Form Switch -->
+
+                        <!-- Form Switch -->
+                        <label class="row form-check form-switch" for="toggleColumn_stocks">
+                          <span class="col-8 col-sm-9 ms-0">
+                            <span class="me-2">Stocks</span>
+                          </span>
+                          <span class="col-4 col-sm-3 text-end">
+                            <input type="checkbox" class="form-check-input" id="toggleColumn_stocks" checked>
+                          </span>
+                        </label>
+                        <!-- End Form Switch -->
+
+                        <!-- Form Switch -->
+                        <label class="row form-check form-switch" for="toggleColumn_sku">
+                          <span class="col-8 col-sm-9 ms-0">
+                            <span class="me-2">SKU</span>
+                          </span>
+                          <span class="col-4 col-sm-3 text-end">
+                            <input type="checkbox" class="form-check-input" id="toggleColumn_sku" checked>
+                          </span>
+                        </label>
+                        <!-- End Form Switch -->
+
+                        <!-- Form Switch -->
+                        <label class="row form-check form-switch" for="toggleColumn_price">
+                          <span class="col-8 col-sm-9 ms-0">
+                            <span class="me-2">Price</span>
+                          </span>
+                          <span class="col-4 col-sm-3 text-end">
+                            <input type="checkbox" class="form-check-input" id="toggleColumn_price" checked>
+                          </span>
+                        </label>
+                        <!-- End Form Switch -->
+
+                        <!-- Form Switch -->
+
+                        <!-- End Form Switch -->
+
+                        <!-- Form Switch -->
+                        <label class="row form-check form-switch" for="toggleColumn_variants">
+                          <span class="col-8 col-sm-9 ms-0">
+                            <span class="me-2">Variants</span>
+                          </span>
+                          <span class="col-4 col-sm-3 text-end">
+                            <input type="checkbox" class="form-check-input" id="toggleColumn_variants" checked>
+                          </span>
+                        </label>
+                        <!-- End Form Switch -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Dropdown -->
+            </div>
+          </div>
+          <!-- End Header -->
+
+          <!-- Table -->
+          <div class="table-responsive datatable-custom">
+            <table id="datatable" class="table table-borderless table-thead-bordered table-nowrap table-align-middle card-table" data-hs-datatables-options='{
                    "columnDefs": [{
-                      "targets": [0, 1, 4],
+                      "targets": [0, 4, 8],
+                      "width": "5%",
                       "orderable": false
                     }],
                    "order": [],
                    "info": {
-                     "totalQty": "#datatableWithPaginationInfoTotalQty"
+
                    },
                    "search": "#datatableSearch",
                    "entries": "#datatableEntries",
-                   "pageLength": 8,
+                   "pageLength": 12,
                    "isResponsive": false,
                    "isShowPaging": false,
                    "pagination": "datatablePagination"
                  }'>
-            <thead class="thead-light">
-              <tr>
-                <th scope="col" class="table-column-pe-0">
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="datatableCheckAll">
-                    <label class="form-check-label" for="datatableCheckAll"></label>
-                  </div>
-                </th>
-                <th class="table-column-ps-0">Название формы</th>
-         
-                <th>Дата отправления формы</th>
-                <th>Номер телефона</th>
-                <th>Дополнительные данные</th>
-                <th>От куда пришла форма</th>
-                <th class="sorting_disabled"></th>
-              </tr>
-            </thead>
+              <thead class="thead-light">
+                <tr>
+                  <th scope="col" class="table-column-pe-0">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="datatableCheckAll">
+                      <label class="form-check-label">
+                      </label>
+                    </div>
+                  </th>
+                  <th class="table-column-ps-0">Id</th>
+                  <th>Title</th>
+                  <th>Price</th>
+                  <th>Name</th>
 
-            <tbody>
-              
-            <?php
-$sql = $mysql->query("SELECT * FROM `forms`");
-if ($sql->num_rows > 0) {
-    while ($row = $sql->fetch_assoc()) {
-?>
+                  <th>Description</th>
+                  <th>Info</th>
+                  <th>Container</th>
+                  <th>Collection</th>
+                  <th>Availability</th>
+                  <th>Views</th>
 
-<tr role="row" class="odd">
-    <td class="table-column-pe-0">
-        <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="datatableCheckAll1">
-            <label class="form-check-label" for="datatableCheckAll1"></label>
-        </div>
-    </td>
-    <td class="table-column-ps-0">
-        <a class="d-flex align-items-center">
-            <div class="ms-3">
-                <span class="d-block h5 text-inherit mb-0"><?php echo $row['subject']; ?></span>
-            </div>
-        </a>
-    </td>
-    <td><?php echo $row['date']; ?></td>
-    <td>
-        <?php echo $row['number']; ?>
-    </td>
-    <td>
-        Имя: <?php echo $row['name']; ?>
-    </td>
-    <td><?php echo $row['whereForm']; ?></td>
-    <td>
-        <a href="php/deleteForm.php?id=<?php echo $row['id']; ?>" class="btn btn-danger">Удалить</a>
-    </td>
-</tr>
+                  <th></th>
+                </tr>
+              </thead>
 
-<?php
-    }
-}
-?>
+              <tbody>
+                <?= $products ?>
 
 
-            </tbody>
-          </table>
-        </div>
-        <!-- End Table -->
+              </tbody>
+            </table>
+          </div>
+          <!-- End Table -->
 
-        <!-- Footer -->
-        <div class="card-footer">
-          <!-- Pagination -->
-          <div class="row justify-content-center justify-content-sm-between align-items-sm-center">
-            <div class="col-sm mb-2 mb-sm-0">
-              <div class="d-flex justify-content-center justify-content-sm-start align-items-center">
-                <span class="me-2">Showing:</span>
+          <!-- Footer -->
+          <div class="card-footer">
+            <div class="row justify-content-center justify-content-sm-between align-items-sm-center">
+              <div class="col-sm mb-2 mb-sm-0">
+                <div class="d-flex justify-content-center justify-content-sm-start align-items-center">
+                  <span class="me-2">View:</span>
 
-                <!-- Select -->
-                <div class="tom-select-custom">
-                  <select id="datatableEntries" class="js-select form-select form-select-borderless w-auto" autocomplete="off" data-hs-tom-select-options='{
+                  <!-- Select -->
+                  <div class="tom-select-custom">
+                    <select id="datatableEntries" class="js-select form-select form-select-borderless w-auto" autocomplete="off" data-hs-tom-select-options='{
                             "searchInDropdown": false,
                             "hideSearch": true
                           }'>
-                    <option value="4">4</option>
-                    <option value="6">6</option>
-                    <option value="8" selected>8</option>
-                    <option value="12">12</option>
-                  </select>
+                      <option value="12">12</option>
+                      <option value="14" selected>14</option>
+                      <option value="16">16</option>
+                      <option value="18">18</option>
+                    </select>
+                  </div>
+                  <!-- End Select -->
+
+                  <span class="text-secondary me-2">of</span>
+
+                  <!-- Pagination Quantity -->
+                  <span id="datatableWithPaginationInfoTotalQty"></span>
                 </div>
-                <!-- End Select -->
-
-                <span class="text-secondary me-2">of</span>
-
-                <!-- Pagination Quantity -->
-                <span id="datatableWithPaginationInfoTotalQty"></span>
               </div>
-            </div>
-            <!-- End Col -->
+              <!-- End Col -->
 
-            <div class="col-sm-auto">
-              <div class="d-flex justify-content-center justify-content-sm-end">
-                <!-- Pagination -->
-                <nav id="datatablePagination" aria-label="Activity pagination"></nav>
+              <div class="col-sm-auto">
+                <div class="d-flex justify-content-center justify-content-sm-end">
+                  <!-- Pagination -->
+                  <nav id="datatablePagination" aria-label="Activity pagination"></nav>
+                </div>
               </div>
+              <!-- End Col -->
             </div>
-            <!-- End Col -->
+            <!-- End Row -->
           </div>
-          <!-- End Pagination -->
+          <!-- End Footer -->
         </div>
-        <!-- End Footer -->
+        <!-- End Card -->
       </div>
-      <!-- End Card -->
+      <!-- End Content -->
 
+      <!-- Footer -->
 
-    </div>
-    <!-- End Content -->
-
-    <!-- Footer -->
-
-    <div class="footer">
-      <div class="row justify-content-between align-items-center">
-        <div class="col">
-          <p class="fs-6 mb-0">&copy;  <span class="d-none d-sm-inline-block">2022 .</span></p>
-        </div>
-        <!-- End Col -->
-
-        <div class="col-auto">
-          <div class="d-flex justify-content-end">
-            <!-- List Separator -->
-            <ul class="list-inline list-separator">
-              <li class="list-inline-item">
-                <a class="list-separator-link" href="#">FAQ</a>
-              </li>
-
-              <li class="list-inline-item">
-                <a class="list-separator-link" href="#">License</a>
-              </li>
-
-              <li class="list-inline-item">
-                <!-- Keyboard Shortcuts Toggle -->
-                <button class="btn btn-ghost-secondary btn btn-icon btn-ghost-secondary rounded-circle" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasKeyboardShortcuts" aria-controls="offcanvasKeyboardShortcuts">
-                  <i class="bi-command"></i>
-                </button>
-                <!-- End Keyboard Shortcuts Toggle -->
-              </li>
-            </ul>
-            <!-- End List Separator -->
+      <div class="footer">
+        <div class="row justify-content-between align-items-center">
+          <div class="col">
+            <p class="fs-6 mb-0">&copy; <span class="d-none d-sm-inline-block">2022 .</span></p>
           </div>
-        </div>
-        <!-- End Col -->
-      </div>
-      <!-- End Row -->
-    </div>
+          <!-- End Col -->
 
-    <!-- End Footer -->
+          <div class="col-auto">
+            <div class="d-flex justify-content-end">
+              <!-- List Separator -->
+              <ul class="list-inline list-separator">
+                <li class="list-inline-item">
+                  <a class="list-separator-link" href="#">FAQ</a>
+                </li>
+
+                <li class="list-inline-item">
+                  <a class="list-separator-link" href="#">License</a>
+                </li>
+
+                <li class="list-inline-item">
+                  <!-- Keyboard Shortcuts Toggle -->
+                  <button class="btn btn-ghost-secondary btn btn-icon btn-ghost-secondary rounded-circle" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasKeyboardShortcuts" aria-controls="offcanvasKeyboardShortcuts">
+                    <i class="bi-command"></i>
+                  </button>
+                  <!-- End Keyboard Shortcuts Toggle -->
+                </li>
+              </ul>
+              <!-- End List Separator -->
+            </div>
+          </div>
+          <!-- End Col -->
+        </div>
+        <!-- End Row -->
+      </div>
+
+      <!-- End Footer -->
   </main>
   <!-- ========== END MAIN CONTENT ========== -->
 
   <!-- ========== SECONDARY CONTENTS ========== -->
-
   <!-- Keyboard Shortcuts -->
   <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasKeyboardShortcuts" aria-labelledby="offcanvasKeyboardShortcutsLabel">
     <div class="offcanvas-header">
@@ -1195,250 +1289,141 @@ if ($sql->num_rows > 0) {
 
   <!-- End Welcome Message Modal -->
 
-  <!-- Create a new user Modal -->
-  <div class="modal fade" id="inviteUserModal" tabindex="-1" aria-labelledby="inviteUserModalLabel" aria-hidden="true">
+  <!-- Export Products Modal -->
+  <div class="modal fade" id="exportProductsModal" tabindex="-1" aria-labelledby="exportProductsModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
+        <!-- Header -->
         <div class="modal-header">
-          <h4 class="modal-title" id="inviteUserModalLabel">Invite users</h4>
+          <h4 class="modal-title" id="exportProductsModalLabel">Export products</h4>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
+        <!-- End Header -->
 
         <!-- Body -->
         <div class="modal-body">
-          <!-- Form -->
+          <p>This CSV file can update all product information. To update just inventory quantites use the <a class="link" href="#">CSV file for inventory.</a></p>
+
           <div class="mb-4">
-            <div class="input-group mb-2 mb-sm-0">
-              <input type="text" class="form-control" name="fullName" placeholder="Search name or emails" aria-label="Search name or emails">
+            <label class="form-label">Export</label>
 
-              <div class="input-group-append input-group-append-last-sm-down-none">
-                <!-- Select -->
-                <div class="tom-select-custom tom-select-custom-end">
-                  <select class="js-select form-select" autocomplete="off" data-hs-tom-select-options='{
-                            "searchInDropdown": false,
-                            "hideSearch": true,
-                            "dropdownWidth": "11rem"
-                          }'>
-                    <option value="guest" selected>Guest</option>
-                    <option value="can edit">Can edit</option>
-                    <option value="can comment">Can comment</option>
-                    <option value="full access">Full access</option>
-                  </select>
-                </div>
-                <!-- End Select -->
-
-                <a class="btn btn-primary d-none d-sm-inline-block" href="javascript:;">Invite</a>
+            <div class="d-grid gap-2">
+              <!-- Form Check -->
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="exportProductsRadio" id="exportProductsRadio1" checked>
+                <label class="form-check-label" for="exportProductsRadio1">
+                  Current page
+                </label>
               </div>
-            </div>
+              <!-- End Form Check -->
 
-            <a class="btn btn-primary w-100 d-sm-none" href="javascript:;">Invite</a>
-          </div>
-          <!-- End Form -->
+              <!-- Form Check -->
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="exportProductsRadio" id="exportProductsRadio2">
+                <label class="form-check-label" for="exportProductsRadio2">
+                  All products
+                </label>
+              </div>
+              <!-- End Form Check -->
 
-          <div class="row">
-            <h5 class="col modal-title">Invite users</h5>
-
-            <div class="col-auto">
-              <a class="d-flex align-items-center small text-body" href="#">
-                <img alt="img" class="avatar avatar-xss avatar-4x3 me-2" src="./assets/svg/brands/gmail-icon.svg" alt="Image Description">
-                Import contacts
-              </a>
+              <!-- Form Check -->
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="exportProductsRadio" id="exportProductsRadio3">
+                <label class="form-check-label" for="exportProductsRadio3">
+                  Selected: 20 products
+                </label>
+              </div>
+              <!-- End Form Check -->
             </div>
           </div>
 
-          <hr class="mt-2">
+          <label class="form-label">Export as</label>
 
-          <ul class="list-unstyled list-py-2 mb-0">
-            <!-- List Group Item -->
-            <li>
-              <div class="d-flex">
-                <div class="flex-shrink-0">
-                  <div class="avatar avatar-sm avatar-circle">
-                    <img alt="img" class="avatar-img" src="./assets/img/160x160/img10.jpg" alt="Image Description">
-                  </div>
-                </div>
+          <!-- Form Check -->
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exportProductsAsRadio" id="exportProductsAsRadio1" checked>
+            <label class="form-check-label" for="exportProductsAsRadio1">
+              CSV for Excel, Numbers, or other spreadsheet programs
+            </label>
+          </div>
+          <!-- End Form Check -->
 
-                <div class="flex-grow-1 ms-3">
-                  <div class="row align-items-center">
-                    <div class="col-sm">
-                      <h5 class="mb-0">Amanda Harvey <i class="bi-patch-check-fill text-primary" data-toggle="tooltip" data-placement="top" title="Top endorsed"></i></h5>
-                      <span class="d-block small">amanda@site.com</span>
-                    </div>
-
-                    <div class="col-sm-auto">
-                      <!-- Select -->
-                      <div class="tom-select-custom tom-select-custom-sm-end">
-                        <select class="js-select form-select form-select-borderless tom-select-custom-form-select-invite-user tom-select-form-select-ps-0" autocomplete="off" data-hs-tom-select-options='{
-                                  "searchInDropdown": false,
-                                  "hideSearch": true,
-                                  "dropdownWidth": "11rem"
-                                }'>
-                          <option value="guest" selected>Guest</option>
-                          <option value="can edit">Can edit</option>
-                          <option value="can comment">Can comment</option>
-                          <option value="full access">Full access</option>
-                          <option value="remove" data-option-template='<div class="text-danger">Remove</div>'>Remove</option>
-                        </select>
-                      </div>
-                      <!-- End Select -->
-                    </div>
-                  </div>
-                  <!-- End Row -->
-                </div>
-              </div>
-            </li>
-            <!-- End List Group Item -->
-
-            <!-- List Group Item -->
-            <li>
-              <div class="d-flex">
-                <div class="flex-shrink-0">
-                  <div class="avatar avatar-sm avatar-circle">
-                    <img alt="img" class="avatar-img" src="./assets/img/160x160/img3.jpg" alt="Image Description">
-                  </div>
-                </div>
-
-                <div class="flex-grow-1 ms-3">
-                  <div class="row align-items-center">
-                    <div class="col-sm">
-                      <h5 class="mb-0">David Harrison</h5>
-                      <span class="d-block small">david@site.com</span>
-                    </div>
-
-                    <div class="col-sm-auto">
-                      <!-- Select -->
-                      <div class="tom-select-custom tom-select-custom-sm-end">
-                        <select class="js-select form-select form-select-borderless tom-select-custom-form-select-invite-user tom-select-form-select-ps-0" autocomplete="off" data-hs-tom-select-options='{
-                                  "searchInDropdown": false,
-                                  "hideSearch": true,
-                                  "dropdownWidth": "11rem"
-                                }'>
-                          <option value="guest" selected>Guest</option>
-                          <option value="can edit">Can edit</option>
-                          <option value="can comment">Can comment</option>
-                          <option value="full access">Full access</option>
-                          <option value="remove" data-option-template='<div class="text-danger">Remove</div>'>Remove</option>
-                        </select>
-                      </div>
-                      <!-- End Select -->
-                    </div>
-                  </div>
-                  <!-- End Row -->
-                </div>
-              </div>
-            </li>
-            <!-- End List Group Item -->
-
-            <!-- List Group Item -->
-            <li>
-              <div class="d-flex">
-                <div class="flex-shrink-0">
-                  <div class="avatar avatar-sm avatar-circle">
-                    <img alt="img" class="avatar-img" src="./assets/img/160x160/img9.jpg" alt="Image Description">
-                  </div>
-                </div>
-
-                <div class="flex-grow-1 ms-3">
-                  <div class="row align-items-center">
-                    <div class="col-sm">
-                      <h5 class="mb-0">Ella Lauda <i class="bi-patch-check-fill text-primary" data-toggle="tooltip" data-placement="top" title="Top endorsed"></i></h5>
-                      <span class="d-block small">Markvt@site.com</span>
-                    </div>
-
-                    <div class="col-sm-auto">
-                      <!-- Select -->
-                      <div class="tom-select-custom tom-select-custom-sm-end">
-                        <select class="js-select form-select form-select-borderless tom-select-custom-form-select-invite-user tom-select-form-select-ps-0" autocomplete="off" data-hs-tom-select-options='{
-                                  "searchInDropdown": false,
-                                  "hideSearch": true,
-                                  "dropdownWidth": "11rem"
-                                }'>
-                          <option value="guest" selected>Guest</option>
-                          <option value="can edit">Can edit</option>
-                          <option value="can comment">Can comment</option>
-                          <option value="full access">Full access</option>
-                          <option value="remove" data-option-template='<div class="text-danger">Remove</div>'>Remove</option>
-                        </select>
-                      </div>
-                      <!-- End Select -->
-                    </div>
-                  </div>
-                  <!-- End Row -->
-                </div>
-              </div>
-            </li>
-            <!-- End List Group Item -->
-
-            <!-- List Group Item -->
-            <li>
-              <div class="d-flex">
-                <div class="flex-shrink-0">
-                  <div class="avatar avatar-sm avatar-soft-dark avatar-circle">
-                    <span class="avatar-initials">B</span>
-                  </div>
-                </div>
-
-                <div class="flex-grow-1 ms-3">
-                  <div class="row align-items-center">
-                    <div class="col-sm">
-                      <h5 class="mb-0">Bob Dean</h5>
-                      <span class="d-block small">bob@site.com</span>
-                    </div>
-
-                    <div class="col-sm-auto">
-                      <!-- Select -->
-                      <div class="tom-select-custom tom-select-custom-sm-end">
-                        <select class="js-select form-select form-select-borderless tom-select-custom-form-select-invite-user tom-select-form-select-ps-0" autocomplete="off" data-hs-tom-select-options='{
-                                  "searchInDropdown": false,
-                                  "hideSearch": true,
-                                  "dropdownWidth": "11rem"
-                                }'>
-                          <option value="guest" selected>Guest</option>
-                          <option value="can edit">Can edit</option>
-                          <option value="can comment">Can comment</option>
-                          <option value="full access">Full access</option>
-                          <option value="remove" data-option-template='<div class="text-danger">Remove</div>'>Remove</option>
-                        </select>
-                      </div>
-                      <!-- End Select -->
-                    </div>
-                  </div>
-                  <!-- End Row -->
-                </div>
-              </div>
-            </li>
-            <!-- End List Group Item -->
-          </ul>
+          <!-- Form Check -->
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exportProductsAsRadio" id="exportProductsAsRadio2">
+            <label class="form-check-label" for="exportProductsAsRadio2">
+              Plain CSV file
+            </label>
+          </div>
+          <!-- End Form Check -->
         </div>
         <!-- End Body -->
 
         <!-- Footer -->
-        <div class="modal-footer">
-          <div class="row align-items-center flex-grow-1 mx-n2">
-            <div class="col-sm-9 mb-2 mb-sm-0">
-              <input type="hidden" id="inviteUserPublicClipboard" value="https://themes.getbootstrap.com/product/front-multipurpose-responsive-template/">
-
-              <p class="modal-footer-text">The public share <a href="#">link settings</a>
-                <i class="bi-question-circle" data-bs-toggle="tooltip" data-bs-placement="top" title="The public share link allows people to view the project without giving access to full collaboration features."></i>
-              </p>
-            </div>
-
-            <div class="col-sm-3 text-sm-end">
-              <a class="js-clipboard btn btn-white btn-sm text-nowrap" href="javascript:;" data-bs-toggle="tooltip" data-bs-placement="top" title="Copy to clipboard!" data-hs-clipboard-options='{
-                  "type": "tooltip",
-                  "successText": "Copied!",
-                  "contentTarget": "#inviteUserPublicClipboard",
-                  "container": "#inviteUserModal"
-                 }'>
-                <i class="bi-link-45deg me-1"></i> Copy link</a>
-            </div>
-          </div>
+        <div class="modal-footer gap-3">
+          <button type="button" class="btn btn-white" data-bs-dismiss="modal" aria-label="Close">Cancel</button>
+          <button type="button" class="btn btn-primary">Export products</button>
         </div>
         <!-- End Footer -->
       </div>
     </div>
   </div>
-  <!-- End Create a new user Modal -->
+  <!-- End Export Products Modal -->
+
+  <!-- Import Products Modal -->
+  <div class="modal fade" id="importProductsModal" tabindex="-1" aria-labelledby="importProductsModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <!-- Header -->
+        <div class="modal-header">
+          <h4 class="modal-title" id="importProductsModalLabel">Import products by CSV</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <!-- End Header -->
+
+        <!-- Body -->
+        <div class="modal-body">
+          <p><a class="link" href="#">Download a sample CSV template</a> to see an example of the format required.</p>
+
+          <!-- Dropzone -->
+          <div id="attachFilesNewProjectLabel" class="js-dropzone dz-dropzone dz-dropzone-card mb-4">
+            <div class="dz-message">
+              <img alt="img" class="avatar avatar-xl avatar-4x3 mb-3" src="./assets/svg/illustrations/oc-browse.svg" alt="Image Description" data-hs-theme-appearance="default">
+              <img alt="img" class="avatar avatar-xl avatar-4x3 mb-3" src="./assets/svg/illustrations-light/oc-browse.svg" alt="Image Description" data-hs-theme-appearance="dark">
+
+              <h5>Drag and drop your file here</h5>
+
+              <p class="mb-2">or</p>
+
+              <span class="btn btn-white btn-sm">Browse files</span>
+            </div>
+          </div>
+          <!-- End Dropzone -->
+
+          <!-- Form Check -->
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="overwriteCurrentProductsCheckbox">
+            <label class="form-check-label" for="overwriteCurrentProductsCheckbox">
+              Overwrite any current products that have the same handle. Existing values will be used for any missing columns. <a href="#">Learn more</a>
+            </label>
+          </div>
+          <!-- End Form Check -->
+        </div>
+        <!-- End Body -->
+
+        <!-- Footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-white" data-bs-dismiss="modal" aria-label="Close">Cancel</button>
+          <button type="button" class="btn btn-primary">Upload and continue</button>
+        </div>
+        <!-- End Footer -->
+      </div>
+    </div>
+  </div>
+
+  <!-- End Import Products Modal -->
+
+
   <!-- ========== END SECONDARY CONTENTS ========== -->
 
   <!-- JS Global Compulsory  -->
@@ -1450,101 +1435,108 @@ if ($sql->num_rows > 0) {
   <script src="./assets/vendor/hs-navbar-vertical-aside/dist/hs-navbar-vertical-aside.min.js"></script>
   <script src="./assets/vendor/hs-form-search/dist/hs-form-search.min.js"></script>
 
-  <script src="./assets/vendor/chart.js/dist/Chart.min.js"></script>
-  <script src="./assets/vendor/chartjs-chart-matrix/dist/chartjs-chart-matrix.min.js"></script>
-  <script src="./assets/vendor/chartjs-plugin-datalabels/dist/chartjs-plugin-datalabels.min.js"></script>
-  <script src="./assets/vendor/daterangepicker/moment.min.js"></script>
-  <script src="./assets/vendor/daterangepicker/daterangepicker.js"></script>
+  <script src="./assets/vendor/hs-nav-scroller/dist/hs-nav-scroller.min.js"></script>
   <script src="./assets/vendor/tom-select/dist/js/tom-select.complete.min.js"></script>
-  <script src="./assets/vendor/clipboard/dist/clipboard.min.js"></script>
   <script src="./assets/vendor/datatables/media/js/jquery.dataTables.min.js"></script>
   <script src="./assets/vendor/datatables.net.extensions/select/select.min.js"></script>
+  <script src="./assets/vendor/dropzone/dist/min/dropzone.min.js"></script>
 
   <!-- JS Front -->
   <script src="./assets/js/theme.min.js"></script>
-  <script src="./assets/js/hs.theme-appearance-charts.js"></script>
 
   <!-- JS Plugins Init. -->
   <script>
-    $(document).on('ready', function () {
-      // INITIALIZATION OF DATERANGEPICKER
+    $(document).on('ready', function() {
+      // INITIALIZATION OF DATATABLES
       // =======================================================
-      $('.js-daterangepicker').daterangepicker();
-
-      $('.js-daterangepicker-times').daterangepicker({
-        timePicker: true,
-        startDate: moment().startOf('hour'),
-        endDate: moment().startOf('hour').add(32, 'hour'),
-        locale: {
-          format: 'M/DD hh:mm A'
-        }
-      });
-
-      var start = moment();
-      var end = moment();
-
-      function cb(start, end) {
-        $('#js-daterangepicker-predefined .js-daterangepicker-predefined-preview').html(start.format('MMM D') + ' - ' + end.format('MMM D, YYYY'));
-      }
-
-      $('#js-daterangepicker-predefined').daterangepicker({
-        startDate: start,
-        endDate: end,
-        ranges: {
-          'Today': [moment(), moment()],
-          'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
-          'Last 7 Days': [moment().subtract(6, 'days'), moment()],
-          'Last 30 Days': [moment().subtract(29, 'days'), moment()],
-          'This Month': [moment().startOf('month'), moment().endOf('month')],
-          'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
-        }
-      }, cb);
-
-      cb(start, end);
-    });
-
-
-    // INITIALIZATION OF DATATABLES
-    // =======================================================
-    HSCore.components.HSDatatables.init($('#datatable'), {
-      select: {
-        style: 'multi',
-        selector: 'td:first-child input[type="checkbox"]',
-        classMap: {
-          checkAll: '#datatableCheckAll',
-          counter: '#datatableCounter',
-          counterInfo: '#datatableCounterInfo'
-        }
-      },
-      language: {
-        zeroRecords: `<div class="text-center p-4">
+      HSCore.components.HSDatatables.init($('#datatable'), {
+        select: {
+          style: 'multi',
+          selector: 'td:first-child input[type="checkbox"]',
+          classMap: {
+            checkAll: '#datatableCheckAll',
+            counter: '#datatableCounter',
+            counterInfo: '#datatableCounterInfo'
+          }
+        },
+        language: {
+          zeroRecords: `<div class="text-center p-4">
               <img alt="img" class="mb-3" src="./assets/svg/illustrations/oc-error.svg" alt="Image Description" style="width: 10rem;" data-hs-theme-appearance="default">
               <img alt="img" class="mb-3" src="./assets/svg/illustrations-light/oc-error.svg" alt="Image Description" style="width: 10rem;" data-hs-theme-appearance="dark">
             <p class="mb-0">No data to show</p>
             </div>`
-      }
-    });
+        }
+      });
 
-    const datatable = HSCore.components.HSDatatables.getItem(0)
+      const datatable = HSCore.components.HSDatatables.getItem('datatable')
 
-    document.querySelectorAll('.js-datatable-filter').forEach(function (item) {
-      item.addEventListener('change',function(e) {
-        const elVal = e.target.value,
-    targetColumnIndex = e.target.getAttribute('data-target-column-index'),
-    targetTable = e.target.getAttribute('data-target-table');
+      $('.js-datatable-filter').on('change', function() {
+        var $this = $(this),
+          elVal = $this.val(),
+          targetColumnIndex = $this.data('target-column-index');
 
-    HSCore.components.HSDatatables.getItem(targetTable).column(targetColumnIndex).search(elVal !== 'null' ? elVal : '').draw()
+        datatable.column(targetColumnIndex).search(elVal).draw();
+      });
+
+      $('#datatableSearch').on('mouseup', function(e) {
+        var $input = $(this),
+          oldValue = $input.val();
+
+        if (oldValue == "") return;
+
+        setTimeout(function() {
+          var newValue = $input.val();
+
+          if (newValue == "") {
+            // Gotcha
+            datatable.search('').draw();
+          }
+        }, 1);
+      });
+
+      $('#toggleColumn_product').change(function(e) {
+        datatable.columns(1).visible(e.target.checked)
       })
-    })
+
+      $('#toggleColumn_type').change(function(e) {
+        datatable.columns(2).visible(e.target.checked)
+      })
+
+      datatable.columns(3).visible(false)
+
+      $('#toggleColumn_vendor').change(function(e) {
+        datatable.columns(3).visible(e.target.checked)
+      })
+
+      $('#toggleColumn_stocks').change(function(e) {
+        datatable.columns(4).visible(e.target.checked)
+      })
+
+      $('#toggleColumn_sku').change(function(e) {
+        datatable.columns(5).visible(e.target.checked)
+      })
+
+      $('#toggleColumn_price').change(function(e) {
+        datatable.columns(6).visible(e.target.checked)
+      })
+
+      datatable.columns(7).visible(false)
+
+      $('#toggleColumn_quantity').change(function(e) {
+        datatable.columns(7).visible(e.target.checked)
+      })
+
+      $('#toggleColumn_variants').change(function(e) {
+        datatable.columns(8).visible(e.target.checked)
+      })
+    });
   </script>
 
   <!-- JS Plugins Init. -->
   <script>
     (function() {
-      localStorage.removeItem('hs_theme')
+      window.onload = function() {
 
-      window.onload = function () {
-        
 
         // INITIALIZATION OF NAVBAR VERTICAL ASIDE
         // =======================================================
@@ -1553,21 +1545,7 @@ if ($sql->num_rows > 0) {
 
         // INITIALIZATION OF FORM SEARCH
         // =======================================================
-        const HSFormSearchInstance = new HSFormSearch('.js-form-search')
-
-        if (HSFormSearchInstance.collection.length) {
-          HSFormSearchInstance.getItem(1).on('close', function (el) {
-            el.classList.remove('top-0')
-          })
-
-          document.querySelector('.js-form-search-mobile-toggle').addEventListener('click', e => {
-            let dataOptions = JSON.parse(e.currentTarget.getAttribute('data-hs-form-search-options')),
-              $menu = document.querySelector(dataOptions.dropMenuElement)
-
-            $menu.classList.add('top-0')
-            $menu.style.left = 0
-          })
-        }
+        new HSFormSearch('.js-form-search')
 
 
         // INITIALIZATION OF BOOTSTRAP DROPDOWN
@@ -1575,160 +1553,78 @@ if ($sql->num_rows > 0) {
         HSBsDropdown.init()
 
 
-        // INITIALIZATION OF CHARTJS
-        // =======================================================
-        HSCore.components.HSChartJS.init('.js-chart')
-
-
-        // INITIALIZATION OF CHARTJS
-        // =======================================================
-        HSCore.components.HSChartJS.init('#updatingBarChart')
-        const updatingBarChart = HSCore.components.HSChartJS.getItem('updatingBarChart')
-
-        // Call when tab is clicked
-        document.querySelectorAll('[data-bs-toggle="chart-bar"]').forEach(item => {
-          item.addEventListener('click', e => {
-            let keyDataset = e.currentTarget.getAttribute('data-datasets')
-
-            const styles = HSCore.components.HSChartJS.getTheme('updatingBarChart', HSThemeAppearance.getAppearance())
-
-            if (keyDataset === 'lastWeek') {
-              updatingBarChart.data.labels = ["Apr 22", "Apr 23", "Apr 24", "Apr 25", "Apr 26", "Apr 27", "Apr 28", "Apr 29", "Apr 30", "Apr 31"];
-              updatingBarChart.data.datasets = [
-                {
-                  "data": [120, 250, 300, 200, 300, 290, 350, 100, 125, 320],
-                  "backgroundColor": styles.data.datasets[0].backgroundColor,
-                  "hoverBackgroundColor": styles.data.datasets[0].hoverBackgroundColor,
-                  "borderColor": styles.data.datasets[0].borderColor,
-                  "maxBarThickness": 10
-                },
-                {
-                  "data": [250, 130, 322, 144, 129, 300, 260, 120, 260, 245, 110],
-                  "backgroundColor": styles.data.datasets[1].backgroundColor,
-                  "borderColor": styles.data.datasets[1].borderColor,
-                  "maxBarThickness": 10
-                }
-              ];
-              updatingBarChart.update();
-            } else {
-              updatingBarChart.data.labels = ["May 1", "May 2", "May 3", "May 4", "May 5", "May 6", "May 7", "May 8", "May 9", "May 10"];
-              updatingBarChart.data.datasets = [
-                {
-                  "data": [200, 300, 290, 350, 150, 350, 300, 100, 125, 220],
-                  "backgroundColor": styles.data.datasets[0].backgroundColor,
-                  "hoverBackgroundColor": styles.data.datasets[0].hoverBackgroundColor,
-                  "borderColor": styles.data.datasets[0].borderColor,
-                  "maxBarThickness": 10
-                },
-                {
-                  "data": [150, 230, 382, 204, 169, 290, 300, 100, 300, 225, 120],
-                  "backgroundColor": styles.data.datasets[1].backgroundColor,
-                  "borderColor": styles.data.datasets[1].borderColor,
-                  "maxBarThickness": 10
-                }
-              ]
-              updatingBarChart.update();
-            }
-          })
-        })
-
-
-        // INITIALIZATION OF CHARTJS
-        // =======================================================
-        HSCore.components.HSChartJS.init('.js-chart-datalabels', {
-          plugins: [ChartDataLabels],
-          options: {
-            plugins: {
-              datalabels: {
-                anchor: function (context) {
-                  var value = context.dataset.data[context.dataIndex];
-                  return value.r < 20 ? 'end' : 'center';
-                },
-                align: function (context) {
-                  var value = context.dataset.data[context.dataIndex];
-                  return value.r < 20 ? 'end' : 'center';
-                },
-                color: function (context) {
-                  var value = context.dataset.data[context.dataIndex];
-                  return value.r < 20 ? context.dataset.backgroundColor : context.dataset.color;
-                },
-                font: function (context) {
-                  var value = context.dataset.data[context.dataIndex],
-                    fontSize = 25;
-
-                  if (value.r > 50) {
-                    fontSize = 35;
-                  }
-
-                  if (value.r > 70) {
-                    fontSize = 55;
-                  }
-
-                  return {
-                    weight: 'lighter',
-                    size: fontSize
-                  };
-                },
-                formatter: function (value) {
-                  return value.r
-                },
-                offset: 2,
-                padding: 0
-              }
-            },
-          }
-        })
-
         // INITIALIZATION OF SELECT
         // =======================================================
         HSCore.components.HSTomSelect.init('.js-select')
 
 
-        // INITIALIZATION OF CLIPBOARD
+        // INITIALIZATION OF NAV SCROLLER
         // =======================================================
-        HSCore.components.HSClipboard.init('.js-clipboard')
+        new HsNavScroller('.js-nav-scroller')
+
+
+        // INITIALIZATION OF DROPZONE
+        // =======================================================
+        HSCore.components.HSDropzone.init('.js-dropzone')
       }
     })()
+
+    function del_product(id) {
+      $.ajax({
+        url: "php/del_product.php",
+        type: 'POST',
+        data: {
+          'id': id
+        },
+
+        success: function(data) {
+          window.location.reload();
+
+
+        }
+      })
+    }
   </script>
 
   <!-- Style Switcher JS -->
 
   <script>
-      (function () {
-        // STYLE SWITCHER
-        // =======================================================
-        const $dropdownBtn = document.getElementById('selectThemeDropdown') // Dropdowon trigger
-        const $variants = document.querySelectorAll(`[aria-labelledby="selectThemeDropdown"] [data-icon]`) // All items of the dropdown
+    (function() {
+      // STYLE SWITCHER
+      // =======================================================
+      const $dropdownBtn = document.getElementById('selectThemeDropdown') // Dropdowon trigger
+      const $variants = document.querySelectorAll(`[aria-labelledby="selectThemeDropdown"] [data-icon]`) // All items of the dropdown
 
-        // Function to set active style in the dorpdown menu and set icon for dropdown trigger
-        const setActiveStyle = function () {
-          $variants.forEach($item => {
-            if ($item.getAttribute('data-value') === HSThemeAppearance.getOriginalAppearance()) {
-              $dropdownBtn.innerHTML = `<i class="${$item.getAttribute('data-icon')}" />`
-              return $item.classList.add('active')
-            }
+      // Function to set active style in the dorpdown menu and set icon for dropdown trigger
+      const setActiveStyle = function() {
+        $variants.forEach($item => {
+          if ($item.getAttribute('data-value') === HSThemeAppearance.getOriginalAppearance()) {
+            $dropdownBtn.innerHTML = `<i class="${$item.getAttribute('data-icon')}" />`
+            return $item.classList.add('active')
+          }
 
-            $item.classList.remove('active')
-          })
-        }
-
-        // Add a click event to all items of the dropdown to set the style
-        $variants.forEach(function ($item) {
-          $item.addEventListener('click', function () {
-            HSThemeAppearance.setAppearance($item.getAttribute('data-value'))
-          })
+          $item.classList.remove('active')
         })
+      }
 
-        // Call the setActiveStyle on load page
+      // Add a click event to all items of the dropdown to set the style
+      $variants.forEach(function($item) {
+        $item.addEventListener('click', function() {
+          HSThemeAppearance.setAppearance($item.getAttribute('data-value'))
+        })
+      })
+
+      // Call the setActiveStyle on load page
+      setActiveStyle()
+
+      // Add event listener on change style to call the setActiveStyle function
+      window.addEventListener('on-hs-appearance-change', function() {
         setActiveStyle()
-
-        // Add event listener on change style to call the setActiveStyle function
-        window.addEventListener('on-hs-appearance-change', function () {
-          setActiveStyle()
-        })
-      })()
-    </script>
+      })
+    })()
+  </script>
 
   <!-- End Style Switcher JS -->
 </body>
+
 </html>

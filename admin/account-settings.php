@@ -231,7 +231,7 @@ if ($_SESSION['user_role'] !== 'admin') {
         <!-- Logo -->
 
         <a class="navbar-brand" href="./index.phpl" aria-label="Front">
-          
+
 
         </a>
 
@@ -266,13 +266,13 @@ if ($_SESSION['user_role'] !== 'admin') {
           <div class="col-sm mb-2 mb-sm-0">
             <nav aria-label="breadcrumb">
               <ol class="breadcrumb breadcrumb-no-gutter">
-                <li class="breadcrumb-item"><a class="breadcrumb-link" href="javascript:;">Админ панель</a></li>
+                <li class="breadcrumb-item"><a class="breadcrumb-link" href="javascript:;">Admin Panel</a></li>
 
-                <li class="breadcrumb-item active" aria-current="page">Настройки</li>
+                <li class="breadcrumb-item active" aria-current="page">Settings</li>
               </ol>
             </nav>
 
-            <h1 class="page-header-title">Настройки</h1>
+            <h1 class="page-header-title">Settings</h1>
           </div>
           <!-- End Col -->
 
@@ -347,82 +347,14 @@ if ($_SESSION['user_role'] !== 'admin') {
 
 
             <!-- Card -->
-            <div class="card">
-              <div class="card-header">
-                <h2 class="card-title h4">Menu</h2>
-              </div>
 
-              <!-- Body -->
-              <div class="card-body">
-                <!-- Form -->
-                <form id="save_settings">
-                  <!-- Form -->
-                  <div class="row mb-4">
-                    <label for="emailLabel" class="col-sm-3 col-form-label form-label">API Maib.md</label>
-
-                    <div class="col-sm-9">
-                      <input type="text" class="form-control" name="maib" id="emailLabel" placeholder="Введите API maib.mb" aria-label="Email">
-                    </div>
-                  </div>
-                  <!-- End Form -->
-
-                  <!-- Form -->
-
-                  <!-- End Form -->
-
-                  <!-- Form -->
-                  <div class="row mb-4">
-                    <label for="phoneLabel" class="col-sm-3 col-form-label form-label">SMTP сервера вашей почты </label>
-
-                    <div class="col-sm-9">
-                      <input type="text" class="js-input-mask form-control" name="smtp" id="smtp" placeholder="Введите SMTP пример яндекс почты - smtp.yandex.ru">
-                    </div>
-                  </div>
-                  <!-- End Form -->
-                  <!-- Form -->
-                  <div class="row mb-4">
-                    <label for="firstNameLabel" class="col-sm-3 col-form-label form-label">Данные от почты<i class="bi-question-circle text-body ms-1" data-bs-toggle="tooltip" data-bs-placement="top" title="Введите данные от почты EMAIL | PASS"></i></label>
-
-                    <div class="col-sm-9">
-                      <div class="input-group input-group-sm-vertical">
-                        <input type="text" class="form-control" name="email" id="firstNameLabel" placeholder="Введите Email" aria-label="Your first name">
-                        <input type="text" class="form-control" name="password_email" id="lastNameLabel" placeholder="Введите пароль" aria-label="Your last name">
-                      </div>
-                    </div>
-                  </div>
-                  <!-- End Form -->
-                  <!-- Form -->
-                  <div class="row mb-4">
-                    <label for="firstNameLabel" class="col-sm-3 col-form-label form-label">Данные от Telegram<i class="bi-question-circle text-body ms-1" data-bs-toggle="tooltip" data-bs-placement="top" title="Введите данные от Telegram Token | ChatID"></i></label>
-
-                    <div class="col-sm-9">
-                      <div class="input-group input-group-sm-vertical">
-                        <input type="text" class="form-control" name="TokenBot" id="firstNameLabel" placeholder="Токен TG бота" aria-label="Your first name">
-                        <input type="text" class="form-control" name="ChatID" id="lastNameLabel" placeholder="Введите чат-айди чата для уведомлений" aria-label="Your last name">
-                      </div>
-                    </div>
-                  </div>
-                  <!-- End Form -->
-
-                  <!-- Form -->
-
-                  <!-- End Form -->
-
-                  <div class="d-flex justify-content-end">
-                    <button type="submit" id="button_send1" class="btn btn-primary">Сохранить</button>
-                  </div>
-                </form>
-                <!-- End Form -->
-              </div>
-              <!-- End Body -->
-            </div>
             <!-- End Card -->
 
 
             <!-- Card -->
             <div id="passwordSection" class="card">
               <div class="card-header">
-                <h4 class="card-title">Смена пароля от админ панели</h4>
+                <h4 class="card-title">Changing the password from the admin panel</h4>
               </div>
 
               <!-- Body -->
@@ -439,29 +371,29 @@ if ($_SESSION['user_role'] !== 'admin') {
 
                   <!-- Form -->
                   <div class="row mb-4">
-                    <label for="confirmNewPasswordLabel" class="col-sm-3 col-form-label form-label">Новый пароль</label>
+                    <label for="confirmNewPasswordLabel" class="col-sm-3 col-form-label form-label">New password</label>
 
                     <div class="col-sm-9">
                       <div class="mb-3">
-                        <input type="password" class="form-control" name="password" id="confirmNewPasswordLabel" placeholder="Введите новый пароль" aria-label="Confirm your new password">
+                        <input type="password" class="form-control" name="password" id="confirmNewPasswordLabel" placeholder="New password" aria-label="Confirm your new password">
                       </div>
 
-                      <h5>Рекомендации по паролю:</h5>
+                      <h5>Password Recommendations:</h5>
 
-                      <p class="fs-6 mb-2">Убедитесь, что эти требования соблюдены:</p>
+                      <p class="fs-6 mb-2">Make sure that these requirements are met:</p>
 
                       <ul class="fs-6">
-                        <li>Длина минимум 8 символов - чем больше, тем лучше</li>
-                        <li>По крайней мере, один символ нижнего регистра</li>
-                        <li>По крайней мере, один символ верхнего регистра</li>
-                        <li>По крайней мере, одно число, символ или пробельный символ</li>
+                        <li>The length is at least 8 characters - the more, the better</li>
+                        <li>At least one lowercase character</li>
+                        <li>At least one uppercase character</li>
+                        <li>At least one number, character, or space character</li>
                       </ul>
                     </div>
                   </div>
                   <!-- End Form -->
 
                   <div class="d-flex justify-content-end">
-                    <button type="submit" id="button2" class="btn btn-primary">Сохранить</button>
+                    <button type="submit" id="button2" class="btn btn-primary">Save</button>
                   </div>
                 </form>
                 <!-- End Form -->
@@ -1224,28 +1156,6 @@ if ($_SESSION['user_role'] !== 'admin') {
   <!-- JS Front -->
   <script src="./assets/js/theme.min.js"></script>
   <script>
-    document.getElementById('save_settings').addEventListener('submit', function(event) {
-      event.preventDefault();
-
-      const save_button = document.getElementById('button_send1');
-
-      $.ajax({
-        url: 'php/save_settings.php',
-        type: 'POST',
-        data: new FormData(this), // Использование созданного объекта FormData
-        processData: false, // Не обрабатывать данные перед отправкой
-        contentType: false, // Не устанавливать тип контента
-        success: function(response) {
-          save_button.classList.add('btn-success');
-          save_button.innerText = "Успешно";
-          console.log('Успешный ответ от сервера:', response);
-        },
-        error: function(xhr, status, error) {
-          console.log('Ошибка запроса:', error);
-          // Здесь можно обработать ошибку запроса
-        }
-      });
-    });
     document.getElementById('changePasswordForm').addEventListener('submit', function(event) {
       event.preventDefault();
 
@@ -1268,7 +1178,7 @@ if ($_SESSION['user_role'] !== 'admin') {
         }
       });
     });
-    </script>
+  </script>
   <!-- JS Plugins Init. -->
   <script>
     (function() {

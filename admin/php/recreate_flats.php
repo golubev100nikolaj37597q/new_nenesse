@@ -23,12 +23,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $description =  $_POST['descr'] ?? '';
     $info = $_POST['info'] ?? '';
     $container = $_POST['container'] ?? '';
+    $reviews_data = $_POST['reviews_data'] ?? '';
     $price = $_POST['price'] ?? '';
     $title = $_POST['title'] ?? '';
     $id = $_POST['id'] ?? '';
     $collection = $_POST['collection'] ?? '';
     $availability = $_POST['availability'] ?? '';
-
+    
 }
 if (isset($_FILES['productImage']) && !empty($_FILES['productImage']['name'][0])) {
     $uploadedFiles = $_FILES['productImage'];
@@ -82,17 +83,48 @@ try {
 
     if ($id != '') {
         if ($uploadedFiles != null) {
-            $mysql->query("UPDATE `products` SET `title`='$title',`collection` = '$collection',`img`='$jsonUploadedFiles',`info`='$info',`descr` = '$description', `price` = '$price', `container` = '$container'  WHERE `id` = '$id'");
+            $mysql->query("UPDATE `products` SET `title`='$title',  `collection` = '$collection',`img`='$jsonUploadedFiles',`info`='$info',`descr` = '$description', `price` = '$price', `container` = '$container'  WHERE `id` = '$id'");
             if ($mysql->affected_rows > 0) {
                 echo 'Successfully';
             } else {
                 echo 'Error';
             }
         } else {
-            $mysql->query("UPDATE `products` SET `title`='$title',`name`='$name',`availability`='$availability',`info`='$info',`collection` = '$collection',`descr` = '$description', `price` = '$price', `container` = '$container'  WHERE `id` = '$id'");
+            $mysql->query("UPDATE `products` SET `title`='$title',`name`='$name',`reviews` = '$reviews_data',`availability`='$availability',`info`='$info',`collection` = '$collection',`descr` = '$description', `price` = '$price', `container` = '$container'  WHERE `id` = '$id'");
             echo 'Successfully';
         }
     }
 } catch (exception $e) {
     echo "Error: " . $e->getMessage();
+}
+
+function addReviewsToJson($originalJson, $newJson)
+{
+    $originalData = json_decode($originalJson, true);
+    $newData = json_decode($newJson, true);
+
+
+    if ($originalData === null || $newData === null) {
+        return false;
+    }
+
+
+    foreach ($newData as $key => $value) {
+        if (array_key_exists($key, $originalData)) {
+
+            if (is_array($originalData[$key])) {
+                $originalData[$key] = array_merge($originalData[$key], $value);
+            } else {
+
+                $originalData[$key] = [$originalData[$key], $value];
+            }
+        } else {
+
+            $originalData[$key] = $value;
+        }
+    }
+
+    $resultJson = json_encode($originalData);
+
+    return $resultJson;
 }

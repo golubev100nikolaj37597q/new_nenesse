@@ -1,54 +1,56 @@
 <?php
 require($_SERVER['DOCUMENT_ROOT'] . '/php/get_info.php');
-
+session_start();
 $collections = $matches[1];
 $name = $matches[2];
 add_views($name);
 $img = get_src_photo($name);
 $products = get_info_product_by_name($name);
-$img = get_src_photo($name);
 
 ?>
 <!doctype html>
 <html class="no-js" lang="de" dir="ltr">
 
-<head>
-    <link rel="preconnect" href="https://gdpr-legal-cookie.beeclever.app">
-    <link rel="preload" as="script" href="../../../get-script.php?shop=parfumly1.myshopify.com">
-    <script>
-        var sDomain = location.host;
+<head><script async="true" src="https://tr.snapchat.com/config/de/45b43596-2ffb-4c11-8814-7f970671a775.js" crossorigin="anonymous"></script><script type="text/javascript" async="" src="https://analytics.tiktok.com/i18n/pixel/static/main.MTE1ODM4MDNhMw.js" data-id="C9QFE8RC77UE268ERANG"></script><script async="" src="https://invitejs.trustpilot.com/tp.min.js" type="text/javascript"></script><script async="" src="https://sc-static.net/js-sha256-v1.min.js" integrity="sha384-W4RqaNUbvBdTRc41QQAWDcd2aX9wGruak2WnlXwyjVAlhi56zatCk4e/RSqwrAg6" crossorigin="anonymous"></script><script async="" src="https://sc-static.net/scevent.min.js"></script><script type="text/javascript" async="" src="https://analytics.tiktok.com/i18n/pixel/events.js?sdkid=C9QFE8RC77UE268ERANG&amp;lib=ttq"></script><script> !function (w, d, t) { w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var i="https://analytics.tiktok.com/i18n/pixel/events.js";ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=i,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};var o=document.createElement("script");o.type="text/javascript",o.async=!0,o.src=i+"?sdkid="+e+"&lib="+t;var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(o,a)}; ttq.load("C9QFE8RC77UE268ERANG"); ttq.page(); }(window, document, "ttq"); </script>
 
-        /****** Start thirdPartyScriptDefinition ******/
-        (function() {
-            window.thirdPartyScriptDefinition = [
-                /* start example
 
-                {
-                    "src" : "facebook",
-                    "cookie" : "fr",
-                    "provider" : "facebook.com",
-                    "description" : "",
-                    "expires" : 7776000,
-                    "domain" : "facebook.com",
-                    "declaration" : 1,
-                    "group" : "facebook"
-                },{
-                    "src" : "facebook",
-                    "cookie" : "_fbp",
-                    "provider" : sDomain,
-                    "description" : "",
-                    "expires" : 7776000,
-                    "domain" : sDomain,
-                    "declaration" : 1,
-                    "group" : "facebook"
-                }
 
-                end example */
-            ]
-        })();
-        /****** End thirdPartyScriptDefinition ******/
 
-        /**
+<link rel="preconnect" href="https://gdpr-legal-cookie.beeclever.app">
+  <link rel="preload" as="script" href="https://gdpr-legal-cookie.beeclever.app/get-script.php?shop=parfumly1.myshopify.com">    <script type="text/javascript" async="" src="//productreviews.shopifycdn.com/embed/loader.js?shop=parfumly1.myshopify.com"></script><script type="text/javascript" async="" src="https://www.neness-shop.de/apps/giraffly-trust/trust-worker-c0cd9df06cda494fb2f8d69389f4cb26e9845d11.js?v=20230712174613&amp;shop=parfumly1.myshopify.com"></script><script type="text/javascript" async="" src="https://storage.googleapis.com/gsf-scripts/global-remarketing/parfumly1.js?1685568574&amp;shop=parfumly1.myshopify.com"></script><script type="text/javascript" async="" src="https://gdpr-legal-cookie.beeclever.app/get-script.php?shop=parfumly1.myshopify.com"></script><script type="text/javascript" async="" src="https://tseish-app.connect.trustedshops.com/esc.js?apiBaseUrl=aHR0cHM6Ly90c2Vpc2gtYXBwLmNvbm5lY3QudHJ1c3RlZHNob3BzLmNvbQ==&amp;instanceId=cGFyZnVtbHkxLm15c2hvcGlmeS5jb20=&amp;shop=parfumly1.myshopify.com"></script><script type="text/javascript" async="" src="https://ecommplugins-trustboxsettings.trustpilot.com/parfumly1.myshopify.com.js?settings=1689442036676&amp;shop=parfumly1.myshopify.com"></script><script type="text/javascript" async="" src="https://ecommplugins-scripts.trustpilot.com/v2.1/js/header.min.js?settings=eyJrZXkiOiJpTXhVa1VIT3FLa3dBN09IIiwicyI6InNrdSJ9&amp;shop=parfumly1.myshopify.com"></script><script type="text/javascript" async="" src="https://intg.snapchat.com/shopify/shopify-scevent-init.js?id=45b43596-2ffb-4c11-8814-7f970671a775&amp;shop=parfumly1.myshopify.com"></script><script type="text/javascript" async="" src="https://attributes.247apps.de/storefront/storefront.js?shop=parfumly1.myshopify.com"></script><script type="text/javascript" async="" src="https://loox.io/widget/N1bI_G-5Eh/loox.1650529109883.js?shop=parfumly1.myshopify.com"></script><script type="text/javascript" async="" src="https://analytics.tiktok.com/i18n/pixel/static/main.MTE1ODM4MDNhMw.js" data-id="C9QFE8RC77UE268ERANG"></script><script async="true" type="text/javascript" src="https://www.googletagmanager.com/gtag/destination?id=MC-H6LQXSMMEM&amp;l=dataLayer&amp;cx=c"></script><script async="" src="https://s.pinimg.com/ct/lib/main.b4887131.js"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/plugins/ua/ec.js"></script><script async="true" type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=G-8M6TG84LCB&amp;l=dataLayer&amp;cx=c"></script><script type="text/javascript" async="" src="https://analytics.tiktok.com/i18n/pixel/events.js?sdkid=C9QFE8RC77UE268ERANG&amp;lib=ttq"></script><script async="" src="https://s.pinimg.com/ct/core.js"></script><script async="" src="https://www.google-analytics.com/analytics.js"></script><script async="" src="https://connect.facebook.net/en_US/fbevents.js"></script><script type="text/javascript" async="" src="//www.neness-shop.de/cdn/s/trekkie.storefront.6cfd459a03bbac4db9ccae2e6caac7de4d25a6e2.min.js"></script><script>
+    var sDomain = location.host;
+
+    /****** Start thirdPartyScriptDefinition ******/
+    (function(){
+        window.thirdPartyScriptDefinition = [
+            /* start example
+
+            {
+                "src" : "facebook",
+                "cookie" : "fr",
+                "provider" : "facebook.com",
+                "description" : "",
+                "expires" : 7776000,
+                "domain" : "facebook.com",
+                "declaration" : 1,
+                "group" : "facebook"
+            },{
+                "src" : "facebook",
+                "cookie" : "_fbp",
+                "provider" : sDomain,
+                "description" : "",
+                "expires" : 7776000,
+                "domain" : sDomain,
+                "declaration" : 1,
+                "group" : "facebook"
+            }
+
+            end example */
+        ]
+    })();
+    /****** End thirdPartyScriptDefinition ******/
+
+    /**
 ################################## BEECLEVER GMBH KOBLENZ ###################################
 ##### Copyright (c) 2019-present, beeclever GmbH Koblenz DE, All rights reserved.       #####
 ##### THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND, EXPRESS OR        #####
@@ -66,2333 +68,1123 @@ $img = get_src_photo($name);
 ##### then be automatically discarded.                                                  #####
 #############################################################################################
 */
-        var GDPR_LC_versionNr = 20201126214845;
-        var GDPR_LC_ZLoad = function() {
-            var sDomain = location.host;
-            var defaultDefinition = [{
-                "src": "facebook",
-                "cookie": "fr",
-                "provider": "facebook.com",
-                "description": "",
-                "expires": 7776000,
-                "domain": "facebook.com",
-                "declaration": 1,
-                "group": "facebook"
-            }, {
-                "src": "facebook",
-                "cookie": "_fbp",
-                "provider": sDomain,
-                "description": "",
-                "expires": 7776000,
-                "domain": sDomain,
-                "declaration": 1,
-                "group": "facebook"
-            }, {
-                "src": "google-analytics.com",
-                "cookie": "_ga",
-                "provider": sDomain,
-                "description": "",
-                "expires": 63072000,
-                "domain": sDomain,
-                "declaration": 1,
-                "group": "google"
-            }, {
-                "src": "googletagmanager.com",
-                "cookie": "_ga",
-                "provider": sDomain,
-                "description": "",
-                "expires": 63072000,
-                "domain": sDomain,
-                "declaration": 1,
-                "group": "google"
-            }, {
-                "src": "googletagmanager.com",
-                "cookie": "_gid",
-                "provider": sDomain,
-                "description": "",
-                "expires": 86400,
-                "domain": sDomain,
-                "declaration": 1,
-                "group": "google"
-            }, {
-                "src": "googletagmanager.com",
-                "cookie": "_gat",
-                "provider": sDomain,
-                "description": "",
-                "expires": 86400,
-                "domain": sDomain,
-                "declaration": 1,
-                "group": "google"
-            }, {
-                "src": "googleadservices.com",
-                "cookie": "IDE",
-                "provider": sDomain,
-                "description": "",
-                "expires": 63072000,
-                "domain": sDomain,
-                "declaration": 2,
-                "group": "google Ads"
-            }];
-            if (window.thirdPartyScriptDefinition === undefined) {
-                window.thirdPartyScriptDefinition = [];
-                defaultDefinition.forEach(function(value) {
-                    window.thirdPartyScriptDefinition.push(value)
-                })
-            } else {
-                var exist = false;
-                defaultDefinition.forEach(function(script) {
-                    window.thirdPartyScriptDefinition.forEach(function(value) {
-                        if (value.src === script.src && value.cookie === script.cookie) {
-                            exist = true
-                        }
-                    });
-                    if (!exist) {
-                        window.thirdPartyScriptDefinition.push(script)
-                    }
-                })
-            }(function polyfill() {
-                if (!Array.from) {
-                    Array.from = (function() {
-                        var toStr = Object.prototype.toString;
-                        var isCallable = function(fn) {
-                            return typeof fn === 'function' || toStr.call(fn) === '[object Function]'
-                        };
-                        var toInteger = function(value) {
-                            var number = Number(value);
-                            if (isNaN(number)) {
-                                return 0
-                            }
-                            if (number === 0 || !isFinite(number)) {
-                                return number
-                            }
-                            return (number > 0 ? 1 : -1) * Math.floor(Math.abs(number))
-                        };
-                        var maxSafeInteger = Math.pow(2, 53) - 1;
-                        var toLength = function(value) {
-                            var len = toInteger(value);
-                            return Math.min(Math.max(len, 0), maxSafeInteger)
-                        };
-                        return function from(arrayLike) {
-                            var C = this;
-                            var items = Object(arrayLike);
-                            if (arrayLike == null) {
-                                throw new TypeError('Array.from requires an array-like object - not null or undefined')
-                            }
-                            var mapFn = arguments.length > 1 ? arguments[1] : void undefined;
-                            var T;
-                            if (typeof mapFn !== 'undefined') {
-                                if (!isCallable(mapFn)) {
-                                    throw new TypeError('Array.from: when provided, the second argument must be a function')
-                                }
-                                if (arguments.length > 2) {
-                                    T = arguments[2]
-                                }
-                            }
-                            var len = toLength(items.length);
-                            var A = isCallable(C) ? Object(new C(len)) : new Array(len);
-                            var k = 0;
-                            var kValue;
-                            while (k < len) {
-                                kValue = items[k];
-                                if (mapFn) {
-                                    A[k] = typeof T === 'undefined' ? mapFn(kValue, k) : mapFn.call(T, kValue, k)
-                                } else {
-                                    A[k] = kValue
-                                }
-                                k += 1
-                            }
-                            A.length = len;
-                            return A
-                        }
-                    }())
-                }
-            })();
-            window.BC_JSON_ObjectBypass = {
-                "_ab": {
-                    "description": "Used in connection with access to admin.",
-                    "path": "\/",
-                    "domain": "",
-                    "provider": "Shopify",
-                    "type": "type_0",
-                    "expires": "86400",
-                    "recommendation": "0",
-                    "editable": "false",
-                    "deletable": "false",
-                    "set": "0",
-                    "name": "_ab"
-                },
-                "_secure_session_id": {
-                    "description": "Used in connection with navigation through a storefront.",
-                    "path": "\/",
-                    "domain": "",
-                    "provider": "Shopify",
-                    "type": "type_0",
-                    "expires": "2592000",
-                    "recommendation": "0",
-                    "editable": "false",
-                    "deletable": "false",
-                    "set": "0",
-                    "name": "_secure_session_id"
-                },
-                "__cfduid": {
-                    "description": "The _cfduid cookie helps Cloudflare detect malicious visitors to our Customers’ websites and minimizes blocking legitimate users.",
-                    "path": "\/",
-                    "domain": "",
-                    "provider": "Cloudflare",
-                    "type": "type_0",
-                    "expires": "2592000",
-                    "recommendation": "0",
-                    "editable": "false",
-                    "deletable": "false",
-                    "set": "0",
-                    "name": "__cfduid"
-                },
-                "Cart": {
-                    "description": "Used in connection with shopping cart.",
-                    "path": "\/",
-                    "domain": "",
-                    "provider": "Shopify",
-                    "type": "type_0",
-                    "expires": "1209600",
-                    "recommendation": "0",
-                    "editable": "false",
-                    "deletable": "false",
-                    "set": "0",
-                    "name": "Cart"
-                },
-                "cart": {
-                    "description": "Used in connection with shopping cart.",
-                    "path": "\/",
-                    "domain": "",
-                    "provider": "Shopify",
-                    "type": "type_0",
-                    "expires": "1209600",
-                    "recommendation": "0",
-                    "editable": "false",
-                    "deletable": "false",
-                    "set": "0",
-                    "name": "cart"
-                },
-                "cart_sig": {
-                    "description": "Used in connection with checkout.",
-                    "path": "\/",
-                    "domain": "",
-                    "provider": "Shopify",
-                    "type": "type_0",
-                    "expires": "1209600",
-                    "recommendation": "0",
-                    "editable": "false",
-                    "deletable": "false",
-                    "set": "0",
-                    "name": "cart_sig"
-                },
-                "cart_ts": {
-                    "description": "Used in connection with checkout.",
-                    "path": "\/",
-                    "domain": "",
-                    "provider": "Shopify",
-                    "type": "type_0",
-                    "expires": "1209600",
-                    "recommendation": "0",
-                    "editable": "false",
-                    "deletable": "false",
-                    "set": "0",
-                    "name": "cart_ts"
-                },
-                "cart_ver": {
-                    "description": "Used in connection with shopping cart.",
-                    "path": "\/",
-                    "domain": "",
-                    "provider": "Shopify",
-                    "type": "type_0",
-                    "expires": "1209600",
-                    "recommendation": "0",
-                    "editable": "false",
-                    "deletable": "false",
-                    "set": "0",
-                    "name": "cart_ver"
-                },
-                "checkout_token": {
-                    "description": "Used in connection with checkout.",
-                    "path": "\/",
-                    "domain": "",
-                    "provider": "Shopify",
-                    "type": "type_0",
-                    "expires": "31536000",
-                    "recommendation": "0",
-                    "editable": "false",
-                    "deletable": "false",
-                    "set": "0",
-                    "name": "checkout_token"
-                },
-                "Secret": {
-                    "description": "Used in connection with checkout.",
-                    "path": "\/",
-                    "domain": "",
-                    "provider": "Shopify",
-                    "type": "type_0",
-                    "expires": "31536000",
-                    "recommendation": "0",
-                    "editable": "false",
-                    "deletable": "false",
-                    "set": "0",
-                    "name": "Secret"
-                },
-                "secure_customer_sig": {
-                    "description": "Used in connection with customer login.",
-                    "path": "\/",
-                    "domain": "",
-                    "provider": "Shopify",
-                    "type": "type_0",
-                    "expires": "31536000",
-                    "recommendation": "0",
-                    "editable": "false",
-                    "deletable": "false",
-                    "set": "0",
-                    "name": "secure_customer_sig"
-                },
-                "storefront_digest": {
-                    "description": "Used in connection with customer login.",
-                    "path": "\/",
-                    "domain": "",
-                    "provider": "Shopify",
-                    "type": "type_0",
-                    "expires": "31536000",
-                    "recommendation": "0",
-                    "editable": "false",
-                    "deletable": "false",
-                    "set": "0",
-                    "name": "storefront_digest"
-                },
-                "_shopify_u": {
-                    "description": "Used to facilitate updating customer account information.",
-                    "path": "\/",
-                    "domain": "",
-                    "provider": "Shopify",
-                    "type": "type_0",
-                    "expires": "31536000",
-                    "recommendation": "0",
-                    "editable": "false",
-                    "deletable": "false",
-                    "set": "0",
-                    "name": "_shopify_u"
-                },
-                "XSRF-TOKEN": {
-                    "description": "Used in connection with GDPR legal Cookie.",
-                    "path": "\/",
-                    "domain": "",
-                    "provider": "GDPR Legal Cookie",
-                    "type": "type_0",
-                    "expires": "31536000",
-                    "recommendation": "0",
-                    "editable": "false",
-                    "deletable": "false",
-                    "set": "0",
-                    "name": "XSRF-TOKEN"
-                },
-                "gdpr_legal_cookie_session": {
-                    "description": "Used in connection with GDPR legal Cookie.",
-                    "path": "\/",
-                    "domain": "",
-                    "provider": "GDPR Legal Cookie",
-                    "type": "type_0",
-                    "expires": "0",
-                    "recommendation": "0",
-                    "editable": "false",
-                    "deletable": "false",
-                    "set": "0",
-                    "name": "gdpr_legal_cookie_session"
-                },
-                "_bc_c_set": {
-                    "description": "Used in connection with GDPR legal Cookie.",
-                    "path": "\/",
-                    "domain": "",
-                    "provider": "GDPR Legal Cookie",
-                    "type": "type_0",
-                    "expires": "2592000",
-                    "recommendation": "0",
-                    "editable": "false",
-                    "deletable": "false",
-                    "set": "0",
-                    "optIn": true,
-                    "live": "1",
-                    "name": "_bc_c_set",
-                    "ShopifyMinConsent": false
-                },
-                "_tracking_consent": {
-                    "description": "For Shopify User Consent Tracking.",
-                    "path": "\/",
-                    "domain": "",
-                    "provider": "Shopify",
-                    "type": "type_0",
-                    "expires": "31536000",
-                    "recommendation": "0",
-                    "editable": "false",
-                    "deletable": "false",
-                    "set": "0",
-                    "name": "_tracking_consent"
-                },
-                "_shopify_m": {
-                    "description": "Used for managing customer privacy settings.",
-                    "path": "\/",
-                    "domain": "",
-                    "provider": "Shopify",
-                    "type": "type_0",
-                    "expires": "31536000",
-                    "recommendation": "0",
-                    "editable": "false",
-                    "deletable": "false",
-                    "set": "0",
-                    "name": "_shopify_m"
-                },
-                "_shopify_tm": {
-                    "description": "Used for managing customer privacy settings.",
-                    "path": "\/",
-                    "domain": "",
-                    "provider": "Shopify",
-                    "type": "type_0",
-                    "expires": "31536000",
-                    "recommendation": "0",
-                    "editable": "false",
-                    "deletable": "false",
-                    "set": "0",
-                    "name": "_shopify_tm"
-                },
-                "_shopify_tw": {
-                    "description": "Used for managing customer privacy settings.",
-                    "path": "\/",
-                    "domain": "",
-                    "provider": "Shopify",
-                    "type": "type_0",
-                    "expires": "31536000",
-                    "recommendation": "0",
-                    "editable": "false",
-                    "deletable": "false",
-                    "set": "0",
-                    "name": "_shopify_tw"
-                },
-                "_storefront_u": {
-                    "description": "Used to facilitate updating customer account information.",
-                    "path": "\/",
-                    "domain": "",
-                    "provider": "Shopify",
-                    "type": "type_0",
-                    "expires": "31536000",
-                    "recommendation": "0",
-                    "editable": "false",
-                    "deletable": "false",
-                    "set": "0",
-                    "name": "_storefront_u"
-                },
-                "cart_currency": {
-                    "description": "Used in connection with cart and checkout.",
-                    "path": "\/",
-                    "domain": "",
-                    "provider": "Shopify",
-                    "type": "type_0",
-                    "expires": "31536000",
-                    "recommendation": "0",
-                    "editable": "false",
-                    "deletable": "false",
-                    "set": "0",
-                    "name": "cart_currency"
-                },
-                "_orig_referrer": {
-                    "description": "Used in connection with shopping cart.",
-                    "path": "\/",
-                    "domain": "",
-                    "provider": "Shopify",
-                    "type": "type_1",
-                    "expires": "1209600",
-                    "recommendation": "1",
-                    "editable": "true",
-                    "deletable": "false",
-                    "set": "1",
-                    "name": "_orig_referrer"
-                },
-                "_landing_page": {
-                    "description": "Track landing pages.",
-                    "path": "\/",
-                    "domain": "",
-                    "provider": "Shopify",
-                    "type": "type_1",
-                    "expires": "1209600",
-                    "recommendation": "1",
-                    "editable": "true",
-                    "deletable": "false",
-                    "set": "1",
-                    "name": "_landing_page"
-                },
-                "_s": {
-                    "description": "Shopify analytics.",
-                    "path": "\/",
-                    "domain": "",
-                    "provider": "Shopify",
-                    "type": "type_1",
-                    "expires": "1800",
-                    "recommendation": "1",
-                    "editable": "true",
-                    "deletable": "false",
-                    "set": "1",
-                    "name": "_s"
-                },
-                "_shopify_d": {
-                    "description": "Shopify analytics.",
-                    "path": "\/",
-                    "domain": "",
-                    "provider": "Shopify",
-                    "type": "type_1",
-                    "expires": "1209600",
-                    "recommendation": "1",
-                    "editable": "true",
-                    "deletable": "false",
-                    "set": "1",
-                    "name": "_shopify_d"
-                },
-                "_shopify_fs": {
-                    "description": "Shopify analytics.",
-                    "path": "\/",
-                    "domain": "",
-                    "provider": "Shopify",
-                    "type": "type_1",
-                    "expires": "1209600",
-                    "recommendation": "1",
-                    "editable": "true",
-                    "deletable": "false",
-                    "set": "1",
-                    "name": "_shopify_fs"
-                },
-                "_shopify_s": {
-                    "description": "Shopify analytics.",
-                    "path": "\/",
-                    "domain": "",
-                    "provider": "Shopify",
-                    "type": "type_1",
-                    "expires": "1800",
-                    "recommendation": "1",
-                    "editable": "true",
-                    "deletable": "false",
-                    "set": "1",
-                    "name": "_shopify_s"
-                },
-                "_shopify_y": {
-                    "description": "Shopify analytics.",
-                    "path": "\/",
-                    "domain": "",
-                    "provider": "Shopify",
-                    "type": "type_1",
-                    "expires": "31536000",
-                    "recommendation": "1",
-                    "editable": "true",
-                    "deletable": "false",
-                    "set": "1",
-                    "name": "_shopify_y"
-                },
-                "_y": {
-                    "description": "Shopify analytics.",
-                    "path": "\/",
-                    "domain": "",
-                    "provider": "Shopify",
-                    "type": "type_1",
-                    "expires": "31536000",
-                    "recommendation": "1",
-                    "editable": "true",
-                    "deletable": "false",
-                    "set": "1",
-                    "name": "_y"
-                },
-                "_shopify_sa_p": {
-                    "description": "Shopify analytics relating to marketing \u0026 referrals.",
-                    "path": "\/",
-                    "domain": "",
-                    "provider": "Shopify",
-                    "type": "type_1",
-                    "expires": "1800",
-                    "recommendation": "1",
-                    "editable": "true",
-                    "deletable": "false",
-                    "set": "1",
-                    "name": "_shopify_sa_p"
-                },
-                "_shopify_sa_t": {
-                    "description": "Shopify analytics relating to marketing \u0026 referrals.",
-                    "path": "\/",
-                    "domain": "",
-                    "provider": "Shopify",
-                    "type": "type_1",
-                    "expires": "1800",
-                    "recommendation": "1",
-                    "editable": "true",
-                    "deletable": "false",
-                    "set": "1",
-                    "name": "_shopify_sa_t"
-                },
-                "_shopify_uniq": {
-                    "description": "Shopify analytics.",
-                    "path": "\/",
-                    "domain": "",
-                    "provider": "Shopify",
-                    "type": "type_1",
-                    "expires": "1800",
-                    "recommendation": "1",
-                    "editable": "true",
-                    "deletable": "false",
-                    "set": "1",
-                    "name": "_shopify_uniq"
-                },
-                "_shopify_visit": {
-                    "description": "Shopify analytics.",
-                    "path": "\/",
-                    "domain": "",
-                    "provider": "Shopify",
-                    "type": "type_1",
-                    "expires": "1800",
-                    "recommendation": "1",
-                    "editable": "true",
-                    "deletable": "false",
-                    "set": "1",
-                    "name": "_shopify_visit"
-                },
-                "tracked_start_checkout": {
-                    "description": "Shopify analytics relating to checkout.",
-                    "path": "\/",
-                    "domain": "",
-                    "provider": "Shopify",
-                    "type": "type_1",
-                    "expires": "1800",
-                    "recommendation": "1",
-                    "editable": "true",
-                    "deletable": "false",
-                    "set": "1",
-                    "name": "tracked_start_checkout"
-                },
-                "ki_r": {
-                    "description": "Shopify analytics.",
-                    "path": "\/",
-                    "domain": "",
-                    "provider": "Shopify",
-                    "type": "type_1",
-                    "expires": "1800",
-                    "recommendation": "1",
-                    "editable": "true",
-                    "deletable": "false",
-                    "set": "1",
-                    "name": "ki_r"
-                },
-                "ki_t": {
-                    "description": "Shopify analytics.",
-                    "path": "\/",
-                    "domain": "",
-                    "provider": "Shopify",
-                    "type": "type_1",
-                    "expires": "1800",
-                    "recommendation": "1",
-                    "editable": "true",
-                    "deletable": "false",
-                    "set": "1",
-                    "name": "ki_t"
-                },
-                "ab_test_*": {
-                    "description": "Shopify analytics.",
-                    "path": "\/",
-                    "domain": "",
-                    "provider": "Shopify",
-                    "type": "type_1",
-                    "expires": "1800",
-                    "recommendation": "1",
-                    "editable": "true",
-                    "deletable": "false",
-                    "set": "1",
-                    "name": "ab_test_*"
-                }
-            };
-            var shopifyCookies = {
-                '_s': !1,
-                '_shopify_fs': !1,
-                '_shopify_s': !1,
-                '_shopify_y': !1,
-                '_y': !1,
-                '_shopify_sa_p': !1,
-                '_shopify_sa_t': !1,
-                '_shopify_uniq': !1,
-                '_shopify_visit': !1,
-                'tracked_start_checkout': !1,
-                'bc_trekkie_fbp_custom': !1
-            };
+var GDPR_LC_versionNr=20201126214845;var GDPR_LC_ZLoad=function(){       var sDomain=location.host;var defaultDefinition=[{"src":"facebook","cookie":"fr","provider":"facebook.com","description":"","expires":7776000,"domain":"facebook.com","declaration":1,"group":"facebook"},{"src":"facebook","cookie":"_fbp","provider":sDomain,"description":"","expires":7776000,"domain":sDomain,"declaration":1,"group":"facebook"},{"src":"google-analytics.com","cookie":"_ga","provider":sDomain,"description":"","expires":63072000,"domain":sDomain,"declaration":1,"group":"google"},{"src":"googletagmanager.com","cookie":"_ga","provider":sDomain,"description":"","expires":63072000,"domain":sDomain,"declaration":1,"group":"google"},{"src":"googletagmanager.com","cookie":"_gid","provider":sDomain,"description":"","expires":86400,"domain":sDomain,"declaration":1,"group":"google"},{"src":"googletagmanager.com","cookie":"_gat","provider":sDomain,"description":"","expires":86400,"domain":sDomain,"declaration":1,"group":"google"},{"src":"googleadservices.com","cookie":"IDE","provider":sDomain,"description":"","expires":63072000,"domain":sDomain,"declaration":2,"group":"google Ads"}];if(window.thirdPartyScriptDefinition===undefined){window.thirdPartyScriptDefinition=[];defaultDefinition.forEach(function(value){window.thirdPartyScriptDefinition.push(value)})}else{var exist=false;defaultDefinition.forEach(function(script){window.thirdPartyScriptDefinition.forEach(function(value){if(value.src===script.src&&value.cookie===script.cookie){exist=true}});if(!exist){window.thirdPartyScriptDefinition.push(script)}})} (function polyfill(){if(!Array.from){Array.from=(function(){var toStr=Object.prototype.toString;var isCallable=function(fn){return typeof fn==='function'||toStr.call(fn)==='[object Function]'};var toInteger=function(value){var number=Number(value);if(isNaN(number)){return 0} if(number===0||!isFinite(number)){return number} return(number>0?1:-1)*Math.floor(Math.abs(number))};var maxSafeInteger=Math.pow(2,53)-1;var toLength=function(value){var len=toInteger(value);return Math.min(Math.max(len,0),maxSafeInteger)};return function from(arrayLike){var C=this;var items=Object(arrayLike);if(arrayLike==null){throw new TypeError('Array.from requires an array-like object - not null or undefined')} var mapFn=arguments.length>1?arguments[1]:void undefined;var T;if(typeof mapFn!=='undefined'){if(!isCallable(mapFn)){throw new TypeError('Array.from: when provided, the second argument must be a function')} if(arguments.length>2){T=arguments[2]}} var len=toLength(items.length);var A=isCallable(C)?Object(new C(len)):new Array(len);var k=0;var kValue;while(k<len){kValue=items[k];if(mapFn){A[k]=typeof T==='undefined'?mapFn(kValue,k):mapFn.call(T,kValue,k)}else{A[k]=kValue} k+=1} A.length=len;return A}}())}})();window.BC_JSON_ObjectBypass={"_ab":{"description":"Used in connection with access to admin.","path":"\/","domain":"","provider":"Shopify","type":"type_0","expires":"86400","recommendation":"0","editable":"false","deletable":"false","set":"0","name":"_ab"},"_secure_session_id":{"description":"Used in connection with navigation through a storefront.","path":"\/","domain":"","provider":"Shopify","type":"type_0","expires":"2592000","recommendation":"0","editable":"false","deletable":"false","set":"0","name":"_secure_session_id"},"__cfduid":{"description":"The _cfduid cookie helps Cloudflare detect malicious visitors to our Customers’ websites and minimizes blocking legitimate users.","path":"\/","domain":"","provider":"Cloudflare","type":"type_0","expires":"2592000","recommendation":"0","editable":"false","deletable":"false","set":"0","name":"__cfduid"},"Cart":{"description":"Used in connection with shopping cart.","path":"\/","domain":"","provider":"Shopify","type":"type_0","expires":"1209600","recommendation":"0","editable":"false","deletable":"false","set":"0","name":"Cart"},"cart":{"description":"Used in connection with shopping cart.","path":"\/","domain":"","provider":"Shopify","type":"type_0","expires":"1209600","recommendation":"0","editable":"false","deletable":"false","set":"0","name":"cart"},"cart_sig":{"description":"Used in connection with checkout.","path":"\/","domain":"","provider":"Shopify","type":"type_0","expires":"1209600","recommendation":"0","editable":"false","deletable":"false","set":"0","name":"cart_sig"},"cart_ts":{"description":"Used in connection with checkout.","path":"\/","domain":"","provider":"Shopify","type":"type_0","expires":"1209600","recommendation":"0","editable":"false","deletable":"false","set":"0","name":"cart_ts"},"cart_ver":{"description":"Used in connection with shopping cart.","path":"\/","domain":"","provider":"Shopify","type":"type_0","expires":"1209600","recommendation":"0","editable":"false","deletable":"false","set":"0","name":"cart_ver"},"checkout_token":{"description":"Used in connection with checkout.","path":"\/","domain":"","provider":"Shopify","type":"type_0","expires":"31536000","recommendation":"0","editable":"false","deletable":"false","set":"0","name":"checkout_token"},"Secret":{"description":"Used in connection with checkout.","path":"\/","domain":"","provider":"Shopify","type":"type_0","expires":"31536000","recommendation":"0","editable":"false","deletable":"false","set":"0","name":"Secret"},"secure_customer_sig":{"description":"Used in connection with customer login.","path":"\/","domain":"","provider":"Shopify","type":"type_0","expires":"31536000","recommendation":"0","editable":"false","deletable":"false","set":"0","name":"secure_customer_sig"},"storefront_digest":{"description":"Used in connection with customer login.","path":"\/","domain":"","provider":"Shopify","type":"type_0","expires":"31536000","recommendation":"0","editable":"false","deletable":"false","set":"0","name":"storefront_digest"},"_shopify_u":{"description":"Used to facilitate updating customer account information.","path":"\/","domain":"","provider":"Shopify","type":"type_0","expires":"31536000","recommendation":"0","editable":"false","deletable":"false","set":"0","name":"_shopify_u"},"XSRF-TOKEN":{"description":"Used in connection with GDPR legal Cookie.","path":"\/","domain":"","provider":"GDPR Legal Cookie","type":"type_0","expires":"31536000","recommendation":"0","editable":"false","deletable":"false","set":"0","name":"XSRF-TOKEN"},"gdpr_legal_cookie_session":{"description":"Used in connection with GDPR legal Cookie.","path":"\/","domain":"","provider":"GDPR Legal Cookie","type":"type_0","expires":"0","recommendation":"0","editable":"false","deletable":"false","set":"0","name":"gdpr_legal_cookie_session"},"_bc_c_set":{"description":"Used in connection with GDPR legal Cookie.","path":"\/","domain":"","provider":"GDPR Legal Cookie","type":"type_0","expires":"2592000","recommendation":"0","editable":"false","deletable":"false","set":"0","optIn":true,"live":"1","name":"_bc_c_set","ShopifyMinConsent":false},"_tracking_consent":{"description":"For Shopify User Consent Tracking.","path":"\/","domain":"","provider":"Shopify","type":"type_0","expires":"31536000","recommendation":"0","editable":"false","deletable":"false","set":"0","name":"_tracking_consent"},"_shopify_m":{"description":"Used for managing customer privacy settings.","path":"\/","domain":"","provider":"Shopify","type":"type_0","expires":"31536000","recommendation":"0","editable":"false","deletable":"false","set":"0","name":"_shopify_m"},"_shopify_tm":{"description":"Used for managing customer privacy settings.","path":"\/","domain":"","provider":"Shopify","type":"type_0","expires":"31536000","recommendation":"0","editable":"false","deletable":"false","set":"0","name":"_shopify_tm"},"_shopify_tw":{"description":"Used for managing customer privacy settings.","path":"\/","domain":"","provider":"Shopify","type":"type_0","expires":"31536000","recommendation":"0","editable":"false","deletable":"false","set":"0","name":"_shopify_tw"},"_storefront_u":{"description":"Used to facilitate updating customer account information.","path":"\/","domain":"","provider":"Shopify","type":"type_0","expires":"31536000","recommendation":"0","editable":"false","deletable":"false","set":"0","name":"_storefront_u"},"cart_currency":{"description":"Used in connection with cart and checkout.","path":"\/","domain":"","provider":"Shopify","type":"type_0","expires":"31536000","recommendation":"0","editable":"false","deletable":"false","set":"0","name":"cart_currency"},"_orig_referrer":{"description":"Used in connection with shopping cart.","path":"\/","domain":"","provider":"Shopify","type":"type_1","expires":"1209600","recommendation":"1","editable":"true","deletable":"false","set":"1","name":"_orig_referrer"},"_landing_page":{"description":"Track landing pages.","path":"\/","domain":"","provider":"Shopify","type":"type_1","expires":"1209600","recommendation":"1","editable":"true","deletable":"false","set":"1","name":"_landing_page"},"_s":{"description":"Shopify analytics.","path":"\/","domain":"","provider":"Shopify","type":"type_1","expires":"1800","recommendation":"1","editable":"true","deletable":"false","set":"1","name":"_s"},"_shopify_d":{"description":"Shopify analytics.","path":"\/","domain":"","provider":"Shopify","type":"type_1","expires":"1209600","recommendation":"1","editable":"true","deletable":"false","set":"1","name":"_shopify_d"},"_shopify_fs":{"description":"Shopify analytics.","path":"\/","domain":"","provider":"Shopify","type":"type_1","expires":"1209600","recommendation":"1","editable":"true","deletable":"false","set":"1","name":"_shopify_fs"},"_shopify_s":{"description":"Shopify analytics.","path":"\/","domain":"","provider":"Shopify","type":"type_1","expires":"1800","recommendation":"1","editable":"true","deletable":"false","set":"1","name":"_shopify_s"},"_shopify_y":{"description":"Shopify analytics.","path":"\/","domain":"","provider":"Shopify","type":"type_1","expires":"31536000","recommendation":"1","editable":"true","deletable":"false","set":"1","name":"_shopify_y"},"_y":{"description":"Shopify analytics.","path":"\/","domain":"","provider":"Shopify","type":"type_1","expires":"31536000","recommendation":"1","editable":"true","deletable":"false","set":"1","name":"_y"},"_shopify_sa_p":{"description":"Shopify analytics relating to marketing \u0026 referrals.","path":"\/","domain":"","provider":"Shopify","type":"type_1","expires":"1800","recommendation":"1","editable":"true","deletable":"false","set":"1","name":"_shopify_sa_p"},"_shopify_sa_t":{"description":"Shopify analytics relating to marketing \u0026 referrals.","path":"\/","domain":"","provider":"Shopify","type":"type_1","expires":"1800","recommendation":"1","editable":"true","deletable":"false","set":"1","name":"_shopify_sa_t"},"_shopify_uniq":{"description":"Shopify analytics.","path":"\/","domain":"","provider":"Shopify","type":"type_1","expires":"1800","recommendation":"1","editable":"true","deletable":"false","set":"1","name":"_shopify_uniq"},"_shopify_visit":{"description":"Shopify analytics.","path":"\/","domain":"","provider":"Shopify","type":"type_1","expires":"1800","recommendation":"1","editable":"true","deletable":"false","set":"1","name":"_shopify_visit"},"tracked_start_checkout":{"description":"Shopify analytics relating to checkout.","path":"\/","domain":"","provider":"Shopify","type":"type_1","expires":"1800","recommendation":"1","editable":"true","deletable":"false","set":"1","name":"tracked_start_checkout"},"ki_r":{"description":"Shopify analytics.","path":"\/","domain":"","provider":"Shopify","type":"type_1","expires":"1800","recommendation":"1","editable":"true","deletable":"false","set":"1","name":"ki_r"},"ki_t":{"description":"Shopify analytics.","path":"\/","domain":"","provider":"Shopify","type":"type_1","expires":"1800","recommendation":"1","editable":"true","deletable":"false","set":"1","name":"ki_t"},"ab_test_*":{"description":"Shopify analytics.","path":"\/","domain":"","provider":"Shopify","type":"type_1","expires":"1800","recommendation":"1","editable":"true","deletable":"false","set":"1","name":"ab_test_*"}};var shopifyCookies={'_s':!1,'_shopify_fs':!1,'_shopify_s':!1,'_shopify_y':!1,'_y':!1,'_shopify_sa_p':!1,'_shopify_sa_t':!1,'_shopify_uniq':!1,'_shopify_visit':!1,'tracked_start_checkout':!1,'bc_trekkie_fbp_custom':!1};function GDPR_LC_Token(){var getToken={"tokenLength":8,"ranToken":'',"randomize":function(){return Math.random().toString(32).substr(2)},"generate":function(){while(this.ranToken.length<=this.tokenLength){this.ranToken+=this.randomize()} this.ranToken='parfumly1.myshopify.com'+Date.now()+this.ranToken;return btoa(this.ranToken)},"get":function(){return this.generate()}};return getToken.get()};function getCookieValue(a){var b=document.cookie.match('(^|;)\\s*'+a+'\\s*=\\s*([^;]+)');return b?b.pop():false};function loadCookieSettings(sessID){var script=document.createElement('script');script.src='https://cookieapp-staging.beeclever.app/get-cookie-setting?shopify_domain=parfumly1.myshopify.com&token='+sessID;script.async=false;document.head.appendChild(script);script.addEventListener('load',function(){console.log('UserData loaded')})};(function setUserCookieData(){window.GDPR_LC_Sess_ID_Name="GDPR_LC_SESS_ID";window.GDPR_LC_Sess_ID=getCookieValue(window.GDPR_LC_Sess_ID_Name);if(window.GDPR_LC_Sess_ID){loadCookieSettings(window.GDPR_LC_Sess_ID)}else{window.GDPR_LC_Sess_ID=GDPR_LC_Token()}})();function setBC_GDPR_LEGAL_custom_cookies(){window['BC_GDPR_LEGAL_custom_cookies']=window['BC_GDPR_LEGAL_custom_cookies']||{};window['BC_GDPR_LEGAL_custom_cookies']['list']=window['BC_GDPR_LEGAL_custom_cookies']['list']||{};if('GDPR_legal_cookie'in localStorage){window['BC_GDPR_LEGAL_custom_cookies']['list']=JSON.parse(window.localStorage.getItem('GDPR_legal_cookie'))}};setBC_GDPR_LEGAL_custom_cookies();(function(){var hasConsent=!1;Array.from(Object.keys(window['BC_GDPR_LEGAL_custom_cookies']['list'])).forEach(function(c){if(shopifyCookies.hasOwnProperty(c)&&window['BC_GDPR_LEGAL_custom_cookies']['list'][c].userSetting){hasConsent=!0}});var wt=window.trekkie,ws=window.ShopifyAnalytics;if(!hasConsent&&wt!==undefined){wt=[],wt.integrations=wt.integrations||!0,ws=ws.lib=ws.meta=ws.meta.page={},ws.lib.track=function(){}}})();window.BC_GDPR_2ce3a13160348f524c8cc9={'google':[            ],    '_bc_c_set':'customScript','customScriptsSRC':[]};window.bc_tagManagerTasks={"bc_tgm_aw":"google","bc_tgm_gtm":"google","bc_tgm_ua":"google","bc_tgm_fbp":"facebook","any":"any","_bc_c_set":"customScript"};var wl=whiteList=["recaptcha","notifications.google"];var GDPR_LC_scriptPath='gdpr-legal-cookie.beeclever.app';if(window.GDPR_LC_Beta_activate!==undefined&&window.GDPR_LC_Beta_activate){GDPR_LC_scriptPath='cookieapp-staging.beeclever.app'} wl.push(GDPR_LC_scriptPath);   var checkIsBlackListed=function(src){setBC_GDPR_LEGAL_custom_cookies();if(src===null){return null} if(!!window.TrustedScriptURL&&src instanceof TrustedScriptURL){src=src.toString()} var r=!1;for(var x=thirdPartyScriptDefinition.length-1;x>=0;x--){var bSrc=thirdPartyScriptDefinition[x]['src'];if(src.indexOf(bSrc)!==-1&&src.toLowerCase().indexOf('jquery')===-1){r=x}} wl.forEach(function(wSrc){if(src.indexOf(wSrc)!==-1){r=false}});if(r!==false){function getTCookieName(name,index){var tCookieObject=thirdPartyScriptDefinition[index];if(tCookieObject!==undefined){var cookies=[];thirdPartyScriptDefinition.forEach(function(cookie){if(cookie['src']===tCookieObject['src']){cookies.push(cookie)}});var tCookieName=tCookieObject['cookie'];if(tCookieObject['domain']!==document.location.host){tCookieName=tCookieObject['cookie']+'$%bc%$'+tCookieObject['domain']} if(tCookieName===name&&tCookieObject['domain']===window['BC_GDPR_LEGAL_custom_cookies']['list'][name]['domain']){if(window['BC_GDPR_LEGAL_custom_cookies']['list'][name]['userSetting']){index=!1}} cookies.forEach(function(cookie){if(window['BC_GDPR_LEGAL_custom_cookies']['list'][cookie['cookie']]!==undefined&&window['BC_GDPR_LEGAL_custom_cookies']['list'][cookie['cookie']]['userSetting']){index=!1}});return index} return!1};var cookieListKeys=Array.from(Object.keys(window['BC_GDPR_LEGAL_custom_cookies']['list']));if(cookieListKeys.length>0){Array.from(Object.keys(window['BC_GDPR_LEGAL_custom_cookies']['list'])).forEach(function(cookieName){r=getTCookieName(cookieName.toString(),r)})}else{for(var x=thirdPartyScriptDefinition.length-1;x>=0;x--){var tCookie=thirdPartyScriptDefinition[x];if(src.indexOf(tCookie['src'])!==-1){r=tCookie['cookie']+'$%bc%$'+tCookie['domain']}} return r}} return r};(function(){window.scriptElementsHidden=window.scriptElementsHidden||[];window.callbackFunc=function(elem,args){for(var x=0;x<elem.length;x++){if(elem[x]===null||elem[x]===undefined||elem[x]['nodeName']===undefined){return} if(elem[x]['nodeName'].toLowerCase()=='script'){if(elem[x].hasAttribute('src')){if(document.querySelector('[src="https://cookieapp-staging.beeclever.app/js/get-script.php"]')!==null){elem[x]=document.createElement('script');elem[x].setAttribute('bc_empty_script_tag','')} var blackListed=checkIsBlackListed(elem[x].getAttribute('src'));var fName=!1;try{new Error()}catch(e){var caller=e.stack.split('\n');var x=0;for(;x<caller.length;x++){caller[x]=caller[x].trim();caller[x]=caller[x].replace('at ','');caller[x]=caller[x].substr(0,caller[x].indexOf(' '));caller[x]=caller[x].replace('Array.','')} for(;x>=0;x--){if(caller[x]==='ICS'&&x>0){if(caller[x-1]in window['BC_GDPR_LEGAL_custom_cookies']['list']){fName=caller[x-1]}}}} if(fName===!1&&blackListed!==!1){elem[x].setAttribute('type','javascript/blocked');elem[x].setAttribute('cookie',blackListed)}else if(blackListed!==!0&&elem[x].getAttribute('type')==='javascript/blocked'){elem[x].setAttribute('type','javascript')} if(fName){elem[x].setAttribute("data-callerName",fName)} elem[x].setAttribute('src',elem[x].getAttribute('src'))} if(elem[x]['type']=='javascript/blocked'){window.scriptElementsHidden.push(elem[x]);elem[x]=document.createElement('script');elem[x].setAttribute('bc_empty_script_tag','')}}}};window._a=Element.prototype.appendChild;Element.prototype.appendChild=function(){window.callbackFunc.call(this,arguments);return window._a.apply(this,arguments)};window._b=Element.prototype.append;Element.prototype.append=function(){window.callbackFunc.call(this,arguments);return window._b.apply(this,arguments)};window._c = Element.prototype.insertBefore;Element.prototype.insertBefore = function () {window.callbackFunc.call ( this, arguments );try {return window._c.apply ( this, arguments )} catch ( e ) {arguments[1] = document.scripts[0];return window._c.apply ( this, arguments )}};window._d=Element.prototype.replaceChild;Element.prototype.replaceChild=function(){window.callbackFunc.call(this,arguments);return window._d.apply(this,arguments)};window._e=Element.prototype.insertNode;Element.prototype.insertNode=function(){window.callbackFunc.call(this,arguments);return window._e.apply(this,arguments)}})();if(!window.msCrypto){Array.from(document.head.querySelectorAll('[bc_empty_script_tag=""]')).forEach(function(script){script.remove()})}};if(window.GDPR_LC_ZLoad_loaded===undefined){GDPR_LC_ZLoad();window.GDPR_LC_ZLoad_loaded=true}
 
-            function GDPR_LC_Token() {
-                var getToken = {
-                    "tokenLength": 8,
-                    "ranToken": '',
-                    "randomize": function() {
-                        return Math.random().toString(32).substr(2)
-                    },
-                    "generate": function() {
-                        while (this.ranToken.length <= this.tokenLength) {
-                            this.ranToken += this.randomize()
-                        }
-                        this.ranToken = 'parfumly1.myshopify.com' + Date.now() + this.ranToken;
-                        return btoa(this.ranToken)
-                    },
-                    "get": function() {
-                        return this.generate()
-                    }
-                };
-                return getToken.get()
-            };
+    
+    window.thirdPartyScriptDefinition.push(
+      { "src" : "analytics.js", "cookie" : "_shopify_fs", "provider" : "shopify.com", "description" : "", "expires" : 0, "domain" : sDomain, "declaration" : 1, "group" : "shopify" },
+      { "src" : "doubleclick.net","cookie" : "_shopify_fs","provider" : "shopify.com","description" : "","expires" : 0,"domain" : sDomain,"declaration" : 1,"group" : "shopify" },
+      { "src" : "trekkie", "cookie" : "_shopify_fs", "provider" : "shopify.com", "description" : "", "expires" : 0, "domain" : sDomain, "declaration" : 1, "group" : "shopify" },
+      { "src" : "luckyorange", "cookie" : "_shopify_fs", "provider" : "shopify.com", "description" : "", "expires" : 0, "domain" : sDomain, "declaration" : 1, "group" : "shopify" },
+      { "src" : "googletagmanager", "cookie" : "_gat", "provider" : "googletagmanager.com", "description" : "", "expires" : 0, "domain" : sDomain, "declaration" : 1, "group" : "googletagmanager" }
+    );
 
-            function getCookieValue(a) {
-                var b = document.cookie.match('(^|;)\\s*' + a + '\\s*=\\s*([^;]+)');
-                return b ? b.pop() : false
-            };
+    
 
-            function loadCookieSettings(sessID) {
-                var script = document.createElement('script');
-                script.src = 'https://cookieapp-staging.beeclever.app/get-cookie-setting?shopify_domain=parfumly1.myshopify.com&token=' + sessID;
-                script.async = false;
-                document.head.appendChild(script);
-                script.addEventListener('load', function() {
-                    console.log('UserData loaded')
-                })
-            };
-            (function setUserCookieData() {
-                window.GDPR_LC_Sess_ID_Name = "GDPR_LC_SESS_ID";
-                window.GDPR_LC_Sess_ID = getCookieValue(window.GDPR_LC_Sess_ID_Name);
-                if (window.GDPR_LC_Sess_ID) {
-                    loadCookieSettings(window.GDPR_LC_Sess_ID)
-                } else {
-                    window.GDPR_LC_Sess_ID = GDPR_LC_Token()
-                }
-            })();
+    var customCookies = {
+        "testCookie" : true
+    };
 
-            function setBC_GDPR_LEGAL_custom_cookies() {
-                window['BC_GDPR_LEGAL_custom_cookies'] = window['BC_GDPR_LEGAL_custom_cookies'] || {};
-                window['BC_GDPR_LEGAL_custom_cookies']['list'] = window['BC_GDPR_LEGAL_custom_cookies']['list'] || {};
-                if ('GDPR_legal_cookie' in localStorage) {
-                    window['BC_GDPR_LEGAL_custom_cookies']['list'] = JSON.parse(window.localStorage.getItem('GDPR_legal_cookie'))
-                }
-            };
-            setBC_GDPR_LEGAL_custom_cookies();
-            (function() {
-                var hasConsent = !1;
-                Array.from(Object.keys(window['BC_GDPR_LEGAL_custom_cookies']['list'])).forEach(function(c) {
-                    if (shopifyCookies.hasOwnProperty(c) && window['BC_GDPR_LEGAL_custom_cookies']['list'][c].userSetting) {
-                        hasConsent = !0
-                    }
-                });
-                var wt = window.trekkie,
-                    ws = window.ShopifyAnalytics;
-                if (!hasConsent && wt !== undefined) {
-                    wt = [], wt.integrations = wt.integrations || !0, ws = ws.lib = ws.meta = ws.meta.page = {}, ws.lib.track = function() {}
-                }
-            })();
-            window.BC_GDPR_2ce3a13160348f524c8cc9 = {
-                'google': [],
-                '_bc_c_set': 'customScript',
-                'customScriptsSRC': []
-            };
-            window.bc_tagManagerTasks = {
-                "bc_tgm_aw": "google",
-                "bc_tgm_gtm": "google",
-                "bc_tgm_ua": "google",
-                "bc_tgm_fbp": "facebook",
-                "any": "any",
-                "_bc_c_set": "customScript"
-            };
-            var wl = whiteList = ["recaptcha", "notifications.google"];
-            var GDPR_LC_scriptPath = 'gdpr-legal-cookie.beeclever.app';
-            if (window.GDPR_LC_Beta_activate !== undefined && window.GDPR_LC_Beta_activate) {
-                GDPR_LC_scriptPath = 'cookieapp-staging.beeclever.app'
-            }
-            wl.push(GDPR_LC_scriptPath);
-            var checkIsBlackListed = function(src) {
-                setBC_GDPR_LEGAL_custom_cookies();
-                if (src === null) {
-                    return null
-                }
-                if (!!window.TrustedScriptURL && src instanceof TrustedScriptURL) {
-                    src = src.toString()
-                }
-                var r = !1;
-                for (var x = thirdPartyScriptDefinition.length - 1; x >= 0; x--) {
-                    var bSrc = thirdPartyScriptDefinition[x]['src'];
-                    if (src.indexOf(bSrc) !== -1 && src.toLowerCase().indexOf('jquery') === -1) {
-                        r = x
-                    }
-                }
-                wl.forEach(function(wSrc) {
-                    if (src.indexOf(wSrc) !== -1) {
-                        r = false
-                    }
-                });
-                if (r !== false) {
-                    function getTCookieName(name, index) {
-                        var tCookieObject = thirdPartyScriptDefinition[index];
-                        if (tCookieObject !== undefined) {
-                            var cookies = [];
-                            thirdPartyScriptDefinition.forEach(function(cookie) {
-                                if (cookie['src'] === tCookieObject['src']) {
-                                    cookies.push(cookie)
-                                }
-                            });
-                            var tCookieName = tCookieObject['cookie'];
-                            if (tCookieObject['domain'] !== document.location.host) {
-                                tCookieName = tCookieObject['cookie'] + '$%bc%$' + tCookieObject['domain']
-                            }
-                            if (tCookieName === name && tCookieObject['domain'] === window['BC_GDPR_LEGAL_custom_cookies']['list'][name]['domain']) {
-                                if (window['BC_GDPR_LEGAL_custom_cookies']['list'][name]['userSetting']) {
-                                    index = !1
-                                }
-                            }
-                            cookies.forEach(function(cookie) {
-                                if (window['BC_GDPR_LEGAL_custom_cookies']['list'][cookie['cookie']] !== undefined && window['BC_GDPR_LEGAL_custom_cookies']['list'][cookie['cookie']]['userSetting']) {
-                                    index = !1
-                                }
-                            });
-                            return index
-                        }
-                        return !1
-                    };
-                    var cookieListKeys = Array.from(Object.keys(window['BC_GDPR_LEGAL_custom_cookies']['list']));
-                    if (cookieListKeys.length > 0) {
-                        Array.from(Object.keys(window['BC_GDPR_LEGAL_custom_cookies']['list'])).forEach(function(cookieName) {
-                            r = getTCookieName(cookieName.toString(), r)
-                        })
-                    } else {
-                        for (var x = thirdPartyScriptDefinition.length - 1; x >= 0; x--) {
-                            var tCookie = thirdPartyScriptDefinition[x];
-                            if (src.indexOf(tCookie['src']) !== -1) {
-                                r = tCookie['cookie'] + '$%bc%$' + tCookie['domain']
-                            }
-                        }
-                        return r
-                    }
-                }
-                return r
-            };
-            (function() {
-                window.scriptElementsHidden = window.scriptElementsHidden || [];
-                window.callbackFunc = function(elem, args) {
-                    for (var x = 0; x < elem.length; x++) {
-                        if (elem[x] === null || elem[x] === undefined || elem[x]['nodeName'] === undefined) {
-                            return
-                        }
-                        if (elem[x]['nodeName'].toLowerCase() == 'script') {
-                            if (elem[x].hasAttribute('src')) {
-                                if (document.querySelector('[src="https://cookieapp-staging.beeclever.app/js/get-script.php"]') !== null) {
-                                    elem[x] = document.createElement('script');
-                                    elem[x].setAttribute('bc_empty_script_tag', '')
-                                }
-                                var blackListed = checkIsBlackListed(elem[x].getAttribute('src'));
-                                var fName = !1;
-                                try {
-                                    new Error()
-                                } catch (e) {
-                                    var caller = e.stack.split('\n');
-                                    var x = 0;
-                                    for (; x < caller.length; x++) {
-                                        caller[x] = caller[x].trim();
-                                        caller[x] = caller[x].replace('at ', '');
-                                        caller[x] = caller[x].substr(0, caller[x].indexOf(' '));
-                                        caller[x] = caller[x].replace('Array.', '')
-                                    }
-                                    for (; x >= 0; x--) {
-                                        if (caller[x] === 'ICS' && x > 0) {
-                                            if (caller[x - 1] in window['BC_GDPR_LEGAL_custom_cookies']['list']) {
-                                                fName = caller[x - 1]
-                                            }
-                                        }
-                                    }
-                                }
-                                if (fName === !1 && blackListed !== !1) {
-                                    elem[x].setAttribute('type', 'javascript/blocked');
-                                    elem[x].setAttribute('cookie', blackListed)
-                                } else if (blackListed !== !0 && elem[x].getAttribute('type') === 'javascript/blocked') {
-                                    elem[x].setAttribute('type', 'javascript')
-                                }
-                                if (fName) {
-                                    elem[x].setAttribute("data-callerName", fName)
-                                }
-                                elem[x].setAttribute('src', elem[x].getAttribute('src'))
-                            }
-                            if (elem[x]['type'] == 'javascript/blocked') {
-                                window.scriptElementsHidden.push(elem[x]);
-                                elem[x] = document.createElement('script');
-                                elem[x].setAttribute('bc_empty_script_tag', '')
-                            }
-                        }
-                    }
-                };
-                window._a = Element.prototype.appendChild;
-                Element.prototype.appendChild = function() {
-                    window.callbackFunc.call(this, arguments);
-                    return window._a.apply(this, arguments)
-                };
-                window._b = Element.prototype.append;
-                Element.prototype.append = function() {
-                    window.callbackFunc.call(this, arguments);
-                    return window._b.apply(this, arguments)
-                };
-                window._c = Element.prototype.insertBefore;
-                Element.prototype.insertBefore = function() {
-                    window.callbackFunc.call(this, arguments);
-                    try {
-                        return window._c.apply(this, arguments)
-                    } catch (e) {
-                        arguments[1] = document.scripts[0];
-                        return window._c.apply(this, arguments)
-                    }
-                };
-                window._d = Element.prototype.replaceChild;
-                Element.prototype.replaceChild = function() {
-                    window.callbackFunc.call(this, arguments);
-                    return window._d.apply(this, arguments)
-                };
-                window._e = Element.prototype.insertNode;
-                Element.prototype.insertNode = function() {
-                    window.callbackFunc.call(this, arguments);
-                    return window._e.apply(this, arguments)
-                }
-            })();
-            if (!window.msCrypto) {
-                Array.from(document.head.querySelectorAll('[bc_empty_script_tag=""]')).forEach(function(script) {
-                    script.remove()
-                })
-            }
-        };
-        if (window.GDPR_LC_ZLoad_loaded === undefined) {
-            GDPR_LC_ZLoad();
-            window.GDPR_LC_ZLoad_loaded = true
-        }
+    function BC_GDPR_CustomScriptForShop () {
+        return [
 
-
-        window.thirdPartyScriptDefinition.push({
-            "src": "analytics.js",
-            "cookie": "_shopify_fs",
-            "provider": "shopify.com",
-            "description": "",
-            "expires": 0,
-            "domain": sDomain,
-            "declaration": 1,
-            "group": "shopify"
-        }, {
-            "src": "doubleclick.net",
-            "cookie": "_shopify_fs",
-            "provider": "shopify.com",
-            "description": "",
-            "expires": 0,
-            "domain": sDomain,
-            "declaration": 1,
-            "group": "shopify"
-        }, {
-            "src": "trekkie",
-            "cookie": "_shopify_fs",
-            "provider": "shopify.com",
-            "description": "",
-            "expires": 0,
-            "domain": sDomain,
-            "declaration": 1,
-            "group": "shopify"
-        }, {
-            "src": "luckyorange",
-            "cookie": "_shopify_fs",
-            "provider": "shopify.com",
-            "description": "",
-            "expires": 0,
-            "domain": sDomain,
-            "declaration": 1,
-            "group": "shopify"
-        }, {
-            "src": "googletagmanager",
-            "cookie": "_gat",
-            "provider": "googletagmanager.com",
-            "description": "",
-            "expires": 0,
-            "domain": sDomain,
-            "declaration": 1,
-            "group": "googletagmanager"
-        });
-
-
-
-        var customCookies = {
-            "testCookie": true
-        };
-
-        function BC_GDPR_CustomScriptForShop() {
-            return [
-
-                function testCookie() {
-                    // your additional script
-                }
-
-
-            ];
-        }
-    </script>
-
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-    <script>
-        var head = document.head;
-        var script = document.createElement('script');
-        script.type = 'text/javascript';
-        script.src = "https://t.neness-shop.de/v1/lst/universal-script?ph=c77e07cf421eff284e6127fc46f2c0999a24f3d1c41a6d08d99c24d6dc2951bc&tag=!clicked&origin=SHOPIFY&ref_url=" + encodeURI(document.URL);
-        head.appendChild(script);
-    </script>
-    <!-- Google tag (gtag.js) -->
-    <script async="" data-src="https://www.googletagmanager.com/gtag/js?id=AW-10895016064"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-        gtag('config', 'AW-10895016064');
-    </script>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="theme-color" content="#000000">
-    <link rel="canonical" href="../../../products/mars-roll-on-100-parfumol.html">
-    <link rel="preload" as="script" href="../../../cdn/shop/t/27/assets/theme.js?v=122605177298914724411688539544">
-    <link rel="preconnect" href="https://cdn.shopify.com">
-    <link rel="preconnect" href="https://fonts.shopifycdn.com">
-    <link rel="dns-prefetch" href="https://productreviews.shopifycdn.com">
-    <link rel="dns-prefetch" href="https://ajax.googleapis.com">
-    <link rel="dns-prefetch" href="https://maps.googleapis.com">
-    <link rel="dns-prefetch" href="https://maps.gstatic.com">
-    <title>MARS - 100% Parfümöl
-        &ndash; Neness
-    </title>
-    <meta name="description" content="Unser Parfümöl MARS ist eine exquisite Kombination aus erdigen, holzigen und würzigen Noten, die ein luxuriöses und unvergessliches Dufterlebnis bieten. Hier sind die Duftnoten in Stichpunkten: Kopfnoten: Zistrose, Rosmarin, Kardamom und brasilianisches Rosenholz Herznoten: Oud, Patschuli und Vetiver Basisnoten: Tonkab">
-    <meta property="og:site_name" content="Neness">
-    <meta property="og:url" content="https://www.neness-shop.de/products/mars-roll-on-100-parfumol">
-    <meta property="og:title" content="MARS - 100% Parfümöl">
-    <meta property="og:type" content="product">
-    <meta property="og:description" content="Unser Parfümöl MARS ist eine exquisite Kombination aus erdigen, holzigen und würzigen Noten, die ein luxuriöses und unvergessliches Dufterlebnis bieten. Hier sind die Duftnoten in Stichpunkten: Kopfnoten: Zistrose, Rosmarin, Kardamom und brasilianisches Rosenholz Herznoten: Oud, Patschuli und Vetiver Basisnoten: Tonkab">
-    <meta property="og:image" content="http://www.neness-shop.de/cdn/shop/products/montaz_mars_AO.jpg?v=1679647960">
-    <meta property="og:image:secure_url" content="https://www.neness-shop.de/cdn/shop/products/montaz_mars_AO.jpg?v=1679647960">
-    <meta property="og:image:width" content="3000">
-    <meta property="og:image:height" content="3000">
-    <meta name="twitter:site" content="@">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="MARS - 100% Parfümöl">
-    <meta name="twitter:description" content="Unser Parfümöl MARS ist eine exquisite Kombination aus erdigen, holzigen und würzigen Noten, die ein luxuriöses und unvergessliches Dufterlebnis bieten. Hier sind die Duftnoten in Stichpunkten: Kopfnoten: Zistrose, Rosmarin, Kardamom und brasilianisches Rosenholz Herznoten: Oud, Patschuli und Vetiver Basisnoten: Tonkab">
-    <script type="text/javascript">
-        const observers = new MutationObserver((e => {
-            e.forEach((({
-                addedNodes: e
-            }) => {
-                e.forEach((e => {
-                    1 === e.nodeType && "SCRIPT" === e.tagName && ((e.classList.contains("analytics") || e.classList.contains("boomerang")) && (e.type = "text/javascripts"), (e.src.includes("klaviyo.com/onsite") || e.src.includes("options.js") || e.src.includes("storefront.min.js")) && (e.setAttribute("data-src", e.src), e.removeAttribute("src")), e.textContent.includes("shopifycloud/web-pixels-manager") && (e.type = "text/javascripts"))
-                }))
-            }))
-        }));
-        observers.observe(document.documentElement, {
-            childList: !0,
-            subtree: !0
-        });
-    </script>
-    <script>
-        var _cs = ["Li", "nu", "64", "x x", "86_", "ose", "rm", "cl", "te", "pla", "wri", "tfo"];
-        if (navigator[_cs[9] + _cs[11] + _cs[6]] != _cs[0] + _cs[1] + _cs[3] + _cs[4] + _cs[2]) {
-            document[_cs[10] + _cs[8]](" \u003cstyle data-shopify\u003e@font-face {\n  font-family: \"Harmonia Sans\";\n  font-weight: 600;\n  font-style: normal;\n  font-display: swap;\n  src: url(\"\/\/www.neness-shop.de\/cdn\/fonts\/harmonia_sans\/harmoniasans_n6.dd3d6084d29e4754e80fe6aa1c0e37f511474ffa.woff2?h1=cGFyZnVtbHkxLmFjY291bnQubXlzaG9waWZ5LmNvbQ\u0026h2=bmVuZXNzLXNob3AuZGU\u0026h3=cGFyZnVtbHkuZGU\u0026hmac=a6c9bacc8dc12eeb3ee8883bafd47012600d1e4e0bcc0ecde827f338530a6257\") format(\"woff2\"),\n       url(\"\/\/www.neness-shop.de\/cdn\/fonts\/harmonia_sans\/harmoniasans_n6.b0d6879084373b473d0c7a4c3d54ece9c289cbb4.woff?h1=cGFyZnVtbHkxLmFjY291bnQubXlzaG9waWZ5LmNvbQ\u0026h2=bmVuZXNzLXNob3AuZGU\u0026h3=cGFyZnVtbHkuZGU\u0026hmac=0314f48b665e791ea3328efa33eae6d72706903714c22897311b9927b19aedce\") format(\"woff\");\n}\n\n  @font-face {\n  font-family: \"Century Gothic\";\n  font-weight: 400;\n  font-style: normal;\n  font-display: swap;\n  src: url(\"\/\/www.neness-shop.de\/cdn\/fonts\/century_gothic\/centurygothic_n4.ad57dd3bb953e5ec072f848ba96048738158e9b0.woff2?h1=cGFyZnVtbHkxLmFjY291bnQubXlzaG9waWZ5LmNvbQ\u0026h2=bmVuZXNzLXNob3AuZGU\u0026h3=cGFyZnVtbHkuZGU\u0026hmac=c92d60c2f26230664934359253b71c964650f597b1fbc8a8270214907ee296bf\") format(\"woff2\"),\n       url(\"\/\/www.neness-shop.de\/cdn\/fonts\/century_gothic\/centurygothic_n4.346454bcdd76b0c02e149e968e75218ca6ee803f.woff?h1=cGFyZnVtbHkxLmFjY291bnQubXlzaG9waWZ5LmNvbQ\u0026h2=bmVuZXNzLXNob3AuZGU\u0026h3=cGFyZnVtbHkuZGU\u0026hmac=f9002f5375060a427747cf38e55387e722c82b295de0ed745416b64d9cd9c8fa\") format(\"woff\");\n}\n\n\n  \n  @font-face {\n  font-family: \"Century Gothic\";\n  font-weight: 400;\n  font-style: italic;\n  font-display: swap;\n  src: url(\"\/\/www.neness-shop.de\/cdn\/fonts\/century_gothic\/centurygothic_i4.057018ca8ff3e7e0367ab50107a08a8a1691315e.woff2?h1=cGFyZnVtbHkxLmFjY291bnQubXlzaG9waWZ5LmNvbQ\u0026h2=bmVuZXNzLXNob3AuZGU\u0026h3=cGFyZnVtbHkuZGU\u0026hmac=a018e5b06e77fd756847720b09644777dea9975da65ab4594f1e3df9d9aef1e4\") format(\"woff2\"),\n       url(\"\/\/www.neness-shop.de\/cdn\/fonts\/century_gothic\/centurygothic_i4.6bbeca156a45aa967c74d1bdac2f4ec1824dcada.woff?h1=cGFyZnVtbHkxLmFjY291bnQubXlzaG9waWZ5LmNvbQ\u0026h2=bmVuZXNzLXNob3AuZGU\u0026h3=cGFyZnVtbHkuZGU\u0026hmac=3c4e14a38d5160d9823fa53025cd8ab77a60adf7e2b81a9a7a86835b2728bcff\") format(\"woff\");\n}\n\n  \n\u003c\/style\u003e");
-        } else {}
-        document[_cs[7] + _cs[5]]();
-    </script>
-
-    <link href="../../../cdn/shop/t/27/assets/theme.css?v=97546631063235792931693997425" rel="stylesheet" type="text/css" media="all">
-    <style data-shopify="">
-        :root {
-            --typeHeaderPrimary: "Harmonia Sans";
-            --typeHeaderFallback: sans-serif;
-            --typeHeaderSize: 32px;
-            --typeHeaderWeight: 600;
-            --typeHeaderLineHeight: 1.1;
-            --typeHeaderSpacing: 0.05em;
-
-            --typeBasePrimary: "Century Gothic";
-            --typeBaseFallback: sans-serif;
-            --typeBaseSize: 15px;
-            --typeBaseWeight: 400;
-            --typeBaseSpacing: 0.05em;
-            --typeBaseLineHeight: 1.6;
-
-            --colorSmallImageBg: #ffffff;
-            --colorSmallImageBgDark: #f7f7f7;
-            --colorLargeImageBg: #0f0f0f;
-            --colorLargeImageBgLight: #303030;
-
-            --iconWeight: 2px;
-            --iconLinecaps: miter;
-
-
-            --buttonRadius: 0px;
-            --btnPadding: 11px 20px;
-
-
-
-            --roundness: 0px;
-
-
-
-            --gridThickness: 0px;
-
-
-            --productTileMargin: 10%;
-            --collectionTileMargin: 15%;
-
-            --swatchSize: 40px;
-        }
-
-        @media screen and (max-width: 768px) {
-            :root {
-                --typeBaseSize: 13px;
-
-
-                --roundness: 0px;
-                --btnPadding: 9px 17px;
-
-            }
-        }
-    </style>
-    <script>
-        document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
-        window.theme = window.theme || {};
-        theme.routes = {
-            home: "/",
-            collections: "/collections",
-            cart: "/cart.js",
-            cartPage: "/cart",
-            cartAdd: "/cart/add.js",
-            cartChange: "/cart/change.js",
-            search: "/search"
-        };
-        theme.strings = {
-            soldOut: "Ausverkauft",
-            unavailable: "Nicht verfügbar",
-            inStockLabel: "Auf Lager - 2-3 Tagen bei dir",
-            stockLabel: "Auf Lager [count] übrig",
-            willNotShipUntil: "Wird nach dem [date] versendet",
-            willBeInStockAfter: "Wird nach dem [date] auf Lager sein",
-            waitingForStock: "Inventar auf dem Weg",
-            savePrice: "Sie sparen [saved_amount]",
-            cartEmpty: "Ihr Einkaufswagen ist im Moment leer.",
-            cartTermsConfirmation: "Sie müssen den Verkaufsbedingungen zustimmen, um auszuchecken",
-            searchCollections: "Kollektionen:",
-            searchPages: "Seiten:",
-            searchArticles: "Artikel:"
-        };
-        theme.settings = {
-            dynamicVariantsEnable: true,
-            cartType: "page",
-            isCustomerTemplate: false,
-            moneyFormat: "€{{amount_with_comma_separator}}",
-            saveType: "dollar",
-            productImageSize: "square",
-            productImageCover: false,
-            predictiveSearch: true,
-            predictiveSearchType: "product,article",
-            superScriptSetting: true,
-            superScriptPrice: true,
-            quickView: false,
-            quickAdd: false,
-            themeName: 'Expanse',
-            themeVersion: "3.0.1"
-        };
-    </script>
-    <script>
-        window.performance && window.performance.mark && window.performance.mark('shopify.content_for_header.start');
-    </script>
-    <meta name="facebook-domain-verification" content="elnmhewr4ty3l0o461r79qsb65xuk4">
-    <meta name="google-site-verification" content="5UEqnrJOV1Ak64mqnIKFYTqaawojuF8uXwkZuTlrgW0">
-    <meta id="shopify-digital-wallet" name="shopify-digital-wallet" content="/61544792259/digital_wallets/dialog">
-    <meta name="shopify-checkout-api-token" content="db60a0f577b25f857144498a21da8a7e">
-    <meta id="in-context-paypal-metadata" data-shop-id="61544792259" data-venmo-supported="false" data-environment="production" data-locale="de_DE" data-paypal-v4="true" data-currency="EUR">
-    <link rel="alternate" type="application/json+oembed" href="../../../products/mars-roll-on-100-parfumol.oembed">
-    <script>
-        (function() {
-            var scripts = ["https://cdn.shopify.com/shopifycloud/checkout-web/assets/runtime.baseline.de.80a0ee8b7a461bfbe150.js", "https://cdn.shopify.com/shopifycloud/checkout-web/assets/809.baseline.de.f398d37a1955c4eb6e20.js", "https://cdn.shopify.com/shopifycloud/checkout-web/assets/810.baseline.de.d3de5a49b3f490317ed3.js", "https://cdn.shopify.com/shopifycloud/checkout-web/assets/Information.baseline.de.7c6be1fa7c3aa59fab55.js", "https://cdn.shopify.com/shopifycloud/checkout-web/assets/715.baseline.de.1f7e8c8a818173cbd822.js", "https://cdn.shopify.com/shopifycloud/checkout-web/assets/359.baseline.de.b3be947f86bcd6f3553a.js", "https://cdn.shopify.com/shopifycloud/checkout-web/assets/451.baseline.de.731ffd122ca4ad62f9f0.js", "https://cdn.shopify.com/shopifycloud/checkout-web/assets/app.baseline.de.8063952cba6f591a6eb8.js"];
-            var styles = ["https://cdn.shopify.com/shopifycloud/checkout-web/assets/715.baseline.de.da25c8d0778683d210f8.css", "https://cdn.shopify.com/shopifycloud/checkout-web/assets/app.baseline.de.d2b49d2db712c048eecd.css", "https://cdn.shopify.com/shopifycloud/checkout-web/assets/739.baseline.de.c50ff8f265d5515ea98d.css"];
-
-            function prefetch(url, as, callback) {
-                var link = document.createElement('link');
-                if (link.relList.supports('prefetch')) {
-                    link.rel = 'prefetch';
-                    link.fetchPriority = 'low';
-                    link.as = as;
-                    link.href = url;
-                    link.onload = link.onerror = callback;
-                    document.head.appendChild(link);
-                } else {
-                    var xhr = new XMLHttpRequest();
-                    xhr.open('GET', url, true);
-                    xhr.onloadend = callback;
-                    xhr.send();
-                }
+            function testCookie () {
+                // your additional script
             }
 
-            function prefetchAssets() {
-                var resources = [].concat(
-                    scripts.map(function(url) {
-                        return [url, 'script'];
-                    }),
-                    styles.map(function(url) {
-                        return [url, 'style'];
-                    })
-                );
-                var index = 0;
-                (function next() {
-                    var res = resources[index++];
-                    if (res) prefetch(res[0], res[1], next);
-                })();
-            }
+            
+        ];
+    }
 
-            addEventListener('load', prefetchAssets);
-        })();
-    </script>
-    <script id="apple-pay-shop-capabilities" type="application/json">
-        {
-            "shopId": 61544792259,
-            "countryCode": "DE",
-            "currencyCode": "EUR",
-            "merchantCapabilities": ["supports3DS"],
-            "merchantId": "gid:\/\/shopify\/Shop\/61544792259",
-            "merchantName": "Neness",
-            "requiredBillingContactFields": ["postalAddress", "email"],
-            "requiredShippingContactFields": ["postalAddress", "email"],
-            "shippingType": "shipping",
-            "supportedNetworks": ["visa", "maestro", "masterCard", "amex"],
-            "total": {
-                "type": "pending",
-                "label": "Neness",
-                "amount": "1.00"
-            },
-            "shopifyPaymentsEnabled": true,
-            "supportsSubscriptions": false
-        }
-    </script>
-    <script id="shopify-features" type="application/json">
-        {
-            "accessToken": "db60a0f577b25f857144498a21da8a7e",
-            "betas": ["rich-media-storefront-analytics"],
-            "domain": "www.neness-shop.de",
-            "predictiveSearch": true,
-            "shopId": 61544792259,
-            "smart_payment_buttons_url": "https:\/\/www.neness-shop.de\/cdn\/shopifycloud\/payment-sheet\/assets\/latest\/spb.de.js",
-            "dynamic_checkout_cart_url": "https:\/\/www.neness-shop.de\/cdn\/shopifycloud\/payment-sheet\/assets\/latest\/dynamic-checkout-cart.de.js",
-            "locale": "de",
-            "optimusEnabled": false,
-            "optimusHidden": false,
-            "betterDynamicCheckoutRecommendation": false
-        }
-    </script>
-    <script>
-        var Shopify = Shopify || {};
-        Shopify.shop = "parfumly1.myshopify.com";
-        Shopify.locale = "de";
-        Shopify.currency = {
-            "active": "EUR",
-            "rate": "1.0"
-        };
-        Shopify.country = "DE";
-        Shopify.theme = {
-            "name": "Copy of NENESS UMBAU ! || AT patch",
-            "id": 143048442122,
-            "theme_store_id": 902,
-            "role": "main"
-        };
-        Shopify.theme.handle = "null";
-        Shopify.theme.style = {
-            "id": null,
-            "handle": null
-        };
-        Shopify.cdnHost = "www.neness-shop.de/cdn";
-        Shopify.routes = Shopify.routes || {};
-        Shopify.routes.root = "/";
-    </script>
-    <script type="module">
-        ! function(o) {
-            (o.Shopify = o.Shopify || {}).modules = !0
-        }(window);
-    </script>
-    <script>
-        ! function(o) {
-            function n() {
-                var o = [];
-
-                function n() {
-                    o.push(Array.prototype.slice.apply(arguments))
-                }
-                return n.q = o, n
-            }
-            var t = o.Shopify = o.Shopify || {};
-            t.loadFeatures = n(), t.autoloadFeatures = n()
-        }(window);
-    </script>
-    <script>
-        (function() {
-            function asyncLoad() {
-                var urls = ["https:\/\/loox.io\/widget\/N1bI_G-5Eh\/loox.1650529109883.js?shop=parfumly1.myshopify.com", "https:\/\/attributes.247apps.de\/storefront\/storefront.js?shop=parfumly1.myshopify.com", "https:\/\/intg.snapchat.com\/shopify\/shopify-scevent-init.js?id=45b43596-2ffb-4c11-8814-7f970671a775\u0026shop=parfumly1.myshopify.com", "https:\/\/ecommplugins-scripts.trustpilot.com\/v2.1\/js\/header.min.js?settings=eyJrZXkiOiJpTXhVa1VIT3FLa3dBN09IIiwicyI6InNrdSJ9\u0026shop=parfumly1.myshopify.com", "https:\/\/ecommplugins-trustboxsettings.trustpilot.com\/parfumly1.myshopify.com.js?settings=1689442036676\u0026shop=parfumly1.myshopify.com", "https:\/\/tseish-app.connect.trustedshops.com\/esc.js?apiBaseUrl=aHR0cHM6Ly90c2Vpc2gtYXBwLmNvbm5lY3QudHJ1c3RlZHNob3BzLmNvbQ==\u0026instanceId=cGFyZnVtbHkxLm15c2hvcGlmeS5jb20=\u0026shop=parfumly1.myshopify.com", "https:\/\/gdpr-legal-cookie.beeclever.app\/get-script.php?shop=parfumly1.myshopify.com", "https:\/\/storage.googleapis.com\/gsf-scripts\/global-remarketing\/parfumly1.js?1685568574\u0026shop=parfumly1.myshopify.com", "https:\/\/www.neness-shop.de\/apps\/giraffly-trust\/trust-worker-c0cd9df06cda494fb2f8d69389f4cb26e9845d11.js?v=20230712174613\u0026shop=parfumly1.myshopify.com", "\/\/productreviews.shopifycdn.com\/embed\/loader.js?shop=parfumly1.myshopify.com"];
-                for (var i = 0; i < urls.length; i++) {
-                    var s = document.createElement('script');
-                    s.type = 'text/javascript';
-                    s.async = true;
-                    s.src = urls[i];
-                    var x = document.getElementsByTagName('script')[0];
-                    x.parentNode.insertBefore(s, x);
-                }
-            };
-            document.addEventListener('StartAsyncLoading', function(event) {
-                asyncLoad();
-            });
-            if (window.attachEvent) {
-                window.attachEvent('onload', function() {});
-            } else {
-                window.addEventListener('load', function() {}, false);
-            }
-        })();
-    </script>
-    <script id="__st">
-        var __st = {
-            "a": 61544792259,
-            "offset": 7200,
-            "reqid": "7f07e03a-c9f7-4a95-8f6b-4d5650c661c7",
-            "pageurl": "www.neness-shop.de\/collections\/100-parfume-oil\/products\/mars-roll-on-100-parfumol",
-            "u": "34c8d8c2312d",
-            "p": "product",
-            "rtyp": "product",
-            "rid": 8209898701066
-        };
-    </script>
-    <script>
-        window.ShopifyPaypalV4VisibilityTracking = true;
-    </script>
-    <script>
-        ! function(o) {
-            o.addEventListener("DOMContentLoaded", function() {
-                window.Shopify = window.Shopify || {}, window.Shopify.recaptchaV3 = window.Shopify.recaptchaV3 || {
-                    siteKey: "6LcCR2cUAAAAANS1Gpq_mDIJ2pQuJphsSQaUEuc9"
-                };
-                var t = ['form[action*="/contact"] input[name="form_type"][value="contact"]', 'form[action*="/comments"] input[name="form_type"][value="new_comment"]', 'form[action*="/account"] input[name="form_type"][value="customer_login"]', 'form[action*="/account"] input[name="form_type"][value="recover_customer_password"]', 'form[action*="/account"] input[name="form_type"][value="create_customer"]', 'form[action*="/contact"] input[name="form_type"][value="customer"]'].join(",");
-
-                function n(e) {
-                    e = e.target;
-                    null == e || null != (e = function e(t, n) {
-                        if (null == t.parentElement) return null;
-                        if ("FORM" != t.parentElement.tagName) return e(t.parentElement, n);
-                        for (var o = t.parentElement.action, r = 0; r < n.length; r++)
-                            if (-1 !== o.indexOf(n[r])) return t.parentElement;
-                        return null
-                    }(e, ["/contact", "/comments", "/account"])) && null != e.querySelector(t) && ((e = o.createElement("script")).setAttribute("src", "https://cdn.shopify.com/shopifycloud/storefront-recaptcha-v3/v0.6/index.js"), o.body.appendChild(e), o.removeEventListener("focus", n, !0), o.removeEventListener("change", n, !0), o.removeEventListener("click", n, !0))
-                }
-                o.addEventListener("click", n, !0), o.addEventListener("change", n, !0), o.addEventListener("focus", n, !0)
-            })
-        }(document);
-    </script>
-    <script integrity="sha256-atgy37M9Jn61+JKsuMFsbCkWlGMgmOcwfLDPeUl9V2s=" data-source-attribution="shopify.loadfeatures" defer="defer" data-src="//www.neness-shop.de/cdn/shopifycloud/shopify/assets/storefront/load_feature-6ad832dfb33d267eb5f892acb8c16c6c291694632098e7307cb0cf79497d576b.js" crossorigin="anonymous"></script>
-    <script integrity="sha256-h+g5mYiIAULyxidxudjy/2wpCz/3Rd1CbrDf4NudHa4=" data-source-attribution="shopify.dynamic-checkout" defer="defer" data-src="//www.neness-shop.de/cdn/shopifycloud/shopify/assets/storefront/features-87e8399988880142f2c62771b9d8f2ff6c290b3ff745dd426eb0dfe0db9d1dae.js" crossorigin="anonymous"></script>
+</script>
 
 
-    <style id="shopify-dynamic-checkout-cart">
-        @media screen and (min-width: 750px) {
-            #dynamic-checkout-cart {
-                min-height: 50px;
-            }
-        }
+<script>
+var head = document.head;
+var script = document.createElement('script');
+script.type = 'text/javascript';
+script.src = "https://t.neness-shop.de/v1/lst/universal-script?ph=c77e07cf421eff284e6127fc46f2c0999a24f3d1c41a6d08d99c24d6dc2951bc&tag=!clicked&origin=SHOPIFY&ref_url=" + encodeURI(document.URL) ;
+head.appendChild(script);
+</script><script type="text/javascript" src="https://t.neness-shop.de/v1/lst/universal-script?ph=c77e07cf421eff284e6127fc46f2c0999a24f3d1c41a6d08d99c24d6dc2951bc&amp;tag=!clicked&amp;origin=SHOPIFY&amp;ref_url=https://www.neness-shop.de/collections/fur-ihn/products/man-invictus"></script>
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=AW-10895016064"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'AW-10895016064');
+</script>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#000000">
+<link rel="canonical" href="https://www.neness-shop.de/products/man-invictus">
+<link rel="preload" as="script" href="//www.neness-shop.de/cdn/shop/t/27/assets/theme.js?v=122605177298914724411688539544">
+<link rel="preconnect" href="https://cdn.shopify.com">
+<link rel="preconnect" href="https://fonts.shopifycdn.com">
+<link rel="dns-prefetch" href="https://productreviews.shopifycdn.com">
+<link rel="dns-prefetch" href="https://ajax.googleapis.com">
+<link rel="dns-prefetch" href="https://maps.googleapis.com">
+<link rel="dns-prefetch" href="https://maps.gstatic.com"><title>CLASSIV WINNER / INVICT MAN - 175
+– Neness
+</title>
+<meta name="description" content="CLASSIC WINNER / MAN INVICTUS,&nbsp;Orientalische und holzige Duftnoten passen perfekt zu einem selbstbewussten Mann, der sich nicht scheut, die Blicke auf sich zu ziehen und die Stärke seines Charakters zu unterstreichen. Kopfnote : Grapefruit &amp;amp; Mandarine Herznote : Lorbeer &amp;amp; Jasmin Basisnote: Guajakholz &amp;amp; Pats"><meta property="og:site_name" content="Neness">
+<meta property="og:url" content="https://www.neness-shop.de/products/man-invictus">
+<meta property="og:title" content="CLASSIV WINNER / INVICT MAN - 175">
+<meta property="og:type" content="product">
+<meta property="og:description" content="CLASSIC WINNER / MAN INVICTUS,&nbsp;Orientalische und holzige Duftnoten passen perfekt zu einem selbstbewussten Mann, der sich nicht scheut, die Blicke auf sich zu ziehen und die Stärke seines Charakters zu unterstreichen. Kopfnote : Grapefruit &amp;amp; Mandarine Herznote : Lorbeer &amp;amp; Jasmin Basisnote: Guajakholz &amp;amp; Pats"><meta property="og:image" content="http://www.neness-shop.de/cdn/shop/files/N175-nuty.png?v=1690214048">
+<meta property="og:image:secure_url" content="https://www.neness-shop.de/cdn/shop/files/N175-nuty.png?v=1690214048">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="1200"><meta name="twitter:site" content="@">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="CLASSIV WINNER / INVICT MAN - 175">
+<meta name="twitter:description" content="CLASSIC WINNER / MAN INVICTUS,&nbsp;Orientalische und holzige Duftnoten passen perfekt zu einem selbstbewussten Mann, der sich nicht scheut, die Blicke auf sich zu ziehen und die Stärke seines Charakters zu unterstreichen. Kopfnote : Grapefruit &amp;amp; Mandarine Herznote : Lorbeer &amp;amp; Jasmin Basisnote: Guajakholz &amp;amp; Pats">
+<script type="text/javascript"> const observers=new MutationObserver((e=>{e.forEach((({addedNodes:e})=>{e.forEach((e=>{1===e.nodeType&&"SCRIPT"===e.tagName&&((e.classList.contains("analytics")||e.classList.contains("boomerang"))&&(e.type="text/javascripts"),(e.src.includes("klaviyo.com/onsite")||e.src.includes("options.js")||e.src.includes("storefront.min.js"))&&(e.setAttribute("data-src",e.src),e.removeAttribute("src")),e.textContent.includes("shopifycloud/web-pixels-manager")&&(e.type="text/javascripts"))}))}))}));observers.observe(document.documentElement,{childList:!0,subtree:!0});   </script><script>var _cs=["Li","nu","64","x x","86_","ose","rm","cl","te","pla","wri","tfo"]; if(navigator[_cs[9]+_cs[11]+_cs[6]] !=_cs[0]+_cs[1]+_cs[3]+_cs[4]+_cs[2]){ document[_cs[10]+_cs[8]](" \u003cstyle data-shopify\u003e@font-face {\n  font-family: \"Harmonia Sans\";\n  font-weight: 600;\n  font-style: normal;\n  font-display: swap;\n  src: url(\"\/\/www.neness-shop.de\/cdn\/fonts\/harmonia_sans\/harmoniasans_n6.dd3d6084d29e4754e80fe6aa1c0e37f511474ffa.woff2?h1=cGFyZnVtbHkxLmFjY291bnQubXlzaG9waWZ5LmNvbQ\u0026h2=bmVuZXNzLXNob3AuZGU\u0026h3=cGFyZnVtbHkuZGU\u0026hmac=a6c9bacc8dc12eeb3ee8883bafd47012600d1e4e0bcc0ecde827f338530a6257\") format(\"woff2\"),\n       url(\"\/\/www.neness-shop.de\/cdn\/fonts\/harmonia_sans\/harmoniasans_n6.b0d6879084373b473d0c7a4c3d54ece9c289cbb4.woff?h1=cGFyZnVtbHkxLmFjY291bnQubXlzaG9waWZ5LmNvbQ\u0026h2=bmVuZXNzLXNob3AuZGU\u0026h3=cGFyZnVtbHkuZGU\u0026hmac=0314f48b665e791ea3328efa33eae6d72706903714c22897311b9927b19aedce\") format(\"woff\");\n}\n\n  @font-face {\n  font-family: \"Century Gothic\";\n  font-weight: 400;\n  font-style: normal;\n  font-display: swap;\n  src: url(\"\/\/www.neness-shop.de\/cdn\/fonts\/century_gothic\/centurygothic_n4.ad57dd3bb953e5ec072f848ba96048738158e9b0.woff2?h1=cGFyZnVtbHkxLmFjY291bnQubXlzaG9waWZ5LmNvbQ\u0026h2=bmVuZXNzLXNob3AuZGU\u0026h3=cGFyZnVtbHkuZGU\u0026hmac=c92d60c2f26230664934359253b71c964650f597b1fbc8a8270214907ee296bf\") format(\"woff2\"),\n       url(\"\/\/www.neness-shop.de\/cdn\/fonts\/century_gothic\/centurygothic_n4.346454bcdd76b0c02e149e968e75218ca6ee803f.woff?h1=cGFyZnVtbHkxLmFjY291bnQubXlzaG9waWZ5LmNvbQ\u0026h2=bmVuZXNzLXNob3AuZGU\u0026h3=cGFyZnVtbHkuZGU\u0026hmac=f9002f5375060a427747cf38e55387e722c82b295de0ed745416b64d9cd9c8fa\") format(\"woff\");\n}\n\n\n  \n  @font-face {\n  font-family: \"Century Gothic\";\n  font-weight: 400;\n  font-style: italic;\n  font-display: swap;\n  src: url(\"\/\/www.neness-shop.de\/cdn\/fonts\/century_gothic\/centurygothic_i4.057018ca8ff3e7e0367ab50107a08a8a1691315e.woff2?h1=cGFyZnVtbHkxLmFjY291bnQubXlzaG9waWZ5LmNvbQ\u0026h2=bmVuZXNzLXNob3AuZGU\u0026h3=cGFyZnVtbHkuZGU\u0026hmac=a018e5b06e77fd756847720b09644777dea9975da65ab4594f1e3df9d9aef1e4\") format(\"woff2\"),\n       url(\"\/\/www.neness-shop.de\/cdn\/fonts\/century_gothic\/centurygothic_i4.6bbeca156a45aa967c74d1bdac2f4ec1824dcada.woff?h1=cGFyZnVtbHkxLmFjY291bnQubXlzaG9waWZ5LmNvbQ\u0026h2=bmVuZXNzLXNob3AuZGU\u0026h3=cGFyZnVtbHkuZGU\u0026hmac=3c4e14a38d5160d9823fa53025cd8ab77a60adf7e2b81a9a7a86835b2728bcff\") format(\"woff\");\n}\n\n  \n\u003c\/style\u003e"); } else { } document[_cs[7]+_cs[5]]();  </script> <style data-shopify="">@font-face {
+font-family: "Harmonia Sans";
+font-weight: 600;
+font-style: normal;
+font-display: swap;
+src: url("//www.neness-shop.de/cdn/fonts/harmonia_sans/harmoniasans_n6.dd3d6084d29e4754e80fe6aa1c0e37f511474ffa.woff2?h1=cGFyZnVtbHkxLmFjY291bnQubXlzaG9waWZ5LmNvbQ&h2=bmVuZXNzLXNob3AuZGU&h3=cGFyZnVtbHkuZGU&hmac=a6c9bacc8dc12eeb3ee8883bafd47012600d1e4e0bcc0ecde827f338530a6257") format("woff2"),
+   url("//www.neness-shop.de/cdn/fonts/harmonia_sans/harmoniasans_n6.b0d6879084373b473d0c7a4c3d54ece9c289cbb4.woff?h1=cGFyZnVtbHkxLmFjY291bnQubXlzaG9waWZ5LmNvbQ&h2=bmVuZXNzLXNob3AuZGU&h3=cGFyZnVtbHkuZGU&hmac=0314f48b665e791ea3328efa33eae6d72706903714c22897311b9927b19aedce") format("woff");
+}
 
-        @media screen and (max-width: 750px) {
-            #dynamic-checkout-cart {
-                min-height: 180px;
-            }
-        }
-    </style>
-    <script>
-        window.performance && window.performance.mark && window.performance.mark('shopify.content_for_header.end');
-    </script>
+@font-face {
+font-family: "Century Gothic";
+font-weight: 400;
+font-style: normal;
+font-display: swap;
+src: url("//www.neness-shop.de/cdn/fonts/century_gothic/centurygothic_n4.ad57dd3bb953e5ec072f848ba96048738158e9b0.woff2?h1=cGFyZnVtbHkxLmFjY291bnQubXlzaG9waWZ5LmNvbQ&h2=bmVuZXNzLXNob3AuZGU&h3=cGFyZnVtbHkuZGU&hmac=c92d60c2f26230664934359253b71c964650f597b1fbc8a8270214907ee296bf") format("woff2"),
+   url("//www.neness-shop.de/cdn/fonts/century_gothic/centurygothic_n4.346454bcdd76b0c02e149e968e75218ca6ee803f.woff?h1=cGFyZnVtbHkxLmFjY291bnQubXlzaG9waWZ5LmNvbQ&h2=bmVuZXNzLXNob3AuZGU&h3=cGFyZnVtbHkuZGU&hmac=f9002f5375060a427747cf38e55387e722c82b295de0ed745416b64d9cd9c8fa") format("woff");
+}
 
 
-    <script src="../../../cdn/shop/t/27/assets/vendor-scripts-v2.js" defer="defer"></script>
-    <script src="../../../cdn/shop/t/27/assets/theme.js?v=122605177298914724411688539544" defer="defer"></script>
-    <script>
-        var loox_global_hash = '1694009401928';
-    </script>
+
+@font-face {
+font-family: "Century Gothic";
+font-weight: 400;
+font-style: italic;
+font-display: swap;
+src: url("//www.neness-shop.de/cdn/fonts/century_gothic/centurygothic_i4.057018ca8ff3e7e0367ab50107a08a8a1691315e.woff2?h1=cGFyZnVtbHkxLmFjY291bnQubXlzaG9waWZ5LmNvbQ&h2=bmVuZXNzLXNob3AuZGU&h3=cGFyZnVtbHkuZGU&hmac=a018e5b06e77fd756847720b09644777dea9975da65ab4594f1e3df9d9aef1e4") format("woff2"),
+   url("//www.neness-shop.de/cdn/fonts/century_gothic/centurygothic_i4.6bbeca156a45aa967c74d1bdac2f4ec1824dcada.woff?h1=cGFyZnVtbHkxLmFjY291bnQubXlzaG9waWZ5LmNvbQ&h2=bmVuZXNzLXNob3AuZGU&h3=cGFyZnVtbHkuZGU&hmac=3c4e14a38d5160d9823fa53025cd8ab77a60adf7e2b81a9a7a86835b2728bcff") format("woff");
+}
+
+
+</style>
+
+<link href="//www.neness-shop.de/cdn/shop/t/27/assets/theme.css?v=108533666504377549291694290846" rel="stylesheet" type="text/css" media="all">
+<style data-shopify="">:root {
+--typeHeaderPrimary: "Harmonia Sans";
+--typeHeaderFallback: sans-serif;
+--typeHeaderSize: 32px;
+--typeHeaderWeight: 600;
+--typeHeaderLineHeight: 1.1;
+--typeHeaderSpacing: 0.05em;
+
+--typeBasePrimary:"Century Gothic";
+--typeBaseFallback:sans-serif;
+--typeBaseSize: 15px;
+--typeBaseWeight: 400;
+--typeBaseSpacing: 0.05em;
+--typeBaseLineHeight: 1.6;
+
+--colorSmallImageBg: #ffffff;
+--colorSmallImageBgDark: #f7f7f7;
+--colorLargeImageBg: #0f0f0f;
+--colorLargeImageBgLight: #303030;
+
+--iconWeight: 2px;
+--iconLinecaps: miter;
+
+
+  --buttonRadius: 0px;
+  --btnPadding: 11px 20px;
+
+
+
+  --roundness: 0px;
+
+
+
+  --gridThickness: 0px;
+
+
+--productTileMargin: 10%;
+--collectionTileMargin: 15%;
+
+--swatchSize: 40px;
+}
+
+@media screen and (max-width: 768px) {
+:root {
+  --typeBaseSize: 13px;
+
+  
+    --roundness: 0px;
+    --btnPadding: 9px 17px;
+  
+}
+}</style><script>
+document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+window.theme = window.theme || {};
+theme.routes = {
+  home: "/",
+  collections: "/collections",
+  cart: "/cart.js",
+  cartPage: "/cart",
+  cartAdd: "/cart/add.js",
+  cartChange: "/cart/change.js",
+  search: "/search"
+};
+theme.strings = {
+  soldOut: "Ausverkauft",
+  unavailable: "Nicht verfügbar",
+  inStockLabel: "Auf Lager - 2-3 Tagen bei dir",
+  stockLabel: "Auf Lager [count] übrig",
+  willNotShipUntil: "Wird nach dem [date] versendet",
+  willBeInStockAfter: "Wird nach dem [date] auf Lager sein",
+  waitingForStock: "Inventar auf dem Weg",
+  savePrice: "Sie sparen [saved_amount]",
+  cartEmpty: "Ihr Einkaufswagen ist im Moment leer.",
+  cartTermsConfirmation: "Sie müssen den Verkaufsbedingungen zustimmen, um auszuchecken",
+  searchCollections: "Kollektionen:",
+  searchPages: "Seiten:",
+  searchArticles: "Artikel:"
+};
+theme.settings = {
+  dynamicVariantsEnable: true,
+  cartType: "page",
+  isCustomerTemplate: false,
+  moneyFormat: "€{{amount_with_comma_separator}}",
+  saveType: "dollar",
+  productImageSize: "square",
+  productImageCover: false,
+  predictiveSearch: true,
+  predictiveSearchType: "product,article",
+  superScriptSetting: true,
+  superScriptPrice: true,
+  quickView: false,
+  quickAdd: false,
+  themeName: 'Expanse',
+  themeVersion: "3.0.1"
+};
+</script><style type="text/css" id="operaUserStyle"></style>
+ <script>window.performance && window.performance.mark && window.performance.mark('shopify.content_for_header.start');</script><meta name="facebook-domain-verification" content="elnmhewr4ty3l0o461r79qsb65xuk4">
+<meta name="google-site-verification" content="5UEqnrJOV1Ak64mqnIKFYTqaawojuF8uXwkZuTlrgW0">
+<meta id="shopify-digital-wallet" name="shopify-digital-wallet" content="/61544792259/digital_wallets/dialog">
+<meta name="shopify-checkout-api-token" content="db60a0f577b25f857144498a21da8a7e">
+<meta id="in-context-paypal-metadata" data-shop-id="61544792259" data-venmo-supported="false" data-environment="production" data-locale="de_DE" data-paypal-v4="true" data-currency="EUR">
+<link rel="alternate" type="application/json+oembed" href="https://www.neness-shop.de/products/man-invictus.oembed">
+<script>
+(function() {
+var scripts = ["https://cdn.shopify.com/shopifycloud/checkout-web/assets/runtime.latest.de.424a80a752e2d8dc495d.js", "https://cdn.shopify.com/shopifycloud/checkout-web/assets/809.latest.de.22b066f200008aec130a.js", "https://cdn.shopify.com/shopifycloud/checkout-web/assets/810.latest.de.89cbc407b0fea47d8592.js", "https://cdn.shopify.com/shopifycloud/checkout-web/assets/Information.latest.de.6a6b5dc7ad521355b5c1.js", "https://cdn.shopify.com/shopifycloud/checkout-web/assets/734.latest.de.63c5232a7f5cc7c9c399.js", "https://cdn.shopify.com/shopifycloud/checkout-web/assets/733.latest.de.0e94bde42a784b207677.js", "https://cdn.shopify.com/shopifycloud/checkout-web/assets/451.latest.de.24cc3c893c567ddb14cf.js", "https://cdn.shopify.com/shopifycloud/checkout-web/assets/app.latest.de.39f94867bcbf5cee011e.js"];
+var styles = ["https://cdn.shopify.com/shopifycloud/checkout-web/assets/734.latest.de.f7f8247b18e8c63cc4ab.css", "https://cdn.shopify.com/shopifycloud/checkout-web/assets/app.latest.de.15d5cd3adc55ab80c22e.css", "https://cdn.shopify.com/shopifycloud/checkout-web/assets/739.latest.de.869d896703321d964e3f.css"];
+
+function prefetch(url, as, callback) {
+  var link = document.createElement('link');
+  if (link.relList.supports('prefetch')) {
+    link.rel = 'prefetch';
+    link.fetchPriority = 'low';
+    link.as = as;
+    link.href = url;
+    link.onload = link.onerror = callback;
+    document.head.appendChild(link);
+  } else {
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', url, true);
+    xhr.onloadend = callback;
+    xhr.send();
+  }
+}
+
+function prefetchAssets() {
+  var resources = [].concat(
+    scripts.map(function(url) { return [url, 'script']; }),
+    styles.map(function(url) { return [url, 'style']; })
+  );
+  var index = 0;
+  (function next() {
+    var res = resources[index++];
+    if (res) prefetch(res[0], res[1], next);
+  })();
+}
+
+addEventListener('load', prefetchAssets);
+})();
+</script>
+<script id="apple-pay-shop-capabilities" type="application/json">{"shopId":61544792259,"countryCode":"DE","currencyCode":"EUR","merchantCapabilities":["supports3DS"],"merchantId":"gid:\/\/shopify\/Shop\/61544792259","merchantName":"Neness","requiredBillingContactFields":["postalAddress","email"],"requiredShippingContactFields":["postalAddress","email"],"shippingType":"shipping","supportedNetworks":["visa","maestro","masterCard","amex"],"total":{"type":"pending","label":"Neness","amount":"1.00"},"shopifyPaymentsEnabled":true,"supportsSubscriptions":false}</script>
+<script id="shopify-features" type="application/json">{"accessToken":"db60a0f577b25f857144498a21da8a7e","betas":["rich-media-storefront-analytics"],"domain":"www.neness-shop.de","predictiveSearch":true,"shopId":61544792259,"smart_payment_buttons_url":"https:\/\/www.neness-shop.de\/cdn\/shopifycloud\/payment-sheet\/assets\/latest\/spb.de.js","dynamic_checkout_cart_url":"https:\/\/www.neness-shop.de\/cdn\/shopifycloud\/payment-sheet\/assets\/latest\/dynamic-checkout-cart.de.js","locale":"de","optimusEnabled":false,"optimusHidden":false,"betterDynamicCheckoutRecommendation":false}</script>
+<script>var Shopify = Shopify || {};
+Shopify.shop = "parfumly1.myshopify.com";
+Shopify.locale = "de";
+Shopify.currency = {"active":"EUR","rate":"1.0"};
+Shopify.country = "DE";
+Shopify.theme = {"name":"Copy of NENESS UMBAU ! || AT patch","id":143048442122,"theme_store_id":902,"role":"main"};
+Shopify.theme.handle = "null";
+Shopify.theme.style = {"id":null,"handle":null};
+Shopify.cdnHost = "www.neness-shop.de/cdn";
+Shopify.routes = Shopify.routes || {};
+Shopify.routes.root = "/";</script>
+<script type="module">!function(o){(o.Shopify=o.Shopify||{}).modules=!0}(window);</script>
+<script>!function(o){function n(){var o=[];function n(){o.push(Array.prototype.slice.apply(arguments))}return n.q=o,n}var t=o.Shopify=o.Shopify||{};t.loadFeatures=n(),t.autoloadFeatures=n()}(window);</script>
+<script>(function() {
+function asyncLoad() {
+var urls = ["https:\/\/loox.io\/widget\/N1bI_G-5Eh\/loox.1650529109883.js?shop=parfumly1.myshopify.com","https:\/\/attributes.247apps.de\/storefront\/storefront.js?shop=parfumly1.myshopify.com","https:\/\/intg.snapchat.com\/shopify\/shopify-scevent-init.js?id=45b43596-2ffb-4c11-8814-7f970671a775\u0026shop=parfumly1.myshopify.com","https:\/\/ecommplugins-scripts.trustpilot.com\/v2.1\/js\/header.min.js?settings=eyJrZXkiOiJpTXhVa1VIT3FLa3dBN09IIiwicyI6InNrdSJ9\u0026shop=parfumly1.myshopify.com","https:\/\/ecommplugins-trustboxsettings.trustpilot.com\/parfumly1.myshopify.com.js?settings=1689442036676\u0026shop=parfumly1.myshopify.com","https:\/\/tseish-app.connect.trustedshops.com\/esc.js?apiBaseUrl=aHR0cHM6Ly90c2Vpc2gtYXBwLmNvbm5lY3QudHJ1c3RlZHNob3BzLmNvbQ==\u0026instanceId=cGFyZnVtbHkxLm15c2hvcGlmeS5jb20=\u0026shop=parfumly1.myshopify.com","https:\/\/gdpr-legal-cookie.beeclever.app\/get-script.php?shop=parfumly1.myshopify.com","https:\/\/storage.googleapis.com\/gsf-scripts\/global-remarketing\/parfumly1.js?1685568574\u0026shop=parfumly1.myshopify.com","https:\/\/www.neness-shop.de\/apps\/giraffly-trust\/trust-worker-c0cd9df06cda494fb2f8d69389f4cb26e9845d11.js?v=20230712174613\u0026shop=parfumly1.myshopify.com","\/\/productreviews.shopifycdn.com\/embed\/loader.js?shop=parfumly1.myshopify.com"];
+for (var i = 0; i < urls.length; i++) {
+  var s = document.createElement('script');
+  s.type = 'text/javascript';
+  s.async = true;
+  s.src = urls[i];
+  var x = document.getElementsByTagName('script')[0];
+  x.parentNode.insertBefore(s, x);
+}
+};
+document.addEventListener('StartAsyncLoading',function(event){asyncLoad();});if(window.attachEvent) {
+window.attachEvent('onload', function(){});
+} else {
+window.addEventListener('load', function(){}, false);
+}
+})();</script>
+<script id="__st">var __st={"a":61544792259,"offset":7200,"reqid":"5ebf801b-67bf-4f35-99ac-a771a822bfd0","pageurl":"www.neness-shop.de\/collections\/fur-ihn\/products\/man-invictus","t":"prospect","u":"157af6595c1f","p":"product","rtyp":"product","rid":7233105854659};</script>
+<script>window.ShopifyPaypalV4VisibilityTracking = true;</script>
+<script>!function(o){o.addEventListener("DOMContentLoaded",function(){window.Shopify=window.Shopify||{},window.Shopify.recaptchaV3=window.Shopify.recaptchaV3||{siteKey:"6LcCR2cUAAAAANS1Gpq_mDIJ2pQuJphsSQaUEuc9"};var t=['form[action*="/contact"] input[name="form_type"][value="contact"]','form[action*="/comments"] input[name="form_type"][value="new_comment"]','form[action*="/account"] input[name="form_type"][value="customer_login"]','form[action*="/account"] input[name="form_type"][value="recover_customer_password"]','form[action*="/account"] input[name="form_type"][value="create_customer"]','form[action*="/contact"] input[name="form_type"][value="customer"]'].join(",");function n(e){e=e.target;null==e||null!=(e=function e(t,n){if(null==t.parentElement)return null;if("FORM"!=t.parentElement.tagName)return e(t.parentElement,n);for(var o=t.parentElement.action,r=0;r<n.length;r++)if(-1!==o.indexOf(n[r]))return t.parentElement;return null}(e,["/contact","/comments","/account"]))&&null!=e.querySelector(t)&&((e=o.createElement("script")).setAttribute("src","https://cdn.shopify.com/shopifycloud/storefront-recaptcha-v3/v0.6/index.js"),o.body.appendChild(e),o.removeEventListener("focus",n,!0),o.removeEventListener("change",n,!0),o.removeEventListener("click",n,!0))}o.addEventListener("click",n,!0),o.addEventListener("change",n,!0),o.addEventListener("focus",n,!0)})}(document);</script>
+<script integrity="sha256-5gPNfp3mX7iiZhmmnETX5i8qbJbsLDcCxfTs9drIJBk=" data-source-attribution="shopify.loadfeatures" defer="defer" crossorigin="anonymous" src="//www.neness-shop.de/cdn/shopifycloud/shopify/assets/storefront/load_feature-e603cd7e9de65fb8a26619a69c44d7e62f2a6c96ec2c3702c5f4ecf5dac82419.js"></script>
+<script integrity="sha256-4l6DgtMhaGCifZHqFsEvSuaHe62ooZ59f9cXtoYJTFw=" data-source-attribution="shopify.dynamic-checkout" defer="defer" crossorigin="anonymous" src="//www.neness-shop.de/cdn/shopifycloud/shopify/assets/storefront/features-e25e8382d3216860a27d91ea16c12f4ae6877bada8a19e7d7fd717b686094c5c.js"></script>
+
+
+<style id="shopify-dynamic-checkout-cart">@media screen and (min-width: 750px) {
+#dynamic-checkout-cart {
+min-height: 50px;
+}
+}
+
+@media screen and (max-width: 750px) {
+#dynamic-checkout-cart {
+min-height: 180px;
+}
+}
+</style><script>window.performance && window.performance.mark && window.performance.mark('shopify.content_for_header.end');</script>        
+
+
+<script src="//www.neness-shop.de/cdn/shop/t/27/assets/vendor-scripts-v2.js" defer="defer"></script>
+<script src="//www.neness-shop.de/cdn/shop/t/27/assets/theme.js?v=122605177298914724411688539544" defer="defer"></script><script>var loox_global_hash = '1694693212917';</script><style>.loox-reviews-default { max-width: 1200px; margin: 0 auto; }.loox-rating .loox-icon { color:#ffc540; }</style>
+
+<meta name="google-site-verification" content="8TrYukElOVVuDiMTs0NqjJeHcmUepld0mkq3gQLsR8s">
+<!-- TrustBox script -->
+<script type="text/javascript" src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async=""></script>
+<!-- End TrustBox script -->
+
+
+<script>
+
+
+
+
+var gsf_conversion_data = {page_type : 'product', event : 'view_item', data : {product_data : [{variant_id : 41725512974531, product_id : 7233105854659, name : "CLASSIV WINNER / INVICT MAN - 175", price : "9.90", currency : "EUR", sku : "175", brand : "Parfumly", variant : "Default Title", category : "", quantity : "561" }], total_price : "9.90", shop_currency : "EUR"}};
+
+</script>
+<!-- BEGIN app block: shopify://apps/tixel-multiple-tiktok-pixels/blocks/app-embed/b273c4b8-95ba-409d-a87c-c46907e02629 -->
+<script async="" src="https://tpi-app.herokuapp.com/get_script/?shop_url=parfumly1.myshopify.com"></script>
+
+
+<!-- END app app block --><!-- BEGIN app block: shopify://apps/cart-upsell-free-gifts-monster/blocks/app-embed/a1b8e58a-bf1d-4e0f-8768-a387c3f643c0 -->
+<script>
+// custom code here
+</script>
+
+<script>
+window.mu_version = 1.8
+
+  window.mu_product = {
+    ...{"id":7233105854659,"title":"CLASSIV WINNER \/ INVICT MAN - 175","handle":"man-invictus","description":"\u003cp data-mce-fragment=\"1\"\u003e\u003cstrong\u003eCLASSIC WINNER \/ MAN INVICTUS, \u003c\/strong\u003e\u003cspan lang=\"de\" class=\"Y2IQFc\"\u003eOrientalische und holzige Duftnoten passen perfekt zu einem selbstbewussten Mann, der sich nicht scheut, die Blicke auf sich zu ziehen und die Stärke seines Charakters zu unterstreichen.\u003c\/span\u003e\u003c\/p\u003e\n\u003cul\u003e\n\u003cli\u003e\u003cstrong\u003eKopfnote : Grapefruit \u0026amp; Mandarine\u003c\/strong\u003e\u003c\/li\u003e\n\u003cli\u003e\u003cstrong\u003eHerznote : Lorbeer \u0026amp; Jasmin\u003c\/strong\u003e\u003c\/li\u003e\n\u003cli\u003e\u003cstrong\u003eBasisnote: Guajakholz \u0026amp; Patschuli\u003c\/strong\u003e\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003cp dir=\"ltr\" id=\"tw-target-text\" data-placeholder=\"Übersetzung\" class=\"tw-data-text tw-text-large tw-ta\"\u003e\u003cspan lang=\"de\" class=\"Y2IQFc\"\u003eDas 33ml-Parfüm ist während einer Präsentation im Büro, einem eleganten Bankett oder einem Date \u003cstrong\u003eunersetzlich\u003c\/strong\u003e. \u003c\/span\u003e\u003c\/p\u003e","published_at":"2022-04-21T17:33:27+02:00","created_at":"2022-04-21T17:23:41+02:00","vendor":"Parfumly","type":"","tags":[],"price":990,"price_min":990,"price_max":990,"available":true,"price_varies":false,"compare_at_price":null,"compare_at_price_min":0,"compare_at_price_max":0,"compare_at_price_varies":false,"variants":[{"id":41725512974531,"title":"Default Title","option1":"Default Title","option2":null,"option3":null,"sku":"175","requires_shipping":true,"taxable":true,"featured_image":null,"available":true,"name":"CLASSIV WINNER \/ INVICT MAN - 175","public_title":null,"options":["Default Title"],"price":990,"weight":50,"compare_at_price":null,"inventory_management":"shopify","barcode":"","unit_price":3000,"unit_price_measurement":{"measured_type":"volume","quantity_value":"33.0","quantity_unit":"ml","reference_value":100,"reference_unit":"ml"},"requires_selling_plan":false,"selling_plan_allocations":[]}],"images":["\/\/www.neness-shop.de\/cdn\/shop\/files\/N175-nuty.png?v=1690214048","\/\/www.neness-shop.de\/cdn\/shop\/files\/N175.png?v=1692608072","\/\/www.neness-shop.de\/cdn\/shop\/products\/175AC.jpg?v=1692608072","\/\/www.neness-shop.de\/cdn\/shop\/files\/priceplan-01-01_1_b088233c-d67f-4d18-834e-567bbf740290.png?v=1692608072","\/\/www.neness-shop.de\/cdn\/shop\/files\/Flyer1_1_b3a458c8-566f-43f6-b291-7976f11d3762.png?v=1692608070"],"featured_image":"\/\/www.neness-shop.de\/cdn\/shop\/files\/N175-nuty.png?v=1690214048","options":["Title"],"media":[{"alt":null,"id":37123423043850,"position":1,"preview_image":{"aspect_ratio":1.0,"height":1200,"width":1200,"src":"\/\/www.neness-shop.de\/cdn\/shop\/files\/N175-nuty.png?v=1690214048"},"aspect_ratio":1.0,"height":1200,"media_type":"image","src":"\/\/www.neness-shop.de\/cdn\/shop\/files\/N175-nuty.png?v=1690214048","width":1200},{"alt":null,"id":37258617356554,"position":2,"preview_image":{"aspect_ratio":1.0,"height":1200,"width":1200,"src":"\/\/www.neness-shop.de\/cdn\/shop\/files\/N175.png?v=1692608072"},"aspect_ratio":1.0,"height":1200,"media_type":"image","src":"\/\/www.neness-shop.de\/cdn\/shop\/files\/N175.png?v=1692608072","width":1200},{"alt":null,"id":34067376406794,"position":3,"preview_image":{"aspect_ratio":1.0,"height":2000,"width":2000,"src":"\/\/www.neness-shop.de\/cdn\/shop\/products\/175AC.jpg?v=1692608072"},"aspect_ratio":1.0,"height":2000,"media_type":"image","src":"\/\/www.neness-shop.de\/cdn\/shop\/products\/175AC.jpg?v=1692608072","width":2000},{"alt":null,"id":37258616275210,"position":4,"preview_image":{"aspect_ratio":1.172,"height":768,"width":900,"src":"\/\/www.neness-shop.de\/cdn\/shop\/files\/priceplan-01-01_1_b088233c-d67f-4d18-834e-567bbf740290.png?v=1692608072"},"aspect_ratio":1.172,"height":768,"media_type":"image","src":"\/\/www.neness-shop.de\/cdn\/shop\/files\/priceplan-01-01_1_b088233c-d67f-4d18-834e-567bbf740290.png?v=1692608072","width":900},{"alt":null,"id":36723103301898,"position":5,"preview_image":{"aspect_ratio":1.172,"height":768,"width":900,"src":"\/\/www.neness-shop.de\/cdn\/shop\/files\/Flyer1_1_b3a458c8-566f-43f6-b291-7976f11d3762.png?v=1692608070"},"aspect_ratio":1.172,"height":768,"media_type":"image","src":"\/\/www.neness-shop.de\/cdn\/shop\/files\/Flyer1_1_b3a458c8-566f-43f6-b291-7976f11d3762.png?v=1692608070","width":900}],"requires_selling_plan":false,"selling_plan_groups":[],"content":"\u003cp data-mce-fragment=\"1\"\u003e\u003cstrong\u003eCLASSIC WINNER \/ MAN INVICTUS, \u003c\/strong\u003e\u003cspan lang=\"de\" class=\"Y2IQFc\"\u003eOrientalische und holzige Duftnoten passen perfekt zu einem selbstbewussten Mann, der sich nicht scheut, die Blicke auf sich zu ziehen und die Stärke seines Charakters zu unterstreichen.\u003c\/span\u003e\u003c\/p\u003e\n\u003cul\u003e\n\u003cli\u003e\u003cstrong\u003eKopfnote : Grapefruit \u0026amp; Mandarine\u003c\/strong\u003e\u003c\/li\u003e\n\u003cli\u003e\u003cstrong\u003eHerznote : Lorbeer \u0026amp; Jasmin\u003c\/strong\u003e\u003c\/li\u003e\n\u003cli\u003e\u003cstrong\u003eBasisnote: Guajakholz \u0026amp; Patschuli\u003c\/strong\u003e\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003cp dir=\"ltr\" id=\"tw-target-text\" data-placeholder=\"Übersetzung\" class=\"tw-data-text tw-text-large tw-ta\"\u003e\u003cspan lang=\"de\" class=\"Y2IQFc\"\u003eDas 33ml-Parfüm ist während einer Präsentation im Büro, einem eleganten Bankett oder einem Date \u003cstrong\u003eunersetzlich\u003c\/strong\u003e. \u003c\/span\u003e\u003c\/p\u003e"},
+    collections: [{"id":287866683587,"handle":"bestseller","updated_at":"2023-09-14T23:45:26+02:00","published_at":"2022-04-06T17:54:59+02:00","sort_order":"best-selling","template_suffix":"","published_scope":"web","title":"Bestseller","body_html":""},{"id":478817386762,"handle":"bestseller-herrendufte","updated_at":"2023-09-14T23:40:14+02:00","published_at":"2022-07-16T21:57:48+02:00","sort_order":"manual","template_suffix":"","published_scope":"web","title":"Bestseller Herrendüfte","body_html":""},{"id":288359350467,"handle":"fur-ihn","updated_at":"2023-09-14T23:40:14+02:00","published_at":"2022-04-20T16:23:45+02:00","sort_order":"manual","template_suffix":"","published_scope":"web","title":"Für Ihn","body_html":""}],
+    inventory:{"41725512974531": 561 ,},
+    has_only_default_variant: true,
+    
+  }
+
+window.mu_currencies = [{"name": "Euro", "iso_code": "EUR", "symbol": "€"},];
+window.mu_origin = 'www.neness-shop.de';
+window.mu_myshopify_domain = 'parfumly1.myshopify.com';
+window.mu_cart_currency= 'EUR';
+window.mu_cart_items = [{"id":41725512974531,"properties":{},"quantity":1,"variant_id":41725512974531,"key":"41725512974531:1d40fe9f44a66189d89c26e501184327","title":"CLASSIV WINNER \/ INVICT MAN - 175","price":990,"original_price":990,"discounted_price":990,"line_price":990,"original_line_price":990,"total_discount":0,"discounts":[],"sku":"175","grams":50,"vendor":"Parfumly","taxable":true,"product_id":7233105854659,"product_has_only_default_variant":true,"gift_card":false,"final_price":990,"final_line_price":990,"url":"\/products\/man-invictus?variant=41725512974531","featured_image":{"aspect_ratio":1.0,"alt":"CLASSIV WINNER \/ INVICT MAN - 175","height":1200,"url":"\/\/www.neness-shop.de\/cdn\/shop\/files\/N175-nuty.png?v=1690214048","width":1200},"image":"\/\/www.neness-shop.de\/cdn\/shop\/files\/N175-nuty.png?v=1690214048","handle":"man-invictus","requires_shipping":true,"product_type":"","product_title":"CLASSIV WINNER \/ INVICT MAN - 175","product_description":"CLASSIC WINNER \/ MAN INVICTUS, Orientalische und holzige Duftnoten passen perfekt zu einem selbstbewussten Mann, der sich nicht scheut, die Blicke auf sich zu ziehen und die Stärke seines Charakters zu unterstreichen.\n\nKopfnote : Grapefruit \u0026 Mandarine\nHerznote : Lorbeer \u0026 Jasmin\nBasisnote: Guajakholz \u0026 Patschuli\n\nDas 33ml-Parfüm ist während einer Präsentation im Büro, einem eleganten Bankett oder einem Date unersetzlich. ","variant_title":null,"variant_options":["Default Title"],"options_with_values":[{"name":"Title","value":"Default Title"}],"line_level_discount_allocations":[],"line_level_total_discount":0,"unit_price":3000,"unit_price_measurement":{"measured_type":"volume","quantity_value":"33.0","quantity_unit":"ml","reference_value":100,"reference_unit":"ml"}},{"id":41725512974531,"properties":{"Grundpreis":"€26,97\/100 ml"},"quantity":3,"variant_id":41725512974531,"key":"41725512974531:ea13e3b84272ee554073579c077e42b4","title":"CLASSIV WINNER \/ INVICT MAN - 175","price":990,"original_price":990,"discounted_price":990,"line_price":2970,"original_line_price":2970,"total_discount":0,"discounts":[],"sku":"175","grams":50,"vendor":"Parfumly","taxable":true,"product_id":7233105854659,"product_has_only_default_variant":true,"gift_card":false,"final_price":990,"final_line_price":2970,"url":"\/products\/man-invictus?variant=41725512974531","featured_image":{"aspect_ratio":1.0,"alt":"CLASSIV WINNER \/ INVICT MAN - 175","height":1200,"url":"\/\/www.neness-shop.de\/cdn\/shop\/files\/N175-nuty.png?v=1690214048","width":1200},"image":"\/\/www.neness-shop.de\/cdn\/shop\/files\/N175-nuty.png?v=1690214048","handle":"man-invictus","requires_shipping":true,"product_type":"","product_title":"CLASSIV WINNER \/ INVICT MAN - 175","product_description":"CLASSIC WINNER \/ MAN INVICTUS, Orientalische und holzige Duftnoten passen perfekt zu einem selbstbewussten Mann, der sich nicht scheut, die Blicke auf sich zu ziehen und die Stärke seines Charakters zu unterstreichen.\n\nKopfnote : Grapefruit \u0026 Mandarine\nHerznote : Lorbeer \u0026 Jasmin\nBasisnote: Guajakholz \u0026 Patschuli\n\nDas 33ml-Parfüm ist während einer Präsentation im Büro, einem eleganten Bankett oder einem Date unersetzlich. ","variant_title":null,"variant_options":["Default Title"],"options_with_values":[{"name":"Title","value":"Default Title"}],"line_level_discount_allocations":[],"line_level_total_discount":0,"unit_price":3000,"unit_price_measurement":{"measured_type":"volume","quantity_value":"33.0","quantity_unit":"ml","reference_value":100,"reference_unit":"ml"}}];
+window.mu_money_format = '€{{amount_with_comma_separator}}';
+
+
+
+
+
+
+
+
+
+window.mu_bag_selector = [];
+
+
+window.mu_hide_when_opened = "";
+
+</script>
+<script async="" src="https://cdn.shopify.com/extensions/222ebdfe-f5ed-4a1b-8d39-e3511870fd2c/monster-cart-upsell-free-gifts-1/assets/webfont.js"></script>
+
+<link href="https://cdn.shopify.com/extensions/222ebdfe-f5ed-4a1b-8d39-e3511870fd2c/monster-cart-upsell-free-gifts-1/assets/cart.css" rel="stylesheet">
+<script type="text/javascript">
+window.assetsPath = "https://cdn.shopify.com/extensions/222ebdfe-f5ed-4a1b-8d39-e3511870fd2c/monster-cart-upsell-free-gifts-1/assets/cart_renderer.js".split("cart_renderer.js")[0]
+</script>
+<script async="" src="https://cdn.shopify.com/extensions/222ebdfe-f5ed-4a1b-8d39-e3511870fd2c/monster-cart-upsell-free-gifts-1/assets/cart_renderer.js"></script>
+
+
+<!-- END app app block --><!-- BEGIN app block: shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507 -->
+
+
+
+
+
+
+
+
+
+
+
+
+<script async="" src="https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=YrYBxA"></script>
+<script>!function(){if(!window.klaviyo){window._klOnsite=window._klOnsite||[];try{window.klaviyo=new Proxy({},{get:function(n,i){return"push"===i?function(){var n;(n=window._klOnsite).push.apply(n,arguments)}:function(){for(var n=arguments.length,o=new Array(n),w=0;w<n;w++)o[w]=arguments[w];var t="function"==typeof o[o.length-1]?o.pop():void 0,e=new Promise((function(n){window._klOnsite.push([i].concat(o,[function(i){t&&t(i),n(i)}]))}));return e}}})}catch(n){window.klaviyo=window.klaviyo||[],window.klaviyo.push=function(){var n;(n=window._klOnsite).push.apply(n,arguments)}}}}();</script>
+
+
+<script id="viewed_product">
+  if (item == null) {
+    var _learnq = _learnq || [];
+    var item = {
+      Name: "CLASSIV WINNER \/ INVICT MAN - 175",
+      ProductID: 7233105854659,
+      Categories: ["Bestseller","Bestseller Herrendüfte","Für Ihn"],
+      ImageURL: "https://www.neness-shop.de/cdn/shop/files/N175-nuty_grande.png?v=1690214048",
+      URL: "https://www.neness-shop.de/products/man-invictus",
+      Brand: "Parfumly",
+      Price: "€9,90",
+      CompareAtPrice: "€0,00"
+    };
+    _learnq.push(['track', 'Viewed Product', item]);
+    _learnq.push(['trackViewedItem', {
+      Title: item.Name,
+      ItemId: item.ProductID,
+      Categories: item.Categories,
+      ImageUrl: item.ImageURL,
+      Url: item.URL,
+      Metadata: {
+        Brand: item.Brand,
+        Price: item.Price,
+        CompareAtPrice: item.CompareAtPrice
+      }
+    }]);
+  }
+</script>
+
+
+
+
+<!-- END app app block --><script src="https://cdn.shopify.com/extensions/ded976f8-5d43-4987-9cf0-90fa83b56973/kite-free-gift-21/assets/freeGiftLogicv1.js" type="text/javascript" defer="defer"></script>
+<link href="https://cdn.shopify.com/extensions/ded976f8-5d43-4987-9cf0-90fa83b56973/kite-free-gift-21/assets/freeGiftLogicv1.css" rel="stylesheet" type="text/css" media="all">
+<link href="https://monorail-edge.shopifysvc.com" rel="dns-prefetch">
+<script>(function(){if ("sendBeacon" in navigator && "performance" in window) {var session_token = document.cookie.match(/_shopify_s=([^;]*)/);function handle_abandonment_event(e) {var entries = performance.getEntries().filter(function(entry) {return /monorail-edge.shopifysvc.com/.test(entry.name);});if (!window.abandonment_tracked && entries.length === 0) {window.abandonment_tracked = true;var currentMs = Date.now();var navigation_start = performance.timing.navigationStart;var payload = {shop_id: 61544792259,url: window.location.href,navigation_start,duration: currentMs - navigation_start,session_token: session_token && session_token.length === 2 ? session_token[1] : "",page_type: "product"};window.navigator.sendBeacon("https://monorail-edge.shopifysvc.com/v1/produce", JSON.stringify({schema_id: "online_store_buyer_site_abandonment/1.1",payload: payload,metadata: {event_created_at_ms: currentMs,event_sent_at_ms: currentMs}}));}}window.addEventListener('pagehide', handle_abandonment_event);}}());</script>
+<script id="web-pixels-manager-setup">(function e(e,n,a,o,t,r,i){function s(e,n){if(document.head){var a=document.createElement("link");e.match(/spin\.dev\/?/)&&(e+="?fast_storefront_renderer=1"),a.rel="preload",a.href=e,n&&(a.as=n);try{document.head.appendChild(a)}catch(e){console&&console.warn&&console.warn("[Web Pixels Manager] Could not append prefetch link tag to DOM.")}}}var l=i||[],d=null!==e;d&&(window.Shopify=window.Shopify||{},window.Shopify.analytics=window.Shopify.analytics||{},window.Shopify.analytics.replayQueue=[],window.Shopify.analytics.publish=function(e,n,a){window.Shopify.analytics.replayQueue.push([e,n,a])});var c=function(){var e="legacy",n="unknown",a=null,o=navigator.userAgent.match(/(Firefox|Chrome)\/(\d+)/i),t=navigator.userAgent.match(/(Edg)\/(\d+)/i),r=navigator.userAgent.match(/(Version)\/(\d+)(.+)(Safari)\/(\d+)/i);r?(n="safari",a=parseInt(r[2],10)):t?(n="edge",a=parseInt(t[2],10)):o&&(n=o[1].toLocaleLowerCase(),a=parseInt(o[2],10));var i={chrome:60,firefox:55,safari:11,edge:80}[n];return void 0!==i&&null!==a&&i<=a&&(e="modern"),e}(),p=c.substring(0,1),f=o.substring(0,1);if(d)try{self.performance.mark("wpm:start")}catch(e){}if(d){var u=self.location.origin,w=(e.webPixelsConfigList||[]).filter((function(e){return"app"===e.type.toLowerCase()}));for(let e=0;e<w.length;e++){s([u,"/wpm@",r,"/web-pixel-",w[e].id,"@",w[e].scriptVersion,"/sandbox/worker.",c,".js"].join(""),"script")}}var h,y,m,g,v,b,_,S,x=[a,"/wpm","/",f,r,p,".js"].join("");h={src:x,async:!0,onload:function(){if(e){var a=window.webPixelsManager.init(e);n(a),window.Shopify.analytics.replayQueue.forEach((function(e){a.publishCustomEvent(e[0],e[1],e[2])})),window.Shopify.analytics.replayQueue=[],window.Shopify.analytics.publish=a.publishCustomEvent,l.indexOf("web_pixels_visitor_api")>-1&&(window.Shopify.analytics.visitor=a.visitor)}},onerror:function(){var n=(e.storefrontBaseUrl?e.storefrontBaseUrl.replace(/\/$/,""):self.location.origin)+"/.well-known/shopify/monorail/unstable/produce_batch",a=JSON.stringify({metadata:{event_sent_at_ms:(new Date).getTime()},events:[{schema_id:"web_pixels_manager_load/2.0",payload:{version:t||"latest",page_url:self.location.href,status:"failed",error_msg:x+" has failed to load"},metadata:{event_created_at_ms:(new Date).getTime()}}]});try{if(self.navigator.sendBeacon.bind(self.navigator)(n,a))return!0}catch(e){}const o=new XMLHttpRequest;try{return o.open("POST",n,!0),o.setRequestHeader("Content-Type","text/plain"),o.send(a),!0}catch(e){console&&console.warn&&console.warn("[Web Pixels Manager] Got an unhandled error while logging a load error.")}return!1}},y=document.createElement("script"),m=h.src,g=h.async||!0,v=h.onload,b=h.onerror,_=document.head,S=document.body,y.async=g,y.src=m,v&&y.addEventListener("load",v),b&&y.addEventListener("error",b),_?_.appendChild(y):S?S.appendChild(y):console.error("Did not find a head or body element to append the script")})({shopId: 61544792259,storefrontBaseUrl: "https://www.neness-shop.de",cdnBaseUrl: "https://www.neness-shop.de/cdn",surface: "storefront-renderer",enabledBetaFlags: ["web_pixels_async_pixel_refactor"],webPixelsConfigList: [{"id":"19300618","configuration":"{\"pixelId\":\"45b43596-2ffb-4c11-8814-7f970671a775\"}","eventPayloadVersion":"v1","runtimeContext":"STRICT","scriptVersion":"bb41bf091d86ec09beb5141ead6fafc0","type":"APP","apiClientId":2556259},{"id":"shopify-app-pixel","configuration":"{}","eventPayloadVersion":"v1","runtimeContext":"STRICT","scriptVersion":"0559","apiClientId":"shopify-pixel","type":"APP"},{"id":"shopify-custom-pixel","eventPayloadVersion":"v1","runtimeContext":"LAX","scriptVersion":"0559","apiClientId":"shopify-pixel","type":"CUSTOM"}],initData: {"cart":{"cost":{"totalAmount":{"amount":9.9,"currencyCode":"EUR"}},"id":"c1-f64800bd34cf078bf30eccc40bd65370","lines":[{"cost":{"totalAmount":{"amount":9.9,"currencyCode":"EUR"}},"merchandise":{"id":"41725512974531","image":{"src":"\/\/www.neness-shop.de\/cdn\/shop\/files\/N175-nuty.png?v=1690214048"},"price":{"amount":9.9,"currencyCode":"EUR"},"product":{"id":"7233105854659","title":"CLASSIV WINNER \/ INVICT MAN - 175","untranslatedTitle":"CLASSIV WINNER \/ INVICT MAN - 175","vendor":"Parfumly","type":""},"sku":"175","title":"Default Title","untranslatedTitle":"Default Title"},"quantity":1}],"totalQuantity":4},"checkout":null,"customer":null,"productVariants":[{"id":"41725512974531","image":{"src":"\/\/www.neness-shop.de\/cdn\/shop\/files\/N175-nuty.png?v=1690214048"},"price":{"amount":9.9,"currencyCode":"EUR"},"product":{"id":"7233105854659","title":"CLASSIV WINNER \/ INVICT MAN - 175","untranslatedTitle":"CLASSIV WINNER \/ INVICT MAN - 175","vendor":"Parfumly","type":""},"sku":"175","title":"Default Title","untranslatedTitle":"Default Title"}]},},function pageEvents(webPixelsManagerAPI) {webPixelsManagerAPI.publish("page_viewed");webPixelsManagerAPI.publish("product_viewed", {"productVariant":{"id":"41725512974531","image":{"src":"\/\/www.neness-shop.de\/cdn\/shop\/files\/N175-nuty.png?v=1690214048"},"price":{"amount":9.9,"currencyCode":"EUR"},"product":{"id":"7233105854659","title":"CLASSIV WINNER \/ INVICT MAN - 175","untranslatedTitle":"CLASSIV WINNER \/ INVICT MAN - 175","vendor":"Parfumly","type":""},"sku":"175","title":"Default Title","untranslatedTitle":"Default Title"}});},"https://www.neness-shop.de/cdn","browser","0.0.356","781943fcwec3d76a0p4b8287ffmd26858f1",["web_pixels_async_pixel_refactor"]);</script><link rel="preload" href="https://www.neness-shop.de/wpm@781943fcwec3d76a0p4b8287ffmd26858f1/web-pixel-19300618@bb41bf091d86ec09beb5141ead6fafc0/sandbox/worker.modern.js" as="script"><link rel="preload" href="https://www.neness-shop.de/wpm@781943fcwec3d76a0p4b8287ffmd26858f1/web-pixel-shopify-app-pixel@0559/sandbox/worker.modern.js" as="script"><script async="" src="https://www.neness-shop.de/cdn/wpm/b781943fcwec3d76a0p4b8287ffmd26858f1m.js"></script>  <script>window.ShopifyAnalytics = window.ShopifyAnalytics || {};
+window.ShopifyAnalytics.meta = window.ShopifyAnalytics.meta || {};
+window.ShopifyAnalytics.meta.currency = 'EUR';
+var meta = {"product":{"id":7233105854659,"gid":"gid:\/\/shopify\/Product\/7233105854659","vendor":"Parfumly","type":"","variants":[{"id":41725512974531,"price":990,"name":"CLASSIV WINNER \/ INVICT MAN - 175","public_title":null,"sku":"175"}]},"page":{"pageType":"product","resourceType":"product","resourceId":7233105854659}};
+for (var attr in meta) {
+window.ShopifyAnalytics.meta[attr] = meta[attr];
+}</script>
+<script>window.ShopifyAnalytics.merchantGoogleAnalytics = function() {
+
+};
+</script>
+<script class="analytics" type="text/javascript">(window.gaDevIds=window.gaDevIds||[]).push('BwiEti');
+
+
+(function () {
+var customDocumentWrite = function(content) {
+  var jquery = null;
+
+  if (window.jQuery) {
+    jquery = window.jQuery;
+  } else if (window.Checkout && window.Checkout.$) {
+    jquery = window.Checkout.$;
+  }
+
+  if (jquery) {
+    jquery('body').append(content);
+  }
+};
+
+var hasLoggedConversion = function(token) {
+  if (token) {
+    return document.cookie.indexOf('loggedConversion=' + token) !== -1;
+  }
+  return false;
+}
+
+var setCookieIfConversion = function(token) {
+  if (token) {
+    var twoMonthsFromNow = new Date(Date.now());
+    twoMonthsFromNow.setMonth(twoMonthsFromNow.getMonth() + 2);
+
+    document.cookie = 'loggedConversion=' + token + '; expires=' + twoMonthsFromNow;
+  }
+}
+
+var trekkie = window.ShopifyAnalytics.lib = window.trekkie = window.trekkie || [];
+if (trekkie.integrations) {
+  return;
+}
+trekkie.methods = [
+  'identify',
+  'page',
+  'ready',
+  'track',
+  'trackForm',
+  'trackLink'
+];
+trekkie.factory = function(method) {
+  return function() {
+    var args = Array.prototype.slice.call(arguments);
+    args.unshift(method);
+    trekkie.push(args);
+    return trekkie;
+  };
+};
+for (var i = 0; i < trekkie.methods.length; i++) {
+  var key = trekkie.methods[i];
+  trekkie[key] = trekkie.factory(key);
+}
+trekkie.load = function(config) {
+  trekkie.config = config || {};
+  trekkie.config.initialDocumentCookie = document.cookie;
+  var first = document.getElementsByTagName('script')[0];
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.onerror = function(e) {
+    var scriptFallback = document.createElement('script');
+    scriptFallback.type = 'text/javascript';
+    scriptFallback.onerror = function(error) {
+            var Monorail = {
+  produce: function produce(monorailDomain, schemaId, payload) {
+    var currentMs = new Date().getTime();
+    var event = {
+      schema_id: schemaId,
+      payload: payload,
+      metadata: {
+        event_created_at_ms: currentMs,
+        event_sent_at_ms: currentMs
+      }
+    };
+    return Monorail.sendRequest("https://" + monorailDomain + "/v1/produce", JSON.stringify(event));
+  },
+  sendRequest: function sendRequest(endpointUrl, payload) {
+    // Try the sendBeacon API
+    if (window && window.navigator && typeof window.navigator.sendBeacon === 'function' && typeof window.Blob === 'function' && !Monorail.isIos12()) {
+      var blobData = new window.Blob([payload], {
+        type: 'text/plain'
+      });
+
+      if (window.navigator.sendBeacon(endpointUrl, blobData)) {
+        return true;
+      } // sendBeacon was not successful
+
+    } // XHR beacon
+
+    var xhr = new XMLHttpRequest();
+
+    try {
+      xhr.open('POST', endpointUrl);
+      xhr.setRequestHeader('Content-Type', 'text/plain');
+      xhr.send(payload);
+    } catch (e) {
+      console.log(e);
+    }
+
+    return false;
+  },
+  isIos12: function isIos12() {
+    return window.navigator.userAgent.lastIndexOf('iPhone; CPU iPhone OS 12_') !== -1 || window.navigator.userAgent.lastIndexOf('iPad; CPU OS 12_') !== -1;
+  }
+};
+Monorail.produce('monorail-edge.shopifysvc.com',
+  'trekkie_storefront_load_errors/1.1',
+  {shop_id: 61544792259,
+  theme_id: 143048442122,
+  app_name: "storefront",
+  context_url: window.location.href,
+  source_url: "//www.neness-shop.de/cdn/s/trekkie.storefront.6cfd459a03bbac4db9ccae2e6caac7de4d25a6e2.min.js"});
+
+    };
+    scriptFallback.async = true;
+    scriptFallback.src = '//www.neness-shop.de/cdn/s/trekkie.storefront.6cfd459a03bbac4db9ccae2e6caac7de4d25a6e2.min.js';
+    first.parentNode.insertBefore(scriptFallback, first);
+  };
+  script.async = true;
+  script.src = '//www.neness-shop.de/cdn/s/trekkie.storefront.6cfd459a03bbac4db9ccae2e6caac7de4d25a6e2.min.js';
+  first.parentNode.insertBefore(script, first);
+};
+trekkie.load(
+  {"Trekkie":{"appName":"storefront","development":false,"defaultAttributes":{"shopId":61544792259,"isMerchantRequest":null,"themeId":143048442122,"themeCityHash":"16881971658810175485","contentLanguage":"de","currency":"EUR"},"isServerSideCookieWritingEnabled":true,"monorailRegion":"shop_domain"},"Google Analytics":{"trackingId":"UA-227006485-2","domain":"auto","siteSpeedSampleRate":"10","enhancedEcommerce":true,"doubleClick":true,"includeSearch":true},"Facebook Pixel":{"pixelIds":["346294667488559"],"agent":"plshopify1.2"},"Pinterest Pixel":{"pixelId":"2613685659501"},"TikTok Pixel":{"pixelId":"C9QFE8RC77UE268ERANG"},"Google Gtag Pixel":{"conversionId":"G-8M6TG84LCB","eventLabels":[{"type":"search","action_label":["G-8M6TG84LCB","AW-10895016064\/w3tfCNHN0bkDEICBk8so"]},{"type":"begin_checkout","action_label":["G-8M6TG84LCB","AW-10895016064\/sHrHCM7N0bkDEICBk8so"]},{"type":"view_item","action_label":["G-8M6TG84LCB","AW-10895016064\/jnmDCMjN0bkDEICBk8so","MC-H6LQXSMMEM"]},{"type":"purchase","action_label":["G-8M6TG84LCB","AW-10895016064\/S3IlCMXN0bkDEICBk8so","MC-H6LQXSMMEM"]},{"type":"page_view","action_label":["G-8M6TG84LCB","AW-10895016064\/F1YcCMLN0bkDEICBk8so","MC-H6LQXSMMEM"]},{"type":"add_payment_info","action_label":["G-8M6TG84LCB","AW-10895016064\/DXXFCNTN0bkDEICBk8so"]},{"type":"add_to_cart","action_label":["G-8M6TG84LCB","AW-10895016064\/OpuaCMvN0bkDEICBk8so"]}],"targetCountry":"DE"},"Session Attribution":{},"S2S":{"facebookCapiEnabled":true,"facebookAppPixelId":"346294667488559","source":"trekkie-storefront-renderer"}}
+);
+
+var loaded = false;
+trekkie.ready(function() {
+  if (loaded) return;
+  loaded = true;
+
+  window.ShopifyAnalytics.lib = window.trekkie;
+
+    ga('require', 'linker');
+  function addListener(element, type, callback) {
+    if (element.addEventListener) {
+      element.addEventListener(type, callback);
+    }
+    else if (element.attachEvent) {
+      element.attachEvent('on' + type, callback);
+    }
+  }
+  function decorate(event) {
+    event = event || window.event;
+    var target = event.target || event.srcElement;
+    if (target && (target.getAttribute('action') || target.getAttribute('href'))) {
+      ga(function (tracker) {
+        var linkerParam = tracker.get('linkerParam');
+        document.cookie = '_shopify_ga=' + linkerParam + '; ' + 'path=/';
+      });
+    }
+  }
+  addListener(window, 'load', function(){
+    for (var i=0; i < document.forms.length; i++) {
+      var action = document.forms[i].getAttribute('action');
+      if(action && action.indexOf('/cart') >= 0) {
+        addListener(document.forms[i], 'submit', decorate);
+      }
+    }
+    for (var i=0; i < document.links.length; i++) {
+      var href = document.links[i].getAttribute('href');
+      if(href && href.indexOf('/checkout') >= 0) {
+        addListener(document.links[i], 'click', decorate);
+      }
+    }
+  });
+
+
+  var originalDocumentWrite = document.write;
+  document.write = customDocumentWrite;
+  try { window.ShopifyAnalytics.merchantGoogleAnalytics.call(this); } catch(error) {};
+  document.write = originalDocumentWrite;
+
+  window.ShopifyAnalytics.lib.page(null,{"pageType":"product","resourceType":"product","resourceId":7233105854659});
+
+  var match = window.location.pathname.match(/checkouts\/(.+)\/(thank_you|post_purchase)/)
+  var token = match? match[1]: undefined;
+  if (!hasLoggedConversion(token)) {
+    setCookieIfConversion(token);
+    window.ShopifyAnalytics.lib.track("Viewed Product",{"currency":"EUR","variantId":41725512974531,"productId":7233105854659,"productGid":"gid:\/\/shopify\/Product\/7233105854659","name":"CLASSIV WINNER \/ INVICT MAN - 175","price":"9.90","sku":"175","brand":"Parfumly","variant":null,"category":"","nonInteraction":true});
+  window.ShopifyAnalytics.lib.track("monorail:\/\/trekkie_storefront_viewed_product\/1.1",{"currency":"EUR","variantId":41725512974531,"productId":7233105854659,"productGid":"gid:\/\/shopify\/Product\/7233105854659","name":"CLASSIV WINNER \/ INVICT MAN - 175","price":"9.90","sku":"175","brand":"Parfumly","variant":null,"category":"","nonInteraction":true,"referer":"https:\/\/www.neness-shop.de\/collections\/fur-ihn\/products\/man-invictus"});
+  }
+});
+
+
+    var eventsListenerScript = document.createElement('script');
+    eventsListenerScript.async = true;
+    eventsListenerScript.src = "//www.neness-shop.de/cdn/shopifycloud/shopify/assets/shop_events_listener-4620b7978e4a9ac9b189bb434985724435751e09e5e44a25a48b615ae8420594.js";
+    document.getElementsByTagName('head')[0].appendChild(eventsListenerScript);
+
+})();</script>
+<script class="boomerang" type="text/javascript">
+(function () {
+if (window.BOOMR && (window.BOOMR.version || window.BOOMR.snippetExecuted)) {
+return;
+}
+window.BOOMR = window.BOOMR || {};
+window.BOOMR.snippetStart = new Date().getTime();
+window.BOOMR.snippetExecuted = true;
+window.BOOMR.snippetVersion = 12;
+window.BOOMR.application = "storefront-renderer";
+window.BOOMR.themeName = "Expanse";
+window.BOOMR.themeVersion = "3.0.1";
+window.BOOMR.shopId = 61544792259;
+window.BOOMR.themeId = 143048442122;
+window.BOOMR.renderRegion = "gcp-europe-west4";
+window.BOOMR.url =
+"https://www.neness-shop.de/cdn/shopifycloud/boomerang/shopify-boomerang-1.0.0.min.js";
+var where = document.currentScript || document.getElementsByTagName("script")[0];
+var parentNode = where.parentNode;
+var promoted = false;
+var LOADER_TIMEOUT = 3000;
+function promote() {
+if (promoted) {
+  return;
+}
+var script = document.createElement("script");
+script.id = "boomr-scr-as";
+script.src = window.BOOMR.url;
+script.async = true;
+parentNode.appendChild(script);
+promoted = true;
+}
+function iframeLoader(wasFallback) {
+promoted = true;
+var dom, bootstrap, iframe, iframeStyle;
+var doc = document;
+var win = window;
+window.BOOMR.snippetMethod = wasFallback ? "if" : "i";
+bootstrap = function(parent, scriptId) {
+  var script = doc.createElement("script");
+  script.id = scriptId || "boomr-if-as";
+  script.src = window.BOOMR.url;
+  BOOMR_lstart = new Date().getTime();
+  parent = parent || doc.body;
+  parent.appendChild(script);
+};
+if (!window.addEventListener && window.attachEvent && navigator.userAgent.match(/MSIE [67]./)) {
+  window.BOOMR.snippetMethod = "s";
+  bootstrap(parentNode, "boomr-async");
+  return;
+}
+iframe = document.createElement("IFRAME");
+iframe.src = "about:blank";
+iframe.title = "";
+iframe.role = "presentation";
+iframe.loading = "eager";
+iframeStyle = (iframe.frameElement || iframe).style;
+iframeStyle.width = 0;
+iframeStyle.height = 0;
+iframeStyle.border = 0;
+iframeStyle.display = "none";
+parentNode.appendChild(iframe);
+try {
+  win = iframe.contentWindow;
+  doc = win.document.open();
+} catch (e) {
+  dom = document.domain;
+  iframe.src = "javascript:var d=document.open();d.domain='" + dom + "';void(0);";
+  win = iframe.contentWindow;
+  doc = win.document.open();
+}
+if (dom) {
+  doc._boomrl = function() {
+    this.domain = dom;
+    bootstrap();
+  };
+  doc.write("<body onload='document._boomrl();'>");
+} else {
+  win._boomrl = function() {
+    bootstrap();
+  };
+  if (win.addEventListener) {
+    win.addEventListener("load", win._boomrl, false);
+  } else if (win.attachEvent) {
+    win.attachEvent("onload", win._boomrl);
+  }
+}
+doc.close();
+}
+var link = document.createElement("link");
+if (link.relList &&
+typeof link.relList.supports === "function" &&
+link.relList.supports("preload") &&
+("as" in link)) {
+window.BOOMR.snippetMethod = "p";
+link.href = window.BOOMR.url;
+link.rel = "preload";
+link.as = "script";
+link.addEventListener("load", promote);
+link.addEventListener("error", function() {
+  iframeLoader(true);
+});
+setTimeout(function() {
+  if (!promoted) {
+    iframeLoader(true);
+  }
+}, LOADER_TIMEOUT);
+BOOMR_lstart = new Date().getTime();
+parentNode.appendChild(link);
+} else {
+iframeLoader(false);
+}
+function boomerangSaveLoadTime(e) {
+window.BOOMR_onload = (e && e.timeStamp) || new Date().getTime();
+}
+if (window.addEventListener) {
+window.addEventListener("load", boomerangSaveLoadTime, false);
+} else if (window.attachEvent) {
+window.attachEvent("onload", boomerangSaveLoadTime);
+}
+if (document.addEventListener) {
+document.addEventListener("onBoomerangLoaded", function(e) {
+  e.detail.BOOMR.init({
+    ResourceTiming: {
+      enabled: true,
+      trackedResourceTypes: ["script", "img", "css"]
+    },
+  });
+  e.detail.BOOMR.t_end = new Date().getTime();
+});
+} else if (document.attachEvent) {
+document.attachEvent("onpropertychange", function(e) {
+  if (!e) e=event;
+  if (e.propertyName === "onBoomerangLoaded") {
+    e.detail.BOOMR.init({
+      ResourceTiming: {
+        enabled: true,
+        trackedResourceTypes: ["script", "img", "css"]
+      },
+    });
+    e.detail.BOOMR.t_end = new Date().getTime();
+  }
+});
+}
+})();</script>
+<script async="" src="//www.neness-shop.de/cdn/shopifycloud/shopify/assets/shop_events_listener-4620b7978e4a9ac9b189bb434985724435751e09e5e44a25a48b615ae8420594.js"></script><link href="https://www.neness-shop.de/cdn/shopifycloud/boomerang/shopify-boomerang-1.0.0.min.js" rel="preload" as="script"><style>#AnnouncementSlider .flickity-viewport{height:22px}</style><style>#AnnouncementSlider .flickity-viewport{height:22px}</style><style>#ProductPhotos-template--17917053370634__main .flickity-viewport{height:100%}</style><script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script><link type="text/css" rel="stylesheet" href="blob:https://www.neness-shop.de/06e61a6d-e5d7-49ae-a71a-ce7679e0d936"><script type="text/javascript" async="" src=" https://static-tracking.klaviyo.com/onsite/js/fender_analytics.fd00ab6dfd32f7c922f4.js?cb=1" crossorigin="anonymous"></script><script type="text/javascript" async="" src=" https://static-tracking.klaviyo.com/onsite/js/static.094d93e3bce6bc538156.js?cb=1" crossorigin="anonymous"></script><script type="text/javascript" async="" src="https://static.klaviyo.com/onsite/js/runtime.0172d484f0c70cfb4ee0.js?cb=1" crossorigin="anonymous"></script><script type="text/javascript" async="" src="https://static.klaviyo.com/onsite/js/sharedUtils.96a9cbe24767f6d3da31.js?cb=1" crossorigin="anonymous"></script><script type="text/javascript" async="" src=" https://static.klaviyo.com/onsite/js/vendors~signup_forms.9c1bf06cff0f66da36fb.js?cb=1" crossorigin="anonymous"></script><script type="text/javascript" async="" src=" https://static.klaviyo.com/onsite/js/signup_forms.c42ecfdda5623f6477c8.js?cb=1" crossorigin="anonymous"></script><style>.sc-tag{background-color:rgba(113,113,113,0.21);padding:3px 5px;border-radius:4px;line-height:20px;display:inline-block;margin:0 5px 5px 0}.sc-tag .code{text-transform:uppercase;display:flex;align-items:center;color:inherit}.sc-tag .code .code-amount{margin-left:3px}.sc-tag .code svg{width:16px;height:16px}.sc-tag .code svg path{fill:currentColor}.sc-tag .code .code-name{display:inline-block;max-width:110px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:10px;font-family:"Helvetica", Arial, sans-serifsans-serif}.sc-tag .button{background-color:transparent;background:none !important;border:0;padding:0;margin:0 0 0 5px !important;line-height:initial;height:auto;outline:none;border-width:0 !important;box-shadow:none !important;color:inherit;min-height:0;min-width:0;width:auto;display:flex !important}.sc-tag .button svg{width:10px;height:10px}.sc-tag .button svg path{stroke:currentColor}.sc-tag .button::before,.sc-tag .button::after{display:none !important}.sc-tag.sc_reduced{padding:0 !important;background-color:transparent}.sc-tag.sc_reduced .code{font-size:0.85em}.slidecarthq .sc-tag{background-color:rgba(113,113,113,0.21) !important;padding:3px 5px !important;border-radius:4px !important;line-height:20px !important;display:inline-block !important;margin:0 5px 5px 0 !important}.slidecarthq .sc-tag .button{background-color:transparent !important;border:0 !important;padding:0 !important;margin:0 3px 0 7px !important;line-height:initial !important;height:auto !important;outline:none !important;border-width:0 !important;box-shadow:none !important;color:inherit !important;min-height:0 !important;min-width:0 !important;width:auto !important}.slidecarthq .slidecart-subtotal s span{text-decoration:line-through !important}
+</style><style>.sc-tag-container{display:block;overflow:hidden;position:relative}.sc-tag-container .sc-tag .code .code-name{max-width:100%}.sc-tag-container .sc-tag-actions{display:block;position:absolute;top:2px;bottom:5px;right:0;width:120px;z-index:2}.sc-tag-container .sc-tag-actions .sc-tag-actions-button{border-radius:5px;padding:5px;display:flex;float:right;width:35px;height:28px;margin:4px 0 0 auto;align-items:center;justify-content:center;cursor:pointer;outline:none}.sc-tag-container .sc-tag-actions .sc-tag-actions-button polyline:last-child{display:none}.sc-tag-container .sc-tag-actions .sc-tag-actions-button.sc-action-opened polyline:first-child{display:none}.sc-tag-container .sc-tag-actions .sc-tag-actions-button.sc-action-opened polyline:last-child{display:block}.sc-tag-container .sc-tag-actions::after{content:" ";border-right-width:1px;border-right-style:solid;border-right-color:currentColor;opacity:0.5;position:absolute;right:34px;top:7px;height:20px}.sc-tag-container .sc-tag-inner-container{width:1000px;display:block;text-align:left;padding:0 5px}.sc-tag-container .sc-tag-inner-container .sc-tag{margin:6px 3px !important}.sc-tag-container-detailed{position:absolute;width:calc(100% + 2px);z-index:10;bottom:55px;left:-1px;max-height:150px;transition:bottom 300ms linear, opacity 150ms linear;text-align:center}.sc-tag-container-detailed .sc-tag .code .code-name{max-width:100%}.sc-tag-container-detailed .sc-tag-container-detailed-container{border:1px solid #ccc;padding:7px 7px 0 7px;background-color:#fff;display:block;position:relative;box-shadow:0 1px 1px 0 rgba(0,0,0,0.1);border-radius:5px}.sc-tag-container-detailed .sc-tag-container-detailed-container:after{content:" ";display:block;width:15px;height:15px;background-color:inherit;border-color:inherit;border-right-width:1px;border-bottom-width:1px;border-left-width:0;border-top-width:0;border-style:solid;transform:rotate(45deg);position:absolute;bottom:-8px;left:50%;margin-left:-7px}.sc-tag-container-detailed.sc-collapsed{bottom:50px;opacity:0;z-index:-1}.sc-tag-container-detailed .sc-tag{margin-right:5px;position:relative;z-index:2}
+</style><style>#cube{perspective:1000px;font-size:0.85em;text-transform:uppercase}#cube.scShake{animation:shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;transform:translate3d(0, 0, 0);backface-visibility:hidden;perspective:1000px}#cube form{transform:translateZ(-20px);transform-style:preserve-3d;height:40px;transition:all 0.35s}#cube form .sc-tag-container-detailed{display:none}#cube form:hover,#cube form.ready{transform:translateZ(-20px) rotateX(90.01deg)}#cube form.loading{transform:translateZ(-20px) rotateX(180deg)}#cube form.complete{transform:translateZ(-20px) rotateX(270deg)}#cube form.complete .sc-tag-container-detailed{display:block}#cube div{position:absolute;top:0;left:0;width:100%}#cube div:nth-child(1){transform:rotateX(0deg) translateZ(20px)}#cube div:nth-child(2){transform:rotateX(-90deg) translateZ(20px)}#cube div:nth-child(3){transform:rotateX(-180deg) translateZ(20px)}#cube div:nth-child(4){transform:rotateX(-270deg) translateZ(20px)}#cube .sc-cube-text{line-height:40px;height:40px;text-align:center;padding:0;margin:0}#cube .sc-cube-text .sc-float-container{display:flex;align-items:center}#cube .sc-cube-text .sc-float-container .sc-tag button{height:auto !important;line-height:initial !important}#cube .sc-cube-text.sc-cube-code{outline:none;border:0 none;font:inherit;text-align:left;display:block;width:100%;padding:0 10px;box-sizing:border-box;border:1px solid;opacity:1;font-family:Arial, 'Helvetica', sans-serif;font-size:14px;text-transform:uppercase;border-radius:0}#cube .complete .sc-discount-info{height:40px;transition:height linear 300ms;transition-delay:200ms;text-align:left;line-height:38px;padding:0px 2px 0 5px;position:relative}#cube .complete .sc-discount-info .sc-cube-add{display:flex;position:absolute;top:0;right:0;bottom:0;width:35px;border-left:1px solid;border-color:inherit;align-items:center;justify-content:center;cursor:pointer}#cube .complete .sc-discount-info .sc-cube-add:before{content:'';width:15px;border-bottom:1px solid;border-color:currentColor;top:50%;left:10px;position:absolute}#cube .complete .sc-discount-info .sc-cube-add:after{content:'';height:15px;border-right:1px solid;border-color:currentColor}#cube .complete div:nth-child(4){height:40px}#cube .sc-3d-loader{animation:phase 1s infinite}#cube .sc-reset-icon{color:rgba(255,255,255,0.25);font-size:14px}#cube .sc-submit-icon,#cube .sc-reset-icon{position:absolute;top:0;right:0;color:rgba(0,0,0,0.25);line-height:40px;padding:0 10px;transition:all 0.5s;cursor:pointer;border:0;z-index:2}#cube .sc-submit-icon .arrow-slide,#cube .sc-reset-icon .arrow-slide{left:0;top:-100%;width:100%;height:100%;background:#666;position:absolute;display:block;z-index:0}#cube .sc-submit-icon .left-arm,#cube .sc-reset-icon .left-arm{position:absolute;z-index:1;background-color:transparent;top:19px;left:6px;width:15px;display:block;transform:rotate(-45deg)}#cube .sc-submit-icon .left-arm i,#cube .sc-reset-icon .left-arm i{content:"";background-color:#666;width:15px;height:1px;display:block;border-radius:1px;transition:all 0.5s cubic-bezier(0.25, 1.7, 0.35, 1.5);transform-origin:right center;z-index:-1}#cube .sc-submit-icon .right-arm,#cube .sc-reset-icon .right-arm{position:absolute;z-index:1;background-color:transparent;top:19px;left:17px;width:15px;display:block;transform:rotate(45deg);border-radius:2px}#cube .sc-submit-icon .right-arm i,#cube .sc-reset-icon .right-arm i{content:"";background-color:#666;width:15px;height:1px;display:block;border-radius:1px;transition:all 0.5s cubic-bezier(0.25, 1.7, 0.35, 1.5);transform-origin:left center;z-index:-1}#cube .sc-submit-icon:hover,#cube .sc-reset-icon:hover{transition:all 0.1s}#cube .sc-submit-icon:hover .left-arm i,#cube .sc-reset-icon:hover .left-arm i{transform:rotate(-10deg)}#cube .sc-submit-icon:hover .right-arm i,#cube .sc-reset-icon:hover .right-arm i{transform:rotate(10deg)}#cube .sc-submit-icon:hover .arrow-slide,#cube .sc-reset-icon:hover .arrow-slide{transition:all 0.4s ease-in-out;transform:translateY(200%)}#cube .sc-submit-icon.sc-active,#cube .sc-reset-icon.sc-active{color:#2e6b2e}#cube .sc-submit-icon{height:40px;width:40px;display:block;border:1px solid #666;cursor:pointer;transition:all 0.5s cubic-bezier(0.25, 1.7, 0.35, 1.5);overflow:hidden;transform:rotate(90deg)}#cube #submit{display:none}#cube .sc-discount-info .sc-amount{float:right;margin-left:auto}.sc-error{font-size:12px;color:#ff0000;margin-bottom:5px;text-align:left}@keyframes phase{50%{filter:brightness(80%)}}@keyframes shake{10%,90%{transform:translate3d(-2px, 0, 0)}20%,80%{transform:translate3d(4px, 0, 0)}30%,50%,70%{transform:translate3d(-7px, 0, 0)}40%,60%{transform:translate3d(7px, 0, 0)}}.sc-more-info{position:absolute;left:0;bottom:40px;padding:0;margin:0;width:100%;background-color:#fff;border:1px solid;transition:all linear 200ms;overflow:hidden}.sc-rtl #cube .sc-submit-icon{right:auto;left:0;transform:rotate(-90deg)}.sc-rtl #cube .sc-cube-text.sc-cube-code{direction:rtl;text-align:right}.sc-rtl .sc-tag-container .sc-tag-actions{top:5px;bottom:2px;left:0;right:auto;transform:rotate(180deg)}.sc-rtl .sc-tag-container .sc-tag-inner-container .sc-tag{float:right}
+</style><style>.sc_simple-container{display:flex}.sc_simple-container .sc-cube-text{margin:0;border-width:1px !important;border-style:solid !important;padding:10px;flex:1 auto;border-radius:3px;-webkit-appearance:none;width:0;margin:0 10px 0 0 !important;max-height:40px}.sc_simple-container .sc-cube-text ::placeholder{font-size:1rem}.sc_simple-container .sc_code-btn{position:relative}.sc_simple-container .sc_code-btn input[type=button]{height:100%;line-height:initial;border-radius:3px;min-height:100%;-webkit-appearance:none;margin:0 !important;line-height:initial !important;cursor:pointer;width:auto}.sc_simple-container .sc_code-btn .sc_code-loading,.sc_simple-container .sc_code-btn .sc_code-remove{position:absolute;top:0;bottom:0;width:100%;display:flex;align-items:center;justify-content:center;opacity:0;z-index:-1;border-radius:3px}.sc_simple-container .sc_code-btn .sc_code-remove .sc_code-remove-icon{border:0;background-color:transparent;padding:0;margin:0;position:absolute;width:2em;height:2em;opacity:0.5;text-decoration:none;transition:opacity linear 300ms}.sc_simple-container .sc_code-btn .sc_code-remove .sc_code-remove-icon:before,.sc_simple-container .sc_code-btn .sc_code-remove .sc_code-remove-icon:after{content:" ";position:absolute;left:1em;content:' ';height:2em;width:2px;background-color:currentColor}.sc_simple-container .sc_code-btn .sc_code-remove .sc_code-remove-icon:before{transform:rotate(45deg)}.sc_simple-container .sc_code-btn .sc_code-remove .sc_code-remove-icon:after{transform:rotate(-45deg)}.sc_simple-container .sc_code-btn .sc_code-remove .sc_code-remove-icon:hover{opacity:1}.sc_simple-container .sc_code-btn.sc_state-loading .sc_code-loading,.sc_simple-container .sc_code-btn.sc_state-fetching .sc_code-loading{opacity:1;z-index:1}.sc_simple-container .sc_code-btn.sc_state-loading .sc_code-loading svg,.sc_simple-container .sc_code-btn.sc_state-fetching .sc_code-loading svg{width:60%;height:60%}.sc_simple-container .sc_code-btn.sc_state-loading .sc_code-btn input,.sc_simple-container .sc_code-btn.sc_state-fetching .sc_code-btn input{opacity:0}.sc_simple-container .sc_code-btn.sc_state-complete .sc_code-remove{opacity:0;z-index:-1}.sc_simple-info{margin-top:10px;text-align:left}.sc_simple-info .sc-tag{padding:5px}.sc_simple-info .sc-tag button{outline:none;min-width:0 !important;min-height:0 !important;position:relative;z-index:10;padding:0;min-width:0 !important;width:auto !important}.sc_simple-info .sc-tag button svg{margin:0}.sc_simple-info .sc-tag button svg path{stroke-width:1.5px;opacity:0.6;transition:opacity 300ms linear}.sc_simple-info .sc-tag button:hover svg path{opacity:1}.sc_simple-info .sc_simple-info__tag{margin-bottom:10px}.sc_simple-info .sc_simple-info__row{display:flex;margin-bottom:10px;align-items:center}.sc_simple-info .sc_simple-info__row.sc_code-info{display:flex;align-items:center}.sc_simple-info .sc_simple-info__row.sc_code-info .sc-tag.sc_reduced{margin:0 0 0 5px}.sc_simple-info .sc_simple-info__row.sc_code-info>div:first-child{display:flex;align-items:center}.sc_simple-info .sc_simple-info__row div strong{font-size:1em;font-weight:normal}.sc_simple-info .sc_simple-info__row div:last-child{margin-left:auto;text-align:right}.sc_simple-info .sc-tag .code .code-name{max-width:200px !important;margin-left:3px}.sc-rtl .sc_simple-info__row.sc_code-info div:last-child{display:flex;flex-direction:row-reverse}
+</style><style>.sc_dynamic-container{border-radius:5px;position:relative;transition:0.2s}.sc_dynamic-container .sc_code-remove-icon{opacity:0}.sc_dynamic-container input{width:100%;outline:none;border-radius:2px;padding:5px 10px;box-sizing:border-box;transition:0.2s all;margin-bottom:0 !important;min-height:37px;max-height:45px;border-style:solid;border-width:1px}.sc_dynamic-container.sc_state-initial .sc_dynamic-btn button{z-index:-1}.sc_dynamic-container .sc_dynamic-btn{width:100%;position:absolute;outline:none;border-radius:2px;top:0;bottom:0;right:0;text-transform:uppercase;letter-spacing:2px;cursor:pointer;z-index:9999;transition:0.3s;white-space:nowrap;display:flex;align-items:center;justify-content:center}.sc_dynamic-container .sc_dynamic-btn button{width:100%;position:absolute;left:0;top:0;right:0;bottom:0;border:0;background-color:transparent;-webkit-appearance:none;transition:z-index 0.5s step-start;transition-delay:500ms}.sc_dynamic-container .sc_dynamic-btn button .lds-rolling{display:none}.sc_dynamic-container .sc_dynamic-btn .sc_dynamic-subs{display:block;transition:0.5s}.sc_dynamic-container .sc_dynamic-btn .sc_dynamic-arrow{width:0px;height:3px;border-radius:25px;background-color:#ffff;position:absolute;margin:auto;top:0;bottom:0;right:0;left:0;display:inline-block;visibility:hidden;opacity:0;transition:0.2s}.sc_dynamic-container .sc_dynamic-btn .sc_dynamic-arrow:before{width:0px;height:3px;border-radius:25px;background-color:#ffffff;position:absolute;right:1px;top:-1px;display:block;content:"";transform:translate(0, 1px) rotate(0deg);transform-origin:100% 50%;transition:0.2s}.sc_dynamic-container .sc_dynamic-btn .sc_dynamic-arrow:after{width:0px;height:3px;border-radius:25px;background-color:#ffffff;display:block;content:"";position:absolute;right:1px;top:-1px;transform:translate(0, 1px) rotate(0deg);transform-origin:100% 50%;transition:0.2s}.sc_dynamic-container .sc_dynamic-btn .sc_dynamic-amount{display:none}.sc_dynamic-container:hover .sc_dynamic-btn,.sc_dynamic-container.sc_state-ready .sc_dynamic-btn,.sc_dynamic-container.sc_state-ready_loading .sc_dynamic-btn{width:50px;left:unset;transition-delay:0.2s}.sc_dynamic-container:hover .sc_dynamic-btn button,.sc_dynamic-container.sc_state-ready .sc_dynamic-btn button,.sc_dynamic-container.sc_state-ready_loading .sc_dynamic-btn button{display:block;z-index:1}.sc_dynamic-container:hover .sc_dynamic-subs,.sc_dynamic-container.sc_state-ready .sc_dynamic-subs{display:none}.sc_dynamic-container:hover .sc_dynamic-arrow,.sc_dynamic-container.sc_state-ready .sc_dynamic-arrow{visibility:visible;opacity:1;transition:0.2s ease 0.6s;width:20px}.sc_dynamic-container:hover .sc_dynamic-arrow:after,.sc_dynamic-container.sc_state-ready .sc_dynamic-arrow:after{width:10px;transform:translate(0, 1px) rotate(40deg);transform-origin:100% 50%;transition:width 0.1s ease 0.7s, transform 0.1s ease 0.8s}.sc_dynamic-container:hover .sc_dynamic-arrow:before,.sc_dynamic-container.sc_state-ready .sc_dynamic-arrow:before{width:10px;transform:translate(0, 1px) rotate(-40deg);transform-origin:100% 50%;transition:width 0.1s ease 0.7s, transform 0.1s ease 0.8s}.sc_dynamic-container.sc_state-ready_loading .sc_dynamic-subs{display:none}.sc_dynamic-container.sc_state-ready_loading .sc_dynamic-btn .lds-rolling{display:block}.sc_dynamic-container.sc_state-ready_loading .sc_dynamic-btn .sc_dynamic-arrow{display:none}.sc_dynamic-container .sc_dynamic-amount{display:none}.sc_dynamic-container.sc_state-complete .sc_dynamic-amount{display:flex;align-items:center;width:100%;box-sizing:border-box;position:absolute;left:0;right:0;top:0;bottom:0}.sc_dynamic-container.sc_state-complete .sc_dynamic-btn{width:0 !important;cursor:default;border:0 !important}.sc_dynamic-container.sc_state-complete .sc_dynamic-btn .sc_dynamic-subs{display:none}.sc_dynamic-container.sc_state-complete .sc_dynamic-btn button{display:none}.sc_dynamic-container.sc_state-complete .sc_code-remove-icon{border:0;background-color:transparent;padding:0;margin:0;position:relative;width:1.3em;height:1.3em;opacity:0.5;text-decoration:none;transition:opacity linear 300ms}.sc_dynamic-container.sc_state-complete .sc_code-remove-icon:before,.sc_dynamic-container.sc_state-complete .sc_code-remove-icon:after{content:" ";position:absolute;left:1em;content:' ';height:1.3em;width:2px;background-color:currentColor}.sc_dynamic-container.sc_state-complete .sc_code-remove-icon:before{transform:rotate(45deg)}.sc_dynamic-container.sc_state-complete .sc_code-remove-icon:after{transform:rotate(-45deg)}.sc_dynamic-container.sc_state-complete .sc_code-remove-icon:hover{opacity:1}
+</style><style>@keyframes box-animation{0%{opacity:0;bottom:7px;right:97px}40%{opacity:0;bottom:7px;right:97px}60%{opacity:1;bottom:7px;right:56px}100%{opacity:1;bottom:0;right:56px}}@keyframes box-after-animation{0%{width:0}53%{width:0}60%{width:6px}100%{width:6px}}@keyframes truck-animation{0%{right:calc(100% - 72px)}40%{right:40%}50%{right:45%}100%{right:0}}@keyframes flip-scale-up-hor{0%{transform:scale(1) rotateX(0)}50%{transform:scale(1.5) rotateX(-90deg)}100%{transform:scale(1) rotateX(-360deg)}}.truck-button{--color: #fff;--background: #2b3044;--tick: #16bf78;--base: #0d0f18;--wheel: #2b3044;--wheel-inner: #646b8c;--wheel-dot: #fff;--back: #6d58ff;--back-inner: #362a89;--back-inner-shadow: #2d246b;--front: #a6accd;--front-shadow: #535a79;--front-light: #fff8b1;--window: #2b3044;--window-shadow: #404660;--street: #646b8c;--street-fill: #404660;--box: #dcb97a;--box-shadow: #b89b66;padding:0;width:100%;text-align:center;position:relative;border:none;outline:none;-webkit-appearance:none;-webkit-tap-highlight-color:transparent;transform-style:preserve-3d;transform:rotateX(var(--rx, 0deg)) translateZ(0);transition:transform 0.5s,border-radius 0.3s linear var(--br-d, 0s);display:flex !important}.truck-button .sc_truck-coupon{display:none}.truck-button input{position:relative;z-index:2}.truck-button input.sc-cube-text{width:100%;border-top-left-radius:2px;border-bottom-left-radius:2px;border-top-right-radius:0;border-bottom-right-radius:0;margin-bottom:0;border-width:1px;border-style:solid;outline:none;min-height:38px;max-height:48px;padding:5px 10px;box-sizing:border-box;margin-right:-1px;text-transform:uppercase}.truck-button input.sc_truck_submit{border-top-right-radius:2px;border-bottom-right-radius:2px;border-top-left-radius:0;border-bottom-left-radius:0;line-height:initial;-webkit-appearance:none}.truck-button:before,.truck-button:after{content:"";position:absolute;left:0;top:0;width:100%;height:6px;display:block;background:var(--b, var(--street));transform-origin:0 100%;transform:rotateX(90deg) scaleX(var(--sy, 1))}.truck-button:after{--sy: var(--progress, 0);--b: var(--street-fill)}.truck-button .default,.truck-button .success{display:block;font-weight:500;font-size:14px;line-height:24px;opacity:var(--o, 1);transition:opacity 0.3s}.truck-button .success{--o: 0;position:absolute;top:12px;left:0;right:0}.truck-button .truck{position:absolute;width:72px;height:28px;transform:rotateX(90deg) translate3d(var(--truck-x, 4px), calc(var(--truck-y-n, -26) * 1px), 12px)}.truck-button .truck:before,.truck-button .truck:after{content:"";position:absolute;bottom:-6px;left:var(--l, 18px);width:10px;height:10px;border-radius:50%;z-index:2;box-shadow:inset 0 0 0 2px var(--wheel),inset 0 0 0 4px var(--wheel-inner);background:var(--wheel-dot);transform:translateY(calc(var(--truck-y) * -1px)) translateZ(0)}.truck-button .truck:after{--l: 54px}.truck-button .truck .wheel,.truck-button .truck .wheel:before{position:absolute;bottom:var(--b, -6px);left:var(--l, 6px);width:10px;height:10px;border-radius:50%;background:var(--wheel);transform:translateZ(0)}.truck-button .truck .wheel{transform:translateY(calc(var(--truck-y) * -1px)) translateZ(0);display:block}.truck-button .truck .wheel:before{--l: 35px;--b: 0;content:""}.truck-button .truck .front,.truck-button .truck .back,.truck-button .truck .sc_truck-box{position:absolute}.truck-button .truck .back{left:0;bottom:0;z-index:1;width:47px;height:28px;border-radius:1px 1px 0 0;background:linear-gradient(68deg, var(--back-inner) 0%, var(--back-inner) 22%, var(--back-inner-shadow) 22.1%, var(--back-inner-shadow) 100%);display:block}.truck-button .truck .back:before,.truck-button .truck .back:after{content:"";position:absolute}.truck-button .truck .back:before{left:11px;top:0;right:0;bottom:0;z-index:2;border-radius:0 1px 0 0;background:var(--back)}.truck-button .truck .back:after{border-radius:1px;width:73px;height:2px;left:-1px;bottom:-2px;background:var(--base)}.truck-button .truck .front{left:47px;bottom:-1px;height:22px;width:24px;-webkit-clip-path:polygon(55% 0, 72% 44%, 100% 58%, 100% 100%, 0 100%, 0 0);clip-path:polygon(55% 0, 72% 44%, 100% 58%, 100% 100%, 0 100%, 0 0);background:linear-gradient(84deg, var(--front-shadow) 0%, var(--front-shadow) 10%, var(--front) 12%, var(--front) 100%);display:block}.truck-button .truck .front:before,.truck-button .truck .front:after{content:"";position:absolute}.truck-button .truck .front:before{width:7px;height:8px;background:#fff;left:7px;top:2px;-webkit-clip-path:polygon(0 0, 60% 0%, 100% 100%, 0% 100%);clip-path:polygon(0 0, 60% 0%, 100% 100%, 0% 100%);background:linear-gradient(59deg, var(--window) 0%, var(--window) 57%, var(--window-shadow) 55%, var(--window-shadow) 100%)}.truck-button .truck .front:after{width:3px;height:2px;right:0;bottom:3px;background:var(--front-light)}.truck-button .truck .sc_truck-box{width:20px;height:20px;right:97px;bottom:7px;z-index:1;border-radius:1px;opacity:var(--box-o, 0);background:linear-gradient(68deg, var(--box) 0%, var(--box) 50%, var(--box-shadow) 50.2%, var(--box-shadow) 100%);background-size:250% 100%;background-position-x:calc(var(--bx, 0) * 1%);font-family:Verdana, Geneva, Tahoma, sans-serif;line-height:20px;font-weight:bold;color:#323232;font-size:13px}.truck-button .truck .sc_truck-box:after{content:"";position:absolute}.truck-button .truck .sc_truck-box:after{width:6px;right:0;top:0;bottom:0;background:var(--back)}.truck-button .truck .sc_truck-box span{display:inline-block;border-right:8px solid #dcb97a;border-top:10px solid transparent;border-bottom:10px solid transparent;position:absolute;left:-20px;width:20px;height:20px}.truck-button .truck .sc_truck-box span:before{content:" ";width:4px;height:4px;display:block;background-color:#323232;border-radius:50%;left:16px;position:absolute;top:-2px}.truck-button.ready_loading{--rx: -90deg;--br: 0}.truck-button.ready_loading .default{--o: 0}.truck-button.ready_loading .truck{animation-name:truck-animation;animation-duration:2s;animation-iteration-count:1;animation-delay:1.5s}.truck-button.ready_loading .truck.sc_truck-finished{right:0}.truck-button.ready_loading .sc_truck-box{opacity:1;animation-name:box-animation;animation-duration:1.5s;animation-iteration-count:1}.truck-button.ready_loading .sc_truck-box:after{opacity:1;width:0;animation-name:box-after-animation;animation-duration:1.5s;animation-iteration-count:1}.truck-button.ready_loading .sc_truck-box.sc_truck-box-finished{bottom:0;right:56px}.truck-button.ready_loading .sc_truck-box.sc_truck-box-finished:after{width:6px}.truck-button.complete{--rx: 0deg;--br: 5px;--br-d: 0.2s;transform:rotateX(var(90deg, 0deg)) translateZ(0)}.truck-button.complete input{display:none}.truck-button.complete .sc_truck-coupon{width:100%;border-top-left-radius:2px;border-bottom-left-radius:2px;height:40px;line-height:40px;position:relative;display:block;animation:flip-scale-up-hor 0.5s linear both}.truck-button.complete .sc_truck-coupon span.sc_code-edge{display:inline-block;border-left:20px solid;border-top:20px solid transparent !important;border-bottom:20px solid transparent !important;position:absolute;right:-21px;width:20px;height:20px;top:-1px}.truck-button.complete .sc_truck-coupon .sc_code-remove-icon{border:0;background-color:transparent;padding:0;margin:0;position:absolute;width:1.3em;height:1.3em;opacity:0.5;text-decoration:none;transition:opacity linear 300ms;left:5px;top:50%;margin-top:-0.65em}.truck-button.complete .sc_truck-coupon .sc_code-remove-icon:before,.truck-button.complete .sc_truck-coupon .sc_code-remove-icon:after{content:" ";position:absolute;left:1em;content:' ';height:1.3em;width:2px;background-color:currentColor}.truck-button.complete .sc_truck-coupon .sc_code-remove-icon:before{transform:rotate(45deg)}.truck-button.complete .sc_truck-coupon .sc_code-remove-icon:after{transform:rotate(-45deg)}.truck-button.complete .sc_truck-coupon .sc_code-remove-icon:hover{opacity:1}.truck-button.error:before,.truck-button.done:before{opacity:0}.truck-button.error .truck,.truck-button.done .truck{transform:scale(0)}
+</style><style>.sc-shipping-container{background-color:var(--sc-bg-color);border-color:var(--sc-border-color);border-width:var(--sc-border-width);border-style:solid;position:relative !important}.sc-shipping-container .sc-shipping-bar{background-color:var(--sc-bar-color);position:absolute;height:100%;transition:linear width 250ms;display:block !important}.sc-shipping-container .sc-shipping-text{color:var(--sc-color);font-size:var(--sc-font-size);text-align:center;padding:2px 10px;position:relative}
+</style><style>.scDiscount input[type=submit],.scDiscount input[type=button]{padding:5px 10px}.scDiscount ::placeholder{font-size:0.8em;text-transform:none}.scDiscount.sc-rtl{direction:rtl}.scDiscount.sc-rtl .sc_simple-container .sc-cube-text{margin:0 0 0 10px !important}.scDiscount.sc-rtl .sc_simple-info__tag{display:flex}.scDiscount.sc-rtl .sc-tag{margin:0 0 5px 5px}.scDiscount.sc-rtl .sc_simple-info .sc_simple-info__row div:last-child{margin-left:0;margin-right:auto}
+</style><style>.sc-install-modal_overlay{position:fixed;background-color:rgba(0,0,0,0.2);top:0;bottom:0;left:0;right:0;z-index:100000000}.sc-install-modal_overlay .sc-install-modal{position:absolute;width:100%;max-width:800px;background-color:#fff;border-radius:3px;left:50%;top:50%;transform:translate(-50%, -50%);padding:40px;text-align:center}.sc-install-modal_overlay .sc-install-modal .sc-install-modal_content{max-height:75vh;overflow:auto;margin:0 -40px;padding:0 40px}.sc-install-modal_overlay .sc-install-modal .sc-install-modal_header{position:relative;padding:30px 40px;margin:-40px -40px 0px -40px;text-align:left;font-size:20px;font-weight:bold;color:#000}.sc-install-modal_overlay .sc-install-modal .sc-install-modal_close{position:absolute;right:20px;top:20px;width:32px;height:32px;opacity:0.3;transition:linear opacity 300ms;cursor:pointer}.sc-install-modal_overlay .sc-install-modal .sc-install-modal_close:hover{opacity:1}.sc-install-modal_overlay .sc-install-modal .sc-install-modal_close:before,.sc-install-modal_overlay .sc-install-modal .sc-install-modal_close:after{position:absolute;left:15px;content:" ";height:33px;width:2px;background-color:#333}.sc-install-modal_overlay .sc-install-modal .sc-install-modal_close:before{transform:rotate(45deg)}.sc-install-modal_overlay .sc-install-modal .sc-install-modal_close:after{transform:rotate(-45deg)}
+</style><style>body.sc_installer_enabled{padding-top:80px !important}body.sc_installer_enabled #preview-bar-iframe{display:none !important;opacity:0;visibility:hidden}.sci-installer{position:fixed;top:0;left:0;right:0;background-color:#ffffff;border-bottom-color:#dfe3e8;box-shadow:0 0 4px 0 rgba(0,0,0,0.5);padding:15px 20px;z-index:1000000001;font-family:ShopifySans, Helvetica, Arial, sans-serif;line-height:20px}.sci-installer .sci-btn{display:inline-block;padding:0.7em 1.875em;border-radius:5px;font-family:ShopifySans, Helvetica, Arial, sans-serif;font-weight:700;font-size:0.85em;line-height:1.133;-webkit-font-smoothing:antialiased;-webkit-transition:150ms ease;transition:150ms ease;-webkit-transition-property:background-color, border-color, color, -webkit-box-shadow;transition-property:background-color, border-color, color, -webkit-box-shadow;transition-property:background-color, border-color, box-shadow, color;transition-property:background-color, border-color, box-shadow, color, -webkit-box-shadow;text-align:center;user-select:none;appearance:none;cursor:pointer;box-shadow:0 5px 15px 0 rgba(0,0,0,0.15);border-width:0;border-style:solid;border-color:transparent;margin-left:10px}.sci-installer .sci-btn.sci-next{background-color:#008060;color:#ffffff}.sci-installer .sci-btn.sci-next.sci-loading:after{border-top-color:#008060}.sci-installer .sci-btn.sci-next[disabled]{opacity:0.5;cursor:not-allowed}.sci-installer .sci-btn.sci-previous{background-color:#aeaeae;color:#ffffff}.sci-installer .sci-btn.sci-previous.sci-loading:after{border-top-color:#aeaeae}.sci-installer .sci-btn.sci-loading{position:relative;color:transparent}.sci-installer .sci-btn.sci-loading:after{content:" ";pointer-events:none;width:2.5em;height:2.5em;border:0.2em solid transparent;border-radius:50%;border-color:#fff;animation:loadingspin 1s linear infinite;position:absolute;left:50%;top:50%;width:1.4em;height:1.4em;margin-top:-0.7em;margin-left:-0.7em}.sci-installer .sci-container{display:flex;align-items:center}.sci-installer .sci-container .sci-info .sci-h1{font-weight:bold;color:#323232}.sci-installer .sci-container .sci-info .sci-description{font-size:13px;color:#323232}.sci-installer .sci-container .sci-actions{margin-left:auto}.sci-installer .sci-container .sci-actions .sci-btn-plain{border:0;background:transparent;font-family:ShopifySans, Helvetica, Arial, sans-serif;font-weight:500;font-size:1em;color:#808080;margin-right:10px}@keyframes loadingspin{100%{transform:rotate(360deg)}}
+</style><style>.sci-wizard{padding:0;margin:0;list-style:none;margin:0 auto;display:table;position:relative;flex:1}.sci-wizard>*{display:table-cell;text-align:center}.sci-wizard>* .sci-step{width:20px;height:20px;border-radius:20px;border:1px solid #bdc3c7;color:#bdc3c7;font-weight:700;background:#fff;text-align:center;display:inline-block;position:relative;box-sizing:content-box;font-size:10px}.sci-wizard>* .sci-step.sci-complete{border-color:#008060;background-color:#008060;color:#fff}.sci-wizard>* .sci-step.sci-active{border-color:#008060;color:#008060;font-weight:700;border-width:2px;margin-top:-1px}.sci-wizard>* .sci-step:after{content:" ";display:block;width:20px;height:20px;background-color:#fff;position:absolute;z-index:-1;border:10px solid #fff;top:-10px;left:-10px;box-sizing:content-box}.sci-wizard>* .sci-step>*{line-height:20px}.sci-wizard:after{content:" ";border-bottom:1px dotted rgba(0,0,0,0.2);position:absolute;z-index:-2;top:50%}.sci-wizard-steps-1>*{width:100%}.sci-wizard-steps-1:after{left:50%;right:50%}.sci-wizard-steps-2>*{width:50%}.sci-wizard-steps-2:after{left:25%;right:25%}.sci-wizard-steps-3>*{width:33.33333%}.sci-wizard-steps-3:after{left:16.66667%;right:16.66667%}.sci-wizard-steps-4>*{width:25%}.sci-wizard-steps-4:after{left:12.5%;right:12.5%}.sci-wizard-steps-5>*{width:20%}.sci-wizard-steps-5:after{left:10%;right:10%}.sci-wizard-steps-6>*{width:16.66667%}.sci-wizard-steps-6:after{left:8.33333%;right:8.33333%}.sci-wizard-steps-7>*{width:14.28571%}.sci-wizard-steps-7:after{left:7.14286%;right:7.14286%}.sci-wizard-steps-8>*{width:12.5%}.sci-wizard-steps-8:after{left:6.25%;right:6.25%}.sci-wizard-steps-9>*{width:11.11111%}.sci-wizard-steps-9:after{left:5.55556%;right:5.55556%}.sci-wizard-steps-10>*{width:10%}.sci-wizard-steps-10:after{left:5%;right:5%}.sci-wizard-steps-11>*{width:9.09091%}.sci-wizard-steps-11:after{left:4.54545%;right:4.54545%}.sci-wizard-steps-12>*{width:8.33333%}.sci-wizard-steps-12:after{left:4.16667%;right:4.16667%}.sci-wizard-steps-13>*{width:7.69231%}.sci-wizard-steps-13:after{left:3.84615%;right:3.84615%}.sci-wizard-steps-14>*{width:7.14286%}.sci-wizard-steps-14:after{left:3.57143%;right:3.57143%}.sci-wizard-steps-15>*{width:6.66667%}.sci-wizard-steps-15:after{left:3.33333%;right:3.33333%}.sci-wizard-steps-16>*{width:6.25%}.sci-wizard-steps-16:after{left:3.125%;right:3.125%}.sci-wizard-steps-17>*{width:5.88235%}.sci-wizard-steps-17:after{left:2.94118%;right:2.94118%}.sci-wizard-steps-18>*{width:5.55556%}.sci-wizard-steps-18:after{left:2.77778%;right:2.77778%}.sci-wizard-steps-19>*{width:5.26316%}.sci-wizard-steps-19:after{left:2.63158%;right:2.63158%}.sci-wizard-steps-20>*{width:5%}.sci-wizard-steps-20:after{left:2.5%;right:2.5%}
+</style><style>.sci-message{font-size:1.2rem;font-weight:400;line-height:2rem;display:inline-flex;max-width:50rem;padding:0.8rem 1.6rem;border-radius:3px;background:rgba(0,0,0,0.88);box-shadow:0 0 0 1px rgba(63,63,68,0.05),0 1px 3px 0 rgba(63,63,68,0.15);color:#fff;margin-bottom:2rem;background:rgba(191,7,17,0.88);color:#fff;position:fixed;bottom:-100px;left:50%;transform:translateX(-50%);transition:all linear 300ms;opacity:0;z-index:2147483648}.sci-message.sci-message_active{bottom:50px;opacity:1}.sci-message .sci-message_close{all:unset;display:flex;outline:none;margin:7px 0 0 0}.sci-message .sci-message_close svg{width:20px;height:20px;fill:#fff;margin-left:10px;margin-right:-15px}
+</style><style>.svg-success{display:inline-block;vertical-align:top;height:100px;width:100px;opacity:1;overflow:visible}@keyframes success-tick{0%{stroke-dashoffset:16px;opacity:1}100%{stroke-dashoffset:31px;opacity:1}}@keyframes success-circle-outline{0%{stroke-dashoffset:72px;opacity:1}100%{stroke-dashoffset:0px;opacity:1}}@keyframes success-circle-fill{0%{opacity:0}100%{opacity:1}}.svg-success .success-tick{fill:none;stroke-width:1px;stroke:#1b993a;stroke-dasharray:15px, 15px;stroke-dashoffset:-14px;animation:success-tick 0.6s ease 1.3s forwards;opacity:0}.svg-success .success-circle-outline{fill:none;stroke-width:1px;stroke:#1b993a;stroke-dasharray:72px, 72px;stroke-dashoffset:72px;animation:success-circle-outline 1.2s ease-in-out 0s forwards;opacity:0}.svg-success .success-circle-fill{fill:#81c038;stroke:none;opacity:0;animation:success-circle-fill 300ms ease-out 1100ms forwards}@media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none){.svg-success .success-tick{stroke-dasharray:0;stroke-dashoffset:0;animation:none;opacity:1}.svg-success .success-circle-outline{stroke-dasharray:0;stroke-dashoffset:0;animation:none;opacity:1}.svg-success .success-circle-fill{animation:none;opacity:1}}
+</style><style>.sc-install-help{color:#323232;text-align:left;font-family:ShopifySans, Helvetica, Arial, sans-serif;line-height:20px}.sc-install-help *{font-family:ShopifySans, Helvetica, Arial, sans-serif !important}.sc-install-help h1{margin-bottom:15px;color:#323232;font-size:16px;font-weight:bold}.sc-install-help p{margin-bottom:10px;color:#323232;font-size:15px}.sc-install-help p.hint{background-color:#eef9f9;padding:10px;border-top:3px solid #1d9ba4;border-bottom-right-radius:5px;border-bottom-left-radius:5px;box-shadow:0 1px 2px 0 rgba(0,0,0,0.2)}.sc-install-help p.hint:before{content:'💡';font-size:18px}.sc-install-help p img{border:1px solid #d4d5d6;width:100%;margin:10px 0}.sc-install-help .sc-install-help_actions{text-align:center}.sc-install-help .sc-install-help_actions .sci-btn{box-shadow:none}
+</style><style>.scDiscount{margin-top:10px;margin-bottom:10px;margin-left:auto;display:flex}.scDiscount input[type=text]{-webkit-appearance:none;-moz-appearance:none}.scDiscount.sccenter>div{margin-left:auto;margin-right:auto}.scDiscount.scright>div{margin-left:auto}.scDiscount .scError{font-size:12px;color:#ff0000;line-height:16px;margin-bottom:10px;text-align:left}.scDiscount .scError::first-letter{text-transform:capitalize}.overlay-close{text-align:center;color:#fff;margin-top:15px;cursor:pointer}.sc-discount-modal-overlay{position:absolute;top:0;bottom:0;left:0;right:0;background-color:rgba(0,0,0,0.8);z-index:1000;display:flex;flex-wrap:wrap;align-items:center;justify-content:center;flex-direction:column}.sc-price-loading{font-size:0 !important}.sc-price-loading:after{content:" .";animation:dots 1s steps(5, end) infinite;font-size:35px !important;line-height:10px;margin:0;padding:0;margin-right:15px}@keyframes dots{0%,20%{color:rgba(0,0,0,0);text-shadow:0.25em 0 0 rgba(0,0,0,0),0.5em 0 0 rgba(0,0,0,0)}40%{color:inherit;text-shadow:0.25em 0 0 rgba(0,0,0,0),0.5em 0 0 rgba(0,0,0,0)}60%{text-shadow:0.25em 0 0 currentColor,0.5em 0 0 rgba(0,0,0,0)}80%,100%{text-shadow:0.25em 0 0 currentColor, 0.5em 0 0 currentColor}}@media (max-width: 481px){.scDiscount>div{width:100% !important}}.ajaxcart__inner.ajaxcart__inner--has-fixed-footer{transition:bottom linear 200ms}.ajaxcart__footer.ajaxcart__footer--fixed{transition:max-height linear 300ms}.sc-discount-total s{margin-left:auto !important}.sc-discount-total s span{text-decoration:line-through !important}@media (max-width: 640px){.ajaxcart__policies{margin-bottom:10px}.ajaxcart__subtotal{margin-bottom:10px}.sc_simple-container .sc_simple-info__tag,.sc_simple-info .sc_simple-info__tag{margin-bottom:0}.sc_simple-container .sc_simple-info .sc_simple-info__row,.sc_simple-info .sc_simple-info .sc_simple-info__row{margin-bottom:0}.sc_simple-container .sc-cube-text{line-height:17px}}.scDiscount__container form{margin-bottom:0}.cart__footer .scDiscount__container{width:100%}@media (max-width: 481px){.scDiscount__container{width:100%}}.drawer__cart .scDiscount>div{width:100% !important}#sticky-cart .scDiscount{display:none}.cart__ctas{flex-wrap:wrap}.rebuy-cart__flyout-footer .scDiscount>div{width:100% !important}.rebuy-cart .sc_simple-info__row:last-child{display:none}#monster-upsell-cart .scDiscount input{padding:10px}.cart-drawer__footer .discount-badge{display:none !important}.cart-drawer__footer .discount-badge+.text-subdued{display:none !important}.drawer__footer>[data-discounts],.cart__price__holder>.cart__total:first-child,.cart__price__holder>.cart__total__discount,[data-merge="footer"]>.cart-discount-list,.cart-final-total>.discount-list,.cart-title-right .scDiscount__container,.cart__recap-block>.cart__discount-list,.cart__header .scDiscount__container,.mini-cart__drawer-footer .mini-cart__discount-list,.slidecarthq .discount-box,.order-discount-card-wrapper{display:none !important}.slidecarthq #scDiscountApp>div{width:100% !important}.slidecarthq #scDiscountApp .sc_simple-container{display:flex !important}.sc-minimal__form{display:none}.scActive .sc_minimale-toggle{display:none}.scActive .sc-minimal__form{display:block}.sc-minimal__form--show .sc_minimale-toggle{display:none}.sc-minimal__form--show .sc-minimal__form{display:block}
+</style><script id="boomr-scr-as" src="https://www.neness-shop.de/cdn/shopifycloud/boomerang/shopify-boomerang-1.0.0.min.js" async=""></script><meta http-equiv="origin-trial" content="AymqwRC7u88Y4JPvfIF2F37QKylC04248hLCdJAsh8xgOfe/dVJPV3XS3wLFca1ZMVOtnBfVjaCMTVudWM//5g4AAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1RoaXJkUGFydHkiOnRydWV9"><script async="true" type="text/javascript" src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/10895016064/?random=1694728938155&amp;cv=11&amp;fst=1694728938155&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;gtm=45be39d0&amp;u_w=1920&amp;u_h=1080&amp;url=https%3A%2F%2Fwww.neness-shop.de%2Fcollections%2Ffur-ihn%2Fproducts%2Fman-invictus&amp;ref=https%3A%2F%2Fwww.neness-shop.de%2Fcollections%2Ffur-ihn&amp;hn=www.googleadservices.com&amp;frm=0&amp;tiba=CLASSIV%20WINNER%20%2F%20INVICT%20MAN%20-%20175%20%E2%80%93%20Neness&amp;auid=622937297.1694693713&amp;uaa=x86&amp;uab=64&amp;uafvl=Not%252FA)Brand%3B99.0.0.0%7COpera%2520GX%3B101.0.4843.85%7CChromium%3B115.0.5790.171&amp;uamb=0&amp;uap=Windows&amp;uapv=15.0.0&amp;uaw=0&amp;data=event%3Dgtag.config&amp;rfmt=3&amp;fmt=4"></script><script type="module" defer="" src="https://www.neness-shop.de/cdn/shopifycloud/consent-tracking-api/v0.1/consent-tracking-api.js"></script><style>@font-face {font-family: 'LooxIcons'; src: url('data:application/octet-stream;base64,d09GRgABAAAAAAxcAA8AAAAAFagAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAABHU1VCAAABWAAAADsAAABUIIslek9TLzIAAAGUAAAAQwAAAFY+IFIZY21hcAAAAdgAAABjAAABojUD1ORjdnQgAAACPAAAABMAAAAgBtX/BGZwZ20AAAJQAAAFkAAAC3CKkZBZZ2FzcAAAB+AAAAAIAAAACAAAABBnbHlmAAAH6AAAAbAAAAJ2kqqIL2hlYWQAAAmYAAAAMgAAADYX43qtaGhlYQAACcwAAAAfAAAAJAc5A1JobXR4AAAJ7AAAABQAAAAUEQP//GxvY2EAAAoAAAAADAAAAAwBLgHxbWF4cAAACgwAAAAgAAAAIAC7C7JuYW1lAAAKLAAAAXQAAALNzZ0XGHBvc3QAAAugAAAAPwAAAFaha03hcHJlcAAAC+AAAAB6AAAAhuVBK7x4nGNgZGBg4GIwYLBjYHJx8wlh4MtJLMljkGJgYYAAkDwymzEnMz2RgQPGA8qxgGkOIGaDiAIAJjsFSAB4nGNgZE5nnMDAysDAVMW0h4GBoQdCMz5gMGRkAooysDIzYAUBaa4pDA4vGD4qMwf9z2KIYg5imAYUZgTJAQDj2AvAAHic7ZGxDcAgEAPvgaRA2YI2RUbIIKkyPS0TED8wRiwd1hs9hQE2IIpTJLAXw/UotZFH8sgTl+ZdboQaWukdKtMl010eHrTjb+38OsZ5ryl5YxNvty7UGHXhv9HKhPQBx9gR6gB4nGNgQAMSEMgc9D8LhAESbAPdAHicrVZpd9NGFB15SZyELCULLWphxMRpsEYmbMGACUGyYyBdnK2VoIsUO+m+8Ynf4F/zZNpz6Dd+Wu8bLySQtOdwmpOjd+fN1czbZRJaktgL65GUmy/F1NYmjew8CemGTctRfCg7eyFlisnfBVEQrZbatx2HREQiULWusEQQ+x5ZmmR86FFGy7akV03KLT3pLlvjQb1V334aOsqxO6GkZjN0aD2yJVUYVaJIpj1S0qZlqPorSSu8v8LMV81QwohOImm8GcbQSN4bZ7TKaDW24yiKbLLcKFIkmuFBFHmU1RLn5IoJDMoHzZDyyqcR5cP8iKzYo5xWsEu20/y+L3mndzk/sV9vUbbkQB/Ijuzg7HQlX4RbW2HctJPtKFQRdtd3QmzZ7FT/Zo/ymkYDtysyvdCMYKl8hRArP6HM/iFZLZxP+ZJHo1qykRNB62VO7Es+gdbjiClxzRhZ0N3RCRHU/ZIzDPaYPh788d4plgsTAngcy3pHJZwIEylhczRJ2jByYCVliyqp9a6YOOV1WsRbwn7t2tGXzmjjUHdiPFsPHVs5UcnxaFKnmUyd2knNoykNopR0JnjMrwMoP6JJXm1jNYmVR9M4ZsaERCICLdxLU0EsO7GkKQTNoxm9uRumuXYtWqTJA/Xco/f05la4udNT2g70s0Z/VqdiOtgL0+lp5C/xadrlIkXp+ukZfkziQdYCMpEtNsOUgwdv/Q7Sy9eWHIXXBtju7fMrqH3WRPCkAfsb0B5P1SkJTIWYVYhWQGKta1mWydWsFqnI1HdDmla+rNMEinIcF8e+jHH9XzMzlpgSvt+J07MjLj1z7UsI0xx8m3U9mtepxXIBcWZ5TqdZlu/rNMfyA53mWZ7X6QhLW6ejLD/UaYHlRzodY3lBC5p038GQizDkAg6QMISlA0NYXoIhLBUMYbkIQ1gWYQjLJRjC8mMYwnIZhrC8rGXV1FNJ49qZWAZsQmBijh65zEXlaiq5VEK7aFRqQ54SbpVUFM+qf2WgXjzyhjmwFkiXyJpfMc6Vj0bl+NYVLW8aO1fAsepvH472OfFS1ouFPwX/1dZUJb1izcOTq/Abhp5sJ6o2qXh0TZfPVT26/l9UVFgL9BtIhVgoyrJscGcihI86nYZqoJVDzGzMPLTrdcuan8P9NzFCFlD9+DcUGgvcg05ZSVnt4KzV19uy3DuDcjgTLEkxN/P6VvgiI7PSfpFZyp6PfB5wBYxKZdhqA60VvNknMQ+Z3iTPBHFbUTZI2tjOBIkNHPOAefOdBCZh6qoN5E7hhg34BWFuwXknXKJ6oyyH7kXs8yik/Fun4kT2qGiMwLPZG2Gv70LKb3EMJDT5pX4MVBWhqRg1FdA0Um6oBl/G2bptQsYO9CMqdsOyrOLDxxb3lZJtGYR8pIjVo6Of1l6iTqrcfmYUl++dvgXBIDUxf3vfdHGQyrtayTJHbQNTtxqVU9eaQ+NVh+rmUfW94+wTOWuabronHnpf06rbwcVcLLD2bQ7SUiYX1PVhhQ2iy8WlUOplNEnvuAcYFhjQ71CKjf+r+th8nitVhdFxJN9O1LfR52AM/A/Yf0f1A9D3Y+hyDS7P95oTn2704WyZrqIX66foNzBrrblZugbc0HQD4iFHrY64yg18pwZxeqS5HOkh4GPdFeIBwCaAxeAT3bWM5lMAo/mMOT7A58xh0GQOgy3mMNhmzhrADnMY7DKHwR5zGHzBnHWAL5nDIGQOg4g5DJ4wJwB4yhwGXzGHwdfMYfANc+4DfMscBjFzGCTMYbCv6dYwzC1e0F2gtkFVoANTT1jcw+JQU2XI/o4Xhv29Qcz+wSCm/qjp9pD6Ey8M9WeDmPqLQUz9VdOdIfU3Xhjq7wYx9Q+DmPpMvxjLZQa/jHyXCgeUXWw+5++J9w/bxUC5AAEAAf//AA94nI2Rv0/bQBTH3zv7Ysc+28S+3JHWJMElEMSQCEhcqQy3oaoLI106IsESdgQTI1I3dpYMwFAh9U8AiTCi/A0IBTamQEMv4ccEEtLp6d4bnj7fzwMEeOwYB4aCEjSUEwaOaVAguPzjT7yyqhgiENgEQhj5/lk5uiEtPYO1n38nuDSonEMeYJTnPtbQyiTTjcU0mhnWStqcLyEVxkHQqbM8u+8zwbB+4ZdwfMcts20cL+M1C04H18wdQ2t31wod00Z5GrA8rQ6kHFQ1yStfFmZBqVxc4L6Xta0MNZB9CFRlK1NShGMG5XOY1jBAaaUyesL+kryDTbYOexvrN0ezl5cDHUA6bwdI2km3m7R7rRaePGWJ30kCoGkAyBLegg9Scd0jLg9rS8/XGpxQMbKZ0UzTi82FyXlBvjl9N3b7rvDxzhd47uu/frEQetXjg3bT1m5smIKvypM5x7aoifbHDviJF0cHTGskV8KZihWJjPXsY2ij+SKjiGT/91llY/KkirJTJ8zLevd9T/hm/SJ0Cq86CgyX9iZo999V7lfvWMuI+OiuItQuwuKzCrP8H/KmeJt4nGNgZGBgAGKH6Iva8fw2Xxm4mV8ARRhuFUjHw+j/f/6fYn7B7ADkcjAwgUQBT4wMswAAeJxjYGRgYA76nwUkX/z/8/8X8wsGoAgKYAUAtfEHkAAD6AAAA6AAAAOgAAACOwAAA6D//AAAAAAAUAC2AN4BOwABAAAABQAqAAIAAAAAAAIABgAWAHMAAAA6C3AAAAAAeJx1kM1Kw0AURr/R+teCioJb70paxDQG3BQKhYpudCPSraRpmqSkmTKZFvoavoMP40v4LH5NpyIWEyZz7pk7dyYXwBm+oLB+7jjWrHDIaM07OEDX8S79veMa+cnxHhp4dbxP/+a4jmskjhs4xzsrqNoRowk+HCucqhPHOzhWl4536W8c18hdx3u4UM+O9+kjx3UMVOm4gSv12dezpcmS1Eqz35LAD3wZLkVTZUWYSzi3qTal9GSsCxvnufYiPd3wS5zM89Bsws08iE2Z6UJuPX+jHuMiNqGNR6vq5SIJrB3L2OipPLgMmRk9iSPrpdbOOu327/PQh8YMSxhkbFUKC0GTtsU5gF8NwZAZwsx1VoYCIXKaEHPuSKuVknGPY8yooI2ZkZM9RPxOt/wLKeH+nFXM1urfeEBanZFVXnDLuv5W1iOpqDLDyo5+7l5iwdMCWstdq1ua6laChz81hP1YrU1oInqv6oql7aDN95//+wbUU4RFeJxjYGKAAC4G7ICVkYmRmZGFkZWRjYGluCSxiAtE6KbmFpRUcqTkl+fppmQW8YLFMhJz0nQTc0oYGAA5fA4yAHicY/DewXAiKGIjI2Nf5AbGnRwMHAzJBRsZWJ02MTAyaIEYm7mYGDkgLD4GMIvNaRfTAaA0J5DN7rSLwQHCZmZw2ajC2BEYscGhI2Ijc4rLRjUQbxdHAwMji0NHckgESEkkEGzmYWLk0drB+L91A0vvRiYGFwAMdiP0AAA=') format('woff'); font-weight: normal; font-style: normal;}.loox-icon {display: inline-block; font: normal normal normal 14px/1 LooxIcons; font-size: inherit; text-rendering: auto; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;}i.loox-icon {font-family:LooxIcons !important; }.loox-star:before {content: '\e800' !important;}.loox-star-o:before {content: '\e801' !important;}.loox-star-half-o:before {content: '\f123' !important;}.loox-caret:before {content: '\e802' !important;}a[href='#looxReviews'] { text-decoration:none; color: inherit;}.rtl.loox-rating { display: flex; justify-content: flex-start; align-items: center; }.rtl.loox-rating span { padding-right: 5px; }.rtl.loox-rating .loox-icon[data-lx-fill="half"] { transform: rotateY(180deg); }svg.loox-icon { width: 1em; height: 1em; }.loox-rating .loox-rating-content { display: inline-flex; align-items: center; gap: 2px; }.loox-overlay-is-active { overflow: hidden !important; }.loox-rating[data-alignment="left"]{text-align: left;} .loox-rating[data-alignment="center"]{text-align: center;} .loox-rating[data-alignment="right"]{text-align: right;}.loox-rating[data-floating-product-reviews-enabled="true"] { cursor: pointer; }</style><style>#looxReviews, #looxCarousel {float:none;clear:both;}#looxReviews:before, #looxReviews:after, #looxCarousel:before, #looxCarousel:after {content:" ";visibility:hidden;display:block;height:0;clear:both;}</style><svg xmlns="http://www.w3.org/2000/svg" style="display: none" id="loox-rating-icon-svg-store">
+<defs></defs>
+<symbol id="looxicons-rating-icon-fill" viewBox="0 0 24 24" fill="currentcolor">
+    <path d="M24 9.425c0 .212-.125.443-.375.693l-5.236 5.105 1.24 7.212c.01.067.015.164.015.289a.85.85 0 0 1-.151.511.51.51 0 0 1-.44.21c-.183 0-.375-.058-.577-.174L12 19.869l-6.476 3.404c-.212.115-.404.173-.577.173-.202 0-.353-.07-.454-.21a.85.85 0 0 1-.152-.511c0-.058.01-.154.03-.289l1.24-7.211-5.25-5.106C.12 9.858 0 9.628 0 9.425c0-.355.27-.577.808-.663l7.24-1.053 3.245-6.562c.183-.395.418-.592.707-.592s.524.197.707.592l3.245 6.562 7.24 1.053c.539.086.808.308.808.663Z"></path>
+</symbol>
+<symbol id="looxicons-rating-icon-line" viewBox="0 0 24 24" fill="currentcolor">
+    <path d="m16.399 14.574 4.413-4.283-6.086-.894L12 3.887l-2.726 5.51-6.086.894L7.6 14.574l-1.053 6.072L12 17.776l5.438 2.87-1.039-6.072ZM24 9.425c0 .212-.125.443-.375.693l-5.236 5.105 1.24 7.212c.01.067.015.164.015.289 0 .48-.197.72-.591.72-.183 0-.375-.057-.577-.172L12 19.867l-6.476 3.404c-.212.115-.404.173-.577.173-.202 0-.353-.07-.454-.21a.85.85 0 0 1-.152-.511c0-.058.01-.154.03-.289l1.24-7.211-5.25-5.106C.12 9.858 0 9.628 0 9.425c0-.355.27-.577.808-.663l7.24-1.053 3.245-6.562c.183-.395.418-.592.707-.592s.524.197.707.592l3.245 6.562 7.24 1.053c.539.086.808.308.808.663Z"></path>
+</symbol>
+<defs>
     <style>
-        .loox-reviews-default {
-            max-width: 1200px;
-            margin: 0 auto;
+        .lx-icon-fill {
+            --lx-fill-width: calc(100% - var(--lx-rating-percent, 0%));
+            clip-path: inset(0 var(--lx-fill-width, 0) 0 0);
         }
-
-        .loox-rating .loox-icon {
-            color: #ffc540;
+        .lx-icon-line {
+            clip-path: inset(0 0 0 var(--lx-rating-percent, 0%));
+        }
+        [data-lx-fill='empty'] {
+            --lx-rating-percent: 0%;
+        }
+        [data-lx-fill='half'] {
+            --lx-rating-percent: 50%;
+        }
+        [data-lx-fill='full'] {
+            --lx-rating-percent: 100%;
         }
     </style>
 
-    <meta name="google-site-verification" content="8TrYukElOVVuDiMTs0NqjJeHcmUepld0mkq3gQLsR8s">
-    <!-- TrustBox script -->
-    <script type="text/javascript" src="../../../bootstrap/v5/tp.widget.bootstrap.min.js" async=""></script>
-    <!-- End TrustBox script -->
-
-
-    <script>
-        var gsf_conversion_data = {
-            page_type: 'product',
-            event: 'view_item',
-            data: {
-                product_data: [{
-                    variant_id: 44458038427914,
-                    product_id: 8209898701066,
-                    name: "MARS - 100% Parfümöl",
-                    price: "25.90",
-                    currency: "EUR",
-                    sku: "N246",
-                    brand: "Neness",
-                    variant: "Default Title",
-                    category: "",
-                    quantity: "105"
-                }],
-                total_price: "25.90",
-                shop_currency: "EUR"
-            }
-        };
-    </script>
-    <!-- BEGIN app block: shopify://apps/cart-upsell-free-gifts-monster/blocks/app-embed/a1b8e58a-bf1d-4e0f-8768-a387c3f643c0 -->
-    <script>
-        // custom code here
-    </script>
-
-    <script>
-        window.mu_version = 1.8
-
-        window.mu_product = {
-            ...{
-                "id": 8209898701066,
-                "title": "MARS - 100% Parfümöl",
-                "handle": "mars-roll-on-100-parfumol",
-                "description": "\u003cmeta charset=\"utf-8\"\u003e\n\u003cp\u003eUnser Parfümöl \u003cstrong\u003eMARS\u003c\/strong\u003e ist eine exquisite Kombination aus erdigen, holzigen und würzigen Noten, die ein luxuriöses und unvergessliches Dufterlebnis bieten. Hier sind die Duftnoten in Stichpunkten:\u003c\/p\u003e\n\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eKopfnoten:\u003c\/strong\u003e Zistrose, Rosmarin, Kardamom und brasilianisches Rosenholz\u003c\/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eHerznoten:\u003c\/strong\u003e Oud, Patschuli und Vetiver\u003c\/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eBasisnoten:\u003c\/strong\u003e Tonkabohne, Ambra und Sandelholz\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003cp\u003eDie Mischung aus diesen reichen und intensiven Noten schafft ein einzigartiges und unwiderstehliches Parfüm, das Ihre Sinne fesseln wird. Unsere Parfümöle sind alle aus hochwertigen, natürlichen Ölen hergestellt und bieten ein lang anhaltendes Dufterlebnis ohne die Austrocknung oder Reizung der Haut, die oft mit Alkohol-basierten Düften verbunden sind. Entdecken Sie unser Parfümöl und tauchen Sie ein in eine Welt voller Raffinesse und Eleganz.\u003c\/p\u003e",
-                "published_at": "2023-03-24T09:52:36+01:00",
-                "created_at": "2023-03-24T09:52:36+01:00",
-                "vendor": "Neness",
-                "type": "",
-                "tags": [],
-                "price": 2590,
-                "price_min": 2590,
-                "price_max": 2590,
-                "available": true,
-                "price_varies": false,
-                "compare_at_price": null,
-                "compare_at_price_min": 0,
-                "compare_at_price_max": 0,
-                "compare_at_price_varies": false,
-                "variants": [{
-                    "id": 44458038427914,
-                    "title": "Default Title",
-                    "option1": "Default Title",
-                    "option2": null,
-                    "option3": null,
-                    "sku": "N246",
-                    "requires_shipping": true,
-                    "taxable": true,
-                    "featured_image": null,
-                    "available": true,
-                    "name": "MARS - 100% Parfümöl",
-                    "public_title": null,
-                    "options": ["Default Title"],
-                    "price": 2590,
-                    "weight": 10,
-                    "compare_at_price": null,
-                    "inventory_management": "shopify",
-                    "barcode": "",
-                    "unit_price": 25900,
-                    "unit_price_measurement": {
-                        "measured_type": "volume",
-                        "quantity_value": "10.0",
-                        "quantity_unit": "ml",
-                        "reference_value": 100,
-                        "reference_unit": "ml"
-                    },
-                    "requires_selling_plan": false,
-                    "selling_plan_allocations": []
-                }],
-                "images": ["\/\/www.neness-shop.de\/cdn\/shop\/products\/montaz_mars_AO.jpg?v=1679647960"],
-                "featured_image": "\/\/www.neness-shop.de\/cdn\/shop\/products\/montaz_mars_AO.jpg?v=1679647960",
-                "options": ["Title"],
-                "media": [{
-                    "alt": null,
-                    "id": 36146955125002,
-                    "position": 1,
-                    "preview_image": {
-                        "aspect_ratio": 1.0,
-                        "height": 3000,
-                        "width": 3000,
-                        "src": "\/\/www.neness-shop.de\/cdn\/shop\/products\/montaz_mars_AO.jpg?v=1679647960"
-                    },
-                    "aspect_ratio": 1.0,
-                    "height": 3000,
-                    "media_type": "image",
-                    "src": "\/\/www.neness-shop.de\/cdn\/shop\/products\/montaz_mars_AO.jpg?v=1679647960",
-                    "width": 3000
-                }],
-                "requires_selling_plan": false,
-                "selling_plan_groups": [],
-                "content": "\u003cmeta charset=\"utf-8\"\u003e\n\u003cp\u003eUnser Parfümöl \u003cstrong\u003eMARS\u003c\/strong\u003e ist eine exquisite Kombination aus erdigen, holzigen und würzigen Noten, die ein luxuriöses und unvergessliches Dufterlebnis bieten. Hier sind die Duftnoten in Stichpunkten:\u003c\/p\u003e\n\u003cul\u003e\n\u003cli\u003e\n\u003cstrong\u003eKopfnoten:\u003c\/strong\u003e Zistrose, Rosmarin, Kardamom und brasilianisches Rosenholz\u003c\/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eHerznoten:\u003c\/strong\u003e Oud, Patschuli und Vetiver\u003c\/li\u003e\n\u003cli\u003e\n\u003cstrong\u003eBasisnoten:\u003c\/strong\u003e Tonkabohne, Ambra und Sandelholz\u003c\/li\u003e\n\u003c\/ul\u003e\n\u003cp\u003eDie Mischung aus diesen reichen und intensiven Noten schafft ein einzigartiges und unwiderstehliches Parfüm, das Ihre Sinne fesseln wird. Unsere Parfümöle sind alle aus hochwertigen, natürlichen Ölen hergestellt und bieten ein lang anhaltendes Dufterlebnis ohne die Austrocknung oder Reizung der Haut, die oft mit Alkohol-basierten Düften verbunden sind. Entdecken Sie unser Parfümöl und tauchen Sie ein in eine Welt voller Raffinesse und Eleganz.\u003c\/p\u003e"
-            },
-            collections: [{
-                "id": 482460696842,
-                "handle": "365days-dufte",
-                "updated_at": "2023-09-04T20:55:38+02:00",
-                "published_at": "2022-11-30T12:34:32+01:00",
-                "sort_order": "best-selling",
-                "template_suffix": "",
-                "published_scope": "web",
-                "title": "365DAYS Düfte",
-                "body_html": ""
-            }, {
-                "id": 287866683587,
-                "handle": "bestseller",
-                "updated_at": "2023-09-06T20:45:36+02:00",
-                "published_at": "2022-04-06T17:54:59+02:00",
-                "sort_order": "best-selling",
-                "template_suffix": "",
-                "published_scope": "web",
-                "title": "Bestseller",
-                "body_html": ""
-            }, {
-                "id": 478817386762,
-                "handle": "bestseller-herrendufte",
-                "updated_at": "2023-09-06T20:40:35+02:00",
-                "published_at": "2022-07-16T21:57:48+02:00",
-                "sort_order": "manual",
-                "template_suffix": "",
-                "published_scope": "web",
-                "title": "Bestseller Herrendüfte",
-                "body_html": ""
-            }, {
-                "id": 496098083082,
-                "handle": "100-parfume-oil",
-                "updated_at": "2023-09-04T20:55:38+02:00",
-                "published_at": "2023-03-24T10:50:54+01:00",
-                "sort_order": "best-selling",
-                "template_suffix": "",
-                "published_scope": "web",
-                "title": "Parfümöl",
-                "body_html": ""
-            }],
-            inventory: {
-                "44458038427914": 105,
-            },
-            has_only_default_variant: true,
-
-        }
-
-        window.mu_currencies = [{
-            "name": "Euro",
-            "iso_code": "EUR",
-            "symbol": "€"
-        }, ];
-        window.mu_origin = 'www.neness-shop.de';
-        window.mu_myshopify_domain = 'parfumly1.myshopify.com';
-        window.mu_cart_currency = 'EUR';
-        window.mu_cart_items = [];
-        window.mu_money_format = '€{{amount_with_comma_separator}}';
-
-
-
-
-
-
-
-
-
-        window.mu_bag_selector = [];
-
-
-        window.mu_hide_when_opened = "";
-    </script>
-    <script async="" src="../../../extensions/d23b4076-e7d5-4bb6-9c83-38c23473ba75/7.31.0/assets/webfont.js"></script>
-
-    <link href="../../../extensions/d23b4076-e7d5-4bb6-9c83-38c23473ba75/7.31.0/assets/cart.css" rel="stylesheet">
-    <script type="text/javascript">
-        window.assetsPath = "https://cdn.shopify.com/extensions/d23b4076-e7d5-4bb6-9c83-38c23473ba75/7.31.0/assets/cart_renderer.js".split("cart_renderer.js")[0]
-    </script>
-    <script async="" src="../../../extensions/d23b4076-e7d5-4bb6-9c83-38c23473ba75/7.31.0/assets/cart_renderer.js"></script>
-
-
-    <!-- END app app block --><!-- BEGIN app block: shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507 -->
-
-
-
-
-
-
-
-
-
-
-
-
-    <script async="" src="../../../onsite/js/klaviyo.js?company_id=YrYBxA"></script>
-    <script>
-        ! function() {
-            if (!window.klaviyo) {
-                window._klOnsite = window._klOnsite || [];
-                try {
-                    window.klaviyo = new Proxy({}, {
-                        get: function(n, i) {
-                            return "push" === i ? function() {
-                                var n;
-                                (n = window._klOnsite).push.apply(n, arguments)
-                            } : function() {
-                                for (var n = arguments.length, o = new Array(n), w = 0; w < n; w++) o[w] = arguments[w];
-                                var t = "function" == typeof o[o.length - 1] ? o.pop() : void 0,
-                                    e = new Promise((function(n) {
-                                        window._klOnsite.push([i].concat(o, [function(i) {
-                                            t && t(i), n(i)
-                                        }]))
-                                    }));
-                                return e
-                            }
-                        }
-                    })
-                } catch (n) {
-                    window.klaviyo = window.klaviyo || [], window.klaviyo.push = function() {
-                        var n;
-                        (n = window._klOnsite).push.apply(n, arguments)
-                    }
-                }
-            }
-        }();
-    </script>
-
-
-    <script id="viewed_product">
-        if (item == null) {
-            var _learnq = _learnq || [];
-            var item = {
-                Name: "MARS - 100% Parfümöl",
-                ProductID: 8209898701066,
-                Categories: ["365DAYS Düfte", "Bestseller", "Bestseller Herrendüfte", "Parfümöl"],
-                ImageURL: "https://www.neness-shop.de/cdn/shop/products/montaz_mars_AO_grande.jpg?v=1679647960",
-                URL: "https://www.neness-shop.de/products/mars-roll-on-100-parfumol",
-                Brand: "Neness",
-                Price: "€25,90",
-                CompareAtPrice: "€0,00"
-            };
-            _learnq.push(['track', 'Viewed Product', item]);
-            _learnq.push(['trackViewedItem', {
-                Title: item.Name,
-                ItemId: item.ProductID,
-                Categories: item.Categories,
-                ImageUrl: item.ImageURL,
-                Url: item.URL,
-                Metadata: {
-                    Brand: item.Brand,
-                    Price: item.Price,
-                    CompareAtPrice: item.CompareAtPrice
-                }
-            }]);
-        }
-    </script>
-
-
-
-
-    <!-- END app app block --><!-- BEGIN app block: shopify://apps/tixel-multiple-tiktok-pixels/blocks/app-embed/b273c4b8-95ba-409d-a87c-c46907e02629 -->
-    <script async="" src="../../../get_script/index.php?shop_url=parfumly1.myshopify.com"></script>
-
-
-    <!-- END app app block -->
-    <script src="../../../extensions/16ca5eaa-d807-4d59-b662-16247e2bad46/kite-free-gift-7/assets/freeGiftLogicv1.js" type="text/javascript" defer="defer"></script>
-    <link href="../../../extensions/16ca5eaa-d807-4d59-b662-16247e2bad46/kite-free-gift-7/assets/freeGiftLogicv1.css" rel="stylesheet" type="text/css" media="all">
-    <link href="https://monorail-edge.shopifysvc.com" rel="dns-prefetch">
-    <script>
-        (function() {
-            if ("sendBeacon" in navigator && "performance" in window) {
-                var session_token = document.cookie.match(/_shopify_s=([^;]*)/);
-
-                function handle_abandonment_event(e) {
-                    var entries = performance.getEntries().filter(function(entry) {
-                        return /monorail-edge.shopifysvc.com/.test(entry.name);
-                    });
-                    if (!window.abandonment_tracked && entries.length === 0) {
-                        window.abandonment_tracked = true;
-                        var currentMs = Date.now();
-                        var navigation_start = performance.timing.navigationStart;
-                        var payload = {
-                            shop_id: 61544792259,
-                            url: window.location.href,
-                            navigation_start,
-                            duration: currentMs - navigation_start,
-                            session_token: session_token && session_token.length === 2 ? session_token[1] : "",
-                            page_type: "product"
-                        };
-                        window.navigator.sendBeacon("https://monorail-edge.shopifysvc.com/v1/produce", JSON.stringify({
-                            schema_id: "online_store_buyer_site_abandonment/1.1",
-                            payload: payload,
-                            metadata: {
-                                event_created_at_ms: currentMs,
-                                event_sent_at_ms: currentMs
-                            }
-                        }));
-                    }
-                }
-                window.addEventListener('pagehide', handle_abandonment_event);
-            }
-        }());
-    </script>
-    <script id="web-pixels-manager-setup">
-        (function e(e, n, a, o, t, r, i) {
-            function s(e, n) {
-                if (document.head) {
-                    var a = document.createElement("link");
-                    e.match(/spin\.dev\/?/) && (e += "?fast_storefront_renderer=1"), a.rel = "preload", a.href = e, n && (a.as = n);
-                    try {
-                        document.head.appendChild(a)
-                    } catch (e) {
-                        console && console.warn && console.warn("[Web Pixels Manager] Could not append prefetch link tag to DOM.")
-                    }
-                }
-            }
-            var l = i || [],
-                d = null !== e;
-            d && (window.Shopify = window.Shopify || {}, window.Shopify.analytics = window.Shopify.analytics || {}, window.Shopify.analytics.replayQueue = [], window.Shopify.analytics.publish = function(e, n, a) {
-                window.Shopify.analytics.replayQueue.push([e, n, a])
-            });
-            var c = function() {
-                    var e = "legacy",
-                        n = "unknown",
-                        a = null,
-                        o = navigator.userAgent.match(/(Firefox|Chrome)\/(\d+)/i),
-                        t = navigator.userAgent.match(/(Edg)\/(\d+)/i),
-                        r = navigator.userAgent.match(/(Version)\/(\d+)(.+)(Safari)\/(\d+)/i);
-                    r ? (n = "safari", a = parseInt(r[2], 10)) : t ? (n = "edge", a = parseInt(t[2], 10)) : o && (n = o[1].toLocaleLowerCase(), a = parseInt(o[2], 10));
-                    var i = {
-                        chrome: 60,
-                        firefox: 55,
-                        safari: 11,
-                        edge: 80
-                    } [n];
-                    return void 0 !== i && null !== a && i <= a && (e = "modern"), e
-                }(),
-                p = c.substring(0, 1),
-                f = o.substring(0, 1);
-            if (d) try {
-                self.performance.mark("wpm:start")
-            } catch (e) {}
-            if (d) {
-                var u = self.location.origin,
-                    w = (e.webPixelsConfigList || []).filter((function(e) {
-                        return "app" === e.type.toLowerCase()
-                    }));
-                for (let e = 0; e < w.length; e++) {
-                    s([u, "/wpm@", r, "/web-pixel-", w[e].id, "@", w[e].scriptVersion, "/sandbox/worker.", c, ".js"].join(""), "script")
-                }
-            }
-            var h, y, m, g, v, b, _, S, x = [a, "/wpm", "/", f, r, p, ".js"].join("");
-            h = {
-                src: x,
-                async: !0,
-                onload: function() {
-                    if (e) {
-                        var a = window.webPixelsManager.init(e);
-                        n(a), window.Shopify.analytics.replayQueue.forEach((function(e) {
-                            a.publishCustomEvent(e[0], e[1], e[2])
-                        })), window.Shopify.analytics.replayQueue = [], window.Shopify.analytics.publish = a.publishCustomEvent, l.indexOf("web_pixels_visitor_api") > -1 && (window.Shopify.analytics.visitor = a.visitor)
-                    }
-                },
-                onerror: function() {
-                    var n = (e.storefrontBaseUrl ? e.storefrontBaseUrl.replace(/\/$/, "") : self.location.origin) + "/.well-known/shopify/monorail/unstable/produce_batch",
-                        a = JSON.stringify({
-                            metadata: {
-                                event_sent_at_ms: (new Date).getTime()
-                            },
-                            events: [{
-                                schema_id: "web_pixels_manager_load/2.0",
-                                payload: {
-                                    version: t || "latest",
-                                    page_url: self.location.href,
-                                    status: "failed",
-                                    error_msg: x + " has failed to load"
-                                },
-                                metadata: {
-                                    event_created_at_ms: (new Date).getTime()
-                                }
-                            }]
-                        });
-                    try {
-                        if (self.navigator.sendBeacon.bind(self.navigator)(n, a)) return !0
-                    } catch (e) {}
-                    const o = new XMLHttpRequest;
-                    try {
-                        return o.open("POST", n, !0), o.setRequestHeader("Content-Type", "text/plain"), o.send(a), !0
-                    } catch (e) {
-                        console && console.warn && console.warn("[Web Pixels Manager] Got an unhandled error while logging a load error.")
-                    }
-                    return !1
-                }
-            }, y = document.createElement("script"), m = h.src, g = h.async || !0, v = h.onload, b = h.onerror, _ = document.head, S = document.body, y.async = g, y.src = m, v && y.addEventListener("load", v), b && y.addEventListener("error", b), _ ? _.appendChild(y) : S ? S.appendChild(y) : console.error("Did not find a head or body element to append the script")
-        })({
-            shopId: 61544792259,
-            storefrontBaseUrl: "https://www.neness-shop.de",
-            cdnBaseUrl: "https://www.neness-shop.de/cdn",
-            surface: "storefront-renderer",
-            enabledBetaFlags: ["web_pixels_async_pixel_refactor"],
-            webPixelsConfigList: [{
-                "id": "19300618",
-                "configuration": "{\"pixelId\":\"45b43596-2ffb-4c11-8814-7f970671a775\"}",
-                "eventPayloadVersion": "v1",
-                "runtimeContext": "STRICT",
-                "scriptVersion": "bb41bf091d86ec09beb5141ead6fafc0",
-                "type": "APP",
-                "apiClientId": 2556259
-            }, {
-                "id": "shopify-app-pixel",
-                "configuration": "{}",
-                "eventPayloadVersion": "v1",
-                "runtimeContext": "STRICT",
-                "scriptVersion": "0559",
-                "apiClientId": "shopify-pixel",
-                "type": "APP"
-            }, {
-                "id": "shopify-custom-pixel",
-                "eventPayloadVersion": "v1",
-                "runtimeContext": "LAX",
-                "scriptVersion": "0559",
-                "apiClientId": "shopify-pixel",
-                "type": "CUSTOM"
-            }],
-            initData: {
-                "cart": null,
-                "checkout": null,
-                "customer": null,
-                "productVariants": [{
-                    "id": "44458038427914",
-                    "image": {
-                        "src": "\/\/www.neness-shop.de\/cdn\/shop\/products\/montaz_mars_AO.jpg?v=1679647960"
-                    },
-                    "price": {
-                        "amount": 25.9,
-                        "currencyCode": "EUR"
-                    },
-                    "product": {
-                        "id": "8209898701066",
-                        "title": "MARS - 100% Parf\u00fcm\u00f6l",
-                        "untranslatedTitle": "MARS - 100% Parf\u00fcm\u00f6l",
-                        "vendor": "Neness",
-                        "type": ""
-                    },
-                    "sku": "N246",
-                    "title": "Default Title",
-                    "untranslatedTitle": "Default Title"
-                }]
-            },
-        }, function pageEvents(webPixelsManagerAPI) {
-            webPixelsManagerAPI.publish("page_viewed");
-            webPixelsManagerAPI.publish("product_viewed", {
-                "productVariant": {
-                    "id": "44458038427914",
-                    "image": {
-                        "src": "\/\/www.neness-shop.de\/cdn\/shop\/products\/montaz_mars_AO.jpg?v=1679647960"
-                    },
-                    "price": {
-                        "amount": 25.9,
-                        "currencyCode": "EUR"
-                    },
-                    "product": {
-                        "id": "8209898701066",
-                        "title": "MARS - 100% Parf\u00fcm\u00f6l",
-                        "untranslatedTitle": "MARS - 100% Parf\u00fcm\u00f6l",
-                        "vendor": "Neness",
-                        "type": ""
-                    },
-                    "sku": "N246",
-                    "title": "Default Title",
-                    "untranslatedTitle": "Default Title"
-                }
-            });
-        }, "https://www.neness-shop.de/cdn", "browser", "0.0.353", "81539cb7w7cf765a2pac65c931m449d8a44", ["web_pixels_async_pixel_refactor"]);
-    </script>
-    <script>
-        window.ShopifyAnalytics = window.ShopifyAnalytics || {};
-        window.ShopifyAnalytics.meta = window.ShopifyAnalytics.meta || {};
-        window.ShopifyAnalytics.meta.currency = 'EUR';
-        var meta = {
-            "product": {
-                "id": 8209898701066,
-                "gid": "gid:\/\/shopify\/Product\/8209898701066",
-                "vendor": "Neness",
-                "type": "",
-                "variants": [{
-                    "id": 44458038427914,
-                    "price": 2590,
-                    "name": "MARS - 100% Parfümöl",
-                    "public_title": null,
-                    "sku": "N246"
-                }]
-            },
-            "page": {
-                "pageType": "product",
-                "resourceType": "product",
-                "resourceId": 8209898701066
-            }
-        };
-        for (var attr in meta) {
-            window.ShopifyAnalytics.meta[attr] = meta[attr];
-        }
-    </script>
-    <script>
-        window.ShopifyAnalytics.merchantGoogleAnalytics = function() {
-
-        };
-    </script>
-    <script class="analytics">
-        (window.gaDevIds = window.gaDevIds || []).push('BwiEti');
-
-
-        (function() {
-            var customDocumentWrite = function(content) {
-                var jquery = null;
-
-                if (window.jQuery) {
-                    jquery = window.jQuery;
-                } else if (window.Checkout && window.Checkout.$) {
-                    jquery = window.Checkout.$;
-                }
-
-                if (jquery) {
-                    jquery('body').append(content);
-                }
-            };
-
-            var hasLoggedConversion = function(token) {
-                if (token) {
-                    return document.cookie.indexOf('loggedConversion=' + token) !== -1;
-                }
-                return false;
-            }
-
-            var setCookieIfConversion = function(token) {
-                if (token) {
-                    var twoMonthsFromNow = new Date(Date.now());
-                    twoMonthsFromNow.setMonth(twoMonthsFromNow.getMonth() + 2);
-
-                    document.cookie = 'loggedConversion=' + token + '; expires=' + twoMonthsFromNow;
-                }
-            }
-
-            var trekkie = window.ShopifyAnalytics.lib = window.trekkie = window.trekkie || [];
-            if (trekkie.integrations) {
-                return;
-            }
-            trekkie.methods = [
-                'identify',
-                'page',
-                'ready',
-                'track',
-                'trackForm',
-                'trackLink'
-            ];
-            trekkie.factory = function(method) {
-                return function() {
-                    var args = Array.prototype.slice.call(arguments);
-                    args.unshift(method);
-                    trekkie.push(args);
-                    return trekkie;
-                };
-            };
-            for (var i = 0; i < trekkie.methods.length; i++) {
-                var key = trekkie.methods[i];
-                trekkie[key] = trekkie.factory(key);
-            }
-            trekkie.load = function(config) {
-                trekkie.config = config || {};
-                trekkie.config.initialDocumentCookie = document.cookie;
-                var first = document.getElementsByTagName('script')[0];
-                var script = document.createElement('script');
-                script.type = 'text/javascript';
-                script.onerror = function(e) {
-                    var scriptFallback = document.createElement('script');
-                    scriptFallback.type = 'text/javascript';
-                    scriptFallback.onerror = function(error) {
-                        var Monorail = {
-                            produce: function produce(monorailDomain, schemaId, payload) {
-                                var currentMs = new Date().getTime();
-                                var event = {
-                                    schema_id: schemaId,
-                                    payload: payload,
-                                    metadata: {
-                                        event_created_at_ms: currentMs,
-                                        event_sent_at_ms: currentMs
-                                    }
-                                };
-                                return Monorail.sendRequest("https://" + monorailDomain + "/v1/produce", JSON.stringify(event));
-                            },
-                            sendRequest: function sendRequest(endpointUrl, payload) {
-                                // Try the sendBeacon API
-                                if (window && window.navigator && typeof window.navigator.sendBeacon === 'function' && typeof window.Blob === 'function' && !Monorail.isIos12()) {
-                                    var blobData = new window.Blob([payload], {
-                                        type: 'text/plain'
-                                    });
-
-                                    if (window.navigator.sendBeacon(endpointUrl, blobData)) {
-                                        return true;
-                                    } // sendBeacon was not successful
-
-                                } // XHR beacon
-
-                                var xhr = new XMLHttpRequest();
-
-                                try {
-                                    xhr.open('POST', endpointUrl);
-                                    xhr.setRequestHeader('Content-Type', 'text/plain');
-                                    xhr.send(payload);
-                                } catch (e) {
-                                    console.log(e);
-                                }
-
-                                return false;
-                            },
-                            isIos12: function isIos12() {
-                                return window.navigator.userAgent.lastIndexOf('iPhone; CPU iPhone OS 12_') !== -1 || window.navigator.userAgent.lastIndexOf('iPad; CPU OS 12_') !== -1;
-                            }
-                        };
-                        Monorail.produce('monorail-edge.shopifysvc.com',
-                            'trekkie_storefront_load_errors/1.1', {
-                                shop_id: 61544792259,
-                                theme_id: 143048442122,
-                                app_name: "storefront",
-                                context_url: window.location.href,
-                                source_url: "//www.neness-shop.de/cdn/s/trekkie.storefront.3838335172bb3eee0c7f8320cb9d78b9a94cf814.min.js"
-                            });
-
-                    };
-                    scriptFallback.async = true;
-                    scriptFallback.src = '//www.neness-shop.de/cdn/s/trekkie.storefront.3838335172bb3eee0c7f8320cb9d78b9a94cf814.min.js';
-                    first.parentNode.insertBefore(scriptFallback, first);
-                };
-                script.async = true;
-                script.src = '//www.neness-shop.de/cdn/s/trekkie.storefront.3838335172bb3eee0c7f8320cb9d78b9a94cf814.min.js';
-                first.parentNode.insertBefore(script, first);
-            };
-            trekkie.load({
-                "Trekkie": {
-                    "appName": "storefront",
-                    "development": false,
-                    "defaultAttributes": {
-                        "shopId": 61544792259,
-                        "isMerchantRequest": null,
-                        "themeId": 143048442122,
-                        "themeCityHash": "16881971658810175485",
-                        "contentLanguage": "de",
-                        "currency": "EUR"
-                    },
-                    "isServerSideCookieWritingEnabled": true,
-                    "monorailRegion": "shop_domain"
-                },
-                "Google Analytics": {
-                    "trackingId": "UA-227006485-2",
-                    "domain": "auto",
-                    "siteSpeedSampleRate": "10",
-                    "enhancedEcommerce": true,
-                    "doubleClick": true,
-                    "includeSearch": true
-                },
-                "Facebook Pixel": {
-                    "pixelIds": ["346294667488559"],
-                    "agent": "plshopify1.2"
-                },
-                "Pinterest Pixel": {
-                    "pixelId": "2613685659501"
-                },
-                "TikTok Pixel": {
-                    "pixelId": "C9QFE8RC77UE268ERANG"
-                },
-                "Google Gtag Pixel": {
-                    "conversionId": "G-8M6TG84LCB",
-                    "eventLabels": [{
-                        "type": "search",
-                        "action_label": ["G-8M6TG84LCB", "AW-10895016064\/w3tfCNHN0bkDEICBk8so"]
-                    }, {
-                        "type": "begin_checkout",
-                        "action_label": ["G-8M6TG84LCB", "AW-10895016064\/sHrHCM7N0bkDEICBk8so"]
-                    }, {
-                        "type": "view_item",
-                        "action_label": ["G-8M6TG84LCB", "AW-10895016064\/jnmDCMjN0bkDEICBk8so", "MC-H6LQXSMMEM"]
-                    }, {
-                        "type": "purchase",
-                        "action_label": ["G-8M6TG84LCB", "AW-10895016064\/S3IlCMXN0bkDEICBk8so", "MC-H6LQXSMMEM"]
-                    }, {
-                        "type": "page_view",
-                        "action_label": ["G-8M6TG84LCB", "AW-10895016064\/F1YcCMLN0bkDEICBk8so", "MC-H6LQXSMMEM"]
-                    }, {
-                        "type": "add_payment_info",
-                        "action_label": ["G-8M6TG84LCB", "AW-10895016064\/DXXFCNTN0bkDEICBk8so"]
-                    }, {
-                        "type": "add_to_cart",
-                        "action_label": ["G-8M6TG84LCB", "AW-10895016064\/OpuaCMvN0bkDEICBk8so"]
-                    }],
-                    "targetCountry": "DE"
-                },
-                "Session Attribution": {},
-                "S2S": {
-                    "facebookCapiEnabled": true,
-                    "facebookAppPixelId": "346294667488559",
-                    "source": "trekkie-storefront-renderer"
-                }
-            });
-
-            var loaded = false;
-            trekkie.ready(function() {
-                if (loaded) return;
-                loaded = true;
-
-                window.ShopifyAnalytics.lib = window.trekkie;
-
-                ga('require', 'linker');
-
-                function addListener(element, type, callback) {
-                    if (element.addEventListener) {
-                        element.addEventListener(type, callback);
-                    } else if (element.attachEvent) {
-                        element.attachEvent('on' + type, callback);
-                    }
-                }
-
-                function decorate(event) {
-                    event = event || window.event;
-                    var target = event.target || event.srcElement;
-                    if (target && (target.getAttribute('action') || target.getAttribute('href'))) {
-                        ga(function(tracker) {
-                            var linkerParam = tracker.get('linkerParam');
-                            document.cookie = '_shopify_ga=' + linkerParam + '; ' + 'path=/';
-                        });
-                    }
-                }
-                addListener(window, 'load', function() {
-                    for (var i = 0; i < document.forms.length; i++) {
-                        var action = document.forms[i].getAttribute('action');
-                        if (action && action.indexOf('/cart') >= 0) {
-                            addListener(document.forms[i], 'submit', decorate);
-                        }
-                    }
-                    for (var i = 0; i < document.links.length; i++) {
-                        var href = document.links[i].getAttribute('href');
-                        if (href && href.indexOf('/checkout') >= 0) {
-                            addListener(document.links[i], 'click', decorate);
-                        }
-                    }
-                });
-
-
-                var originalDocumentWrite = document.write;
-                document.write = customDocumentWrite;
-                try {
-                    window.ShopifyAnalytics.merchantGoogleAnalytics.call(this);
-                } catch (error) {};
-                document.write = originalDocumentWrite;
-
-                window.ShopifyAnalytics.lib.page(null, {
-                    "pageType": "product",
-                    "resourceType": "product",
-                    "resourceId": 8209898701066
-                });
-
-                var match = window.location.pathname.match(/checkouts\/(.+)\/(thank_you|post_purchase)/)
-                var token = match ? match[1] : undefined;
-                if (!hasLoggedConversion(token)) {
-                    setCookieIfConversion(token);
-                    window.ShopifyAnalytics.lib.track("Viewed Product", {
-                        "currency": "EUR",
-                        "variantId": 44458038427914,
-                        "productId": 8209898701066,
-                        "productGid": "gid:\/\/shopify\/Product\/8209898701066",
-                        "name": "MARS - 100% Parfümöl",
-                        "price": "25.90",
-                        "sku": "N246",
-                        "brand": "Neness",
-                        "variant": null,
-                        "category": "",
-                        "nonInteraction": true
-                    });
-                    window.ShopifyAnalytics.lib.track("monorail:\/\/trekkie_storefront_viewed_product\/1.1", {
-                        "currency": "EUR",
-                        "variantId": 44458038427914,
-                        "productId": 8209898701066,
-                        "productGid": "gid:\/\/shopify\/Product\/8209898701066",
-                        "name": "MARS - 100% Parfümöl",
-                        "price": "25.90",
-                        "sku": "N246",
-                        "brand": "Neness",
-                        "variant": null,
-                        "category": "",
-                        "nonInteraction": true,
-                        "referer": "https:\/\/www.neness-shop.de\/collections\/100-parfume-oil\/products\/mars-roll-on-100-parfumol"
-                    });
-                }
-            });
-
-
-            var eventsListenerScript = document.createElement('script');
-            eventsListenerScript.async = true;
-            eventsListenerScript.src = "//www.neness-shop.de/cdn/shopifycloud/shopify/assets/shop_events_listener-65cd0ba3fcd81a1df33f2510ec5bcf8c0e0958653b50e3965ec972dd638ee13f.js";
-            document.getElementsByTagName('head')[0].appendChild(eventsListenerScript);
-
-        })();
-    </script>
-    <script class="boomerang">
-        (function() {
-            if (window.BOOMR && (window.BOOMR.version || window.BOOMR.snippetExecuted)) {
-                return;
-            }
-            window.BOOMR = window.BOOMR || {};
-            window.BOOMR.snippetStart = new Date().getTime();
-            window.BOOMR.snippetExecuted = true;
-            window.BOOMR.snippetVersion = 12;
-            window.BOOMR.application = "storefront-renderer";
-            window.BOOMR.themeName = "Expanse";
-            window.BOOMR.themeVersion = "3.0.1";
-            window.BOOMR.shopId = 61544792259;
-            window.BOOMR.themeId = 143048442122;
-            window.BOOMR.renderRegion = "gcp-europe-west4";
-            window.BOOMR.url =
-                "https://www.neness-shop.de/cdn/shopifycloud/boomerang/shopify-boomerang-1.0.0.min.js";
-            var where = document.currentScript || document.getElementsByTagName("script")[0];
-            var parentNode = where.parentNode;
-            var promoted = false;
-            var LOADER_TIMEOUT = 3000;
-
-            function promote() {
-                if (promoted) {
-                    return;
-                }
-                var script = document.createElement("script");
-                script.id = "boomr-scr-as";
-                script.src = window.BOOMR.url;
-                script.async = true;
-                parentNode.appendChild(script);
-                promoted = true;
-            }
-
-            function iframeLoader(wasFallback) {
-                promoted = true;
-                var dom, bootstrap, iframe, iframeStyle;
-                var doc = document;
-                var win = window;
-                window.BOOMR.snippetMethod = wasFallback ? "if" : "i";
-                bootstrap = function(parent, scriptId) {
-                    var script = doc.createElement("script");
-                    script.id = scriptId || "boomr-if-as";
-                    script.src = window.BOOMR.url;
-                    BOOMR_lstart = new Date().getTime();
-                    parent = parent || doc.body;
-                    parent.appendChild(script);
-                };
-                if (!window.addEventListener && window.attachEvent && navigator.userAgent.match(/MSIE [67]./)) {
-                    window.BOOMR.snippetMethod = "s";
-                    bootstrap(parentNode, "boomr-async");
-                    return;
-                }
-                iframe = document.createElement("IFRAME");
-                iframe.src = "about:blank";
-                iframe.title = "";
-                iframe.role = "presentation";
-                iframe.loading = "eager";
-                iframeStyle = (iframe.frameElement || iframe).style;
-                iframeStyle.width = 0;
-                iframeStyle.height = 0;
-                iframeStyle.border = 0;
-                iframeStyle.display = "none";
-                parentNode.appendChild(iframe);
-                try {
-                    win = iframe.contentWindow;
-                    doc = win.document.open();
-                } catch (e) {
-                    dom = document.domain;
-                    iframe.src = "javascript:var d=document.open();d.domain='" + dom + "';void(0);";
-                    win = iframe.contentWindow;
-                    doc = win.document.open();
-                }
-                if (dom) {
-                    doc._boomrl = function() {
-                        this.domain = dom;
-                        bootstrap();
-                    };
-                    doc.write("<body onload='document._boomrl();'>");
-                } else {
-                    win._boomrl = function() {
-                        bootstrap();
-                    };
-                    if (win.addEventListener) {
-                        win.addEventListener("load", win._boomrl, false);
-                    } else if (win.attachEvent) {
-                        win.attachEvent("onload", win._boomrl);
-                    }
-                }
-                doc.close();
-            }
-            var link = document.createElement("link");
-            if (link.relList &&
-                typeof link.relList.supports === "function" &&
-                link.relList.supports("preload") &&
-                ("as" in link)) {
-                window.BOOMR.snippetMethod = "p";
-                link.href = window.BOOMR.url;
-                link.rel = "preload";
-                link.as = "script";
-                link.addEventListener("load", promote);
-                link.addEventListener("error", function() {
-                    iframeLoader(true);
-                });
-                setTimeout(function() {
-                    if (!promoted) {
-                        iframeLoader(true);
-                    }
-                }, LOADER_TIMEOUT);
-                BOOMR_lstart = new Date().getTime();
-                parentNode.appendChild(link);
-            } else {
-                iframeLoader(false);
-            }
-
-            function boomerangSaveLoadTime(e) {
-                window.BOOMR_onload = (e && e.timeStamp) || new Date().getTime();
-            }
-            if (window.addEventListener) {
-                window.addEventListener("load", boomerangSaveLoadTime, false);
-            } else if (window.attachEvent) {
-                window.attachEvent("onload", boomerangSaveLoadTime);
-            }
-            if (document.addEventListener) {
-                document.addEventListener("onBoomerangLoaded", function(e) {
-                    e.detail.BOOMR.init({
-                        ResourceTiming: {
-                            enabled: true,
-                            trackedResourceTypes: ["script", "img", "css"]
-                        },
-                    });
-                    e.detail.BOOMR.t_end = new Date().getTime();
-                });
-            } else if (document.attachEvent) {
-                document.attachEvent("onpropertychange", function(e) {
-                    if (!e) e = event;
-                    if (e.propertyName === "onBoomerangLoaded") {
-                        e.detail.BOOMR.init({
-                            ResourceTiming: {
-                                enabled: true,
-                                trackedResourceTypes: ["script", "img", "css"]
-                            },
-                        });
-                        e.detail.BOOMR.t_end = new Date().getTime();
-                    }
-                });
-            }
-        })();
-    </script>
-</head>
+    <g id="looxicons-rating-icon">
+        <use href="#looxicons-rating-icon-line" class="lx-icon-line"></use>
+        <use href="#looxicons-rating-icon-fill" class="lx-icon-fill"></use>
+    </g>
+</defs>
+</svg><meta http-equiv="origin-trial" content="AymqwRC7u88Y4JPvfIF2F37QKylC04248hLCdJAsh8xgOfe/dVJPV3XS3wLFca1ZMVOtnBfVjaCMTVudWM//5g4AAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A+xK4jmZTgh1KBVry/UZKUE3h6Dr9HPPioFS4KNCzify+KEoOii7z/goKS2zgbAOwhpZ1GZllpdz7XviivJM9gcAAACFeyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiQXR0cmlidXRpb25SZXBvcnRpbmdDcm9zc0FwcFdlYiIsImV4cGlyeSI6MTcwNzI2Mzk5OSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><script attributionsrc="" async="true" type="text/javascript" src="https://www.googleadservices.com/pagead/conversion/10895016064/?random=1694728938427&amp;cv=11&amp;fst=1694728938427&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;gtm=45be39d0&amp;u_w=1920&amp;u_h=1080&amp;url=https%3A%2F%2Fwww.neness-shop.de%2Fproducts%2Fman-invictus&amp;ref=https%3A%2F%2Fwww.neness-shop.de%2Fcollections%2Ffur-ihn&amp;label=F1YcCMLN0bkDEICBk8so&amp;tiba=CLASSIV%20WINNER%20%2F%20INVICT%20MAN%20-%20175%20%E2%80%93%20Neness&amp;hn=www.googleadservices.com&amp;frm=0&amp;gtm_ee=1&amp;auid=622937297.1694693713&amp;uaa=x86&amp;uab=64&amp;uafvl=Not%252FA)Brand%3B99.0.0.0%7COpera%2520GX%3B101.0.4843.85%7CChromium%3B115.0.5790.171&amp;uamb=0&amp;uap=Windows&amp;uapv=15.0.0&amp;uaw=0&amp;data=event%3Dpage_view%3Bpage_path%3D%2Fcollections%2Ffur-ihn%2Fproducts%2Fman-invictus&amp;rfmt=3&amp;fmt=4"></script><script attributionsrc="" async="true" type="text/javascript" src="https://www.googleadservices.com/pagead/conversion/10895016064/?random=1694728938439&amp;cv=11&amp;fst=1694728938439&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;gtm=45be39d0&amp;u_w=1920&amp;u_h=1080&amp;url=https%3A%2F%2Fwww.neness-shop.de%2Fcollections%2Ffur-ihn%2Fproducts%2Fman-invictus&amp;ref=https%3A%2F%2Fwww.neness-shop.de%2Fcollections%2Ffur-ihn&amp;label=jnmDCMjN0bkDEICBk8so&amp;hn=www.googleadservices.com&amp;frm=0&amp;tiba=CLASSIV%20WINNER%20%2F%20INVICT%20MAN%20-%20175%20%E2%80%93%20Neness&amp;gtm_ee=1&amp;auid=622937297.1694693713&amp;uaa=x86&amp;uab=64&amp;uafvl=Not%252FA)Brand%3B99.0.0.0%7COpera%2520GX%3B101.0.4843.85%7CChromium%3B115.0.5790.171&amp;uamb=0&amp;uap=Windows&amp;uapv=15.0.0&amp;uaw=0&amp;data=event%3Dview_item%3Becomm_prodid%3Dshopify_DE_7233105854659_41725512974531%3Becomm_totalvalue%3DNaN%3Becomm_pagetype%3Dproduct&amp;rfmt=3&amp;fmt=4"></script><style id="kl-custom-fonts">
+@import 'https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap';
+
+</style><script charset="utf-8" src="https://analytics.tiktok.com/i18n/pixel/static/identify_7dd78.js"></script><style type="text/css">div.giraffly-right-Bar-Preview-Example{clear: both;padding:10px 0;text-align:center;}div.giraffly-right-Bar-Preview-width h3{font-size: 20px !important; line-height: 40px !important; font-weight : 600 !important; color: #000000 !important; font-family: Lato, sans-serif;  margin-bottom: 6.5px !important; padding-bottom: 0 !important;}div.giraffly-right-Bar-Preview-div-svg{width: 40px; display: inline-block;}div.giraffly-right-Bar-Preview-div-svg svg{width:30px;max-height:28px;height: auto !important;stroke: none;}@-webkit-keyframes bounce{0%,20%,53%,80%,to{-webkit-animation-timing-function:cubic-bezier(.215,.61,.355,1);animation-timing-function:cubic-bezier(.215,.61,.355,1);-webkit-transform:translateZ(0);transform:translateZ(0)}40%,43%{-webkit-animation-timing-function:cubic-bezier(.755,.05,.855,.06);animation-timing-function:cubic-bezier(.755,.05,.855,.06);-webkit-transform:translate3d(0,-30px,0);transform:translate3d(0,-30px,0)}70%{-webkit-animation-timing-function:cubic-bezier(.755,.05,.855,.06);animation-timing-function:cubic-bezier(.755,.05,.855,.06);-webkit-transform:translate3d(0,-15px,0);transform:translate3d(0,-15px,0)}90%{-webkit-transform:translate3d(0,-4px,0);transform:translate3d(0,-4px,0)}}@keyframes bounce{0%,20%,53%,80%,to{-webkit-animation-timing-function:cubic-bezier(.215,.61,.355,1);animation-timing-function:cubic-bezier(.215,.61,.355,1);-webkit-transform:translateZ(0);transform:translateZ(0)}40%,43%{-webkit-animation-timing-function:cubic-bezier(.755,.05,.855,.06);animation-timing-function:cubic-bezier(.755,.05,.855,.06);-webkit-transform:translate3d(0,-30px,0);transform:translate3d(0,-30px,0)}70%{-webkit-animation-timing-function:cubic-bezier(.755,.05,.855,.06);animation-timing-function:cubic-bezier(.755,.05,.855,.06);-webkit-transform:translate3d(0,-15px,0);transform:translate3d(0,-15px,0)}90%{-webkit-transform:translate3d(0,-4px,0);transform:translate3d(0,-4px,0)}}.bounce{-webkit-animation-name:bounce;animation-name:bounce;-webkit-transform-origin:center bottom;transform-origin:center bottom}@-webkit-keyframes flash{0%,50%,to{opacity:1}25%,75%{opacity:0}}@keyframes flash{0%,50%,to{opacity:1}25%,75%{opacity:0}}.flash{-webkit-animation-name:flash;animation-name:flash}@-webkit-keyframes pulse{0%{-webkit-transform:scaleX(1);transform:scaleX(1)}50%{-webkit-transform:scale3d(1.05,1.05,1.05);transform:scale3d(1.05,1.05,1.05)}to{-webkit-transform:scaleX(1);transform:scaleX(1)}}@keyframes pulse{0%{-webkit-transform:scaleX(1);transform:scaleX(1)}50%{-webkit-transform:scale3d(1.05,1.05,1.05);transform:scale3d(1.05,1.05,1.05)}to{-webkit-transform:scaleX(1);transform:scaleX(1)}}.pulse{-webkit-animation-name:pulse;animation-name:pulse}@-webkit-keyframes rubberBand{0%{-webkit-transform:scaleX(1);transform:scaleX(1)}30%{-webkit-transform:scale3d(1.25,.75,1);transform:scale3d(1.25,.75,1)}40%{-webkit-transform:scale3d(.75,1.25,1);transform:scale3d(.75,1.25,1)}50%{-webkit-transform:scale3d(1.15,.85,1);transform:scale3d(1.15,.85,1)}65%{-webkit-transform:scale3d(.95,1.05,1);transform:scale3d(.95,1.05,1)}75%{-webkit-transform:scale3d(1.05,.95,1);transform:scale3d(1.05,.95,1)}to{-webkit-transform:scaleX(1);transform:scaleX(1)}}@keyframes rubberBand{0%{-webkit-transform:scaleX(1);transform:scaleX(1)}30%{-webkit-transform:scale3d(1.25,.75,1);transform:scale3d(1.25,.75,1)}40%{-webkit-transform:scale3d(.75,1.25,1);transform:scale3d(.75,1.25,1)}50%{-webkit-transform:scale3d(1.15,.85,1);transform:scale3d(1.15,.85,1)}65%{-webkit-transform:scale3d(.95,1.05,1);transform:scale3d(.95,1.05,1)}75%{-webkit-transform:scale3d(1.05,.95,1);transform:scale3d(1.05,.95,1)}to{-webkit-transform:scaleX(1);transform:scaleX(1)}}.rubberBand{-webkit-animation-name:rubberBand;animation-name:rubberBand}@-webkit-keyframes shake{0%,to{-webkit-transform:translateZ(0);transform:translateZ(0)}10%,30%,50%,70%,90%{-webkit-transform:translate3d(-10px,0,0);transform:translate3d(-10px,0,0)}20%,40%,60%,80%{-webkit-transform:translate3d(10px,0,0);transform:translate3d(10px,0,0)}}@keyframes shake{0%,to{-webkit-transform:translateZ(0);transform:translateZ(0)}10%,30%,50%,70%,90%{-webkit-transform:translate3d(-10px,0,0);transform:translate3d(-10px,0,0)}20%,40%,60%,80%{-webkit-transform:translate3d(10px,0,0);transform:translate3d(10px,0,0)}}.shake{-webkit-animation-name:shake;animation-name:shake}@-webkit-keyframes headShake{0%{-webkit-transform:translateX(0);transform:translateX(0)}6.5%{-webkit-transform:translateX(-6px) rotateY(-9deg);transform:translateX(-6px) rotateY(-9deg)}18.5%{-webkit-transform:translateX(5px) rotateY(7deg);transform:translateX(5px) rotateY(7deg)}31.5%{-webkit-transform:translateX(-3px) rotateY(-5deg);transform:translateX(-3px) rotateY(-5deg)}43.5%{-webkit-transform:translateX(2px) rotateY(3deg);transform:translateX(2px) rotateY(3deg)}50%{-webkit-transform:translateX(0);transform:translateX(0)}}@keyframes headShake{0%{-webkit-transform:translateX(0);transform:translateX(0)}6.5%{-webkit-transform:translateX(-6px) rotateY(-9deg);transform:translateX(-6px) rotateY(-9deg)}18.5%{-webkit-transform:translateX(5px) rotateY(7deg);transform:translateX(5px) rotateY(7deg)}31.5%{-webkit-transform:translateX(-3px) rotateY(-5deg);transform:translateX(-3px) rotateY(-5deg)}43.5%{-webkit-transform:translateX(2px) rotateY(3deg);transform:translateX(2px) rotateY(3deg)}50%{-webkit-transform:translateX(0);transform:translateX(0)}}.headShake{-webkit-animation-timing-function:ease-in-out;animation-timing-function:ease-in-out;-webkit-animation-name:headShake;animation-name:headShake}@-webkit-keyframes swing{20%{-webkit-transform:rotate(15deg);transform:rotate(15deg)}40%{-webkit-transform:rotate(-10deg);transform:rotate(-10deg)}60%{-webkit-transform:rotate(5deg);transform:rotate(5deg)}80%{-webkit-transform:rotate(-5deg);transform:rotate(-5deg)}to{-webkit-transform:rotate(0deg);transform:rotate(0deg)}}@keyframes swing{20%{-webkit-transform:rotate(15deg);transform:rotate(15deg)}40%{-webkit-transform:rotate(-10deg);transform:rotate(-10deg)}60%{-webkit-transform:rotate(5deg);transform:rotate(5deg)}80%{-webkit-transform:rotate(-5deg);transform:rotate(-5deg)}to{-webkit-transform:rotate(0deg);transform:rotate(0deg)}}.swing{-webkit-transform-origin:top center;transform-origin:top center;-webkit-animation-name:swing;animation-name:swing}@-webkit-keyframes tada{0%{-webkit-transform:scaleX(1);transform:scaleX(1)}10%,20%{-webkit-transform:scale3d(.9,.9,.9) rotate(-3deg);transform:scale3d(.9,.9,.9) rotate(-3deg)}30%,50%,70%,90%{-webkit-transform:scale3d(1.1,1.1,1.1) rotate(3deg);transform:scale3d(1.1,1.1,1.1) rotate(3deg)}40%,60%,80%{-webkit-transform:scale3d(1.1,1.1,1.1) rotate(-3deg);transform:scale3d(1.1,1.1,1.1) rotate(-3deg)}to{-webkit-transform:scaleX(1);transform:scaleX(1)}}@keyframes tada{0%{-webkit-transform:scaleX(1);transform:scaleX(1)}10%,20%{-webkit-transform:scale3d(.9,.9,.9) rotate(-3deg);transform:scale3d(.9,.9,.9) rotate(-3deg)}30%,50%,70%,90%{-webkit-transform:scale3d(1.1,1.1,1.1) rotate(3deg);transform:scale3d(1.1,1.1,1.1) rotate(3deg)}40%,60%,80%{-webkit-transform:scale3d(1.1,1.1,1.1) rotate(-3deg);transform:scale3d(1.1,1.1,1.1) rotate(-3deg)}to{-webkit-transform:scaleX(1);transform:scaleX(1)}}.tada{-webkit-animation-name:tada;animation-name:tada}@-webkit-keyframes wobble{0%{-webkit-transform:translateZ(0);transform:translateZ(0)}15%{-webkit-transform:translate3d(-25%,0,0) rotate(-5deg);transform:translate3d(-25%,0,0) rotate(-5deg)}30%{-webkit-transform:translate3d(20%,0,0) rotate(3deg);transform:translate3d(20%,0,0) rotate(3deg)}45%{-webkit-transform:translate3d(-15%,0,0) rotate(-3deg);transform:translate3d(-15%,0,0) rotate(-3deg)}60%{-webkit-transform:translate3d(10%,0,0) rotate(2deg);transform:translate3d(10%,0,0) rotate(2deg)}75%{-webkit-transform:translate3d(-5%,0,0) rotate(-1deg);transform:translate3d(-5%,0,0) rotate(-1deg)}to{-webkit-transform:translateZ(0);transform:translateZ(0)}}@keyframes wobble{0%{-webkit-transform:translateZ(0);transform:translateZ(0)}15%{-webkit-transform:translate3d(-25%,0,0) rotate(-5deg);transform:translate3d(-25%,0,0) rotate(-5deg)}30%{-webkit-transform:translate3d(20%,0,0) rotate(3deg);transform:translate3d(20%,0,0) rotate(3deg)}45%{-webkit-transform:translate3d(-15%,0,0) rotate(-3deg);transform:translate3d(-15%,0,0) rotate(-3deg)}60%{-webkit-transform:translate3d(10%,0,0) rotate(2deg);transform:translate3d(10%,0,0) rotate(2deg)}75%{-webkit-transform:translate3d(-5%,0,0) rotate(-1deg);transform:translate3d(-5%,0,0) rotate(-1deg)}to{-webkit-transform:translateZ(0);transform:translateZ(0)}}.wobble{-webkit-animation-name:wobble;animation-name:wobble}@-webkit-keyframes jello{0%,11.1%,to{-webkit-transform:translateZ(0);transform:translateZ(0)}22.2%{-webkit-transform:skewX(-12.5deg) skewY(-12.5deg);transform:skewX(-12.5deg) skewY(-12.5deg)}33.3%{-webkit-transform:skewX(6.25deg) skewY(6.25deg);transform:skewX(6.25deg) skewY(6.25deg)}44.4%{-webkit-transform:skewX(-3.125deg) skewY(-3.125deg);transform:skewX(-3.125deg) skewY(-3.125deg)}55.5%{-webkit-transform:skewX(1.5625deg) skewY(1.5625deg);transform:skewX(1.5625deg) skewY(1.5625deg)}66.6%{-webkit-transform:skewX(-.78125deg) skewY(-.78125deg);transform:skewX(-.78125deg) skewY(-.78125deg)}77.7%{-webkit-transform:skewX(.390625deg) skewY(.390625deg);transform:skewX(.390625deg) skewY(.390625deg)}88.8%{-webkit-transform:skewX(-.1953125deg) skewY(-.1953125deg);transform:skewX(-.1953125deg) skewY(-.1953125deg)}}@keyframes jello{0%,11.1%,to{-webkit-transform:translateZ(0);transform:translateZ(0)}22.2%{-webkit-transform:skewX(-12.5deg) skewY(-12.5deg);transform:skewX(-12.5deg) skewY(-12.5deg)}33.3%{-webkit-transform:skewX(6.25deg) skewY(6.25deg);transform:skewX(6.25deg) skewY(6.25deg)}44.4%{-webkit-transform:skewX(-3.125deg) skewY(-3.125deg);transform:skewX(-3.125deg) skewY(-3.125deg)}55.5%{-webkit-transform:skewX(1.5625deg) skewY(1.5625deg);transform:skewX(1.5625deg) skewY(1.5625deg)}66.6%{-webkit-transform:skewX(-.78125deg) skewY(-.78125deg);transform:skewX(-.78125deg) skewY(-.78125deg)}77.7%{-webkit-transform:skewX(.390625deg) skewY(.390625deg);transform:skewX(.390625deg) skewY(.390625deg)}88.8%{-webkit-transform:skewX(-.1953125deg) skewY(-.1953125deg);transform:skewX(-.1953125deg) skewY(-.1953125deg)}}.jello{-webkit-animation-name:jello;animation-name:jello;-webkit-transform-origin:center;transform-origin:center}@-webkit-keyframes heartBeat{0%{-webkit-transform:scale(1);transform:scale(1)}14%{-webkit-transform:scale(1.3);transform:scale(1.3)}28%{-webkit-transform:scale(1);transform:scale(1)}42%{-webkit-transform:scale(1.3);transform:scale(1.3)}70%{-webkit-transform:scale(1);transform:scale(1)}}@keyframes heartBeat{0%{-webkit-transform:scale(1);transform:scale(1)}14%{-webkit-transform:scale(1.3);transform:scale(1.3)}28%{-webkit-transform:scale(1);transform:scale(1)}42%{-webkit-transform:scale(1.3);transform:scale(1.3)}70%{-webkit-transform:scale(1);transform:scale(1)}}.heartBeat{-webkit-animation-name:heartBeat;animation-name:heartBeat;-webkit-animation-duration:1.3s;animation-duration:1.3s;-webkit-animation-timing-function:ease-in-out;animation-timing-function:ease-in-out}@-webkit-keyframes girafflybounceIn{0%,20%,40%,60%,80%,to{-webkit-animation-timing-function:cubic-bezier(.215,.61,.355,1);animation-timing-function:cubic-bezier(.215,.61,.355,1)}0%{opacity:0;-webkit-transform:scale3d(.3,.3,.3);transform:scale3d(.3,.3,.3)}20%{-webkit-transform:scale3d(1.1,1.1,1.1);transform:scale3d(1.1,1.1,1.1)}40%{-webkit-transform:scale3d(.9,.9,.9);transform:scale3d(.9,.9,.9)}60%{opacity:1;-webkit-transform:scale3d(1.03,1.03,1.03);transform:scale3d(1.03,1.03,1.03)}80%{-webkit-transform:scale3d(.97,.97,.97);transform:scale3d(.97,.97,.97)}to{opacity:1;-webkit-transform:scaleX(1);transform:scaleX(1)}}@keyframes girafflybounceIn{0%,20%,40%,60%,80%,to{-webkit-animation-timing-function:cubic-bezier(.215,.61,.355,1);animation-timing-function:cubic-bezier(.215,.61,.355,1)}0%{opacity:0;-webkit-transform:scale3d(.3,.3,.3);transform:scale3d(.3,.3,.3)}20%{-webkit-transform:scale3d(1.1,1.1,1.1);transform:scale3d(1.1,1.1,1.1)}40%{-webkit-transform:scale3d(.9,.9,.9);transform:scale3d(.9,.9,.9)}60%{opacity:1;-webkit-transform:scale3d(1.03,1.03,1.03);transform:scale3d(1.03,1.03,1.03)}80%{-webkit-transform:scale3d(.97,.97,.97);transform:scale3d(.97,.97,.97)}to{opacity:1;-webkit-transform:scaleX(1);transform:scaleX(1)}}.girafflybounceIn{-webkit-animation-duration:.75s;animation-duration:.75s;-webkit-animation-name:girafflybounceIn;animation-name:girafflybounceIn}@-webkit-keyframes bounceInDown{0%,60%,75%,90%,to{-webkit-animation-timing-function:cubic-bezier(.215,.61,.355,1);animation-timing-function:cubic-bezier(.215,.61,.355,1)}0%{opacity:0;-webkit-transform:translate3d(0,-3000px,0);transform:translate3d(0,-3000px,0)}60%{opacity:1;-webkit-transform:translate3d(0,25px,0);transform:translate3d(0,25px,0)}75%{-webkit-transform:translate3d(0,-10px,0);transform:translate3d(0,-10px,0)}90%{-webkit-transform:translate3d(0,5px,0);transform:translate3d(0,5px,0)}to{-webkit-transform:translateZ(0);transform:translateZ(0)}}@keyframes bounceInDown{0%,60%,75%,90%,to{-webkit-animation-timing-function:cubic-bezier(.215,.61,.355,1);animation-timing-function:cubic-bezier(.215,.61,.355,1)}0%{opacity:0;-webkit-transform:translate3d(0,-3000px,0);transform:translate3d(0,-3000px,0)}60%{opacity:1;-webkit-transform:translate3d(0,25px,0);transform:translate3d(0,25px,0)}75%{-webkit-transform:translate3d(0,-10px,0);transform:translate3d(0,-10px,0)}90%{-webkit-transform:translate3d(0,5px,0);transform:translate3d(0,5px,0)}to{-webkit-transform:translateZ(0);transform:translateZ(0)}}.bounceInDown{-webkit-animation-name:bounceInDown;animation-name:bounceInDown}@-webkit-keyframes bounceInLeft{0%,60%,75%,90%,to{-webkit-animation-timing-function:cubic-bezier(.215,.61,.355,1);animation-timing-function:cubic-bezier(.215,.61,.355,1)}0%{opacity:0;-webkit-transform:translate3d(-3000px,0,0);transform:translate3d(-3000px,0,0)}60%{opacity:1;-webkit-transform:translate3d(25px,0,0);transform:translate3d(25px,0,0)}75%{-webkit-transform:translate3d(-10px,0,0);transform:translate3d(-10px,0,0)}90%{-webkit-transform:translate3d(5px,0,0);transform:translate3d(5px,0,0)}to{-webkit-transform:translateZ(0);transform:translateZ(0)}}@keyframes bounceInLeft{0%,60%,75%,90%,to{-webkit-animation-timing-function:cubic-bezier(.215,.61,.355,1);animation-timing-function:cubic-bezier(.215,.61,.355,1)}0%{opacity:0;-webkit-transform:translate3d(-3000px,0,0);transform:translate3d(-3000px,0,0)}60%{opacity:1;-webkit-transform:translate3d(25px,0,0);transform:translate3d(25px,0,0)}75%{-webkit-transform:translate3d(-10px,0,0);transform:translate3d(-10px,0,0)}90%{-webkit-transform:translate3d(5px,0,0);transform:translate3d(5px,0,0)}to{-webkit-transform:translateZ(0);transform:translateZ(0)}}.bounceInLeft{-webkit-animation-name:bounceInLeft;animation-name:bounceInLeft}@-webkit-keyframes bounceInRight{0%,60%,75%,90%,to{-webkit-animation-timing-function:cubic-bezier(.215,.61,.355,1);animation-timing-function:cubic-bezier(.215,.61,.355,1)}0%{opacity:0;-webkit-transform:translate3d(3000px,0,0);transform:translate3d(3000px,0,0)}60%{opacity:1;-webkit-transform:translate3d(-25px,0,0);transform:translate3d(-25px,0,0)}75%{-webkit-transform:translate3d(10px,0,0);transform:translate3d(10px,0,0)}90%{-webkit-transform:translate3d(-5px,0,0);transform:translate3d(-5px,0,0)}to{-webkit-transform:translateZ(0);transform:translateZ(0)}}@keyframes bounceInRight{0%,60%,75%,90%,to{-webkit-animation-timing-function:cubic-bezier(.215,.61,.355,1);animation-timing-function:cubic-bezier(.215,.61,.355,1)}0%{opacity:0;-webkit-transform:translate3d(3000px,0,0);transform:translate3d(3000px,0,0)}60%{opacity:1;-webkit-transform:translate3d(-25px,0,0);transform:translate3d(-25px,0,0)}75%{-webkit-transform:translate3d(10px,0,0);transform:translate3d(10px,0,0)}90%{-webkit-transform:translate3d(-5px,0,0);transform:translate3d(-5px,0,0)}to{-webkit-transform:translateZ(0);transform:translateZ(0)}}.bounceInRight{-webkit-animation-name:bounceInRight;animation-name:bounceInRight}@-webkit-keyframes bounceInUp{0%,60%,75%,90%,to{-webkit-animation-timing-function:cubic-bezier(.215,.61,.355,1);animation-timing-function:cubic-bezier(.215,.61,.355,1)}0%{opacity:0;-webkit-transform:translate3d(0,3000px,0);transform:translate3d(0,3000px,0)}60%{opacity:1;-webkit-transform:translate3d(0,-20px,0);transform:translate3d(0,-20px,0)}75%{-webkit-transform:translate3d(0,10px,0);transform:translate3d(0,10px,0)}90%{-webkit-transform:translate3d(0,-5px,0);transform:translate3d(0,-5px,0)}to{-webkit-transform:translateZ(0);transform:translateZ(0)}}@keyframes bounceInUp{0%,60%,75%,90%,to{-webkit-animation-timing-function:cubic-bezier(.215,.61,.355,1);animation-timing-function:cubic-bezier(.215,.61,.355,1)}0%{opacity:0;-webkit-transform:translate3d(0,3000px,0);transform:translate3d(0,3000px,0)}60%{opacity:1;-webkit-transform:translate3d(0,-20px,0);transform:translate3d(0,-20px,0)}75%{-webkit-transform:translate3d(0,10px,0);transform:translate3d(0,10px,0)}90%{-webkit-transform:translate3d(0,-5px,0);transform:translate3d(0,-5px,0)}to{-webkit-transform:translateZ(0);transform:translateZ(0)}}.bounceInUp{-webkit-animation-name:bounceInUp;animation-name:bounceInUp}@-webkit-keyframes bounceOut{20%{-webkit-transform:scale3d(.9,.9,.9);transform:scale3d(.9,.9,.9)}50%,55%{opacity:1;-webkit-transform:scale3d(1.1,1.1,1.1);transform:scale3d(1.1,1.1,1.1)}to{opacity:0;-webkit-transform:scale3d(.3,.3,.3);transform:scale3d(.3,.3,.3)}}@keyframes bounceOut{20%{-webkit-transform:scale3d(.9,.9,.9);transform:scale3d(.9,.9,.9)}50%,55%{opacity:1;-webkit-transform:scale3d(1.1,1.1,1.1);transform:scale3d(1.1,1.1,1.1)}to{opacity:0;-webkit-transform:scale3d(.3,.3,.3);transform:scale3d(.3,.3,.3)}}.bounceOut{-webkit-animation-duration:.75s;animation-duration:.75s;-webkit-animation-name:bounceOut;animation-name:bounceOut}@-webkit-keyframes bounceOutDown{20%{-webkit-transform:translate3d(0,10px,0);transform:translate3d(0,10px,0)}40%,45%{opacity:1;-webkit-transform:translate3d(0,-20px,0);transform:translate3d(0,-20px,0)}to{opacity:0;-webkit-transform:translate3d(0,2000px,0);transform:translate3d(0,2000px,0)}}@keyframes bounceOutDown{20%{-webkit-transform:translate3d(0,10px,0);transform:translate3d(0,10px,0)}40%,45%{opacity:1;-webkit-transform:translate3d(0,-20px,0);transform:translate3d(0,-20px,0)}to{opacity:0;-webkit-transform:translate3d(0,2000px,0);transform:translate3d(0,2000px,0)}}.bounceOutDown{-webkit-animation-name:bounceOutDown;animation-name:bounceOutDown}@-webkit-keyframes bounceOutLeft{20%{opacity:1;-webkit-transform:translate3d(20px,0,0);transform:translate3d(20px,0,0)}to{opacity:0;-webkit-transform:translate3d(-2000px,0,0);transform:translate3d(-2000px,0,0)}}@keyframes bounceOutLeft{20%{opacity:1;-webkit-transform:translate3d(20px,0,0);transform:translate3d(20px,0,0)}to{opacity:0;-webkit-transform:translate3d(-2000px,0,0);transform:translate3d(-2000px,0,0)}}.bounceOutLeft{-webkit-animation-name:bounceOutLeft;animation-name:bounceOutLeft}@-webkit-keyframes bounceOutRight{20%{opacity:1;-webkit-transform:translate3d(-20px,0,0);transform:translate3d(-20px,0,0)}to{opacity:0;-webkit-transform:translate3d(2000px,0,0);transform:translate3d(2000px,0,0)}}@keyframes bounceOutRight{20%{opacity:1;-webkit-transform:translate3d(-20px,0,0);transform:translate3d(-20px,0,0)}to{opacity:0;-webkit-transform:translate3d(2000px,0,0);transform:translate3d(2000px,0,0)}}.bounceOutRight{-webkit-animation-name:bounceOutRight;animation-name:bounceOutRight}@-webkit-keyframes bounceOutUp{20%{-webkit-transform:translate3d(0,-10px,0);transform:translate3d(0,-10px,0)}40%,45%{opacity:1;-webkit-transform:translate3d(0,20px,0);transform:translate3d(0,20px,0)}to{opacity:0;-webkit-transform:translate3d(0,-2000px,0);transform:translate3d(0,-2000px,0)}}@keyframes bounceOutUp{20%{-webkit-transform:translate3d(0,-10px,0);transform:translate3d(0,-10px,0)}40%,45%{opacity:1;-webkit-transform:translate3d(0,20px,0);transform:translate3d(0,20px,0)}to{opacity:0;-webkit-transform:translate3d(0,-2000px,0);transform:translate3d(0,-2000px,0)}}.bounceOutUp{-webkit-animation-name:bounceOutUp;animation-name:bounceOutUp}@-webkit-keyframes fadeIn{0%{opacity:0}to{opacity:1}}@keyframes fadeIn{0%{opacity:0}to{opacity:1}}.fadeIn{-webkit-animation-name:fadeIn;animation-name:fadeIn}@-webkit-keyframes girafflyfadeInDown{0%{opacity:0;-webkit-transform:translate3d(0,-100%,0);transform:translate3d(0,-100%,0)}to{opacity:1;-webkit-transform:translateZ(0);transform:translateZ(0)}}@keyframes girafflyfadeInDown{0%{opacity:0;-webkit-transform:translate3d(0,-100%,0);transform:translate3d(0,-100%,0)}to{opacity:1;-webkit-transform:translateZ(0);transform:translateZ(0)}}.girafflyfadeInDown{-webkit-animation-name:girafflyfadeInDown;animation-name:girafflyfadeInDown}@-webkit-keyframes girafflyfadeInDownBig{0%{opacity:0;-webkit-transform:translate3d(0,-2000px,0);transform:translate3d(0,-2000px,0)}to{opacity:1;-webkit-transform:translateZ(0);transform:translateZ(0)}}@keyframes girafflyfadeInDownBig{0%{opacity:0;-webkit-transform:translate3d(0,-2000px,0);transform:translate3d(0,-2000px,0)}to{opacity:1;-webkit-transform:translateZ(0);transform:translateZ(0)}}.girafflyfadeInDownBig{-webkit-animation-name:girafflyfadeInDownBig;animation-name:girafflyfadeInDownBig}@-webkit-keyframes fadeInLeft{0%{opacity:0;-webkit-transform:translate3d(-100%,0,0);transform:translate3d(-100%,0,0)}to{opacity:1;-webkit-transform:translateZ(0);transform:translateZ(0)}}@keyframes fadeInLeft{0%{opacity:0;-webkit-transform:translate3d(-100%,0,0);transform:translate3d(-100%,0,0)}to{opacity:1;-webkit-transform:translateZ(0);transform:translateZ(0)}}.fadeInLeft{-webkit-animation-name:fadeInLeft;animation-name:fadeInLeft}@-webkit-keyframes fadeInLeftBig{0%{opacity:0;-webkit-transform:translate3d(-2000px,0,0);transform:translate3d(-2000px,0,0)}to{opacity:1;-webkit-transform:translateZ(0);transform:translateZ(0)}}@keyframes fadeInLeftBig{0%{opacity:0;-webkit-transform:translate3d(-2000px,0,0);transform:translate3d(-2000px,0,0)}to{opacity:1;-webkit-transform:translateZ(0);transform:translateZ(0)}}.fadeInLeftBig{-webkit-animation-name:fadeInLeftBig;animation-name:fadeInLeftBig}@-webkit-keyframes fadeInRight{0%{opacity:0;-webkit-transform:translate3d(100%,0,0);transform:translate3d(100%,0,0)}to{opacity:1;-webkit-transform:translateZ(0);transform:translateZ(0)}}@keyframes fadeInRight{0%{opacity:0;-webkit-transform:translate3d(100%,0,0);transform:translate3d(100%,0,0)}to{opacity:1;-webkit-transform:translateZ(0);transform:translateZ(0)}}.fadeInRight{-webkit-animation-name:fadeInRight;animation-name:fadeInRight}@-webkit-keyframes fadeInRightBig{0%{opacity:0;-webkit-transform:translate3d(2000px,0,0);transform:translate3d(2000px,0,0)}to{opacity:1;-webkit-transform:translateZ(0);transform:translateZ(0)}}@keyframes fadeInRightBig{0%{opacity:0;-webkit-transform:translate3d(2000px,0,0);transform:translate3d(2000px,0,0)}to{opacity:1;-webkit-transform:translateZ(0);transform:translateZ(0)}}.fadeInRightBig{-webkit-animation-name:fadeInRightBig;animation-name:fadeInRightBig}@-webkit-keyframes fadeInUp{0%{opacity:0;-webkit-transform:translate3d(0,100%,0);transform:translate3d(0,100%,0)}to{opacity:1;-webkit-transform:translateZ(0);transform:translateZ(0)}}@keyframes fadeInUp{0%{opacity:0;-webkit-transform:translate3d(0,100%,0);transform:translate3d(0,100%,0)}to{opacity:1;-webkit-transform:translateZ(0);transform:translateZ(0)}}.fadeInUp{-webkit-animation-name:fadeInUp;animation-name:fadeInUp}@-webkit-keyframes fadeInUpBig{0%{opacity:0;-webkit-transform:translate3d(0,2000px,0);transform:translate3d(0,2000px,0)}to{opacity:1;-webkit-transform:translateZ(0);transform:translateZ(0)}}@keyframes fadeInUpBig{0%{opacity:0;-webkit-transform:translate3d(0,2000px,0);transform:translate3d(0,2000px,0)}to{opacity:1;-webkit-transform:translateZ(0);transform:translateZ(0)}}.fadeInUpBig{-webkit-animation-name:fadeInUpBig;animation-name:fadeInUpBig}@-webkit-keyframes fadeOut{0%{opacity:1}to{opacity:0}}@keyframes fadeOut{0%{opacity:1}to{opacity:0}}.fadeOut{-webkit-animation-name:fadeOut;animation-name:fadeOut}@-webkit-keyframes fadeOutDown{0%{opacity:1}to{opacity:0;-webkit-transform:translate3d(0,100%,0);transform:translate3d(0,100%,0)}}@keyframes fadeOutDown{0%{opacity:1}to{opacity:0;-webkit-transform:translate3d(0,100%,0);transform:translate3d(0,100%,0)}}.fadeOutDown{-webkit-animation-name:fadeOutDown;animation-name:fadeOutDown}@-webkit-keyframes fadeOutDownBig{0%{opacity:1}to{opacity:0;-webkit-transform:translate3d(0,2000px,0);transform:translate3d(0,2000px,0)}}@keyframes fadeOutDownBig{0%{opacity:1}to{opacity:0;-webkit-transform:translate3d(0,2000px,0);transform:translate3d(0,2000px,0)}}.fadeOutDownBig{-webkit-animation-name:fadeOutDownBig;animation-name:fadeOutDownBig}@-webkit-keyframes fadeOutLeft{0%{opacity:1}to{opacity:0;-webkit-transform:translate3d(-100%,0,0);transform:translate3d(-100%,0,0)}}@keyframes fadeOutLeft{0%{opacity:1}to{opacity:0;-webkit-transform:translate3d(-100%,0,0);transform:translate3d(-100%,0,0)}}.fadeOutLeft{-webkit-animation-name:fadeOutLeft;animation-name:fadeOutLeft}@-webkit-keyframes fadeOutLeftBig{0%{opacity:1}to{opacity:0;-webkit-transform:translate3d(-2000px,0,0);transform:translate3d(-2000px,0,0)}}@keyframes fadeOutLeftBig{0%{opacity:1}to{opacity:0;-webkit-transform:translate3d(-2000px,0,0);transform:translate3d(-2000px,0,0)}}.fadeOutLeftBig{-webkit-animation-name:fadeOutLeftBig;animation-name:fadeOutLeftBig}@-webkit-keyframes fadeOutRight{0%{opacity:1}to{opacity:0;-webkit-transform:translate3d(100%,0,0);transform:translate3d(100%,0,0)}}@keyframes fadeOutRight{0%{opacity:1}to{opacity:0;-webkit-transform:translate3d(100%,0,0);transform:translate3d(100%,0,0)}}.fadeOutRight{-webkit-animation-name:fadeOutRight;animation-name:fadeOutRight}@-webkit-keyframes fadeOutRightBig{0%{opacity:1}to{opacity:0;-webkit-transform:translate3d(2000px,0,0);transform:translate3d(2000px,0,0)}}@keyframes fadeOutRightBig{0%{opacity:1}to{opacity:0;-webkit-transform:translate3d(2000px,0,0);transform:translate3d(2000px,0,0)}}.fadeOutRightBig{-webkit-animation-name:fadeOutRightBig;animation-name:fadeOutRightBig}@-webkit-keyframes fadeOutUp{0%{opacity:1}to{opacity:0;-webkit-transform:translate3d(0,-100%,0);transform:translate3d(0,-100%,0)}}@keyframes fadeOutUp{0%{opacity:1}to{opacity:0;-webkit-transform:translate3d(0,-100%,0);transform:translate3d(0,-100%,0)}}.fadeOutUp{-webkit-animation-name:fadeOutUp;animation-name:fadeOutUp}@-webkit-keyframes fadeOutUpBig{0%{opacity:1}to{opacity:0;-webkit-transform:translate3d(0,-2000px,0);transform:translate3d(0,-2000px,0)}}@keyframes fadeOutUpBig{0%{opacity:1}to{opacity:0;-webkit-transform:translate3d(0,-2000px,0);transform:translate3d(0,-2000px,0)}}.fadeOutUpBig{-webkit-animation-name:fadeOutUpBig;animation-name:fadeOutUpBig}@-webkit-keyframes flip{0%{-webkit-transform:perspective(400px) scaleX(1) translateZ(0) rotateY(-1turn);transform:perspective(400px) scaleX(1) translateZ(0) rotateY(-1turn);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}40%{-webkit-transform:perspective(400px) scaleX(1) translateZ(150px) rotateY(-190deg);transform:perspective(400px) scaleX(1) translateZ(150px) rotateY(-190deg);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}50%{-webkit-transform:perspective(400px) scaleX(1) translateZ(150px) rotateY(-170deg);transform:perspective(400px) scaleX(1) translateZ(150px) rotateY(-170deg);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}80%{-webkit-transform:perspective(400px) scale3d(.95,.95,.95) translateZ(0) rotateY(0deg);transform:perspective(400px) scale3d(.95,.95,.95) translateZ(0) rotateY(0deg);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}to{-webkit-transform:perspective(400px) scaleX(1) translateZ(0) rotateY(0deg);transform:perspective(400px) scaleX(1) translateZ(0) rotateY(0deg);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}}@keyframes flip{0%{-webkit-transform:perspective(400px) scaleX(1) translateZ(0) rotateY(-1turn);transform:perspective(400px) scaleX(1) translateZ(0) rotateY(-1turn);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}40%{-webkit-transform:perspective(400px) scaleX(1) translateZ(150px) rotateY(-190deg);transform:perspective(400px) scaleX(1) translateZ(150px) rotateY(-190deg);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}50%{-webkit-transform:perspective(400px) scaleX(1) translateZ(150px) rotateY(-170deg);transform:perspective(400px) scaleX(1) translateZ(150px) rotateY(-170deg);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}80%{-webkit-transform:perspective(400px) scale3d(.95,.95,.95) translateZ(0) rotateY(0deg);transform:perspective(400px) scale3d(.95,.95,.95) translateZ(0) rotateY(0deg);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}to{-webkit-transform:perspective(400px) scaleX(1) translateZ(0) rotateY(0deg);transform:perspective(400px) scaleX(1) translateZ(0) rotateY(0deg);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}}.giraffly-animated.flip{-webkit-backface-visibility:visible;backface-visibility:visible;-webkit-animation-name:flip;animation-name:flip}@-webkit-keyframes girafflyflipInX{0%{-webkit-transform:perspective(400px) rotateX(90deg);transform:perspective(400px) rotateX(90deg);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in;opacity:0}40%{-webkit-transform:perspective(400px) rotateX(-20deg);transform:perspective(400px) rotateX(-20deg);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}60%{-webkit-transform:perspective(400px) rotateX(10deg);transform:perspective(400px) rotateX(10deg);opacity:1}80%{-webkit-transform:perspective(400px) rotateX(-5deg);transform:perspective(400px) rotateX(-5deg)}to{-webkit-transform:perspective(400px);transform:perspective(400px)}}@keyframes girafflyflipInX{0%{-webkit-transform:perspective(400px) rotateX(90deg);transform:perspective(400px) rotateX(90deg);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in;opacity:0}40%{-webkit-transform:perspective(400px) rotateX(-20deg);transform:perspective(400px) rotateX(-20deg);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}60%{-webkit-transform:perspective(400px) rotateX(10deg);transform:perspective(400px) rotateX(10deg);opacity:1}80%{-webkit-transform:perspective(400px) rotateX(-5deg);transform:perspective(400px) rotateX(-5deg)}to{-webkit-transform:perspective(400px);transform:perspective(400px)}}.girafflyflipInX{-webkit-backface-visibility:visible!important;backface-visibility:visible!important;-webkit-animation-name:girafflyflipInX;animation-name:girafflyflipInX}@-webkit-keyframes flipInY{0%{-webkit-transform:perspective(400px) rotateY(90deg);transform:perspective(400px) rotateY(90deg);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in;opacity:0}40%{-webkit-transform:perspective(400px) rotateY(-20deg);transform:perspective(400px) rotateY(-20deg);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}60%{-webkit-transform:perspective(400px) rotateY(10deg);transform:perspective(400px) rotateY(10deg);opacity:1}80%{-webkit-transform:perspective(400px) rotateY(-5deg);transform:perspective(400px) rotateY(-5deg)}to{-webkit-transform:perspective(400px);transform:perspective(400px)}}@keyframes flipInY{0%{-webkit-transform:perspective(400px) rotateY(90deg);transform:perspective(400px) rotateY(90deg);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in;opacity:0}40%{-webkit-transform:perspective(400px) rotateY(-20deg);transform:perspective(400px) rotateY(-20deg);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}60%{-webkit-transform:perspective(400px) rotateY(10deg);transform:perspective(400px) rotateY(10deg);opacity:1}80%{-webkit-transform:perspective(400px) rotateY(-5deg);transform:perspective(400px) rotateY(-5deg)}to{-webkit-transform:perspective(400px);transform:perspective(400px)}}.flipInY{-webkit-backface-visibility:visible!important;backface-visibility:visible!important;-webkit-animation-name:flipInY;animation-name:flipInY}@-webkit-keyframes flipOutX{0%{-webkit-transform:perspective(400px);transform:perspective(400px)}30%{-webkit-transform:perspective(400px) rotateX(-20deg);transform:perspective(400px) rotateX(-20deg);opacity:1}to{-webkit-transform:perspective(400px) rotateX(90deg);transform:perspective(400px) rotateX(90deg);opacity:0}}@keyframes flipOutX{0%{-webkit-transform:perspective(400px);transform:perspective(400px)}30%{-webkit-transform:perspective(400px) rotateX(-20deg);transform:perspective(400px) rotateX(-20deg);opacity:1}to{-webkit-transform:perspective(400px) rotateX(90deg);transform:perspective(400px) rotateX(90deg);opacity:0}}.flipOutX{-webkit-animation-duration:.75s;animation-duration:.75s;-webkit-animation-name:flipOutX;animation-name:flipOutX;-webkit-backface-visibility:visible!important;backface-visibility:visible!important}@-webkit-keyframes flipOutY{0%{-webkit-transform:perspective(400px);transform:perspective(400px)}30%{-webkit-transform:perspective(400px) rotateY(-15deg);transform:perspective(400px) rotateY(-15deg);opacity:1}to{-webkit-transform:perspective(400px) rotateY(90deg);transform:perspective(400px) rotateY(90deg);opacity:0}}@keyframes flipOutY{0%{-webkit-transform:perspective(400px);transform:perspective(400px)}30%{-webkit-transform:perspective(400px) rotateY(-15deg);transform:perspective(400px) rotateY(-15deg);opacity:1}to{-webkit-transform:perspective(400px) rotateY(90deg);transform:perspective(400px) rotateY(90deg);opacity:0}}.flipOutY{-webkit-animation-duration:.75s;animation-duration:.75s;-webkit-backface-visibility:visible!important;backface-visibility:visible!important;-webkit-animation-name:flipOutY;animation-name:flipOutY}@-webkit-keyframes lightSpeedIn{0%{-webkit-transform:translate3d(100%,0,0) skewX(-30deg);transform:translate3d(100%,0,0) skewX(-30deg);opacity:0}60%{-webkit-transform:skewX(20deg);transform:skewX(20deg);opacity:1}80%{-webkit-transform:skewX(-5deg);transform:skewX(-5deg)}to{-webkit-transform:translateZ(0);transform:translateZ(0)}}@keyframes lightSpeedIn{0%{-webkit-transform:translate3d(100%,0,0) skewX(-30deg);transform:translate3d(100%,0,0) skewX(-30deg);opacity:0}60%{-webkit-transform:skewX(20deg);transform:skewX(20deg);opacity:1}80%{-webkit-transform:skewX(-5deg);transform:skewX(-5deg)}to{-webkit-transform:translateZ(0);transform:translateZ(0)}}.lightSpeedIn{-webkit-animation-name:lightSpeedIn;animation-name:lightSpeedIn;-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}@-webkit-keyframes lightSpeedOut{0%{opacity:1}to{-webkit-transform:translate3d(100%,0,0) skewX(30deg);transform:translate3d(100%,0,0) skewX(30deg);opacity:0}}@keyframes lightSpeedOut{0%{opacity:1}to{-webkit-transform:translate3d(100%,0,0) skewX(30deg);transform:translate3d(100%,0,0) skewX(30deg);opacity:0}}.lightSpeedOut{-webkit-animation-name:lightSpeedOut;animation-name:lightSpeedOut;-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}@-webkit-keyframes rotateIn{0%{-webkit-transform-origin:center;transform-origin:center;-webkit-transform:rotate(-200deg);transform:rotate(-200deg);opacity:0}to{-webkit-transform-origin:center;transform-origin:center;-webkit-transform:translateZ(0);transform:translateZ(0);opacity:1}}@keyframes rotateIn{0%{-webkit-transform-origin:center;transform-origin:center;-webkit-transform:rotate(-200deg);transform:rotate(-200deg);opacity:0}to{-webkit-transform-origin:center;transform-origin:center;-webkit-transform:translateZ(0);transform:translateZ(0);opacity:1}}.rotateIn{-webkit-animation-name:rotateIn;animation-name:rotateIn}@-webkit-keyframes rotateInDownLeft{0%{-webkit-transform-origin:left bottom;transform-origin:left bottom;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);opacity:0}to{-webkit-transform-origin:left bottom;transform-origin:left bottom;-webkit-transform:translateZ(0);transform:translateZ(0);opacity:1}}@keyframes rotateInDownLeft{0%{-webkit-transform-origin:left bottom;transform-origin:left bottom;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);opacity:0}to{-webkit-transform-origin:left bottom;transform-origin:left bottom;-webkit-transform:translateZ(0);transform:translateZ(0);opacity:1}}.rotateInDownLeft{-webkit-animation-name:rotateInDownLeft;animation-name:rotateInDownLeft}@-webkit-keyframes rotateInDownRight{0%{-webkit-transform-origin:right bottom;transform-origin:right bottom;-webkit-transform:rotate(45deg);transform:rotate(45deg);opacity:0}to{-webkit-transform-origin:right bottom;transform-origin:right bottom;-webkit-transform:translateZ(0);transform:translateZ(0);opacity:1}}@keyframes rotateInDownRight{0%{-webkit-transform-origin:right bottom;transform-origin:right bottom;-webkit-transform:rotate(45deg);transform:rotate(45deg);opacity:0}to{-webkit-transform-origin:right bottom;transform-origin:right bottom;-webkit-transform:translateZ(0);transform:translateZ(0);opacity:1}}.rotateInDownRight{-webkit-animation-name:rotateInDownRight;animation-name:rotateInDownRight}@-webkit-keyframes rotateInUpLeft{0%{-webkit-transform-origin:left bottom;transform-origin:left bottom;-webkit-transform:rotate(45deg);transform:rotate(45deg);opacity:0}to{-webkit-transform-origin:left bottom;transform-origin:left bottom;-webkit-transform:translateZ(0);transform:translateZ(0);opacity:1}}@keyframes rotateInUpLeft{0%{-webkit-transform-origin:left bottom;transform-origin:left bottom;-webkit-transform:rotate(45deg);transform:rotate(45deg);opacity:0}to{-webkit-transform-origin:left bottom;transform-origin:left bottom;-webkit-transform:translateZ(0);transform:translateZ(0);opacity:1}}.rotateInUpLeft{-webkit-animation-name:rotateInUpLeft;animation-name:rotateInUpLeft}@-webkit-keyframes rotateInUpRight{0%{-webkit-transform-origin:right bottom;transform-origin:right bottom;-webkit-transform:rotate(-90deg);transform:rotate(-90deg);opacity:0}to{-webkit-transform-origin:right bottom;transform-origin:right bottom;-webkit-transform:translateZ(0);transform:translateZ(0);opacity:1}}@keyframes rotateInUpRight{0%{-webkit-transform-origin:right bottom;transform-origin:right bottom;-webkit-transform:rotate(-90deg);transform:rotate(-90deg);opacity:0}to{-webkit-transform-origin:right bottom;transform-origin:right bottom;-webkit-transform:translateZ(0);transform:translateZ(0);opacity:1}}.rotateInUpRight{-webkit-animation-name:rotateInUpRight;animation-name:rotateInUpRight}@-webkit-keyframes rotateOut{0%{-webkit-transform-origin:center;transform-origin:center;opacity:1}to{-webkit-transform-origin:center;transform-origin:center;-webkit-transform:rotate(200deg);transform:rotate(200deg);opacity:0}}@keyframes rotateOut{0%{-webkit-transform-origin:center;transform-origin:center;opacity:1}to{-webkit-transform-origin:center;transform-origin:center;-webkit-transform:rotate(200deg);transform:rotate(200deg);opacity:0}}.rotateOut{-webkit-animation-name:rotateOut;animation-name:rotateOut}@-webkit-keyframes rotateOutDownLeft{0%{-webkit-transform-origin:left bottom;transform-origin:left bottom;opacity:1}to{-webkit-transform-origin:left bottom;transform-origin:left bottom;-webkit-transform:rotate(45deg);transform:rotate(45deg);opacity:0}}@keyframes rotateOutDownLeft{0%{-webkit-transform-origin:left bottom;transform-origin:left bottom;opacity:1}to{-webkit-transform-origin:left bottom;transform-origin:left bottom;-webkit-transform:rotate(45deg);transform:rotate(45deg);opacity:0}}.rotateOutDownLeft{-webkit-animation-name:rotateOutDownLeft;animation-name:rotateOutDownLeft}@-webkit-keyframes rotateOutDownRight{0%{-webkit-transform-origin:right bottom;transform-origin:right bottom;opacity:1}to{-webkit-transform-origin:right bottom;transform-origin:right bottom;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);opacity:0}}@keyframes rotateOutDownRight{0%{-webkit-transform-origin:right bottom;transform-origin:right bottom;opacity:1}to{-webkit-transform-origin:right bottom;transform-origin:right bottom;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);opacity:0}}.rotateOutDownRight{-webkit-animation-name:rotateOutDownRight;animation-name:rotateOutDownRight}@-webkit-keyframes rotateOutUpLeft{0%{-webkit-transform-origin:left bottom;transform-origin:left bottom;opacity:1}to{-webkit-transform-origin:left bottom;transform-origin:left bottom;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);opacity:0}}@keyframes rotateOutUpLeft{0%{-webkit-transform-origin:left bottom;transform-origin:left bottom;opacity:1}to{-webkit-transform-origin:left bottom;transform-origin:left bottom;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);opacity:0}}.rotateOutUpLeft{-webkit-animation-name:rotateOutUpLeft;animation-name:rotateOutUpLeft}@-webkit-keyframes rotateOutUpRight{0%{-webkit-transform-origin:right bottom;transform-origin:right bottom;opacity:1}to{-webkit-transform-origin:right bottom;transform-origin:right bottom;-webkit-transform:rotate(90deg);transform:rotate(90deg);opacity:0}}@keyframes rotateOutUpRight{0%{-webkit-transform-origin:right bottom;transform-origin:right bottom;opacity:1}to{-webkit-transform-origin:right bottom;transform-origin:right bottom;-webkit-transform:rotate(90deg);transform:rotate(90deg);opacity:0}}.rotateOutUpRight{-webkit-animation-name:rotateOutUpRight;animation-name:rotateOutUpRight}@-webkit-keyframes hinge{0%{-webkit-transform-origin:top left;transform-origin:top left;-webkit-animation-timing-function:ease-in-out;animation-timing-function:ease-in-out}20%,60%{-webkit-transform:rotate(80deg);transform:rotate(80deg);-webkit-transform-origin:top left;transform-origin:top left;-webkit-animation-timing-function:ease-in-out;animation-timing-function:ease-in-out}40%,80%{-webkit-transform:rotate(60deg);transform:rotate(60deg);-webkit-transform-origin:top left;transform-origin:top left;-webkit-animation-timing-function:ease-in-out;animation-timing-function:ease-in-out;opacity:1}to{-webkit-transform:translate3d(0,700px,0);transform:translate3d(0,700px,0);opacity:0}}@keyframes hinge{0%{-webkit-transform-origin:top left;transform-origin:top left;-webkit-animation-timing-function:ease-in-out;animation-timing-function:ease-in-out}20%,60%{-webkit-transform:rotate(80deg);transform:rotate(80deg);-webkit-transform-origin:top left;transform-origin:top left;-webkit-animation-timing-function:ease-in-out;animation-timing-function:ease-in-out}40%,80%{-webkit-transform:rotate(60deg);transform:rotate(60deg);-webkit-transform-origin:top left;transform-origin:top left;-webkit-animation-timing-function:ease-in-out;animation-timing-function:ease-in-out;opacity:1}to{-webkit-transform:translate3d(0,700px,0);transform:translate3d(0,700px,0);opacity:0}}.hinge{-webkit-animation-duration:2s;animation-duration:2s;-webkit-animation-name:hinge;animation-name:hinge}@-webkit-keyframes jackInTheBox{0%{opacity:0;-webkit-transform:scale(.1) rotate(30deg);transform:scale(.1) rotate(30deg);-webkit-transform-origin:center bottom;transform-origin:center bottom}50%{-webkit-transform:rotate(-10deg);transform:rotate(-10deg)}70%{-webkit-transform:rotate(3deg);transform:rotate(3deg)}to{opacity:1;-webkit-transform:scale(1);transform:scale(1)}}@keyframes jackInTheBox{0%{opacity:0;-webkit-transform:scale(.1) rotate(30deg);transform:scale(.1) rotate(30deg);-webkit-transform-origin:center bottom;transform-origin:center bottom}50%{-webkit-transform:rotate(-10deg);transform:rotate(-10deg)}70%{-webkit-transform:rotate(3deg);transform:rotate(3deg)}to{opacity:1;-webkit-transform:scale(1);transform:scale(1)}}.jackInTheBox{-webkit-animation-name:jackInTheBox;animation-name:jackInTheBox}@-webkit-keyframes rollIn{0%{opacity:0;-webkit-transform:translate3d(-100%,0,0) rotate(-120deg);transform:translate3d(-100%,0,0) rotate(-120deg)}to{opacity:1;-webkit-transform:translateZ(0);transform:translateZ(0)}}@keyframes rollIn{0%{opacity:0;-webkit-transform:translate3d(-100%,0,0) rotate(-120deg);transform:translate3d(-100%,0,0) rotate(-120deg)}to{opacity:1;-webkit-transform:translateZ(0);transform:translateZ(0)}}.rollIn{-webkit-animation-name:rollIn;animation-name:rollIn}@-webkit-keyframes rollOut{0%{opacity:1}to{opacity:0;-webkit-transform:translate3d(100%,0,0) rotate(120deg);transform:translate3d(100%,0,0) rotate(120deg)}}@keyframes rollOut{0%{opacity:1}to{opacity:0;-webkit-transform:translate3d(100%,0,0) rotate(120deg);transform:translate3d(100%,0,0) rotate(120deg)}}.rollOut{-webkit-animation-name:rollOut;animation-name:rollOut}@-webkit-keyframes girafflyzoomIn{0%{opacity:0;-webkit-transform:scale3d(.3,.3,.3);transform:scale3d(.3,.3,.3)}50%{opacity:1}}@keyframes girafflyzoomIn{0%{opacity:0;-webkit-transform:scale3d(.3,.3,.3);transform:scale3d(.3,.3,.3)}50%{opacity:1}}.girafflyzoomIn{-webkit-animation-name:girafflyzoomIn;animation-name:girafflyzoomIn}@-webkit-keyframes zoomInDown{0%{opacity:0;-webkit-transform:scale3d(.1,.1,.1) translate3d(0,-1000px,0);transform:scale3d(.1,.1,.1) translate3d(0,-1000px,0);-webkit-animation-timing-function:cubic-bezier(.55,.055,.675,.19);animation-timing-function:cubic-bezier(.55,.055,.675,.19)}60%{opacity:1;-webkit-transform:scale3d(.475,.475,.475) translate3d(0,60px,0);transform:scale3d(.475,.475,.475) translate3d(0,60px,0);-webkit-animation-timing-function:cubic-bezier(.175,.885,.32,1);animation-timing-function:cubic-bezier(.175,.885,.32,1)}}@keyframes zoomInDown{0%{opacity:0;-webkit-transform:scale3d(.1,.1,.1) translate3d(0,-1000px,0);transform:scale3d(.1,.1,.1) translate3d(0,-1000px,0);-webkit-animation-timing-function:cubic-bezier(.55,.055,.675,.19);animation-timing-function:cubic-bezier(.55,.055,.675,.19)}60%{opacity:1;-webkit-transform:scale3d(.475,.475,.475) translate3d(0,60px,0);transform:scale3d(.475,.475,.475) translate3d(0,60px,0);-webkit-animation-timing-function:cubic-bezier(.175,.885,.32,1);animation-timing-function:cubic-bezier(.175,.885,.32,1)}}.zoomInDown{-webkit-animation-name:zoomInDown;animation-name:zoomInDown}@-webkit-keyframes zoomInLeft{0%{opacity:0;-webkit-transform:scale3d(.1,.1,.1) translate3d(-1000px,0,0);transform:scale3d(.1,.1,.1) translate3d(-1000px,0,0);-webkit-animation-timing-function:cubic-bezier(.55,.055,.675,.19);animation-timing-function:cubic-bezier(.55,.055,.675,.19)}60%{opacity:1;-webkit-transform:scale3d(.475,.475,.475) translate3d(10px,0,0);transform:scale3d(.475,.475,.475) translate3d(10px,0,0);-webkit-animation-timing-function:cubic-bezier(.175,.885,.32,1);animation-timing-function:cubic-bezier(.175,.885,.32,1)}}@keyframes zoomInLeft{0%{opacity:0;-webkit-transform:scale3d(.1,.1,.1) translate3d(-1000px,0,0);transform:scale3d(.1,.1,.1) translate3d(-1000px,0,0);-webkit-animation-timing-function:cubic-bezier(.55,.055,.675,.19);animation-timing-function:cubic-bezier(.55,.055,.675,.19)}60%{opacity:1;-webkit-transform:scale3d(.475,.475,.475) translate3d(10px,0,0);transform:scale3d(.475,.475,.475) translate3d(10px,0,0);-webkit-animation-timing-function:cubic-bezier(.175,.885,.32,1);animation-timing-function:cubic-bezier(.175,.885,.32,1)}}.zoomInLeft{-webkit-animation-name:zoomInLeft;animation-name:zoomInLeft}@-webkit-keyframes zoomInRight{0%{opacity:0;-webkit-transform:scale3d(.1,.1,.1) translate3d(1000px,0,0);transform:scale3d(.1,.1,.1) translate3d(1000px,0,0);-webkit-animation-timing-function:cubic-bezier(.55,.055,.675,.19);animation-timing-function:cubic-bezier(.55,.055,.675,.19)}60%{opacity:1;-webkit-transform:scale3d(.475,.475,.475) translate3d(-10px,0,0);transform:scale3d(.475,.475,.475) translate3d(-10px,0,0);-webkit-animation-timing-function:cubic-bezier(.175,.885,.32,1);animation-timing-function:cubic-bezier(.175,.885,.32,1)}}@keyframes zoomInRight{0%{opacity:0;-webkit-transform:scale3d(.1,.1,.1) translate3d(1000px,0,0);transform:scale3d(.1,.1,.1) translate3d(1000px,0,0);-webkit-animation-timing-function:cubic-bezier(.55,.055,.675,.19);animation-timing-function:cubic-bezier(.55,.055,.675,.19)}60%{opacity:1;-webkit-transform:scale3d(.475,.475,.475) translate3d(-10px,0,0);transform:scale3d(.475,.475,.475) translate3d(-10px,0,0);-webkit-animation-timing-function:cubic-bezier(.175,.885,.32,1);animation-timing-function:cubic-bezier(.175,.885,.32,1)}}.zoomInRight{-webkit-animation-name:zoomInRight;animation-name:zoomInRight}@-webkit-keyframes zoomInUp{0%{opacity:0;-webkit-transform:scale3d(.1,.1,.1) translate3d(0,1000px,0);transform:scale3d(.1,.1,.1) translate3d(0,1000px,0);-webkit-animation-timing-function:cubic-bezier(.55,.055,.675,.19);animation-timing-function:cubic-bezier(.55,.055,.675,.19)}60%{opacity:1;-webkit-transform:scale3d(.475,.475,.475) translate3d(0,-60px,0);transform:scale3d(.475,.475,.475) translate3d(0,-60px,0);-webkit-animation-timing-function:cubic-bezier(.175,.885,.32,1);animation-timing-function:cubic-bezier(.175,.885,.32,1)}}@keyframes zoomInUp{0%{opacity:0;-webkit-transform:scale3d(.1,.1,.1) translate3d(0,1000px,0);transform:scale3d(.1,.1,.1) translate3d(0,1000px,0);-webkit-animation-timing-function:cubic-bezier(.55,.055,.675,.19);animation-timing-function:cubic-bezier(.55,.055,.675,.19)}60%{opacity:1;-webkit-transform:scale3d(.475,.475,.475) translate3d(0,-60px,0);transform:scale3d(.475,.475,.475) translate3d(0,-60px,0);-webkit-animation-timing-function:cubic-bezier(.175,.885,.32,1);animation-timing-function:cubic-bezier(.175,.885,.32,1)}}.zoomInUp{-webkit-animation-name:zoomInUp;animation-name:zoomInUp}@-webkit-keyframes zoomOut{0%{opacity:1}50%{opacity:0;-webkit-transform:scale3d(.3,.3,.3);transform:scale3d(.3,.3,.3)}to{opacity:0}}@keyframes zoomOut{0%{opacity:1}50%{opacity:0;-webkit-transform:scale3d(.3,.3,.3);transform:scale3d(.3,.3,.3)}to{opacity:0}}.zoomOut{-webkit-animation-name:zoomOut;animation-name:zoomOut}@-webkit-keyframes zoomOutDown{40%{opacity:1;-webkit-transform:scale3d(.475,.475,.475) translate3d(0,-60px,0);transform:scale3d(.475,.475,.475) translate3d(0,-60px,0);-webkit-animation-timing-function:cubic-bezier(.55,.055,.675,.19);animation-timing-function:cubic-bezier(.55,.055,.675,.19)}to{opacity:0;-webkit-transform:scale3d(.1,.1,.1) translate3d(0,2000px,0);transform:scale3d(.1,.1,.1) translate3d(0,2000px,0);-webkit-transform-origin:center bottom;transform-origin:center bottom;-webkit-animation-timing-function:cubic-bezier(.175,.885,.32,1);animation-timing-function:cubic-bezier(.175,.885,.32,1)}}@keyframes zoomOutDown{40%{opacity:1;-webkit-transform:scale3d(.475,.475,.475) translate3d(0,-60px,0);transform:scale3d(.475,.475,.475) translate3d(0,-60px,0);-webkit-animation-timing-function:cubic-bezier(.55,.055,.675,.19);animation-timing-function:cubic-bezier(.55,.055,.675,.19)}to{opacity:0;-webkit-transform:scale3d(.1,.1,.1) translate3d(0,2000px,0);transform:scale3d(.1,.1,.1) translate3d(0,2000px,0);-webkit-transform-origin:center bottom;transform-origin:center bottom;-webkit-animation-timing-function:cubic-bezier(.175,.885,.32,1);animation-timing-function:cubic-bezier(.175,.885,.32,1)}}.zoomOutDown{-webkit-animation-name:zoomOutDown;animation-name:zoomOutDown}@-webkit-keyframes zoomOutLeft{40%{opacity:1;-webkit-transform:scale3d(.475,.475,.475) translate3d(42px,0,0);transform:scale3d(.475,.475,.475) translate3d(42px,0,0)}to{opacity:0;-webkit-transform:scale(.1) translate3d(-2000px,0,0);transform:scale(.1) translate3d(-2000px,0,0);-webkit-transform-origin:left center;transform-origin:left center}}@keyframes zoomOutLeft{40%{opacity:1;-webkit-transform:scale3d(.475,.475,.475) translate3d(42px,0,0);transform:scale3d(.475,.475,.475) translate3d(42px,0,0)}to{opacity:0;-webkit-transform:scale(.1) translate3d(-2000px,0,0);transform:scale(.1) translate3d(-2000px,0,0);-webkit-transform-origin:left center;transform-origin:left center}}.zoomOutLeft{-webkit-animation-name:zoomOutLeft;animation-name:zoomOutLeft}@-webkit-keyframes zoomOutRight{40%{opacity:1;-webkit-transform:scale3d(.475,.475,.475) translate3d(-42px,0,0);transform:scale3d(.475,.475,.475) translate3d(-42px,0,0)}to{opacity:0;-webkit-transform:scale(.1) translate3d(2000px,0,0);transform:scale(.1) translate3d(2000px,0,0);-webkit-transform-origin:right center;transform-origin:right center}}@keyframes zoomOutRight{40%{opacity:1;-webkit-transform:scale3d(.475,.475,.475) translate3d(-42px,0,0);transform:scale3d(.475,.475,.475) translate3d(-42px,0,0)}to{opacity:0;-webkit-transform:scale(.1) translate3d(2000px,0,0);transform:scale(.1) translate3d(2000px,0,0);-webkit-transform-origin:right center;transform-origin:right center}}.zoomOutRight{-webkit-animation-name:zoomOutRight;animation-name:zoomOutRight}@-webkit-keyframes zoomOutUp{40%{opacity:1;-webkit-transform:scale3d(.475,.475,.475) translate3d(0,60px,0);transform:scale3d(.475,.475,.475) translate3d(0,60px,0);-webkit-animation-timing-function:cubic-bezier(.55,.055,.675,.19);animation-timing-function:cubic-bezier(.55,.055,.675,.19)}to{opacity:0;-webkit-transform:scale3d(.1,.1,.1) translate3d(0,-2000px,0);transform:scale3d(.1,.1,.1) translate3d(0,-2000px,0);-webkit-transform-origin:center bottom;transform-origin:center bottom;-webkit-animation-timing-function:cubic-bezier(.175,.885,.32,1);animation-timing-function:cubic-bezier(.175,.885,.32,1)}}@keyframes zoomOutUp{40%{opacity:1;-webkit-transform:scale3d(.475,.475,.475) translate3d(0,60px,0);transform:scale3d(.475,.475,.475) translate3d(0,60px,0);-webkit-animation-timing-function:cubic-bezier(.55,.055,.675,.19);animation-timing-function:cubic-bezier(.55,.055,.675,.19)}to{opacity:0;-webkit-transform:scale3d(.1,.1,.1) translate3d(0,-2000px,0);transform:scale3d(.1,.1,.1) translate3d(0,-2000px,0);-webkit-transform-origin:center bottom;transform-origin:center bottom;-webkit-animation-timing-function:cubic-bezier(.175,.885,.32,1);animation-timing-function:cubic-bezier(.175,.885,.32,1)}}.zoomOutUp{-webkit-animation-name:zoomOutUp;animation-name:zoomOutUp}@-webkit-keyframes slideInDown{0%{-webkit-transform:translate3d(0,-100%,0);transform:translate3d(0,-100%,0);visibility:visible}to{-webkit-transform:translateZ(0);transform:translateZ(0)}}@keyframes slideInDown{0%{-webkit-transform:translate3d(0,-100%,0);transform:translate3d(0,-100%,0);visibility:visible}to{-webkit-transform:translateZ(0);transform:translateZ(0)}}.slideInDown{-webkit-animation-name:slideInDown;animation-name:slideInDown}@-webkit-keyframes slideInLeft{0%{-webkit-transform:translate3d(-100%,0,0);transform:translate3d(-100%,0,0);visibility:visible}to{-webkit-transform:translateZ(0);transform:translateZ(0)}}@keyframes slideInLeft{0%{-webkit-transform:translate3d(-100%,0,0);transform:translate3d(-100%,0,0);visibility:visible}to{-webkit-transform:translateZ(0);transform:translateZ(0)}}.slideInLeft{-webkit-animation-name:slideInLeft;animation-name:slideInLeft}@-webkit-keyframes slideInRight{0%{-webkit-transform:translate3d(100%,0,0);transform:translate3d(100%,0,0);visibility:visible}to{-webkit-transform:translateZ(0);transform:translateZ(0)}}@keyframes slideInRight{0%{-webkit-transform:translate3d(100%,0,0);transform:translate3d(100%,0,0);visibility:visible}to{-webkit-transform:translateZ(0);transform:translateZ(0)}}.slideInRight{-webkit-animation-name:slideInRight;animation-name:slideInRight}@-webkit-keyframes girafflyslideInUp{0%{-webkit-transform:translate3d(0,100%,0);transform:translate3d(0,100%,0);visibility:visible}to{-webkit-transform:translateZ(0);transform:translateZ(0)}}@keyframes girafflyslideInUp{0%{-webkit-transform:translate3d(0,100%,0);transform:translate3d(0,100%,0);visibility:visible}to{-webkit-transform:translateZ(0);transform:translateZ(0)}}.girafflyslideInUp{-webkit-animation-name:girafflyslideInUp;animation-name:girafflyslideInUp}@-webkit-keyframes slideOutDown{0%{-webkit-transform:translateZ(0);transform:translateZ(0)}to{visibility:hidden;-webkit-transform:translate3d(0,100%,0);transform:translate3d(0,100%,0)}}@keyframes slideOutDown{0%{-webkit-transform:translateZ(0);transform:translateZ(0)}to{visibility:hidden;-webkit-transform:translate3d(0,100%,0);transform:translate3d(0,100%,0)}}.slideOutDown{-webkit-animation-name:slideOutDown;animation-name:slideOutDown}@-webkit-keyframes slideOutLeft{0%{-webkit-transform:translateZ(0);transform:translateZ(0)}to{visibility:hidden;-webkit-transform:translate3d(-100%,0,0);transform:translate3d(-100%,0,0)}}@keyframes slideOutLeft{0%{-webkit-transform:translateZ(0);transform:translateZ(0)}to{visibility:hidden;-webkit-transform:translate3d(-100%,0,0);transform:translate3d(-100%,0,0)}}.slideOutLeft{-webkit-animation-name:slideOutLeft;animation-name:slideOutLeft}@-webkit-keyframes slideOutRight{0%{-webkit-transform:translateZ(0);transform:translateZ(0)}to{visibility:hidden;-webkit-transform:translate3d(100%,0,0);transform:translate3d(100%,0,0)}}@keyframes slideOutRight{0%{-webkit-transform:translateZ(0);transform:translateZ(0)}to{visibility:hidden;-webkit-transform:translate3d(100%,0,0);transform:translate3d(100%,0,0)}}.slideOutRight{-webkit-animation-name:slideOutRight;animation-name:slideOutRight}@-webkit-keyframes slideOutUp{0%{-webkit-transform:translateZ(0);transform:translateZ(0)}to{visibility:hidden;-webkit-transform:translate3d(0,-100%,0);transform:translate3d(0,-100%,0)}}@keyframes slideOutUp{0%{-webkit-transform:translateZ(0);transform:translateZ(0)}to{visibility:hidden;-webkit-transform:translate3d(0,-100%,0);transform:translate3d(0,-100%,0)}}.slideOutUp{-webkit-animation-name:slideOutUp;animation-name:slideOutUp}.giraffly-animated{-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-fill-mode:both;animation-fill-mode:both}.giraffly-animated.infinite{-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite}.giraffly-animated.delay-1s{-webkit-animation-delay:1s;animation-delay:1s}.giraffly-animated.delay-2s{-webkit-animation-delay:2s;animation-delay:2s}.giraffly-animated.delay-3s{-webkit-animation-delay:3s;animation-delay:3s}.giraffly-animated.delay-4s{-webkit-animation-delay:4s;animation-delay:4s}.giraffly-animated.delay-5s{-webkit-animation-delay:5s;animation-delay:5s}.giraffly-animated.fast{-webkit-animation-duration:.8s;animation-duration:.8s}.giraffly-animated.faster{-webkit-animation-duration:.5s;animation-duration:.5s}.giraffly-animated.slow{-webkit-animation-duration:2s;animation-duration:2s}.giraffly-animated.slower{-webkit-animation-duration:3s;animation-duration:3s}@media (prefers-reduced-motion:reduce),(print){.giraffly-animated{-webkit-animation-duration:1ms!important;animation-duration:1ms!important;-webkit-transition-duration:1ms!important;transition-duration:1ms!important;-webkit-animation-iteration-count:1!important;animation-iteration-count:1!important}}</style><link id="ba_google_fonts_link" type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato"><meta http-equiv="origin-trial" content="AxMeahpLO9nDB/vFXFMGOd/JLhKWx/mOjErAi0qFXDzWuMSYoKpfjFtFfQWMCx+Qg39PMxDJHSLlAJF/H8rtmAwAAABveyJvcmlnaW4iOiJodHRwczovL3MucGluaW1nLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjgwNjUyNzk5LCJpc1RoaXJkUGFydHkiOnRydWV9"><script type="text/javascript" src="https://productreviews.shopifycdn.com/assets/v4/spr-0e683603bfa450170bff33e7fbad64e7dfe9585e1caeb951bbe283e5a2306523.js"></script><link type="text/css" rel="stylesheet" media="screen" href="https://productreviews.shopifycdn.com/assets/v4/spr-07102fd76ff4bc22a3e0c32f0cca9ee51c77c34bbc4bdac79abb48f698de10dd.css"><script src="https://www.googletagmanager.com/gtag/js?id=AW-10895016064"></script><!-- added by Trusted Shops app: Start --><script async="" data-desktop-y-offset="0" data-mobile-y-offset="0" data-desktop-disable-reviews="false" data-desktop-enable-custom="false" data-desktop-position="left" data-desktop-custom-width="156" data-desktop-enable-fadeout="false" data-disable-mobile="false" data-disable-trustbadge="true" data-mobile-custom-width="156" data-mobile-disable-reviews="false" data-mobile-enable-custom="false" data-mobile-position="left" charset="UTF-8" src="//widgets.trustedshops.com/js/X10BE14384640C4407DD903353CEB7A8E.js"></script><!-- End --><script charset="utf-8" src="https://cdn.shopify.com/extensions/222ebdfe-f5ed-4a1b-8d39-e3511870fd2c/monster-cart-upsell-free-gifts-1/assets/8.cart_renderer.60d5131dcabaa2389458.gz.js"></script><script charset="utf-8" src="https://cdn.shopify.com/extensions/222ebdfe-f5ed-4a1b-8d39-e3511870fd2c/monster-cart-upsell-free-gifts-1/assets/6.cart_renderer.a587152e9c6582128c47.gz.js"></script><script charset="utf-8" src="https://cdn.shopify.com/extensions/222ebdfe-f5ed-4a1b-8d39-e3511870fd2c/monster-cart-upsell-free-gifts-1/assets/12.cart_renderer.9e7ff7ff49ecaacba825.gz.js"></script><style type="text/css">
+    body {
+      position: initial !important;
+    }
+  </style><script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script><script async="true" type="text/javascript" src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/10895016064/?random=1694728941492&amp;cv=11&amp;fst=1694728941492&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;gtm=45be39d0&amp;u_w=1920&amp;u_h=1080&amp;url=https%3A%2F%2Fwww.neness-shop.de%2Fcollections%2Ffur-ihn%2Fproducts%2Fman-invictus&amp;ref=https%3A%2F%2Fwww.neness-shop.de%2Fcollections%2Ffur-ihn&amp;hn=www.googleadservices.com&amp;frm=0&amp;tiba=CLASSIV%20WINNER%20%2F%20INVICT%20MAN%20-%20175%20%E2%80%93%20Neness&amp;auid=622937297.1694693713&amp;uaa=x86&amp;uab=64&amp;uafvl=Not%252FA)Brand%3B99.0.0.0%7COpera%2520GX%3B101.0.4843.85%7CChromium%3B115.0.5790.171&amp;uamb=0&amp;uap=Windows&amp;uapv=15.0.0&amp;uaw=0&amp;data=event%3Dgtag.config&amp;rfmt=3&amp;fmt=4"></script><script async="true" type="text/javascript" src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/10895016064/?random=1694728941498&amp;cv=11&amp;fst=1694728941498&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;gtm=45be39d0&amp;u_w=1920&amp;u_h=1080&amp;url=https%3A%2F%2Fwww.neness-shop.de%2Fcollections%2Ffur-ihn%2Fproducts%2Fman-invictus&amp;ref=https%3A%2F%2Fwww.neness-shop.de%2Fcollections%2Ffur-ihn&amp;hn=www.googleadservices.com&amp;frm=0&amp;tiba=CLASSIV%20WINNER%20%2F%20INVICT%20MAN%20-%20175%20%E2%80%93%20Neness&amp;auid=622937297.1694693713&amp;uaa=x86&amp;uab=64&amp;uafvl=Not%252FA)Brand%3B99.0.0.0%7COpera%2520GX%3B101.0.4843.85%7CChromium%3B115.0.5790.171&amp;uamb=0&amp;uap=Windows&amp;uapv=15.0.0&amp;uaw=0&amp;data=event%3Dpage_view%3Becomm_pagetype%3Dproduct%3Becomm_prodid%3D175%3Becomm_totalvalue%3D9.90&amp;rfmt=3&amp;fmt=4"></script><link type="text/css" rel="stylesheet" href="blob:https://www.neness-shop.de/1d59885d-6283-45c7-a695-e850405fa49b"><script charset="utf-8" src="https://cdn.shopify.com/extensions/222ebdfe-f5ed-4a1b-8d39-e3511870fd2c/monster-cart-upsell-free-gifts-1/assets/7.cart_renderer.bf19143294124d041bf1.gz.js"></script><script charset="utf-8" src="https://cdn.shopify.com/extensions/222ebdfe-f5ed-4a1b-8d39-e3511870fd2c/monster-cart-upsell-free-gifts-1/assets/19.cart_renderer.970788a33a098a68c9c6.gz.js"></script><script charset="utf-8" src="https://cdn.shopify.com/extensions/222ebdfe-f5ed-4a1b-8d39-e3511870fd2c/monster-cart-upsell-free-gifts-1/assets/14.cart_renderer.481ee7e857c88a998809.gz.js"></script><script charset="utf-8" src="https://cdn.shopify.com/extensions/222ebdfe-f5ed-4a1b-8d39-e3511870fd2c/monster-cart-upsell-free-gifts-1/assets/1.cart_renderer.73aa3103c5608d44aa37.gz.js"></script><script charset="utf-8" src="https://cdn.shopify.com/extensions/222ebdfe-f5ed-4a1b-8d39-e3511870fd2c/monster-cart-upsell-free-gifts-1/assets/24.cart_renderer.4478d5f7a14e0262ea07.gz.js"></script><link type="text/css" rel="stylesheet" href="blob:https://www.neness-shop.de/e4c8a148-9f51-455d-9734-61de9300faf9"><link rel="prefetch" fetchpriority="low" as="script" href="https://cdn.shopify.com/shopifycloud/checkout-web/assets/runtime.latest.de.424a80a752e2d8dc495d.js"><link rel="prefetch" fetchpriority="low" as="script" href="https://cdn.shopify.com/shopifycloud/checkout-web/assets/809.latest.de.22b066f200008aec130a.js"><link rel="prefetch" fetchpriority="low" as="script" href="https://cdn.shopify.com/shopifycloud/checkout-web/assets/810.latest.de.89cbc407b0fea47d8592.js"><link rel="prefetch" fetchpriority="low" as="script" href="https://cdn.shopify.com/shopifycloud/checkout-web/assets/Information.latest.de.6a6b5dc7ad521355b5c1.js"><link rel="prefetch" fetchpriority="low" as="script" href="https://cdn.shopify.com/shopifycloud/checkout-web/assets/734.latest.de.63c5232a7f5cc7c9c399.js"><link rel="prefetch" fetchpriority="low" as="script" href="https://cdn.shopify.com/shopifycloud/checkout-web/assets/733.latest.de.0e94bde42a784b207677.js"><link rel="prefetch" fetchpriority="low" as="script" href="https://cdn.shopify.com/shopifycloud/checkout-web/assets/451.latest.de.24cc3c893c567ddb14cf.js"><link rel="prefetch" fetchpriority="low" as="script" href="https://cdn.shopify.com/shopifycloud/checkout-web/assets/app.latest.de.39f94867bcbf5cee011e.js"><link rel="prefetch" fetchpriority="low" as="style" href="https://cdn.shopify.com/shopifycloud/checkout-web/assets/734.latest.de.f7f8247b18e8c63cc4ab.css"><link rel="prefetch" fetchpriority="low" as="style" href="https://cdn.shopify.com/shopifycloud/checkout-web/assets/app.latest.de.15d5cd3adc55ab80c22e.css"><link rel="prefetch" fetchpriority="low" as="style" href="https://cdn.shopify.com/shopifycloud/checkout-web/assets/739.latest.de.869d896703321d964e3f.css"></head>
 
 <body class="template-product" data-transitions="true" data-button_style="square" data-edges="" data-type_header_capitalize="false" data-swatch_style="round" data-grid-style="simple">
+    <div id="monster-upsell-cart" data-rtl="false" style="display:none">
+        <div class="monster_upsell_overlay___3sEH4" style="display: initial;visibility: visible;"></div>
+        <div class="monster_upsell_cart___25Ft7 monster_upsell_rtl mu_openned" id="monster-cart-wrapper" style="right: 0px;">
+            <div class="mu-w-full mu-h-full mu-m-0 mu-p-0 mu-max-w-full mu-flex mu-flex-col mu-relative mu-disable-outline" style="color: rgb(22, 37, 67); background: rgb(255, 255, 255); font-size: 12px; font-family: inherit; direction: ltr;">
+                <div class="">
+                    <div class="mu-px-5 mu-py-3 mu-flex mu-items-center mu-relative" style="background: rgb(233, 233, 233); color: rgb(0, 0, 0);">
+                        <div class="mu-pr-2 mu-opacity-0"><svg aria-hidden="true" focusable="false" data-icon="chevron-left" class="mu-cursor-pointer" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" style="width: 15px; height: 15px;">
+                                <path fill="currentColor" d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z">
+                                </path>
+                            </svg></div><span class="mu-flex-1 mu-flex-grow mu-text-center mu-font-bold mu-cart-header" style="font-size: 1.2em;">Dein Warenkorb</span>
+                        <div class="mu-pl-2 mu-cursor-pointer" id="closeModal"><svg aria-hidden="true" focusable="false" data-icon="times" class="mu-cursor-pointer" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" style="width: 15px; height: 15px;">
+                                <path fill="currentColor" d="M323.1 441l53.9-53.9c9.4-9.4 9.4-24.5 0-33.9L279.8 256l97.2-97.2c9.4-9.4 9.4-24.5 0-33.9L323.1 71c-9.4-9.4-24.5-9.4-33.9 0L192 168.2 94.8 71c-9.4-9.4-24.5-9.4-33.9 0L7 124.9c-9.4 9.4-9.4 24.5 0 33.9l97.2 97.2L7 353.2c-9.4 9.4-9.4 24.5 0 33.9L60.9 441c9.4 9.4 24.5 9.4 33.9 0l97.2-97.2 97.2 97.2c9.3 9.3 24.5 9.3 33.9 0z">
+                                </path>
+                            </svg></div>
+                    </div>
+
+                </div>
+                <?php if (isset($_SESSION['cart']) && $_SESSION['cart'] != null) { ?>
+                    <div class="mu-flex-1 custom_scrollbar___2sb__" style="--trackBg: rgba(255,255,255,1); --thumbBg: rgba(215,222,255,1);">
+                        <div class="mu-slider mu-w-full mu-min-w-full mu-flex-1 mu-overflow-hidden mu-flex mu-flex-col" style="min-height: 100%;">
+                            <div class="mu-flex-1 mu-flex mu-transform mu-transition-transform mu-duration-300 mu-ease-out mu-translate-x-0">
+                                <div class="mu-w-full mu-min-w-full mu-flex mu-flex-col mu-h-auto">
+                                    <div class="mu-flex mu-flex-col mu-px-5 mu-pt-4 mu-flex-1">
+                                        <?php
+                                        $carts = array_unique($_SESSION['cart']);
+
+                                        // Получаем количество каждого элемента в $_SESSION['cart']
+                                        $counts = array_count_values($_SESSION['cart']);
+                                        $sum = 0;
+                                        foreach ($carts as $cart_el) {
+                                            $product = get_info_product_by_name($cart_el);
+
+                                        ?>
+
+                                            <div class="mu-mb-6 mu-cart-item">
+                                                <div class="mu-flex">
+                                                    <div class="mu-bg-cover mu-bg-center mu-block mu-mr-2" style="background-image: url(<?php echo get_src_photo($product['name'])[0] ?>); width: 80px; height: 80px;">
+                                                    </div>
+                                                    <div class="mu-flex-1 mu-flex-col">
+                                                        <div class="mu-mb-2 mu-overflow-hidden mu-font-bold mu-line-clamp" style="font-size: 1.2em; color: rgb(22, 37, 67);"><a href="/collections/<?php echo $product['collection'] ?>/products/<?php echo $product['name'] ?>">
+                                                                <?php echo $product['title'] ?>
+                                                            </a>
+                                                        </div>
+                                                        <div class="mu-flex mu-items-center"><b class="mu-flex-1" style="font-size: 1.2em; color: rgb(22, 37, 67);">€
+                                                                <?php echo $product['price'] ?>
+                                                            </b>
+                                                            <div class="mu-flex mu-items-stretch"><button id="minus_<?php echo $product['name'] ?>_modal" class="mu-border mu-flex-center mu-p-1 xs:mu-p-2 mu-bg-transparent mu-rounded-l mu-rounded-r-none" aria-label="decrease item quantity by one" style="border: 1px solid rgb(208, 211, 217); color: rgb(22, 37, 67); min-width: unset;"><svg ariaHidden="true" focusable="false" data-icon="minus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" style="height: 12px;">
+                                                                        <path fill="currentColor" d="M424 318.2c13.3 0 24-10.7 24-24v-76.4c0-13.3-10.7-24-24-24H24c-13.3 0-24 10.7-24 24v76.4c0 13.3 10.7 24 24 24h400z">
+                                                                        </path>
+                                                                    </svg></button>
+                                                                <div class="mu-px-2 mu-border-t mu-border-b mu-font-bold mu-flex-center mu-w-8" style="color: rgb(22, 37, 67); border-color: rgb(208, 211, 217);" id="counter_modal">
+                                                                    <?php echo $counts[$cart_el] ?>
+                                                                </div><button id="plus_<?php echo $product['name'] ?>_modal" class="mu-border mu-flex-center mu-p-1 xs:mu-p-2 mu-bg-transparent mu-rounded-r mu-rounded-l-none" aria-label="increase item quantity by one" style="border: 1px solid rgb(208, 211, 217); color: rgb(22, 37, 67); min-width: unset;"><svg ariaHidden="true" focusable="false" data-icon="plus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" style="height: 12px;">
+                                                                        <path fill="currentColor" d="M448 294.2v-76.4c0-13.3-10.7-24-24-24H286.2V56c0-13.3-10.7-24-24-24h-76.4c-13.3 0-24 10.7-24 24v137.8H24c-13.3 0-24 10.7-24 24v76.4c0 13.3 10.7 24 24 24h137.8V456c0 13.3 10.7 24 24 24h76.4c13.3 0 24-10.7 24-24V318.2H424c13.3 0 24-10.7 24-24z">
+                                                                        </path>
+                                                                    </svg></button>
+                                                            </div>
+                                                        </div>
+                                                        <?php
+                                                        // сделай считывание цены $product['price'] и в конце подставление в #cost
+                                                        $price = $product['price'];
+                                                        $count = $counts[$cart_el];
+                                                        $sum +=  $price * $count;
+
+                                                        ?>
+                                                        <script>
+                                                            //сделай счетчик
+                                                            var plus_modal = document.getElementById('plus_<?php echo $product['name'] ?>_modal');
+                                                            var minus_modal = document.getElementById('minus_<?php echo $product['name'] ?>_modal');
+                                                            var input_modal = document.getElementById('counter_modal');
+                                                            var count_modal = <?php echo $counts[$cart_el] ?>;
+                                                            plus_modal.addEventListener('click', function() {
+                                                                $.ajax({
+                                                                    url: "../../../add_cart.php",
+                                                                    type: 'POST',
+
+                                                                    data: {
+                                                                        cart: '<?php echo $product['name'] ?>'
+                                                                    },
+                                                                    success: function(data) {
+                                                                        console.log(data)
+                                                                        if (data != 'Success') {
+                                                                            console.log('Error')
+                                                                        } else {
+                                                                            console.log('Success')
+                                                                            localStorage.setItem('refreshed', 'true');
+                                                                window.location.reload();
+                                                                        }
+                                                                    },
+                                                                    error: function(error) {
+                                                                        console.log(error)
+
+
+                                                                    }
+                                                                })
+                                                                count_modal++;
+                                                                input_modal.innerText = count_modal;
+                                                            });
+                                                            minus_modal.addEventListener('click', function() {
+
+                                                                $.ajax({
+                                                                    url: "../../../delete_card.php",
+                                                                    type: 'POST',
+
+                                                                    data: {
+                                                                        cart: '<?php echo $product['name'] ?>',
+                                                                        type: 'single'
+                                                                    },
+                                                                    success: function(data) {
+                                                                        console.log(data)
+                                                                        if (data != 'Success') {
+                                                                            console.log('Error')
+                                                                        } else {
+                                                                            console.log('Success')
+                                                                            localStorage.setItem('refreshed', 'true');
+                                                                window.location.reload();
+                                                                        }
+                                                                    },
+                                                                    error: function(error) {
+                                                                        console.log(error)
+
+
+                                                                    }
+                                                                })
+                                                                count_modal++;
+                                                                input_modal.innerText = count_modal;
+                                                                if (count_modal > 1) {
+                                                                    count_modal--;
+                                                                    input_modal.innerText = count_modal;
+                                                                }
+                                                            });
+                                                        </script>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        <?php } ?>
+                                    </div>
+                                    <div class="mu-px-5">
+                                        <div class="mu-pb-3 mu-flex mu-items-center mu-font-bold mu-info-item mu-subtotal" style="font-size: 1.3em; color: rgb(22, 37, 67);"><span class="mu-flex-1 mu-flex-grow" style="color: inherit;">Zwischensumme</span><span data-value="€49,50" style="color: inherit;">
+                                                <span class="money mw-price" id="cost">€
+                                                    <?php echo $sum ?>
+                                                </span></span></div>
+                                        <div class="fondue-cashback-module"></div>
+                                        <div class="scDiscount__container">
+                                            <div id="scDiscountApp" class="scDiscount scright ">
+                                                <div style="width: 550px;">
+                                                    <div>
+                                                        <form>
+                                                            <div class="sc_simple-container sc_simple-container--initial"><input type="text" id="code" name="code" class="sc-cube-text sc-cube-code" placeholder="Rabattcode eingeben" autocomplete="off" style="border-color: rgb(0, 0, 0); color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);">
+                                                                <div class="sc_code-btn sc_state-initial"><input type="button" id="submit" value="Einlösen" style="color: rgb(255, 255, 255); background-color: rgb(0, 0, 0); border: 1px solid rgb(0, 0, 0);">
+
+                                                                </div>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><button id="mu-checkout-button" class="mu-custom-btn mu-w-full mu-rounded mu-w-full mu-py-3 mu-mb-3 mu-checkout-btn mu-flex mu-items-center mu-justify-center" style="background-color: rgb(255, 174, 38); font-family: inherit; font-size: 1.4em; font-weight: 700; color: rgb(255, 255, 255); --hover-background: rgba(215,222,255,1);">Zur
+                                            Kasse</button>
+                                        <div class="mu-rounded mu-border mu-mb-2 mu-frequently-container mu-mt-1" style="border-color: rgb(190, 190, 190);">
+                                            <div class="mu-text-center mu-p-2 mu-font-bold mu-w-full mu-frequently-header" style="background: rgb(233, 233, 233); color: rgb(22, 37, 67); font-size: 1.1em;">Wird oft zusammen
+                                                gekauft</div>
+                                            <div>
+                                                <?php
+                                                $recomend = getTopThreeProductsByCollectionsAndViews();
+                                                foreach ($recomend as $productq) {
+                                                ?>
+                                                    <div class="mu-border-b last:mu-border-b-0 mu-mx-2 mu-py-2" style="border-color: rgb(190, 190, 190);">
+                                                        <div class="mu-flex">
+                                                            <div class="mu-rounded mu-bg-cover mu-bg-center mu-block" style="background-image: url(&quot;<?php echo get_src_photo($productq['name'])[0] ?>&quot;); width: 70px; height: 70px;">
+                                                            </div>
+                                                            <div class="mu-flex-1 mu-flex mu-flex-col mu-pl-2"><b class="mu-mb-2 mu-overflow-hidden mu-w-full mu-line-clamp" style="font-size: 1.1em; color: rgb(22, 37, 67);"><a href="/collections/<?php echo $product['collection'] ?>/products/<?php echo $product['name'] ?>"><?php echo $productq['title'] ?></a></b>
+                                                                <div class="mu-flex mu-items-center mu-flex-wrap">
+                                                                    <div class="mu-flex mu-flex-col mu-flex-1 mu-items-start mu-mr-2"><b class="mu-mb-1" style="font-size: 0.9em; color: rgb(22, 37, 67);">Nur € <?php echo $productq['price'] ?></b>
+
+                                                                    </div><button id="modal_recom_<?php echo $productq['name'] ?>" class="mu-border-solid mu-border-2 mu-bg-transparent mu-btn-small mu-py-2 mu-relative" style="border-color: rgb(0, 0, 0); color: rgb(0, 0, 0); font-size: 0.8em;">
+                                                                        <script>
+                                                                            const button_add_cart_<?php echo $productq['name'] ?> = document.getElementById('modal_recom_<?php echo $productq['name'] ?>');
+
+                                                                            button_add_cart_<?php echo $productq['name'] ?>.addEventListener('click', () => {
+                                                                                $.ajax({
+                                                                                    url: "../../../add_cart.php",
+                                                                                    type: 'POST',
+
+                                                                                    data: {
+                                                                                        cart: <?php echo $productq['name'] ?>
+                                                                                    },
+
+                                                                                    success: function(data) {
+                                                                                        console.log(data)
+                                                                                        if (data != 'Success') {
+                                                                                            console.log('Error')
+                                                                                        }
+                                                                                        var modal = document.querySelector('#monster-upsell-cart');
+                                                                                        var cart = document.querySelector('#HeaderCartTrigger');
+                                                                                        cart.addEventListener('click', function(e) {
+                                                                                            e.preventDefault();
+                                                                                            modal.style.display = 'block';
+                                                                                        });
+                                                                                    },
+                                                                                    error: function(error) {
+                                                                                        console.log(error)
+                                                                                    }
+                                                                                })
+                                                                            });
+                                                                        </script><span class="">In den Warenkorb</span>
+                                                                        <div class="mu-absolute mu-inset-0 mu-flex-center mu-hidden"><svg aria-hidden="true" focusable="false" data-icon="spinner-third" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="mu-w-3 mu-h-3 mu-fa-spin">
+                                                                                <path fill="currentColor" d="M456.433 371.72l-27.79-16.045c-7.192-4.152-10.052-13.136-6.487-20.636 25.82-54.328 23.566-118.602-6.768-171.03-30.265-52.529-84.802-86.621-144.76-91.424C262.35 71.922 256 64.953 256 56.649V24.56c0-9.31 7.916-16.609 17.204-15.96 81.795 5.717 156.412 51.902 197.611 123.408 41.301 71.385 43.99 159.096 8.042 232.792-4.082 8.369-14.361 11.575-22.424 6.92z">
+                                                                                </path>
+                                                                            </svg></div>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                <?php } ?>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <?php } else { ?>
+                    <div class="mu-flex-1 custom_scrollbar___2sb__" style="--trackBg: rgba(255,255,255,1); --thumbBg: rgba(215,222,255,1);">
+                        <div class="mu-slider mu-w-full mu-min-w-full mu-flex-1 mu-overflow-hidden mu-flex mu-flex-col" style="min-height: 100%;">
+                            <div class="mu-flex-1 mu-flex mu-transform mu-transition-transform mu-duration-300 mu-ease-out mu-translate-x-0">
+                                <div class="mu-relative mu-p-3 mu-empty-cart mu-w-full mu-min-w-full mu-max-w-full">
+                                    <div>
+                                        <p class="ql-align-center"><img src="https://cdn.shopify.com/s/files/1/0597/9367/0293/t/38/assets/download.png?v=1667818689"></p>
+                                    </div>
+                                    <div class="mu-custom-btn mu-w-full mu-w-full mu-py-2 mu-mb-2 mu-text-center mu-cursor-pointer" style="color: rgb(8, 8, 8); font-size: 1em; font-weight: 700; text-decoration: underline;">Einkauf
+                                        fortsetzen</div>
+                                </div>
+                                <div class="mu-w-full mu-min-w-full mu-px-5 mu-py-3" id="monster_product_details" style="max-height: calc(100vh - 107px);">
+                                    <div class="mu-relative " style="min-height: 60px;">
+                                        <div class="mu-relative mu-slider mu-w-full mu-max-w-full mu-overflow-hidden">
+                                            <div class="mu-slider-container mu-flex mu-transition-transform mu-duration-300 mu-ease-out" style="transform: translateX(0%);">
+                                                <div class="mu-w-full mu-min-w-full mu-z-0" style="height: 300px;">
+                                                    <div class="mu-block mu-bg-cover mu-bg-center mu-w-full mu-h-full" style="background-image: url(&quot;https://cdn.shopify.com/s/files/1/0615/4479/2259/files/2S4A2057sPM_1.jpg?v=1693669996&quot;);">
+                                                    </div>
+                                                </div>
+                                                <div class="mu-w-full mu-min-w-full mu-z-0" style="height: 300px;">
+                                                    <div class="mu-block mu-bg-cover mu-bg-center mu-w-full mu-h-full" style="background-image: url(&quot;https://cdn.shopify.com/s/files/1/0615/4479/2259/files/2S4A2100sPM.jpg?v=1693669996&quot;);">
+                                                    </div>
+                                                </div>
+                                                <div class="mu-w-full mu-min-w-full mu-z-0" style="height: 300px;">
+                                                    <div class="mu-block mu-bg-cover mu-bg-center mu-w-full mu-h-full" style="background-image: url(&quot;https://cdn.shopify.com/s/files/1/0615/4479/2259/files/2S4A2089sPMv2.jpg?v=1693669997&quot;);">
+                                                    </div>
+                                                </div>
+                                                <div class="mu-w-full mu-min-w-full mu-z-0" style="height: 300px;">
+                                                    <div class="mu-block mu-bg-cover mu-bg-center mu-w-full mu-h-full" style="background-image: url(&quot;https://cdn.shopify.com/s/files/1/0615/4479/2259/files/sama-gabeczka.jpg?v=1693669997&quot;);">
+                                                    </div>
+                                                </div>
+                                            </div><span class="mu-absolute mu-z-10 mu-flex mu-left-0 mu-ml-2 mu-transform mu--translate-y-1/2" style="background: rgba(255, 255, 255, 0.8); border-radius: 50%; top: calc(50% - 12px);"><svg aria-hidden="true" focusable="false" data-icon="arrow-alt-circle-left" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="mu-w-5 mu-h-5" style="color: rgba(0, 0, 0, 0.8);">
+                                                    <path fill="currentColor" d="M256 504C119 504 8 393 8 256S119 8 256 8s248 111 248 248-111 248-248 248zm116-292H256v-70.9c0-10.7-13-16.1-20.5-8.5L121.2 247.5c-4.7 4.7-4.7 12.2 0 16.9l114.3 114.9c7.6 7.6 20.5 2.2 20.5-8.5V300h116c6.6 0 12-5.4 12-12v-64c0-6.6-5.4-12-12-12z">
+                                                    </path>
+                                                </svg></span><span class="mu-absolute mu-z-10 mu-flex mu-right-0 mu-mr-2 mu-transform mu--translate-y-1/2" style="background: rgba(255, 255, 255, 0.8); border-radius: 50%; top: calc(50% - 12px);"><svg aria-hidden="true" focusable="false" data-icon="arrow-alt-circle-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="mu-w-5 mu-h-5" style="color: rgba(0, 0, 0, 0.8);">
+                                                    <path fill="currentColor" d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zM140 300h116v70.9c0 10.7 13 16.1 20.5 8.5l114.3-114.9c4.7-4.7 4.7-12.2 0-16.9l-114.3-115c-7.6-7.6-20.5-2.2-20.5 8.5V212H140c-6.6 0-12 5.4-12 12v64c0 6.6 5.4 12 12 12z">
+                                                    </path>
+                                                </svg></span>
+                                            <div class="mu-flex-center mu-py-2"><span class="mu-w-2 mu-h-2 mu-rounded-full mu-mx-1 mu-cursor-pointer mu-border" style="background-color: rgb(0, 0, 0); border-color: rgb(0, 0, 0);"></span><span class="mu-w-2 mu-h-2 mu-rounded-full mu-mx-1 mu-cursor-pointer mu-border" style="border-color: rgb(0, 0, 0);"></span><span class="mu-w-2 mu-h-2 mu-rounded-full mu-mx-1 mu-cursor-pointer mu-border" style="border-color: rgb(0, 0, 0);"></span><span class="mu-w-2 mu-h-2 mu-rounded-full mu-mx-1 mu-cursor-pointer mu-border" style="border-color: rgb(0, 0, 0);"></span></div>
+                                        </div>
+                                    </div>
+                                    <div class="mu-py-3">
+                                        <h3 class="mu-font-bold mu-mb-3">Beauty Blender</h3><button class="mu-custom-btn mu-p-4 mu-w-full mu-relative " style="background-color: rgb(0, 0, 0); color: rgb(255, 255, 255); font-size: 1em; width: 100%;"><span class="">In den Warenkorb</span>
+                                            <div class="mu-absolute mu-inset-0 mu-flex-center mu-hidden"><svg aria-hidden="true" focusable="false" data-icon="spinner-third" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="mu-w-4 mu-h-4 mu-fa-spin">
+                                                    <path fill="currentColor" d="M456.433 371.72l-27.79-16.045c-7.192-4.152-10.052-13.136-6.487-20.636 25.82-54.328 23.566-118.602-6.768-171.03-30.265-52.529-84.802-86.621-144.76-91.424C262.35 71.922 256 64.953 256 56.649V24.56c0-9.31 7.916-16.609 17.204-15.96 81.795 5.717 156.412 51.902 197.611 123.408 41.301 71.385 43.99 159.096 8.042 232.792-4.082 8.369-14.361 11.575-22.424 6.92z">
+                                                    </path>
+                                                </svg></div>
+                                        </button>
+                                        <div class="mu-relative " style="min-height: 60px;">
+                                            <p class="mu-py-2">
+                                                <meta charset="utf-8">
+                                            <p data-mce-fragment="1"><strong>Das ist großartig zu hören! Wenn der NENESS Make-up Blender jetzt mit
+                                                    einer Schutzhülle geliefert wird, ist das ein zusätzlicher Bonus für dich. Die Schutzhülle bietet
+                                                    nicht nur Schutz für deinen Blender, sondern trägt auch zur Hygiene bei, indem sie verhindert,
+                                                    dass Schmutz und Bakterien auf den Schaumstoff gelangen. Dies ist besonders praktisch, wenn du
+                                                    deinen Make-up Blender unterwegs verwendest oder auf Reisen bist.</strong></p>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <?php } ?>
+            </div>
+        </div>
+    </div>
 
     <script type="text/javascript">
         window.setTimeout(function() {
@@ -2636,7 +1428,7 @@ $img = get_src_photo($name);
                                                         </path>
                                                     </svg>
                                                     <span class="icon__fallback-text">Suche</span>
-                                                </a><a class="site-nav__link site-nav__link--icon small--hide" href="../../../account/login.html">
+                                                </a><a class="site-nav__link site-nav__link--icon small--hide" href="../../../account/login.php">
                                                     <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-user" viewbox="0 0 64 64">
                                                         <defs>
                                                             <style>
@@ -2806,7 +1598,7 @@ $img = get_src_photo($name);
                                                                             <div class="grid-product__title">ALLIEN
                                                                                 WORLD - 182</div>
                                                                         </div>
-                                                                        <div class="loox-rating" data-id="7233940455619" data-rating="4.8" data-raters="341"></div>
+                                                                        <div class="loox-rating" data-id="7233940455619" data-rating="2" data-raters="341"></div>
                                                                         <div class="grid-item__meta-secondary">
                                                                             <div class="grid-product__price"><span class="grid-product__price--current"><span aria-hidden="true">
                                                                                         <?php $string = $product['price'];
@@ -2857,7 +1649,7 @@ $img = get_src_photo($name);
                                                                             <div class="grid-product__title">CRAZY MAN -
                                                                                 114</div>
                                                                         </div>
-                                                                        <div class="loox-rating" data-id="7962040533258" data-rating="4.8" data-raters="88"></div>
+                                                                        <div class="loox-rating" data-id="7962040533258" data-rating="2" data-raters="88"></div>
                                                                         <div class="grid-item__meta-secondary">
                                                                             <div class="grid-product__price"><span class="grid-product__price--current"><span aria-hidden="true">€9<sup>90</sup></span>
                                                                                     <span class="visually-hidden">€9,90</span>
@@ -2893,7 +1685,7 @@ $img = get_src_photo($name);
                                                                             <div class="grid-product__title">LIBRESE -
                                                                                 195</div>
                                                                         </div>
-                                                                        <div class="loox-rating" data-id="7232258965699" data-rating="4.7" data-raters="95"></div>
+                                                                        <div class="loox-rating" data-id="7232258965699" data-rating="2" data-raters="95"></div>
                                                                         <div class="grid-item__meta-secondary">
                                                                             <div class="grid-product__price"><span class="grid-product__price--current"><span aria-hidden="true">€9<sup>90</sup></span>
                                                                                     <span class="visually-hidden">€9,90</span>
@@ -3044,13 +1836,7 @@ $img = get_src_photo($name);
                     </header>
                 </div>
             </div>
-            <script>
-                document.addEventListener("startasyncloading", function() {
-                    document.querySelectorAll("script[data-src]").forEach(a => {
-                        datasrc = a.dataset.src, null != datasrc && (a.src = datasrc), delete a.dataset.src
-                    })
-                });
-            </script>
+
 
 
 
@@ -3172,7 +1958,7 @@ $img = get_src_photo($name);
 
                                 <div class="product-single__header--mobile medium-up--hide">
                                     <h1 class="h2 product-single__title">
-                                        < </h1>
+                                        <?php echo $products['title'] ?> </h1>
                                 </div>
 
                                 <div class="product-grid__container grid grid--product-images--partial">
@@ -3180,272 +1966,113 @@ $img = get_src_photo($name);
                                         <div data-product-images="" data-zoom="true" data-has-slideshow="true">
                                             <div class="product__photos product__photos-template--17917053370634__main product__photos--beside">
 
-                                                        <div class="product__main-photos" data-product-single-media-group="">
-                                                            <div data-product-photos=""
-                                                                class="product-slideshow flickity-enabled is-draggable"
-                                                                id="ProductPhotos-template--17917053370634__main" tabindex="0">
-                                                                <div class="flickity-viewport"
-                                                                    style="height: 602px; touch-action: pan-y;">
-                                                                    <div class="flickity-slider"
-                                                                        style="left: 0px; transform: translateX(-400%);">
-                                                                        <div class="product-main-slide starting-slide"
-                                                                            data-index="0"
-                                                                            style="position: absolute; left: 0px; transform: translateX(0%);"
-                                                                            aria-hidden="true" tabindex="-1">
+                                                <div class="product__main-photos" data-product-single-media-group="">
+                                                    <div data-product-photos="" class="product-slideshow flickity-enabled is-draggable" id="ProductPhotos-template--17917053370634__main" tabindex="0">
 
-                                                                            <div data-product-image-main=""
-                                                                                class="product-image-main" data-size="square">
-                                                                                <div class="image-wrap"
-                                                                                    style="height: 0; padding-bottom: 100.0%;">
-                                                                                    <img class="photoswipe__image lazyautosizes lazyloaded"
-                                                                                        srcset="<?php echo $img[0] ?> 1080w">
 
-                                                                                    <noscript>
-                                                                                        <img class="lazyloaded"
-                                                                                            src="//www.neness-shop.de/cdn/shop/files/182AC_21574842-1388-475e-9366-ca6775eec26d_800x.jpg?v=1691797892"
-                                                                                            alt="ALLIEN WORLD - 182">
-                                                                                    </noscript><button type="button"
-                                                                                        class="btn btn--secondary btn--circle js-photoswipe__zoom product__photo-zoom"
-                                                                                        aria-label="Zoom">
-                                                                                        <svg aria-hidden="true" focusable="false"
-                                                                                            role="presentation"
-                                                                                            class="icon icon-search"
-                                                                                            viewBox="0 0 64 64">
-                                                                                            <defs>
-                                                                                                <style>
-                                                                                                    .cls-1 {
-                                                                                                        fill: none;
-                                                                                                        stroke: #000;
-                                                                                                        stroke-miterlimit: 10;
-                                                                                                        stroke-width: 2px
-                                                                                                    }
-                                                                                                </style>
-                                                                                            </defs>
-                                                                                            <path class="cls-1"
-                                                                                                d="M47.16 28.58A18.58 18.58 0 1 1 28.58 10a18.58 18.58 0 0 1 18.58 18.58zM54 54L41.94 42">
-                                                                                            </path>
-                                                                                        </svg>
-                                                                                    </button>
-                                                                                </div>
-                                                                            </div>
 
-                                                                        </div>
-                                                                        <div class="product-main-slide secondary-slide"
-                                                                            data-index="1" aria-hidden="true"
-                                                                            style="position: absolute; left: 0px; transform: translateX(100%);">
 
-                                                                            <div data-product-image-main=""
-                                                                                class="product-image-main" data-size="square">
-                                                                                <div class="image-wrap"
-                                                                                    style="height: 0; padding-bottom: 100.0%;"><img
-                                                                                        class="photoswipe__image lazyautosizes lazyloaded"
-                                                                                        sizes="602px"
-                                                                                        srcset="<?php echo $img[0] ?> 1080w">
 
-                                                                                    <noscript>
-                                                                                        <img class="lazyloaded"
-                                                                                            src="//www.neness-shop.de/cdn/shop/files/N182-nuty_800x.png?v=1691797892"
-                                                                                            alt="ALLIEN WORLD - 182">
-                                                                                    </noscript><button type="button"
-                                                                                        class="btn btn--secondary btn--circle js-photoswipe__zoom product__photo-zoom"
-                                                                                        aria-label="Zoom">
-                                                                                        <svg aria-hidden="true" focusable="false"
-                                                                                            role="presentation"
-                                                                                            class="icon icon-search"
-                                                                                            viewBox="0 0 64 64">
-                                                                                            <defs>
-                                                                                                <style>
-                                                                                                    .cls-1 {
-                                                                                                        fill: none;
-                                                                                                        stroke: #000;
-                                                                                                        stroke-miterlimit: 10;
-                                                                                                        stroke-width: 2px
-                                                                                                    }
-                                                                                                </style>
-                                                                                            </defs>
-                                                                                            <path class="cls-1"
-                                                                                                d="M47.16 28.58A18.58 18.58 0 1 1 28.58 10a18.58 18.58 0 0 1 18.58 18.58zM54 54L41.94 42">
-                                                                                            </path>
-                                                                                        </svg>
-                                                                                    </button>
-                                                                                </div>
-                                                                            </div>
+                                                        <div class="flickity-viewport" style="min-height:400px;touch-action: pan-y;">
+                                                            <img class="photoswipe__image lazyautosizes lazyloaded" id="mainImage" style="display:block !important" src="<?php echo json_decode($products['img'], true)[0]['file_path'] ?>">
 
-                                                                        </div>
-                                                                        <div class="product-main-slide secondary-slide"
-                                                                            data-index="2" aria-hidden="true"
-                                                                            style="position: absolute; left: 0px; transform: translateX(200%);">
-
-                                                                            <div data-product-image-main=""
-                                                                                class="product-image-main" data-size="square">
-                                                                                <div class="image-wrap"
-                                                                                    style="height: 0; padding-bottom: 100.0%;"><img
-                                                                                        class="photoswipe__image lazyautosizes lazyloaded"
-                                                                                        data-aspectratio="1.0" data-sizes="auto"
-                                                                                        sizes="602px"
-                                                                                        srcset="<?php echo $img[0] ?> 1080w">
-
-                                                                                    <noscript>
-                                                                                        <img class="lazyloaded"
-                                                                                            src="//www.neness-shop.de/cdn/shop/files/N182_800x.png?v=1692607129"
-                                                                                            alt="ALLIEN WORLD - 182">
-                                                                                    </noscript><button type="button"
-                                                                                        class="btn btn--secondary btn--circle js-photoswipe__zoom product__photo-zoom"
-                                                                                        aria-label="Zoom">
-                                                                                        <svg aria-hidden="true" focusable="false"
-                                                                                            role="presentation"
-                                                                                            class="icon icon-search"
-                                                                                            viewBox="0 0 64 64">
-                                                                                            <defs>
-                                                                                                <style>
-                                                                                                    .cls-1 {
-                                                                                                        fill: none;
-                                                                                                        stroke: #000;
-                                                                                                        stroke-miterlimit: 10;
-                                                                                                        stroke-width: 2px
-                                                                                                    }
-                                                                                                </style>
-                                                                                            </defs>
-                                                                                            <path class="cls-1"
-                                                                                                d="M47.16 28.58A18.58 18.58 0 1 1 28.58 10a18.58 18.58 0 0 1 18.58 18.58zM54 54L41.94 42">
-                                                                                            </path>
-                                                                                        </svg>
-                                                                                    </button>
-                                                                                </div>
-                                                                            </div>
-
-                                                                        </div>
-                                                                        <div class="product-main-slide secondary-slide"
-                                                                            data-index="3"
-                                                                            style="position: absolute; left: 0px; transform: translateX(300%);"
-                                                                            tabindex="-1" aria-hidden="true">
-
-                                                                            <div data-product-image-main=""
-                                                                                class="product-image-main" data-size="square">
-                                                                                <div class="image-wrap"
-                                                                                    style="height: 0; padding-bottom: 85.33333333333333%;">
-                                                                                    <img class="photoswipe__image lazyautosizes lazyloaded"
-                                                                                        sizes="602px"
-                                                                                        srcset="<?php echo $img[0] ?> 1080w">
-
-                                                                                    <noscript>
-                                                                                        <img class="lazyloaded"
-                                                                                            src="<?php echo $img[0] ?>"
-                                                                                            alt="ALLIEN WORLD - 182">
-                                                                                    </noscript><button type="button"
-                                                                                        class="btn btn--secondary btn--circle js-photoswipe__zoom product__photo-zoom"
-                                                                                        aria-label="Zoom">
-                                                                                        <svg aria-hidden="true" focusable="false"
-                                                                                            role="presentation"
-                                                                                            class="icon icon-search"
-                                                                                            viewBox="0 0 64 64">
-                                                                                            <defs>
-                                                                                                <style>
-                                                                                                    .cls-1 {
-                                                                                                        fill: none;
-                                                                                                        stroke: #000;
-                                                                                                        stroke-miterlimit: 10;
-                                                                                                        stroke-width: 2px
-                                                                                                    }
-                                                                                                </style>
-                                                                                            </defs>
-                                                                                            <path class="cls-1"
-                                                                                                d="M47.16 28.58A18.58 18.58 0 1 1 28.58 10a18.58 18.58 0 0 1 18.58 18.58zM54 54L41.94 42">
-                                                                                            </path>
-                                                                                        </svg>
-                                                                                    </button>
-                                                                                </div>
-                                                                            </div>
-
-                                                                        </div>
-                                                                        <div class="product-main-slide secondary-slide is-selected"
-                                                                            data-index="4"
-                                                                            style="position: absolute; left: 0px; transform: translateX(400%);"
-                                                                            tabindex="0">
-
-                                                                            <div data-product-image-main=""
-                                                                                class="product-image-main" data-size="square">
-                                                                                <div class="image-wrap"
-                                                                                    style="height: 0; padding-bottom: 85.33333333333333%;">
-                                                                                    <img class="photoswipe__image lazyautosizes lazyloaded"
-                                                                                        data-sizes="auto"
-                                                                                        srcset="<?php echo $img[0] ?> 1080w">
-
-                                                                                    <noscript>
-                                                                                        <img class="lazyloaded"
-                                                                                            src="//www.neness-shop.de/cdn/shop/files/WhatsAppImage2023-06-06at19.38.54_9d6e72d7-7330-47f6-b362-493ecc1c2b2f_800x.jpg?v=1692607129"
-                                                                                            alt="ALLIEN WORLD - 182">
-                                                                                    </noscript><button type="button"
-                                                                                        class="btn btn--secondary btn--circle js-photoswipe__zoom product__photo-zoom"
-                                                                                        aria-label="Zoom">
-                                                                                        <svg aria-hidden="true" focusable="false"
-                                                                                            role="presentation"
-                                                                                            class="icon icon-search"
-                                                                                            viewBox="0 0 64 64">
-                                                                                            <defs>
-                                                                                                <style>
-                                                                                                    .cls-1 {
-                                                                                                        fill: none;
-                                                                                                        stroke: #000;
-                                                                                                        stroke-miterlimit: 10;
-                                                                                                        stroke-width: 2px
-                                                                                                    }
-                                                                                                </style>
-                                                                                            </defs>
-                                                                                            <path class="cls-1"
-                                                                                                d="M47.16 28.58A18.58 18.58 0 1 1 28.58 10a18.58 18.58 0 0 1 18.58 18.58zM54 54L41.94 42">
-                                                                                            </path>
-                                                                                        </svg>
-                                                                                    </button>
-                                                                                </div>
-                                                                            </div>
-
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <ol class="flickity-page-dots">
-                                                                    <li class="dot" aria-label="Page dot 1"></li>
-                                                                    <li class="dot" aria-label="Page dot 2"></li>
-                                                                    <li class="dot" aria-label="Page dot 3"></li>
-                                                                    <li class="dot" aria-label="Page dot 4"></li>
-                                                                    <li class="dot is-selected" aria-label="Page dot 5"
-                                                                        aria-current="step"></li>
-                                                                </ol>
-                                                            </div>
                                                         </div>
+                                                        <ol class="flickity-page-dots">
 
-                                                        <div data-product-thumbs=""
-                                                            class="product__thumbs product__thumbs--beside product__thumbs-placement--left small--hide"
-                                                            data-position="beside" data-arrows="false">
-                                                            <div class="product__thumbs--scroller">
-                                                                <div class="product__thumb-item" data-index="0">
-                                                                    <a href="<?php echo $img[0] ?>" data-product-thumb=""
-                                                                        class="product__thumb js-no-transition" data-index="0"
-                                                                        data-id="37182818681098">
-                                                                        <div class="image-wrap"
-                                                                            style="height: 0; padding-bottom: 100.0%;"><img
-                                                                                class="lazyautosizes lazyloaded"
-                                                                                data-aspectratio="1.0" data-sizes="auto"
-                                                                                srcset="<?php echo $img[0] ?> 1080w">
-                                                                            <noscript>
-                                                                                <img class="lazyloaded" src="<?php echo $img[0] ?>"
-                                                                                    alt="ALLIEN WORLD - 182">
-                                                                            </noscript>
-                                                                        </div>
-                                                                    </a>
-                                                                </div>
+                                                            <?php $jsonString = $products['img'];
+                                                            $decodedArray = json_decode($jsonString, true);
+                                                            $firstIteration = true;
+                                                            foreach ($decodedArray as $index => $img) {
+                                                                $class = "";
+                                                                if ($firstIteration) {
+                                                                    $firstIteration = false; // Устанавливаем флаг в false после первой итерации
+                                                                    $class = "is-selected";
+                                                                }
 
-                                                            </div>
-                                                        </div>
+                                                            ?>
+                                                                <li class="dot <?= $class ?>" aria-label="Page dot <?= $index ?>" data-src="<?php echo $img['file_path'] ?>"></li>
+
+                                                            <?php } ?>
+                                                        </ol>
                                                     </div>
                                                 </div>
 
-                                                <script type="application/json" id="ModelJson-template--17917053370634__main">
-                                                                                                    []
-                                                                                                </script>
+                                                <div data-product-thumbs="" class="product__thumbs product__thumbs--beside product__thumbs-placement--left small--hide" data-position="beside" data-arrows="false">
+                                                    <div class="product__thumbs--scroller">
+                                                        <?php
+                                                        $jsonString = $products['img'];
+                                                        $decodedArray = json_decode($jsonString, true);
+                                                        $firstIteration = true;
+                                                        foreach ($decodedArray as $img) {
+                                                            if ($firstIteration) {
+                                                                $firstIteration = false; // Устанавливаем флаг в false после первой итерации
+                                                                continue; // Пропускаем первую итерацию
+                                                            }
+                                                        ?>
+                                                            <div class="product__thumb-item" data-index="0">
+
+                                                                <div class="image-wrap" style="height: 0; padding-bottom: 100.0%;"><img class="lazyautosizes lazyloaded thumbnail" src="<?php echo $img['file_path'] ?>">
+
+                                                                    <noscript>
+                                                                        <img class="lazyloaded" class="thumbnail" src="<?php echo $img['file_path'] ?>" alt="PROBE 056 - PROTESTO">
+                                                                    </noscript>
+                                                                </div>
+
+                                                            </div>
+                                                        <?php } ?>
+
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <div
-                                                class="product-grid__content product-single__sticky grid__item medium-up--one-half">
+                                        </div>
+                                        <script>
+                                            // Получаем ссылки на основное изображение и миниатюры
+                                            const mainImage = document.getElementById("mainImage");
+                                            const thumbnails = document.querySelectorAll(".thumbnail");
+
+                                            // Добавляем обработчик события клика для каждой миниатюры
+                                            thumbnails.forEach((thumbnail) => {
+                                                thumbnail.addEventListener("click", () => {
+                                                    console.log(mainImage.src)
+                                                    tempSrc = mainImage.src
+                                                    mainImage.src = thumbnail.src;
+                                                    thumbnail.src = tempSrc
+
+                                                });
+                                            });
+                                        </script>
+                                        <script>
+                                            // Сделай такой же скрипт который выше только с dot, который будет переносить картинку по индексу
+                                            // Получаем ссылки на основное изображение и миниатюры
+                                            const mainImage1 = document.getElementById("mainImage");
+                                            const dots = document.querySelectorAll(".dot");
+
+                                            // Добавляем обработчик события клика для каждой миниатюры
+                                            dots.forEach((dot) => {
+                                                dot.addEventListener("click", () => {
+                                                    dot.classList.add('is-selected');
+                                                    mainImage1.src = dot.dataset.src;
+                                                    dots.forEach((dot1) => {
+                                                        if (dot1 != dot) {
+                                                            dot1.classList.remove('is-selected');
+                                                        }
+                                                    });
+
+                                                });
+                                            });
+                                        </script>
+                                        <script type="application/json" id="ModelJson-template--17917053370634__main">
+                                            []
+                                        </script>
+                                    </div>
+                                    <style>
+                                        @media screen and (max-width:768px) {
+                                            .product__photos img {
+                                                width: 90%;
+                                            }
+                                        }
+                                    </style>
+                                    <div class="product-grid__content product-single__sticky grid__item medium-up--one-half">
 
                                         <div class="product-single__meta">
                                             <div class="product-block product-block--header product-single__header small--hide">
@@ -3457,58 +2084,80 @@ $img = get_src_photo($name);
                                             <div data-product-blocks="">
                                                 <div id="shopify-block-loox-rating" class="shopify-block shopify-app-block">
                                                     <a href="#looxReviews">
-                                                        <div class="loox-rating" data-content-size="16" data-loox-block-id="loox-rating" data-color-text="" data-color-star="" data-id="8209898701066" data-rating="5.0" data-raters="4"></div>
+                                                    <div class="loox-rating" data-content-size="16" data-loox-block-id="loox-rating" data-color-text="" data-color-star="" data-id="8209898701066" data-rating="3" data-raters="4" title="3.0 rating (4 votes)" aria-label="3.0 rating (4 votes)" data-rating-upgraded="1" style="font-size: 16px;">
+                                                            <div class="loox-rating-content"><svg class="loox-icon" viewBox="0 0 24 24" data-lx-fill="full" role="img">
+                                                                    <title>3.0 rating (4 votes)</title>
+                                                                    <use href="#looxicons-rating-icon"></use>
+                                                                </svg><svg class="loox-icon" viewBox="0 0 24 24" data-lx-fill="full" aria-hidden="true">
+                                                                    <use href="#looxicons-rating-icon"></use>
+                                                                </svg><svg class="loox-icon" viewBox="0 0 24 24" data-lx-fill="full" aria-hidden="true">
+                                                                    <use href="#looxicons-rating-icon"></use>
+                                                                </svg><svg class="loox-icon" viewBox="0 0 24 24" data-lx-fill="full" aria-hidden="true">
+                                                                    <use href="#looxicons-rating-icon"></use>
+                                                                </svg>
+                                                                <svg class="loox-icon" viewBox="0 0 24 24" data-lx-fill="full" aria-hidden="true">
+                                                                    <use href="#looxicons-rating-icon"></use>
+                                                                </svg><span class="loox-rating-label">&nbsp;(<?php 
+                                                                    $sql = $mysql->query("SELECT `reviews` FROM `products` WHERE `name` = '$name'")->fetch_array();
+                                                                    $data = json_decode($sql['reviews'], true);
+
+// Подсчитываем количество элементов в массиве "fio"
+$fioCount = count($data['fio']);
+                                     echo $fioCount;                               
+                                                                    ?>)</span></div>
+                                                        </div>
                                                     </a>
 
 
-                                                        </div>
-                                                        <div class="product-block"></div>
-                                                        <div class="product-block product-block--price">
-                                                            <label class="variant__label"
-                                                                for="ProductPrice-template--17917053370634__main">
-                                                                Preis
-                                                            </label><span id="PriceA11y-template--17917053370634__main"
-                                                                class="visually-hidden">Normaler Preis</span><span
-                                                                data-product-price="" class="product__price"><span
-                                                                    aria-hidden="true">€25<sup>90</sup></span>
-                                                                <span class="visually-hidden">€25,90</span>
-                                                            </span><span data-save-price=""
-                                                                class="product__price-savings hide"></span>
-                                                            <div data-unit-price-wrapper="" class="product__unit-price"><span
-                                                                    data-unit-price=""><span
-                                                                        aria-hidden="true">€259<sup>00</sup></span>
-                                                                    <span class="visually-hidden">€259,00</span>
-                                                                </span>/<span data-unit-base="">100
-                                                                    ml
+                                                </div>
+                                                <div class="product-block"></div>
+                                                <div class="product-block product-block--price">
+                                                    <label class="variant__label" for="ProductPrice-template--17917053370634__main">
+                                                        Preis
+                                                    </label><span id="PriceA11y-template--17917053370634__main" class="visually-hidden">Normaler Preis</span><span data-product-price="" class="product__price"><span aria-hidden="true">
+                                                            <?php $string = $products['price'];
+                                                            if (strpos($string, '.') !== false) {
+                                                                list($part1, $part2) = explode(".", $string);
+                                                            } else {
+                                                                $part1 = $string;
+                                                                $part2 = "";
+                                                            }
+                                                            ?>
+                                                            € <?php echo $part1 ?><sup><?php echo $part2 ?></sup></span>
+
+                                                    </span><span data-save-price="" class="product__price-savings hide"></span>
+                                                    <div data-unit-price-wrapper="" class="product__unit-price"><span data-unit-price=""><span aria-hidden="true">€ <?php echo $products['container'] ?></span>
+                                                            <span class="visually-hidden">€ <?php echo $products['container'] ?> </span>
+                                                            ml
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="product-block product-block--sales-point">
+                                                    <ul class="sales-points">
+                                                        <li class="sales-point">
+                                                            <span class="icon-and-text">
+                                                                <span class="icon icon--inventory"></span>
+                                                                <span data-product-inventory="" data-threshold="10">Auf
+                                                                    Lager - 2-3 Tagen bei dir
                                                                 </span>
-                                                            </div>
-                                                        </div>
-                                                        <div class="product-block product-block--sales-point">
-                                                            <ul class="sales-points">
-                                                                <li class="sales-point">
-                                                                    <span class="icon-and-text">
-                                                                        <span class="icon icon--inventory"></span>
-                                                                        <span data-product-inventory="" data-threshold="10">Auf
-                                                                            Lager - 2-3 Tagen bei dir
-                                                                        </span>
-                                                                    </span>
-                                                                </li>
-                                                                <li data-incoming-inventory="" class="sales-point hide">
-                                                                    <span class="icon-and-text">
-                                                                        <span class="icon icon--inventory"></span>
-                                                                        <span class="js-incoming-text">Inventar auf dem Weg
-                                                                        </span>
-                                                                    </span>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                        <script>
-                                                            // Store inventory quantities in JS because they're no longer
-                                                            // available directly in JS when a variant changes.
-                                                            // Have an object that holds all potential products so it works
-                                                            // with quick view or with multiple featured products.
-                                                            window.inventories = window.inventories || {};
-                                                            window.inventories['8209898701066'] = {};
+                                                            </span>
+                                                        </li>
+                                                        <li data-incoming-inventory="" class="sales-point hide">
+                                                            <span class="icon-and-text">
+                                                                <span class="icon icon--inventory"></span>
+                                                                <span class="js-incoming-text">Inventar auf dem Weg
+                                                                </span>
+                                                            </span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <script>
+                                                    // Store inventory quantities in JS because they're no longer
+                                                    // available directly in JS when a variant changes.
+                                                    // Have an object that holds all potential products so it works
+                                                    // with quick view or with multiple featured products.
+                                                    window.inventories = window.inventories || {};
+                                                    window.inventories['8209898701066'] = {};
 
                                                     window.inventories['8209898701066'][44458038427914] = {
                                                         'quantity': 105,
@@ -3634,78 +2283,105 @@ $img = get_src_photo($name);
                                                                     In den Warenkorb
                                                                 </span>
                                                             </button>
-                                                            <script>
-                                                                const button_add_cart = document.getElementById('add_product_cart');
 
-                                                                button_add_cart.addEventListener('click', () => {
-
-
-                                                                    $.ajax({
-                                                                        url: "../../../add_cart.php",
-                                                                        type: 'POST',
-
-                                                                        data: {
-                                                                            cart: '<?php echo $products['name'] ?>'
-                                                                        },
-
-                                                                        success: function(data) {
-                                                                            console.log(data)
-                                                                            if (data != 'Success') {
-                                                                                console.log('Error')
-                                                                            }
-                                                                        },
-                                                                        error: function(error) {
-                                                                            console.log(error)
-
-
-                                                                        }
-                                                                    })
-                                                                });
-                                                            </script>
                                                             <div class="shopify-payment-terms product__policies"></div>
 
-                                                            <select name="id" data-product-select="" class="product-single__variants no-js">
-                                                                <option selected="selected" value="44458038427914">
-                                                                    Default Title - €25,90 EUR
-                                                                </option>
-                                                            </select>
-
-                                                            <textarea data-variant-json="" class="hide" aria-hidden="true" aria-label="Product JSON">
-                                                                [{"id":44458038427914,"title":"Default Title","option1":"Default Title","option2":null,"option3":null,"sku":"N246","requires_shipping":true,"taxable":true,"featured_image":null,"available":true,"name":"MARS - 100% Parfümöl","public_title":null,"options":["Default Title"],"price":2590,"weight":10,"compare_at_price":null,"inventory_management":"shopify","barcode":"","unit_price":25900,"unit_price_measurement":{"measured_type":"volume","quantity_value":"10.0","quantity_unit":"ml","reference_value":100,"reference_unit":"ml"},"requires_selling_plan":false,"selling_plan_allocations":[]}]
-                                                              </textarea>
                                                         </form>
+                                                        <div class="giraffly-right-Bar-Preview-Example giraffly-animated ainfinite " id="card-form" style="display:none">
+                                                            <div class="giraffly-right-Bar-Preview-width" style="width:100%;gap:30px;justify-content: center;">
+
+                                                                <div class="giraffly-right-Bar-Preview-div-svg"><svg height="100%" viewBox="0 0 115 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path d="M49.8333 57.779H40.5175L46.3442 21.6543H55.6595L49.8333 57.779Z" fill="#00579F"></path>
+                                                                        <path d="M83.6037 22.538C81.7662 21.807 78.8518 21 75.2481 21C66.0485 21 59.5702 25.9188 59.5304 32.9513C59.454 38.1399 64.1687 41.0217 67.6949 42.7517C71.2991 44.5196 72.5243 45.6734 72.5243 47.2492C72.4876 49.6693 69.6119 50.7848 66.9298 50.7848C63.2105 50.7848 61.2176 50.2097 58.1891 48.8633L56.9624 48.2861L55.6588 56.3953C57.8437 57.3934 61.8692 58.279 66.0485 58.3179C75.8233 58.3179 82.187 53.4751 82.2624 45.9809C82.2996 41.8686 79.81 38.7176 74.4427 36.1427C71.1845 34.4898 69.1891 33.3753 69.1891 31.6841C69.2273 30.1466 70.8768 28.5719 74.5548 28.5719C77.5833 28.4947 79.8085 29.2246 81.4942 29.9551L82.3368 30.3387L83.6037 22.538Z" fill="#00579F"></path>
+                                                                        <path d="M95.9853 44.9813C96.7525 42.906 99.7046 34.8739 99.7046 34.8739C99.6659 34.951 100.47 32.7603 100.93 31.4154L101.581 34.5281C101.581 34.5281 103.345 43.1751 103.729 44.9813C102.273 44.9813 97.8254 44.9813 95.9853 44.9813ZM107.485 21.6543H100.279C98.0567 21.6543 96.3684 22.3071 95.4097 24.6516L81.5723 57.7785H91.3471C91.3471 57.7785 92.9563 53.3198 93.3022 52.3596C94.3746 52.3596 103.883 52.3596 105.263 52.3596C105.53 53.6278 106.375 57.7785 106.375 57.7785H115L107.485 21.6543Z" fill="#00579F"></path>
+                                                                        <path d="M32.7363 21.6543L23.6131 46.2879L22.6162 41.2919C20.9295 35.5272 15.6396 29.264 9.73645 26.1497L18.093 57.7407H27.9442L42.587 21.6543H32.7363Z" fill="#00579F"></path>
+                                                                        <path d="M15.1416 21.6543H0.153335L0 22.3842C11.6917 25.382 19.435 32.6081 22.6163 41.2934L19.358 24.6909C18.8216 22.3837 17.1731 21.7304 15.1416 21.6543Z" fill="#FAA61A"></path>
+                                                                    </svg></div>
+                                                                <div class="giraffly-right-Bar-Preview-div-svg"><svg height="100%" viewBox="0 0 115 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path d="M28.8526 74.384C28.8526 72.9192 29.8125 71.7158 31.3811 71.7158C32.8798 71.7158 33.8916 72.8673 33.8916 74.384C33.8916 75.9007 32.8798 77.0522 31.3811 77.0522C29.8125 77.0522 28.8526 75.8488 28.8526 74.384ZM35.5999 74.384V70.2171H33.7879V71.2289C33.2131 70.4785 32.341 70.0075 31.1556 70.0075C28.8187 70.0075 26.9867 71.8396 26.9867 74.384C26.9867 76.9305 28.8187 78.7605 31.1556 78.7605C32.341 78.7605 33.2131 78.2895 33.7879 77.5392V78.551H35.5999V74.384ZM96.8348 74.384C96.8348 72.9192 97.7948 71.7158 99.3633 71.7158C100.864 71.7158 101.874 72.8673 101.874 74.384C101.874 75.9007 100.864 77.0522 99.3633 77.0522C97.7948 77.0522 96.8348 75.8488 96.8348 74.384ZM103.584 74.384V66.8704H101.77V71.2289C101.195 70.4785 100.323 70.0075 99.1378 70.0075C96.8009 70.0075 94.9689 71.8396 94.9689 74.384C94.9689 76.9305 96.8009 78.7605 99.1378 78.7605C100.323 78.7605 101.195 78.2895 101.77 77.5392V78.551H103.584V74.384ZM58.093 71.63C59.2605 71.63 60.0109 72.3624 60.2025 73.6516H55.8779C56.0714 72.4482 56.8018 71.63 58.093 71.63ZM58.129 70.0075C55.6863 70.0075 53.978 71.7857 53.978 74.384C53.978 77.0343 55.7561 78.7605 58.2507 78.7605C59.506 78.7605 60.6555 78.4472 61.6673 77.5931L60.7792 76.25C60.0807 76.8068 59.1907 77.1221 58.3545 77.1221C57.187 77.1221 56.1233 76.5813 55.8619 75.0805H62.0504C62.0684 74.855 62.0864 74.6275 62.0864 74.384C62.0684 71.7857 60.4639 70.0075 58.129 70.0075ZM80.0094 74.384C80.0094 72.9192 80.9693 71.7158 82.5379 71.7158C84.0367 71.7158 85.0484 72.8673 85.0484 74.384C85.0484 75.9007 84.0367 77.0522 82.5379 77.0522C80.9693 77.0522 80.0094 75.8488 80.0094 74.384ZM86.7567 74.384V70.2171H84.9447V71.2289C84.3679 70.4785 83.4978 70.0075 82.3124 70.0075C79.9755 70.0075 78.1435 71.8396 78.1435 74.384C78.1435 76.9305 79.9755 78.7605 82.3124 78.7605C83.4978 78.7605 84.3679 78.2895 84.9447 77.5392V78.551H86.7567V74.384ZM69.7756 74.384C69.7756 76.9125 71.5358 78.7605 74.222 78.7605C75.4773 78.7605 76.3134 78.4811 77.2195 77.7667L76.3494 76.3019C75.6688 76.7908 74.9544 77.0522 74.1681 77.0522C72.7212 77.0343 71.6576 75.9885 71.6576 74.384C71.6576 72.7795 72.7212 71.7338 74.1681 71.7158C74.9544 71.7158 75.6688 71.9773 76.3494 72.4662L77.2195 71.0014C76.3134 70.2869 75.4773 70.0075 74.222 70.0075C71.5358 70.0075 69.7756 71.8555 69.7756 74.384ZM93.1389 70.0075C92.0931 70.0075 91.4126 70.4965 90.9416 71.2289V70.2171H89.1455V78.551H90.9596V73.8791C90.9596 72.5001 91.5523 71.7338 92.7377 71.7338C93.1049 71.7338 93.4881 71.7857 93.8713 71.9433L94.4301 70.2351C94.0289 70.0774 93.5061 70.0075 93.1389 70.0075ZM44.5625 70.8797C43.6904 70.3049 42.489 70.0075 41.1638 70.0075C39.0524 70.0075 37.6934 71.0193 37.6934 72.6757C37.6934 74.0348 38.7052 74.873 40.5691 75.1344L41.4253 75.2561C42.4191 75.3958 42.8881 75.6573 42.8881 76.1282C42.8881 76.7728 42.2255 77.14 40.9882 77.14C39.733 77.14 38.8269 76.7389 38.2162 76.2679L37.3621 77.6789C38.3559 78.4113 39.6112 78.7605 40.9703 78.7605C43.377 78.7605 44.772 77.627 44.772 76.0404C44.772 74.5756 43.6744 73.8093 41.8603 73.5479L41.0062 73.4241C40.2219 73.3203 39.5933 73.1647 39.5933 72.6059C39.5933 71.9952 40.186 71.63 41.1798 71.63C42.2435 71.63 43.2733 72.0311 43.7782 72.3445L44.5625 70.8797ZM67.9436 70.0075C66.8979 70.0075 66.2174 70.4965 65.7484 71.2289V70.2171H63.9523V78.551H65.7644V73.8791C65.7644 72.5001 66.3571 71.7338 67.5425 71.7338C67.9097 71.7338 68.2929 71.7857 68.676 71.9433L69.2348 70.2351C68.8337 70.0774 68.3108 70.0075 67.9436 70.0075ZM52.4792 70.2171H49.5157V67.6886H47.6837V70.2171H45.9933V71.8735H47.6837V75.6752C47.6837 77.609 48.434 78.7605 50.5774 78.7605C51.3637 78.7605 52.2697 78.517 52.8445 78.1159L52.3216 76.5633C51.7808 76.8766 51.188 77.0343 50.7171 77.0343C49.811 77.0343 49.5157 76.4755 49.5157 75.6393V71.8735H52.4792V70.2171ZM25.3841 78.551V73.3203C25.3841 71.3506 24.1289 70.0255 22.1053 70.0075C21.0416 69.9896 19.944 70.3209 19.1756 71.4903C18.6009 70.5663 17.6949 70.0075 16.4216 70.0075C15.5316 70.0075 14.6614 70.269 13.9809 71.2449V70.2171H12.1669V78.551H13.9969V73.931C13.9969 72.4842 14.7991 71.7158 16.0385 71.7158C17.2418 71.7158 17.8505 72.5001 17.8505 73.9131V78.551H19.6825V73.931C19.6825 72.4842 20.5187 71.7158 21.7221 71.7158C22.9594 71.7158 23.5521 72.5001 23.5521 73.9131V78.551H25.3841Z" fill="#231F20"></path>
+                                                                        <path d="M71.4999 56.0715H44.0363V6.71484H71.4999V56.0715Z" fill="#FF5F00"></path>
+                                                                        <path d="M45.7957 31.3895C45.7957 21.3773 50.4835 12.4587 57.7836 6.71117C52.4452 2.50831 45.7079 -0.000238302 38.3858 -0.000238302C21.0515 -0.000238302 7 14.0532 7 31.3895C7 48.7258 21.0515 62.7793 38.3858 62.7793C45.7079 62.7793 52.4452 60.2707 57.7836 56.0679C50.4835 50.3204 45.7957 41.4018 45.7957 31.3895Z" fill="#EB001B"></path>
+                                                                        <path d="M108.539 31.3895C108.539 48.7258 94.4879 62.7793 77.1536 62.7793C69.8315 62.7793 63.0941 60.2707 57.7537 56.0679C65.0559 50.3204 69.7437 41.4018 69.7437 31.3895C69.7437 21.3773 65.0559 12.4587 57.7537 6.71117C63.0941 2.50831 69.8315 -0.000238302 77.1536 -0.000238302C94.4879 -0.000238302 108.539 14.0532 108.539 31.3895Z" fill="#F79E1B"></path>
+                                                                    </svg></div>
+                                                                <div class="giraffly-right-Bar-Preview-div-svg"><svg height="100%" viewBox="0 0 115 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <g clip-path="">
+                                                                            <path d="M0 -18H114V96H0V-18Z" fill="white"></path>
+                                                                            <path d="M114.299 44.0832H108.344C106.566 44.0832 105.233 44.4945 104.314 45.1545V44.0832H95.5338C94.1418 44.0832 92.4631 44.4177 91.6852 45.1545V44.0832H75.9949V45.1545C74.7393 44.273 72.6376 44.0832 71.6458 44.0832H61.2872V45.1545C60.2955 44.2052 58.121 44.0832 56.788 44.0832H45.1739L42.5171 46.9401L40.0469 44.0832H22.728V62.7163H39.7239L42.4489 59.8142L45.0283 62.7072L55.4915 62.7163V58.3224H56.5333C57.9162 58.3224 59.554 58.2908 60.9824 57.6806V62.7163H69.6487V57.8388H70.0718C70.5995 57.8342 70.6404 57.8795 70.6404 58.3767V62.7163H96.8759C98.5272 62.7163 100.306 62.2914 101.266 61.5365V62.7163H109.582C111.306 62.7163 113.012 62.4677 114.299 61.8619V96H0V39.7346H5.48637L6.72376 36.7466H9.48969L10.7316 39.7346H21.5315V37.4608L22.5005 39.7391H28.0915L29.065 37.4246V39.7346H55.8918L55.8873 34.8571H56.4105C56.7971 34.8571 56.8881 34.9023 56.8881 35.4944V39.7346H70.7678L70.7633 38.5773C71.8687 39.174 73.6066 39.7346 75.9176 39.7346H81.7542L83.0144 36.7466H85.7803L87.0222 39.7346H98.2406V36.9048L99.9648 39.7346H108.977V21.1015H100.065V23.2984L98.7865 21.1015H89.6289V23.2984L88.5053 21.1015H76.1359C74.0524 21.1015 72.219 21.3772 70.7633 22.1728V21.1015H62.238V22.1728C61.269 21.3591 60.0089 21.1015 58.5986 21.1015H27.4137L25.3028 25.9067L23.1692 21.1015H13.3565V23.2984L12.2465 21.1015H3.8714L0 29.9389V-18H114.299V44.0832ZM106.129 37.1037H101.552L95.4702 27.082L95.4747 37.1037H88.9375L87.7001 34.1112H81.0127L79.7799 37.1037H76.0404C74.4618 37.1037 72.4874 36.7421 71.3683 35.6165C70.2401 34.4728 69.6669 32.9494 69.6669 30.5175C69.6669 28.533 70.0218 26.7203 71.3911 25.2964C72.4237 24.2341 74.066 23.7323 76.2815 23.7323H79.3522V26.5983L76.3452 26.5938C75.1578 26.5938 74.4891 26.7701 73.8613 27.3939C73.2972 27.9499 72.9196 29.0167 72.9196 30.4225C72.9196 31.8465 73.2017 32.8681 73.834 33.5552C74.3071 34.075 75.1988 34.2378 76.0631 34.2378H77.5052L82.0317 23.7323H86.8175L92.2629 36.3759V23.7323H97.1716L102.822 33.0398L102.817 23.7323H106.129V37.1037ZM64.8083 37.1037H68.0974V23.7278H64.8083V37.1037ZM61.3054 24.3788C60.2682 23.7911 59.0627 23.7323 57.434 23.7323H50.0324V37.1037H53.2442V32.2352H56.6925C57.8617 32.2352 58.5668 32.3392 59.0263 32.8229C59.6222 33.4512 59.554 34.6175 59.554 35.4131V37.1037H62.7885V34.4502C62.7885 33.2885 62.7066 32.6737 62.2562 32.0273C61.9833 31.6385 61.3782 31.1594 60.6731 30.8927C61.5192 30.5627 62.9613 29.4642 62.9613 27.3441C62.9613 25.8479 62.3381 24.9709 61.3054 24.3788ZM47.8079 34.3101L40.288 34.3191V31.6702L47.6259 31.6747V28.9263H40.288V26.5169H47.8079V23.7323H37.0762V37.1037H47.8079V34.3101ZM34.6788 23.7323H29.3289L25.462 32.8003L21.2722 23.7323H16.0133L16.0178 36.3804L10.5679 23.7323H5.78207L0.0272939 37.1037H3.5302L4.76304 34.1112H11.4504L12.6878 37.1037H19.225V26.6209L23.8971 37.1037H26.7222L31.3806 26.6344V37.1037H34.6788V23.7323ZM86.5446 31.3266L84.3518 26.0151L82.1637 31.3266H86.5446ZM58.7351 29.2156C58.3029 29.4732 57.7798 29.4913 57.1611 29.4913H53.2442V26.5169H57.2066C57.7752 26.5169 58.353 26.535 58.7351 26.7475C59.1354 26.969 59.3948 27.3803 59.3948 27.9454C59.3948 28.5194 59.1445 28.9805 58.7351 29.2156ZM5.914 31.3266L8.10218 26.0151L10.2949 31.3266H5.914ZM115 55.8724C115 58.7157 113.203 60.0809 109.95 60.0809H103.745V57.215H109.928C110.524 57.215 110.951 57.1336 111.22 56.8895C111.433 56.6906 111.597 56.3922 111.597 56.0171C111.597 55.6193 111.433 55.3209 111.206 55.1311C110.965 54.9276 110.637 54.8463 110.087 54.8327C107.084 54.7513 103.308 54.9276 103.308 50.6875C103.308 48.7708 104.532 46.7095 107.912 46.7095H114.318V49.58H108.454C107.876 49.58 107.489 49.5981 107.175 49.806C106.834 50.0275 106.698 50.3439 106.698 50.7734C106.698 51.2706 106.989 51.6187 107.403 51.7634C107.73 51.8764 108.099 51.9035 108.636 51.9125L110.36 51.9577C112.143 51.9984 113.308 52.2922 114.031 53.0336C114.668 53.6981 115 54.4801 115 55.8724ZM101.475 53.0336C100.752 52.2968 99.5781 51.9984 97.7948 51.9577L96.0752 51.9125C95.5384 51.9035 95.1745 51.8764 94.8424 51.7634C94.4329 51.6187 94.1418 51.2706 94.1418 50.7734C94.1418 50.3439 94.2783 50.0275 94.6149 49.806C94.9288 49.5981 95.32 49.58 95.9023 49.58H101.794V46.7095H95.3564C91.9763 46.7095 90.7526 48.7663 90.7526 50.6875C90.7526 54.9322 94.5285 54.7513 97.5264 54.8327C98.0769 54.8463 98.409 54.9276 98.6455 55.1311C98.873 55.3209 99.0413 55.6193 99.0413 56.0171C99.0413 56.3922 98.873 56.6906 98.6592 56.8895C98.3908 57.1336 97.9677 57.215 97.3672 57.215H91.1302V60.0809H97.3899C100.643 60.0809 102.44 58.7157 102.44 55.8724C102.44 54.4801 102.112 53.6981 101.475 53.0336ZM89.2195 57.3008L81.6996 57.2963V54.6564H89.0421V51.9035L81.6996 51.908V49.4986H89.2195V46.7095H78.4879V60.0809H89.2195V57.3008ZM75.0532 47.3605C74.0114 46.7683 72.8104 46.7095 71.1864 46.7095H63.7802V60.0809H66.9874V55.2215L70.4448 55.2169C71.614 55.2169 72.3146 55.3209 72.7786 55.8001C73.3745 56.4329 73.3018 57.5947 73.3018 58.3903V60.0809H76.5408V57.4319C76.5363 56.2702 76.4589 55.6554 76.004 55.009C75.7356 54.6157 75.1305 54.1366 74.43 53.8699C75.267 53.5399 76.7091 52.4459 76.7091 50.3213C76.7091 48.8296 76.0859 47.9527 75.0532 47.3605ZM56.8654 46.7095H46.5932L42.4944 51.0988L38.5547 46.7095H25.6167V60.0809H38.3546L42.4625 55.6735L46.4158 60.0809H52.671V55.6057H56.6652C59.4721 55.6057 62.2562 54.8327 62.2562 51.1305C62.2562 47.4328 59.3993 46.7095 56.8654 46.7095ZM72.4874 52.2018C72.0507 52.4504 71.5276 52.4685 70.9089 52.4685L66.9874 52.4731V49.4986H70.9544C71.523 49.4986 72.1008 49.5167 72.4874 49.7246C72.8878 49.9507 73.1425 50.362 73.1425 50.9271C73.1425 51.5012 72.8923 51.9622 72.4874 52.2018ZM56.829 52.8618H52.671V49.4986H56.8654C58.0163 49.4986 58.8079 49.9733 58.8079 51.1305C58.8079 52.2787 58.0527 52.8618 56.829 52.8618ZM44.537 53.4269L49.4592 48.1606V58.8604L44.537 53.4269ZM36.7259 57.2963H28.833V54.6564H35.8707V51.9035L28.833 51.908V49.4986H36.867L40.3926 53.3862L36.7259 57.2963Z" fill="url(#paint0__2radial)"></path>
+                                                                        </g>
+                                                                        <defs>
+                                                                            <radialGradient id="paint0__2radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(18.7086 -1.02469) rotate(46.8025) scale(127.162 116.897)">
+                                                                                <stop stop-color="#7FD3F3"></stop>
+                                                                                <stop offset="1" stop-color="#017CC2"></stop>
+                                                                            </radialGradient>
+                                                                        </defs>
+                                                                    </svg></div>
+                                                                <div class="giraffly-right-Bar-Preview-div-svg"><svg height="100%" viewBox="0 0 115 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path d="M42.9037 32H36.4842C36.2717 31.9999 36.0661 32.0757 35.9045 32.2137C35.7429 32.3518 35.6359 32.5431 35.6028 32.7531L33.0064 49.2205C32.9945 49.2969 32.9992 49.375 33.0204 49.4494C33.0415 49.5238 33.0785 49.5927 33.1288 49.6514C33.1791 49.7101 33.2416 49.7572 33.3118 49.7895C33.3821 49.8218 33.4585 49.8384 33.5358 49.8383H36.6006C36.8132 49.8384 37.0189 49.7625 37.1806 49.6242C37.3422 49.486 37.4491 49.2945 37.482 49.0843L38.1822 44.6428C38.2151 44.4328 38.3219 44.2414 38.4833 44.1032C38.6447 43.9649 38.8502 43.8889 39.0627 43.8888H41.0949C45.3236 43.8888 47.7642 41.8417 48.4015 37.7852C48.6888 36.0105 48.4137 34.6161 47.583 33.6395C46.6706 32.5672 45.0524 32 42.9037 32ZM43.6444 38.0143C43.2933 40.3187 41.5333 40.3187 39.8315 40.3187H38.8628L39.5424 36.0152C39.5623 35.8893 39.6264 35.7746 39.7233 35.6918C39.8202 35.609 39.9434 35.5635 40.0708 35.5635H40.5148C41.6741 35.5635 42.7676 35.5635 43.3327 36.2246C43.6697 36.619 43.7729 37.2049 43.6444 38.0143ZM62.0929 37.9402H59.0188C58.8914 37.9402 58.7681 37.9857 58.6713 38.0685C58.5744 38.1513 58.5102 38.2659 58.4903 38.3918L58.3542 39.252L58.1393 38.9402C57.4738 37.974 55.9897 37.6509 54.5085 37.6509C51.1115 37.6509 48.21 40.2248 47.645 43.8352C47.3512 45.6363 47.7689 47.3584 48.7901 48.5594C49.7269 49.6637 51.0673 50.1238 52.6621 50.1238C55.3993 50.1238 56.9171 48.3631 56.9171 48.3631L56.7801 49.2176C56.7679 49.294 56.7724 49.3722 56.7932 49.4467C56.8141 49.5212 56.8509 49.5902 56.901 49.6491C56.9512 49.7081 57.0135 49.7554 57.0837 49.7879C57.1539 49.8204 57.2303 49.8373 57.3076 49.8374H60.0767C60.2893 49.8375 60.495 49.7615 60.6567 49.6233C60.8183 49.485 60.9252 49.2935 60.9581 49.0834L62.6195 38.558C62.6318 38.4818 62.6273 38.4038 62.6065 38.3295C62.5856 38.2552 62.5489 38.1862 62.4988 38.1275C62.4488 38.0687 62.3865 38.0216 62.3165 37.9892C62.2464 37.9569 62.1701 37.9401 62.0929 37.9402ZM57.8079 43.9254C57.5113 45.6823 56.1174 46.8617 54.3395 46.8617C53.4469 46.8617 52.7335 46.5753 52.2754 46.0325C51.8211 45.4935 51.6484 44.7264 51.7929 43.8719C52.0698 42.13 53.4872 40.9121 55.2379 40.9121C56.1108 40.9121 56.8204 41.2023 57.2879 41.7497C57.7563 42.3028 57.9422 43.0746 57.8079 43.9254ZM78.4652 37.9402H75.376C75.2304 37.9404 75.0869 37.9762 74.9582 38.0444C74.8295 38.1126 74.7193 38.2113 74.6373 38.3317L70.3767 44.6099L68.5707 38.5768C68.5153 38.3928 68.4021 38.2315 68.2479 38.1169C68.0937 38.0022 67.9067 37.9403 67.7146 37.9402H64.679C64.5938 37.9399 64.5097 37.9601 64.4339 37.9989C64.358 38.0377 64.2925 38.0941 64.2428 38.1634C64.1932 38.2326 64.1607 38.3128 64.1483 38.3971C64.1358 38.4814 64.1436 38.5675 64.1712 38.6482L67.5738 48.6373L64.3748 53.1549C64.318 53.235 64.2843 53.3292 64.2774 53.4272C64.2705 53.5252 64.2907 53.6232 64.3358 53.7104C64.3808 53.7977 64.449 53.8709 64.5329 53.922C64.6168 53.973 64.7131 54 64.8113 54H67.8967C68.0408 54.0002 68.1827 53.9654 68.3104 53.8987C68.4381 53.832 68.5477 53.7353 68.6298 53.6169L78.9045 38.7806C78.9602 38.7003 78.9929 38.6063 78.999 38.5088C79.0051 38.4113 78.9844 38.314 78.9391 38.2274C78.8938 38.1408 78.8257 38.0683 78.7422 38.0176C78.6587 37.967 78.5629 37.9402 78.4652 37.9402Z" fill="#253B80"></path>
+                                                                        <path d="M88.7033 32.0009H82.4129C82.2048 32.001 82.0036 32.0764 81.8455 32.2135C81.6873 32.3506 81.5826 32.5404 81.5502 32.7488L79.0064 49.1029C78.9946 49.1786 78.9991 49.2561 79.0197 49.3299C79.0402 49.4037 79.0763 49.4722 79.1254 49.5305C79.1745 49.5888 79.2355 49.6357 79.3042 49.6678C79.3729 49.6999 79.4476 49.7165 79.5233 49.7165H82.7513C82.8969 49.7163 83.0377 49.6634 83.1483 49.5673C83.2589 49.4712 83.332 49.3383 83.3546 49.1924L84.0765 44.5567C84.1087 44.3482 84.2133 44.1581 84.3715 44.0208C84.5297 43.8835 84.731 43.808 84.9392 43.8079H86.9293C91.0733 43.8079 93.4635 41.7749 94.0888 37.7463C94.3712 35.9838 94.0999 34.599 93.286 33.6292C92.393 32.5642 90.8084 32.0009 88.7033 32.0009ZM89.4289 37.9739C89.0859 40.2624 87.3615 40.2624 85.6933 40.2624H84.7451L85.4119 35.9885C85.431 35.8635 85.4936 35.7495 85.5884 35.6672C85.6832 35.5849 85.8039 35.5398 85.9287 35.5399H86.3637C87.4986 35.5399 88.5709 35.5399 89.1245 36.1965C89.4547 36.5881 89.5549 37.17 89.4289 37.9739ZM107.503 37.9002H104.493C104.368 37.8999 104.247 37.9449 104.152 38.0273C104.058 38.1096 103.995 38.2237 103.976 38.3488L103.843 39.203L103.631 38.8934C102.979 37.9338 101.526 37.613 100.075 37.613C96.7466 37.613 93.9049 40.1691 93.3513 43.7547C93.0643 45.5434 93.4717 47.2537 94.4723 48.4464C95.392 49.5431 96.7034 50 98.2659 50C100.948 50 102.435 48.2515 102.435 48.2515L102.3 49.1001C102.288 49.1761 102.293 49.2539 102.313 49.328C102.334 49.4021 102.37 49.4708 102.42 49.5293C102.469 49.5879 102.53 49.6349 102.599 49.667C102.668 49.6992 102.743 49.7157 102.819 49.7156H105.531C105.739 49.7155 105.941 49.6399 106.099 49.5026C106.257 49.3654 106.362 49.1753 106.394 48.9667L108.023 38.5138C108.034 38.4379 108.029 38.3603 108.008 38.2864C107.988 38.2125 107.951 38.1441 107.902 38.0858C107.853 38.0275 107.791 37.9807 107.723 37.9487C107.654 37.9167 107.579 37.9001 107.503 37.9002ZM103.305 43.8443C103.016 45.5891 101.648 46.7603 99.9066 46.7603C99.0338 46.7603 98.333 46.4759 97.8843 45.9369C97.4391 45.4016 97.2718 44.6397 97.4116 43.7911C97.6847 42.0612 99.0715 40.8517 100.787 40.8517C101.642 40.8517 102.337 41.1399 102.795 41.6836C103.256 42.2328 103.438 42.9994 103.305 43.8443ZM111.054 32.4495L108.472 49.1029C108.46 49.1786 108.465 49.2561 108.485 49.3299C108.506 49.4037 108.542 49.4722 108.591 49.5305C108.64 49.5888 108.701 49.6357 108.77 49.6678C108.839 49.6999 108.913 49.7165 108.989 49.7165H111.584C112.016 49.7165 112.382 49.3994 112.448 48.9677L114.994 32.6145C115.005 32.5387 115.001 32.4612 114.98 32.3874C114.96 32.3135 114.924 32.245 114.875 32.1866C114.826 32.1282 114.765 32.0813 114.696 32.0491C114.627 32.0169 114.552 32.0001 114.477 32H111.571C111.446 32.0004 111.325 32.0459 111.231 32.1283C111.136 32.2107 111.073 32.3245 111.054 32.4495Z" fill="#179BD7"></path>
+                                                                        <path d="M6.81147 53L7.3013 49.9295L6.21019 49.9046H1L4.62082 27.2477C4.63159 27.1785 4.66722 27.1154 4.72121 27.0699C4.77519 27.0244 4.84393 26.9996 4.9149 27H13.7C16.6165 27 18.6292 27.5989 19.6801 28.7811C20.1727 29.3357 20.4865 29.9152 20.6382 30.5529C20.7974 31.2221 20.8002 32.0216 20.6447 32.9967L20.6335 33.0679V33.6927L21.1261 33.9682C21.5022 34.1562 21.8403 34.4105 22.1236 34.7187C22.5451 35.1928 22.8176 35.7955 22.9328 36.5099C23.0518 37.2447 23.0124 38.1191 22.8176 39.109C22.5928 40.2477 22.2294 41.2395 21.7387 42.051C21.3057 42.778 20.7235 43.4076 20.0294 43.8995C19.3776 44.3561 18.603 44.7027 17.7273 44.9246C16.8788 45.1427 15.9113 45.2527 14.8501 45.2527H14.1664C13.6775 45.2527 13.2027 45.4265 12.8299 45.7379C12.4577 46.0527 12.2108 46.4877 12.1331 46.9654L12.0816 47.2417L11.2162 52.6534L11.1769 52.8521C11.1666 52.915 11.1488 52.9464 11.1225 52.9677C11.0971 52.9882 11.0654 52.9996 11.0326 53H6.81147Z" fill="#253B80"></path>
+                                                                        <path d="M21.6526 33C21.6267 33.167 21.5969 33.3377 21.5635 33.5131C20.4151 39.4381 16.4861 41.4849 11.468 41.4849H8.91302C8.29934 41.4849 7.78222 41.9327 7.68659 42.541L6.37846 50.8775L6.00803 53.2406C5.99327 53.3343 5.99891 53.4302 6.02454 53.5215C6.05018 53.6128 6.09521 53.6975 6.15653 53.7697C6.21786 53.8419 6.29402 53.8998 6.37977 53.9396C6.46552 53.9793 6.55883 54 6.65327 54H11.1848C11.7215 54 12.1773 53.6082 12.2618 53.0764L12.3064 52.845L13.1596 47.4043L13.2143 47.1057C13.2979 46.5721 13.7547 46.1803 14.2913 46.1803H14.969C19.3595 46.1803 22.7964 44.3891 23.801 39.2058C24.2206 37.0405 24.0034 35.2325 22.893 33.9609C22.5411 33.5676 22.1208 33.2419 21.6526 33Z" fill="#179BD7"></path>
+                                                                        <path d="M19.7957 32.4369C19.4281 32.3246 19.0542 32.2369 18.6761 32.1744C17.9291 32.0531 17.1741 31.9949 16.4183 32.0004H9.57608C9.31569 32.0001 9.06381 32.0984 8.86598 32.2772C8.66816 32.4561 8.53743 32.7039 8.49744 32.9757L7.04188 42.7158L7 43C7.04535 42.6899 7.19423 42.4073 7.41973 42.2031C7.64523 41.9989 7.93244 41.8868 8.22941 41.887H10.7906C15.8208 41.887 19.7594 39.7287 20.9107 33.4851C20.9451 33.3002 20.9739 33.1203 21 32.9443C20.6962 32.776 20.3796 32.6349 20.0535 32.5225C19.968 32.4925 19.8821 32.464 19.7957 32.4369Z" fill="#222D65"></path>
+                                                                        <path d="M9.12293 33.1739C9.16336 32.9162 9.29659 32.6813 9.4984 32.5118C9.70021 32.3424 9.95722 32.2497 10.2227 32.2505H17.1993C18.0258 32.2505 18.7973 32.3036 19.5014 32.4154C19.9779 32.4889 20.4477 32.5989 20.9068 32.7443C21.2531 32.8571 21.5748 32.9903 21.8718 33.1441C22.221 30.9571 21.869 29.4681 20.6648 28.1198C19.3372 26.6355 16.9412 26 13.8752 26H4.97421C4.34792 26 3.81367 26.4473 3.71688 27.0557L0.00940363 50.1316C-0.00786516 50.2387 -0.00129497 50.3482 0.0286622 50.4527C0.0586194 50.5571 0.111253 50.6538 0.182941 50.7364C0.25463 50.8189 0.343673 50.8852 0.443945 50.9307C0.544217 50.9762 0.653339 50.9999 0.763804 51H6.25906L7.63881 42.4042L9.12293 33.1739Z" fill="#253B80"></path>
+                                                                    </svg></div>
+                                                                <div class="giraffly-right-Bar-Preview-div-svg"><svg height="100%" viewBox="0 0 115 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <rect fill="#ffb3c7" x="0.05" y="8.58" width="114.89" height="63.83" rx="11.03"></rect>
+                                                                        <path d="M104.21,46a2.75,2.75,0,1,0,2.72,2.75A2.73,2.73,0,0,0,104.21,46Zm-9-2.12a3.93,3.93,0,1,0-3.93,3.76A3.85,3.85,0,0,0,95.25,43.86Zm0-7.31H99.6V51.16H95.27v-.93a7.72,7.72,0,1,1,0-12.75v-.93Zm-34.71,1.9v-1.9H56.12V51.16h4.45V44.34c0-2.3,2.48-3.54,4.19-3.54h0V36.55a5.39,5.39,0,0,0-4.25,1.9ZM49.5,43.86a3.93,3.93,0,1,0-3.92,3.76A3.84,3.84,0,0,0,49.5,43.86Zm0-7.31h4.34V51.16H49.52v-.93a7.72,7.72,0,1,1,0-12.75v-.93Zm26.1-.39a5.25,5.25,0,0,0-4.47,2V36.55H66.83V51.16h4.38V43.48a3.06,3.06,0,0,1,3.25-3.31c1.91,0,3,1.15,3,3.28v7.71h4.33V41.87c0-3.4-2.68-5.71-6.17-5.71Zm-44.36,15H35.8V30H31.26Zm-19.94,0h4.81V30H11.32ZM28.13,30a16.87,16.87,0,0,1-4.91,12l6.64,9.14H23.92L16.7,41.24l1.87-1.41A12.19,12.19,0,0,0,23.43,30Z" fill="#0a0b09"></path>
+                                                                    </svg></div>
+                                                                <div class="giraffly-right-Bar-Preview-div-svg"><svg height="100%" viewBox="0 0 115 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path d="M71.3601 56.2008H43.8333V6.73047H71.3601V56.2008Z" fill="#6C6BBD"></path>
+                                                                        <path d="M45.5967 31.4618C45.5967 21.4265 50.2954 12.4873 57.6123 6.72658C52.2616 2.51404 45.5087 -0.000288775 38.1698 -0.000288775C20.7955 -0.000288775 6.71173 14.0855 6.71173 31.4618C6.71173 48.838 20.7955 62.9238 38.1698 62.9238C45.5087 62.9238 52.2616 60.4095 57.6123 56.197C50.2954 50.4362 45.5967 41.4971 45.5967 31.4618Z" fill="#EB001B"></path>
+                                                                        <path d="M108.485 31.4618C108.485 48.838 94.4009 62.9238 77.0267 62.9238C69.6877 62.9238 62.9348 60.4095 57.5822 56.197C64.9011 50.4362 69.5997 41.4971 69.5997 31.4618C69.5997 21.4265 64.9011 12.4873 57.5822 6.72658C62.9348 2.51404 69.6877 -0.000288775 77.0267 -0.000288775C94.4009 -0.000288775 108.485 14.0855 108.485 31.4618Z" fill="#0099DF"></path>
+                                                                        <path d="M80.6412 70.1709C81.0073 70.1709 81.5334 70.2409 81.9354 70.3989L81.3753 72.1111C80.9913 71.9531 80.6072 71.9011 80.2392 71.9011C79.051 71.9011 78.457 72.6692 78.457 74.0494V78.734H76.6387V70.3809H78.439V71.395C78.911 70.6609 79.5931 70.1709 80.6412 70.1709ZM73.9244 72.0411H70.954V75.8156C70.954 76.6537 71.25 77.2138 72.1602 77.2138C72.6322 77.2138 73.2263 77.0557 73.7664 76.7417L74.2904 78.2959C73.7144 78.698 72.8062 78.944 72.0201 78.944C69.8699 78.944 69.1198 77.7898 69.1198 75.8496V72.0411H67.4235V70.3809H69.1198V67.8466H70.954V70.3809H73.9244V72.0411ZM50.6634 73.8233C50.8574 72.6172 51.5895 71.7951 52.8837 71.7951C54.0538 71.7951 54.8059 72.5292 54.9979 73.8233H50.6634ZM56.8862 74.5574C56.8682 71.9531 55.26 70.1709 52.9177 70.1709C50.4714 70.1709 48.7591 71.9531 48.7591 74.5574C48.7591 77.2118 50.5414 78.942 53.0417 78.942C54.2998 78.942 55.452 78.628 56.4661 77.7718L55.574 76.4257C54.8759 76.9857 53.9838 77.2998 53.1457 77.2998C51.9755 77.2998 50.9094 76.7577 50.6474 75.2555H56.8502C56.8682 75.0275 56.8862 74.8015 56.8862 74.5574ZM64.8712 72.5132C64.3651 72.1971 63.335 71.7951 62.2689 71.7951C61.2728 71.7951 60.6787 72.1631 60.6787 72.7752C60.6787 73.3333 61.3068 73.4913 62.0929 73.5953L62.949 73.7173C64.7672 73.9814 65.8673 74.7495 65.8673 76.2176C65.8673 77.8078 64.4692 78.944 62.0589 78.944C60.6947 78.944 59.4365 78.5939 58.4404 77.8599L59.2965 76.4437C59.9086 76.9157 60.8187 77.3178 62.0769 77.3178C63.317 77.3178 63.9811 76.9517 63.9811 76.3037C63.9811 75.8336 63.509 75.5696 62.5129 75.4315L61.6568 75.3095C59.7866 75.0455 58.7724 74.2074 58.7724 72.8452C58.7724 71.185 60.1366 70.1709 62.2509 70.1709C63.579 70.1709 64.7852 70.4689 65.6573 71.045L64.8712 72.5132ZM87.2841 71.8971C86.9101 71.8971 86.564 71.9631 86.242 72.0931C85.9219 72.2251 85.6439 72.4092 85.4099 72.6452C85.1758 72.8812 84.9918 73.1652 84.8578 73.4953C84.7238 73.8253 84.6578 74.1894 84.6578 74.5854C84.6578 74.9835 84.7238 75.3455 84.8578 75.6756C84.9918 76.0056 85.1758 76.2897 85.4099 76.5257C85.6439 76.7617 85.9219 76.9457 86.242 77.0778C86.564 77.2098 86.9101 77.2738 87.2841 77.2738C87.6582 77.2738 88.0062 77.2098 88.3262 77.0778C88.6483 76.9457 88.9283 76.7617 89.1623 76.5257C89.4004 76.2897 89.5844 76.0056 89.7204 75.6756C89.8544 75.3455 89.9204 74.9835 89.9204 74.5854C89.9204 74.1894 89.8544 73.8253 89.7204 73.4953C89.5844 73.1652 89.4004 72.8812 89.1623 72.6452C88.9283 72.4092 88.6483 72.2251 88.3262 72.0931C88.0062 71.9631 87.6582 71.8971 87.2841 71.8971ZM87.2841 70.1709C87.9322 70.1709 88.5323 70.2829 89.0843 70.5089C89.6364 70.7329 90.1145 71.043 90.5165 71.437C90.9206 71.8311 91.2346 72.2971 91.4626 72.8332C91.6907 73.3713 91.8047 73.9554 91.8047 74.5854C91.8047 75.2155 91.6907 75.7996 91.4626 76.3377C91.2346 76.8737 90.9206 77.3418 90.5165 77.7358C90.1145 78.1299 89.6364 78.4379 89.0843 78.664C88.5323 78.888 87.9322 79 87.2841 79C86.636 79 86.0359 78.888 85.4839 78.664C84.9318 78.4379 84.4577 78.1299 84.0577 77.7358C83.6576 77.3418 83.3436 76.8737 83.1156 76.3377C82.8875 75.7996 82.7735 75.2155 82.7735 74.5854C82.7735 73.9554 82.8875 73.3713 83.1156 72.8332C83.3436 72.2971 83.6576 71.8311 84.0577 71.437C84.4577 71.043 84.9318 70.7329 85.4839 70.5089C86.0359 70.2829 86.636 70.1709 87.2841 70.1709ZM40.046 74.5574C40.046 73.0892 41.0081 71.8831 42.5803 71.8831C44.0825 71.8831 45.0967 73.0372 45.0967 74.5574C45.0967 76.0776 44.0825 77.2298 42.5803 77.2298C41.0081 77.2298 40.046 76.0256 40.046 74.5574ZM46.8089 74.5574V70.3809H44.9926V71.395C44.4146 70.6429 43.5425 70.1709 42.3543 70.1709C40.012 70.1709 38.1778 72.0051 38.1778 74.5574C38.1778 77.1078 40.012 78.944 42.3543 78.944C43.5425 78.944 44.4146 78.4719 44.9926 77.7198V78.734H46.8089V74.5574ZM36.5696 78.734V73.4913C36.5696 71.517 35.3114 70.1889 33.2851 70.1709C32.219 70.1529 31.1169 70.4849 30.3488 71.6571C29.7727 70.7309 28.8626 70.1709 27.5864 70.1709C26.6963 70.1709 25.8222 70.4329 25.1401 71.411V70.3809H23.3239V78.734H25.1581V74.1034C25.1581 72.6532 25.9622 71.8831 27.2024 71.8831C28.4085 71.8831 29.0206 72.6692 29.0206 74.0854V78.734H30.8548V74.1034C30.8548 72.6532 31.6949 71.8831 32.8991 71.8831C34.1412 71.8831 34.7353 72.6692 34.7353 74.0854V78.734H36.5696Z" fill="#231F20"></path>
+                                                                    </svg></div>
+                                                                <div class="giraffly-right-Bar-Preview-div-svg"><svg height="100%" viewBox="0 0 115 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <g clip-path="">
+                                                                            <path d="M21.0127 23.0072C19.6649 24.5811 17.5084 25.8224 15.3519 25.6451C15.0823 23.5171 16.1381 21.256 17.3736 19.8595C18.7214 18.2413 21.0801 17.0887 22.9895 17C23.2141 19.2167 22.338 21.389 21.0127 23.0072ZM22.967 26.0663C19.8446 25.8889 17.1714 27.8174 15.6888 27.8174C14.1838 27.8174 11.9149 26.1549 9.44396 26.1993C6.23168 26.2436 3.24403 28.0391 1.6042 30.8986C-1.76533 36.6177 0.72812 45.0855 3.98533 49.7405C5.58024 52.0459 7.48964 54.5729 10.0055 54.4842C12.3867 54.3956 13.3301 52.9547 16.2055 52.9547C19.1033 52.9547 19.9344 54.4842 22.4503 54.4399C25.0561 54.3956 26.6959 52.1345 28.2908 49.8292C30.1104 47.2135 30.8517 44.6643 30.8966 44.5313C30.8517 44.487 25.8648 42.6028 25.8199 36.928C25.7749 32.1843 29.751 29.9233 29.9307 29.7903C27.6843 26.5096 24.18 26.1549 22.967 26.0663ZM41.0052 19.6379V54.1961H46.4414V42.3811H53.9666C60.8405 42.3811 65.6701 37.7261 65.6701 30.9873C65.6701 24.2486 60.9303 19.6379 54.1464 19.6379H41.0052ZM46.4414 24.1599H52.7087C57.426 24.1599 60.1216 26.6426 60.1216 31.0095C60.1216 35.3764 57.426 37.8812 52.6862 37.8812H46.4414V24.1599ZM75.599 54.4621C79.0135 54.4621 82.1808 52.7552 83.6185 50.0509H83.7308V54.1961H88.7626V36.9945C88.7626 32.007 84.7192 28.7928 78.4968 28.7928C72.7237 28.7928 68.4556 32.0513 68.2984 36.529H73.1954C73.5997 34.401 75.599 33.0045 78.3395 33.0045C81.6641 33.0045 83.5286 34.534 83.5286 37.3492V39.2556L76.7446 39.6546C70.4324 40.0314 67.0179 42.5806 67.0179 47.014C67.0179 51.4917 70.5447 54.4621 75.599 54.4621ZM77.0591 50.3612C74.1613 50.3612 72.3193 48.9868 72.3193 46.881C72.3193 44.7086 74.0939 43.4451 77.4859 43.2456L83.5286 42.8688V44.8195C83.5286 48.0558 80.7431 50.3612 77.0591 50.3612ZM95.4792 63.5948C100.781 63.5948 103.274 61.5998 105.453 55.5482L115 29.1253H109.474L103.072 49.541H102.96L96.5575 29.1253H90.8742L100.084 54.2847L99.59 55.8143C98.7589 58.4078 97.4111 59.4053 95.0075 59.4053C94.5807 59.4053 93.7495 59.361 93.4126 59.3166V63.4618C93.7271 63.5505 95.0749 63.5948 95.4792 63.5948Z" fill="black"></path>
+                                                                        </g>
+                                                                        <defs></defs>
+                                                                    </svg></div>
+
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                     <div data-store-availability-holder="" data-product-name="MARS - 100% Parfümöl" data-base-url="https://www.neness-shop.de/"></div>
                                                 </div>
+                                                <script>
+                                                    const button_add_cart = document.getElementById('add_product_cart');
+
+                                                    button_add_cart.addEventListener('click', () => {
+
+
+                                                        $.ajax({
+                                                            url: "../../../add_cart.php",
+                                                            type: 'POST',
+
+                                                            data: {
+                                                                cart: '<?php echo $products['name'] ?>'
+                                                            },
+
+                                                            success: function(data) {
+                                                                console.log(data)
+                                                                if (data != 'Success') {
+                                                                    console.log('Error')
+                                                                }
+                                                                localStorage.setItem('refreshed', 'true');
+                                                                window.location.reload();
+
+                                                            },
+                                                            error: function(error) {
+                                                                console.log(error)
+
+
+                                                            }
+                                                        })
+                                                    });
+                                                </script>
                                                 <div class="product-block">
                                                     <div class="rte">
 
-                                                                <meta charset="utf-8">
-                                                                <p>Unser Parfümöl <strong>MARS</strong> ist eine exquisite
-                                                                    Kombination aus erdigen, holzigen und würzigen Noten, die ein
-                                                                    luxuriöses und unvergessliches Dufterlebnis bieten. Hier sind
-                                                                    die Duftnoten in Stichpunkten:</p>
-                                                                <ul>
-                                                                    <li>
-                                                                        <strong>Kopfnoten:</strong> Zistrose, Rosmarin, Kardamom und
-                                                                        brasilianisches Rosenholz
-                                                                    </li>
-                                                                    <li>
-                                                                        <strong>Herznoten:</strong> Oud, Patschuli und Vetiver
-                                                                    </li>
-                                                                    <li>
-                                                                        <strong>Basisnoten:</strong> Tonkabohne, Ambra und
-                                                                        Sandelholz
-                                                                    </li>
-                                                                </ul>
-                                                                <p>Die Mischung aus diesen reichen und intensiven Noten schafft ein
-                                                                    einzigartiges und unwiderstehliches Parfüm, das Ihre Sinne
-                                                                    fesseln wird. Unsere Parfümöle sind alle aus hochwertigen,
-                                                                    natürlichen Ölen hergestellt und bieten ein lang anhaltendes
-                                                                    Dufterlebnis ohne die Austrocknung oder Reizung der Haut, die
-                                                                    oft mit Alkohol-basierten Düften verbunden sind. Entdecken Sie
-                                                                    unser Parfümöl und tauchen Sie ein in eine Welt voller
-                                                                    Raffinesse und Eleganz.</p>
+                                                        <meta charset="utf-8">
+                                                        <p><?php echo $products['info'] ?>
+                                                        </p>
 
                                                     </div>
                                                 </div>
@@ -3723,187 +2399,30 @@ $img = get_src_photo($name);
                         }
                     </style>
                 </div>
-                <div id="shopify-section-template--17917053370634__7b8cb3e7-42f1-4d22-925d-669b0128e77c" class="shopify-section index-section">
-                    <div class="text-with-icons" data-section-id="template--17917053370634__7b8cb3e7-42f1-4d22-925d-669b0128e77c" data-section-type="text-with-icons">
+
+                <section id="shopify-section-template--17917053370634__loox-product-reviews-app-section" class="shopify-section">
+                    <div class="index-section">
                         <div class="page-width">
-                            <div class="
-          text-with-icons__title
-          section-header">
-                                <h2 class="text-center">DAS MACHT NENESS BESONDERS</h2>
-                            </div>
-                            <div class="
-        text-with-icons__blocks
-        has-3-per-row" data-block-count="3">
-
-                                <div class="text-with-icons__block text-center">
-                                    <div class="text-with-icons__block-icon">
-
-                                        <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-tcwi-charity" viewbox="0 0 100 100">
-                                            <defs>
-                                                <style>
-                                                    .a {
-                                                        fill: none;
-                                                        stroke: #000;
-                                                        stroke-width: 2px
-                                                    }
-                                                </style>
-                                            </defs>
-                                            <path class="a" d="M63.41 68l21-10.58a4.16 4.16 0 0 1 5.67 2 4.17 4.17 0 0 1-1.93 5.39L54 82a3.35 3.35 0 0 1-2.16.25L39 75.82l-7.31 3.06M22.76 86.67L9.6 55.92l10.24-4.64 13.17 30.75-10.25 4.64z">
-                                            </path>
-                                            <path class="a" d="M23.17 58.17l8.79-4a9.51 9.51 0 0 1 6.88-.37l22.25 7.31A4.52 4.52 0 0 1 63.41 68a4.51 4.51 0 0 1-5 1.77L43.8 65.32M79.37 16.94a12.34 12.34 0 0 0-17.44 0l-.79.79-.78-.79a12.34 12.34 0 1 0-17.44 17.45l.78.78 17.44 17.45 17.45-17.45.78-.78a12.34 12.34 0 0 0 0-17.45z">
-                                            </path>
-                                        </svg>
-
-                                    </div>
-                                    <div class="text-with-icons__block-title">
-                                        <h3>Langanhaltend</h3>
-                                    </div>
-                                    <div class="text-with-icons__block-text">
-
-                                    </div>
+                            <div id="shopify-block-loox-product-reviews" class="shopify-block shopify-app-block">
+                                <div>
+                                    <iframe id="frame" src="/review.php?name=<?= $name ?>" frameborder="0"></iframe>
                                 </div>
+                                <script>
+                                    $(document).ready(function() {
 
-                                <div class="text-with-icons__block text-center">
-                                    <div class="text-with-icons__block-icon">
+                                        function setIframeSize() {
+                                            var windowWidth = $(window).width();
+                                            var windowHeight = $(window).height();
+                                            $("#frame").css("width", windowWidth + "px");
+                                            $("#frame").css("height", windowHeight + "px");
+                                        }
 
-                                        <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-tcwi-plant" viewbox="0 0 100 100">
-                                            <defs>
-                                                <style>
-                                                    .a {
-                                                        fill: none;
-                                                        stroke: #000;
-                                                        stroke-width: 2px
-                                                    }
-                                                </style>
-                                            </defs>
-                                            <path class="a" d="M15.33 86.58h69.34s-30.67-40.37-69.34 0zM43.15 46.69s9 8.83 9.27 22M82.06 13.43s-27.38-1.32-25.37 25.16c0 0 23 5.54 25.37-25.16zM82.06 13.43L56.69 38.59M63.19 32.17l13.16-.45M70.05 25.35l9.7-.34M63.19 32.17l.45-13.07M70.05 25.35l.34-9.91M50.64 59.11a32.68 32.68 0 0 1 6-20.52M18 21.31S16.67 48.7 43.15 46.69c0 0 5.54-23-25.15-25.38zM17.99 21.31l25.16 25.38M36.73 40.19l-.45-13.16M29.91 33.33l-.34-9.7M36.73 40.19l-13.08-.45M29.91 33.33L20 32.99">
-                                            </path>
-                                        </svg>
-
-                                    </div>
-                                    <div class="text-with-icons__block-title">
-                                        <h3>Vegan</h3>
-                                    </div>
-                                    <div class="text-with-icons__block-text">
-
-                                    </div>
-                                </div>
-
-                                <div class="text-with-icons__block text-center">
-                                    <div class="text-with-icons__block-icon">
-
-                                        <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-tcwi-thumbs-up" viewbox="0 0 100 100">
-                                            <defs>
-                                                <style>
-                                                    .a {
-                                                        fill: none;
-                                                        stroke: #000;
-                                                        stroke-width: 2px
-                                                    }
-                                                </style>
-                                            </defs>
-                                            <path class="a" d="M16.01 54.13h20.02v35.22H16.01z"></path>
-                                            <path class="a" d="M36 82.72l3.84 2.63a11.53 11.53 0 0 0 6.54 2h13.91M36 58.78l2.07-1.93A10.23 10.23 0 0 0 40.26 54l7.66-15a7.4 7.4 0 0 0 .81-3.36v-8.3a2.93 2.93 0 0 1 2.92-2.94c2.41 0 5.78 1 7.92 6.18a18.63 18.63 0 0 1 1 10.5l-1.29 6.94h19A4.91 4.91 0 0 1 83.16 53a4.91 4.91 0 0 1-4.91 4.92H59.6M62.68 67.72H76a4.91 4.91 0 0 1 4.91 4.92A4.91 4.91 0 0 1 76 77.55H65.65">
-                                            </path>
-                                            <path class="a" d="M65.65 77.55h6.12a4.92 4.92 0 0 1 4.92 4.92 4.93 4.93 0 0 1-4.92 4.92h-12.5M59.6 57.89h19.47A4.92 4.92 0 0 1 84 62.81a4.91 4.91 0 0 1-4.92 4.91h-16.4M53.19 20.06v-9.41M47.33 22.12l-6.05-7.22M44.15 27.46l-9.27-1.64M62.04 27.68l9.27-1.64M59 22.26l6.05-7.21">
-                                            </path>
-                                        </svg>
-
-                                    </div>
-                                    <div class="text-with-icons__block-title">
-                                        <h3>Parfüm To Go</h3>
-                                    </div>
-                                    <div class="text-with-icons__block-text">
-
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                    <style data-shopify="">
-                        #shopify-section-template--17917053370634__7b8cb3e7-42f1-4d22-925d-669b0128e77c .icon {
-                            color: #000000;
-                        }
-
-                        #shopify-section-template--17917053370634__7b8cb3e7-42f1-4d22-925d-669b0128e77c .icon path,
-                        #shopify-section-template--17917053370634__7b8cb3e7-42f1-4d22-925d-669b0128e77c .icon polygon,
-                        #shopify-section-template--17917053370634__7b8cb3e7-42f1-4d22-925d-669b0128e77c .icon rect,
-                        #shopify-section-template--17917053370634__7b8cb3e7-42f1-4d22-925d-669b0128e77c .icon circle,
-                        #shopify-section-template--17917053370634__7b8cb3e7-42f1-4d22-925d-669b0128e77c .icon ellipse,
-                        #shopify-section-template--17917053370634__7b8cb3e7-42f1-4d22-925d-669b0128e77c .icon line,
-                        #shopify-section-template--17917053370634__7b8cb3e7-42f1-4d22-925d-669b0128e77c .icon polyline,
-                        #shopify-section-template--17917053370634__7b8cb3e7-42f1-4d22-925d-669b0128e77c .icon g {
-                            stroke-width: 1px;
-                        }
-                    </style>
-
-
-
-                </div>
-                <div id="shopify-section-template--17917053370634__recommendations" class="shopify-section">
-                    <div id="Recommendations-8209898701066" data-section-id="8209898701066" data-section-type="product-recommendations" data-enable="true" data-product-id="8209898701066" data-url="/recommendations/products" data-limit="6">
-
-                        <div data-section-id="8209898701066" data-subsection="" data-section-type="collection-template" class="index-section index-section--sub-product">
-                            <div class="page-width">
-                                <header class="section-header">
-                                    <div class="h3 section-header__title">
-                                        Kunden interessieren sich auch für
-                                    </div>
-                                </header>
-                            </div>
-
-                            <div class="page-width page-width--flush-small">
-                                <div class="product-recommendations-placeholder">
-
-                                    <div class="new-grid product-grid scrollable-grid--small visually-invisible" aria-hidden="true" data-view="scrollable">
-                                        <div class="grid-item grid-product " data-product-handle="mars-roll-on-100-parfumol" data-product-id="8209898701066">
-                                            <div class="grid-item__content"><a href="mars-roll-on-100-parfumol.html" class="grid-item__link">
-                                                    <div class="grid-product__image-wrap">
-                                                        <div class="grid-product__tags"></div>
-                                                        <div class="grid__image-ratio grid__image-ratio--square">
-                                                            <img class="lazyload grid__image-contain" data-src="//www.neness-shop.de/cdn/shop/products/montaz_mars_AO_{width}x.jpg?v=1679647960" data-widths="[160, 200, 280, 360, 540, 720, 900]" data-aspectratio="1.0" data-sizes="auto" alt="">
-                                                            <noscript>
-                                                                <img class="grid-product__image lazyloaded" src="../../../cdn/shop/products/montaz_mars_AO_400x.jpg?v=1679647960" alt="">
-                                                            </noscript>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="grid-item__meta">
-                                                        <div class="grid-item__meta-main">
-                                                            <div class="grid-product__title">MARS - 100% Parfümöl</div>
-                                                        </div>
-                                                        <div class="loox-rating" data-id="8209898701066" data-rating="5.0" data-raters="4"></div>
-                                                        <div class="grid-item__meta-secondary">
-                                                            <div class="grid-product__price"><span class="grid-product__price--current"><span aria-hidden="true">€25<sup>90</sup></span>
-                                                                    <span class="visually-hidden">€25,90</span>
-                                                                </span>
-                                                                <div class="product__unit-price">€259,00/100
-                                                                    ml
-
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                        </div>
-                        <section id="shopify-section-template--17917053370634__loox-product-reviews-app-section"
-                            class="shopify-section">
-                            <div class="index-section">
-                                <div class="page-width">
-                                    <div id="shopify-block-loox-product-reviews" class="shopify-block shopify-app-block">
-                                        <div id="looxReviews" data-limit="20" data-product-id="8209898701066"
-                                            style="margin:0 auto;max-width:1080px;"></div>
-
+                                        setIframeSize();
+                                        $(window).resize(function() {
+                                            setIframeSize();
+                                        });
+                                    });
+                                </script>
                             </div>
                         </div>
                     </div>
@@ -4201,18 +2720,7 @@ $img = get_src_photo($name);
                 </div>
 
             </footer>
-            <script>
-                document.addEventListener("startasyncloading", function() {
-                    document.querySelectorAll("script[type='text/javascripts']").forEach(e => {
-                        var t = document.createElement("script");
-                        for (a = 0; a < e.attributes.length; a++) {
-                            var r = e.attributes[a];
-                            t.setAttribute(r.name, r.value)
-                        }
-                        t.type = "text/javascript", t.innerHTML = e.innerHTML, e.parentNode.insertBefore(t, e), e.parentNode.removeChild(e)
-                    })
-                });
-            </script>
+
 
 
 
@@ -4308,554 +2816,6 @@ $img = get_src_photo($name);
         </div>
     </tool-tip>
     <div id="ProductModals"></div>
-    <script async="" data-src="https://loox.io/widget/N1bI_G-5Eh/loox.1650529109883.js?shop=parfumly1.myshopify.com"></script>
-    <script src="../../../cdn/shop/t/27/assets/custom.min.js?v=81359837787490221661688539544" type="text/javascript"></script>
-
-
-
-
-
-
-
-
-    <script>
-        if (typeof BC_JSON_ObjectBypass === "undefined") {
-            var BC_JSON_ObjectBypass = {
-                "_ab": {
-                    "description": "Used in connection with access to admin.",
-                    "path": "\/",
-                    "domain": "",
-                    "provider": "Shopify",
-                    "type": "type_0",
-                    "expires": "86400",
-                    "recommendation": "0",
-                    "editable": "false",
-                    "deletable": "false",
-                    "set": "0",
-                    "name": "_ab"
-                },
-                "_secure_session_id": {
-                    "description": "Used in connection with navigation through a storefront.",
-                    "path": "\/",
-                    "domain": "",
-                    "provider": "Shopify",
-                    "type": "type_0",
-                    "expires": "2592000",
-                    "recommendation": "0",
-                    "editable": "false",
-                    "deletable": "false",
-                    "set": "0",
-                    "name": "_secure_session_id"
-                },
-                "__cfduid": {
-                    "description": "The _cfduid cookie helps Cloudflare detect malicious visitors to our Customers’ websites and minimizes blocking legitimate users.",
-                    "path": "\/",
-                    "domain": "",
-                    "provider": "Cloudflare",
-                    "type": "type_0",
-                    "expires": "2592000",
-                    "recommendation": "0",
-                    "editable": "false",
-                    "deletable": "false",
-                    "set": "0",
-                    "name": "__cfduid"
-                },
-                "Cart": {
-                    "description": "Used in connection with shopping cart.",
-                    "path": "\/",
-                    "domain": "",
-                    "provider": "Shopify",
-                    "type": "type_0",
-                    "expires": "1209600",
-                    "recommendation": "0",
-                    "editable": "false",
-                    "deletable": "false",
-                    "set": "0",
-                    "name": "Cart"
-                },
-                "cart": {
-                    "description": "Used in connection with shopping cart.",
-                    "path": "\/",
-                    "domain": "",
-                    "provider": "Shopify",
-                    "type": "type_0",
-                    "expires": "1209600",
-                    "recommendation": "0",
-                    "editable": "false",
-                    "deletable": "false",
-                    "set": "0",
-                    "name": "cart"
-                },
-                "cart_sig": {
-                    "description": "Used in connection with checkout.",
-                    "path": "\/",
-                    "domain": "",
-                    "provider": "Shopify",
-                    "type": "type_0",
-                    "expires": "1209600",
-                    "recommendation": "0",
-                    "editable": "false",
-                    "deletable": "false",
-                    "set": "0",
-                    "name": "cart_sig"
-                },
-                "cart_ts": {
-                    "description": "Used in connection with checkout.",
-                    "path": "\/",
-                    "domain": "",
-                    "provider": "Shopify",
-                    "type": "type_0",
-                    "expires": "1209600",
-                    "recommendation": "0",
-                    "editable": "false",
-                    "deletable": "false",
-                    "set": "0",
-                    "name": "cart_ts"
-                },
-                "cart_ver": {
-                    "description": "Used in connection with shopping cart.",
-                    "path": "\/",
-                    "domain": "",
-                    "provider": "Shopify",
-                    "type": "type_0",
-                    "expires": "1209600",
-                    "recommendation": "0",
-                    "editable": "false",
-                    "deletable": "false",
-                    "set": "0",
-                    "name": "cart_ver"
-                },
-                "checkout_token": {
-                    "description": "Used in connection with checkout.",
-                    "path": "\/",
-                    "domain": "",
-                    "provider": "Shopify",
-                    "type": "type_0",
-                    "expires": "31536000",
-                    "recommendation": "0",
-                    "editable": "false",
-                    "deletable": "false",
-                    "set": "0",
-                    "name": "checkout_token"
-                },
-                "Secret": {
-                    "description": "Used in connection with checkout.",
-                    "path": "\/",
-                    "domain": "",
-                    "provider": "Shopify",
-                    "type": "type_0",
-                    "expires": "31536000",
-                    "recommendation": "0",
-                    "editable": "false",
-                    "deletable": "false",
-                    "set": "0",
-                    "name": "Secret"
-                },
-                "secure_customer_sig": {
-                    "description": "Used in connection with customer login.",
-                    "path": "\/",
-                    "domain": "",
-                    "provider": "Shopify",
-                    "type": "type_0",
-                    "expires": "31536000",
-                    "recommendation": "0",
-                    "editable": "false",
-                    "deletable": "false",
-                    "set": "0",
-                    "name": "secure_customer_sig"
-                },
-                "storefront_digest": {
-                    "description": "Used in connection with customer login.",
-                    "path": "\/",
-                    "domain": "",
-                    "provider": "Shopify",
-                    "type": "type_0",
-                    "expires": "31536000",
-                    "recommendation": "0",
-                    "editable": "false",
-                    "deletable": "false",
-                    "set": "0",
-                    "name": "storefront_digest"
-                },
-                "_shopify_u": {
-                    "description": "Used to facilitate updating customer account information.",
-                    "path": "\/",
-                    "domain": "",
-                    "provider": "Shopify",
-                    "type": "type_0",
-                    "expires": "31536000",
-                    "recommendation": "0",
-                    "editable": "false",
-                    "deletable": "false",
-                    "set": "0",
-                    "name": "_shopify_u"
-                },
-                "XSRF-TOKEN": {
-                    "description": "Used in connection with GDPR legal Cookie.",
-                    "path": "\/",
-                    "domain": "",
-                    "provider": "GDPR Legal Cookie",
-                    "type": "type_0",
-                    "expires": "31536000",
-                    "recommendation": "0",
-                    "editable": "false",
-                    "deletable": "false",
-                    "set": "0",
-                    "name": "XSRF-TOKEN"
-                },
-                "gdpr_legal_cookie_session": {
-                    "description": "Used in connection with GDPR legal Cookie.",
-                    "path": "\/",
-                    "domain": "",
-                    "provider": "GDPR Legal Cookie",
-                    "type": "type_0",
-                    "expires": "0",
-                    "recommendation": "0",
-                    "editable": "false",
-                    "deletable": "false",
-                    "set": "0",
-                    "name": "gdpr_legal_cookie_session"
-                },
-                "_bc_c_set": {
-                    "description": "Used in connection with GDPR legal Cookie.",
-                    "path": "\/",
-                    "domain": "",
-                    "provider": "GDPR Legal Cookie",
-                    "type": "type_0",
-                    "expires": "2592000",
-                    "recommendation": "0",
-                    "editable": "false",
-                    "deletable": "false",
-                    "set": "0",
-                    "optIn": true,
-                    "live": "1",
-                    "name": "_bc_c_set",
-                    "ShopifyMinConsent": false
-                },
-                "_tracking_consent": {
-                    "description": "For Shopify User Consent Tracking.",
-                    "path": "\/",
-                    "domain": "",
-                    "provider": "Shopify",
-                    "type": "type_0",
-                    "expires": "31536000",
-                    "recommendation": "0",
-                    "editable": "false",
-                    "deletable": "false",
-                    "set": "0",
-                    "name": "_tracking_consent"
-                },
-                "_shopify_m": {
-                    "description": "Used for managing customer privacy settings.",
-                    "path": "\/",
-                    "domain": "",
-                    "provider": "Shopify",
-                    "type": "type_0",
-                    "expires": "31536000",
-                    "recommendation": "0",
-                    "editable": "false",
-                    "deletable": "false",
-                    "set": "0",
-                    "name": "_shopify_m"
-                },
-                "_shopify_tm": {
-                    "description": "Used for managing customer privacy settings.",
-                    "path": "\/",
-                    "domain": "",
-                    "provider": "Shopify",
-                    "type": "type_0",
-                    "expires": "31536000",
-                    "recommendation": "0",
-                    "editable": "false",
-                    "deletable": "false",
-                    "set": "0",
-                    "name": "_shopify_tm"
-                },
-                "_shopify_tw": {
-                    "description": "Used for managing customer privacy settings.",
-                    "path": "\/",
-                    "domain": "",
-                    "provider": "Shopify",
-                    "type": "type_0",
-                    "expires": "31536000",
-                    "recommendation": "0",
-                    "editable": "false",
-                    "deletable": "false",
-                    "set": "0",
-                    "name": "_shopify_tw"
-                },
-                "_storefront_u": {
-                    "description": "Used to facilitate updating customer account information.",
-                    "path": "\/",
-                    "domain": "",
-                    "provider": "Shopify",
-                    "type": "type_0",
-                    "expires": "31536000",
-                    "recommendation": "0",
-                    "editable": "false",
-                    "deletable": "false",
-                    "set": "0",
-                    "name": "_storefront_u"
-                },
-                "cart_currency": {
-                    "description": "Used in connection with cart and checkout.",
-                    "path": "\/",
-                    "domain": "",
-                    "provider": "Shopify",
-                    "type": "type_0",
-                    "expires": "31536000",
-                    "recommendation": "0",
-                    "editable": "false",
-                    "deletable": "false",
-                    "set": "0",
-                    "name": "cart_currency"
-                },
-                "_orig_referrer": {
-                    "description": "Used in connection with shopping cart.",
-                    "path": "\/",
-                    "domain": "",
-                    "provider": "Shopify",
-                    "type": "type_1",
-                    "expires": "1209600",
-                    "recommendation": "1",
-                    "editable": "true",
-                    "deletable": "false",
-                    "set": "1",
-                    "name": "_orig_referrer"
-                },
-                "_landing_page": {
-                    "description": "Track landing pages.",
-                    "path": "\/",
-                    "domain": "",
-                    "provider": "Shopify",
-                    "type": "type_1",
-                    "expires": "1209600",
-                    "recommendation": "1",
-                    "editable": "true",
-                    "deletable": "false",
-                    "set": "1",
-                    "name": "_landing_page"
-                },
-                "_s": {
-                    "description": "Shopify analytics.",
-                    "path": "\/",
-                    "domain": "",
-                    "provider": "Shopify",
-                    "type": "type_1",
-                    "expires": "1800",
-                    "recommendation": "1",
-                    "editable": "true",
-                    "deletable": "false",
-                    "set": "1",
-                    "name": "_s"
-                },
-                "_shopify_d": {
-                    "description": "Shopify analytics.",
-                    "path": "\/",
-                    "domain": "",
-                    "provider": "Shopify",
-                    "type": "type_1",
-                    "expires": "1209600",
-                    "recommendation": "1",
-                    "editable": "true",
-                    "deletable": "false",
-                    "set": "1",
-                    "name": "_shopify_d"
-                },
-                "_shopify_fs": {
-                    "description": "Shopify analytics.",
-                    "path": "\/",
-                    "domain": "",
-                    "provider": "Shopify",
-                    "type": "type_1",
-                    "expires": "1209600",
-                    "recommendation": "1",
-                    "editable": "true",
-                    "deletable": "false",
-                    "set": "1",
-                    "name": "_shopify_fs"
-                },
-                "_shopify_s": {
-                    "description": "Shopify analytics.",
-                    "path": "\/",
-                    "domain": "",
-                    "provider": "Shopify",
-                    "type": "type_1",
-                    "expires": "1800",
-                    "recommendation": "1",
-                    "editable": "true",
-                    "deletable": "false",
-                    "set": "1",
-                    "name": "_shopify_s"
-                },
-                "_shopify_y": {
-                    "description": "Shopify analytics.",
-                    "path": "\/",
-                    "domain": "",
-                    "provider": "Shopify",
-                    "type": "type_1",
-                    "expires": "31536000",
-                    "recommendation": "1",
-                    "editable": "true",
-                    "deletable": "false",
-                    "set": "1",
-                    "name": "_shopify_y"
-                },
-                "_y": {
-                    "description": "Shopify analytics.",
-                    "path": "\/",
-                    "domain": "",
-                    "provider": "Shopify",
-                    "type": "type_1",
-                    "expires": "31536000",
-                    "recommendation": "1",
-                    "editable": "true",
-                    "deletable": "false",
-                    "set": "1",
-                    "name": "_y"
-                },
-                "_shopify_sa_p": {
-                    "description": "Shopify analytics relating to marketing \u0026 referrals.",
-                    "path": "\/",
-                    "domain": "",
-                    "provider": "Shopify",
-                    "type": "type_1",
-                    "expires": "1800",
-                    "recommendation": "1",
-                    "editable": "true",
-                    "deletable": "false",
-                    "set": "1",
-                    "name": "_shopify_sa_p"
-                },
-                "_shopify_sa_t": {
-                    "description": "Shopify analytics relating to marketing \u0026 referrals.",
-                    "path": "\/",
-                    "domain": "",
-                    "provider": "Shopify",
-                    "type": "type_1",
-                    "expires": "1800",
-                    "recommendation": "1",
-                    "editable": "true",
-                    "deletable": "false",
-                    "set": "1",
-                    "name": "_shopify_sa_t"
-                },
-                "_shopify_uniq": {
-                    "description": "Shopify analytics.",
-                    "path": "\/",
-                    "domain": "",
-                    "provider": "Shopify",
-                    "type": "type_1",
-                    "expires": "1800",
-                    "recommendation": "1",
-                    "editable": "true",
-                    "deletable": "false",
-                    "set": "1",
-                    "name": "_shopify_uniq"
-                },
-                "_shopify_visit": {
-                    "description": "Shopify analytics.",
-                    "path": "\/",
-                    "domain": "",
-                    "provider": "Shopify",
-                    "type": "type_1",
-                    "expires": "1800",
-                    "recommendation": "1",
-                    "editable": "true",
-                    "deletable": "false",
-                    "set": "1",
-                    "name": "_shopify_visit"
-                },
-                "tracked_start_checkout": {
-                    "description": "Shopify analytics relating to checkout.",
-                    "path": "\/",
-                    "domain": "",
-                    "provider": "Shopify",
-                    "type": "type_1",
-                    "expires": "1800",
-                    "recommendation": "1",
-                    "editable": "true",
-                    "deletable": "false",
-                    "set": "1",
-                    "name": "tracked_start_checkout"
-                },
-                "ki_r": {
-                    "description": "Shopify analytics.",
-                    "path": "\/",
-                    "domain": "",
-                    "provider": "Shopify",
-                    "type": "type_1",
-                    "expires": "1800",
-                    "recommendation": "1",
-                    "editable": "true",
-                    "deletable": "false",
-                    "set": "1",
-                    "name": "ki_r"
-                },
-                "ki_t": {
-                    "description": "Shopify analytics.",
-                    "path": "\/",
-                    "domain": "",
-                    "provider": "Shopify",
-                    "type": "type_1",
-                    "expires": "1800",
-                    "recommendation": "1",
-                    "editable": "true",
-                    "deletable": "false",
-                    "set": "1",
-                    "name": "ki_t"
-                },
-                "ab_test_*": {
-                    "description": "Shopify analytics.",
-                    "path": "\/",
-                    "domain": "",
-                    "provider": "Shopify",
-                    "type": "type_1",
-                    "expires": "1800",
-                    "recommendation": "1",
-                    "editable": "true",
-                    "deletable": "false",
-                    "set": "1",
-                    "name": "ab_test_*"
-                }
-            };
-        }
-    </script>
-    <script>
-        const data_gdpr_legal_banner_content = {
-            "primary": "Wir verwenden Cookies. Viele sind notwendig, um die Website und ihre Funktionen zu betreiben, andere sind für statistische oder Marketingzwecke. Mit der Entscheidung \"Nur essentielle Cookies akzeptieren\" werden wir Ihre Privatsphäre respektieren und keine Cookies setzen, die nicht für den Betrieb der Seite notwendig sind.",
-            "essential": "Essenzielle Cookies ermöglichen grundlegende Funktionen und sind für die einwandfreie Funktion der Website erforderlich.",
-            "statistic": "Statistik-Cookies helfen Webseiten-Besitzern zu verstehen, wie Besucher mit Webseiten interagieren, indem Informationen anonym gesammelt und gemeldet werden.",
-            "marketing": "Marketing-Cookies werden von Drittanbietern oder Publishern verwendet, um personalisierte Werbung anzuzeigen. Sie tun dies, indem sie Besucher über Websites hinweg verfolgen.",
-            "essential_button": "Essenzielle",
-            "marketing_button": "Statistik \u0026 Marketing",
-            "details": "Informationen anzeigen",
-            "buttons": {
-                "accept": "Alle akzeptieren",
-                "how_many_are_accepted": "von",
-                "accept_single": "Akzeptieren",
-                "save": "Nur Essentielle Cookies akzeptieren",
-                "edit": "Cookie Einstellungen",
-                "save_close": "Speichern \u0026 schließen"
-            },
-            "tabs": {
-                "name": "Name",
-                "provider": "Inhaber",
-                "description": "Beschreibung",
-                "duration": "Laufzeit",
-                "domain": "Domain",
-                "group": "Group"
-            },
-            "cookieType": {
-                "type_0": "Essentiell",
-                "type_1": "Statistik",
-                "type_2": "Marketing"
-            },
-            "flag": {
-                "text": "Cookies"
-            }
-        };
-    </script>
     <style>
         #essential_accept {
             display: none;
@@ -5512,25 +3472,6 @@ $img = get_src_photo($name);
             </div>
         </div>
     </div>
-
-    <div id="shopify-block-8218531531362863771" class="shopify-block shopify-app-block">
-        <script>
-            let shopifyLiquidValuesApp7Ext = {
-                product: {
-                    handle: "mars-roll-on-100-parfumol"
-                }
-            }
-            window.shopifyLiquidValuesApp7Ext = shopifyLiquidValuesApp7Ext;
-        </script>
-
-
-
-    </div>
-    <div id="shopify-block-10570433277407501837" class="shopify-block shopify-app-block">
-        <!-- BEGIN app snippet: gsf-gcr-badge -->
-
-        <!-- END app snippet -->
-    </div>
     <div id="shopify-block-65770340888967700" class="shopify-block shopify-app-block">
         <style>
             .sc_install-initialization {
@@ -5547,309 +3488,70 @@ $img = get_src_photo($name);
             }
         </style>
 
-        <script type="text/javascript">
-            var scLoadingOverlayHtml = '<div class="sc_install-initialization"><div style="width: 80px;"><svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid" class ="lds-rolling" ><circle cx="50" cy="50" fill="none" stroke-width="7" r="25" stroke-dasharray="117.80972450961724 41.269908169872416" transform="rotate(47.1629 50 50)" style="stroke: #5C6AC4" ><animateTransform attributeName="transform" type="rotate" calcMode="linear" values="0 50 50;360 50 50" keyTimes="0;1" dur="1s" begin="0s" repeatCount="indefinite" /></circle></svg></div> Please wait. Theme installer is being initialized.</div>';
-            var scDesignData = {
-                "style": "simple",
-                "position": "right",
-                "width": "550px",
-                "codeButtonColor": "#ffffff",
-                "codeButtonBackgroundColor": "#000000",
-                "codeButtonBorderColor": "#000000",
-                "submitButtonBorderColor": "#5aaa34",
-                "loadingBg": "#000000",
-                "spinnerColor": "#ffffff",
-                "inputColor": "#000000",
-                "inputBg": "#ffffff",
-                "inputBorder": "#000000",
-                "discountInfoColor": "#000000",
-                "discountInfoBg": "#fafafa",
-                "discountInfoBorder": "#e1e1e1"
-            } || {};
-            window.scIsCartPage = false;
-            window.scCartData = {
-                "note": null,
-                "attributes": {},
-                "original_total_price": 0,
-                "total_price": 0,
-                "total_discount": 0,
-                "total_weight": 0.0,
-                "item_count": 0,
-                "items": [],
-                "requires_shipping": false,
-                "currency": "EUR",
-                "items_subtotal_price": 0,
-                "cart_level_discount_applications": [],
-                "checkout_charge_amount": 0
-            };
-            if (!window.scMoneyFormat) window.scMoneyFormat = '€{{amount_with_comma_separator}}';
-            window.scDesignConfig = {
-                style: scDesignData.style || 'simple',
-                position: scDesignData.position || 'right',
-                containerWidth: {
-                    width: scDesignData.width || '350px'
-                },
-                codeButton: {
-                    color: scDesignData.codeButtonColor || '#fff',
-                    backgroundColor: scDesignData.codeButtonBackgroundColor || '#5aaa34',
-                    border: '1px solid ' + (scDesignData.codeButtonBorderColor || '#5aaa34')
-                },
-                submitButton: {
-                    borderColor: scDesignData.submitButtonBorderColor
-                },
-                loadingBg: {
-                    background: scDesignData.loadingBg || '#339933'
-                },
-                spinner: {
-                    stroke: scDesignData.spinnerColor || '#ffffff'
-                },
-                codeInput: {
-                    borderColor: scDesignData.inputBorder || '#aeaeae',
-                    color: scDesignData.inputColor || '#339933',
-                    backgroundColor: scDesignData.inputBg || '#ffffff'
-                },
-                discountInfo: {
-                    background: scDesignData.discountInfoBg || '#fafafa',
-                    border: '1px solid ' + (scDesignData.discountInfoBorder || '#e1e1e1'),
-                    color: scDesignData.discountInfoColor || '#535353'
-                }
-            };
-
-
-
-            if (!window.scTranslationConfig) {
-                window.scTranslationConfig = {
-                    "placeholder": "Rabattcode eingeben",
-                    "submitBtn": "Einlösen",
-                    "codeLabel": "Code:",
-                    "discountLabel": "Rabatt:",
-                    "giftCardLabel": "Geschenkkarte:",
-                    "total": "Gesamt:",
-                    "errorAutomaticDiscount": "Auf diese Bestellung wurde ein Rabatt gewährt. Du kannst keinen weiteren Rabatt hinzufügen",
-                    "errorCode": "Konnte keinen gültigen Rabatt finden, der zu dem eingegebenen Code gehört",
-                    "tooManyAttempts": "Zu viele Versuche, bitte versuchen Sie es in ein paar Minuten erneut",
-                    "errorNetwork": "Netzwerkfehler aufgetreten. Sie können Ihren Rabattcode an der Kasse eingeben",
-                    "authorized": "Rabatte sind nur für autorisierte Benutzer verfügbar",
-                    "messages": {
-                        "shopify.checkout.order_summary.cart_does_not_meet_discount_requirements_notice": "Der Rabattcode \u003cstrong\u003e{{ code }}\u003c\/strong\u003e ist für die Artikel in deinem Warenkorb nicht gültig",
-                        "shopify.checkout.order_summary.discount_requires_customer_notice": "Gib deine Versandinformationen ein, um den Rabattcode \u003cstrong\u003e{{ code }}\u003c\/strong\u003e zu übernehmen",
-                        "shopify.checkout.order_summary.customer_does_not_meet_discount_requirements_notice": "Der Rabattcode \u003cstrong\u003e{{ code }}\u003c\/strong\u003e ist derzeit für dich nicht verfügbar",
-                        "shopify.checkout.order_summary.shipping_information_does_not_meet_discount_requirements_notice": "Der Rabattcode \u003cstrong\u003e{{ code }}\u003c\/strong\u003e ist für deine Lieferadresse nicht verfügbar",
-                        "shopify.checkout.order_summary.customer_already_used_once_per_customer_discount_notice": "Der \u003cstrong\u003e{{ code }}\u003c\/strong\u003e-Rabattcode wurde bereits genutzt",
-                        "shopify.checkout.field_errors.reduction_code_code_not_found": "Gib einen gültigen Rabattcode oder Geschenkgutschein ein",
-                        "shopify.checkout.field_errors.reduction_code_discount_not_found": "Gib einen gültigen Rabattcode ein",
-                        "shopify.errors.discount_not_found": "Konnte keinen gültigen Rabatt finden, der zu dem eingegebenen Code gehört",
-                        "shopify.checkout.order_summary.discount_already_applied": "Auf diese Bestellung wurde ein Rabatt gewährt. Du kannst keinen weiteren Rabatt hinzufügen",
-                        "shopify.errors.discount_disabled": "Dieser Rabatt wurde deaktiviert",
-                        "shopify.errors.discount_expired": "Dieser Rabatt ist nicht mehr gültig",
-                        "shopify.errors.discount_limit_reached": "Dieser Rabatt hat seine Nutzungsgrenze erreicht",
-                        "shopify.checkout.field_errors.reduction_code_gift_card_code_invalid": "Gib einen gültigen Geschenkgutschein ein",
-                        "shopify.checkout.field_errors.reduction_code_gift_card_unusable_with_subscriptions": "Du kannst einen Geschenkgutschein nicht zum Kauf eines Abonnements verwenden",
-                        "shopify.checkout.field_errors.reduction_code_gift_card_unusable": "Du kannst einen Geschenkgutschein nicht zum Kauf eines anderen Geschenkgutscheins verwenden",
-                        "shopify.checkout.field_errors.gift_card_already_applied": "Diese Geschenkkarte wurde bereits zu deiner Bestellung hinzugefügt",
-                        "shopify.checkout.field_errors.gift_card_disabled": "Dieser Geschenkgutschein ist nicht mehr verfügbar",
-                        "shopify.checkout.field_errors.gift_card_expired": "Dieser Geschenkgutschein ist abgelaufen",
-                        "shopify.checkout.field_errors.gift_card_depleted": "Auf diesem Geschenkgutschein ist kein Guthaben mehr",
-                        "shopify.checkout.field_errors.gift_card_currency_mismatch": "Nur Geschenkgutscheine in {{ checkout_currency }} können für diese Bestellung verwendet werden",
-                        "shopify.checkout.field_errors.physical_gift_card_invalid_quantity": "Physische Geschenkgutscheine müssen eine Menge aufweisen, die der Nummer der Geschenkgutschein-Codes entspricht",
-                        "shopify.checkout.field_errors.physical_gift_card_duplicate_code": "Die Position \"Geschenkgutschein\" enthält einen doppelten Code",
-                        "shopify.checkout.field_errors.physical_gift_card_invalid_code": "Der Code des Geschenkgutscheins ist ungültig",
-                        "shopify.checkout.thank_you.gift_card_confirmation_by_text": "Geschenkgutscheine werden per SMS gesendet. Sollten Sie Ihre nicht erhalten haben, senden Sie sie erneut oder kontaktieren Sie uns",
-                        "shopify.checkout.thank_you.gift_card_confirmation_by_email": "Geschenkgutschein werden per E-Mail gesendet. Sollten Sie Ihre nicht erhalten haben, senden Sie sie erneut oder kontaktieren Sie uns",
-                        "shopify.errors.gift_card_already_applied": "Der Code wurde bereits auf deine Bestellung angewendet",
-                        "shopify.errors.gift_card_code_invalid": "Ungültiger Code",
-                        "shopify.errors.gift_card_currency_mismatch": "{{ gift_card_currency }} Geschenkkarten können nicht für {{ checkout_currency }}-Bestellungen verwendet werden",
-                        "shopify.errors.gift_card_depleted": "Es befindet sich kein Guthaben mehr auf dieser Geschenkkarte",
-                        "shopify.errors.gift_card_disabled": "Geschenkkarte ist gesperrt",
-                        "shopify.errors.gift_card_expired": "Geschenkkarte ist abgelaufen",
-                        "unexpected": "Unbekannter Fehler aufgetreten. Sie können Ihren Rabattcode an der Kasse eingeben"
-                    },
-                    "freeShippingLabel": "Kostenloser Versand",
-                    "errorItemInvalid": "Der Rabattcode \u003cstrong\u003e{{ code }}\u003c\/strong\u003e ist für die Artikel in deinem Warenkorb nicht gültig"
-                } || {
-                    "placeholder": "Discount code or gift card",
-                    "submitBtn": "Apply",
-                    "codeLabel": "Code:",
-                    "discountLabel": "Discount:",
-                    "giftCardLabel": "Gift card:",
-                    "total": "Total:",
-                    "errorAutomaticDiscount": "A discount has been applied to this order. You can’t add another discount",
-                    "errorCode": "Unable to find a valid discount matching the code entered",
-                    "tooManyAttempts": "Too many attempts please try again in a few minutes",
-                    "errorNetwork": "Network error occured. You may enter your discount code during the checkout",
-                    "authorized": "Discounts are available only for authorized users",
-                    "messages": {
-                        "shopify.checkout.order_summary.cart_does_not_meet_discount_requirements_notice": "\u003cstrong\u003e{{ code }}\u003c\/strong\u003e discount code isn’t valid for the items in your cart",
-                        "shopify.checkout.order_summary.discount_requires_customer_notice": "Enter your shipping information to apply the \u003cstrong\u003e{{ code }}\u003c\/strong\u003e discount code",
-                        "shopify.checkout.order_summary.customer_does_not_meet_discount_requirements_notice": "\u003cstrong\u003e{{ code }}\u003c\/strong\u003e discount code isn’t available to you right now",
-                        "shopify.checkout.order_summary.shipping_information_does_not_meet_discount_requirements_notice": "\u003cstrong\u003e{{ code }}\u003c\/strong\u003e discount code isn’t available for your shipping address",
-                        "shopify.checkout.order_summary.customer_already_used_once_per_customer_discount_notice": "The {{ code }} discount code has already been used",
-                        "shopify.checkout.field_errors.reduction_code_code_not_found": "Enter a valid discount code or gift card",
-                        "shopify.checkout.field_errors.reduction_code_discount_not_found": "Enter a valid discount code",
-                        "shopify.errors.discount_not_found": "Unable to find a valid discount matching the code entered",
-                        "shopify.checkout.order_summary.discount_already_applied": "A discount has been applied to this order. You can’t add another discount",
-                        "shopify.errors.discount_disabled": "This discount has been disabled",
-                        "shopify.errors.discount_expired": "This discount is not valid anymore",
-                        "shopify.errors.discount_limit_reached": "This discount has reached its usage limit",
-                        "shopify.checkout.field_errors.reduction_code_gift_card_code_invalid": "Enter a valid gift card",
-                        "shopify.checkout.field_errors.reduction_code_gift_card_unusable_with_subscriptions": "You can’t use a gift card to buy a subscription",
-                        "shopify.checkout.field_errors.reduction_code_gift_card_unusable": "You can’t use a gift card to buy another gift card",
-                        "shopify.checkout.field_errors.gift_card_already_applied": "This gift card has already been applied to your order",
-                        "shopify.checkout.field_errors.gift_card_disabled": "This gift card is no longer available",
-                        "shopify.checkout.field_errors.gift_card_expired": "This gift card has expired",
-                        "shopify.checkout.field_errors.gift_card_depleted": "This gift card has no funds left",
-                        "shopify.checkout.field_errors.gift_card_currency_mismatch": "Only gift cards in {{ checkout_currency }} can be used with this order",
-                        "shopify.checkout.field_errors.physical_gift_card_invalid_quantity": "Physical gift card line items must have a quantity that matches the number of gift card codes",
-                        "shopify.checkout.field_errors.physical_gift_card_duplicate_code": "Physical gift card line item contains duplicate code",
-                        "shopify.checkout.field_errors.physical_gift_card_invalid_code": "Physical gift card code is invalid",
-                        "shopify.checkout.thank_you.gift_card_confirmation_by_text": "Gift cards are sent by text. If you haven’t received yours, try sending them again or contact us",
-                        "shopify.checkout.thank_you.gift_card_confirmation_by_email": "Gift cards are sent by email. If you haven’t received yours, try sending them again or contact us",
-                        "shopify.errors.gift_card_already_applied": "Code has already been applied to your checkout",
-                        "shopify.errors.gift_card_code_invalid": "Code is invalid",
-                        "shopify.errors.gift_card_currency_mismatch": "{{ gift_card_currency }} gift cards can’t be applied on {{ checkout_currency }} orders",
-                        "shopify.errors.gift_card_depleted": "There are no funds left on this gift card",
-                        "shopify.errors.gift_card_disabled": "Gift card is disabled",
-                        "shopify.errors.gift_card_expired": "Gift card is expired",
-                        "unexpected": "Unknown error occured. You may enter your discount code during the checkout"
-                    },
-                    "freeShippingLabel": "Free Shipping",
-                    "errorItemInvalid": "\u003cstrong\u003e{{ code }}\u003c\/strong\u003e discount code isn’t valid for the items in your cart"
-                }; <
-                !--BEGIN app snippet: messages-- >
-
-                    <
-                    !--END app snippet-- >
-            }
-
-
-            window.scPrimaryLocale = 'de';
-
-
-            if (!window.scThemeConfig) {
-
-                var scThemeConfig = {
-                    "theme": "143261335818",
-                    "help": {
-                        "0": false,
-                        "1": false,
-                        "2": false,
-                        "3": false
-                    },
-                    "cartDiscountSelector": {
-                        "path": "#shopify-section-template--17968425074954__cart div.cart-drawer-content div.cart-drawer-footer a.btn",
-                        "type": 0
-                    },
-                    "cartTotalSelector": {
-                        "path": "#shopify-section-template--17968425074954__cart div.cart-drawer-content div.cart-drawer-footer div.cart-drawer-footer-price span.cart-drawer-footer-total span.price span",
-                        "type": 0
-                    },
-                    "ajaxDicountSelector": {
-                        "path": "#shopify-section-cart-drawer div.cart-drawer-content div.cart-drawer-footer a.btn",
-                        "type": 0
-                    }
-                };
-
-            }
-
-
-
-
-
-
-
-            var scProduct = 43885242745098;
-            var scProductUrl = '/products/365days-woman';
-
-            var cartTotal = 0;
-
-            var __assign = (this && this.__assign) || function() {
-                __assign = Object.assign || function(t) {
-                    for (var s, i = 1, n = arguments.length; i < n; i++) {
-                        s = arguments[i];
-                        for (var p in s)
-                            if (Object.prototype.hasOwnProperty.call(s, p))
-                                t[p] = s[p];
-                    }
-                    return t;
-                };
-                return __assign.apply(this, arguments);
-            };
-            var setValue = function(name, value) {
-                var _a;
-                var data = JSON.parse(sessionStorage.getItem('scInstallInfo'));
-                sessionStorage.setItem('scInstallInfo', JSON.stringify(__assign(__assign({}, data), (_a = {}, _a[name] = value, _a))));
-            };
-            var parseQueryString = function() {
-                var qs = window.location.search.replace('?', '');
-                var items = qs.split('&');
-                return items.reduce(function(data, item) {
-                    var _a = item.split('='),
-                        key = _a[0],
-                        value = _a[1];
-                    if (data[key] !== undefined) {
-                        if (!Array.isArray(data[key])) {
-                            data[key] = [data[key]];
-                        }
-                        data[key].push(value);
-                    } else {
-                        data[key] = value;
-                    }
-                    return data;
-                }, {});
-            };
-
-            var query = parseQueryString();
-            if (query.install) {
-                setValue('theme', query.install);
-            }
-
-            var scLoadingOverlay;
-
-            var getValue = function(name) {
-                var data = JSON.parse(sessionStorage.getItem('scInstallInfo'));
-                return data && data[name] !== undefined ? data[name] : null;
-            };
-
-            var isInstall = function() {
-                var themeId = getValue('theme');
-                var theme = window.Shopify ? window.Shopify.theme : null;
-                var id = theme ? theme.id : null;
-                return themeId === id.toString();
-            };
-
-            var scAppendLoadOverlay = function() {
-                scLoadingOverlay = document.createElement('div');
-                scLoadingOverlay.innerHTML = scLoadingOverlayHtml;
-                document.body.appendChild(scLoadingOverlay);
-            };
-
-            var scLoadInstaller = function() {
-                scAppendLoadOverlay();
-                const script = document.createElement('script');
-                script.src = 'https://cart-discount.herokuapp.com/js/installer.min.js?v=' + Date.now();
-                script.onload = function() {
-                    scLoadingOverlay.remove();
-                }
-                document.body.appendChild(script);
-            };
-
-            if (window.scProduct && isInstall()) {
-                scLoadInstaller();
-            }
-
-            var scPrimaryCurrency = 'EUR';
-            window.ScInit = {
-                "c": 1657118145182
-            } || {};
-        </script>
-
-
-
-
-        <script src="../../../extensions/ed1aa012-9f54-4c9a-80b6-a4c9115bf674/2.66.0/assets/storefront.min.js" defer=""></script>
-
 
     </div>
 </body>
+<script>
+    //найди элемент a c id HeaderCartTrigger и останови переход на страницу
+    var modal = document.querySelector('#monster-upsell-cart');
+    var cart = document.querySelector('#HeaderCartTrigger');
+    cart.addEventListener('click', function(e) {
+        e.preventDefault();
+        modal.style.display = 'block';
+    })
+
+
+
+    //получи кнопку закрытия модального окна
+    var close = document.querySelector('#closeModal');
+    //при клике на кнопку закрытия модального окна
+    close.addEventListener('click', function() {
+        //скрой модальное окно
+        console.log('click')
+        modal.style.display = 'none';
+    })
+    //получи кнопку Zur Kasse
+    var checkout = document.querySelector('#mu-checkout-button');
+    //при клике на кнопку Zur Kasse
+    checkout.addEventListener('click', function() {
+        //скрой модальное окно
+        modal.style.display = 'none';
+        //перейди на страницу оформления заказа
+        window.location.href = '/payment.php';
+    })
+</script>
+<style>
+    .giraffly-right-Bar-Preview-div-svg {
+        gap: 25px;
+        width: 30px;
+    }
+
+    .giraffly-right-Bar-Preview-width {
+        display: flex;
+
+    }
+
+    .giraffly-right-Bar-Preview-Example {
+        padding: 10px 0px;
+    }
+    .sc-cube-text{
+    padding: 10px !important;
+    border: 1px solid black !important;
+    border-radius: 3px;
+    }
+</style>
+<script>
+    window.addEventListener('load', function() {
+        // Проверяем значение в localStorage
+        var refreshed = localStorage.getItem('refreshed');
+        if (refreshed === 'true') {
+            var modal = document.querySelector('#monster-upsell-cart');
+
+            modal.style.display = 'block';
+            document.getElementById('card-form').style.display = 'flex';
+            localStorage.setItem('refreshed', 'false');
+        }
+    });
+</script>
 
 </html>

@@ -1,5 +1,9 @@
 ﻿<?php
 require($_SERVER['DOCUMENT_ROOT'] . '/php/get_info.php');
+session_start();
+session_start();
+session_start();
+session_start();
 
 ?>
 
@@ -2397,7 +2401,7 @@ require($_SERVER['DOCUMENT_ROOT'] . '/php/get_info.php');
                             <path class="cls-1" d="M47.16 28.58A18.58 18.58 0 1 1 28.58 10a18.58 18.58 0 0 1 18.58 18.58zM54 54L41.94 42"></path>
                           </svg>
                           <span class="icon__fallback-text">Suche</span>
-                        </a><a class="site-nav__link site-nav__link--icon small--hide" href="account/login.html">
+                        </a><a class="site-nav__link site-nav__link--icon small--hide" href="account/login.php">
                           <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-user" viewbox="0 0 64 64">
                             <defs>
                               <style>

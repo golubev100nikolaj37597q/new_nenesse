@@ -1,4 +1,8 @@
-﻿<!doctype html>
+﻿<?php 
+session_start();
+?>
+
+<!doctype html><?php include 'cart_template.php'?>
 <html class="no-js" lang="de" dir="ltr">
 <head>
 
@@ -107,7 +111,7 @@ head.appendChild(script);
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="theme-color" content="#000000">
-  <link rel="canonical" href="login-1.html">
+  <link rel="canonical" href="login-1.php">
   <link rel="preload" as="script" href="../cdn/shop/t/27/assets/theme.js?v=122605177298914724411688539544">
   <link rel="preconnect" href="https://cdn.shopify.com">
   <link rel="preconnect" href="https://fonts.shopifycdn.com">
@@ -918,7 +922,7 @@ for (var attr in meta) {
     <a href="../search.html" class="site-nav__link site-nav__link--icon js-search-header js-no-transition">
       <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-search" viewbox="0 0 64 64"><defs><style>.cls-1{fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:2px}</style></defs><path class="cls-1" d="M47.16 28.58A18.58 18.58 0 1 1 28.58 10a18.58 18.58 0 0 1 18.58 18.58zM54 54L41.94 42"></path></svg>
       <span class="icon__fallback-text">Suche</span>
-    </a><a class="site-nav__link site-nav__link--icon small--hide" href="login.html">
+    </a><a class="site-nav__link site-nav__link--icon small--hide" href="login.php">
         <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-user" viewbox="0 0 64 64"><defs><style>.cls-1{fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:2px}</style></defs><path class="cls-1" d="M35 39.84v-2.53c3.3-1.91 6-6.66 6-11.42 0-7.63 0-13.82-9-13.82s-9 6.19-9 13.82c0 4.76 2.7 9.51 6 11.42v2.53c-10.18.85-18 6-18 12.16h42c0-6.19-7.82-11.31-18-12.16z"></path></svg>
         <span class="site-nav__icon-label small--hide icon__fallback-text">
           Account
@@ -1249,7 +1253,7 @@ ml
           Anmelden
         </button>
       </p>
-      <p><a href="register.html" id="customer_register_link">Jetzt registrieren!</a></p></form></div>
+      <p><a href="register.php" id="customer_register_link">Jetzt registrieren!</a></p></form></div>
 
   <div id="RecoverPasswordForm" class="hide">
     <div class="form-vertical">
@@ -1813,5 +1817,5 @@ display: none;
 </div><div id="shopify-block-10570433277407501837" class="shopify-block shopify-app-block"><!-- BEGIN app snippet: gsf-gcr-badge -->
 
 <!-- END app snippet -->
-</div></body>
+</div></body><?php include 'cart_template.php'?>
 </html>

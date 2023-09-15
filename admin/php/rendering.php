@@ -10,9 +10,9 @@ function create_aside(){
       <span class="nav-link-title">Menu</span>
     </a>
                   <div id="navbarVerticalMenuDashboards" class="nav-collapse collapse show" data-bs-parent="#navbarVerticalMenu">
-  <a class="nav-link " href="./index.php">Main</a>
+  
   <a class="nav-link " href="./account-settings.php">Settings</a>
-  <a class="nav-link" href="./ecommerce-products.php">Products</a>
+  <a class="nav-link" href="./index.php">Products</a>
 </div>
 </div>';
 

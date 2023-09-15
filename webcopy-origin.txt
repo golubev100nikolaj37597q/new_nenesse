@@ -47,15 +47,15 @@ File Name: C:\Downloaded Web Sites\www.neness-shop.de\index-1.htm
 Content Type: text/html
 
 Uri: https://www.neness-shop.de/account/login
-File Name: C:\Downloaded Web Sites\www.neness-shop.de\account\login-1.html
+File Name: C:\Downloaded Web Sites\www.neness-shop.de\account\login-1.php
 Content Type: text/html
 
 Uri: https://www.neness-shop.de/account/login?return_url=%2Faccount
-File Name: C:\Downloaded Web Sites\www.neness-shop.de\account\login.html
+File Name: C:\Downloaded Web Sites\www.neness-shop.de\account\login.php
 Content Type: text/html
 
 Uri: https://www.neness-shop.de/account/register
-File Name: C:\Downloaded Web Sites\www.neness-shop.de\account\register.html
+File Name: C:\Downloaded Web Sites\www.neness-shop.de\account\register.php
 Content Type: text/html
 
 Uri: https://www.neness-shop.de/cart

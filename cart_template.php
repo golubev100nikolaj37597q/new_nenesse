@@ -83,7 +83,8 @@
                                     console.log('Error')
                                   } else {
                                     console.log('Success')
-                                    window.location.reload();
+                                    localStorage.setItem('refreshed', 'true');
+                                                                window.location.reload();
                                   }
                                 },
                                 error: function(error) {
@@ -111,7 +112,8 @@
                                     console.log('Error')
                                   } else {
                                     console.log('Success')
-                                    window.location.reload();
+                                    localStorage.setItem('refreshed', 'true');
+                                                                window.location.reload();
                                   }
                                 },
                                 error: function(error) {
@@ -193,6 +195,7 @@
                                           if (data != 'Success') {
                                             console.log('Error')
                                           }
+                                          localStorage.setItem('refreshed', 'true');
                                           window.location.reload();
                                         },
                                         error: function(error) {
@@ -313,4 +316,17 @@
     //перейди на страницу оформления заказа
     window.location.href = '/payment.php';
   })
+</script>
+<script>
+  window.addEventListener('load', function() {
+    // Проверяем значение в localStorage
+    var refreshed = localStorage.getItem('refreshed');
+    if (refreshed === 'true') {
+      var modal = document.querySelector('#monster-upsell-cart');
+
+      modal.style.display = 'block';
+      document.getElementById('card-form').style.display = 'flex';
+      localStorage.setItem('refreshed', 'false');
+    }
+  });
 </script>

@@ -271,7 +271,7 @@ if ($_SESSION['user_role'] !== 'admin') {
           <div class="col-sm mb-2 mb-sm-0">
             <nav aria-label="breadcrumb">
               <ol class="breadcrumb breadcrumb-no-gutter">
-                <li class="breadcrumb-item"><a class="breadcrumb-link" href="./ecommerce-products.php">product</a></li>
+                <li class="breadcrumb-item"><a class="breadcrumb-link" href="./index.php">product</a></li>
                 <li class="breadcrumb-item active" aria-current="page">Add product</li>
               </ol>
             </nav>
@@ -344,9 +344,9 @@ if ($_SESSION['user_role'] !== 'admin') {
               </div>
             </div>
             <!-- End Card -->
-            <div class="card">
+            <div class="card mb-3">
               <div class="card-header d-flex " style="justify-content: space-between;">
-                <h2 class="card-title h4">Отзывы</h2>
+                <h2 class="card-title h4">Review</h2>
                 <div class="justify-content-end">
                   <button type="button" id="button_send1" class="btn btn-primary" style="padding: 0px 5px; vertical-align: unset;" onclick="createReviewBlock()" control-id="ControlID-7">+</button>
                 </div>
@@ -697,7 +697,7 @@ if ($_SESSION['user_role'] !== 'admin') {
             <div class="card-body">
               <div class="row justify-content-center justify-content-sm-between">
                 <div class="col">
-                  <button type="button" class="btn btn-ghost-danger">Назад</button>
+                  <button type="button" class="btn btn-ghost-danger">Back</button>
                 </div>
 
                 <!-- End Col -->
@@ -705,8 +705,7 @@ if ($_SESSION['user_role'] !== 'admin') {
                 <div class="col-auto">
                   <div class="d-flex gap-3">
 
-                    <button type="submit" class="btn btn-primary" id="button-send">Сохранить
-                      <div class="spinner-border spinner-border-sm d-none" id="reloader" role="status">
+                    <button type="submit" class="btn btn-primary" id="button-send">Save<div class="spinner-border spinner-border-sm d-none" id="reloader" role="status">
                         <span class="visually-hidden">Подождите...</span>
                       </div>
                     </button>
@@ -1743,7 +1742,7 @@ if ($_SESSION['user_role'] !== 'admin') {
             reloader.classList.add('d-none');
 
             if (data.trim() == "Successfully") {
-              button_send.innerHTML = `Успешно!<div class="spinner-border spinner-border-sm d-none" id="reloader" role="status"><span class="visually-hidden">Loading...</span></div>`
+              button_send.innerHTML = `Successfully!<div class="spinner-border spinner-border-sm d-none" id="reloader" role="status"><span class="visually-hidden">Loading...</span></div>`
               button_send.classList.remove('btn-primary')
               button_send.classList.add('btn-success')
             } else {
@@ -1784,7 +1783,7 @@ if ($_SESSION['user_role'] !== 'admin') {
       var label1 = document.createElement("label");
       label1.setAttribute("for", "fio");
       label1.className = "col-sm-3 col-form-label form-label";
-      label1.textContent = "Имя пользователя и оценка";
+      label1.textContent = "User name and rating";
       row1.appendChild(label1);
 
       var col1 = document.createElement("div");
@@ -1793,20 +1792,20 @@ if ($_SESSION['user_role'] !== 'admin') {
 
       var input1 = document.createElement("input");
       input1.type = "text";
-      input1.className = "form-control";
+      input1.className = "form-control mb-3";
       input1.name = "fio";
       input1.id = "fio";
-      input1.placeholder = "Введите имя";
+      input1.placeholder = "Enter a name";
       input1.setAttribute("aria-label", "Your first name");
       input1.setAttribute("control-id", "ControlID-15");
       col1.appendChild(input1);
 
       var input2 = document.createElement("input");
       input2.type = "text";
-      input2.className = "form-control";
+      input2.className = "form-control ";
       input2.name = "evaluation";
       input2.id = "evaluation";
-      input2.placeholder = "Введите оценку(0-5)";
+      input2.placeholder = "Enter a score(0-5)";
       input2.setAttribute("aria-label", "Your last name");
       input2.setAttribute("control-id", "ControlID-16");
       col1.appendChild(input2);
@@ -1818,7 +1817,7 @@ if ($_SESSION['user_role'] !== 'admin') {
       var label2 = document.createElement("label");
       label2.setAttribute("for", "review_text");
       label2.className = "col-sm-3 col-form-label form-label";
-      label2.textContent = "Отзыв";
+      label2.textContent = "Feedback";
       row2.appendChild(label2);
 
       var col2 = document.createElement("div");
@@ -1830,7 +1829,7 @@ if ($_SESSION['user_role'] !== 'admin') {
       input3.className = "form-control";
       input3.name = "review_text";
       input3.id = "review_text";
-      input3.placeholder = "Введите отзыв";
+      input3.placeholder = "Enter a review";
       input3.setAttribute("aria-label", "Email");
       input3.setAttribute("control-id", "ControlID-17");
       col2.appendChild(input3);
@@ -1842,7 +1841,7 @@ if ($_SESSION['user_role'] !== 'admin') {
       var label3 = document.createElement("label");
       label3.setAttribute("for", "review_image");
       label3.className = "col-sm-3 col-form-label form-label";
-      label3.textContent = "Изображение";
+      label3.textContent = "Image";
       row3.appendChild(label3);
 
       var col3 = document.createElement("div");
@@ -1854,7 +1853,7 @@ if ($_SESSION['user_role'] !== 'admin') {
       input4.className = "form-control";
       input4.name = "review_image";
       input4.id = "review_image";
-      input4.placeholder = "Введите ссылку на изображения в отзыве";
+      input4.placeholder = "Enter a link to the images in the review";
       input4.setAttribute("aria-label", "Email");
       input4.setAttribute("control-id", "ControlID-18");
       col3.appendChild(input4);
